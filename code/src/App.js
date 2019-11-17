@@ -1,12 +1,13 @@
-import React from 'react'
-import data from './data.json'
+import React from 'react';
+import data from './data.json';
+import { AlbumList } from './components/Album/AlbumList';
 
-console.log(data)
+const { albums } = data;
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="album">
+      <AlbumList data={albums} />
     </div>
-  )
-}
+  );
+};
