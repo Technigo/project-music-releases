@@ -6,8 +6,11 @@ const { albums } = data;
 
 export const App = () => {
   return (
-    <div className="album">
-      <AlbumList data={albums} />
+    <div>
+      <div className="album">
+        <h3>New albums & singles</h3>
+        <AlbumList data={albums} />
+      </div>
     </div>
   );
 };
