@@ -44,7 +44,7 @@ h3 {
 
 .album {
   display: flex;
-  width: 1300px;
+  width: 302px;
   margin: 0 auto;
   flex-direction: column;
   /* justify-content: center; */
@@ -125,12 +125,18 @@ h3 {
 }
 
 @media screen and (min-width: 700px) {
+  .album {
+    width: 634px;
+  }
   .album-list {
     grid-template-columns: repeat(2, 303px);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .album {
+    width: 1299px;
+  }
   .album-list {
     grid-template-columns: repeat(4, 303px);
   }
