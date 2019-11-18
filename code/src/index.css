@@ -53,7 +53,7 @@ h3 {
 .icon-play {
   width: 80px;
   margin: 0 10px;
-  transition: all 100ms linear;
+  transition: all 100ms ease-out;
 }
 
 .icon-play:hover {
@@ -62,6 +62,7 @@ h3 {
 
 .icon-play path {
   fill: white;
+  fill-rule: nonzero;
 }
 
 .icon-heart {
