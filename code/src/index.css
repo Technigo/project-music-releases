@@ -99,7 +99,7 @@ h3 {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: all 0.1s linear;
+  transition: all 100ms linear;
 }
 
 .album-cover:hover .album-cover-overlay {
