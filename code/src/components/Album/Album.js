@@ -3,11 +3,15 @@ import { AlbumCover } from './AlbumCover';
 import { AlbumInfo } from './AlbumInfo';
 
 export const Album = ({ data }) => {
-  // console.log(data);
+  console.log(data);
   return (
     <div className="album-item">
-      <AlbumCover data={data.images[1]} />
-      <AlbumInfo name={data.name} uri={data.uri} artists={data.artists} />
+      <AlbumCover image={data.images[1]} />
+      <AlbumInfo
+        name={data.name}
+        uri={data.external_urls.spotify}
+        artists={data.artists}
+      />
     </div>
   );
 };

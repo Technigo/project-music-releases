@@ -42,12 +42,41 @@ h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.icon-more {
+  width: 20px;
+}
+
+.icon-more circle {
+  fill: #fff;
+}
+
+.icon-play {
+  width: 80px;
+  margin: 0 10px;
+  transition: all 100ms linear;
+}
+
+.icon-play:hover {
+  transform: scale(1.1);
+}
+
+.icon-play path {
+  fill: white;
+}
+
+.icon-heart {
+  width: 30px;
+}
+
+.icon-heart path {
+  fill: #fff;
+}
+
 .album {
   display: flex;
   width: 302px;
   margin: 0 auto;
   flex-direction: column;
-  /* justify-content: center; */
   align-content: flex-end;
 }
 
@@ -112,7 +141,8 @@ h3 {
 }
 
 .album-cover-overlay:hover .album-cover-controls {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .album-cover-controls > div {
