@@ -3,11 +3,6 @@ import { Album } from './Album'
 import { Header } from './Header'
 import data from './data.json'
 console.log(data)
-const data2 = [
-  { name: "Oves" },
-  { name: "Nasses" },
-  { name: "Mickeys" },
-]
 
 
 export const App = () => {
@@ -16,7 +11,18 @@ export const App = () => {
       <Header />
       <section id="album-container">
         {data.albums.items.map((item) => {
-          return <Album key={item.id} name={item.name} image={item.images[1].url} />
+
+
+          // Since there can be multiple artists per album 
+          // I loop through the array artist and push the names into array = []
+          let array = []
+          for (let i = 0; i < item.artists.length; i++) {
+            array.push(item.artists[i].name)
+          }
+          // Using the join method to make a string with the artists divided by ", "
+          let artistsList = array.join(", ")
+
+          return <Album key={item.id} name={item.name} image={item.images[1].url} artists={artistsList} />
         })}
       </section>
     </div>
