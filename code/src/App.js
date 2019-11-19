@@ -5,8 +5,10 @@ console.log(data)
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="App">
+      {data.albums.items.map(item => {
+        return <div key={item.id}>{item.name}</div>;
+      })}
     </div>
-  )
-}
+  );
+};
