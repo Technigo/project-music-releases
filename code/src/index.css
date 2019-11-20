@@ -4,19 +4,44 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-#album-container {
+/* .container {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+.header {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#album-container {
+  background-color: rgb(139, 0, 86);
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.album {
-  background-color: aqua;
+#album-container > * {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(18, 19, 19);
+  height: 400px;
+  width: 300px;
   margin: 10px;
-}
+
+  
+} 
+
