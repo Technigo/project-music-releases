@@ -25,6 +25,7 @@ h1 {
   font-family: Helvetica, sans-serif;
   justify-self: left;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .releases {
@@ -105,6 +106,11 @@ h1 {
   width: 32px;
 }
 
+.play-icon {
+  height: 40px;
+  width: 40px;
+}
+
 @media screen and (min-width: 668px) {
   h1 {
     grid-column: 1 / span 2;
@@ -133,7 +139,7 @@ h1 {
     grid-template-rows: 1fr 80px 1fr;
   }
 
-  /* Hover states */
+  /* Hover */
   .album-artist-link:hover {
     border-bottom: 0.09rem solid #a0a0a0;
   }
@@ -144,7 +150,7 @@ h1 {
     border-bottom: 0.09rem solid #fff;
     margin-top: -0.09rem;
   }
-  
+
   .album-cover:hover::after {
     background-color: #000;
     content: '';
@@ -155,13 +161,20 @@ h1 {
     position: absolute;
     top: 0;
     width: 100%;
+    z-index: 3;
+  } 
+
+  .album-art:hover {
+    z-index: 2;
   }
+
 
   .album-cover:hover .dots-icon,
   .album-cover:hover .heart-icon,
   .album-cover:hover .play-icon {
     visibility: visible;
     z-index: 4;
+    position: relative;
   }
 
   .play-icon:hover {
@@ -169,7 +182,6 @@ h1 {
     width: 80px;
     top: 0;
     left: 0;
-    position: absolute;
+    position: relative;
   }
-
 }

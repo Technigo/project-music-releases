@@ -12,13 +12,16 @@ export const App = () => {
     <section className="releases">
       <h1>New albums &amp; singles</h1>
       {releases.map(album => {
-        return album.artists.map(artist => {
-          return (
-            <Album key={album.name} name={album.name} albumUrl={album.external_urls.spotify} image={album.images[1].url}>
-              <Artist key={artist.name} artist={artist.name} artistUrl={artist.external_urls.spotify} />
-            </Album>
-          )
-        })
+        return (
+          <Album key={album.id + album.album_type} name={album.name} url={album.external_urls.spotify} image={album.images[1].url}>
+            {album.artists.map(artist => {
+              return (
+                <Artist key={artist.id} name={artist.name} url={artist.external_urls.spotify} />
+              )
+            })}
+          </Album>
+        )
+      })
       })}
     </section>
   );

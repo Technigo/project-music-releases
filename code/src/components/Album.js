@@ -6,8 +6,8 @@ import play from 'components/play.svg'
 export const Album = (props) => {
   return (
     <article className="album">
-      <a href={props.albumUrl} className="album-link">
-        <div class="album-cover">
+      <a href={props.url} className="album-link">
+        <div className="album-cover">
           <img src={heart} alt="heart" className="heart-icon" />
           <img src={play} alt="Play" className="play-icon" />
           <img src={dots} alt="dots" className="dots-icon" />
