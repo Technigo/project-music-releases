@@ -5,43 +5,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-/* .container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 .header {
-  height: 50px;
   line-height: 50px;
-  padding-left: 20px;
   width: 100%;
   font-size: 20px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #album-container {
-  background-color: rgb(139, 0, 86);
+  background: #1a1b1c;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1500px;
+  padding-top: 20px;
 }
 
-#album-container > * {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(18, 19, 19);
-  height: 400px;
+.album-info {
   width: 300px;
-  margin: 10px;
+  margin: 0px 20px 40px 0px;
+  padding-top: 10px;
+}
 
-  
-} 
+.artist-name, .album-title {
+  font-family: Helvetica;
+  font-size: 14px;
+}
 
+.album-title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  padding-top: 8px;
+}
