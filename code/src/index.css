@@ -50,3 +50,16 @@ code {
   color: #a0a0a0;
   padding-top: 8px;
 }
+
+.artist-name a {
+  margin-right: 7px;
+}
+
+.album-info a:link, .album-info a:active, .album-info a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.album-info a:hover {
+  text-decoration: underline;
+}
