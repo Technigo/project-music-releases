@@ -13,7 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.header {
+header {
   line-height: 50px;
   width: 100%;
   font-size: 20px;
@@ -42,8 +42,13 @@ code {
 }
 
 .album-title {
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
+}
+
+.album-title a:link, .album-title a:visited {
+  color: #fff;
+  text-decoration: none;
 }
 
 .artist-name {
@@ -51,15 +56,68 @@ code {
   padding-top: 8px;
 }
 
+.artist-name a:link, .artist-name a:visited {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
 .artist-name a {
   margin-right: 7px;
 }
 
-.album-info a:link, .album-info a:active, .album-info a:visited {
+.album-info a:hover {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.album-info a:hover {
-  text-decoration: underline;
+.icon-play, .icon-heart, .icon-dots {
+  display: inline-block;
+  position: relative;
+}
+
+.icon-play:hover, .icon-heart:hover, .icon-dots:hover {
+  background-color: red;
+}
+
+.icon-heart {
+  height: 35px;
+  width: 35px;
+  top: 110px;
+  left: 50px;
+}
+
+.icon-play {
+  height: 70px;
+  width: 70px;
+  top: 125px;
+  left: 75px;
+}
+
+.icon-dots {
+  height: 35px;
+  width: 35px;
+  top: 110px;
+  left: 100px;
+}
+
+.album-img {
+  position: absolute;
+}
+
+.album-img:hover {
+  filter: brightness(30%);
+}
+
+.album-img:hover .icon-play {
+  display: inline-block;
+}
+
+/* .icon-play, .icon-heart, .icon-dots {
+  display: none;
+  position: relative;
+} */
+
+.album-cover {
+  height: 300px;
+  width: 300px;
 }

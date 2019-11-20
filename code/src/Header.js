@@ -3,9 +3,9 @@ import React from 'react'
 
 export const Header = () => {
     return (
-        <div className="header">
+        <header>
             New albums & singles
-        </div >
+        </header >
     )
 }
 
