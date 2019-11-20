@@ -1,12 +1,15 @@
-import React from 'react'
-import data from './data.json'
+import React from "react";
+import data from "./data.json";
+import { Album } from "./Album"
 
-console.log(data)
+
+console.log(data.albums.items);
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <h1>ALBUMS</h1>
+      {<Album />}
     </div>
-  )
-}
+  );
+};
