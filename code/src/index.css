@@ -136,25 +136,29 @@ header {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 700px) and (max-width: 1500px) {
+@media only screen and (min-width: 670px) and (max-width: 1400px) {
   #album-container {
-    max-width: 800px;
+    max-width: 1000px;
     justify-content: center;
     padding: 10px 0px;
   }
   header {
     font-size: 20px;
+    margin: 0px;
+    text-align: center;
   }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 698px) {
+@media only screen and (min-width: 355px) and (max-width: 668px) {
   #album-container {
-    max-width: 500px;
+    max-width: 400px;
     justify-content: center;
     padding: 10px 0px;
   }
   header {
     font-size: 22px;
+    margin: 0;
+    text-align: center;
   }
   .artist-name, .album-title {
     font-size: 18px;
