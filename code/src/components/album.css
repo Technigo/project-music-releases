@@ -67,20 +67,6 @@
   text-decoration: underline;
 }
 
-.artistTitle {
-  font-size: 14px;
-  font-weight: bold;
-  color: #a0a0a0;
-  font-family: Helvetica;
-  margin-top: 10px;
-  max-width: 100%;
-  text-decoration: none;
-}
-
-.artistTitle:hover {
-  text-decoration: underline;
-}
-
 /* TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
 
