@@ -1,7 +1,7 @@
 .albumCards {
   margin: 10px;
   width: 90%;
-  height: 380px;
+  height: 30%; /*30 % of what?*/
   position: relative;
 }
 
@@ -85,7 +85,6 @@
 
   .albumCards {
     width: 22%;
-    height: 350px;
   }
 
   .coverWrapper:hover .albumIcons {

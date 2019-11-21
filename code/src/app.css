@@ -1,7 +1,7 @@
 .app {
-  padding: 15px;
+  /* padding: 15px;
   max-width: 1250px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
 
 .appContent {
@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  padding: 25px;
+  max-width: 1300px;
 }
 
 /* TABLET */
@@ -23,6 +25,11 @@
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+
+  .app {
+    display: flex;
+    flex-direction: row;
+  }
 
   .appContent {
     flex-direction: row;

@@ -1,0 +1,18 @@
+/* Only show sidebar in desktop for now */
+.sideBar {
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: #000;
+  width: 300px;
+  padding: 0 15px;
+}
+
+}
