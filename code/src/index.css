@@ -59,12 +59,19 @@ h1 {
 .album-link {
   font-weight: bold;
   color: #fff;
+  display: block;
+}
+
+.album-artist:not(:last-child)::after {
+  color: #a0a0a0;
+  content: '\002C \0020';
 }
 
 .album-artist-link {
   color: #a0a0a0;
   margin-top: 2px;
 }
+
 
 .album-cover {
   align-items: center;
@@ -73,6 +80,7 @@ h1 {
   grid-template-rows: 1fr 80px 1fr;
   justify-items: center;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .album-art {
@@ -133,6 +141,7 @@ h1 {
 
   .album-title {
     display: inline-block;
+    margin-bottom: 3rem;
   }
 
   .album-cover {
@@ -142,13 +151,17 @@ h1 {
   /* Hover */
   .album-artist-link:hover {
     border-bottom: 0.09rem solid #a0a0a0;
+    padding-bottom: 0.1rem;
   }
 
-  .album-title:hover::after {
-    content: '';
-    display: block;
+  .custom-underline {
+    display: inline;
+    border-bottom: 0.09rem solid transparent;
+    padding-bottom: 0.1rem;
+  }
+
+  .custom-underline:hover {
     border-bottom: 0.09rem solid #fff;
-    margin-top: -0.09rem;
   }
 
   .album-cover:hover::after {

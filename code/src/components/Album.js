@@ -13,7 +13,7 @@ export const Album = (props) => {
           <img src={dots} alt="dots" className="dots-icon" />
           <img src={props.image} alt="" className="album-art" />
         </div>
-        <h2 className="album-title">{props.name}</h2 >
+        <h2 className="album-title custom-underline">{props.name}</h2 >
       </a>
       {props.children}
     </article>
