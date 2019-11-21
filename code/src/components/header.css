@@ -1,4 +1,13 @@
 
 h1 {
- font: 22px Helvetica #ffffff;
+ font:Helvetica;
+ color: #ffffff;
+ font-size: 22px;
+ margin-bottom: 3px;
+}
+
+.header {
+    display: flex;
+    margin: 10px 10px 20px 10px;
+    border-bottom: 1px solid #a0a0a071;
 }

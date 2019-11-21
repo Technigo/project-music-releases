@@ -1,4 +1,81 @@
 h2 {
-    font-size: 20px;
-    color: black;
+    font: Helvetica;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 3px 0px;
+}
+
+h3 {
+    font: Helvetica;
+    font-size: 14px;
+    color:  #a0a0a0;
+    margin: 2px 0px;
+}
+ .album-section {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+     border: 1px solid red;
+ }
+
+ .cover {
+     border: 1px solid pink;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+.cover img {
+   margin-top: 5px;
+   z-index: 1;
+}
+
+.cover:hover {
+    opacity: 0.5;
+ }
+
+.icons {
+    display: none;
+}
+
+.cover:hover .icons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    opacity: 1;
+}
+
+.icons img {
+    height: 70px;
+    margin: 0px 10px;
+}
+
+.icons img:hover {
+    height: 80px;
+    opacity: 3;
+}
+
+
+.album-name {
+    text-align: left;
+    margin: 0 px -6px;
+}
+
+.album-name:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.artist-name {
+    text-align: left;
+    margin: 0 px -6px;
+}
+
+.artist-name:hover {
+    text-decoration: underline;
+    color: #a0a0a0;
 }
