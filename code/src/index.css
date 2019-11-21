@@ -30,59 +30,73 @@ header {
   padding-top: 20px;
 }
 
+/* 
+  Album cover 
+*/
+
 .album-cover {
+  display: flex;
+  flex-direction: column;
   height: 300px;
   width: 300px;
-  z-index: -1;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-cover:hover .icons img {
+  display: block;
 }
 
 .album-img {
   position: absolute;
+  z-index: 2;
 }
 
-.album-cover:hover {
+.album-img:hover {
   filter: brightness(30%);
-  
 }
 
 .icons {
-  height: 300px;
-  width: 300px;
-  display: none;
-  z-index: 1;
-  position: absolute;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  z-index: 3;
 }
 
-.album-cover:hover .icons {
-  display: block;
- 
+.icons:hover~.album-img {
+  filter: brightness(30%);
 }
 
 .icon-play, .icon-heart, .icon-dots {
-  display: inline-block;
-  position: relative;
+  align-self: center;
+  justify-self: center;
+  display: none;
 }
 
 .icon-heart {
   height: 35px;
   width: 35px;
-  top: 110px;
-  left: 50px;
 }
 
 .icon-play {
-  height: 70px;
-  width: 70px;
-  top: 125px;
-  left: 75px;
+  height: 80px;
+  width: 80px;
+}
+
+.icon-play:hover {
+  height: 85px;
+  width: 85px;
+  pointer-events: fill;
 }
 
 .icon-dots {
   height: 35px;
   width: 35px;
-  top: 110px;
-  left: 100px;
 }
+
+/* 
+  Album info 
+*/
 
 .album-info {
   width: 300px;
@@ -115,20 +129,7 @@ header {
   text-decoration: none;
 }
 
-/* .artist-name a {
-  margin-right: 7px;
-} */
-
 .album-info a:hover {
   color: #fff;
   text-decoration: underline;
 }
-
-/* .album-img:hover .icon-play {
-  display: inline-block;
-} */
-
-/* .icon-play, .icon-heart, .icon-dots {
-  display: none;
-  position: relative;
-} */
