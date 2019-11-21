@@ -10,26 +10,30 @@ const releases = data.albums.items;
 export const App = () => {
   return (
     <section className="releases">
-      <h1>New albums &amp; singles</h1>
-      {releases.map(album => {
-        return (
-          <Album
-            key={album.id}
-            name={album.name}
-            url={album.external_urls.spotify}
-            image={album.images[1].url}>
-            {album.artists.map(artist => {
-              return (
-                <Artist
-                  key={artist.id}
-                  name={artist.name}
-                  url={artist.external_urls.spotify} />
-              )
-            })}
-          </Album>
-        )
-      })
-      })}
+      <header class="releases-header">
+        <h1 class="releases-title">New albums &amp; singles</h1>
+      </header>
+      <div class="releases-container">
+        {releases.map(album => {
+          return (
+            <Album
+              key={album.id}
+              name={album.name}
+              url={album.external_urls.spotify}
+              image={album.images[1].url}>
+              {album.artists.map(artist => {
+                return (
+                  <Artist
+                    key={artist.id}
+                    name={artist.name}
+                    url={artist.external_urls.spotify} />
+                )
+              })}
+            </Album>
+          )
+        })
+        })}
+        </div>
     </section>
   );
 };

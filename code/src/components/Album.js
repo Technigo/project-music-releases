@@ -8,10 +8,12 @@ export const Album = (props) => {
     <article className="album">
       <a href={props.url} className="album-link">
         <div className="album-cover">
-          <img src={heart} alt="heart" className="heart-icon" />
-          <img src={play} alt="Play" className="play-icon" />
-          <img src={dots} alt="dots" className="dots-icon" />
-          <img src={props.image} alt="" className="album-art" />
+          <img src={props.image} alt="" className="album-cover-image" />
+          <div class="album-options">
+            <img src={heart} alt="Add to favourites" className="favourite-icon icon" />
+            <img src={play} alt="Play" className="play-icon icon" />
+            <img src={dots} alt="More" className="more-icon icon" />
+          </div>
         </div>
         <h2 className="album-title custom-underline">{props.name}</h2 >
       </a>
