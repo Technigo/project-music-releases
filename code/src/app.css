@@ -1,0 +1,32 @@
+.app {
+  padding: 15px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.appContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .appContent {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+  .appContent {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+ 
+}

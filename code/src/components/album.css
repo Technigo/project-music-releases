@@ -1,0 +1,109 @@
+.albumCards {
+  margin: 10px;
+  width: 90%;
+  height: 380px;
+  position: relative;
+}
+
+.albumCover {
+  width: 100%;
+  max-height: 300px;
+}
+
+.albumIcons {
+  display: none;
+}
+
+.coverWrapper:hover .albumIcons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  top: 25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.coverWrapper:hover .albumCover {
+  opacity: 0.2;
+}
+
+.iconHeart {
+  width: 30px;
+  margin-left: 30px;
+  filter: invert(1);
+}
+
+.iconPlay {
+  width: 50px;
+  filter: invert(1);
+}
+
+.iconPlay:hover {
+  width: 60px;
+  cursor: pointer;
+}
+
+.iconDots {
+  width: 30px;
+  margin-right: 30px;
+  filter: invert(1);
+}
+
+.albumTitle {
+ font-size: 14px;
+ font-weight: bold;
+ color: #ffffff;
+ font-family: Helvetica;
+ margin-top: 10px;
+ max-width: 100%;
+ text-decoration: none;
+}
+
+.albumTitle:hover {
+  text-decoration: underline;
+}
+
+.artistTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a0a0a0;
+  font-family: Helvetica;
+  margin-top: 10px;
+  max-width: 100%;
+  text-decoration: none;
+}
+
+.artistTitle:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  .albumCards {
+    width: 45%;
+  }  
+
+  .coverWrapper:hover .albumIcons {
+    width: 90%;
+  }
+  
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+  .albumCards {
+    width: 22%;
+    height: 350px;
+  }
+
+  .coverWrapper:hover .albumIcons {
+    width: 100%;
+  }
+ 
+}
