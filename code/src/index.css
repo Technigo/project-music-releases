@@ -1,5 +1,8 @@
 body {
+  background: black;
+  color: white;
   margin: 0;
+  padding-left: 2vw;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +13,110 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-cover {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.heart-icon {
+  display: none;
+  height: 80px;
+  width: 80px;
+}
+
+.play-icon {
+  display: none;
+  height: 80px;
+  width: 80px;
+  transform-origin: 50% 50%;
+}
+
+.dots-icon {
+  display: none;
+  height: 80px;
+  width: 80px;
+}
+
+/* .album-cover:hover .heart-icon {
+  display: block;
+  position: absolute; 
+}  */
+
+.album-cover:hover .play-icon {
+  display: block;
+  position: absolute;
+} 
+
+.play-icon:hover {
+  transform: scale(1.2);
+} 
+
+/* .album-cover:hover .dots-icon {
+  display: block;
+  position: absolute;
+} */
+
+.artist-name, .artist-link {
+  color: #a0a0a0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.album-name, .album-link{
+  color: #ffffff;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.album-name:hover, .artist-name:hover  {
+  text-decoration: underline;
+}
+
+.artist-name:hover, .artist-link:hover  {
+  color: white;
+}
+
+
+@media(min-width: 768px) {
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-template-rows: repeat(2,2fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 0 auto;
+  }
+}
+
+
+@media(min-width: 1024px) {
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(4,4fr);
+  grid-template-rows: repeat(4,4fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+}
+
+img:hover {
+  opacity: 0.5;
+}
 }

@@ -1,12 +1,27 @@
 import React from 'react'
 import data from './data.json'
+import { Album } from './Album'
+import { Artist } from './Artist'
 
 console.log(data)
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="App">
+    <h3>New albums & singles</h3>
+
+    <div className="menu-container">
+    {data.albums.items.map((item) => (
+      <Album 
+      key={item.id} 
+      image={item.images[1].url}
+      linkalbum={item.uri}
+      album={item.name}
+      linkartist={item.artists[0].uri}
+      artist={item.artists[0].name}
+      />
+    ))}
+    </div>
     </div>
   )
 }
