@@ -1,12 +1,10 @@
 import React from 'react'
-import data from './data.json'
-
-console.log(data)
+import News from './components/News/News'
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <News />
     </div>
   )
 }
