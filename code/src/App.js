@@ -10,10 +10,10 @@ const releases = data.albums.items;
 export const App = () => {
   return (
     <section className="releases">
-      <header class="releases-header">
-        <h1 class="releases-title">New albums &amp; singles</h1>
+      <header className="releases-header">
+        <h1 className="releases-title">New albums &amp; singles</h1>
       </header>
-      <div class="releases-container">
+      <div className="releases-container">
         {releases.map(album => {
           return (
             <Album
