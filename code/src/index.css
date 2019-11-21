@@ -30,53 +30,37 @@ header {
   padding-top: 20px;
 }
 
-.album-info {
+.album-cover {
+  height: 300px;
   width: 300px;
-  margin: 0px 20px 40px 0px;
-  padding-top: 10px;
+  z-index: -1;
 }
 
-.artist-name, .album-title {
-  font-family: Helvetica;
-  font-size: 14px;
+.album-img {
+  position: absolute;
 }
 
-.album-title {
-  color: #fff;
-  font-weight: bold;
+.album-cover:hover {
+  filter: brightness(30%);
+  
 }
 
-.album-title a:link, .album-title a:visited {
-  color: #fff;
-  text-decoration: none;
+.icons {
+  height: 300px;
+  width: 300px;
+  display: none;
+  z-index: 1;
+  position: absolute;
 }
 
-.artist-name {
-  color: #a0a0a0;
-  padding-top: 8px;
-}
-
-.artist-name a:link, .artist-name a:visited {
-  color: #a0a0a0;
-  text-decoration: none;
-}
-
-.artist-name a {
-  margin-right: 7px;
-}
-
-.album-info a:hover {
-  color: #fff;
-  text-decoration: underline;
+.album-cover:hover .icons {
+  display: block;
+ 
 }
 
 .icon-play, .icon-heart, .icon-dots {
   display: inline-block;
   position: relative;
-}
-
-.icon-play:hover, .icon-heart:hover, .icon-dots:hover {
-  background-color: red;
 }
 
 .icon-heart {
@@ -100,24 +84,51 @@ header {
   left: 100px;
 }
 
-.album-img {
-  position: absolute;
+.album-info {
+  width: 300px;
+  margin: 0px 20px 40px 0px;
+  padding-top: 10px;
 }
 
-.album-img:hover {
-  filter: brightness(30%);
+.artist-name, .album-title {
+  font-family: Helvetica;
+  font-size: 14px;
 }
 
-.album-img:hover .icon-play {
+.album-title {
+  color: #fff;
+  font-weight: bold;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  padding-top: 8px;
+}
+
+.album-title a:link, .album-title a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.artist-name a:link, .artist-name a:visited {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+/* .artist-name a {
+  margin-right: 7px;
+} */
+
+.album-info a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* .album-img:hover .icon-play {
   display: inline-block;
-}
+} */
 
 /* .icon-play, .icon-heart, .icon-dots {
   display: none;
   position: relative;
 } */
-
-.album-cover {
-  height: 300px;
-  width: 300px;
-}
