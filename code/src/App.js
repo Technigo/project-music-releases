@@ -14,12 +14,6 @@ import { Album } from "./Components/Album";
 
 // });
 
-// return (
-//   <div>
-//     <AlbumList albums={albums} />
-//   </div>
-// );
-
 // return data.albums.items.map(album => {
 //   return (
 //     <div>
@@ -75,16 +69,29 @@ import { Album } from "./Components/Album";
 export const App = () => {
   return (
     <div>
-      {data.albums.items.map(album => {
-        return (
-          <div key={album.id}>
-            <Album image={album.images[1].url} name={album.name} />
-            {album.artists.map(art => {
-              return <Artist key={art.id} name={art.name} />;
-            })}
-          </div>
-        );
-      })}
+      <h1>New albums & singles</h1>
+      <div className="flex-container">
+        {data.albums.items.map(album => {
+          return (
+            <div key={album.id} className="album_artist_container">
+              <Album
+                image={album.images[1].url}
+                name={album.name}
+                url={album.external_urls.spotify}
+              />
+              {album.artists.map(art => {
+                return (
+                  <Artist
+                    key={art.id}
+                    name={art.name}
+                    url={art.external_urls.spotify}
+                  />
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

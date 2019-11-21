@@ -1,4 +1,5 @@
 import React from "react";
+// import "./album.css";
 
 // return <div>album: {props.name}</div>;
 // const { data } = props;
@@ -16,7 +17,9 @@ export const Album = props => {
   return (
     <div>
       <img src={props.image} alt="Album images" />
-      <h4> {props.name}</h4>
+      <a href={props.url} target="_blank">
+        <h4>{props.name}</h4>
+      </a>
     </div>
   );
 };
