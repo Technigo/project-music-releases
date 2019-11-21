@@ -13,17 +13,65 @@ body {
   background-color: #181818;
 }
 
+.app {
+  display: flex;
+
+}
+
+aside {
+  width: 250px;
+  height: 100vh;
+  background-color: #111111;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  padding: 10px 0;
+}
+
+aside p {
+  color: #a0a0a0;
+}
+
+.hidden {
+  display: none;
+}
+
+aside p:hover {
+  color: #fff;
+}
+
+aside p:hover .hidden {
+  display: inline;
+}
+
+main {
+  flex-grow: 1;
+}
+
 h2 {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   color: #fff;
   margin: 20px 0;
 }
+
 h3 {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   color: #fff;
   margin: 10px 0;
+}
+h3:hover,
+p:hover {
+  text-decoration: underline;
 }
 
 p{
@@ -57,7 +105,7 @@ p{
   grid-column: 1/2;
 }
 
-ul {
+.album ul {
   width: 100%;
   height: 100%;
   grid-row: 1/2;
@@ -73,16 +121,16 @@ ul {
   opacity: 0;
 }
 
-ul:hover {
+.album ul:hover {
   opacity: 0.8;
 }
 
-ul li {
+.album ul li {
   list-style: none;
   opacity: 0.5;
 }
 
-ul li img {
+.album ul li img {
   width: 100%;
 }
 
