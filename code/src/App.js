@@ -41,19 +41,3 @@ export const App = () => {
     </div>
   )
 }
-
-//Working APP without sidebar
-// export const App = () => {
-//   return (
-//     <div className="app">
-//       <Header />
-//       <div className="appContent">
-//         {data.albums.items.map(item => {
-//           return (
-//             <Album key={item.id} item={item} />
-//           )
-//         })}
-//       </div>
-//     </div>
-//   )
-// }
