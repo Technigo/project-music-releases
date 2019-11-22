@@ -1,0 +1,4 @@
+.albumCard {
+	display: flex;
+	flex-wrap: wrap;
+}
