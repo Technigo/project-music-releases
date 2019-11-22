@@ -1,0 +1,21 @@
+.wrapper {
+	display: flex;
+	margin: 20px;
+}
+
+.albumCovers {
+	width: 400px;
+	height: auto;
+}
+
+.albumCards {
+	width: 400px;
+}
+
+.albumName {
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	font-family: Helvetica;
+}

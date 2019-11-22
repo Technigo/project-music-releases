@@ -1,0 +1,18 @@
+.logos {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	width: 350px;
+}
+
+.heart {
+	width: 30px;
+}
+
+.more {
+	width: 30px;
+}
+
+.play {
+	width: 50px;
+}
