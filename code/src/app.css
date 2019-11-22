@@ -31,7 +31,7 @@
     padding: 15px 0;
   }
 
-  .playlistWrapper {
+  .playlistContent {
     display: flex;
     flex-direction: column;
     height: 100%;

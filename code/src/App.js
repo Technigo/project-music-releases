@@ -10,7 +10,6 @@ import { Playlist } from './components/Playlist'
 //Get the data from API (data.albums.items is where every release info is)
 //Using the id from API to uniqe key ID
 //item={item} is getting all info from comp Album 
-//Which one is parent component and child component?
 
 export const App = () => {
   return (
@@ -18,7 +17,7 @@ export const App = () => {
 
       <section className="sideBar">
         <h1>Popular playlists</h1>
-        <div className="playlistWrapper">
+        <div className="playlistContent">
           {playlistdata.playlists.items.map(item => {
             return (
               <Playlist key={item.id} item={item} />
@@ -38,6 +37,7 @@ export const App = () => {
           })}
         </div>
       </div>
+
     </div>
   )
 }
