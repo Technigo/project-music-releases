@@ -1,6 +1,5 @@
 import React from 'react'
 import data from './data.json'
-import { Artist } from './Artist'
 import { ReactComponent as Heart} from 'heart.svg'
 import { ReactComponent as Play} from 'play.svg'
 import { ReactComponent as Dots} from 'dots.svg'

@@ -16,23 +16,90 @@ code {
 }
 
 h3 {
+  padding-left: 4vw;
   text-align: center;
 }
 
-.menu-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+img {
+  height: 240px;
+  width: 240px;
 }
 
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  padding-left: 8vw;
+  margin-left: 12vw;
+}
+
+/* Styling the sidebar */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover {
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 32px;
+  height: 26px;
+  left: 33px;
+  top: 33px;
+}
+
+.bm-burger-bars {
+  background: #373a47;
+}
+
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 2em 1em 0;
+  font-size: 1.15em;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Styling the album covers */
 .album-cover {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
   position: relative;
-  height: 300px;
-  width: 300px;
+  height: 240px;
+  width: 240px;
+}
+
+.album-cover svg path {
+  fill: white;
 }
 
 .heart-icon {
@@ -50,6 +117,7 @@ h3 {
 
 .dots-icon {
   display: none;
+  fill: white;
   height: 40px;
   width: 40px;
 }
@@ -78,31 +146,48 @@ a {
   color: white;
 }
 
-
+/* Using media queries */
+/* Medium sized devices (e.g. tablets) */
 @media(min-width: 768px) {
-  h3 {
-    text-align: left;
-  }
-
-  .menu-container {
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    grid-template-rows: repeat(2,2fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin: 0 auto;
-  }
+h3 {
+  padding-left: 4vw;
 }
 
+img {
+  height: 270px;
+  width: 270px;
+}
 
+.album-cover {
+  height: 270px;
+  width: 270px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-template-rows: repeat(2,2fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+  padding-left: 8vw;
+}
+}
+
+/* Large devices (e.g. laptops) */
 @media(min-width: 1024px) {
+h3 {
+  text-align: left;
+}
+
 .menu-container {
   display: grid;
   grid-template-columns: repeat(4,4fr);
   grid-template-rows: repeat(4,4fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
   margin: 0 auto;
+  padding-left: 4vw;
 }
 
 .album-cover:hover .heart-icon {
@@ -127,7 +212,7 @@ a {
   margin-left: 16vw;
 }
 
-img:hover {
+img:hover{
   opacity: 0.5;
 }
 }

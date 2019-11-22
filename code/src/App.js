@@ -1,13 +1,14 @@
 import React from 'react'
 import data from './data.json'
 import { Album } from './Album'
-import { Artist } from './Artist'
+import SideBar from './sidebar'
 
 console.log(data)
 
 export const App = () => {
   return (
     <div className="App">
+    <SideBar/>
     <h3>New albums & singles</h3>
 
     <div className="menu-container">
