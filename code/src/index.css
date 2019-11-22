@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: black;
 }
 
 code {
@@ -13,17 +13,4 @@ code {
     monospace;
 }
 
-.App {
-  display: block;
-  width: 200px;
-  height: 200px;
-  padding:10px;
-  margin: 20px;
-  background-color: black;
-}
 
-.Album-title{
-  font-size: 14px;
-  font: Helvetica;
-  color: #ffffff;
-}

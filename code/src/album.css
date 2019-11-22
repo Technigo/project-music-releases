@@ -1,0 +1,100 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+.Album-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+} 
+
+a {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
+  
+}
+
+h1{
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #ffffff;
+}
+
+.Image {
+  margin: 30px auto;
+}
+
+.Album {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.Artist {
+  color:#a0a0a0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:50%;
+  color:#ffffff;
+}
+.heart-icon {
+  display: none;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  margin: 5px;
+  color:#ffffff;
+  order: 0;
+}
+.play-icon {
+  display: none;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  margin: 5px;
+  color:#ffffff;
+  order: 1;
+}
+.dots-icon {
+  display: none;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  margin: 5px;
+  color:#ffffff;
+  order: 2;
+}
+.Album-container:hover .play-icon {
+  display: block;
+  position: absolute;
+  
+}
+.Album-container:hover .heart-icon {
+  display: block;
+  position: absolute;
+
+}
+
+.Album-container:hover .dots-icon {
+  display: block;
+  position: absolute;
+  
+} 
