@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Album = (props) => {
+  const artistsList = props.artistName.map((element) => {
+    return (<span>{element.name} </span>)
+  })
   return (
     <article className="album">
       <img src={props.img} alt="album cover" className="album-img" />
@@ -11,7 +14,7 @@ const Album = (props) => {
       </ul>
       <section>
         <h3>{props.albumName}</h3>
-        <p>{props.artistName}</p>
+        <p>{artistsList}</p>
       </section>
     </article>
   )

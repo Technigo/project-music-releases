@@ -19,7 +19,7 @@ class News extends Component {
           key={album.id}
           img={album.images[0].url}
           albumName={album.name}
-          artistName={album.artists[0].name} />
+          artistName={album.artists} />
       )
     })
     return (
