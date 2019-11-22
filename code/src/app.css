@@ -1,9 +1,9 @@
 /* Only show sidebar in tablet and desktop for now */
-.sideBar {
+.sidebar {
   display: none;
 }
 
-.appContent {
+.app-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -15,7 +15,7 @@
 /* TABLET & DESKTOP */
 @media (min-width: 667px) {
 
-  .sideBar {
+  .sidebar {
     display: flex;
     flex-direction: column;
     color: #fff;
@@ -24,20 +24,20 @@
     padding: 0 15px;
   }
 
-  .sideBar h1 {
+  .sidebar h1 {
     font-size: 18px;
     border-bottom: 0.01em solid #333333;
     margin: 0 0 25px 0;
     padding: 15px 0;
   }
 
-  .playlistContent {
+  .playlist-content {
     display: flex;
     flex-direction: column;
     height: 100%;
   }
 
-  .sideFooter {
+  .side-footer {
     color: #fff;
     font-size: 11px;
     align-self: flex-end;
@@ -49,7 +49,7 @@
     flex-direction: row;
   }
 
-  .appContent {
+  .app-content {
     flex-direction: row;
     flex-wrap: wrap;
   }

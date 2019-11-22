@@ -1,7 +1,7 @@
 /* TABLET & DESKTOP */
 @media (min-width: 667px) {
 
-  .playlistCard {
+  .playlist-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +11,7 @@
     font-family: Helvetica;
   }
   
-  .playlistCover {
+  .playlist-cover {
     width: 150px;
     margin: 10px 0;
   }
@@ -26,7 +26,7 @@
     text-decoration: underline;
   }
   
-  .playlistOwner {
+  .playlist-owner {
     color: #a0a0a0;
     margin: 5px 0;
   }

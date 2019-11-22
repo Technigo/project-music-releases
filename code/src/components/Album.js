@@ -10,12 +10,12 @@ import { Icons } from './Icons'
 export const Album = (props) => {
   // console.log(props)
   return (
-    <div className="albumCards">
-      <div className="coverWrapper">
-        <img src={props.item.images[1].url} alt="album cover" className="albumCover" />
+    <div className="album-cards">
+      <div className="cover-wrapper">
+        <img src={props.item.images[1].url} alt="album cover" className="album-cover" />
         <Icons />
       </div>
-      <div><a className="albumTitle" href={props.item.external_urls.spotify}>{props.item.name}</a></div>
+      <div><a className="album-title" href={props.item.external_urls.spotify}>{props.item.name}</a></div>
 
       <div className="artist">
         {props.item.artists.map(item => {
