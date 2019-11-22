@@ -1,18 +1,41 @@
-/* Only show sidebar in desktop for now */
-.sideBar {
-  display: none;
-}
-
 /* DESKTOP */
 @media (min-width: 1025px) {
 
-.sideBar {
+.playlistCard {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 0.01em solid #333333; */
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-family: Helvetica;
+}
+
+.playlistCover {
+  width: 150px;
+  margin: 10px 0;
+}
+
+a  {
+  text-decoration: none;
   color: #fff;
-  background: #000;
-  width: 300px;
-  padding: 0 15px;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.playlistOwner {
+  color: #a0a0a0;
+  margin: 5px 0;
+}
+
+p {
+  color: #a0a0a0;
+  margin: 0;
+  font-size: 11px;
 }
 
 }

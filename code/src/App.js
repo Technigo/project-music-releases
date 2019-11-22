@@ -15,12 +15,17 @@ import { Playlist } from './components/Playlist'
 export const App = () => {
   return (
     <div className="app">
+
       <section className="sideBar">
-        {playlistdata.playlists.items.map(item => {
-          return (
-            <Playlist key={item.id} item={item} />
-          )
-        })}
+        <h1>Popular playlists</h1>
+        <div className="playlistWrapper">
+          {playlistdata.playlists.items.map(item => {
+            return (
+              <Playlist key={item.id} item={item} />
+            )
+          })}
+        </div>
+        <div className="sideFooter">Technigo Bootcamp 2019 © Sofie Nyblad</div>
       </section>
 
       <div className="mainContent">

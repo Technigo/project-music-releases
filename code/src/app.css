@@ -1,7 +1,12 @@
-.app {
-  /* padding: 15px;
+/* .app {
+  padding: 15px;
   max-width: 1250px;
-  margin: 0 auto; */
+  margin: 0 auto;
+} */
+
+/* Only show sidebar in desktop for now */
+.sideBar {
+  display: none;
 }
 
 .appContent {
@@ -25,6 +30,35 @@
 
 /* DESKTOP */
 @media (min-width: 1025px) {
+
+  .sideBar {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: #000;
+    width: 300px;
+    padding: 0 15px;
+  }
+
+  .sideBar h1 {
+    font-size: 18px;
+    border-bottom: 0.01em solid #333333;
+    margin: 0 0 25px 0;
+    padding: 15px 0;
+  }
+
+  .playlistWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sideFooter {
+    color: #fff;
+    font-size: 12px;
+    align-self: flex-end;
+    padding-bottom: 30px;
+  }
 
   .app {
     display: flex;
