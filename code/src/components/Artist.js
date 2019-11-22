@@ -7,8 +7,6 @@ import './artist.css'
 export const Artist = (props) => {
   // console.log(props)
   return (
-    <div>
-      <a className="artistTitle" href={props.item.external_urls.spotify}>{props.item.name}</a>
-    </div>
+    <a className="artistTitle" href={props.item.external_urls.spotify}>{props.item.name}</a>
   )
 }

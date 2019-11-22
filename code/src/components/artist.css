@@ -10,3 +10,7 @@
 .artistTitle:hover {
   text-decoration: underline;
 }
+
+.artistTitle:not(:last-child):after {      
+  content: "\002C \0020"; /* To separate the multiple artists with a comma and space */
+}
