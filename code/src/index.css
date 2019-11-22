@@ -83,12 +83,15 @@ header {
 .icon-play {
   height: 80px;
   width: 80px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 
 .icon-play:hover {
-  height: 85px;
-  width: 85px;
-  pointer-events: fill;
+  height: 90px;
+  width: 90px;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
 }
 
 .icon-dots {
