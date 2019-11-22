@@ -7,12 +7,14 @@ export const Album = (props) => {
       <div className="album-cover">
         <div className="icons">
           <img className="icon-heart" src="icons/heart.svg" alt="Heart" />
-          <img className="icon-play" src="icons/play.svg" alt="Play" />
+          <div>
+            <a href={props.playIconURL}><img className="icon-play" src="icons/play.svg" alt="Play" /></a>
+          </div>
           <img className="icon-dots" src="icons/dots.svg" alt="Dots" />
         </div>
         <img className="album-img" src={props.image} alt="Album" />
-
       </div>
+
       <div className="album-info">
         <div className="album-title">
           <a href={props.albumURL}>{props.albumTitle}</a>

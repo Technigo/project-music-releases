@@ -124,6 +124,10 @@ header {
   padding-top: 8px;
 }
 
+/* .artist-name:not(:last-child):after {
+  content: "\002C \0020";
+} */
+
 .album-title a:link, .album-title a:visited {
   color: #fff;
   text-decoration: none;
@@ -141,8 +145,8 @@ header {
 
 @media only screen and (min-width: 670px) and (max-width: 1400px) {
   #album-container {
-    max-width: 1000px;
-    justify-content: center;
+    max-width: 900px;
+    justify-content: space-around;
     padding: 10px 0px;
   }
   header {
@@ -152,7 +156,7 @@ header {
   }
 }
 
-@media only screen and (min-width: 355px) and (max-width: 668px) {
+@media only screen and (min-width: 355px) and (max-width: 670px) {
   #album-container {
     max-width: 400px;
     justify-content: center;
