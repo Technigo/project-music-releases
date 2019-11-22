@@ -1,0 +1,20 @@
+.album-controls {
+  display: none;
+}
+
+.album-art:hover .album-controls {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.album-controls svg {
+  width: 50px;
+}

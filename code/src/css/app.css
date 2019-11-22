@@ -1,0 +1,7 @@
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  font-size: 14px;
+  font-family: Helvetica;
+}
