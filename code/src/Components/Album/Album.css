@@ -1,5 +1,6 @@
 h4 {
   color: #fff;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 0.875rem;
 }
@@ -25,7 +26,9 @@ h4:hover {
 img {
   width: 100%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  opacity: 1;
 }
 
 @media (min-width: 668px) {
