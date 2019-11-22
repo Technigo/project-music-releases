@@ -7,9 +7,9 @@ import { Album } from './components/Album'
 import { Playlist } from './components/Playlist'
 
 //console.log(data)
-//Get the data from API (data.albums.items is where every release info is)
-//Using the id from API to uniqe key ID
-//item={item} is getting all info from comp Album 
+//Get the data from API (data.albums.items)
+//Using the id from API to uniqe key ID which is needed for React
+//item={item} is getting all data from comp Album 
 
 export const App = () => {
   return (

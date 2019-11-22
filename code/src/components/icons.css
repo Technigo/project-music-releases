@@ -1,0 +1,33 @@
+.iconHeart {
+  width: 30px;
+  margin-left: 30px;
+  filter: invert(0.8);
+}
+
+.iconHeart:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.iconPlay {
+  width: 50px;
+  filter: invert(0.8);
+}
+
+.iconPlay:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: invert(1);
+  transition: all .2s ease-in-out;
+}
+
+.iconDots {
+  width: 30px;
+  margin-right: 30px;
+  filter: invert(0.8);
+}
+
+.iconDots:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
