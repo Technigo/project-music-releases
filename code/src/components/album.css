@@ -34,24 +34,36 @@
 .iconHeart {
   width: 30px;
   margin-left: 30px;
+  filter: invert(0.8);
+}
+
+.iconHeart:hover {
+  cursor: pointer;
   filter: invert(1);
 }
 
 .iconPlay {
   width: 50px;
-  filter: invert(1);
+  filter: invert(0.8);
 }
 
 .iconPlay:hover {
   width: 60px;
   cursor: pointer;
+  filter: invert(1);
 }
 
 .iconDots {
   width: 30px;
   margin-right: 30px;
+  filter: invert(0.8);
+}
+
+.iconDots:hover {
+  cursor: pointer;
   filter: invert(1);
 }
+
 
 .albumTitle {
  font-size: 14px;
