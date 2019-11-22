@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Artist } from "./Components/Artist";
+import { Artist } from "./Components/Artist/Artist";
 import { Album } from "./Components/Album/Album";
 
 import data from "./data.json";
@@ -24,7 +24,6 @@ export const App = () => {
   return (
     <div>
       <h1>New albums & singles</h1>
-      {/* <AlbumView /> */}
       <div className="flex-container">{data.albums.items.map(renderAlbum)}</div>
     </div>
   );
