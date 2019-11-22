@@ -1,0 +1,18 @@
+.album-cover {
+  margin-top: 3em;
+}
+
+.moreDetails {
+  display: none;
+}
+
+.album-cover:hover .moreDetails {
+  display: block;
+  position: absolute;
+  color: white;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}

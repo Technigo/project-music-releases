@@ -1,20 +1,18 @@
 import React from "react"
-import { AlbumInfo } from "components/AlbumInfo"
-import { AlbumCover } from "components/AlbumCover"
+import { Album } from "components/Album"
 import data from "./data.json"
 
 console.log(data)
 
 export const App = () => {
   return (
-    <div class='flex-container'>
-      {data.albums.items.map(album => (
-        <div key={album.id}>
-          <AlbumCover image={album.images[1].url} />
-
-          <AlbumInfo name={album.name} />
-        </div>
-      ))}
+    <div>
+      <h1>New albums and singles</h1>
+      <div className='flex-container'>
+        {data.albums.items.map(album => (
+          <Album key={album.id} album={album} />
+        ))}
+      </div>
     </div>
   )
 }

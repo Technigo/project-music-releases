@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
@@ -15,4 +16,11 @@ code {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  margin: 1em;
+}
+
+h1 {
+  font-size: 1em;
+  margin: 1.4em 0 -2.5em 2em;
+  color: #fff;
 }

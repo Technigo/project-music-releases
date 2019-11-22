@@ -1,0 +1,15 @@
+.album-info {
+  font-family: "helvetica";
+}
+
+h2 {
+  font-size: 0.7em;
+  color: #fff;
+  margin-block-end: 0.4em;
+}
+
+h3 {
+  font-size: 0.7em;
+  color: #a0a0a0;
+  margin-block-start: auto;
+}
