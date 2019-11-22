@@ -5,7 +5,9 @@ const styles = {
 
 flex: {
     display: "flex",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    justifyContent: "space-evenly",
+    width: "100%"
 },
 
 albumCoverWrapper: {
@@ -14,10 +16,39 @@ albumCoverWrapper: {
   overflow: "hidden",
 },
 
-albumCover: {
-
-    
+imgWrapper: {
+position: "relative"
  },
+
+ hoverBackground: {
+  position: "absolute",
+  width: "100%",
+  height: "100%",
+  top: 0,
+  background: "#222",
+  opacity: 0.5
+ },
+ 
+ hoverPlay: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    top: 0,
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center"
+   },
+
+iconImg: {
+    width: "20px"
+},
+
+playImg: (scale) => {
+    return {
+    width: "40px",
+    transform: scale && "scale(1.3)"
+}},
 
 img: {
     width: "100%"
