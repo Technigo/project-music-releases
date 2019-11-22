@@ -5,9 +5,126 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #171717;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  background: #171717;
+  width: 100%;
+}
+h3.Header {
+  color: white;
+  border-bottom: 1px solid #302f2f;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.Album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.AlbumContainer {
+  margin-bottom: 20px;
+  background: #171717;
+  height: 300px;
+  width: 200px;
+  margin-right: 3%;
+}
+
+.AlbumImage {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.AlbumContent,
+p {
+  font-size: 12px;
+  color: white;
+}
+
+p.AlbumName {
+  font-weight: bold;
+}
+
+.AlbumName:hover {
+  text-decoration: underline;
+}
+
+.ArtistName:hover {
+  text-decoration: underline;
+}
+
+.ArtistContainer {
+  display: flex;
+}
+
+.ArtistContent {
+  margin-top: -270px;
+}
+.iconContainer {
+  background: #e975752c;
+}
+
+.icons {
+  display: flex;
+  align-content: center;
+  height: 202px;
+  width: 200px;
+  position: relative;
+  z-index: 3;
+  top: -275px;
+  background: #2928289c;
+  opacity: 0;
+}
+
+.icons:hover {
+  opacity: 1;
+}
+
+.iconsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 200px;
+  margin-top: 70px;
+}
+
+img.iconHeart {
+  height: 25px;
+  width: 25px;
+  margin-top: 10px;
+  fill: white;
+}
+
+.iconPlay {
+  height: 50px;
+  width: 50px;
+  fill: white;
+}
+
+.iconPlay:hover {
+  width: 55px;
+  height: 55px;
+  color: rgba(255, 255, 255, 0.851);
+}
+
+.iconDots {
+  height: 15px;
+  width: 20px;
+  margin-top: 15px;
 }
