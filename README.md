@@ -18,7 +18,8 @@ In the `code/src/data.json` an API response from Spotify is included which conta
 ## Technologies used
 HTML5 <br>
 CSS3 <br>
-React
+React <br>
+JSX
 
 <br>
 <br>
