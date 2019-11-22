@@ -1,6 +1,8 @@
 import React from "react";
+import "./icons.css";
+import data from "./data.json";
 
-export const Icons = () => (
+export const Icons = props => (
   <div>
     <div className="icons">
       <div className="iconsContainer">
@@ -9,11 +11,15 @@ export const Icons = () => (
           src="./icons/heart.svg"
           alt="Heart icon for favourite"
         ></img>
-        <img
-          className="iconPlay"
-          src="./icons/play.svg"
-          alt="Play icon to play song"
-        ></img>
+
+        <a href={data.albums.items[0].external_urls.spotify}>
+          <img
+            className="iconPlay"
+            src="./icons/play.svg"
+            alt="Play icon to play song"
+          ></img>
+        </a>
+
         <img
           className="iconDots"
           src="./icons/dots.svg"

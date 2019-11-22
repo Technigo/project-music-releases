@@ -1,6 +1,30 @@
 import React from "react";
-import data from "./data.json";
 import { Icons } from "./Icons";
+
+export const Albums = props => {
+  return (
+    <div className="AlbumContainer">
+      <div className="ArtistContainer">
+        <div>
+          <img className="AlbumImage" src={props.image} alt="albumImage"></img>
+          <div className="iconsContainer">
+            <Icons />
+          </div>
+          <div className="ArtistContent">
+            <a href={props.albumURL}>
+              <p className="AlbumName">{props.name}</p>
+            </a>
+            <a href={props.artistURL}>
+              <p className="ArtistName">{props.artist}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/*
 
 export const Albums = () => {
   return (
@@ -21,7 +45,9 @@ export const Albums = () => {
                 </div>
                 <div className="ArtistContent" key={item.artist}>
                   <p className="AlbumName">{item.name}</p>
-                  <p className="ArtistName">{item.artists[0].name}</p>
+                  <a href={item.external_urls.spotify}>
+                    <p className="ArtistName">{item.artists[0].name}</p>
+                  </a>
                 </div>
               </div>
             </div>
@@ -33,25 +59,5 @@ export const Albums = () => {
   );
 };
 
-/*
 
-
-
-export const Albums = props => (
-  <div className="AlbumContainer">
-    <div className="ArtistContainer">
-      <div>
-        <img
-          className="AlbumImage"
-          src={props.images[1].url}
-          alt="albumImage"
-        ></img>
-
-        <div className="ArtistContent">
-          <p>{props.name}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
 */

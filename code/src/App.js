@@ -10,31 +10,32 @@ export const App = () => {
   return (
     <header>
       <Header />
-      <Albums />
-    </header>
-  );
-};
-
-/*
-
-
-
-export const App = () => {
-  return (
-    <header>
-      <Header />
-
       <div className="Album">
         {data.albums.items.map(album => (
           <Albums
-            key={album.image + album.name}
+            key={album.id + album.name}
             image={album.images[1].url}
             name={album.name}
-            artist={album.artist}
+            artist={album.artists[0].name}
+            albumURL={album.external_urls.spotify}
+            artistURL={album.artists[0].external_urls.spotify}
           />
         ))}
       </div>
     </header>
   );
 };
+
+/*
+
+export const App = () => {
+  return (
+    <header>
+      <Header />
+      <Albums />
+    </header>
+  );
+};
+
+
 */
