@@ -1,8 +1,33 @@
-.App-container{
-  display: flex;
-  flex-wrap: wrap;
+
+
+
+@media (max-width: 650px) {
+  .App-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 300px;
+    margin: auto; */
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+h1 {
   width: 300px;
   margin: auto;
+}
+
+@media (min-width: 651px){
+  .App-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 650px;
+    margin:16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  
 }
 
 
