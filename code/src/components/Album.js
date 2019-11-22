@@ -27,28 +27,3 @@ export const Album = (props) => {
     </div>
   )
 }
-
-// export const Album = (props) => {
-//   // console.log(props)
-//   return (
-//     <div className="albumCards">
-//       <div className="coverWrapper">
-//         <img src={props.item.images[1].url} alt="album cover" className="albumCover" />
-//         <div className="albumIcons">
-//           <img src="/icons/heart.svg" alt="heart" className="iconHeart" />
-//           <img src="/icons/play.svg" alt="play" className="iconPlay" />
-//           <img src="/icons/dots.svg" alt="dots" className="iconDots" />
-//         </div>
-//       </div>
-//       <div><a className="albumTitle" href={props.item.external_urls.spotify}>{props.item.name}</a></div>
-
-//       <div className="artist">
-//         {props.item.artists.map(item => {
-//           return (
-//             <Artist key={item.id} item={item} />
-//           )
-//         })}
-//       </div>
-//     </div>
-//   )
-// }
