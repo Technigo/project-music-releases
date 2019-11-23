@@ -47,7 +47,7 @@ h1{
   fill: white;
 }
 
-.Album-container .Image:hover .icons-container {
+.Album-container:hover .icons-container {
   display: flex;
   justify-content: center;
   align-items: center;
