@@ -1,13 +1,79 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+.artist-info {
+  color: white;
+}
+
+.release-title {
+  padding: 15px;
+  border-bottom: solid 1px #2a2b2d;
+}
+
+.release-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.artist-name {
+  font-weight: lighter;
+  margin: 5px 0px;
+}
+
+.album-title {
+  margin: 5px 0px;
+}
+
+.album-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 320px;
+  padding: 15px;
+}
+
+.album-img {
+  width: 310px;
+}
+
+@media (min-width: 650px) {
+  .release-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 920px) {
+  .release-container {
+    column-count: 3;
+  }
+  .album-container {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1050px) {
+  .release-container {
+    column-count: 4;
+  }
+  .album-container {
+    width: 20%;
+  }
 }
