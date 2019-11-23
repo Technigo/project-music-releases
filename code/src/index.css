@@ -1,11 +1,12 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #171717;
   color: white;
 }
 
@@ -14,17 +15,60 @@ code {
     monospace;
 }
 
-.app-components {
-  display: flex;
-  flex-flow: wrap;
+header {
+  border-bottom: 1px solid #212121;
+  color: #ffffff;
+  max-width: 1250px;
+  margin: 0 10px;
+  font-size: 16px;
 }
 
-.album-containers {
-  padding: 10px;
-  flex-flow: wrap;
-  width: 230px;
+h2 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 14px;
+  font-family: "Helvetica";
+  color: #a0a0a0;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.artist-link {
+  text-decoration: none;
+}
+
+.artist-link:hover {
+  text-decoration: underline #a0a0a0;
+}
+
+.album-link {
+  text-decoration: none;
+}
+
+.album-link:hover {
+  text-decoration: underline #ffffff;
+}
+
+.app-components {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album-container {
+  width: 250px;
+  height: 40%;
+  margin: 10px;
+  padding-right: 50px;
+}
+
+.album-cover:hover {
+  opacity: 0.2;
 }
 
 .app {
-  padding: 30px;
+  padding: 20px;
 }
