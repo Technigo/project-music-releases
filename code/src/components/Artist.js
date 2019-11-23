@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Artists = () => {
+export const Album = (props) => {
     return (
         <div>
             hej
