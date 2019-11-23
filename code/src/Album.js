@@ -3,14 +3,14 @@ import data from './data.json'
 import { ReactComponent as Heart } from './icons/heart.svg'
 import { ReactComponent as Play } from './icons/play.svg'
 import { ReactComponent as Dots } from './icons/dots.svg'
-
+import './album.css'
 
 console.log(data)
 
 export const Album = (props) => (
-  <div className="App">
-    <div className="Album-container">
-      <a className="Image" href={props.uri}> <img src={props.image} alt="Album cover"></img></a>
+  <div>
+    <div className="Album-container" >
+      <a className="Image" href={props.uri}> <img src={props.image} alt="Album cover"></img> </a>
       <a className="Album" href={props.uri}>{props.albumname}</a>
       <a className="Artist" href={props.artisturi}>{props.artistname}</a>
 

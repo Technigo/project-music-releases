@@ -1,14 +1,16 @@
 import React from 'react'
 import data from './data.json'
 import { Album } from './Album'
+import './app.css'
 
-console.log(data)
+
+console.log(data.albums.items[0].external_urls)
 
 export const App = () => {
   return (
-    <div className="App-container">
+    <div >
       <h1>New Albums and Releases</h1>
-      <div>
+      <div className="appcontainer">
         {data.albums.items.map((album) => (
           <Album
             key={album.id}

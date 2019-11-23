@@ -1,32 +1,11 @@
-.App {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
-}
-
 .Album-container{
   display: flex;
   flex-direction: column;
   justify-content: left;
   position: relative;
+  margin: 0px 10px;
   width: 300px;
-
 } 
-
-a {
-  font-size: 14px;
-  font-family: 'Helvetica Neue', sans-serif;
-  text-decoration-line: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration-line: underline;
-  color: #ffffff;
-  
-}
 
 h1{
   font-family: 'Helvetica Neue', sans-serif;
@@ -47,60 +26,50 @@ h1{
 }
 
 .icons-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top:150px;
-
-  color:#ffffff;
-}
-.icon {
   display: none;
-  height: 60px;
+}
+
+.icon svg {
   width: 60px;
-  padding: 10px;
-  margin: 5px;
-  color:#ffffff;
-  order: 0;
+  transition: all 1s ease-in-out;
 }
-/* }
-.play-icon {
-  display: none;
-  height: 80px;
-  width: 80px;
-  padding: 10px;
-  margin: 5px;
-  color:#ffffff;
-  order: 1;
+
+.icon svg:hover {
+  transform: scale(1.1); 
 }
-.dots-icon {
-  display: none;
-  height: 40px;
-  width: 40px;
-  padding: 10px;
-  margin: 5px;
-  color:#ffffff;
-  order: 2;
-} */
-.Album-container:hover .icon, .icons-container{
-  display: block;
+
+.icon svg path {
+  fill: white;
+  transition: fill 0.3s ease-in-out;
+}
+
+.icon svg:hover path {
+  fill: white;
+}
+
+.Album-container .Image:hover .icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+}
+
+a {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration-line: underline;
+  color: #ffffff;
   
 }
-
-.icon:hover .Album-container{
-  backdrop-filter: blur(3px);
-}
-/* .Album-container:hover .heart-icon {
-  display: block;
-  position: absolute;
-
-}
-
-.Album-container:hover .dots-icon {
-  display: block;
-  position: absolute;
-  
-}  */
