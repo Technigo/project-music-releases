@@ -10,7 +10,7 @@ export const Album = props => {
         <img className="artist_image" src={image} alt="Album images" />
         
       </div>
-      <a href={url} target="_blank">
+      <a href={url}>
         <h4>{name}</h4>
       </a>
     </div>

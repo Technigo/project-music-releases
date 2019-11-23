@@ -1,0 +1,13 @@
+.headline {
+    margin-left: 10px;
+    color: #ffffff;
+    border-bottom: 0.01em solid #333333;
+    margin: 0 35px;
+    max-width: 1250px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    padding: 15px 0;
+}

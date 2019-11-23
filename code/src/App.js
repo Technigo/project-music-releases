@@ -3,15 +3,6 @@ import data from './data.json'
 import { Artist } from "./components/Artist";
 import { Album } from "./components/Album";
 
-/* console.log(data) */
-
-/* export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-} */
 
 const renderArtist = artist => {
   const { id, name, external_urls } = artist;
@@ -31,7 +22,7 @@ const renderAlbum = album => {
 export const App = () => {
   return (
     <div>
-      <h1>New albums & singles</h1>
+      <h1>New releases</h1>
       <div className="flex-container">{data.albums.items.map(renderAlbum)}</div>
     </div>
   );
