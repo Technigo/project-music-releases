@@ -1,0 +1,14 @@
+.artistInfo {
+  font-size: 14px; 
+  font-family: Helvetica;
+  color: #ffffff;  
+}
+
+.artistInfo a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+.artistInfo a:hover {
+  text-decoration: underline;
+  
+}

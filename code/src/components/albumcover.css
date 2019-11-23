@@ -1,0 +1,31 @@
+
+.albumCover {
+  width: 100%;
+  max-height: 300px;
+  position: relative;
+}
+.albumIcons {
+  display:none;
+}
+.albumIcons svg{
+ width: 50px;
+ fill: #fff;
+}
+
+.albumCover:hover .albumIcons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  height: 25%;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.albumCover:hover .albumCoverImage {
+  opacity: 0.2;
+  transition: all .3s ease-in-out;
+}

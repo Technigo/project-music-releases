@@ -1,0 +1,24 @@
+
+.albumCards {
+  width: 20%;
+  padding: 25px;
+  max-width: 1300px;
+
+}
+
+.albumInfo {
+  font-size: 14px; 
+  font-family: Helvetica;
+  color: #ffffff;
+}
+.albumInfo a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.albumInfo a:hover {
+  text-decoration: underline;
+}
+
+
+
+
