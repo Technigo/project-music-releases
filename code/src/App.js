@@ -11,9 +11,9 @@ export const App = () => {
       {data.albums.items.map((item) => (
         <Album
           key={item.id}
-          name={item.name}
+          albumTitle={item.name}
           image={item.images[1].url}
-          artists={item.artists[0].name} />
+          artistName={item.artists[0].name} />
       ))}
     </div>
   )

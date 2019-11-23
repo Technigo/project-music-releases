@@ -1,16 +1,19 @@
 .albumContainer {
-  height:350px;
-  width:auto;
-  background:aqua;
+  min-height:50vh;
+  width:100%;
   position: relative;
   margin:10px;
 }
-.albumImg {
 
+.albumImg {
+  height:auto;
+  width:100%;
 }
 
 .moreDetails  {
-  display: none;
+  display:flex;
+  flex-direction: column;
+  /* display: none; */
 }
 
 .albumContainer:hover .moreDetails {
@@ -24,7 +27,38 @@
   background: rgba(0,0,0,0.5);
 }
 
-/** MEDIA QUERIES **/
-@media min:667px {
-  
+.albumTitle {
+  font-size:14px;
+  font-family: "Helvetica Neue";
+  display:inline-block;
+  color:#ffffff;
+  margin:2px;
+}
+
+.artistName {
+  font-size:14px;
+  font-family: "Helvetica Neue";
+  display:inline-block;
+  color:#a0a0a0;
+  margin:2px;
+}
+
+/** TABLET **/
+
+@media (min-width:667px) {
+
+  .albumContainer {
+    width:300px;
+    min-height:30vh;
+  }
+
+}
+
+/** DESKTOP **/
+
+@media (min-width:1024px) {
+
+  .albumContainer {
+    width:200px;
+  }
 }

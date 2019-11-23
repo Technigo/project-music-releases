@@ -1,6 +1,28 @@
 .albumComponent {
     height:auto;
+    width:350px;
     display:flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+   
+}
+/** TABLET **/
+
+@media (min-width:667px) {
+    .albumComponent {
+        width:700px;
+    }
+    .albumComponent{
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+}
+
+/** DESKTOP **/
+
+@media (min-width:1024px) {
+    .albumComponent {
+        width:950px;
+    }
 }
