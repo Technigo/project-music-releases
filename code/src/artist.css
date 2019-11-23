@@ -1,0 +1,12 @@
+.artist-name {
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
+}
+
+.artist-name:hover{
+    text-decoration: underline;
+}

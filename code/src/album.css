@@ -1,0 +1,119 @@
+.albumContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.albums{
+    width: 100%;
+    margin: 10px;
+    background-color: rgb(24, 23, 23);
+}
+
+.albumsBackground{
+    background-color: rgb(24, 23, 23 );
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.album-title{
+    margin-top: 10px;
+}
+
+.album-img{
+ position: relative;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+  
+}
+
+.img{
+    width: 100%;
+    z-index: 1; 
+    position: relative;
+}
+
+.img:hover{
+    filter: brightness(30%);
+   
+}
+
+.icons{
+    width: 100%;
+    align-self: center;
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+}
+
+.icons:hover{
+    opacity: 1;
+}
+
+.heart{
+    width: 15px;
+    height: 15px;
+    fill: "white";  
+}
+
+.play{
+    width: 35px;
+    height: 35px;
+    fill: "white";
+    margin: 0px 15px;
+}
+
+.play:hover{
+    width: 50px;
+    height: 50px;
+}
+
+.dots{
+    width: 15px;
+    height: 15px;
+    fill: "white"
+     
+}
+
+.album-title{
+    color: white;
+    font-size: 14px;
+    font-family: Helvetica;
+    color: #fff;
+}
+
+.album-title:hover{
+    text-decoration:underline ;
+}
+
+
+
+@media (min-width: 650px){
+.albums{
+    flex-wrap: wrap;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+.img{
+  width: 100%;
+} 
+}
+
+@media (min-width: 900px) {
+.albums{
+    flex-wrap: wrap;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }  
+}

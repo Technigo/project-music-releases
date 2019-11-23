@@ -1,15 +1,11 @@
 import React from 'react'
+import './artist.css'
 
 export const Artist = (props) => {
     console.log("artist props", props)
+
+
     return (
-        <div> 
-            <h1 className="artist-name">
-                {props.artist}
-            </h1>
-            <div className="href">
-                {props.href}
-            </div>
-        </div>   
+    <a className="artist-name" href={props.href}>{props.name}</a>
     )
 }

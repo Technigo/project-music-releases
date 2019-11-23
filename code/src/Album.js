@@ -1,19 +1,30 @@
 import React from 'react'
-
+import {Artist} from './Artist'
+import './album.css'
 
 export const Album = (props) => {
     console.log("props", props)
     return (
-        <div className="child">
-            <div className="album-img">
-                <img src={props.image}/>
-            </div>
-            <div className="album-title">
-                {props.name}
-            </div> 
-            <div className="artist">
-                Artist
-            </div>
+        <div className="albums">
+            
+                <div className="album-img">
+                    <img className="img" src={props.image}/>
+                   
+                    <div className="icons">
+                        <img className="heart" src="icons/heart.svg" alt="heartIcon"/> 
+                        <img className="play" src="icons/play.svg" alt="playIcon"/>
+                        <img className="dots" src="icons/dots.svg" alt="dotsIcon"/> 
+                    </div> 
+                </div>            
+                <div className="album-title">
+                    {props.name}
+                </div> 
+                <div className="artist">
+                {props.artists.map(artist => {   
+                    return <Artist name={artist.name} href={artist.href} />  
+                })}
+               
+                </div>
         </div>   
     )
 }
