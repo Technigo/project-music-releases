@@ -8,6 +8,10 @@
   min-height: 30vh;
 }
 
+.albumHead {
+  background: red;
+}
+
 h2 {
   font-size: 20px;
 }
