@@ -8,7 +8,7 @@ export const Album = (props) => {
             </div>
             <div className='album-info'>
                 <div className='album-title'>
-                    <a href={props.albumURL}>{props.albumTitle}</a>
+                    <a href={props.albumUrl}>{props.albumTitle}</a>
                     <div className='artist-name'>
                         {props.artists}
                     </div>
@@ -17,3 +17,4 @@ export const Album = (props) => {
         </div >
     )
 }
+
