@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+}
+.Cards{
+  width: 100%;
+  font-family: Helvetica;
+  font-size: 14px;
+  padding: 30px;
+}
+a{
+  text-decoration: none;
+}
+.heart-icon, .play-icon, .dots-icon{
+fill: white;
+}
+
+@media (min-width: 668px) and (max-width: 1024px){
+.Cards{
+  width: 50%;
+}
+
+}
+
+@media (min-width: 1025px){
+.Cards{
+width: 25%;
+
+}
+
+}

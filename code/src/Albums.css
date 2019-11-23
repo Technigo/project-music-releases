@@ -1,0 +1,10 @@
+.album-name{
+color: #ffffff;
+padding-top: 5px;
+}
+.album-name a {
+  color: #ffffff;
+}
+.album-name a:hover{
+  text-decoration: underline;
+}
