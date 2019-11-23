@@ -1,0 +1,45 @@
+.albumInfo {
+  
+  color: white;
+  position: relative;
+  width: 25%;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) {
+  .albumInfo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1668px) {
+  .albumInfo {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+h3 {
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+/* .icons {
+  display: none;
+}
+
+.Album:hover .icons {
+display: block;
+position: absolute;
+top:0;
+right:0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.5);
+  } */
