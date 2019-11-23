@@ -20,6 +20,7 @@ export const App = () => {
               name={album.name}
               artists={album.artists}
               images={album.images}
+              url={album.uri}
             />
           );
         })}

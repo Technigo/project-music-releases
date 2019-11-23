@@ -11,12 +11,19 @@ export const Album = props => {
     <div className="album">
       <AlbumArt>
         <Image title={props.name} images={props.images} />
-        <Controls />
+        <Controls playUrl={props.url} />
       </AlbumArt>
 
-      <h2 className="album-name">{props.name}</h2>
-      {props.artists.map(artist => {
-        return <Artist key={artist.id} name={artist.name} />;
+      <h2 className="album-name">
+        <a href={props.url}>{props.name}</a>
+      </h2>
+      {props.artists.map((artist, i) => {
+        return (
+          <React.Fragment key={artist.id}>
+            {i > 0 && ", "}
+            <Artist name={artist.name} url={artist.external_urls.spotify} />
+          </React.Fragment>
+        );
       })}
     </div>
   );

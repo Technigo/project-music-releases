@@ -18,47 +18,8 @@ code {
 }
 
 h1 {
+  font-family: Helvetica, sans-serif;
   color: #ffff;
   font-size: 20px;
+  margin-left: 10px;
 }
-
-h2 {
-  font-size: 14px;
-}
-
-/* .albums {
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-  font-size: 14px;
-  font-family: Helvetica;
-} */
-
-/* .album-image {
-  width: 100%;
-} */
-
-/* .artist {
-  color: #a0a0a0;
-} */
-/* 
-.album {
-  color: #ffffff;
-  width: 25%;
-  height: auto;
-  margin: auto;
-  padding: 10px;
-} */
-
-/* .album-controls {
-  position: absolute;
-  display: none;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */

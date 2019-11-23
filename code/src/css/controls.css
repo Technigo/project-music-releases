@@ -9,12 +9,23 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 20px;
 }
 
 .album-controls svg {
+  width: 20px;
+  fill: white;
+  opacity: 0.6;
+}
+
+.album-controls svg:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.album-controls .play-icon {
   width: 50px;
 }

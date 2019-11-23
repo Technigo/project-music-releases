@@ -1,7 +1,10 @@
 import React from "react";
-import "./css/artist.css";
-// import { directive } from "@babel/types";
+import "./css/album.css";
 
 export const Artist = props => {
-  return <h4 className="artist">{props.name}</h4>;
+  return (
+    <h4 className="artist">
+      <a href={props.url}>{props.name}</a>
+    </h4>
+  );
 };
