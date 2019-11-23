@@ -1,18 +1,19 @@
 import React from 'react'
 import "./Album.css";
-/* import { PlayIcon } from "../PlayIcon/PlayIcon"; */
+import { Icons } from './Icons'
 
 export const Album = props => {
   const { image, url, name } = props;
   return (
     <div>
-      <div className="img_icons">
-        <img className="artist_image" src={image} alt="Album images" />
-        
+      <div className="album-cover">
+      <img className="artist-image" src={image} alt="Album images" />
+      <div className="album-icons">
+        <Icons />
       </div>
-      <a href={url}>
-        <h4>{name}</h4>
-      </a>
-    </div>
+      </div>
+      
+      <a href={url}> <h4>{name}</h4> </a>
+      </div>
   );
 };

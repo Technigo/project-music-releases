@@ -1,0 +1,44 @@
+.album-icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.album-icons:hover {
+    background: grey;
+}
+
+.icon-heart {
+    width: 35px;
+    filter: invert(1);
+}
+
+.icon-heart:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: invert(1);
+    transition: all .2s ease-in;
+}
+
+.icon-play {
+    width: 42px;
+    filter: invert(1);
+}
+
+.icon-play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: invert(1);
+    transition: all .2s ease-in;
+}
+
+.icon-dots {
+    width: 25px;
+    filter: invert(1);
+}
+
+.icon-dots:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    filter: invert(1);
+    transition: all .2s ease-in;
+}

@@ -1,8 +1,11 @@
 a:link,
 a:visited {
+    font-size: 14px;
+    font-weight: bold;
     color: #a0a0a0;
+    font-family: Helvetica;
+    margin-top: 10px;
     text-decoration: none;
-    font-size: 0.875rem;
 }
 
 a:hover,
