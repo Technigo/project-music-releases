@@ -1,0 +1,49 @@
+.albumImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vh;
+  background-size: cover;
+  position: relative;
+  min-height: 30vh;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.albumCard {
+  width: 30vh;
+  margin: 15px;
+}
+
+.albumCard a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.theLogos {
+  display: none;
+}
+
+.albumCard a:hover {
+  text-decoration: underline white;
+}
+
+.albumImg:hover .theLogos {
+  display: inline;
+}
+
+.heart,
+.dots {
+  fill: white;
+  width: 3vh;
+  margin-bottom: 14px;
+}
+
+.play {
+  width: 7vh;
+  margin: 0 20px 0 20px;
+  fill: white;
+}
