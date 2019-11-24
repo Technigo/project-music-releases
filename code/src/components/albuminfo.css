@@ -1,4 +1,4 @@
-.album-info {
+.albumInfo {
   font-family: "helvetica";
 }
 
@@ -14,17 +14,17 @@ h3 {
   margin-block-start: auto;
 }
 
-.album-link a:link,
-.artist-link a:link {
+.albumLink a:link,
+.artistLink a:link {
   text-decoration: none;
 }
 
-.album-link a:hover {
+.albumLink a:hover {
   text-decoration: underline;
   color: #ffffff;
 }
 
-.artist-link a:hover {
+.artistLink a:hover {
   text-decoration: underline;
   color: #a0a0a0;
 }

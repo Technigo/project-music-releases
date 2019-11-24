@@ -1,15 +1,19 @@
-.album-cover {
+.albumCover {
   margin-top: 3em;
   position: relative;
+}
+
+.albumCover img {
+  width: 100%;
 }
 
 .moreDetails {
   display: none;
 }
 
-.album-cover:hover .moreDetails {
+.albumCover:hover .moreDetails {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: absolute;
   top: 0;
@@ -19,28 +23,30 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.moreDetails .play-icon:hover,
-.heart-icon:hover,
-.dots-icon:hover {
+.moreDetails .playIcon:hover,
+.heartIcon:hover,
+.dotsIcon:hover {
   transform: scale(1.2);
   fill: #ffffff;
 }
 
-.play-icon,
-.heart-icon,
-.dots-icon {
+.playIcon,
+.heartIcon,
+.dotsIcon {
   fill: #a0a0a0;
   transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 0.9em;
 }
 
-.play-icon {
+.playIcon {
   width: 25%;
 }
 
-.heart-icon {
+.heartIcon {
   width: 10%;
 }
 
-.dots-icon {
+.dotsIcon {
   width: 7%;
 }

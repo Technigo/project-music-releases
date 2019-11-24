@@ -1,6 +1,7 @@
 import React from "react"
 import { Album } from "components/Album"
 import data from "./data.json"
+import "./app.css"
 
 console.log(data)
 
