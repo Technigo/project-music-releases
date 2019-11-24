@@ -1,6 +1,7 @@
 import React from 'react'
 import {Artist} from './Artist'
 import './album.css'
+import './header.css'
 
 export const Album = (props) => {
     console.log("props", props)
@@ -8,8 +9,9 @@ export const Album = (props) => {
         <div className="albums">
             
                 <div className="album-img">
+                    <a href={props.url}>
                     <img className="img" src={props.image}/>
-                   
+                    </a>
                     <div className="icons">
                         <img className="heart" src="icons/heart.svg" alt="heartIcon"/> 
                         <img className="play" src="icons/play.svg" alt="playIcon"/>
