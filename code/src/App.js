@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './data.json'
+import { Header } from 'Header.js'
 import { Cards } from './Cards'
 import 'App.css'
 
@@ -9,18 +10,20 @@ console.log(data)
 export const App = () => {
   return (
     <div className="App">
-      {data.albums.items.map((item) => (
-        <Cards
-          image={item.images[1].url}
-          key={item.id}
-          artistUrl={item.artists[0].external_urls.spotify}
-          artistName={item.artists[0].name}
-          albumUrl={item.external_urls.spotify}
-          albumName={item.name} />
-      ))
+      <Header />
+      <div className="album-section">
+        {data.albums.items.map((item) => (
+          <Cards
+            image={item.images[1].url}
+            key={item.id}
+            artistUrl={item.artists[0].external_urls.spotify}
+            item={item}
+            albumUrl={item.external_urls.spotify}
+            albumName={item.name} />
+        ))
 
-      }
-
+        }
+      </div>
     </div>
   )
 

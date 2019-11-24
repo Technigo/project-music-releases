@@ -1,10 +1,19 @@
-.ArtistName{
+.artistName{
   color: #a0a0a0;
   padding-top: 5px;
 }
-.ArtistName a {
+.artistName a {
   color: #a0a0a0;
+  font-weight: bold;
+  line-height: 1.5;
 }
-.ArtistName a:hover{
-  text-decoration: underline;
+.artistName a:not(:last-child):after {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artistName a:hover{
+  /* text-decoration: underline; */
+  padding-bottom: 1.5px;
+  border-bottom: 1px solid #a0a0a0;
 }

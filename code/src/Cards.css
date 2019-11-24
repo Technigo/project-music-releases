@@ -2,28 +2,29 @@
   box-sizing: border-box;
 }
 .Cards{
-  width: 100%;
+  width: 80%;
   font-family: Helvetica;
   font-size: 14px;
-  padding: 30px;
+  /* padding: 10px; */
+  margin: 15px;
+  display:flex;
+  flex-direction: column;
+  align-items:left;
 }
 a{
   text-decoration: none;
 }
-.heart-icon, .play-icon, .dots-icon{
-fill: white;
-}
 
 @media (min-width: 668px) and (max-width: 1024px){
 .Cards{
-  width: 50%;
+  width: 45%;
 }
 
 }
 
 @media (min-width: 1025px){
 .Cards{
-width: 25%;
+width: 22%;
 
 }
 

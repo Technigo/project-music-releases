@@ -4,7 +4,11 @@ padding-top: 5px;
 }
 .album-name a {
   color: #ffffff;
+  font-weight: bold;
+  line-height: 1.5;
 }
 .album-name a:hover{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  padding-bottom: 1.5px;
+  border-bottom: 1px solid #ffffff;
 }

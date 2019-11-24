@@ -1,0 +1,55 @@
+.heart-icon, .dots-icon{
+  fill: white;
+  width: 30px;
+  opacity: 0.8;
+}
+.play-icon{
+  fill: white;
+  width: 60px;
+  opacity: 0.8;
+}
+.icons{
+  display:none;
+  /* align-self: center; */
+}
+.album-cover{
+  position: relative;
+  width: 85%;
+}
+.album-cover img{
+width:100%
+}
+.album-cover:hover img{
+  opacity: 0.4;
+  transition: all .1s ease-in-out;
+}
+.album-cover:hover .icons{
+  display:flex;
+  position:absolute;
+  top: 40%;
+  left: 12%;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 25%;
+}
+.play-icon:hover{
+transform: scale(1.2);
+transition: all .1s ease-in-out;
+opacity: 1;
+}
+
+/* .album-cover{
+  background-position: center, center;
+  width: 300px;
+  height: 300px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.album-cover:hover .icons{
+  display:flex;
+  opacity: 1;
+}
+.album-cover:hover{
+} */

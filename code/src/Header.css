@@ -1,0 +1,13 @@
+.header {
+  margin-left: 10px;
+  color: #ffffff;
+  border-bottom: 0.01em solid #333333;
+  margin: 0;
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 18px;
+  padding: 15px 35px;
+  margin:0;
+}

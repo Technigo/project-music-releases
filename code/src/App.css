@@ -1,5 +1,11 @@
 .App{
-display: flex;
-flex-wrap: wrap;
-background-color: aqua;
+  display: flex;
+flex-direction: column;
+background-color:#161616;
+}
+.album-section{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
