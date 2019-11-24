@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #000000;
 }
 
 code {
@@ -18,8 +18,14 @@ code {
 }
 
 h1 {
-  font-family: Helvetica, sans-serif;
-  color: #ffff;
-  font-size: 20px;
   margin-left: 10px;
+  color: #ffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media (min-width: 668px) {
+  h1 {
+    font-size: 20px;
+  }
 }

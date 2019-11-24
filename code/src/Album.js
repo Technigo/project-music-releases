@@ -1,5 +1,4 @@
 import React from "react";
-// import { directive } from "@babel/types";
 import { Artist } from "./Artist";
 import { Image } from "./Image";
 import { AlbumArt } from "./AlbumArt";

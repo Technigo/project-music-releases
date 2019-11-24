@@ -1,19 +1,19 @@
 .album {
-  color: #ffffff;
   width: 100%;
   height: auto;
   margin: auto;
   padding: 10px;
+  color: #ffffff;
 }
 
 .artist {
-  margin-top: 5px;
   display: inline-block;
+  margin-top: 5px;
 }
 
 .album h2 {
-  font-size: 14px;
   margin-bottom: 0;
+  font-size: 14px;
 }
 .artist a {
   color: #a0a0a0;
@@ -22,7 +22,7 @@
 
 .album-name a {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
 
 .album-name a:hover,

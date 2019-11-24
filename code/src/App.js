@@ -1,12 +1,7 @@
 import React from "react";
-
 import { Album } from "./Album";
-
 import data from "./data.json";
-
 import "./css/app.css";
-
-console.log(data);
 
 export const App = () => {
   return (
