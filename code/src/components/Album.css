@@ -1,22 +1,23 @@
 .albumContainer {
+  height: auto;
+  width: 350px;
+  margin: 10px;
+}
+
+.albumCover {
   min-height:50vh;
   width:100%;
   position: relative;
-  margin:10px;
-}
-
-.albumImg {
-  height:auto;
-  width:100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .moreDetails  {
   display:flex;
   flex-direction: column;
-  /* display: none; */
 }
 
-.albumContainer:hover .moreDetails {
+.albumCover:hover .moreDetails {
   display: block;
   position: absolute;
   color: #fff;
@@ -35,6 +36,18 @@
   margin:2px;
 }
 
+.albumTitle:hover {
+ text-decoration:underline;
+}
+
+.linkAlbumTitle {
+
+}
+
+.linkArtistName {
+
+}
+
 .artistName {
   font-size:14px;
   font-family: "Helvetica Neue";
@@ -43,13 +56,19 @@
   margin:2px;
 }
 
+.artistName:hover {
+  text-decoration:underline;
+}
+
 /** TABLET **/
 
 @media (min-width:667px) {
-
-  .albumContainer {
-    width:300px;
-    min-height:30vh;
+ .albumContainer {
+   width:300px;
+ }
+  .albumCover {
+    width:100%;
+    min-height:50vh;
   }
 
 }
@@ -57,8 +76,11 @@
 /** DESKTOP **/
 
 @media (min-width:1024px) {
-
   .albumContainer {
     width:200px;
+  }
+  .albumCover {
+    width:100%;
+    min-height: 30vh;
   }
 }

@@ -1,0 +1,11 @@
+header {
+   align-self: flex-start;
+}
+
+
+.albumHeader {
+    font-size:18px;
+    color:#ffffff;
+    font-family: "Helvetica Neue";
+    margin: 5px 0px;
+}

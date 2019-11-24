@@ -5,7 +5,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+}
+
+.headerSection {
+    width: 350px;
 }
 /** TABLET **/
 
@@ -17,6 +20,11 @@
         flex-direction: row;
         flex-wrap:wrap;
     }
+
+    .headerSection {
+        width: 620px;
+    }
+
 }
 
 /** DESKTOP **/
@@ -24,5 +32,9 @@
 @media (min-width:1024px) {
     .albumComponent {
         width:950px;
+    }
+
+    .headerSection {
+        width:860px;
     }
 }
