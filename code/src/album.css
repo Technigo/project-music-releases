@@ -1,0 +1,21 @@
+.body {
+    background-color: tomato;
+}
+
+.album {
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+@media (min-width: 668px max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+    
+}
