@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Album = (props) => {
   return (
-    <div>
+    <div className="album">
 
       <div className="album-cover">
         <div className="icons">
