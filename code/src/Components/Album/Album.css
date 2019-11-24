@@ -31,6 +31,13 @@ img {
   opacity: 1;
 }
 
+@media (max-width: 340px) {
+  img {
+    width: 90vw;
+    justify-self: center;
+  }
+}
+
 @media (min-width: 668px) {
   .flex-container {
     flex-direction: row;
