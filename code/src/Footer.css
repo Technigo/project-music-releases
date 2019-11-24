@@ -1,0 +1,16 @@
+footer{
+  display:flex;
+  justify-content: space-around;
+  font-size: 12px;
+  align-items: center;
+  margin: 10px;
+  color: lightblue;
+  }
+  footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: lightblue;
+  }
+  footer a:hover{
+    color: skyblue;
+  }

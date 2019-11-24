@@ -2,6 +2,7 @@ import React from 'react'
 import data from './data.json'
 import { Header } from 'Header.js'
 import { Cards } from './Cards'
+import { Footer } from 'Footer.js'
 import 'App.css'
 
 console.log(data.albums.items)
@@ -23,6 +24,7 @@ export const App = () => {
         ))
 
         }
+        <Footer />
       </div>
     </div>
   )
