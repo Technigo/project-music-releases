@@ -1,12 +1,29 @@
 .albumInfo {
-  
-  color: white;
-  position: relative;
   width: 25%;
-  background-size: cover;
-  min-height: 50vh;
-  padding: 10px;
+  position: relative; 
 }
+
+
+.albumInfo:hover {
+opacity: 0.9;
+filter: brightness(30%);
+}
+
+.AlbumInfo:hover .icons {
+  display: flex;
+  opacity: 1; 
+  transform: scale(1.2);
+  z-index: 3;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 120px; 
+  left: 80px; 
+  fill: white; 
+  opacity: 1;
+  z-index: 3;
+  stroke-opacity: 0.5;
+    } 
 
 @media (max-width: 1024px) {
   .albumInfo {
@@ -14,7 +31,7 @@
   }
 }
 
-@media (max-width: 1668px) {
+@media (max-width: 668px) {
   .albumInfo {
     width: 100%;
   }
@@ -23,23 +40,65 @@
 h1 {
   font-size: 14px;
   color: #ffffff;
+  background-size: 50px;  
+  
 }
 
 h3 {
   font-size: 14px;
   color: #a0a0a0;
+  
+} 
+
+
+.icons {
+  display: none;
+  
+  
 }
 
-/* .icons {
+/* .icons svg {
+  width: 50px;
+  left: 200px;
+  top: 100px; 
+  .heart-icon svg{
+  width: 50px; 
   display: none;
 }
+} */
 
-.Album:hover .icons {
-display: block;
-position: absolute;
-top:0;
-right:0;
-bottom: 0;
-left: 0;
-background: rgba(0,0,0,0.5);
-  } */
+.heart-icon svg{
+  width: 30px; 
+  
+}
+
+.play-icon svg{
+  width: 50px; 
+  
+}
+
+.dots-icon svg{
+  width: 30px; 
+  
+}
+
+
+
+/* .icons svg:hover {
+  display: flex;
+  opacity: 1; 
+  transform: scale(1.2);
+  z-index: 3;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 120px; 
+  left: 80px; 
+  fill: white; 
+  opacity: 1;
+  z-index: 3;
+  stroke-opacity: 0.5;
+} */
+
+
+

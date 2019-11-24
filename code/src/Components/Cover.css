@@ -1,4 +1,4 @@
-.albumDisplayArea {
+/* .albumDisplayArea {
   display: flex;
   background-color: black;
   
@@ -7,17 +7,17 @@
 .albumCover {
   flex-direction: column;
   align-items: center;
-  /* justify-content: center;
+  justify-content: center;
   position: relative;
   height: 300px;
-  width: 300px; */
+  width: 300px;
 }
-/* .play-icon {
+.play-icon {
   display: none;
   height: 100px;
   width: 100px;
-} */
-/* .albumCover:hover .play-icon {
+}
+.albumCover:hover .play-icon {
   display: block;
   position: absolute;
 } */

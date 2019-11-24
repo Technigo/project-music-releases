@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './data.json'
-import { Album } from "Components/Album"
+import { Album } from "./Components/Album.js"
 import "./App.css"
 
 
@@ -17,7 +17,8 @@ export const App = () => {
           image={item.images[1].url}
           title={item.name}
           artist={item.artists[0].name}
-          artistLink={item.artists[0].uri} />
+          artistLink={item.artists[0].uri}
+          albumLink={item.uri} />
 
       ))}
     </div>
