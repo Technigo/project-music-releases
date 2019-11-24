@@ -28,17 +28,12 @@
     max-width: 300px;
 }
 
-.album-title{
-    margin-top: px;
-}
-
 .album-img{
  position: relative;
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
- justify-content: space-evenly;
-  
+ justify-content: space-evenly; 
 }
 
 .img{
@@ -48,8 +43,7 @@
 }
 
 .img:hover{
-    filter: brightness(30%);
-   
+    filter: brightness(30%); 
 }
 
 .icons{
@@ -60,26 +54,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-  
-    
+    opacity: 0;   
 }
 
 .icons:hover{
-   opacity: 0.8;  
+   opacity: 1;  
 }
 
 .heart{
     width: 15px;
     height: 15px;
-    fill: "white";  
+    opacity: 0.8; 
 }
 
 .play{
     width: 35px;
     height: 35px;
-    fill: "white";
+    /* fill: "white"; */
     margin: 0px 15px;
+    opacity: 0.8;
+    /* transition: fill 0.5s ease-in-out; */
+    transition: all 0.3s ease-in-out;
+    /* Nedan för att göra bakgrunden rund istället för fyrkantig */
+    border-radius: 50%;
 }
 
 .play:hover{
@@ -87,14 +84,16 @@
     height: 51px;
     margin: 0px 7px;
     opacity: 1.0;
-    transition: fill 0.5s ease-in-out;
+    transition: all 0.3s ease-out;
+    /* Nedan för att göra bakgrunden genomskinligt svart */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dots{
     width: 15px;
     height: 15px;
-    fill: "white"
-     
+    fill: "white";
+    opacity: 0.8;   
 }
 
 .album-title{
@@ -108,15 +107,13 @@
     text-decoration:underline ;
 }
 
-
-
 @media (min-width: 650px){
 .albums{
     flex-wrap: wrap;
     width: 45%;
     flex-direction: row;
     justify-content: space-evenly;
-    }
+}
 
 .img{
   width: 100%;
@@ -135,16 +132,16 @@ max-width: 500px;
 }
 
 @media (min-width: 900px) {
-
 .albumContainer{
     max-width: 800px;
 }
+
 .albums{
     flex-wrap: wrap;
     width: 22%;
     flex-direction: row;
     justify-content: space-evenly;
-    } 
+} 
 
 .albumsAndArtists{
     width: 100%;
