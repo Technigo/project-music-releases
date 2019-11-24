@@ -31,7 +31,7 @@ code {
   width: 100%;
 }
 
-.releases-container {
+.album-grid {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: 1;
@@ -68,7 +68,7 @@ code {
 
 .album-artist:not(:last-child)::after {
   color: #a0a0a0;
-  content: '\002C \0020';
+  content: ', ';
 }
 
 .album-artist-link {
@@ -134,7 +134,7 @@ code {
     padding: 2rem 2rem 0 2rem;
   }
 
-  .releases-container {
+  .album-grid {
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem;
   }
@@ -142,7 +142,7 @@ code {
 
 /* Desktop size */
 @media screen and (min-width: 1024px) {
-  .releases-container {
+  .album-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 
