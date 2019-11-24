@@ -3,7 +3,6 @@ import data from './data.json'
 import { Album } from './Components/Album.js'
 import { Artist } from './Components/Artist.js'
 
-
 console.log(data)
 
 const releases = data.albums.items;
