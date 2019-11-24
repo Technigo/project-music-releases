@@ -6,7 +6,7 @@ export const App = () => {
   return (
     <div className="app">
       <header>
-        <h1>New albums and singles</h1>
+        <h1>New albums &amp; singles</h1>
       </header>
       <div className="app-components">
         {data.albums.items.map(album => (
