@@ -1,22 +1,34 @@
 
-.albumCover {
+.albumCoverImage {
   width: 100%;
-  max-height: 300px;
+} 
+.albumCover {
+  width: 85%;
   position: relative;
 }
 .albumIcons {
   display:none;
 }
 .albumIcons svg{
- width: 50px;
+ width: 30px;
  fill: #fff;
 }
 
-.albumCover:hover .albumIcons {
+.play-icon svg {
+  width: 50px;
+}
+.play-icon svg:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+
+.albumCover:hover .albumIcons{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   height: 25%;
   position: absolute;
   top: 45%;
@@ -28,4 +40,25 @@
 .albumCover:hover .albumCoverImage {
   opacity: 0.2;
   transition: all .3s ease-in-out;
+}
+
+
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+  
+.albumCover {
+  width: 90%;
+  position: relative;
+}
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+
+.albumCover {
+  width: 95%;
+  position: relative;
+}
 }

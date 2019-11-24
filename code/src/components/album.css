@@ -1,12 +1,11 @@
 
 .albumCards {
-  width: 20%;
-  padding: 25px;
-  max-width: 1300px;
-
+  margin: 15px;
+  width: 80%;
 }
 
 .albumInfo {
+  font-weight: 700;
   font-size: 14px; 
   font-family: Helvetica;
   color: #ffffff;
@@ -19,6 +18,16 @@
   text-decoration: underline;
 }
 
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albumCards {
+    width: 45%;
+  } 
+}
 
-
-
+/* DESKTOP */
+@media (min-width: 1025px) {
+  .albumCards {
+    width: 22%;
+  }
+}

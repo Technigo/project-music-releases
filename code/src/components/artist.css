@@ -1,14 +1,14 @@
 .artistInfo {
   font-size: 14px; 
   font-family: Helvetica;
-  color: #ffffff;  
-}
-
-.artistInfo a {
+  color: #fff;  
   text-decoration: none;
   color: #a0a0a0;
 }
-.artistInfo a:hover {
+.artistInfo:hover {
   text-decoration: underline;
-  
+}
+
+.artistInfo:not(:last-child):after {      
+  content: "\002C \0020"; /* To separate the multiple artists with a comma and space */
 }
