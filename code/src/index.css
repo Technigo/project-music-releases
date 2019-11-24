@@ -56,10 +56,11 @@ h3 {
 .app-components {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .album-container {
-  width: 250px;
+  width: 300px;
   height: 40%;
   margin: 10px;
   position: relative;
@@ -97,6 +98,16 @@ svg {
   display: none;
 }
 
-.app {
-  padding: 20px;
+/* TABLET */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .album-container {
+    width: 47%;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  .album-container {
+    width: 23%;
+  }
 }
