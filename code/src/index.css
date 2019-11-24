@@ -13,8 +13,6 @@ font-weight: bold;
 body {
   margin: 0;
   color: white;
-  font-size: 16px;
-  line-height: 1.5;
   background-color: #24292e;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -36,10 +34,12 @@ code {
 }
 
 .artistBox {
+  position: relative;
   align-items: center;
  width: 100%;
   display: flex;
   flex-direction: column;
+  line-height: 1;
 }
 
 .album-title a {
@@ -50,10 +50,36 @@ code {
   font-family: Helvetica;
 }
 
-.artist-name {
+.artist-name a {
+  line-height: 1.5;
+  font-weight: normal;
   font-family:  Helvetica;
   font-size: 14px;
   color: #a0a0a0
+}
+
+svg {
+  fill: #fff;
+}
+.album-cover:hover .album-icons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin: 0 auto;
+  width: 80%;
+  height: 25%;
+  top: 25%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.8;
+}
+.album-cover:hover .album-img {
+  opacity: 0.2;
+  transition: all 0.3s ease-in-out;
+}
+.album-icons {
+  display: none;
 }
 
 @media (min-width: 650px) {

@@ -14,7 +14,7 @@ export const App = () => {
       <Header />
       <section className='album-container'>
         {data.albums.items.map((item) => {
-          return <Album key={item.id} albumTitle={item.name} image={item.images[1].url} artists={item.artists[0].name} albumUrl={item.external_urls.spotify} />
+          return <Album key={item.id} albumTitle={item.name} image={item.images[1].url} artists={item.artists[0].name} urlArtistName={item.artists[0].external_urls.spotify} albumUrl={item.external_urls.spotify} />
         })}
       </section>
     </div >
