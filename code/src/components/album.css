@@ -1,7 +1,7 @@
 
 .albumCards {
   margin: 15px;
-  width: 80%;
+  width: 70%;
 }
 
 .albumInfo {
@@ -21,7 +21,7 @@
 /* TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
   .albumCards {
-    width: 45%;
+    width: 40%;
   } 
 }
 

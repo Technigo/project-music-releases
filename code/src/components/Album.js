@@ -24,9 +24,6 @@ export const Album = (props) => (
         )
       })}
     </div>
-
-
-
   </div>
 )
 

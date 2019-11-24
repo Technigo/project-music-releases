@@ -3,7 +3,6 @@
   width: 100%;
 } 
 .albumCover {
-  width: 85%;
   position: relative;
 }
 .albumIcons {
@@ -43,22 +42,3 @@
 }
 
 
-/* TABLET */
-@media (min-width: 667px) and (max-width: 1024px) {
-
-  
-.albumCover {
-  width: 90%;
-  position: relative;
-}
-}
-
-/* DESKTOP */
-@media (min-width: 1025px) {
-
-
-.albumCover {
-  width: 95%;
-  position: relative;
-}
-}
