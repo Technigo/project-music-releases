@@ -23,11 +23,12 @@ export const Album = (props) => {
 
           {props.artists.map((artist) => {
 
-            return <a key={artist.external_urls.spotify} href={artist.external_urls.spotify}>{artist.name}</a>
+            return <span key={artist.external_urls.spotify}><a href={artist.external_urls.spotify}>{artist.name}</a><span>,&nbsp;</span></span>
 
           })}
 
         </div>
+
       </div>
 
     </div>

@@ -14,13 +14,15 @@ code {
 }
 
 header {
-  display: inline-block;
-  line-height: 70px;
-  font-size: 25px;
-  font-weight: bold;
-  text-align: left;
-  width: 300px;
   margin-left: 120px;
+  border-bottom: .01em solid #333;
+  max-width: 1260px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 15px 10px;
 }
 
 #album-container {
@@ -143,7 +145,17 @@ header {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 670px) and (max-width: 1400px) {
+.artist-name span:last-child span {
+  display: none
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1406px) {
+  #album-container {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1024px) {
   #album-container {
     max-width: 900px;
     justify-content: space-around;
