@@ -71,3 +71,10 @@ p.AlbumName {
 .ArtistContainer {
   display: flex;
 }
+
+@media (max-width: 900px) {
+  .AlbumContainer {
+    width: 300px;
+    height: 300px;
+  }
+}

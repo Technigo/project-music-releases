@@ -47,3 +47,32 @@ img.iconHeart {
   width: 20px;
   padding-top: 85px;
 }
+
+@media (max-width: 900px) {
+  .icons {
+    width: 300px;
+    height: 300px;
+    margin-left: 0;
+  }
+  .iconsContainer {
+    width: 100%;
+  }
+
+  img.iconDots {
+    padding-top: 150px;
+    height: 25px;
+    width: 25px;
+  }
+
+  img.iconHeart {
+    padding-top: 145px;
+    height: 35px;
+    width: 35px;
+  }
+
+  img.iconPlay {
+    padding-top: 130px;
+    height: 65px;
+    width: 65px;
+  }
+}
