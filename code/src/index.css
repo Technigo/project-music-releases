@@ -15,8 +15,17 @@ h1 {
   color: white;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .artist-info {
   color: white;
+}
+
+.release-header {
+  padding: 1rem 1rem 0;
 }
 
 .release-title {
@@ -32,6 +41,7 @@ h1 {
 }
 
 .artist-name {
+  color: white;
   font-weight: lighter;
   margin: 5px 0px;
 }
@@ -49,7 +59,7 @@ h1 {
 }
 
 .album-img {
-  width: 310px;
+  width: 100%;
 }
 
 @media (min-width: 650px) {

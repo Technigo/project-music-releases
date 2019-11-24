@@ -1,8 +1,11 @@
 import React from 'react'
 import data from './data.json'
 import { Album } from './Components/Album.js'
+import { Artist } from './Components/Artist.js'
 
 console.log(data)
+
+const releases = data.albums.items;
 
 export const App = () => {
   return ( 
@@ -11,16 +14,24 @@ export const App = () => {
         <h1 className='release-title'>New albums &amp; singles</h1>
       </header>
       <section className='release-container'>
-        
-        {data.albums.items.map((item) => {
-          return <Album 
-          key={item.id} 
-          albumTitle={item.name} 
-          artists={item.artists[0].name} 
-          image={item.images[1].url}  
-           url={item.url} />
+        {releases.map(album => {
+          return (
+            <Album 
+              key={album.id}
+              name={album.name}
+              url={album.external_urls.sporify}
+              image={album.images[1].url}>
+              {album.artists.map(artist => {
+                return (
+                  <Artist
+                    key={artist.id}
+                    name={artist.name}
+                    url={artist.external_urls.sporify} />
+                )
+              })}
+            </Album>
+          )
         })}
-
       </section>
 
     </section>
