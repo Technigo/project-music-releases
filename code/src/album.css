@@ -1,4 +1,4 @@
-.Album-container{
+.albumcontainer{
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -7,7 +7,7 @@
   width: 300px;
 } 
 
-.artist-container {
+.artistcontainer {
   margin: 0px 10px;
   width: 300px;
   display: flex;
@@ -21,20 +21,20 @@ h1{
   margin: 10px;
 }
 
-.Image {
+.image {
   margin: 30px auto;
 }
 
-.Album {
+.album {
   color: #ffffff;
   margin-bottom: 5px;
 }
 
-.Artist {
+.artist {
   color:#a0a0a0;
 }
 
-.icons-container {
+.iconscontainer {
   display: none;
 }
 
@@ -44,7 +44,7 @@ h1{
 }
 
 .icon svg:hover {
-  transform: scale(1.1); 
+  transform: scale(1.2); 
 }
 
 .icon svg path {
@@ -56,7 +56,7 @@ h1{
   fill: white;
 }
 
-.Album-container:hover .icons-container {
+.albumcontainer:hover .iconscontainer {
   display: flex;
   justify-content: space-around;
   align-items: center;

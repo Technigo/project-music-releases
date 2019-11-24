@@ -4,7 +4,25 @@
   justify-content: center;
 }
 
+footer {
+  height:100px;
+}
+  
+.madeby:hover {
+  text-decoration-line: underline;
+  color: #ffffff; 
+}
 
+.madeby {
+  font-size: 14px;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-decoration-line: none;
+  font-weight: normal;
+  color: #ffffff; 
+  display: block;
+  text-align: center;
+  padding: 70px;
+}
 
 
 

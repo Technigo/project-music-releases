@@ -21,17 +21,13 @@ export const App = () => {
             albumname={album.name} />
         ))}
       </div>
+      <footer>
+        <a className="madeby" href="mailto:ninamansster@gmail.com"> First React project by Nina Månsson at Technigo Frontend Bootcamp 2019
+    </a>
+      </footer>
     </div>
   )
 }
 
-// export const App = () => (
-//   <div className="App-container">
-//     <h1>New Albums and Releases</h1>
-//     <div className="Every-album">
-//       <Album />
-//     </div>
-//   </div>
 
-// );
 
