@@ -4,7 +4,7 @@
 
 h2 {
   font-size: 0.7em;
-  color: #fff;
+  color: #ffffff;
   margin-block-end: 0.4em;
 }
 
@@ -12,4 +12,19 @@ h3 {
   font-size: 0.7em;
   color: #a0a0a0;
   margin-block-start: auto;
+}
+
+.album-link a:link,
+.artist-link a:link {
+  text-decoration: none;
+}
+
+.album-link a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.artist-link a:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
 }

@@ -1,5 +1,6 @@
 .album-cover {
   margin-top: 3em;
+  position: relative;
 }
 
 .moreDetails {
@@ -7,12 +8,39 @@
 }
 
 .album-cover:hover .moreDetails {
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: absolute;
-  color: white;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.moreDetails .play-icon:hover,
+.heart-icon:hover,
+.dots-icon:hover {
+  transform: scale(1.2);
+  fill: #ffffff;
+}
+
+.play-icon,
+.heart-icon,
+.dots-icon {
+  fill: #a0a0a0;
+  transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.play-icon {
+  width: 25%;
+}
+
+.heart-icon {
+  width: 10%;
+}
+
+.dots-icon {
+  width: 7%;
 }
