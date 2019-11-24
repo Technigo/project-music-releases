@@ -5,25 +5,26 @@ import "./components/album.css";
 
 export const Album = (props) => {
   return (
-    <section className="album-section">
+    <section className="album-row">
+    <div className="album-section">
       <div>
         <div className="cover">
-      
-          <img src={props.cover} />
-          
-          <div className="icons">
-          <img src="./icons/heart.svg" />
-          <img src="./icons/play.svg" />
-            <img src="./icons/dots.svg" />
-            </div>
+        <div className="icons">
+        <img className="heart" src="./icons/heart.svg" alt="Heart" />
+        <a href={props.albumURL} alt="songURL"><img className="play" src="./icons/play.svg" alt="play" /></a>
+        <img className="dots" src="./icons/dots.svg" alt="dots" />
+        </div>
+        <img className="cover-img" src={props.cover} alt="coverImg" />
+        </div>
+        <div className="album-name">
+          <a href={props.albumURL}>{props.name}</a>
+        
+        </div>
+        <div className="artist-name">
+        <a href={props.artistURL}>{props.artist}</a>
+          </div>
+          </div>
       </div>
-      <div className="album-name">
-        <h2>{props.name}</h2>
-        </div>
-      <div className="artist-name">
-        <h3>{props.artist}</h3>
-        </div>
-        </div>
-    </section>
+      </section>
   )
 }

@@ -1,81 +1,150 @@
-h2 {
-    font: Helvetica;
-    font-size: 14px;
-    color: #ffffff;
-    margin: 3px 0px;
-}
 
-h3 {
-    font: Helvetica;
-    font-size: 14px;
-    color:  #a0a0a0;
-    margin: 2px 0px;
-}
+ .album-row {
+     display: flex;
+     flex-direction: column;
+ } 
+
  .album-section {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      margin: 10px;
-     border: 1px solid red;
  }
 
  .cover {
-     border: 1px solid pink;
      display: flex;
+     flex-direction: column;
      justify-content: center;
      align-items: center;
+     width: 300px;
  }
 
-.cover img {
+.cover-img{
    margin-top: 5px;
    z-index: 1;
+   width: 300px;
+   position: relative;
 }
 
-.cover:hover {
-    opacity: 0.5;
- }
+.cover-img:hover{
+    filter: brightness(30%);
+}
+
+.icons:hover~ .cover-img {
+    filter: brightness(30%);
+}
 
 .icons {
     display: none;
 }
 
-.cover:hover .icons {
-    position: absolute;
+.cover:hover .icons{
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
     z-index: 2;
-    opacity: 1;
+    width: 300px;
 }
 
-.icons img {
-    height: 70px;
-    margin: 0px 10px;
+.icons:hover > .cover-img {
+    filter: brightness(30%)
 }
 
-.icons img:hover {
-    height: 80px;
-    opacity: 3;
+.heart {
+    width: 70px;
+    padding: 15px;
 }
 
+.play {
+    width: 70px;
+}
+
+.dots {
+    width: 70px;
+    padding: 20px;
+}
+
+.play:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
 
 .album-name {
     text-align: left;
-    margin: 0 px -6px;
+    margin: 5px 0px;
+    width: 300px;
+
 }
 
 .album-name:hover {
     text-decoration: underline;
     color: white;
+    cursor: pointer;
 }
 
+.album-name a {
+    font: Helvetica;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .artist-name {
     text-align: left;
-    margin: 0 px -6px;
+    width: 300px;
+    margin: -2px 0px 28px 0px;
 }
 
 .artist-name:hover {
     text-decoration: underline;
     color: #a0a0a0;
+    cursor: pointer;
+}
+
+.artist-name a {
+    font: Helvetica;
+    font-size: 14px;
+    color:  #a0a0a0;
+    text-decoration: none;
+}
+
+/* Tablet */
+
+/* @media screen and (min-device-width: 668px) and (max-device-width: 1023px) {
+
+    .album-row {
+       width: 668px;
+    }
+
+    .album-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 300px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+    }
+} */
+
+@media (min-width: 1024) {
+    
+    .album-row {
+        width: 1024px;
+     }
+
+    .album-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        background-color: red;
+    }
+
 }
