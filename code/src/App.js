@@ -7,8 +7,6 @@ import { AlbumCover } from './components/AlbumCover'
 import { AlbumOptions } from './components/AlbumOptions'
 import { Artist } from 'components/Artist'
 
-console.log(data)
-
 const releases = data.albums.items;
 
 export const App = () => {
