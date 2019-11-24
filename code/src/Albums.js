@@ -3,18 +3,20 @@ import { Icons } from "./Icons";
 
 export const Albums = props => {
   return (
-    <div className="AlbumContainer">
+    <div
+      className="AlbumContainer"
+      style={{ backgroundImage: `url(${props.image})` }}
+    >
       <div className="ArtistContainer">
         <div>
-          <img className="AlbumImage" src={props.image} alt="albumImage"></img>
           <div className="iconsContainer">
             <Icons />
           </div>
           <div className="ArtistContent">
-            <a href={props.albumURL}>
+            <a className="titleLink" href={props.albumURL}>
               <p className="AlbumName">{props.name}</p>
             </a>
-            <a href={props.artistURL}>
+            <a className="titleLink" href={props.artistURL}>
               <p className="ArtistName">{props.artist}</p>
             </a>
           </div>

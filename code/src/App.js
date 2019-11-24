@@ -25,17 +25,3 @@ export const App = () => {
     </header>
   );
 };
-
-/*
-
-export const App = () => {
-  return (
-    <header>
-      <Header />
-      <Albums />
-    </header>
-  );
-};
-
-
-*/

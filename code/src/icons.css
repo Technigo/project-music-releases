@@ -5,11 +5,8 @@
 .icons {
   display: flex;
   align-content: center;
-  height: 202px;
+  height: 200px;
   width: 200px;
-  position: relative;
-  z-index: 3;
-  top: -275px;
   background: #2928289c;
   opacity: 0;
 }
@@ -23,19 +20,19 @@
   justify-content: space-around;
   align-content: center;
   width: 200px;
-  margin-top: 70px;
 }
 
 img.iconHeart {
   height: 25px;
   width: 25px;
-  margin-top: 10px;
+  padding-top: 80px;
   fill: white;
 }
 
 .iconPlay {
   height: 50px;
   width: 50px;
+  padding-top: 70px;
   fill: white;
 }
 
@@ -48,5 +45,5 @@ img.iconHeart {
 .iconDots {
   height: 15px;
   width: 20px;
-  margin-top: 15px;
+  padding-top: 85px;
 }
