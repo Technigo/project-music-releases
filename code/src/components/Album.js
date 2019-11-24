@@ -1,13 +1,18 @@
 import React from 'react'
-// import { Dots } from './public/icons/Dots'
-// import { Heart } from './public/icons/Heart'
-// import { Play } from './public/icons/Play'
 import './Album.css'
+// import { Dots } from '../icons/Dots'
+import { ReactComponent as DotsIcon } from '../icons/dots.svg'
+import { ReactComponent as HeartIcon } from '../icons/heart.svg'
+import { ReactComponent as PlayIcon } from '../icons/play.svg'
+
 
 export const Album = (props) => (
     <div className="albumContainer">
-        <div className="albumCover" style={{ backgroundImage: `url(${props.image})` }}>>
-        {/* <img className="albumImg" src={props.image} alt='Album Cover' /> */}
+        <div className="albumCover" style={{ backgroundImage: `url(${props.image})` }}>
+            <HeartIcon className="heartIcon" />
+            <PlayIcon className="playIcon" />
+            <DotsIcon className="dotsIcon" />
+            {/* <Dots className="dotsIcon" /> */}
         </div>
         <div className="moreDetails">
             <a className="linkAlbumTitle" href={props.urlAlbumTitle}><h1 className="albumTitle">{props.albumTitle}</h1></a>
