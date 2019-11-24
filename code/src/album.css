@@ -7,9 +7,18 @@
   width: 300px;
 } 
 
+.artist-container {
+  margin: 0px 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
 h1{
   font-family: 'Helvetica Neue', sans-serif;
   color: #ffffff;
+  margin: 10px;
 }
 
 .Image {
@@ -30,7 +39,7 @@ h1{
 }
 
 .icon svg {
-  width: 60px;
+  width: 40px;
   transition: all 1s ease-in-out;
 }
 
@@ -49,7 +58,7 @@ h1{
 
 .Album-container:hover .icons-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: absolute;
   color: #fff;
@@ -70,6 +79,5 @@ a {
 
 a:hover {
   text-decoration-line: underline;
-  color: #ffffff;
-  
+  color: #ffffff; 
 }

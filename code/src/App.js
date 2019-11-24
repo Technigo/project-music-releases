@@ -4,7 +4,7 @@ import { Album } from './Album'
 import './app.css'
 
 
-console.log(data.albums.items[0].external_urls)
+console.log(data)
 
 export const App = () => {
   return (
@@ -15,9 +15,9 @@ export const App = () => {
           <Album
             key={album.id}
             image={album.images[1].url}
-            uri={album.uri}
+            uri={album.external_urls.spotify}
             artistname={album.artists[0].name}
-            artisturi={album.artists[0].uri}
+            artisturi={album.artists[0].external_urls.spotify}
             albumname={album.name} />
         ))}
       </div>
