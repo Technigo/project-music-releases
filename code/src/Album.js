@@ -1,18 +1,17 @@
 import React from 'react'
 import './components/album.css';
 import './components/icons.css';
-// import data from './data.json'
+/* import data from './data.json'*/
 
 /*console.log(data)
 console.log(data.album.items[1])*/
-
 
 export const Album = (props) => {
     return (
 
         <div>
             <div className="album-cover">
-                {/* --ta bort img-- */}
+
                 <img className="album-img" src={props.image} alt="Album" />
 
                 <div className="icons">
@@ -22,15 +21,11 @@ export const Album = (props) => {
                 </div>
             </div>
 
-
             <div className="album-info">
                 <div className="album-title">
                     <a href={props.albumURL}>{props.albumTitle}</a>
                 </div>
             </div>
-
-
-
 
             <div className="album-info">
                 <div className="album-title">
