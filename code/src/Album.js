@@ -1,5 +1,4 @@
 import React from 'react'
-import data from './data.json'
 import { ReactComponent as Heart} from 'heart.svg'
 import { ReactComponent as Play} from 'play.svg'
 import { ReactComponent as Dots} from 'dots.svg'
@@ -15,14 +14,14 @@ export const Album = (props) => (
     </div>
 
     <div className="album-name">
-      <a className="album-link" href={props.linkalbum} target="_blank">
+      <a className="album-link" href={props.linkalbum} target="_blank" rel="noopener noreferrer">
       {props.album}
       </a>
     </div>
 
     <div className="artist-name">
-      <a className="artist-link" href={props.linkartist} target="_blank">
-      {props.artist}
+      <a className="artist-link" href={props.linkartist} target="_blank" rel="noopener noreferrer">
+      {props.artist} 
       </a>
     </div>
   </div>

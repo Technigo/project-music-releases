@@ -16,9 +16,9 @@ export const App = () => {
       <Album 
       key={item.id} 
       image={item.images[1].url}
-      linkalbum={item.uri}
+      linkalbum={item.external_urls.spotify}
       album={item.name}
-      linkartist={item.artists[0].uri}
+      linkartist={item.artists[0].external_urls.spotify}
       artist={item.artists[0].name}
       />
     ))}
