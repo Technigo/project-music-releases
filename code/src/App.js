@@ -24,6 +24,7 @@ export const Album = (props) => {
     if (index !== ArtistList.length - 1) {
       output.push(', ')
     }
+    console.log(output)
   })
  
   return (
@@ -45,7 +46,7 @@ export const Album = (props) => {
         </div>
       </div>
       <p class="title">{props.title}</p>
-      <p class="artist">{output}</p>nm
+      <p class="artist">{output}</p>
     </div>
   )
 }
