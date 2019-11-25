@@ -49,7 +49,15 @@
 	}
 
 	.albumCards {
-		width: 100%;
+		width: auto;
 		height: 300px;
+	}
+
+	.wrapper {
+		width: 300px;
+	}
+
+	.titleWrapper {
+		width: 300px;
 	}
 }
