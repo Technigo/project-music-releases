@@ -14,7 +14,7 @@ const styles = {
     albumCoverWrapper: {
         width: "23%",
         overflow: "hidden",
-        marginBottom: "1rem",
+        marginBottom: "2rem",
         '@media screen and (max-width: 886px)': {
             width: "45%"
         },
