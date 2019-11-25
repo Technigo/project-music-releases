@@ -41,3 +41,15 @@
 	position: relative;
 	left: 10px;
 }
+
+@media (max-width: 667px) {
+	.albumCovers {
+		width: 300px;
+		height: auto;
+	}
+
+	.albumCards {
+		width: 100%;
+		height: 300px;
+	}
+}

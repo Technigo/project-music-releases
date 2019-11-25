@@ -46,3 +46,23 @@
 	cursor: pointer;
 	opacity: 1;
 }
+
+@media (max-width: 667px) {
+	.logos {
+		width: 300px;
+		bottom: 200px;
+		justify-content: space-around;
+	}
+
+	.heart {
+		width: 40px;
+	}
+
+	.more {
+		width: 40px;
+	}
+
+	.play {
+		width: 75px;
+	}
+}

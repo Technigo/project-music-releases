@@ -1,8 +1,7 @@
 .contentWrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	margin-left: auto;
+	justify-content: center;
 }
 
 header {
