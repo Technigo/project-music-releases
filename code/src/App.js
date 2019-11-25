@@ -2,7 +2,6 @@ import React from 'react'
 import data from './data.json'
 import playlistdata from './stretch-goal.json'
 import './app.css'
-import { Header } from './components/Header'
 import { Album } from './components/Album'
 import { Playlist } from './components/Playlist'
 
@@ -28,7 +27,9 @@ export const App = () => {
       </section>
 
       <div className="main-content">
-        <Header />
+        <div className="headline">
+          <h1>New albums & singles</h1>
+        </div>
         <div className="app-content">
           {data.albums.items.map(item => {
             return (
