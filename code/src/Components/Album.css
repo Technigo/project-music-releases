@@ -1,29 +1,48 @@
 .albumInfo {
   width: 25%;
-  position: relative; 
+  padding: 5px; 
+  z-index: 2;
 }
 
 
 .albumInfo:hover {
-opacity: 0.9;
-filter: brightness(30%);
+  z-index: 1;
+  opacity: 0.9;
+  filter: brightness(50%);
+
 }
 
-.AlbumInfo:hover .icons {
+.icons {
+  display: none;
+
+}
+
+/* .albumCover:hover .icons {
   display: flex;
-  opacity: 1; 
-  transform: scale(1.2);
-  z-index: 3;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute; 
   top: 120px; 
-  left: 80px; 
+  left: 100px; 
   fill: white; 
-  opacity: 1;
+  align-items: center; 
+  justify-content: space-evenly;
+
   z-index: 3;
-  stroke-opacity: 0.5;
-    } 
+  
+} */
+
+.albumInfo:hover .icons {
+  display: flex;
+  position: absolute; 
+  top: 120px; 
+  left: 100px; 
+  fill: white; 
+  align-items: center; 
+  justify-content: space-evenly;
+  z-index: 10;
+  opacity: 0.3;
+  
+  
+}
 
 @media (max-width: 1024px) {
   .albumInfo {
@@ -44,61 +63,42 @@ h1 {
   
 }
 
+h1:hover {
+  text-decoration: underline;
+  }
+
 h3 {
   font-size: 14px;
   color: #a0a0a0;
-  
 } 
 
+h3:hover {
+  text-decoration: underline;
+  }
 
-.icons {
-  display: none;
-  
-  
+a {
+  text-decoration: none;
 }
-
-/* .icons svg {
-  width: 50px;
-  left: 200px;
-  top: 100px; 
-  .heart-icon svg{
-  width: 50px; 
-  display: none;
-}
-} */
 
 .heart-icon svg{
   width: 30px; 
-  
 }
 
 .play-icon svg{
   width: 50px; 
-  
 }
 
 .dots-icon svg{
   width: 30px; 
-  
 }
 
 
-
-/* .icons svg:hover {
-  display: flex;
-  opacity: 1; 
+.play-icon:hover {
   transform: scale(1.2);
-  z-index: 3;
-  position: absolute;
-  justify-content: space-between;
-  align-items: center;
-  top: 120px; 
-  left: 80px; 
-  fill: white; 
+  z-index: 10;
+  filter: brightness(200%);
   opacity: 1;
-  z-index: 3;
-  stroke-opacity: 0.5;
-} */
+}
 
 
 
