@@ -70,12 +70,9 @@
 .play{
     width: 35px;
     height: 35px;
-    /* fill: "white"; */
     margin: 0px 15px;
     opacity: 0.8;
-    /* transition: fill 0.5s ease-in-out; */
     transition: all 0.3s ease-in-out;
-    /* Nedan för att göra bakgrunden rund istället för fyrkantig */
     border-radius: 50%;
 }
 
@@ -85,7 +82,7 @@
     margin: 0px 7px;
     opacity: 1.0;
     transition: all 0.3s ease-out;
-    /* Nedan för att göra bakgrunden genomskinligt svart */
+    /* Nedan för att göra bakgrunden genomskinligt svart i svg */
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -128,7 +125,6 @@ max-width: 500px;
     width: 100%;
     padding: 0px;
 }
-
 }
 
 @media (min-width: 900px) {
