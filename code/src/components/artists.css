@@ -1,0 +1,22 @@
+a {
+	font-size: 16px;
+	color: white;
+	font-family: Helvetica;
+	position: relative;
+	text-decoration: none;
+}
+
+.artistName {
+	font-family: Helvetica;
+	opacity: 0.7;
+}
+
+/* To separate multiple artists */
+.artistName:not(:last-child):after {
+	content: '\002C \0020';
+}
+
+.artistName:hover {
+	text-decoration: underline;
+	opacity: 1;
+}

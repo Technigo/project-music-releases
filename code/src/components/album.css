@@ -1,6 +1,13 @@
 .wrapper {
-	display: flex;
 	margin: 20px;
+}
+
+.wrapper:hover .albumCovers {
+	opacity: 0.3;
+}
+
+.wrapper:hover .logos {
+	opacity: 1;
 }
 
 .albumCovers {
@@ -10,12 +17,27 @@
 
 .albumCards {
 	width: 400px;
+	height: 400px;
+	margin: 10px;
 }
 
 .albumName {
-	margin-top: 10px;
-	font-size: 14px;
 	font-weight: bold;
-	color: black;
+	font-size: 16px;
+	color: white;
 	font-family: Helvetica;
+	position: relative;
+	text-decoration: none;
+}
+
+.albumName:hover {
+	text-decoration: underline;
+}
+
+.titleWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	position: relative;
+	left: 10px;
 }

@@ -3,7 +3,7 @@ import data from './data.json'
 import './app.css'
 import { Album } from './components/Album'
 // import { Header } from './components/Header'
-// import { Artist } from './components/Artist'
+import { Artist } from './components/Artists'
 
 console.log(data)
 
