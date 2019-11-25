@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './data.json'
+import './app.css'
 import { Artist } from "./components/Artist";
 import { Album } from "./components/Album";
 
