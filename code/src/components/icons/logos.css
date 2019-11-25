@@ -1,6 +1,6 @@
 .logos {
 	position: relative;
-	justify-content: center;
+	justify-content: space-around;
 	width: 400px;
 	bottom: 250px;
 	display: flex;
