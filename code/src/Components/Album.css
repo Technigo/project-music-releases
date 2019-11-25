@@ -1,34 +1,22 @@
 .albumInfo {
   width: 25%;
   padding: 5px; 
-  z-index: 2;
 }
 
 
 .albumInfo:hover {
-  z-index: 1;
-  opacity: 0.9;
-  filter: brightness(50%);
-
+  opacity: 1;
+  filter: brightness(100%);
 }
 
 .icons {
   display: none;
-
+  
 }
 
-/* .albumCover:hover .icons {
-  display: flex;
-  position: absolute; 
-  top: 120px; 
-  left: 100px; 
-  fill: white; 
-  align-items: center; 
-  justify-content: space-evenly;
-
-  z-index: 3;
-  
-} */
+.albumCover:hover {
+  filter: brightness(50%);
+}
 
 .albumInfo:hover .icons {
   display: flex;
@@ -38,10 +26,17 @@
   fill: white; 
   align-items: center; 
   justify-content: space-evenly;
+  opacity: 1;
+}
+
+
+.icons:hover ~ .albumCover{
+ filter: brightness(50%);
+}
+
+.play-icon:hover {
+  transform: scale(1.2);
   z-index: 10;
-  opacity: 0.3;
-  
-  
 }
 
 @media (max-width: 1024px) {
@@ -53,6 +48,7 @@
 @media (max-width: 668px) {
   .albumInfo {
     width: 100%;
+    padding: 20px; 
   }
 }
 
@@ -60,7 +56,6 @@ h1 {
   font-size: 14px;
   color: #ffffff;
   background-size: 50px;  
-  
 }
 
 h1:hover {
@@ -93,12 +88,6 @@ a {
 }
 
 
-.play-icon:hover {
-  transform: scale(1.2);
-  z-index: 10;
-  filter: brightness(200%);
-  opacity: 1;
-}
 
 
 
