@@ -1,5 +1,5 @@
 import React from "react"
-import 'Artists.css'
+import './Artists.css'
 
 export const Artists = (props) => {
   return (
@@ -7,6 +7,3 @@ export const Artists = (props) => {
 
   )
 }
-// {/* <div className="ArtistName">
-//     <a href={props.artistUrl}>{props.artistName}</a>
-//   </div> */}

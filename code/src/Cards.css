@@ -5,7 +5,6 @@
   width: 80%;
   font-family: Helvetica;
   font-size: 14px;
-  /* padding: 10px; */
   margin: 15px;
   display:flex;
   flex-direction: column;
@@ -24,7 +23,7 @@ a{
 
 @media (min-width: 1025px){
 .Cards{
-width: 22%;
+  width: 22%;
 
 }
 

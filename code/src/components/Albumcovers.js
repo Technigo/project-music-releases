@@ -2,9 +2,9 @@ import React from "react"
 import { ReactComponent as Heart } from 'icons/heart.svg'
 import { ReactComponent as Play } from 'icons/play.svg'
 import { ReactComponent as Dots } from 'icons/dots.svg'
-import 'Albumcovers.css'
+import './Albumcovers.css'
 
-export const Images = (props) => (
+export const Albumcovers = (props) => (
   <div className="album-cover">
     <img src={props.image} alt="Album cover" />
     <div className="icons">
@@ -15,13 +15,3 @@ export const Images = (props) => (
   </div>
 
 )
-
-// {
-//   return (
-//     <div>
-//       {data.albums.items.map((album) => {
-//         return <div key={album.images[1].url}> <img src={album.images[1].url} alt='Album cover'></img></div>
-//       })}
-//     </div>
-//   )
-// }

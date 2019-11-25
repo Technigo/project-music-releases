@@ -1,7 +1,7 @@
 .App{
   display: flex;
-flex-direction: column;
-background-color:#161616;
+  flex-direction: column;
+  background-color:#161616;
 }
 .album-section{
   display:flex;

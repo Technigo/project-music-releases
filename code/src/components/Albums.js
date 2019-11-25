@@ -1,5 +1,5 @@
 import React from "react"
-import 'Albums.css'
+import './Albums.css'
 
 export const Albums = (props) => (
   <div className="album-name">

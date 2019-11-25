@@ -1,16 +1,14 @@
 import React from 'react'
-import { Albums } from './Albums.js'
-import { Artists } from './Artists.js'
-import { Images } from './Images.js'
+import { Albums } from './components/Albums.js'
+import { Artists } from './components/Artists.js'
+import { Albumcovers } from './components/Albumcovers.js'
 import 'Cards.css'
-import 'Albumcovers.css'
-import 'Artists.css'
+import './components/Albumcovers.css'
+import './components/Artists.css'
 
 export const Cards = (props) => (
   <div className="Cards">
-    {/* <div className="album-cover" style={{ backgroundImage: `url(${props.image})` }}> */}
-    {/* </div> */}
-    <Images
+    <Albumcovers
       key={props.id}
       image={props.image}
     />
@@ -27,20 +25,5 @@ export const Cards = (props) => (
       })}
     </div>
 
-    {/* <Artists key={props.item.id} item={props.item}
-    /> */}
-
-    {/* <Artists
-      artistName={props.artistName}
-      artistUrl={props.artistUrl} /> */}
-
   </div >
 )
-
-// {props.item.artists.map(item => {
-//   return (
-//     <Artists
-//       artistName={props.artistName}
-//       artistUrl={props.artistUrl} />
-//   )
-// })}

@@ -1,0 +1,13 @@
+footer{
+  font-size: 12px;
+  margin: 10px;
+  color: #add8e5;
+}
+footer a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #add8e5;
+}
+footer a:hover{
+  color: #89d6f1;
+}
