@@ -27,17 +27,17 @@
   opacity: 0.5;
 }
 
-.flex_icons #playButton{
+.flex_icons #playButton {
   height: 95px;
   width: 95px;
 }
 
-.flex_icons svg  +#playButton:hover {
-  opacity: 1; 
+.flex_icons svg + #playButton:hover {
+  opacity: 1;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
 
 .img_icons {
@@ -45,29 +45,29 @@
   justify-content: center;
   align-content: center;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(100%, max-content);
   grid-template-rows: repeat(3, 1fr);
 }
 
-@media(min-width: 668px) {
+@media (min-width: 668px) {
   .flex_icons svg {
     height: 30px;
     width: 30px;
   }
-  
-  .flex_icons #playButton{
+
+  .flex_icons #playButton {
     height: 80px;
     width: 80px;
   }
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .flex_icons svg {
     height: 20px;
     width: 20px;
   }
-  
-  .flex_icons #playButton{
+
+  .flex_icons #playButton {
     height: 65px;
     width: 65px;
   }
