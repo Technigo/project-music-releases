@@ -13,8 +13,7 @@ export const App = () => {
     <div>
       <div>
         <Header />
-        {/*<Album /> 
-      <artists /> */}
+
       </div>
 
       <section className="album-container">

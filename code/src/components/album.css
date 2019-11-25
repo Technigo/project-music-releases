@@ -41,9 +41,6 @@ padding-left: 120px;
 
 .album-img {
   width: 100%
-  /* position: absolute;
-  z-index: 1;
-  align-self: flex-end; */
 } 
  
 .album-img:hover {filter: brightness(30%);}

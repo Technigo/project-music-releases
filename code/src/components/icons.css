@@ -10,9 +10,6 @@
     right: 0;
     bottom: 0;
 }
-    /* transition: translate(71%, -30%); */
-    /* transform: translate(71%, 50%); */
-    /* display: inline-flex */
 
  .album-cover:hover .icons {
      display: flex;
