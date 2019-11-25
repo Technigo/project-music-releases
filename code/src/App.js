@@ -23,7 +23,7 @@ const renderAlbum = album => {
 export const App = () => {
   return (
     <div>
-      <h1>New releases</h1>
+      <h1>New albums and singles</h1>
       <div className="flex-container">{data.albums.items.map(renderAlbum)}</div>
     </div>
   );
