@@ -2,7 +2,7 @@ import React from "react";
 
 export const Logos = () => (
   <div>
-    <a href="#">
+    <a href="https://www.spotify.com/se/">
       <svg
         className="heart"
         xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ export const Logos = () => (
       </svg>
     </a>
 
-    <a href="#">
+    <a href="https://www.spotify.com/se/">
       <svg
         className="play"
         xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@ export const Logos = () => (
         />
       </svg>
     </a>
-    <a href="#">
+    <a href="https://www.spotify.com/se/">
       <svg
         className="dots"
         xmlns="http://www.w3.org/2000/svg"

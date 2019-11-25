@@ -1,6 +1,48 @@
 .content {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+.albumList {
+  padding: auto;
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1000px;
+  flex-direction: row;
+  background-color: #1a1a1a;
+  max-width: 1224px;
+}
+
+.header {
+  background-color: #1a1a1a;
+  border-bottom: #3b3b3b 1px solid;
+  color: #fff;
+  margin: 0 15px 0 15px;
+}
+
+.headertext {
+  font-size: 20px;
+}
+
+/* 3-row media */
+@media (max-width: 1239px) {
+  .albumList {
+    max-width: 918px;
+  }
+}
+
+/* 2-row media */
+@media (max-width: 933px) {
+  .albumList {
+    max-width: 613px;
+  }
+}
+
+/* 1-row media */
+@media (max-width: 628px) {
+  .albumList {
+    max-width: 305px;
+  }
 }
