@@ -19,14 +19,14 @@
   width: 20px;
   fill: white;
   opacity: 0.6;
-  transition: transform 0.4s;
 }
 
-.album-controls svg:hover {
+.album-controls .play-icon:hover {
   transform: scale(1.2);
   opacity: 1;
 }
 
 .album-controls .play-icon {
   width: 50px;
+  transition: transform 0.4s;
 }
