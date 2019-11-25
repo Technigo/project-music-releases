@@ -1,21 +1,149 @@
-.body {
-    background-color: tomato;
+
+.album-cover {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 50vh;
+    padding: 20px;
+    color: #ffff;
 }
 
-.album {
-    background-color: tomato;
+.album-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 50vh;
+  padding: 20px;
+  position: relative;
+  background-size: cover;
+  flex-wrap: wrap;
+  background-color: rgb(45, 43, 43);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h3 {
+  display: none;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.moreDetails {
+  display: none;
+}
+
+.moreDetails svg{
+  width: 50px;
+  color: #ffff;
+  fill: #ffff;
+}
+
+.album-cover:hover .moreDetails {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
+    position: absolute;
+    fill: #ffff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.album-cover:hover h3 {
+  display: unset;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffff;
+}
+
+.icons {
+  color: #ffff;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-heart {
+  fill:  #ffff;
+  margin: 0px 15px;
+  width: 20%;
+}
+
+.icon-heart:hover {
+  fill:  #ffff;
+  margin: 0px 15px;
+  transform: scale(1.3);
+}
+
+.icon-dots {
+  fill: #ffff;
+  margin: 0px 15px;
+  width: 20%;
+}
+
+.icon-dots:hover {
+  fill: #ffff;
+  margin: 0px 15px;
+  transform: scale(1.3);
+}
+
+.icon-play {
+  fill:  #ffff;
+  margin: 0px 15px;
+  width: 20%;
+}
+
+.icon-play:hover {
+  fill: #ffff;
+  margin: 0px 15px;
+  transform: scale(1.3);
+}
+
+.links a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #ffff;
+}
+
+@media (min-width: 668px) {
+
+  .album-cover {
+    width: 100%;}
+
+  .album-card {
+    width: 50%;}
+  }
+  
+  .all-cards {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    background-size: cover;
     flex-wrap: wrap;
-}
-
-
-@media (min-width: 668px max-width: 1024px) {
-
-}
+    background-color: black;
+  }
 
 @media (min-width: 1025px) {
-    
+  .album-cover {
+    width: 100%;}
+  .album-card {
+    width: 25%;}
 }
