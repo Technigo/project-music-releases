@@ -1,6 +1,6 @@
 .logos {
 	position: relative;
-	justify-content: space-around;
+	justify-content: center;
 	width: 400px;
 	bottom: 250px;
 	display: flex;
@@ -27,11 +27,13 @@
 	width: 100px;
 	fill: white;
 	opacity: 0.6;
+	transition: transform 0.4s;
 }
 
 .play:hover {
 	cursor: pointer;
 	transform: scale(1.1);
+	transition: transform 0.4s;
 	opacity: 1;
 }
 

@@ -1,6 +1,18 @@
 .contentWrapper {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
 	margin-left: auto;
+}
+
+header {
+	margin: 0 35px 0 35px;
+}
+
+h1 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333;
+	font-size: 18px;
+	color: white;
+	font-family: Helvetica;
 }

@@ -2,11 +2,11 @@
 	margin: 20px;
 }
 
-.wrapper:hover .albumCovers {
+.albumCards:hover .albumCovers {
 	opacity: 0.3;
 }
 
-.wrapper:hover .logos {
+.albumCards:hover .logos {
 	opacity: 1;
 }
 
@@ -16,9 +16,9 @@
 }
 
 .albumCards {
-	width: 400px;
+	width: 100%;
 	height: 400px;
-	margin: 10px;
+	/* margin: 10px; */
 }
 
 .albumName {
