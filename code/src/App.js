@@ -4,8 +4,6 @@ import AlbumCover from "./Components/AlbumCover"
 import styles from './styles'
 import Radium from 'radium'
 
-console.log(data)
-
 const App = () => (
   <div style={styles.wrapper}>
     <h1 style={styles.h1}>New albums and singles</h1>
@@ -27,5 +25,3 @@ const App = () => (
 
 
 export default Radium(App)
-
-// Responsive, showing 4 on desktop, 2 on tablet, and 1 on mobile ?
