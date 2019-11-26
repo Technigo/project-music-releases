@@ -7,6 +7,7 @@
 .albumInfo:hover {
   opacity: 1;
   filter: brightness(100%);
+  display: block;
 }
 
 .icons {
@@ -16,6 +17,7 @@
 
 .albumCover:hover {
   filter: brightness(50%);
+  display: block; 
 }
 
 .albumInfo:hover .icons {
