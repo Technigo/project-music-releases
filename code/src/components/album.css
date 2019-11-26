@@ -1,15 +1,8 @@
-
- .album-row {
-     display: flex;
-     flex-direction: column;
- } 
-
  .album-section {
-     display: flex;
+     width: 330px;
+     height: 420px;
      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 10px;
+     margin: 0px 10px;
  }
 
  .cover {
@@ -73,9 +66,8 @@
 
 .album-name {
     text-align: left;
-    margin: 5px 0px;
+    margin: 8px 0px;
     width: 300px;
-
 }
 
 .album-name:hover {
@@ -94,7 +86,7 @@
 .artist-name {
     text-align: left;
     width: 300px;
-    margin: -2px 0px 28px 0px;
+    margin: -10px 0px 34px 0px;
 }
 
 .artist-name:hover {
@@ -104,47 +96,9 @@
 }
 
 .artist-name a {
-    font: Helvetica;
+    font: Helvetica Neue;
     font-size: 14px;
     color:  #a0a0a0;
     text-decoration: none;
 }
 
-/* Tablet */
-
-/* @media screen and (min-device-width: 668px) and (max-device-width: 1023px) {
-
-    .album-row {
-       width: 668px;
-    }
-
-    .album-section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 300px;
-        height: 400px;
-        justify-content: center;
-        align-items: center;
-        background-color: red;
-    }
-} */
-
-@media (min-width: 1024) {
-    
-    .album-row {
-        width: 1024px;
-     }
-
-    .album-section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 300px;
-        justify-content: center;
-        align-items: center;
-        margin: 10px;
-        background-color: red;
-    }
-
-}

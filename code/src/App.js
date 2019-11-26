@@ -9,7 +9,7 @@ export const App = () => {
   return (
     <div>
       <Header />
-    <div className="album-container">
+      <div className="album-container">
       {data.albums.items.map(item => {
         return <Album key={item.id}
           cover={item.images[1].url}
@@ -17,7 +17,7 @@ export const App = () => {
           albumURL={item.external_urls.spotify}
           name={item.name} artist={item.artists[0].name} />
         })}
-      </div>
+        </div>
       </div>
   )
 }

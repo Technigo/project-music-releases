@@ -5,8 +5,7 @@ import "./components/album.css";
 
 export const Album = (props) => {
   return (
-    <section className="album-row">
-    <div className="album-section">
+    <section className="album-section">
       <div>
         <div className="cover">
         <div className="icons">
@@ -24,7 +23,6 @@ export const Album = (props) => {
         <a href={props.artistURL}>{props.artist}</a>
           </div>
           </div>
-      </div>
       </section>
   )
 }

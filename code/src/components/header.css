@@ -8,6 +8,7 @@ h1 {
 
 .header {
     display: flex;
-    margin: 10px 10px 20px 10px;
+    margin: 10px 40px 10px 40px;
     border-bottom: 1px solid #a0a0a071;
 }
+
