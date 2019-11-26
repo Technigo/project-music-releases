@@ -8,18 +8,15 @@ import { ReactComponent as Dots } from "./dots.svg"
 
 export const Album = (props) => (
 
-
   <div className="albumInfo">
+    <a href={props.albumLink}>
+      <img className="albumCover" src={props.image} alt="album cover" />
+    </a>
+    <h1>{props.title}</h1>
+    <a href={props.artistLink}>
+      <h3>{props.artist}</h3>
+    </a>
 
-    <div className="albumCard">
-      <a href={props.albumLink}>
-        <img className="albumCover" src={props.image} alt="album cover" />
-      </a>
-      <h1>{props.title}</h1>
-      <a href={props.artistLink}>
-        <h3>{props.artist}</h3>
-      </a>
-    </div>
 
     <div className="icons">
       <div className="heart-icon">
