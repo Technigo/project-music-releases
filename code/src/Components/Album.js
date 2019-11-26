@@ -17,7 +17,6 @@ export const Album = (props) => (
       <h3>{props.artist}</h3>
     </a>
 
-
     <div className="icons">
       <div className="heart-icon">
         <Heart />

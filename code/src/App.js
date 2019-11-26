@@ -4,11 +4,12 @@ import { Album } from "./Components/Album.js"
 import "./App.css"
 
 
-
 console.log(data)
+
 
 export const App = () => {
   return (
+
     <div className="cards">
 
       {data.albums.items.map((item) => (
