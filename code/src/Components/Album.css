@@ -4,7 +4,6 @@
   min-height: 50vh;
 }
 
-
 .albumInfo:hover {
   filter: brightness(60%);
 } 
@@ -13,7 +12,6 @@
   display: none;
   width: 40%;
 }
-
 
 .albumInfo:hover .icons {
   display: flex;
@@ -55,7 +53,6 @@ h1 {
 h1:hover {
   text-decoration: underline;
   }
-
 
 h3 {
   font-size: 14px;
