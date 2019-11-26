@@ -1,6 +1,7 @@
 # Project 9 - Build a 'New Releases' music site using React
 
 Project week 9 @ Technigo Bootcamp 2019 was to use React components to build a page which shows new album and single releases.<br>
+https://nyblad-music-releases.netlify.com/ <br>
 
 In the `code/src/data.json` an API response from Spotify is included which contains data for 50 recent releases. Our task was to use this, along with `.map()` to mount an 'Album' component for each album. Within those components our app could should have a structure like this:<br>
 
