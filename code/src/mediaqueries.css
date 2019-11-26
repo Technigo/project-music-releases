@@ -1,0 +1,40 @@
+/* Media queries */
+
+@media(max-width:420px){
+  h1{
+    font-size: 20px;
+  }
+
+  .Album{
+    width:300px;
+    height:auto;
+  }
+
+  #albumCover{
+    width:300px;
+    height: auto;
+  }
+
+}
+
+
+@media(max-width:800px){
+  h1{
+    margin: 0 0 5px 0;
+    align-self: auto;
+  }
+
+  #albumCover {
+    width: 300px;
+  }
+}
+
+@media(max-width:1072px){
+  .wrapper{
+    width: 100%;
+  }
+
+  .musicContainer{
+    width:100%;
+  }
+}

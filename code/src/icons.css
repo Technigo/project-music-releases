@@ -1,0 +1,29 @@
+.songIcons{
+  position: relative;
+  display: none; 
+}
+
+.songIcons svg{
+  margin: 14px;
+  height: 30px;
+  width: auto;
+  fill: #FFF;;
+}
+
+.play{
+  height: 60px;
+  width: auto;
+}
+
+.play:hover{
+  transform: scale(1.5);
+}
+
+.songImage:hover .songIcons{
+  position: absolute;
+  top: 90px;
+  left: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  }
