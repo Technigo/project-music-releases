@@ -65,7 +65,7 @@ h3 {
 }
 
 .album-container {
-  width: 100%;
+  max-width: 70%;
   height: 40%;
   margin: 10px;
   position: relative;
@@ -73,7 +73,7 @@ h3 {
 
 .album-image {
   width: 100%;
-  max-height: 300px;
+  height: auto;
 }
 
 svg {
@@ -106,7 +106,7 @@ svg {
 /* TABLET */
 @media (min-width: 667px) and (max-width: 1024px) {
   .album-container {
-    width: 46%;
+    width: 33%;
   }
 
   header {
@@ -117,7 +117,7 @@ svg {
 /* DESKTOP */
 @media (min-width: 1025px) {
   .album-container {
-    width: 23%;
+    max-width: 23%;
   }
 
   header {
