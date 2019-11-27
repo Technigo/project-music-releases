@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-size: cover;
+  width: 300px;
+  height: 300px;
   position: relative;
-  min-height: 30vh;
 }
 
 h2 {
@@ -13,8 +12,8 @@ h2 {
 }
 
 .albumCard {
-  width: 30vh;
-  height: 30vh;
+  width: 300px;
+  height: 330px;
   margin: 15px;
 }
 
@@ -22,6 +21,7 @@ h2 {
   text-decoration: none;
   font-size: 14px;
   font-family: helvetica;
+  margin: 2px;
 }
 
 .albumName {

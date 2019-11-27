@@ -12,7 +12,7 @@
   justify-content: flex-start;
   flex-direction: row;
   background-color: #1a1a1a;
-  max-width: 1224px;
+  width: 1320px;
 }
 
 .header {
@@ -27,22 +27,22 @@
 }
 
 /* 3-row media */
-@media (max-width: 1239px) {
+@media (max-width: 1339px) {
   .albumList {
-    max-width: 918px;
+    max-width: 990px;
   }
 }
 
 /* 2-row media */
-@media (max-width: 933px) {
+@media (max-width: 1023px) {
   .albumList {
-    max-width: 613px;
+    max-width: 660px;
   }
 }
 
 /* 1-row media */
-@media (max-width: 628px) {
+@media (max-width: 765px) {
   .albumList {
-    max-width: 305px;
+    max-width: 330px;
   }
 }

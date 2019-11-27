@@ -2,7 +2,7 @@ import React from "react";
 import data from "./data.json";
 import Album from "./Album/Album";
 import "./app.css";
-import { Header } from "./Header.js";
+import Header from "./Header.js";
 
 console.log(data);
 

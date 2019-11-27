@@ -5,3 +5,5 @@ export const Header = () => (
     <p className="headertext">New Albums &amp; singles</p>
   </div>
 );
+
+export default Header;
