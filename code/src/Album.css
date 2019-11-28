@@ -17,10 +17,20 @@
 
 .songImage{
 margin-bottom: 5px;
+z-index: 2;
+position: relative;
 }
   
-.songImage:hover{
+.songImage:hover::after{
+content:"";
+z-index:3;
 opacity: 0.5;
+position: absolute;
+width: 100%;
+height: 100%;
+background: #181818;
+top: 0;
+left:0;
 }
   
 #albumCover{
@@ -28,3 +38,12 @@ width:250px;
 height: auto;
 }
   
+
+.songImage:hover .songIcons{
+  position: absolute;
+  top: 90px;
+  left: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  }

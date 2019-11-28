@@ -1,6 +1,7 @@
 .songIcons{
   position: relative;
   display: none; 
+  z-index: 5;
 }
 
 .songIcons svg{
@@ -18,12 +19,3 @@
 .play:hover{
   transform: scale(1.5);
 }
-
-.songImage:hover .songIcons{
-  position: absolute;
-  top: 90px;
-  left: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  }
