@@ -18,9 +18,14 @@ export const Album = (props) => (
         <div className="icon"><Dots /></div>
       </div>
     </div>
+
     <div className="artistcontainer">
-      <a className="album" href={props.uri}>{props.albumname}</a>
-      <a className="artist" href={props.artisturi}>{props.artistname}</a>
+      <a className="album" href={props.uri}>{props.albumName}</a>
+      {props.artists.map((artist) => (
+        <div>
+          <a className="artist" href={artist.external_urls.spotify}>{artist.name}</a>
+        </div>
+      ))}
     </div>
   </div>
 )
