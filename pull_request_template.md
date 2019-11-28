@@ -1,7 +1,7 @@
-Link to my deployed project:
+Link to my deployed project: https://music-releases.netlify.com/
 
 
-My reflections on how this week's project turned out:
+My reflections on how this week's project turned out: 
 
 
 Things I'd like to have clarified or explained in more detail:
