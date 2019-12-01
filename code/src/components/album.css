@@ -8,6 +8,7 @@
 .album-cover {
   width: 100%;
   max-height: 300px;
+  object-fit: cover;
 }
 
 .album-icons {
@@ -33,12 +34,12 @@
 }
 
 .album-title {
- font-size: 14px;
- font-weight: bold;
- color: #fff;
- font-family: Helvetica;
- margin-top: 10px;
- text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  font-family: Helvetica;
+  margin-top: 10px;
+  text-decoration: none;
 }
 
 .album-title:hover {
