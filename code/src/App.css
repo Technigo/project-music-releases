@@ -1,0 +1,106 @@
+
+
+.album-container {
+    display:grid;
+    grid-template-columns: auto;
+    
+  }
+  
+  .album-card {
+    display:flex;
+    flex-direction: column;
+    align-content: left; 
+  }
+
+  h3 {
+    color: #ffffff;
+    margin-bottom: 3px;
+    font-size: 14px;
+  }
+
+  a {
+    text-decoration: none;
+    color:#a0a0a0;
+  
+  }
+  a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 14px;
+  }
+
+  .icons svg {
+    width: 10%;
+    fill: white;
+  }
+
+  svg.PlayButton {
+    width: 15%;
+  }
+
+  .PlayButton:hover {
+    width: 20%;
+  }
+
+  .album-cover {
+      display: flex;
+      position: relative;
+  }
+  
+  .icons {
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.5);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      padding: 10%;
+      left: center;
+      position: absolute;
+      /* border: 3px solid white; */
+      opacity: 0;
+  }
+
+  .icons:hover {
+      opacity: 1;
+  }
+
+  @media (min-width: 668px) and (max-width:1024px) {
+
+.album-container {
+  grid-template-columns: auto auto;
+  grid-auto-flow: row;
+  grid-column-gap: auto; 
+  grid-row-gap: auto;
+  
+}
+    
+.album-cover {
+  height: 93%;
+  width: 93%;
+}
+
+  }
+
+  @media (min-width: 1025px) {
+    .album-container {
+      grid-template-columns: auto auto auto auto;
+      grid-auto-flow: row;
+      grid-column-gap: auto; 
+      grid-row-gap: auto;
+      
+    }
+        
+    .album-cover {
+      height: 93%;
+      width: 93%;
+    }
+     
+  }
+
+
