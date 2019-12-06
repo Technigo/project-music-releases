@@ -1,11 +1,15 @@
 import React from 'react'
 import './Album.css'
+import Controls from 'Components/Controls/Controls.js'
 
-const Album = ({ title, image, url}) => {
+const Album = ({  image }) => {
   return (
-    <div>
-    <img src={image} alt="" />
-    <a href={url}><p>{title}</p></a> 
+    <div className="album-cover">
+    
+      <img src={image} alt="" />
+    
+      <Controls />
+    
     </div>
   )
   }

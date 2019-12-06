@@ -1,0 +1,46 @@
+.controls {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: rgba(0,0,0, 0.50);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+/* https://css-tricks.com/snippets/css/scale-on-hover-with-webkit-transition/ */
+.controlIcon {
+    opacity: 0.8;
+    transition: 
+        opacity 100ms ease-in, 
+        transform 100ms ease-in;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.controlIcon:hover {
+    opacity: 1;
+}
+
+.play {
+    transform: scale(2.0);
+}
+
+.heart:hover {
+    transform: scale(1.1);
+}  
+
+.play:hover {
+    transform: scale(2.2);
+}
+
+.dots:hover {
+    transform: scale(1.1);
+}
