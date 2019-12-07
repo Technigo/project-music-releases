@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import { Artist } from "./Components/Artist/Artist";
 import { Album } from "./Components/Album/Album";
@@ -22,9 +22,9 @@ const renderAlbum = album => {
 
 export const App = () => {
   return (
-    <div>
+    <Fragment>
       <h1>New albums & singles</h1>
       <div className="flex-container">{data.albums.items.map(renderAlbum)}</div>
-    </div>
+    </Fragment>
   );
 };
