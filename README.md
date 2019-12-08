@@ -2,7 +2,7 @@
 
 ### 1. What is this?
 
-In this assigment (@ Technigo Boot Camp 2019/2020) I was given the task to create a web app that displays new album and single releases on Spotify.
+A music site created with React that displays new album and single releases on Spotify. 
 
 ### 2. What did I do?
 
