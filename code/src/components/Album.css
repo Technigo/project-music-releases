@@ -10,7 +10,7 @@ img {
     object-fit: cover;
 }
 
-.release .icons {
+.release .album-icons {
     width: 100%;
     position: absolute;
     bottom: 55%;
@@ -24,7 +24,7 @@ img:hover {
     transition: .3s ease;
 }
 
-.release:hover .icons {
+.release:hover .album-icons {
     opacity: 1;
 }
 

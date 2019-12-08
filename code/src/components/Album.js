@@ -12,13 +12,14 @@ export const Album = props => {
     <div className="release">
       <img className="artist-image" src={image} alt="images" />
       <div className="album-icons">
-            <Icons />
+      <a href={url}>
+        <Icons />
+      </a>
         </div>
       </div>
       
       <a href={url}> <h4>{name}</h4> </a>
     </div>
-
     
   );
 };
