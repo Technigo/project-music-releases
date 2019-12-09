@@ -1,4 +1,4 @@
-# 'New Releases' music site build using React 🎨
+# 'New Releases' music app build using React 🎨
 
 https://ucha3i-project-8-music-app.netlify.com/
 
