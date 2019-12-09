@@ -1,4 +1,4 @@
-# 'New Releases' music site build using React 🎵🎨
+# 'New Releases' music site build using React 🎨
 
 I build a responsive music app for mobile, tablets and laptops. I used React components to build a page which shows new album and single releases, and the response from Spotify API to fetched the data.
 
