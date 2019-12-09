@@ -2,9 +2,9 @@
 
 https://ucha3i-project-8-music-app.netlify.com/
 
-I build a responsive music app for mobile, tablets and laptops. I used React components to build a page which shows new album and single releases, and the response from Spotify API to fetched the data.
+I build a responsive music app for mobile, tablets and laptops. I used React components to build a page which shows new album and single releases. I use Spotify API to fetch the data.
 
-When user hovers over an album, the play button is showed. It grows when hovering. The play button is linked to album's external url from Spotify. User also can click on artist and it links to the artist's page on Spotify.
+When user hovers over an album, the play button is showed. It grows when hovering. The play button is linked to album's page on Spotify. User also can click on artist and it links to the artist's page on Spotify.
 
 App is responsive. 
 
