@@ -7,7 +7,7 @@ The first week with React - This week's project is to use React components to bu
 ## To learn this week 🧠
 
 - How to write React components
-- How to use .map to iterate over an array of data and mount many components
+- How to use <code> .map </code>to iterate over an array of data and mount many components
 - ow to use React props to feed information to components
 - How to structure React projects into small chunks
 
