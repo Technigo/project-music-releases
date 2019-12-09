@@ -1,0 +1,24 @@
+.playlist-card {
+display: flex;
+flex-direction: column;
+}
+
+.playlist-cover{
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.playlist-name, .playlist-owner {
+  font-size: 13px; 
+  font-family: Helvetica;
+  color: #fff;  
+  text-decoration: none;
+  color: #a0a0a0;
+  text-align: center;
+}
+.playlist-name:hover,
+.playlist-owner:hover {
+  text-decoration: underline;
+}
+

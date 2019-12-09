@@ -1,8 +1,25 @@
 
+main {
+  display:flex;
+}
+
 .albumSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 
+.sidebar{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  width: 15%;
+}
+
+.sidebar h1{
+  color: #fff;
+  margin: 10px;
+}
