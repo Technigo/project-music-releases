@@ -1,8 +1,7 @@
 # 'New Releases' music site built using React 🎼 🎵
 
 In this project I use React components to build a page which shows new album and single releases.
-
-All the content I use in this project is saved in the data.json file.
+Data I use is an API response from Spotify which contains data for 50 recent releases. 
 
 ## In this project, you will find:
 
