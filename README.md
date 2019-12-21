@@ -1,4 +1,4 @@
-# Build a 'New Releases' music site using React
+# Building a 'New Releases' music site using React
 
 The ninth week's project in the Technigo bootcamp was to use React components to build a page which shows new album and single releases.
 Technigo downloaded a response from the Spotify API which we used along with `.map()` to mount an 'Album' component for each album.
