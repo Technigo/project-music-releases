@@ -2,7 +2,7 @@
 
 ### Summary
 
-A music site created with React that displays new album and single releases on Spotify.
+A music site created with React to display new album and single releases on Spotify.
 
 ### Technologies used
 
