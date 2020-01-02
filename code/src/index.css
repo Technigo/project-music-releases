@@ -37,6 +37,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .album-holder {
   padding: 15px 0 0 0;
   display: flex;
@@ -59,6 +63,7 @@ p {
 .album .artist {
   color: #a0a0a0;
   display: inline;
+  text-decoration: none;
 }
 
 .artist span:hover, 
