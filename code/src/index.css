@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #171717;
+  max-width: 1500px;
 }
 
 code {
@@ -39,11 +40,6 @@ h3.Header {
   margin-right: 3%;
   margin-left: 3%;
   flex-wrap: wrap;
-}
-
-.AlbumImage {
-  width: 15%;
-  height: 200px;
 }
 
 .AlbumContent,
