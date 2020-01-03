@@ -6,7 +6,7 @@
   display: flex;
   align-content: center;
   height: 200px;
-  width: 216px;
+  width: 100%;
   background: #2928289c;
   opacity: 0;
 }
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-around;
   align-content: center;
-  width: 216px;
+  width: 220px;
 }
 
 img.iconHeart {
