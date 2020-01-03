@@ -34,7 +34,7 @@ h3.Header {
   margin-bottom: 80px;
   background: #171717;
   height: 200px;
-  width: 216px;
+  width: 15%;
   background-size: cover;
   margin-right: 3%;
   margin-left: 3%;
@@ -42,7 +42,7 @@ h3.Header {
 }
 
 .AlbumImage {
-  width: 200px;
+  width: 15%;
   height: 200px;
 }
 
