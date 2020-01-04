@@ -1,5 +1,6 @@
 import React from "react"
 import './album.css'
+import { Dots } from 'svgIcons/'
 
 
 export const Album = (props) => {
