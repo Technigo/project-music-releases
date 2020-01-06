@@ -1,3 +1,9 @@
+section {
+  text-align: flex-start;
+  color: #ffff;
+  background-color: #171717;
+  padding-bottom: 2px;
+}
 
 .album-cover {
     position: relative;
@@ -6,7 +12,6 @@
     width: 100%;
     min-height: 50vh;
     padding: 20px;
-    color: #ffff;
 }
 
 .album-card {
@@ -17,22 +22,26 @@
   padding: 20px;
   position: relative;
   background-size: cover;
-  flex-wrap: wrap;
-  background-color: rgb(45, 43, 43);
+  background-color: #171717;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
+  color: #ffff;
 }
 
 h2 {
   color: #a0a0a0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
 }
 
 h3 {
+  display: none;
+}
+
+h5 {
   display: none;
 }
 
@@ -57,21 +66,38 @@ p {
     justify-content: center;
     align-items: center;
     position: absolute;
-    fill: #ffff;
+    color: #ffff;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); 
 }
 
-.album-cover:hover h3 {
+
+.album-cover:hover h3.name {
   display: unset;
   justify-content: space-between;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 14px;
-  color: #ffff;
+  color: #fff;
+  left: 8px;
+  top: 8px;
+  max-width: 50%;
+  position: absolute;
+}
+
+.album-cover:hover h3.artist {
+  display: unset;
+  justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  right: 8px;
+  top: 8px;
+  max-width: 50%;
+  color: #fff;
+  position: absolute;
 }
 
 .icons {
@@ -138,7 +164,7 @@ p {
     position: relative;
     background-size: cover;
     flex-wrap: wrap;
-    background-color: black;
+    background-color: #171717;
   }
 
 @media (min-width: 1025px) {

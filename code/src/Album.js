@@ -1,6 +1,5 @@
 import React from "react"
 import './album.css'
-import { Dots } from 'svgIcons/'
 
 
 export const Album = (props) => {
@@ -11,13 +10,13 @@ return (
 
     <div className="album-card">
     <div className="album-cover" style={{ backgroundImage: `url(${props.image}) `}}>
-    <h3>{props.name}</h3>
+    <h3 class="name">{props.name}</h3>
     {props.artists.map(artist => (
-    <h3>{artist.name}</h3>
+    <h3 class="artist">{artist.name}</h3>
     ))}
 
 
-<div className="moreDetails">
+  <div className="moreDetails">
     <div className="icons">
       <img className="icon-heart" src="icons/heart.svg" alt="Heart" />
       <img className="icon-play" src="icons/play.svg" alt="Play" />
@@ -33,6 +32,6 @@ return (
 <a href={artist.href}><h2>{artist.name}</h2></a>))}
 </div>
 </div>
-    
+
     );
 };
