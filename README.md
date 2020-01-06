@@ -28,6 +28,10 @@ I ran the react development server by running `npm start`
 * When you click on an artist, it should link to the artist's external url in the data
 * Your page should be response, showing 4 albums per row on desktop, 2 per row on tablet, and 1 per row on mobile.
 
+
+## If I had more time
+I would have created playlists for differense genres and moods and a music game. 
+
 You can see it here: https://brave-jones-f321b1.netlify.com/
 
 
