@@ -2,7 +2,7 @@
 #  "New Releases" music site using React
 
 
-This is my first project, made in React - I used React components to build a page which shows new album and single releases, using the Spotify API 
+This is my first project, made in React - I used React components to build a page which shows new album and single releases, using the Spotify API
 
 ## Learning objectives 🧠
 
