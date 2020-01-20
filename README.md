@@ -1,17 +1,17 @@
 
-# Project 9 @ Technigo Bootcamp - "New Releases" music site using React
+#  "New Releases" music site using React
 
 
-The first week with React - This week's project is to use React components to build a page which shows new album and single releases, using the Spotify API 
+This is my first project, made in React - I used React components to build a page which shows new album and single releases, using the Spotify API 
 
-## To learn this week 🧠
+## Learning objectives 🧠
 
 - How to write React components
 - How to use <code> .map </code>to iterate over an array of data and mount many components
 - ow to use React props to feed information to components
 - How to structure React projects into small chunks
 
-### Tech  💻
+## Technologies used
 
 - HTML
 - CSS 
@@ -19,5 +19,13 @@ The first week with React - This week's project is to use React components to bu
 - React JS 
 
 
+## Deployed version 🎯
 
-My live project [Here](https://new-music-releases-by-nasim.netlify.com/)
+
+https://new-music-releases-by-nasim.netlify.com/
+
+<br>
+<br>
+
+<p> Nasim Mahzoun 2020 </p>
+
