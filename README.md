@@ -32,6 +32,6 @@ I ran the react development server by running `npm start`
 ## If I had more time
 I would have created playlists for differense genres and moods and a music game. 
 
-You can see it here: https://brave-jones-f321b1.netlify.com/
+You can see it here: https://newmusicreleases-petrabrinck.netlify.com
 
 
