@@ -23,7 +23,7 @@ const ArtistsName = (oldList) => {
 oldList.forEach((item => {
     albumNew.push({
         name: item.name,
-        image: item.images[0],
+        image: item.images[0].url,
         artist: ArtistsName(item.artists)
 
     })

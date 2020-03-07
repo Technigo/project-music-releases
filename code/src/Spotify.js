@@ -3,5 +3,5 @@ import React from "react";
 
 
 export const Album = props => {
-return <div>{props.name}, {props.artist}</div>
+return <div className="music-card"><img src = {props.image} alt="album cover"></img><div><p>{props.name}, {props.artist}</p></div></div>
     }
