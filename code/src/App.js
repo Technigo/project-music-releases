@@ -9,7 +9,7 @@ export const App = () => {
     <div>
       <h1>New albums & singles</h1>
       <div>
-        <Album />
+        <Album className="music-card" />
       </div>
     </div>
   );

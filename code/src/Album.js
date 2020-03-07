@@ -26,17 +26,17 @@ import data from "./data.json";
 
 export const Album = () => {
   return (
-    <div className="Album">
+    <div className="music-card">
       {data.albums.items.map(item => {
         return (
-          <div>
+          <div className="Album">
             <div key={item.id}>
               <a href={item.external_urls.spotify}>
                 <img
                   className="album-cover"
                   src={item.images[0].url}
                   alt="album cover"
-                ></img>{" "}
+                ></img>
               </a>
             </div>
             <div>

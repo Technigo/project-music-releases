@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  box-sizing: border-box;
 }
 
 code {
@@ -15,8 +16,9 @@ code {
 
 h1 {
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
+  padding-left: 20px;
 
 }
 
@@ -25,8 +27,8 @@ h1 {
   font-size: 14px;
   color: #ffffff;
   display: flex;
-
   flex-direction: column;
+  padding: 20px;
 
 }
 
@@ -37,6 +39,34 @@ h1 {
 }
 
 .album-cover {
-  width: 90%;
+  width: 100%
+}
+
+
+
+/* MEDIA QUERY TABLET*/
+@media (min-width:668px) {
+
+  .music-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+
+  .Album {
+    width: 44%;
+  }
+
+}
+
+/* MEDIA QUERY DESKTOP*/
+@media (min-width:1025px) {
+
+  .Album {
+    width: 22%;
+    padding: 20px 0;
+  }
 
 }
