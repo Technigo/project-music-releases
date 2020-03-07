@@ -12,7 +12,7 @@ export const App = () => {
     <div className="album-grid">
 
 {albumNew.map((album) =>  {
-        return <Album key={album.name} image={album.image} name={album.name} artist={album.artist} />
+        return <Album key={album.name} image={album.image} linkAlbum= {album.linkAlbum} name={album.name} artist={album.artist} />
       })}
 
     </div>

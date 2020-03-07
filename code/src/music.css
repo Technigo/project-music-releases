@@ -9,7 +9,8 @@
     } */
 
     .album-grid {
-        width: 95vw;
+        width: 1080px;
+        margin: 1em auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -19,7 +20,7 @@
     }
 
     .music-card {
-        width: 30%;
+        width: 25%;
         height: 400px;
         background-color: aqua;
         display: flex;
@@ -33,6 +34,12 @@
         object-fit: cover;
         background-color: salmon;
     }
+    img.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
     .music-card div {
         background-color: seagreen;
         width: 90%;
@@ -40,6 +47,25 @@
     /* .music-card p {
         
     } */
+
+    @media(max-width: 1200px) {
+        .album-grid {
+            width: 95vw;
+        }
+    }
+
+
+    @media(max-width: 992px) {
+        .music-card {
+            width: 50%;
+        }
+    }
+
+
+    @media(max-width: 576px) {
+        .music-card {
+            width: 100%;
+        }
+    }
      
-    
      
