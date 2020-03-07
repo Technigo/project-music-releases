@@ -40,8 +40,11 @@ export const Album = () => {
               </a>
             </div>
             <div>
-              <div>{item.name}</div>
-              <a href={item.artists[0].external_urls.spotify}>
+              <div className="album-name">{item.name}</div>
+              <a
+                className="artist"
+                href={item.artists[0].external_urls.spotify}
+              >
                 {item.artists[0].name}
               </a>
             </div>
