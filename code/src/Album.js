@@ -1,11 +1,11 @@
 import React from "react";
-
+import "./album.css";
 //console.log(Album);
 //console.log(data.album.items[1]);
 
 export const Album = props => {
   return (
-    <div>
+    <div className="album-card">
       <div className="album-cover">
         <img className="album-img" src={props.image} alt="Album" />
         <div className="icons">
