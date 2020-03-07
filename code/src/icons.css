@@ -1,0 +1,22 @@
+.icons {
+  justify-content: center;
+  flex-direction: row;
+  /*position: absolute;*/
+}
+
+.icon-heart {
+  width: 30px;
+}
+
+.icon-play {
+  width: 30px;
+}
+
+.icon-play:hover {
+  transform: scale(2);
+  transition: transform 0.5s ease-in-out;
+}
+
+.icon-dots {
+  width: 30px;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "./album.css";
-//console.log(Album);
-//console.log(data.album.items[1]);
+import "./icons.css";
 
 export const Album = props => {
   return (
