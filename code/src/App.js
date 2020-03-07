@@ -1,9 +1,9 @@
 import React from "react";
 import data from "./data.json";
 import { Album } from "./Album.js";
-import { AlbumCover } from "./AlbumCover.js";
 
 console.log(data);
+
 export const App = () => {
   return (
     <div>
