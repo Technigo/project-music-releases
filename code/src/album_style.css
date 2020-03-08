@@ -1,0 +1,44 @@
+
+
+.Card {
+  /* background-color: blueviolet; */
+  border: 2px solid rgb(82, 74, 55);
+  margin: 10px;
+  /* width: 50%; */
+  width: 420px;
+  height: 420px;
+  position: relative;
+}
+.song-title {
+  color: rgb(232, 232, 232);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+}
+.artist-name {
+  color: rgb(154, 154, 154);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+}
+.album-image {
+  width: 300px;
+  object-fit: cover;
+}
+.album-container {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+/* lets :hoover */
+.album-image:hover {
+  opacity: 0.3;
+}
+.song-title:hover {
+  text-decoration-line: underline;
+}
+.artist-name:hover {
+  text-decoration-line: underline;
+}
+
+
