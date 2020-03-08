@@ -38,14 +38,23 @@ export const Album = () => {
       {data.albums.items.map(item => {
         return (
           <div className="Album">
-            <div key={item.id}>
-              <a href={item.external_urls.spotify}>
-                <img
-                  className="album-cover"
-                  src={item.images[0].url}
-                  alt="album cover"
-                ></img>
-              </a>
+            <div>
+              <div className="album-image" key={item.id}>
+                <a href={item.external_urls.spotify}>
+                  <div class="overlay">
+                    <div>
+                      <i class="far fa-heart"></i>
+                      <i class="far fa-play-circle"></i>
+                      <i class="fas fa-ellipsis-h"></i>
+                    </div>
+                  </div>
+                  <img
+                    className="album-cover"
+                    src={item.images[0].url}
+                    alt="album cover"
+                  ></img>
+                </a>
+              </div>
             </div>
             <div>
               <div className="album-name">{item.name}</div>

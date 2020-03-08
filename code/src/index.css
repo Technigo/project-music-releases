@@ -5,7 +5,7 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: blue;
   box-sizing: border-box;
 }
 
@@ -56,13 +56,40 @@ a {
 }
 
 .album-cover {
-  width: 100%
+  width: 100%;
+
+
 }
 
-.album-cover:hover {
+.album-image {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
+  /* Black see-through */
+  color: #f1f1f1;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.album-image:hover .overlay {
+  opacity: 1;
+}
+
+/* .album-cover:hover {
   opacity: 0.2;
   transition: all .3s ease-in-out;
-}
+} */
 
 /* MEDIA QUERY TABLET*/
 @media (min-width:668px) {
