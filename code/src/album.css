@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: grey;
+  background-color: #0e0e0e;
 }
 
 a {
@@ -20,7 +20,7 @@ a {
 }*/
 
 .album-cover {
-  border: 3px solid green;
+  border: 1px solid #0e0e0e;
 }
 
 .album-img {
@@ -30,7 +30,7 @@ a {
 .album-card {
   margin-bottom: 20px;
   width: 20%;
-  border: 4px solid red;
+  border: 1px solid #0e0e0e;
 }
 
 .album-title a {
@@ -48,7 +48,7 @@ a {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
-  font-weight: bold;
+  font-weight: light;
 }
 
 .artist-name a:hover {
