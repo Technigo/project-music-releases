@@ -8,9 +8,8 @@ export const App = () => {
   return (
     <div>
       {data.albums.items.map(song => {
-        return <Album key={song.id} albumTitle={song.name} />
+        return <Album key={song.id} albumCover={song.images[1].url} albumTitle={song.name} artist={song.artists[0].name}/>
       })}
-      Find me in src/app.js!
     </div>
   )
 }
