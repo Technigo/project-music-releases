@@ -5,11 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  background-color: #000;
+  font-family: Helvetica;
+  color: white;
+  height: 50px;
+  margin-left: 16px;
 }
 
 .cardContainer {
@@ -18,16 +27,16 @@ code {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: #000;
+  font-weight: bold;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   color: #fff;
   width: 23vw;
-  text-align: left;
+  margin-bottom: 20px;
 }
 
 .cardImg {
@@ -76,8 +85,6 @@ a:active {
   left: 0;
   right: 0;
   opacity: 0;
-  transform: translate(0%, 45%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
 }
@@ -97,10 +104,15 @@ a:active {
 }
 
 .play {
-  color: #fff;
   height: 70px;
   width: 70px;
 }
+
+.play:hover {
+  transform: scale(1.5);
+  transition: ease 1s;
+}
+
 
 .dots {
   height: 40px;
@@ -108,8 +120,41 @@ a:active {
 }
 
 .text {
+  margin-top: 110px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.albumNameText {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+.artistNameText {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+svg {
+  fill: #fff;
+}
+
+@media (max-width: 768px) {
+  .card{
+    width: 45vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90vw;
+  }
 }
