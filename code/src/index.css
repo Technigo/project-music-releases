@@ -1,11 +1,8 @@
 body {
   margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: blue;
+  background-color: black;
   box-sizing: border-box;
 }
 
@@ -19,7 +16,6 @@ h1 {
   font-size: 20px;
   color: #ffffff;
   padding-left: 20px;
-
 }
 
 .Album {
@@ -57,8 +53,6 @@ a {
 
 .album-cover {
   width: 100%;
-
-
 }
 
 .album-image {
@@ -71,7 +65,6 @@ a {
   height: auto;
   background: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0.8);
-  /* Black see-through */
   color: #f1f1f1;
   transition: .5s ease;
   opacity: 0;
@@ -80,16 +73,38 @@ a {
   text-align: center;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .album-image:hover .overlay {
   opacity: 1;
 }
 
-/* .album-cover:hover {
-  opacity: 0.2;
-  transition: all .3s ease-in-out;
-} */
+.icons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-heart {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.fa-play-circle {
+  font-size: 5rem;
+}
+
+.fa-play-circle:hover {
+  font-size: 6rem;
+}
+
+.fa-ellipsis-h {
+  font-size: 1.3rem;
+}
 
 /* MEDIA QUERY TABLET*/
 @media (min-width:668px) {
@@ -99,13 +114,11 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
   }
 
   .Album {
     width: 44%;
   }
-
 }
 
 /* MEDIA QUERY DESKTOP*/
@@ -115,5 +128,4 @@ a {
     width: 22%;
     padding: 20px 0;
   }
-
 }

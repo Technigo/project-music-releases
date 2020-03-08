@@ -1,37 +1,6 @@
 import React from "react";
 import data from "./data.json";
 
-// export const Album = () => {
-//   return (
-//     <div className="Album">
-//       {data.albums.items.map(item => {
-//         return (
-//           <div key={item.id}>
-//             <a href={item.external_urls.spotify}>
-//               <img src={item.images[2].url} alt="album cover"></img>{" "}
-//             </a>
-
-//             {item.name}
-//             <a href={item.artists[0].external_urls.spotify}>
-//               {item.artists[0].name}
-//             </a>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );
-// };
-
-// const dotIcon = () => (
-//   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-//     <g>
-//       <circle cx="2.5" cy="12.5" r="2.5" />
-//       <circle cx="12" cy="12.5" r="2.5" />
-//       <circle cx="21.5" cy="12.5" r="2.5" />
-//     </g>
-//   </svg>
-// );
-
 export const Album = () => {
   return (
     <div className="music-card">
@@ -41,11 +10,11 @@ export const Album = () => {
             <div>
               <div className="album-image" key={item.id}>
                 <a href={item.external_urls.spotify}>
-                  <div class="overlay">
-                    <div>
-                      <i class="far fa-heart"></i>
-                      <i class="far fa-play-circle"></i>
-                      <i class="fas fa-ellipsis-h"></i>
+                  <div className="overlay">
+                    <div className="icons">
+                      <i className="far fa-heart"></i>
+                      <i className="far fa-play-circle"></i>
+                      <i className="fas fa-ellipsis-h"></i>
                     </div>
                   </div>
                   <img
@@ -73,5 +42,3 @@ export const Album = () => {
 };
 
 export default Album;
-
-// <div className="icon-container"> <img src="dots.svg"> </div>
