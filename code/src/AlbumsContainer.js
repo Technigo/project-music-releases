@@ -9,17 +9,8 @@ export const AlbumsContainer = (props) => {
   const albums = props.albums
   console.log('albums', albums)
 
-  // return (
-  //   <article>
-  //     {albums.map(album => {
-  //       return (
-  //         <div><h2>{album.name}</h2></div>)
-  //     })}
-  //     <p>Hej tjo</p>
-  //   </article>
-
   return (
-    <article>
+    <article className="albums-container">
       {albums.map(album => {
         return (
           <AlbumCard key={album.id}
@@ -32,8 +23,3 @@ export const AlbumsContainer = (props) => {
     </article>
   )
 }
-
-
-// bild + namn på album rendered using .map()
-
-// artistnamn egen component med .map()
