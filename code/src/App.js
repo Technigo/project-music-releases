@@ -2,8 +2,6 @@ import React from 'react'
 import data from './data.json'
 import { Album } from './Album'
 
-
-
 import './app_style.css'
 
 // console.log(data.albums.items[0].name) // Song title
@@ -11,12 +9,12 @@ import './app_style.css'
 // console.log(data.albums.items[0].images[1].url) // Picture
 // console.log(data.albums.items[0,1, 2, 3, 4].name)
 
-// console.log(data)
+console.log(data)
 
 
 export const App = () => {
   // logic here
-
+  
   return (
     <div className="main-app-container">
       <div className="album-container">
@@ -34,7 +32,5 @@ export const App = () => {
 }
 
 /*
-
 In med alla Components här
-
 */

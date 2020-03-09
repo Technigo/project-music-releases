@@ -32,24 +32,28 @@
 /* display: none */
 .icons-container {
   display: none;
+  max-width: 350px;
 }
 
+.album-container {
+  max-width:350px;
+}
 
 .album-container:hover .icons-container {
   display: flex;
   justify-content: space-between;
+  /* border: 4px solid white; */
   
   margin: 0 auto;
   width: 80%;
+  max-width: 350px;
   position: absolute;
   top: 25%;
- 
 }
-
 
 /* lets :hoover */
 .album-image:hover {
-  opacity: 0.3;
+  filter: opacity(0.4);
   cursor: pointer;
 }
 .song-title:hover {

@@ -23,7 +23,5 @@ export const Icons = () => {
       </svg>
 
     </div>
-
-
   )
 }
