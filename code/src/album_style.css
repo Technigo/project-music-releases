@@ -2,43 +2,63 @@
 
 .Card {
   /* background-color: blueviolet; */
-  border: 2px solid rgb(82, 74, 55);
+  border: 2px solid rgb(193, 193, 193);
   margin: 10px;
   /* width: 50%; */
-  width: 420px;
-  height: 420px;
+  /* Behöver skrivas om i % vid Flex: */
+  width: 350px;
+  height: 520px;
+
   position: relative;
 }
 .song-title {
-  color: rgb(232, 232, 232);
+  color: #ffffff;
   font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
 }
 .artist-name {
-  color: rgb(154, 154, 154);
+  color: #a0a0a0;
   font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
 }
 .album-image {
-  width: 300px;
+  width: 100%;
+  max-width: 310px;
   object-fit: cover;
 }
-.album-container {
+
+/* display: none */
+.icons-container {
+  display: none;
+}
+
+
+.album-container:hover .icons-container {
   display: flex;
   justify-content: space-between;
+  
+  margin: 0 auto;
+  width: 80%;
+  position: absolute;
+  top: 25%;
  
 }
+
+
 /* lets :hoover */
 .album-image:hover {
   opacity: 0.3;
+  cursor: pointer;
 }
 .song-title:hover {
   text-decoration-line: underline;
+  cursor: pointer;
 }
 .artist-name:hover {
   text-decoration-line: underline;
+  cursor: pointer;
 }
 
 
