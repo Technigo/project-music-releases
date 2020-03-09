@@ -3,8 +3,8 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <h3>New albums & singles</h3>
-    </div> 
+    </header> 
   )
 }
