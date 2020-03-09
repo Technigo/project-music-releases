@@ -1,12 +1,14 @@
 
-/* 
-.album-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(auto-fill, 600px);
-    grid-row-gap: 0.5em;
-    grid-column-gap: 1em; 
-    } */
+
+   body {
+        background-color: black; 
+        color: white; 
+    }
+
+    p {
+        margin: 0;
+        font-size: 12px;
+    }
 
     .album-grid {
         width: 1080px;
@@ -16,13 +18,23 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        background-color: silver;
     }
+
+    .header {
+        width: 100%;
+    }
+
+    .header p {
+        font-weight: bold;
+        margin-left: 1.25%;
+        margin-bottom: 1em;
+        font-size: 18px;
+    }
+
 
     .music-card {
         width: 25%;
-        height: 300px;
-        background-color: aqua;
+        height: 350px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,8 +42,7 @@
 
     .images {
         width: 90%;
-        height: 200px;
-        background-color: salmon;
+        height: 230px;
         position: relative;
     }
     .music-card img {
@@ -41,20 +52,57 @@
         position: absolute;
         top: 0px;
         left: 0px;
-        
     }
     
     img.icon {
+       display: none;
        width: 50px;
        height: 50px;
        object-fit: cover;
        position: absolute;
-       top: 40%;
-       left: 45%;
+       top: 50%;
+       left: 50%;
+       margin-left: -25px;
+       margin-top: -25px;
+    }
+    .album-image:hover + .icon {
+        display: block;
+
+    }
+    
+    .icon:hover {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        margin-top: -40px;
     }
 
-    
-   
+    .paragraph {
+        width: 90%;
+        margin-top: 0.5em;
+        font-weight: bold;
+    }
+
+    .artists{
+        display: flex;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin-top: 0.3em;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .artists a {
+        color: gray;
+        font-weight: 400;
+    }
+
 
     @media(max-width: 1200px) {
         .album-grid {
@@ -64,6 +112,9 @@
 
 
     @media(max-width: 992px) {
+        .header p {
+            margin-left: 2.50%;
+        }
         .music-card {
             width: 50%;
         }
@@ -71,6 +122,9 @@
 
 
     @media(max-width: 576px) {
+        .header p {
+            margin-left: 5%;
+        }
         .music-card {
             width: 100%;
         }

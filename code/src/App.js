@@ -9,7 +9,11 @@ console.log("music", albumNew)
 
 export const App = () => {
   return (
-    <div className="album-grid">
+    
+  <div className="album-grid">
+  
+  <div className="header"><p>New albums and singles</p></div>
+  
 
 {albumNew.map((album) =>  {
         return <Album key={album.name} image={album.image} linkAlbum= {album.linkAlbum} name={album.name} 
@@ -17,8 +21,10 @@ export const App = () => {
         artist3={album.artist3} link3={album.link3} />
       })}
 
-    </div>
+</div>
+
   )
 }
+
 
 

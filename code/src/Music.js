@@ -44,9 +44,9 @@ oldList.forEach((item => {
             image: item.images[0].url,
             linkAlbum: item.external_urls.spotify,
             artist: ArtistsName(item.artists),
-            artist1: item.artists[0].name,
+            artist1: `${item.artists[0].name}`,
             link1: item.artists[0].external_urls.spotify,
-            artist2: item.artists[1].name,
+            artist2: `, ${item.artists[1].name}`,
             link2: item.artists[1].external_urls.spotify,
             artist3: '',
             link3:'#'
@@ -60,11 +60,11 @@ oldList.forEach((item => {
             image: item.images[0].url,
             linkAlbum: item.external_urls.spotify,
             artist: ArtistsName(item.artists),
-            artist1: item.artists[0].name,
+            artist1:  `${item.artists[0].name}`,
             link1: item.artists[0].external_urls.spotify,
-            artist2: item.artists[1].name,
+            artist2:  `, ${item.artists[1].name}`,
             link2: item.artists[1].external_urls.spotify,
-            artist3: item.artists[2].name,
+            artist3: `, ${item.artists[2].name}`,
             link3: item.artists[2].external_urls.spotify
         })
     
@@ -76,9 +76,9 @@ oldList.forEach((item => {
             image: item.images[0].url,
             linkAlbum: item.external_urls.spotify,
             artist: ArtistsName(item.artists),
-            artist1: item.artists[0].name,
+            artist1:  `${item.artists[0].name}`,
             link1: item.artists[0].external_urls.spotify,
-            artist2: item.artists[1].name,
+            artist2:  `, ${item.artists[1].name}`,
             link2: item.artists[1].external_urls.spotify,
             artist3: 'Various Artists',
             link3: '#'
