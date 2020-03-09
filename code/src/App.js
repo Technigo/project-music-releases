@@ -1,12 +1,13 @@
 import React from 'react'
 import data from './data.json'
+import { AlbumsContainer } from './AlbumsContainer'
 
-console.log(data)
+console.log(data.albums.items)
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    < div >
+      <AlbumsContainer albums={data.albums.items} />
+    </div >
   )
 }
