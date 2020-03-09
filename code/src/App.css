@@ -1,11 +1,31 @@
 .albumComponent {
-  height:auto;
-  display:flex;
+  height: auto;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 350px;
 }
 
-/* media queries =>>> Dekstop / tablet */
+.headerContainer {
+  width: 350px;
+}
+
+/* Tablet */
+@media (min-width: 667px) {
+  .albumComponent {
+    width: 700px;
+    flex-wrap: wrap;
+    flex-direction: row; 
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .albumComponent {
+    width: 1000px;
+    flex-wrap: wrap;
+    flex-direction: row;   }
+}
 
 

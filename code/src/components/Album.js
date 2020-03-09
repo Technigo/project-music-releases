@@ -14,8 +14,8 @@ export const Album = (props) => (
       <DotsIcon className="dotsIcon" />
     </div>
     <div className="moreInfo">
-      <a className="linkAlbumTitle" href={props.urlAlbumTitle}><h1 className="albumTitle">{props.albumTitle}</h1></a>
-      <a className="linkArtistName" href={props.urlArtistName}><h3 className="artistName">{props.artistName}</h3></a>
+      <a className="linkAlbumTitle" href={props.urlAlbumTitle} target="_blank"><h1 className="albumTitle">{props.albumTitle}</h1></a>
+      <a className="linkArtistName" href={props.urlArtistName} target="_blank"><h3 className="artistName">{props.artistName}</h3></a>
     </div>
   </div>
 )

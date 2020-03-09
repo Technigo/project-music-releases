@@ -1,42 +1,43 @@
 .albumContainer {
+  margin: 20px;
   height: auto;
-  width: 230px;
-  margin: 50px;
+  width: 300px;
 }
 
 .albumCover {
-  display:flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
-  width:100%;
-  position: relative;
   background-size: cover;
   background-position: center center;
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  min-height: 38vh;
+  position: relative;
 }
 
 .moreInfo  {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
-.albumCover:hover .playIcon {
-  display:flex;
-  flex-direction: row;
+/* when hovering */
+.albumCover:hover .heartIcon {
   justify-content: center;
   align-items: center;
+  display:flex;
+  flex-direction: row;
   cursor: pointer;
-  opacity:0.9;
   transition: transform 1s;
 }
 
-.albumCover:hover .heartIcon {
-  display:flex;
-  flex-direction: row;
+.albumCover:hover .playIcon {
   justify-content: center;
   align-items: center;
+  display:flex;
+  flex-direction: row;
   cursor: pointer;
+  opacity:0.9;
   transition: transform 1s;
 }
 
@@ -65,17 +66,30 @@
 }
 
 .albumTitle {
-  font-size:14px;
+  display: inline-block;
+  font-size: 14px;
   font-family: "Helvetica Neue";
-  display:inline-block;
-  color:#ffffff;
-  margin:2px;
+  color: #ffffff;
+  margin: 3px;
 }
 
 .albumTitle:hover {
- text-decoration:underline;
+ text-decoration: underline;
 }
 
+.artistName {
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  color: #A0A0A0;
+  margin: 3px;
+}
+
+.artistName:hover {
+  text-decoration:underline;
+}
+
+/* Icons styling */
 .heartIcon {
  display:none;
  height:30px;
@@ -92,25 +106,54 @@
 
 .dotsIcon {
   display:none;
-  height:30px;
-  width:30px;
-  margin:10px;
+  height:35px;
+  width:35px;
+  margin:12px;
 }
 
 svg {
   fill: white;
 }
 
-.artistName {
-  font-size: 14px;
-  font-family: "Helvetica Neue";
-  display: inline-block;
-  color:#A0A0A0;
-  margin: 3px;
-}
+/* media queries Tablet */
 
-.artistName:hover {
-  text-decoration:underline;
-}
+@media (min-width:667px) {
+  .albumContainer {
+    width: 250px;
+  }
 
+  .albumCover {
+     width: 100%;
+     min-height: 33vh;
+   }
+ 
+  .playIcon {
+     display:none;
+     height: 65px;
+     width: 65px;
+     margin: 8px;
+   }
+ 
+  .dotsIcon {
+     height: 25px;
+     width: 25px;
+   }
+ 
+  .heartIcon {
+     height: 28px;
+     width: 28px;
+    }
+ }
 
+ /* media queries Dekstop */
+
+@media (min-width: 1024px) {
+  .albumContainer {
+    width: 200px;
+  }
+
+  .albumCover {
+    width: 100%;
+    min-height: 27vh;
+  }
+} 
