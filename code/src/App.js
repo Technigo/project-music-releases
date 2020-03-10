@@ -6,12 +6,12 @@ console.log(data);
 
 export const App = () => {
   return (
-    <div>
+    <article>
       <h1>New albums & singles</h1>
       <div>
         <Album className="music-card" />
       </div>
-    </div>
+    </article>
   );
 };
 
