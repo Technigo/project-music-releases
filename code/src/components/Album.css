@@ -118,8 +118,9 @@ svg {
   fill: white;
 }
 
-/* media queries Tablet */
+/************************ MEDIA QUERIES  ************************/
 
+/* Tablet */
 @media (min-width:667px) {
   .albumContainer {
     width: 250px;
@@ -148,8 +149,7 @@ svg {
     }
  }
 
- /* media queries Dekstop */
-
+ /* Dekstop */
 @media (min-width: 1024px) {
   .albumContainer {
     width: 200px;

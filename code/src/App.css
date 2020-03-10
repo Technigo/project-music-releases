@@ -47,7 +47,6 @@ h4 {
 @media (min-width: 992px) {
   .mainContainer {
     width: 100%;
-    justify-items: center;
     padding-left: 200px;
     padding-right: 200px;
   }
@@ -55,8 +54,6 @@ h4 {
   .albumComponent {
     width: 100%;
     flex-direction: row;
-    justify-content: center;
-    display: flex;
     margin-left: 100px;
   }
 
@@ -73,5 +70,4 @@ h4 {
     padding-left: 25px;
   }
 }
-
 
