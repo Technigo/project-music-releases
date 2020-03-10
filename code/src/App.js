@@ -1,15 +1,14 @@
 import React from 'react';
 import data from './data.json';
-import { Album } from './Components/Album';
+import { AlbumsContainer } from './components/AlbumsContainer';
 
 console.log(data)
 
 export const App = () => {
   return (
-    <div>
-      {data.albums.items.map(song => {
-        return <Album key={song.id} albumCover={song.images[1].url} albumTitle={song.name} artist={song.artists[0].name}/>
-      })}
+    <div className="App">
+      <h1>New albums & singles</h1>
+      <AlbumsContainer albums={data.albums.items} />
     </div>
-  )
-}
+  );
+};

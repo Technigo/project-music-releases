@@ -1,17 +1,60 @@
+.album-card {
+  margin-bottom: 58px;
+  margin-left: 16px;
+  width: 300px;
+}
+
+.icons {
+  filter: invert(100%);
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 
 h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #ffffff;
-}
-
-.album-card :hover {
-  text-decoration: underline;
+  text-decoration: none;
+  
 }
 
 h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline;
+  margin-right: 10px;
+}
+
+h3 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  color: #a0a0a0; 
+  text-decoration: none;  
+}
+
+h3 a:visited {
   color: #a0a0a0;
+  text-decoration: none; 
+  display: inline;
+
+}
+
+h2 a:hover {
+  text-decoration: underline;
+}
+
+h3 a:hover {
+  text-decoration: underline;
 }
