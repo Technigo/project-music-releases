@@ -16,12 +16,14 @@ export const Album = (props) => {
     <article className="Card">
       <div className="album-container">
 
-        <div>
+        <div className="album-wrapper">
           <img className="album-image" src={props.image} alt="Album artwork"></img>
+          <Icons />
         </div>
 
-        <Icons />
-        <a className="song-title" href={props.linkAlbum}> {props.title} </a>
+        <div>
+          <a className="song-title" href={props.linkAlbum}> {props.title} </a>
+        </div>
         
         <div>
           <a className="artist-name" href={props.linkArtist}> {props.name} </a>
