@@ -10,8 +10,8 @@ console.log(data)
 
 export const App = () => {
   return (
-    <div>
-      <div>
+    <div className="mainContainer">
+      <div className="headerWrapper">
         <Header className="headerContainer" />
       </div>
       <div className="albumComponent">
@@ -25,16 +25,17 @@ export const App = () => {
             urlAlbumTitle={item.external_urls.spotify} />
         ))}
       </div>
+
+      <div className="playlistTitle">
+        <h4>popular playlists</h4>
+      </div>
       <div className="sidebarComponent">
-        <div className="playlistTitle">
-          <h4>popular playlist</h4>
-        </div>
         {stretchgoal.playlists.items.map((item) => (
           <Sidebar
             key={item.id}
             playlistName={item.name}
             urlPlaylistName={item.external_urls.spotify}
-            urlPlaylistImage={item.images[1]}
+            playlistImage={item.images[0].url}
           />
         ))}
       </div>

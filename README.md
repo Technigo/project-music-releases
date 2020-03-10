@@ -3,8 +3,11 @@ This project uses React components to build a page which shows new album and sin
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+- How to write React components
+- How to use `.map` to iterate over an array of data and mount many components
+- How to use React props to feed information to components
+- How to structure React projects into small chunks
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://nifty-golick-e2cc22.netlify.com/

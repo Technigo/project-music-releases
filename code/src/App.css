@@ -1,9 +1,13 @@
+.mainContainer {
+  width: 100%;
+  justify-items: center;
+}
+
 .albumComponent {
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 350px;
 }
 
@@ -11,21 +15,53 @@
   width: 350px;
 }
 
+h4 {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sidebarComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+
 /* Tablet */
 @media (min-width: 667px) {
   .albumComponent {
     width: 700px;
     flex-wrap: wrap;
-    flex-direction: row; 
+    flex-direction: row;
+  }
+  .sidebarComponent {
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
 /* Desktop */
 @media (min-width: 992px) {
+  .mainContainer {
+    width: 100%;
+    justify-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
   .albumComponent {
-    width: 1000px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sidebarComponent {
     flex-wrap: wrap;
-    flex-direction: row;   }
+    flex-direction: row;
+  }
 }
 
 
