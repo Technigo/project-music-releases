@@ -6,10 +6,14 @@ import { Album } from 'Albums.js';
 
 export const App = () => {
   return (
-    <section className="album-container">
-      {data.albums.items.map(item => {
-        return (<Album key={item.id} item={item} />);
-      })}
+    <section>
+      <h1>Latest albums</h1>
+      <hr></hr>
+      <section className="album-container">
+        {data.albums.items.map(item => {
+          return (<Album key={item.id} item={item} />);
+        })}
+      </section>
     </section>
   );
 };

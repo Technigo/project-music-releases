@@ -47,6 +47,16 @@ code {
 
 /* TEXT STYLING */
 
+h1 {
+  color: white;
+  margin-left: 100px;
+}
+
+hr {
+  width: 300px;
+  opacity: 2;
+}
+
 .album-name {
   font-size: 14px;
   font-weight: bold;
@@ -65,7 +75,6 @@ code {
     font-size: 14px;
     color: #a0a0a0;
     text-decoration: none;
-    padding: 10px, 5px, 0, 0;
     }
   
 /* STYLING FOR HOVER ICONS */
@@ -92,11 +101,21 @@ width: 30px;
   }
   
 
-@media (min-width: 700px) {
+@media (min-width: 680px) {
   
 .Img-wrapper {
   justify-content: space-evenly;
   margin: auto;
   max-width: 100%;
 }
+
+hr {
+  width: 600px;
+}
+}
+
+@media (min-width: 1200px) {
+  hr {
+    width: 1230px;
+  }
 }
