@@ -1,6 +1,5 @@
 import React from 'react'
 import { AlbumCard } from 'AlbumCard'
-import { AlbumImage } from 'AlbumImage'
 
 export const AlbumsContainer = (props) => {
 
