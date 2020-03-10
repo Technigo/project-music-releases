@@ -4,7 +4,6 @@ import { AlbumCard } from 'AlbumCard'
 export const AlbumsContainer = (props) => {
 
   // const { albums } = props
-
   const albums = props.albums
   console.log('albums', albums)
 
@@ -16,6 +15,7 @@ export const AlbumsContainer = (props) => {
             title={album.name}
             artists={album.artists}
             images={album.images}
+            albumurl={album.external_urls.spotify}
           />
         )
       })}
