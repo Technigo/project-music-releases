@@ -4,12 +4,12 @@ import './album.css'
 export const Album = ({ link, cover, title, artists }) => {
   return (
     <article className="album-card">
-      <section>
-        <img src={cover} alt="Album Cover" />
+      <section className="cover">
+        <img className="cover-image" src={cover} alt="Album Cover" />
         <section className="icons">
-          <img className="image heart" src="icons/heart.svg" alt="heart" />
-          <img className="image play" src="icons/play.svg" alt="play icon" />
-          <img className="image dots" src="icons/dots.svg" alt="dots" />
+          <img className="heart" src="icons/heart.svg" alt="heart" />
+          <img className="play" src="icons/play.svg" alt="play icon" />
+          <img className="dots" src="icons/dots.svg" alt="dots" />
         </section>
       </section>
       <h2><a href={link}>{title}</a></h2> 
