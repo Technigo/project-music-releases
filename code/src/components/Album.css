@@ -14,6 +14,7 @@
   flex-direction: row;
   min-height: 38vh;
   position: relative;
+  margin: 7px;
 }
 
 .moreInfo  {
@@ -131,8 +132,8 @@ svg {
  
   .playIcon {
      display:none;
-     height: 65px;
-     width: 65px;
+     height: 75px;
+     width: 75px;
      margin: 8px;
    }
  
@@ -157,5 +158,10 @@ svg {
   .albumCover {
     width: 100%;
     min-height: 27vh;
+    transition: transform 3sec;
+  }
+
+  .albumCover:hover {
+    transform: scale(1.02);
   }
 } 

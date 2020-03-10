@@ -1,0 +1,44 @@
+.sidebarWrapper {
+  border: solid grey 1px;
+  border-radius: 8px;
+  width: 300px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sidebarContainer {
+  margin: 5px;
+  height: auto;
+  width: 300px;
+  display: flex;
+}
+
+.playlist-name {
+  color: white;
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+  text-align: center;
+}
+
+
+.linkPlaylist {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica Neue";
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+img {
+  margin-right: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+ 
