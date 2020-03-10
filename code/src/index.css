@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color:#171717;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.root {
+  display: flex;
+  flex-direction: row;
+  }
+  
+  .albumCard img {
+    width: 320px;
+    height: 320px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+    
+  .albumCard img:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  
+  .album-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .albumCard {
+    width: 320px;
+    height: 380px;
+    /* border: 2px solid blue; */
+    margin: 20px;
+
+  }
+
+  
+  header {
+    border-bottom: 2px solid #2b2a2a;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  h1 {
+    font: Helvetica #ffffff; 
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0
+  }
+
+  h2 {
+      font: Helvetica #ffffff; 
+      font-size: 14px;
+      font-weight: 700;
+  }
+
+  h2:hover, h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  h3 {
+      font: Helvetica #a0a0a0; 
+      font-size: 14px;
+      font-weight: 400; 
+  }
+  
