@@ -26,16 +26,15 @@ export const App = () => {
         ))}
       </div>
 
-      <div className="playlistTitle">
-        <h4>popular playlists</h4>
-      </div>
       <div className="sidebarComponent">
+        <div className="playlistTitle">
+          <h4>popular playlists</h4>
+        </div>
         {stretchgoal.playlists.items.map((item) => (
           <Sidebar
             key={item.id}
             playlistName={item.name}
             urlPlaylistName={item.external_urls.spotify}
-            playlistImage={item.images[0].url}
           />
         ))}
       </div>

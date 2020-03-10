@@ -21,25 +21,18 @@
 
 .playlist-name {
   color: white;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "Helvetica Neue";
   text-align: center;
 }
 
-
 .linkPlaylist {
   text-decoration: none;
+  font-size: 10px;
   color: black;
-  font-size: 14px;
   font-family: "Helvetica Neue";
   text-transform: capitalize;
   display: inline-block;
-}
-
-.playlistCover img {
-  margin-right: 10px;
-  height: 50px;
-  width: 50px;
 }
 
  /* media queries Dekstop */
@@ -52,6 +45,24 @@
   .sidebarWrapper:hover {
     transform: scale(1.05);
   }
+  .sidebarWrapper {
+    border: solid grey 1px;
+    background-color: #262626;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .sidebarContainer {
+    height: auto;
+    width: 300px;
+  }
+
+  .linkPlaylist:hover {
+    text-decoration: underline;
+    color: white;
+  }  
 } 
 
 
