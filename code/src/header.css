@@ -1,5 +1,27 @@
+.header {
+  margin-left: 73px;
+  margin-right: 73px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 8px;
+}
+
 h3 {
-  font-family: Helvetica, sans-serif;
-  color: white;
-  padding: 3px 20px 5px 30px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 3px;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .header {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
 }

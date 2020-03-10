@@ -1,6 +1,6 @@
 body {
   margin: 0px;
-  background-color: grey;
+  background-color: #25282a;
 }
 
 a {
@@ -15,12 +15,8 @@ a {
   margin: 0px;
 }
 
-/*.icons {
-  display: none;
-}*/
-
 .album-cover {
-  border: 3px solid green;
+  position: relative;
 }
 
 .album-img {
@@ -29,8 +25,12 @@ a {
 
 .album-card {
   margin-bottom: 20px;
-  width: 20%;
-  border: 4px solid red;
+  width: 70%;
+  border: 2px solid #25282a;
+}
+
+.album-cover:hover .album-img {
+  filter: brightness(23%);
 }
 
 .album-title a {
@@ -54,4 +54,16 @@ a {
 .artist-name a:hover {
   color: white;
   text-decoration: underline;
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  .album-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-card {
+    width: 20%;
+  }
 }
