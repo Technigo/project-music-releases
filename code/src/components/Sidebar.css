@@ -1,6 +1,7 @@
 .sidebarWrapper {
   border: solid grey 1px;
   border-radius: 8px;
+  background-color: #262626;
   width: 300px;
   margin-bottom: 15px;
   margin-right: 15px;
@@ -15,6 +16,7 @@
   width: 300px;
   display: flex;
   padding: 2px;
+  justify-content: center;
 }
 
 .playlist-name {
