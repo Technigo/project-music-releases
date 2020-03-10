@@ -1,15 +1,16 @@
 import React from "react"
-import data from "./data.json"
-import { App } from "./App"
+import { AlbumCard } from "./Album-Card"
+import info from "./stretch-goal.json"
 
-
-export const Final = () => {
+export const FlexContainer = () => {
+    console.log(info)
     return (
-        <div>
+
+
+        <article className="flex-container">
             <h1 className="heading">New albums and singles</h1>
-            <div className="flex-container">
-                <App />
-            </div>
-        </div>
+            <AlbumCard />
+        </article>
+
     )
 }

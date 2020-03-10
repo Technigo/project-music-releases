@@ -19,14 +19,21 @@ code {
 .heading {
   color: white;
   font: bold 16px helvetica;
-  padding: 15px;
-  
+  padding:  24px 15px 0 15px;
+  width: 80%;
+}
+
+.albums-playlists-container {
+  display: flex;
+  flex-direction: row;
+ 
 }
 .flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
   justify-content: center;
+  
 }
 
 .album-card {
@@ -37,7 +44,7 @@ code {
   
 }
 
-.test-flex {
+.album-card-subflex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,8 +74,6 @@ code {
   display: flex;
   align-items: center;
 
-  
-  
 }
 
 .icons-container:hover {
@@ -120,6 +125,41 @@ code {
   text-decoration: underline;
 }
 
+/******* PLAYLIST ******/
+
+.playlist-container {
+  display: none;
+  
+}
+
+.playlist-card {
+  background-color: #272727;
+  border-radius: 5%;
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.playlist-card:hover {
+  opacity: .5;
+}
+.playlist-image {
+  width: 120px;
+  height: 120px;
+}
+
+.playlist-name {
+  font: bold 13px Helvetica;
+  color: white;
+  text-decoration: none;
+}
+
+.playlist-tracks {
+  color: white;
+  font: 13px Helvetica;
+  width: 100%;
+  margin: 0;
+}
+
 @media (min-width:660px) {
 .album-card {
   width: 40%;
@@ -127,7 +167,33 @@ code {
 }
 
 @media (min-width: 1025px) {
+
+  .heading {
+    width: 92%;
+  }
   .album-card {
     width: 23%;
+  }
+
+  .icons {
+    width: 20px;
+    height: 20px;
+  }
+  .play-button {
+    height: 50px;
+    width: 50px;
+    margin: 0 15px;
+  }
+
+  .playlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  border-right: 2px dotted white;
+  border-top: 2px dotted white;
+  margin-top: 97px;
+  padding: 15px;
+  height: fit-content;
+ 
   }
 }

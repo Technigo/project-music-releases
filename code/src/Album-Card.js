@@ -6,19 +6,19 @@ import { Artist } from "./artist-name"
 import { Icons } from "./icons"
 console.log(data)
 
-export const App = () => {
+export const AlbumCard = () => {
   return (
     data.albums.items.map((item) => {
 
-      return <div className="album-card">
-        <div className="test-flex">
+      return <article key={item.id} className="album-card">
+        <div className="album-card-subflex">
           <Cover item={item} />
           <Icons />
         </div>
         <AlbumName item={item} />
         <div className="artist-name-container">
           <Artist item={item} /> </div>
-      </div>
+      </article>
     })
   )
 }
