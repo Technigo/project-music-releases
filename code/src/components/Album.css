@@ -164,5 +164,7 @@ svg {
 
   .albumCover:hover {
     transform: scale(1.02);
+    background-color: black;
+    opacity: 0.8;
   }
 } 
