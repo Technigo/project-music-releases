@@ -1,0 +1,25 @@
+
+.album-card {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.album-card img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+}
+
+@media (min-width: 669px) {
+  .album-card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-card {
+    width: 24%;
+  } 
+}

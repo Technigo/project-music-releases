@@ -1,4 +1,5 @@
 import React from 'react'
+import './albumcard.css'
 import { AlbumImage } from 'AlbumImage'
 
 export const AlbumCard = props => {

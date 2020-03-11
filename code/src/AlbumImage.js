@@ -1,4 +1,5 @@
 import React from 'react'
+import './albumimage.css'
 import { Heart } from 'Icons'
 import { Play } from 'Icons'
 import { Dots } from 'Icons'

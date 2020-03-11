@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './icons.css'
 
 export const Heart = () => (
   <svg id="heart" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
