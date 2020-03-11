@@ -1,7 +1,7 @@
 import React from 'react';
 import './album.css'
 
-export const Album = ({ link, cover, title, artists }) => {
+export const Album = ({ cover, link, title, artists }) => {
   return (
     <article className="album-card">
       <section className="cover">

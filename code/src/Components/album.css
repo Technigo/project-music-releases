@@ -1,10 +1,10 @@
 .album-card {
   margin-bottom: 58px;
   margin-left: 16px;
-  width: 300px;
+  margin-right: 16px;
+  width: 100%;
+
 }
-
-
 
 .cover {
   position: relative;
@@ -13,6 +13,7 @@
 .cover-image {
   object-fit: cover;
   transition: 0.3s;
+  width: 100%;
 }
 
 .cover:hover .cover-image{
@@ -101,8 +102,18 @@ h3 a:hover {
 
 @media (min-width: 688px) {
 
+  .album-card {
+    width: 40%;
+    flex-grow: 1;
+  }
+
 }
 
 @media (min-width: 1024px) {
-  
+
+  .album-card {
+    width: 20%;
+    flex-grow: 1;
+  }
+
 }
