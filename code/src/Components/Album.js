@@ -12,8 +12,7 @@ export const Album = ({ cover, link, title, artists }) => {
           <img className="dots" src="icons/dots.svg" alt="dots" />
         </section>
       </section>
-      <h2><a href={link}>{title}</a></h2> 
-      {artists.map((artist) => {
+      <h2><a href={link}>{title}</a></h2> {artists.map((artist) => {
         return <h3 key={artist.id}><a href={artist.external_urls.spotify}>{artist.name}</a></h3>;
       })}
     </article>
