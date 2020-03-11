@@ -2,8 +2,6 @@ import React from 'react';
 import data from './data.json';
 import { AlbumsContainer } from './Components/AlbumsContainer';
 
-console.log(data)
-
 export const App = () => {
   return (
     <div className="App">

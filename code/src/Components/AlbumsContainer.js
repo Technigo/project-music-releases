@@ -3,8 +3,6 @@ import { Album } from './Album';
 import './albumContainer.css'
 
 export const AlbumsContainer = ({ albums }) => {
-  console.log('albums', albums);
-
   return (
     <article className="album-container">
       {albums.map((album) => {

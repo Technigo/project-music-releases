@@ -3,7 +3,6 @@
   margin-left: 16px;
   margin-right: 16px;
   width: 100%;
-
 }
 
 .cover {
@@ -16,7 +15,7 @@
   width: 100%;
 }
 
-.cover:hover .cover-image{
+.cover:hover .cover-image {
   opacity: 0.5;
 }
 
@@ -29,7 +28,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .heart {
   filter: invert(100%);
@@ -57,7 +55,6 @@
   filter: invert(100%);
   width: 20%;
   height: 20%;
-  
 }
 
 h2 {
@@ -69,6 +66,11 @@ h2 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #ffffff;
+  text-decoration: none;
+}
+
+h2 a:visited {
+   color: #ffffff;
   text-decoration: none;
 }
 
@@ -84,7 +86,7 @@ h3 a {
   text-decoration: none;  
 }
 
-a:visited {
+h3 a:visited {
   color: #a0a0a0;
   text-decoration: none; 
   display: inline;
@@ -95,19 +97,15 @@ a:hover {
 }
 
 @media (min-width: 688px) {
-
   .album-card {
     width: 40%;
     flex-grow: 1;
   }
-
 }
 
 @media (min-width: 1024px) {
-
   .album-card {
     width: 20%;
     flex-grow: 1;
   }
-
 }
