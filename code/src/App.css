@@ -1,6 +1,8 @@
 .mainContainer {
   width: 100%;
   justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .albumComponent {
@@ -8,10 +10,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.headerContainer {
-  width: 33,33%;
 }
 
 h4 {
@@ -31,6 +29,10 @@ h4 {
 
 /* Tablet */
 @media (min-width: 667px) {
+  .mainContainer {
+    width: 100%;
+  }
+
   .albumComponent {
     width: 100%;
     flex-wrap: wrap;
@@ -46,8 +48,6 @@ h4 {
 @media (min-width: 992px) {
   .mainContainer {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
   }
 
   .playlistTitle h4 {

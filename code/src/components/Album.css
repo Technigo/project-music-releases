@@ -15,6 +15,7 @@
   min-height: 38vh;
   position: relative;
   margin: 7px;
+  flex-grow: 1;
 }
 
 .moreInfo  {
@@ -123,12 +124,12 @@ svg {
 /* Tablet */
 @media (min-width:667px) {
   .albumContainer {
-    width: 250px;
+    width: 300px;
   }
 
   .albumCover {
      width: 100%;
-     min-height: 33vh;
+     min-height: 40vh;
    }
  
   .playIcon {
