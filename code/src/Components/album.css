@@ -23,6 +23,7 @@
 .icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -32,31 +33,30 @@
 
 .heart {
   filter: invert(100%);
-  width: 25px;
-  height: 25px;
-  
+  width: 20%;
+  height: 20%;
 }
 
 .play {
   filter: invert(100%);
-  width: 50px;
-  height: 50px;
+  width: 40%;
+  height: 40%;
   transition: 0.3s;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 30%;
+  margin-left: 30%;
 }
 
 .play:hover {
-  width: 70px;
-  height: 70px;
-  margin-right: 30px;
-  margin-left: 30px;
+  width: 60%;
+  height: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 .dots {
   filter: invert(100%);
-  width: 25px;
-  height: 25px;
+  width: 20%;
+  height: 20%;
   
 }
 
@@ -70,7 +70,6 @@ h2 a {
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
-  
 }
 
 h3 {
@@ -85,18 +84,13 @@ h3 a {
   text-decoration: none;  
 }
 
-h3 a:visited {
+a:visited {
   color: #a0a0a0;
   text-decoration: none; 
   display: inline;
-
 }
 
-h2 a:hover {
-  text-decoration: underline;
-}
-
-h3 a:hover {
+a:hover {
   text-decoration: underline;
 }
 
