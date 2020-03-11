@@ -1,7 +1,7 @@
 import React from "react"
 import { AlbumCard } from "./Album-Card"
 import info from "./stretch-goal.json"
-import { PlaylistData } from "./Playlist.js"
+import { PlaylistData } from "./playlist"
 import "./flex-container.css"
 
 export const Final = () => {
