@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import { Icons } from './Icons.js'
+// import { Artist } from './Artist'
 
 
 export const Album = (props) => {
@@ -8,10 +9,12 @@ export const Album = (props) => {
   console.log(props.data.artists.name)
   return (
     <div className="albumCard">
-      <div className="icons-hover-effect">
-        {/* <Icons /> */}
+      <div className="image-container">
         <img src={props.data.images[0].url}>
         </img>
+        <div className="middle">
+          <Icons />
+        </div>
       </div>
       <h2>
         {props.data.name}
@@ -19,8 +22,6 @@ export const Album = (props) => {
       <h3>
         {props.data.artists[0].name}
       </h3>
-
-
     </div>
   )
 }
