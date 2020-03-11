@@ -150,7 +150,7 @@ svg {
  }
 
  /* Dekstop */
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .albumContainer {
     width: 200px;
   }

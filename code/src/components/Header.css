@@ -1,13 +1,19 @@
 .pageTitle {
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   width: 350px;
   padding-top: 20px;
+  margin-left: 30px;
 }
 
   /* Media queries Desktop */
-  @media (min-width: 1024px) {
-    .pageTitle {
+@media (min-width: 667px) {
+  .pageTitle {
+      margin-left: 100px;
+    }
+  }
+@media (min-width: 992px) {
+  .pageTitle {
       margin-left: 170px;
     }
   }

@@ -36,9 +36,10 @@
   text-transform: capitalize;
 }
 
- /* media queries Dekstop */
+/* MEDIA QUERIES */
+ /* Dekstop */
+ @media (min-width: 992px) {
 
- @media (min-width: 1024px) {
   .sidebarWrapper {
     margin-bottom: 0;
   }
@@ -48,7 +49,6 @@
     color: white;
   }  
 } 
-
 
 
 
