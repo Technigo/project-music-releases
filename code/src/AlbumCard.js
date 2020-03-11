@@ -1,4 +1,5 @@
 import React from 'react'
+import 'albumcard.css'
 
 export const AlbumCard = ({ appletitle, orangeartists }) => {
   // console.log('data in the button', props)
@@ -10,10 +11,10 @@ export const AlbumCard = ({ appletitle, orangeartists }) => {
   return (
 
     < article >
-      <h1>{appletitle}</h1 >
+      <h1 className='song-title'>{appletitle}</h1 >
       {
         orangeartists.map(item => {
-          return <p key={item.name}>{item.name}</p>
+          return <p key={item.name} className='artist-name'>{item.name}</p>
         })
       }
     </article >

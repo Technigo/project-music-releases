@@ -12,9 +12,3 @@ code {
     monospace;
 }
 
-svg {
-  fill: gold;
-}
-svg:hover {
-  fill: red;
-}
