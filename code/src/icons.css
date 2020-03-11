@@ -1,0 +1,46 @@
+.icons-container {
+  position: absolute;
+  display: none;
+  align-self: center;
+  
+}
+
+.icons-container:hover {
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.icons {
+    width: 30px;
+    height: 30px;
+    fill: white;
+  }
+  
+  .play-button {
+    height: 70px;
+    width: 70px;
+    margin: 0 30px;
+  }
+  
+  .play-button:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: all .3s ease-in-out;
+  }
+
+  @media (min-width: 1025px) {
+    .icons {
+        width: 20px;
+        height: 20px;
+      }
+      .play-button {
+        height: 50px;
+        width: 50px;
+        margin: 0 15px;
+      }
+  }

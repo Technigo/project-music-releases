@@ -1,0 +1,35 @@
+.album-card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 24px 16px;
+    
+  }
+  
+  .album-card-subflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .album-card-subflex:hover .album-image {
+    filter:brightness(50%);
+  }
+
+  .artist-name-container {
+    margin-top: 5px;
+  }
+  
+
+  @media (min-width: 660px) {
+    .album-card {
+        width: 40%;
+      }
+  }
+
+  @media (min-width: 1025px) {
+    .album-card {
+        width: 23%;
+      }
+    
+  }

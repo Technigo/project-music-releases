@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./album-cover.css"
 
 export const Cover = (props) => {
     return (

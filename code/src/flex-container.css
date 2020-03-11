@@ -1,0 +1,35 @@
+.heading {
+    color: white;
+    font: bold 16px helvetica;
+    padding:  24px 15px 0 15px;
+    width: 80%;
+  }
+  
+  .albums-playlists-container {
+    display: flex;
+    flex-direction: row;
+   
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+    
+  }
+
+  .playlist-header {
+    color: white;
+    margin-bottom: 31px;
+    margin-top: 17px;
+  }
+  
+  
+  
+  @media (min-width: 1025px) {
+  
+    .heading {
+      width: 92%;
+    }
+    
+  }

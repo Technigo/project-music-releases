@@ -1,5 +1,5 @@
 import React from "react"
-
+import "./artist-name.css"
 
 export const Artist = (props) => {
     return (

@@ -1,0 +1,11 @@
+.album-name {
+    color: #ffffff;
+    font: 14px helvetica;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .hover-underline:hover {
+    text-decoration: underline;
+  }
+  

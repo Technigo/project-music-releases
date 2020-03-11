@@ -4,6 +4,7 @@ import { Cover } from "./album-cover"
 import { AlbumName } from "./album-name"
 import { Artist } from "./artist-name"
 import { Icons } from "./icons"
+import "./album-card.css"
 console.log(data)
 
 export const AlbumCard = () => {

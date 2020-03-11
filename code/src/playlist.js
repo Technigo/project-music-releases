@@ -1,5 +1,7 @@
 import React from "react"
 import info from "./stretch-goal.json"
+import "./playlist.css"
+
 
 export const PlaylistData = () => {
     return (

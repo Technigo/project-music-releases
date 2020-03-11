@@ -1,0 +1,46 @@
+.playlist-container {
+    display: none;
+    
+  }
+  
+ 
+  .playlist-card {
+    background-color: #272727;
+    border-radius: 5%;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .playlist-card:hover {
+    opacity: .5;
+  }
+  .playlist-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .playlist-name {
+    font: bold 13px Helvetica;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .playlist-tracks {
+    color: white;
+    font: 13px Helvetica;
+    width: 100%;
+    margin: 0;
+  }
+
+  
+  @media (min-width: 1025px) {
+    .playlist-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      padding: 15px;
+      height: fit-content;
+      background-color: black;
+     
+      }
+  }
