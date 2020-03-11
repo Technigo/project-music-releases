@@ -50,6 +50,10 @@ h4 {
     padding-right: 200px;
   }
 
+  .playlistTitle h4 {
+    display: none;
+  }
+
   .albumComponent {
     width: 100%;
     flex-direction: row;
