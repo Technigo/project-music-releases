@@ -1,11 +1,9 @@
 
-
 .Card {
   /* background-color: blueviolet; */
   /* border: 1px solid rgb(116, 116, 116); */
   margin: 10px;
   /* width: 50%; */
-  /* Behöver skrivas om i % vid Flex? */
   width: 350px;
   height: 30%;
   position: relative;
@@ -135,10 +133,5 @@
     top: 28%;
   }
 
- 
- 
- 
-
- 
 
 }
