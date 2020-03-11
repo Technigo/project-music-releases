@@ -1,0 +1,49 @@
+/* STYLING FOR ALBUM IMAGES */
+
+.Img-wrapper:hover .Icon-wrapper {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  background: black;
+  opacity: 0.75;
+}
+
+.Img-wrapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* STYLING FOR EACH ALBUM CARD */
+
+.album-card {
+  max-width: 300px;
+  margin: 5px;
+  position: relative;
+  z-index: 0;
+}
+
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+
+.album-name {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 5px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  }
+
+.artist {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+  }

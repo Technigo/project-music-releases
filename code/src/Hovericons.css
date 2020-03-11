@@ -1,0 +1,23 @@
+
+/* STYLING FOR HOVER ICONS */
+
+.Icon-wrapper {
+  display: none;
+  }
+    
+  .heart, .play, .dots {
+  filter: invert(1);
+  }
+    
+  .heart, .dots {
+  width: 30px;
+  }
+    
+  .play {
+      width: 60px;
+    }
+
+  .play:hover {
+    transform: scale(1.3);
+    transition: all .1s ease-in-out;
+    }

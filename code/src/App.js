@@ -1,6 +1,8 @@
 import React from 'react'
 import data from './data.json'
 import { Album } from 'Albums.js';
+import './Hovericons.css'
+import './Album.css'
 
 // This compontent will print everything to the right container. 
 
