@@ -18,10 +18,10 @@ export const AlbumsContainer = ({ albums }) => {
     <article className='AlbumContainer'>
       {albums.map(album => {
         return (
-          <>
+          <div className='AlbumBox'>
             <AlbumCover bananaimage={album.images[1].url} />
             <AlbumCard key={album.id} appletitle={album.name} orangeartists={album.artists} />
-          </>
+          </div>
         )
       })}
 

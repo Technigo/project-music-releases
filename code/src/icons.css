@@ -1,0 +1,23 @@
+.Dots {
+
+  height: 20px;
+}
+
+
+.Heart{
+  height: 30px;
+
+}
+
+.Play{
+ height: 60px;
+}
+.Icon{
+  fill: white;
+  display: none;
+}
+
+.Icon:hover{
+  fill: red;
+  display:flex
+}

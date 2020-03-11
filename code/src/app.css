@@ -7,12 +7,9 @@ h1 {
   font-size: 18px;
   color: #ffffff;
 }
-
-
-
-svg {
-  fill: gold;
+.Test{
+  border: 2px solid green;
 }
-svg:hover {
-  fill: red;
-}
+
+
+
