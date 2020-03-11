@@ -1,5 +1,6 @@
 import React from "react";
 import data from "./data.json";
+import { Artist } from "./Artists";
 
 export const Album = () => {
   return (
@@ -26,13 +27,18 @@ export const Album = () => {
               </div>
             </div>
             <div>
-              <div className="album-name">{item.name}</div>
-              <a
-                className="artist"
-                href={item.artists[0].external_urls.spotify}
-              >
-                {item.artists[0].name}
+              <a href={item.external_urls.spotify}>
+                <div className="album-name">{item.name}</div>{" "}
               </a>
+              {item.artists.map(artist => {
+                return (
+                  <Artist
+                    key={artist.id}
+                    link={artist.external_urls.spotify}
+                    name={artist.name}
+                  />
+                );
+              })}
             </div>
           </div>
         );
