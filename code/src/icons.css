@@ -1,10 +1,14 @@
 .icons {
-  justify-content: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: space-evenly;
   flex-direction: row;
   position: absolute;
   display: none;
-  top: 150px;
-  left: 100px;
+  align-items: center;
+  width: 100%;
 }
 
 .album-cover:hover .icons {
@@ -18,8 +22,6 @@
 
 .icon-play {
   width: 30px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 .icon-play:hover {
@@ -29,18 +31,4 @@
 
 .icon-dots {
   width: 30px;
-}
-
-@media (min-width: 667px) and (max-width: 1024px) {
-  .icons {
-    top: 140px;
-    left: 80px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .icons {
-    top: 130px;
-    left: 70px;
-  }
 }
