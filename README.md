@@ -14,7 +14,7 @@ As mentioned, this was our first encounter with React and it was a lot to take i
 
 ### What We're proud of
 
-We're proud that we not only managed to go from feeling rather lost to understanding props, but even understand how to deconstruct them. Another thing were proud of is the code structure that is super organised, including the CSS.
+We're proud that we not only managed to go from feeling rather lost to understanding props, but even understand how to deconstruct them. Another thing we're proud of is the code structure that is super organised, including the CSS.
 
 ## If We had more time
 
