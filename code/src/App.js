@@ -11,10 +11,10 @@ console.log(data)
 export const App = () => {
   return (
     <div className="mainContainer">
-      <div className="headerWrapper">
+      <header className="headerWrapper">
         <Header className="headerContainer" />
-      </div>
-      <div className="albumComponent">
+      </header>
+      <article className="albumComponent">
         {data.albums.items.map((item) => (
           <Album
             key={item.id}
@@ -24,20 +24,22 @@ export const App = () => {
             artistName={item.artists[0].name}
             urlAlbumTitle={item.external_urls.spotify} />
         ))}
-      </div>
+      </article>
 
-      <div className="sidebarComponent">
+      <article>
         <div className="playlistTitle">
           <h4>popular playlists</h4>
         </div>
-        {stretchgoal.playlists.items.map((item) => (
-          <Sidebar
-            key={item.id}
-            playlistName={item.name}
-            urlPlaylistName={item.external_urls.spotify}
-          />
-        ))}
-      </div>
+        <div className="sidebarComponent">
+          {stretchgoal.playlists.items.map((item) => (
+            <Sidebar
+              key={item.id}
+              playlistName={item.name}
+              urlPlaylistName={item.external_urls.spotify}
+            />
+          ))}
+        </div>
+      </article>
     </div>
   )
 }
