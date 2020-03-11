@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-import { AlbumsContainer } from './components/AlbumsContainer';
+import { AlbumsContainer } from './Components/AlbumsContainer';
 
 console.log(data)
 
