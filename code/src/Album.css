@@ -46,4 +46,15 @@
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
+  margin-right: 4px;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .text-wrapper:nth-child(1) {
+    margin-top: auto;
   }

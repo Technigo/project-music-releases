@@ -9,7 +9,7 @@ import './Album.css'
 export const App = () => {
   return (
     <section>
-      <h1>Latest albums</h1>
+      <h1>New albums & singles</h1>
       <hr></hr>
       <section className="album-container">
         {data.albums.items.map(item => {

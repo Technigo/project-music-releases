@@ -11,11 +11,13 @@ export const Album = (props) => {
         <HoverIcons />
         <img src={props.item.images[1].url} alt='album cover' />
       </div>
-      <a className='album-name' href={props.item.external_urls.spotify}>{props.item.name}</a>
-      <div>
-        {props.item.artists.map(artist => {
-          return (<Artist key={artist.id} artist={artist} />)
-        })}
+      <div className="text-wrapper">
+        <a className='album-name' href={props.item.external_urls.spotify}>{props.item.name}</a>
+        <div>
+          {props.item.artists.map(artist => {
+            return (<Artist key={artist.id} artist={artist} />)
+          })}
+        </div>
       </div>
     </article>
   )
