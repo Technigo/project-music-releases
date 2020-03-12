@@ -7,12 +7,13 @@ export const AlbumCover = ({ bananaimage }) => {
   return (
 
     < div className="AlbumCover" style={{ backgroundImage: `url(${bananaimage})` }}>
-          
-            <Heart/>
-            <Play/>
-            <Dots />
-            
-      
+
+      <div className="BackgroundColor">
+        <Heart className="Icon" />
+        <Play className="Icon" />
+        <Dots className="Icon" />
+      </div>
+
     </div >
 
   )

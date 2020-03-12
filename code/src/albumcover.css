@@ -1,9 +1,34 @@
 .AlbumCover {
-display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 300px;
-  height: 300px;
+  position: relative;
+  min-width: 255px;
+  min-height: 255px;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  color: #fff;
 }
-
+.Icon {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.AlbumCover:hover .BackgroundColor {
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+}
+.AlbumCover:hover .Icon{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Icon:hover {
+  transform: scale(1.2);
+  fill: white;
+  transition: fill 0.1s ease-in-out;
+}

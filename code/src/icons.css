@@ -1,23 +1,17 @@
 .Dots {
-
   height: 20px;
 }
 
 
-.Heart{
+.Heart {
   height: 30px;
-
 }
 
-.Play{
+.Play {
  height: 60px;
 }
-.Icon{
-  fill: white;
-  display: none;
+
+.Icon {
+  fill: gainsboro;
 }
 
-.Icon:hover{
-  fill: red;
-  display:flex
-}
