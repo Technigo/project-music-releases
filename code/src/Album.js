@@ -3,7 +3,6 @@ import './index.css'
 import { Icons } from './Icons.js'
 import { Artist } from './Artist'
 
-
 export const Album = (props) => {
   console.log(props)
   console.log(props.data.artists.name)
