@@ -7,3 +7,11 @@
   font-size: 14px;
   color: #a0a0a0;
 }
+
+a{
+  text-decoration: none;
+}
+a :hover{
+  text-decoration: underline;
+  color: white;
+}

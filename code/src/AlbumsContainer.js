@@ -13,13 +13,17 @@ export const AlbumsContainer = ({ albums }) => {
 
   console.log('album', albums)
   console.log('image', albums[1].images[1].url)
+  console.log('album-url', albums[1].external_urls.spotify)
+  console.log('artist-url', albums[1].artists[0].external_urls.spotify)
 
   return (
     <article className='AlbumContainer'>
       {albums.map(album => {
         return (
           <div className='AlbumBox'>
-            <AlbumCover bananaimage={album.images[1].url} />
+            <a href={album.external_urls.spotify}>
+              <AlbumCover bananaimage={album.images[1].url} />
+            </a>
             <AlbumCard key={album.id} appletitle={album.name} orangeartists={album.artists} />
           </div>
         )
