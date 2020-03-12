@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import { Icons } from './Icons.js'
-// import { Artist } from './Artist'
+import { Artist } from './Artist'
 
 
 export const Album = (props) => {
@@ -20,8 +20,12 @@ export const Album = (props) => {
         {props.data.name}
       </h2>
       <h3>
-        {props.data.artists[0].name}
+        {props.data.artists.map(item => {
+          return (
+            <Artist key={item.id} item={item} />
+          )
+        })}
       </h3>
-    </div>
+    </div >
   )
 }

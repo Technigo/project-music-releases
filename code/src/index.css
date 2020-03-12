@@ -83,8 +83,11 @@ width: 320px;
 .icons img {
 width: 25px;
 height: 25px;
-color: white;
 font-size: 16px;
+}
+
+.icons svg path {
+  fill: white !important;
 }
 
 .icons .play-icon {
@@ -97,9 +100,6 @@ transition: transform 1s;
 transform: scale(1.2)
 }
 
-svg {
-fill: white;
-}
 
 header {
 border-bottom: 2px solid #2b2a2a;
