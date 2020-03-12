@@ -28,11 +28,7 @@ hr {
   text-decoration: underline;
   }
 
-  .artist {
-    font-size: 14px;
-    color: #a0a0a0;
-    text-decoration: none;
-    }
+  
  
 
 @media (min-width: 680px) {
