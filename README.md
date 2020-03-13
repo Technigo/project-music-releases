@@ -9,3 +9,4 @@ We struggled a bit with css issues such as darkening the background image since 
 
 ## View it live
 
+https://stoic-sinoussi-9bfb22.netlify.com
