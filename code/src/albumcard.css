@@ -1,14 +1,14 @@
 
-.song-title {
+.SongTitle {
   font-size: 14px;
   color: #ffffff;
 }
-.artist-name {
+.ArtistName {
   font-size: 14px;
   color: #a0a0a0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 a :hover{

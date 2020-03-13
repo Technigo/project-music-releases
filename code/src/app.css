@@ -2,18 +2,46 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: black;
 }
-
+.BodyContainer{
+  display: flex;
+  flex-direction: column;
+}
 h1 {
   font-size: 18px;
   color: #ffffff;
 }
-.Test{
+.Test {
   border: 2px solid green;
 }
-
-.Title{
-  margin: 10px;
+.PageTitle {
+  align-self: center;
+  margin: 20px 0px 10px 0px;
 }
+
+@media (min-width: 668px) and (max-width: 1023px) {
+
+  .AlbumBox {
+    width: 40%;
+  }
+  .PageTitle {
+    align-self: center;
+    margin: 20px 0px 10px 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .AlbumBox {
+    width: 24%;
+  }
+  .PageTitle{
+    align-self: flex-start;
+    margin: 20px 0px 10px 35px;
+  }
+}
+
+
+
 
 
 

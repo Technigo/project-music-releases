@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we made a website showing 50 new album using api from Spotify data, as a pair-programming project for Technigo bootcamp.
+The main goal was to practice using React. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started with fetching the right api for each component. When we were done with building the bare bone structure using api, we added css for each component. 
+We struggled a bit with css issues such as darkening the background image since it was bit different to deal with them in React compared to CSS for HTML. We looked at suggestions on Stackoverflow and code-alongs from our teachers. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.

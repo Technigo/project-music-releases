@@ -18,19 +18,15 @@
 
 @media (min-width: 668px) and (max-width: 1023px) {
 
-  .AlbumBox{
+  .AlbumBox {
     width: 40%;
   }
 }
 
 @media (min-width: 1024px) {
-  .AlbumContainer {
 
-    
-  }
-  .AlbumBox{
+  .AlbumBox {
     width: 24%;
-
   }
 }
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from 'button'
 import { AlbumCard } from 'AlbumCard'
 import { AlbumCover } from 'AlbumCover'
 import 'albumscontainer.css'
@@ -24,14 +23,10 @@ export const AlbumsContainer = ({ albums }) => {
             <a href={album.external_urls.spotify}>
               <AlbumCover bananaimage={album.images[1].url} />
             </a>
-            <AlbumCard key={album.id} appletitle={album.name} orangeartists={album.artists} />
+            <AlbumCard key={album.id} appletitle={album.name} artisturl={album.external_urls.spotify} orangeartists={album.artists} />
           </div>
         )
       })}
-
-      <h1>Title</h1>
-      <Button href={'Click'} />
-      <p>Some text here</p>
     </article>
 
   )
