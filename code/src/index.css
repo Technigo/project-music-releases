@@ -39,16 +39,25 @@ font-weight: 700;
 margin-bottom: 8px;
 }
 
-h2:hover, h3:hover {
-text-decoration: underline;
-cursor: pointer;
-}
-
 h3 {
 font: Helvetica #a0a0a0; 
 font-size: 14px;
 font-weight: 400; 
 margin-top: 0
+}
+
+h2:hover, h3:hover {
+text-decoration: underline;
+cursor: pointer;
+}
+
+a {
+text-decoration: none;
+color: #ffffff;
+}
+
+a h3 {
+color: #a0a0a0
 }
 
 /* styling for every album card/container */

@@ -15,16 +15,20 @@ export const Album = (props) => {
           <Icons />
         </div>
       </div>
-      <h2>
-        {props.data.name}
-      </h2>
-      <h3>
-        {props.data.artists.map(item => {
-          return (
-            <Artist key={item.id} item={item} />
-          )
-        })}
-      </h3>
+      <a href={props.data.external_urls.spotify}>
+        <h2>
+          {props.data.name}
+        </h2>
+      </a>
+      <a href={props.data.artists[0].external_urls.spotify}>
+        <h3>
+          {props.data.artists.map(item => {
+            return (
+              <Artist key={item.id} item={item} />
+            )
+          })}
+        </h3>
+      </a>
     </div >
   )
 }
