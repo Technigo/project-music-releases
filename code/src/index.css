@@ -17,6 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
@@ -33,18 +34,19 @@ code {
 /* SIDEBAR */
 
 aside{
-  width: 300px;
   background-color: black;
   color: white;
   padding: 0.5rem 1rem;
-}
-
-.side-container{
-  
+  width: 250px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: auto;
 }
 
 h1{
   margin-bottom: 0.5rem;
+  font-size: 1.2rem;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -52,7 +54,6 @@ h1{
 aside h2{
   padding: 0.5rem 0;
   color: #a0a0a0;
-  
 }
 
 aside h2:hover{
@@ -63,15 +64,16 @@ aside h2:hover{
 /* ALBUMS CONTAINER */
 
 main{
-  background-color: #181818;
-  width: 85vw;
+  flex-grow: 1;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .albums-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 2em;
-  max-width: 1300px;
 }
 
 /* ALBUMS */
@@ -135,3 +137,4 @@ ul:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+

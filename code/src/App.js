@@ -9,10 +9,8 @@ export const App = () => {
   return (
     <>
       <aside>
-        <div className="side-container">
-          <h1>Popular playlists</h1>
-          <PlaylistContainer playlists={playlists.playlists.items} />
-        </div>
+        <h1>Popular playlists</h1>
+        <PlaylistContainer playlists={playlists.playlists.items} />
       </aside>
       <main>
         <AlbumsContainer albums={data.albums.items} />
