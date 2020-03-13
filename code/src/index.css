@@ -69,6 +69,11 @@ main{
   margin: 0 auto;
 }
 
+main h1 {
+  color: white;
+  padding: 0.5rem 0;
+}
+
 .albums-container {
   width: 100%;
   display: grid;

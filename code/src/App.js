@@ -13,6 +13,7 @@ export const App = () => {
         <PlaylistContainer playlists={playlists.playlists.items} />
       </aside>
       <main>
+        <h1>New releases</h1>
         <AlbumsContainer albums={data.albums.items} />
       </main>
     </>
