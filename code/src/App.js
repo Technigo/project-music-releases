@@ -1,7 +1,7 @@
 import React from "react";
 import data from "./data.json";
-import { Album } from "./Album";
-import { Header } from "./Header";
+import Album from "./Album";
+import Header from "./Header";
 
 
 export const App = () => {
