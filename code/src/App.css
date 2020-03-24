@@ -45,7 +45,7 @@ h4 {
 }
 
 /* Desktop */
-@media (min-width: 992px) {
+@media (min-width: 1296px) {
   .mainContainer {
     width: 100%;
   }
