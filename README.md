@@ -7,7 +7,7 @@ This was a pair-programming project using React including:
 
 ## The problem
 
-We divided everything into smaller compontents, using props, flexbox and .map.
+We divided everything into smaller compontents, using props, flexbox and map()
 
 ## View it live
 
