@@ -1,8 +1,10 @@
 # A 'New Releases' music app with React
 
-Check it out here - https://rautellin-music-app.netlify.com/
-
 Used React components to build a page which shows new album and single releases based on an API.
+
+## View it live
+
+https://rautellin-music-app.netlify.com/
 
 ## What I learned 🧠
 
