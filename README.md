@@ -10,4 +10,4 @@ Learning objectives:
 
 ## View it live
 
-https://infallible-sammet-2dbca6.netlify.com/
+the-technigo-music-app.netlify.com
