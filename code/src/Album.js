@@ -7,7 +7,7 @@ export const Album = (props) => {
   return (
     <article className='album-card'>
       <div className='album-cover'>
-        <img src={props.item.images[1].url} alt='album cover' />
+        <img src={props.item.images[1].url} alt={props.item.name} />
         <Icons />
       </div>
       <a className='album-name' href={props.item.external_urls.spotify}>{props.item.name}</a>
