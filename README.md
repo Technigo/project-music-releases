@@ -4,14 +4,14 @@ Build a music release page in pairs which shows new album and single releases, s
 
 ## Tech
 
--HTML
--CSS
--Javascript
--React
--Node
--Spotify API
--Pairprogramming
--VS code live
+- HTML
+- CSS
+- Javascript
+- React
+- Node
+- Spotify API
+- Pairprogramming
+- VS code live
 
 ## View it live
 
