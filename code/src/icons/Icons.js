@@ -12,7 +12,7 @@ export const Dots = () => {
 
 export const Heart = () => {
   return (
-    <svg className="love" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933333 16.933334"><path
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.933333 16.933334"><path
       styles="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;
     font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"
       d="M5.5429688 1.72632c-1.3973405.12793-2.3147222.54076-3.1308594 1.33199h-.00195C.73840872 4.76006.73795173 7.46473 2.3457064 9.20089c.01979.0505
