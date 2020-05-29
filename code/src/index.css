@@ -33,30 +33,113 @@ hr {
   
 }
 
-.icon-container {
+a {
+  text-decoration: none;
+}
+
+.title {
+  margin: 7px 0px 7px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+.title a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.title a:visited {
+  color: white;
+}
+
+.title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.artist {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+.artist a:link {
+  text-decoration: none;
+  color:#a0a0a0;
+}
+
+.artist-link a:visited {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.name a:link {
+  text-decoration: none;
+}
+
+.artist:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icons {
   display: flex;
-  
+  justify-content: space-evenly;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  align-items: center;
+  opacity: 0.0;
+}
+
+.icons svg {
+  fill: papayawhip;
+}
+
+.icons:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.336);
+  cursor: pointer;
+}
+
+.heart {
+  height: 35px;
+  width: 35px;
   
 }
 
-svg {
-  fill: papayawhip;
+.dots {
+height: 35px;
+width: 35px;
+
+}
+
+.play {
+  height: 70px;
+  width: 70px;
+  color: papayawhip;
+}
+
+.play:hover {
+  background-color: rgba(0, 0, 0, 0.568);
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-start;
-  margin-bottom: 20px;
-  padding: 10px;
-  z-index: 0;
+  margin-bottom: 50px;
   position: relative;
+  width: 300px;
+  max-width: 100%;
 }
 
 .card img {
-  width: 300px;
-  height: 300px;
   object-fit: cover;
   z-index: 1; 
   transition: all 0.4s ease-in-out;

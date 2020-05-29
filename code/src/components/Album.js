@@ -1,22 +1,27 @@
 import React from 'react'
 
+
 export const Album = ({ image, albumlink, title, artistLink, artistName }) => {
   return (
-    <section className="card">
-      <div className="image-icon">
+    <article className="card">
+
+      <div>
         <img className="album-image" src={image} alt="artist"></img>
       </div>
-      <a href={albumlink}>
-        <div className="title"> {title} </div>
-      </a>
+      <div className="icons">
+        <div className="heart"><img src="heart.svg" alt="heart icon" /></div>
+        <div className="play"><img src="play.svg" alt="play icon" /></div>
+        <div className="dots"><img src="dots.svg" alt="dots icon" /></div>
+      </div>
+
+      <a className="title" href={albumlink}>{title}</a>
+
       <a href={artistLink}>
-        <div className="artist"> {artistName.map((artist) => {
-          return <span className="space" key={artist.id}> {artist.name} </span>
+        <div className="artist" > {artistName.map((artist) => {
+          return <space className="name" key={artist.id}> {artist.name} </space>
         }
         )} </div>
       </a>
-
-
-    </section>
+    </article>
   )
 }

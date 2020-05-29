@@ -1,9 +1,8 @@
 import React from 'react'
 import data from './data.json'
-import { Play, Dots, Heart } from './icons/Icons'
 import { Header } from './components/Header'
 import { Album } from './components/Album'
-
+import './components/app.css'
 
 console.log(data)
 
@@ -12,12 +11,8 @@ export const App = () => {
     <div>
       <Header />
       <hr className="separator"></hr>
-      <div className="every-card">
-        <div className="icon-container">
-          <Heart />
-          <Play />
-          <Dots />
-        </div>
+
+      <div className="List">
         {data.albums.items.map((album) => {
           return (< Album key={album.artists[0].name}
             image={album.images[1].url}
@@ -27,11 +22,8 @@ export const App = () => {
             artistLink={album.artists[0].external_urls.spotify} />
           )
         })
-        }</div>
-    </div>
-
-
-
-
+        }
+      </div>
+    })</div>
   )
 }
