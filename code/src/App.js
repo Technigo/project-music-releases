@@ -1,12 +1,15 @@
 import React from 'react'
 import data from './data.json'
+import Card from './Card'
 
-console.log(data)
+console.log(data) 
 
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <h1>New albums {"&"} singles</h1>
+      import { Card } from "Card.js";
+
     </div>
   )
 }
