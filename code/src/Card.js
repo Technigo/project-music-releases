@@ -7,7 +7,6 @@ import Image from 'Image.js';
  Create a filtered array inside this App.js, 
  then use the components with the filtered values from array as props*/
 
-const cardArray = data => {
   const nameList = data.albums.items.map((item) => {
     const artistName = item.artists[0].name
     const imageBig = item.images[0].url
@@ -16,14 +15,21 @@ const cardArray = data => {
     const albumName = item.name
     return { artistName, imageBig, imageMedium, imageSmall, albumName }
   });
-  return nameList;
-}
+
+/* Test for console.logging parts of filteredarray above 
+const test = cardArray(data)
+test.forEach((item) => {
+  console.log(item.albumName)
+}) */
+
+nameList.forEach((item) => {
+  console.log(item.albumName)
+})
 
 const Card = () => {
-  const test = cardArray(data)
-  console.log(test)
-  return (<article>
-    <Image/>
+  return (
+  <article>
+      <Image srcSet={nameList.imageBig}/>
   </article>);
 };
 
