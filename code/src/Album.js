@@ -1,10 +1,14 @@
 import React from 'react';
-import data from './data.json';
+import './index.css'
 
 
-export const Album = () => {
-  return data.albums.items.map((props) => {
-    return <img src={props.images[1]} />
-  });
+export const Album = (props) => {
+    return (
+        <div className='album-cover'>
+            <div className='album-image'>
+                <img src={props.item.images[1].url} alt='Album cover'></img>
+            </div>
+        </div>
+    )
 };
-    
+
