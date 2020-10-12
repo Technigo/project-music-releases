@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div>
       <h1>New albums {'&'} singles</h1>
-      {/* import { Card } from "Card.js"; */}
+      <Card />
     </div>
   );
 };
