@@ -1,0 +1,4 @@
+.albumList {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,21 @@
+.album {
+    width: 100%;
+    margin: 10px;
+}
+
+.album img {
+    width: 100%;
+}
+
+@media (min-width: 668px) {
+    .album {
+        width: 40%;
+	    flex-grow: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .album {
+        width: 30%;
+    }
+}
