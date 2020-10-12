@@ -1,12 +1,16 @@
-import React from 'react'
-import data from './data.json'
+import React from "react";
+import data from "./data.json";
+import "./app.css";
+import Header from "./components/Header";
 
-console.log(data)
+console.log(data);
 
-export const App = () => {
+const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <section>
+      <Header />
+    </section>
+  );
+};
+
+export default App;

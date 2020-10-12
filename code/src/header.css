@@ -1,0 +1,11 @@
+.title {
+  color: white;
+}
+h1 {
+  font-size: 20px;
+}
+header {
+  margin-left: 20px;
+  border-bottom: 0.01em solid #404040;
+  margin-right: 100px;
+}
