@@ -13,6 +13,6 @@ a {
 text-decoration: none;
 }
 
-.artist-title:not(:last-child):after {
-    content: " , ";
+.artist-title:nth-of-type(n+2)::before {
+    content: ", ";
 }
