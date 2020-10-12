@@ -1,7 +1,7 @@
 import React from 'react';
 import data from '../data.json';
 import { Album } from './Album.js';
-//import { Heading } from './Heading';
+import { Heading } from './Heading';
 //import { Heading } from '/Heading.js';
 
 /*loggar ut json*/
@@ -31,16 +31,34 @@ console.log(albumArray);
 // });
 
 export const App = () => {
-	//return (<Heading />)
-	return <section className="albums-container">
-		{albumArray.map(album => {
-			return (<Album
-				key={album.name} //printa ut albumnamn i DOM
-				name={album.name} //printa ut albumnamn i DOM
-				image={album.images[1].url} //printa ut albumImage i DOM
-				albumUrl={album.external_urls.spotify} //printa ut albumURL i DOM
-				artists={album.artists} //skickar med hela artistarrayen 
-			/>)
-		})}
-	</section>;
+	// return (
+	// 	<header className="heading">
+	// 		<Heading />
+	// 	</header>
+	// )
+	return (
+		<>
+			<header className="heading">
+				<Heading />
+			</header>
+			<section className="albums-container" >
+				{
+					albumArray.map(album => {
+						return (
+							<Album
+								key={album.name} //printa ut albumnamn i DOM
+								name={album.name} //printa ut albumnamn i DOM
+								image={album.images[1].url} //printa ut albumImage i DOM
+								albumUrl={album.external_urls.spotify} //printa ut albumURL i DOM
+								artists={album.artists} //skickar med hela artistarrayen 
+							/>)
+					})
+				}
+			</section >
+		</>
+	)
 };
+
+// () inside return to return several lines. 
+// if no () is used, <section needs to start on the same line as return
+// but that is not clean

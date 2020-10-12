@@ -2,8 +2,9 @@ import React from 'react';
 
 export const Artist = (props) => {
     return <div className="artist">
-        <p>Artist Name: {props.name}</p>
-        <p>Artist URL: {props.artistUrl}</p>
+        <a href={props.artistUrl} className="artistTitle"><p>{props.name}</p></a>
+
     </div>
 
 };
+//komma separera artister.

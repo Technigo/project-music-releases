@@ -1,11 +1,13 @@
 import React from 'react';
 import { Artist } from './Artist.js';
 import './Album.css';
+
 export const Album = (props) => {
-	return <div className="album-wrapper">
-		<h1>Album Name: {props.name}</h1>
+	console.log(props) //added 
+	return <article className="album-wrapper">
+
 		<img className="album-image" src={props.image} alt="Album cover" />
-		<p>Album URL: {props.albumUrl}</p>
+		<a href={props.albumUrl} className="albumTitle"><p>{props.name}</p></a>
 		<div className="artist-container">
 			{props.artists.map(artist => {
 				return (
@@ -17,5 +19,9 @@ export const Album = (props) => {
 			}
 
 		</div>
-	</div>
+	</article>
 };
+
+
+//maybe className album-wrapper should be inside an article tag?
+//delete () around props?
