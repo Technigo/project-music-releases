@@ -22,14 +22,12 @@ test.forEach((item) => {
   console.log(item.albumName)
 }) */
 
-nameList.forEach((item) => {
-  console.log(item.albumName)
-})
-
 const Card = () => {
   return (
   <article>
-      <Image srcSet={nameList.imageBig}/>
+    {data.albums.items.map((item) => (
+        <Image key={item.id} item={item} />
+      ))}
   </article>);
 };
 
