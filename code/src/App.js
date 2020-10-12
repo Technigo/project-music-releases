@@ -8,25 +8,19 @@ console.log(data);
 
 const App = () => {
   return (
-    <section>
-      <Header />
-      < Album />
-    </section>
+    <div className="app">
+      < Header />
+      <div className="appData">
+        {data.albums.items.map(item => {
+          return (
+            <Album key={item.id} item={item} />
+          )
+        })}
+      </div>
+    </div>
+
+
   );
 };
 
 export default App;
-
-// const albumContainer = () => {
-//   return (
-//     <div>
-//       {data.map((data) => (
-//         <div>
-//           <img src={items.images[1].url} alt="album cover" class="albumCover" />
-//           <a href={items.external_urls.spotify} class="title"></a>
-//           <a class="artist" href={items.artists[0].external_urls.spotify}></a>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };

@@ -1,24 +1,24 @@
 import React from "react";
-import "album.css";
+// import "album.css";
 
-const Album = () => {
+const Album = ({ item }) => {
     return (
-        <div class="albumContainer">
-            <div class="albumInfo">
-                <img src={items.images[1].url} alt="album cover" class="albumCover" />
-                <div class="icons">
-                    <img src="icons/play.svg" alt="play button" class="playIcon" />
-                    <img src="icons/heart.svg" alt="like button" class="heartIcon" />
-                    <img src="icons/dots.svg" alt="more button" class="dotsIcon" />
+        <div className="albumContainer">
+            <div className="albumInfo">
+                <img src={item.images[1].url} alt="album cover" class="albumCover" />
+                <div className="icons">
+                    <img src="icons/play.svg" alt="play button" className="playIcon" />
+                    <img src="icons/heart.svg" alt="like button" className="heartIcon" />
+                    <img src="icons/dots.svg" alt="more button" className="dotsIcon" />
                 </div>
             </div>
             <div>
-                <a href={item.external_urls.spotify} class="title"></a>
+                <a href={item.external_urls.spotify} className="title"></a>
             </div>
             <div>
-                <a class="artist" href={item.artists[0].external_urls.spotify}>
+                <a className="artist" href={item.artists[0].external_urls.spotify}>
                     {" "}
-                    {item.artists[0].name}
+                    {item.name}
                 </a>
             </div>
         </div>
