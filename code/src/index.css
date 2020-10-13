@@ -25,7 +25,7 @@ p {
 
 .releases-list {
   margin: 15px;
-  border-top: 1px solid #1b1d1c;
+  border-top: 1px solid #686d76;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,9 +56,36 @@ p {
   border: 1px solid white;
 }
 
-@media (min-width 768px) {
+@media (min-width: 768px) {
   .releases-list {
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 15px;
+  }
+
+  .release {
+    margin: 0;
+  }
+
+  .release:nth-child(odd) {
+    justify-self: right;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .releases-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .release {
+    justify-self: center;
+  }
+
+  .release:nth-child(odd) {
+    justify-self: center;
   }
 }
