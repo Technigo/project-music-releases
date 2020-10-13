@@ -7,14 +7,17 @@ console.log(data)
 const albumArr = data.albums.items;
 export const App = () => {
   return (
-    <div>
-      {albumArr.map((album) => {
-        //props are passed into components like HTML attributes props ="" or props = {}
-        //unique key prop is required (how do you know what key is unique in massive arrays?)
-        return <Album key={album.name} name={album.name} img={album.images} artists={album.artists} />
-      }
-      )}
-    </div >
+    <>
+      <h1 className="site-header">New albums &#38; singles</h1>
+      <div className="albums">
+        {albumArr.map((album) => {
+          //props are passed into components like HTML attributes props ="" or props = {}
+          //unique key prop is required (how do you know what key is unique in massive arrays?)
+          return <Album key={album.name} name={album.name} img={album.images} artists={album.artists} />
+        }
+        )}
+      </div >
+    </>
   )
 }
 
