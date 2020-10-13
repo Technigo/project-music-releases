@@ -1,10 +1,9 @@
 import React from 'react';
-import { Artist } from './Artist.js';
+import { Artist } from './Artist';
 import './Album.css';
-import { Icons } from './Icons.js';
+import { Icons } from './Icons';
 
-export const Album = (props) => {
-	console.log(props) //added 
+export const Album = props => {
 	return (
 		<>
 			<article className="album-wrapper">
@@ -17,16 +16,14 @@ export const Album = (props) => {
 					{
 						props.artists.map(artist => {
 							return (
-								<Artist name={artist.name}
+								<Artist
+									name={artist.name}
 									key={artist.name}
 									artistUrl={artist.external_urls.spotify} />)
 						})
-
 					}
-
 				</div>
 			</article>
 		</>
 	)
 };
-//delete () around props?

@@ -20,11 +20,13 @@
 .icons-play {
     width: 85px;
     filter: invert(1);
+    opacity: 0.7; /* added  */
     transition: all .3s ease-in-out;
 }
 
 .icons-play:hover {
     transform: scale(1.4);
+    opacity: 1;  /* added  */
 }
 
 .image-wrapper:hover .album-icons {
