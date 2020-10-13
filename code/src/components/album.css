@@ -11,19 +11,21 @@ a {
 .album img {
     width: 100%;
     transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .album img:hover {
     opacity: 0.3;
     cursor: pointer;
-}
-
+}        
+        
 h1:hover, h2:hover {
     text-decoration: underline;
     cursor: pointer;
-
 }
-    
+
+.animation{
+    display: none;}
 
 @media (min-width: 668px) {
     .album {
