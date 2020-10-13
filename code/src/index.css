@@ -15,3 +15,43 @@ h3 {
 }
 
 /*Artist name - 14px Helvetica #a0a0a0*/
+
+.albums-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-card {
+  margin: 20px;
+}
+
+.album-cover-img {
+  width: 100%;
+}
+
+.album-cover {
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  /*display: none;*/
+}
+
+.dots-button, .heart-button {
+  width: 30px;
+}
+
+.play-button {
+  width: 50px;
+}

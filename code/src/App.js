@@ -4,8 +4,6 @@ import { Album } from "./components/Album";
 import { Header } from "./components/Header";
 import './index.css';
 
-//console.log(data);
-
 const albumsArray = data.albums.items; //Extracts array with 50 album objects from main data object
 
 //console.log(albumsArray);
