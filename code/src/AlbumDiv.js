@@ -1,14 +1,14 @@
 import React from 'react';
 import data from './data.json';
 
-import { AlbumName } from './AlbumName';
+import { AlbumInfo } from './AlbumInfo';
 
 
 export const AlbumDiv = () => {
     return (
         <div>
             {data.albums.items.map(album => {
-                return <AlbumName name={album.name} artist={album.artists[0].name}/>
+                return <AlbumInfo image={album.images[1].url} name={album.name} artist={album.artists[0].name}/>
             })}
         </div>
     );
