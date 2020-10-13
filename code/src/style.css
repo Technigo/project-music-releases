@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+/*1 column mobile, 2 tablet 4 desktop*/
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(fill);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-cover {
+    position: relative;
+}
+
+.icon {
+    width: 50px;
+    position: absolute;
+    z-index: 1;
+}

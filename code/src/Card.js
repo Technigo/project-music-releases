@@ -29,7 +29,7 @@ const Card = props => {
   return (
     <>
       {data.albums.items.map(item => (
-        <article>
+        <article className="card">
           <div>
             <Image key={item.images[0].url} item={item} />
             <Icons />
