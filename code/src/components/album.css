@@ -1,11 +1,24 @@
 .album {
     width: 100%;
     margin: 10px;
+    align-items: center;
 }
-
 .album img {
     width: 100%;
+    transition: .5s ease;
 }
+
+.album img:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+h1:hover, h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+    
 
 @media (min-width: 668px) {
     .album {
