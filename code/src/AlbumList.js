@@ -5,7 +5,7 @@ import data from './data.json'
 
 export const AlbumList = () => {
     return (
-        <div>
+        <div className="album-cover">
            {data.albums.items.map((item) => (
             <Album key={item.id} item={item} />
       ))}
