@@ -10,6 +10,7 @@
   
   body {
     margin: 0;
+    padding: 10px;
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -27,7 +28,7 @@
   
   .header {
     font-size: 16px;
-    margin: 10px;
+    margin: 0 0 15px;
   }
   
   .header,
@@ -36,22 +37,16 @@
   }
   /* Container for all albums */
   
-  .album-container {
+  .site-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
+  }
+  
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
   }
   /* The cards for each album containing album-image, album-name and artist(s)-name */
-  
-  .album-wrapper {
-    margin: 10px;
-    width: 180px;
-    justify-self: center;
-  }
-  
-  .album-card {
-    width: 180px;
-  }
   
   .album-cover {
     width: 160px;
@@ -67,33 +62,63 @@
     color: #a0a0a0;
   }
   
-  .album-image {
-    width: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .artist-name:not(:last-child):after {
+    content: ", ";
+  }
+  
+  .album-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
   
   .album-cover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    background-color: black;
+  }
+  
+  .album-image {
+    display: block;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .album-cover:hover .album-image {
+    opacity: 0.4;
   }
   /* Icons */
   
+  .icons-container {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+  }
+  
+  .album-card:hover .icons-container {
+    display: flex;
+  }
+  
   .heartIcon {
-    width: 50px;
+    width: 30px;
     filter: invert(1);
   }
   
   .playIcon {
-    width: 100px;
+    width: 50px;
     filter: invert(1);
     transition: all 0.2s ease-in-out;
   }
   
   .dotsIcon {
-    width: 50px;
+    width: 30px;
     filter: invert(1);
   }
   /* Media queries*/
@@ -101,34 +126,13 @@
   @media (min-width: 668px) {
     /* Tablet device */
     .album-container {
-      flex-wrap: wrap;
-    }
-    .album-wrapper {
-      flex: 40%;
+      grid-template-columns: 1fr 1fr;
     }
   }
   
   @media (min-width: 1024px) {
     /* Desktop device */
     .album-container {
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-    .album-wrapper {
-      flex: 20%;
-      justify-content: center;
-      align-items: center;
-      width: 220px;
-    }
-    .album-card {
-      margin: 0;
-      justify-content: center;
-      align-items: center;
-      width: 220px;
-    }
-    .album-image,
-    .album-cover {
-      width: 200px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }

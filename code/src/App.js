@@ -7,9 +7,12 @@ import { AlbumContainer } from './AlbumContainer';
 console.log(data)
 
 export const App = () => {
-  return ( <div>
-    <Header />
-    <AlbumContainer />
-    </div>
+  return ( 
+    <section class="site-container">
+      <section>
+        <Header />
+        <AlbumContainer />
+      </section>
+    </section>
   )
 }

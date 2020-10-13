@@ -10,7 +10,7 @@ export const AlbumDiv = () => {
             {data.albums.items.map(album => {
                 return <AlbumInfo 
                 key={album.name}
-                image={album.images[1].url} 
+                image={album.images[0].url} 
                 name={album.name} 
                 artist={album.artists.map(artist => {
                     return artist.name;
