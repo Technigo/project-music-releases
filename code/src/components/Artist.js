@@ -3,6 +3,6 @@ import './artist.css';
 
 export const Artist = props => {
     return (
-        <span>{{props.item.name}}</span>
+        <span>{props.item.name}</span>
     )
 }

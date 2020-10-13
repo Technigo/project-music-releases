@@ -3,7 +3,7 @@ import { Album } from './components/Album'
 import data from './data.json'
 import './app.css'
 
-console.log(data.albums.items[0].artists[0].name);
+ 
 console.log(data);
 
 export const App = () => {
