@@ -1,12 +1,14 @@
-import React from 'react'
-import data from './data.json'
+import React from 'react';
 
-console.log(data)
+// Components
+import Albums from 'Components/Albums';
 
 export const App = () => {
+
   return (
     <div>
-      Find me in src/app.js!
+      <h1>New albums & singles</h1>
+       <Albums />
     </div>
   )
 }
