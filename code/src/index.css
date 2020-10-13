@@ -14,8 +14,6 @@ h3 {
   color: #ffffff;
 }
 
-/*Artist name - 14px Helvetica #a0a0a0*/
-
 .albums-container {
   width: 90%;
   margin: auto;
@@ -82,4 +80,18 @@ h3 {
 
 h3:hover {
   text-decoration: underline;
+}
+
+.artists-link {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.artists-link:hover {
+  text-decoration: underline;
+}
+
+.album-artists span:last-child span {
+  display: none
 }
