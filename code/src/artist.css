@@ -1,4 +1,9 @@
 .artist-name {
     font-family: sans-serif;
     color: #000;
+    text-decoration: none;
+}
+
+.artist-name:hover {
+    text-decoration: underline;
 }

@@ -1,17 +1,24 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .icon-box {
     position: absolute;
     display: flex;
     justify-content: space-evenly;
-    margin: 5px;
+    top: 45%;
+    left: 25%;
     width: 50%;
+    z-index: 2;
 }
 
-.icons {
-    width: 100%;
-}
-
-.heart, .play, .dots {
-    width: 5px;
+.icon-box img {
+    margin: 5px;
+    overflow: hidden;
+    object-fit: contain;
 }
 
 .heart:hover {}

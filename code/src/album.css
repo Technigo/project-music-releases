@@ -1,4 +1,10 @@
 .album-name {
     font-family: sans-serif;
     color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.album-name:hover {
+    text-decoration: underline;
 }
