@@ -27,3 +27,4 @@ export const Album = (props) => {
 
 //We do a .map on artists to be able to get all the artists names who are involved, since the names are inside an array
 //rel="noopener noreferrer" is added to the a linking elements, got a warning that not adding this rel would be a security risk
+//<span>,&nbsp;</span> on line 21 is an HTML entity no break space, to keep all artists names in one line and separate them by comma
