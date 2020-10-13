@@ -1,12 +1,17 @@
-import React from 'react'
-import data from './data.json'
+import { Albumlist } from 'Albumslist'
+import React from 'react';
+import data from './data.json';
+import {Header} from './Header';
+import Albumslist from './Albumslist';
+import './index.css';
 
 console.log(data)
 
 export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
+  return ( 
+    <>
+    < Header />
+    < Albumslist />
+    </>
   )
 }
