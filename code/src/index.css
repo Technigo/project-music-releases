@@ -5,11 +5,36 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: grey;
+  background-color:#181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1{
+  font-size: 18px;
+  font-family: Helvetica; 
+  color: #ffffff;
+}
 
+h2{
+  font-size: 14px;
+  font-family: Helvetica; 
+  color: #ffffff;
+}
+p{
+  font-size: 14px;
+  font-family: Helvetica; 
+  color: #a0a0a0;
+}
+header{
+  border-bottom: 2px solid #232323;
+}
+.albumlist-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+.album-container{
+  margin: 10px;
+}

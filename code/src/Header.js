@@ -1,3 +1,3 @@
 import React from 'react'
 
-export const Header =() => <header>New albums & singels</header>;
+export const Header =() => <header><h1>New albums & singels</h1></header>;
