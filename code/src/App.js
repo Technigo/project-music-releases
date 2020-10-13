@@ -6,7 +6,7 @@ import Albums from 'Components/Albums';
 export const App = () => {
 
   return (
-    <div>
+    <div className="main-wrapper">
       <h1>New albums & singles</h1>
        <Albums />
     </div>
