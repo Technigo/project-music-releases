@@ -21,6 +21,7 @@ export const App = () => {
           return <Album key={album.name} 
           name={album.name}
           imgsrc={album.images[0].url}
+          artists={album.artists} 
           />
         })}
       </div>
