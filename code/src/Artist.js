@@ -1,9 +1,14 @@
 import React from 'react'
-import data from './data.json'
 
 
-export const Artist = () => {
-    return data.albums.items.map((item) => {
-        return item.artists[0].name;
-    });
+export const Artist = (props) => {
+    const getArtistNames = (artists) => {
+        return artists.map((artist) => artist.name).join(", ");
+    }
+    return (
+        <div className='artist-name'>
+            {getArtistNames(props.item.artists)}
+        </div>
+    )
   };
+

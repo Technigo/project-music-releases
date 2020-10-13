@@ -26,12 +26,33 @@ header hr {
   border: 1px solid rgba(71, 71, 71, 0.514);
 }
 
-.album-cover {
+.album-container {
   display: flex;
   justify-content: space-evenly;
   flex-flow: wrap;
-  position: relative;
+  
 }
+
+.album-cover{
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  margin-left: 15px;
+  padding-bottom: 5px;
+}
+
+.album-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  margin-left: 15px;
+}
+
 
 .icons {
   display: flex;
