@@ -1,5 +1,5 @@
 body {
-  margin: 32px;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -8,7 +8,8 @@ body {
   background: #000;
   color: #fafafa;
   box-sizing: border-box;
-  
+  line-height: 1.4;
+  margin-top: 40px;
 }
 
 code {
@@ -16,46 +17,161 @@ code {
     monospace;
 }
 
+/* MAIN HÄR ÄR NYTT */
+main {
+  /* max-width: 1200px; */
+  margin: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .header-style {
-  margin: 10px;
-  font-size: medium;
-  box-shadow: 0 1px 0 0 rgba(255,255,255,0.2);
+  font-size: 20px;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
   padding-bottom: 8px;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-gap: 1rem;
 }
 
 .AlbumCard {
-  width: 240px;
+  width: 100%;
   font-size: 16px;
-
 }
 
-.AlbumCard img {
+.albumImage {
   width: 100%;
 }
 
-.artist-text {
+.album-text {
   color: #ffffff;
   font-weight: 600;
   margin-bottom: 4px;
   margin-top: 8px;
 }
 
-.album-text {
-  color: rgba(255,255,255,0.6);
+.artist-text {
+  color: rgba(255, 255, 255, 0.6);
   margin-top: 3px;
 }
 
 .album-grid {
   max-width: 1200px;
+  /* max-width: 80%; */
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  padding-top: 32px;
 }
 
-@media (min-width: 600px) {
-  .album-grid { grid-template-columns: repeat(2, 1fr); }
+.image-container {
+  border: 1px dashed salmon;
+  position: relative;
 }
 
-@media (min-width: 900px) {
-  .album-grid { grid-template-columns: repeat(3, 1fr); }
+.overlay {
+  opacity: 0;
+  border: 1px dashed blueviolet;
+  width: 100%;
+  height: 100%;
+  /* DET HÄR CENTRERAR BUTTON-CONTAINER VERTIKALT */
+  display: flex;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  /* DEN HÄR, TILLSAMMANS MED POSITION: RELATIVE I PARENT:EN LÄGGER OVERLAY:EN ÖVER KORTET */
+  position: absolute;
+}
+
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.button-container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px dashed green;
+  align-items: center;
+  padding: 0 24px 0 24px;
+}
+
+.button-small {
+  border: 1px dashed blue;
+  width: 32px;
+  height: 32px;
+}
+
+.button-small:active {
+  opacity: 0.8;
+}
+
+.button-small:hover {
+  cursor: default;
+}
+
+.button-play {
+  border: 1px solid rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-play img {
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* DEN HÄR FÖRSTORAR PLAY-KNAPPEN */
+.button-play:hover {
+  /* transform: scale(1.05, 1.05); */
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.6);
+  cursor: default;
+}
+
+.button-play:active {
+  /* transform: scale(1, 1); */
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255,255,255,0.8);
+  background-color: rgba(0,0,0,0.6);
+  cursor: pointer;
+}
+
+
+@media (min-width: 500px) {
+  .album-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* max-width: 80%; */
+  }
+}
+
+@media (min-width: 700px) {
+  .album-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main {
+    /* max-width: 80%; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-grid {
+    grid-template-columns: repeat(4, 1fr);
+    min-width: 100%;
+  }
+  main {
+    max-width: 1200px;
+  }
 }
