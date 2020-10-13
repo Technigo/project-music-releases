@@ -6,12 +6,12 @@ import Card from "./Card/Card";
 export const App = () => {
   return (
     <>
-      <Header />;
+      <Header />
       {data.albums.items.map((x) => (
         <Card
           imgSrc={x.images[0].url}
-          title={x.artists[0].name}
-          info={"afasdfasdfsdfsdf"}
+          title={x.name}
+          info={x.artists[0].name}
         />
       ))}
     </>
