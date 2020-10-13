@@ -22,7 +22,7 @@ export const App = () => {
           name={album.name}
           imgsrc={album.images[0].url}
           artists={album.artists} 
-          />
+          albumurl={album.external_urls.spotify} />
         })}
       </div>
     </>

@@ -4,7 +4,7 @@ export const Album = (props) => {
   return (
     <div className="album-card">
         <div className="album-cover">
-            <img src={props.imgsrc} alt="" className="album-cover-img"/>
+          <a href={props.albumurl} className="album-img-hover" target="_blank"><img src={props.imgsrc} alt="" className="album-cover-img"/></a>
         </div>
 
       <div>
@@ -13,7 +13,7 @@ export const Album = (props) => {
 
       <div className="album-artists">
       {props.artists.map((artist) => {
-        return <span key={artist.id}><a className="artists-link" href={artist.external_urls.spotify}>{artist.name}</a><span>,&nbsp;</span></span>
+        return <span key={artist.id}><a className="artists-link" href={artist.external_urls.spotify} target="_blank">{artist.name}</a><span>,&nbsp;</span></span>
       })}
       </div>
     </div>
