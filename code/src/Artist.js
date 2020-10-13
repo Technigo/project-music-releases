@@ -1,2 +1,7 @@
 import React from 'react';
-import data from './data.json';
+
+const Artist = props => {
+  return <a href={props.artistURL}>{props.artistName}</a>;
+};
+
+export default Artist;

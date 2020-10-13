@@ -1,9 +1,6 @@
 import React from 'react';
-import data from './data.json';
 
-
-
-const Image = (props) => {
+const Image = props => {
   return (
     <picture>
       <source srcSet={props.item.images[0].url} media="(min-width: 1024px)" />
