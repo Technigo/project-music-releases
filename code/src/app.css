@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #191414;
+    color: #fff;
+}
+
 .main-grid-container{
     margin: 0;
     padding: 0;
