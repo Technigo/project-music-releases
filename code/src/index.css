@@ -45,7 +45,7 @@ h3 {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  /*display: none;*/
+  display: none;
 }
 
 .dots-button, .heart-button {
@@ -54,4 +54,32 @@ h3 {
 
 .play-button {
   width: 50px;
+}
+
+/*Hover effects*/
+/* makes Play button bigger on hover*/
+.play-button:hover {
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  margin: 10px;
+}
+
+/* puts filter on album cover on hover*/
+.album-cover-img:hover {
+  filter: brightness(0.20);
+}
+
+/* show icons on hover*/
+.album-cover:hover .icons {
+  display: flex;
+}
+
+/*Special class to keep the filter effect when hovering on the icons*/
+.icons:hover~.album-img-hover { 
+  filter: brightness(0.20); 
+}
+
+h3:hover {
+  text-decoration: underline;
 }
