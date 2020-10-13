@@ -1,36 +1,48 @@
-import React from 'react';
-import data from './data.json';
-import Image from 'Image';
-import Artist from 'Artist';
-import Album from 'Album';
-import Icons from 'Icons';
+import React from "react";
+import Image from "Image";
+import Artist from "Artist";
+import Album from "Album";
+import Icons from "Icons";
 
-/* What we want inside array:
- Artistname, Albumname (black level sort single/album), Album-image
- Create a filtered array inside this App.js, 
- then use the components with the filtered values from array as props*/
+/* WHAT WE ACTUALLY DID HERE:
+Album: Enter each album, fetch name for both key and albumName, and fetch url, 
+Artist: Enter each album, inside album fetch the artist at index-number, then fetch id, name and url for spotify
+props.album = props.the html attribute, so in app.js "album" is album={whatever we send in the map as parameter} */
 
-// const nameList = data.albums.items.map((item) => {
-//   const artistName = item.artists[0].name
-//   const imageBig = item.images[0].url
-//   const imageMedium = item.images[1].url
-//   const imageSmall = item.images[2].url
-//   const albumName = item.name
-//   return { artistName, imageBig, imageMedium, imageSmall, albumName }
-// });
+const Card = (props) => {
+  const album = props.album
+  return (
+    <>
+        <article>
+          <Image
+            key={album.href}
+            imageBig={album.images[0].url}
+            imageSmall={album.images[1].url}
+          />
+          <Icons />
+          <Album
+            key={album.name}
+            albumName={album.name}
+            albumURL={album.external_urls.spotify}
+          />
+          <Artist
+            key={album.artists[0].id}
+            artistName={album.artists[0].name}
+            artistURL={album.artists[0].external_urls.spotify}
+          />
+        </article>
+    </>
+  );
+};
 
-/* Test for console.logging parts of filteredarray above 
-const test = cardArray(data)
-test.forEach((item) => {
-  console.log(item.albumName)
-}) */
+export default Card;
 
-const Card = props => {
+/* const Card = props => {
   return (
     <>
       {data.albums.items.map(item => (
         <article className="card">
-          <div>
+          <div className="image-container">
             <Image key={item.images[0].url} item={item} />
             <Icons />
           </div>
@@ -48,6 +60,4 @@ const Card = props => {
       ))}
     </>
   );
-};
-
-export default Card;
+}; */

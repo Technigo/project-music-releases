@@ -7,17 +7,15 @@ import './style.css';
 
 console.log(data);
 
-const albumArray = data.albums.items;
-
 export const App = () => {
   return (
     <div className="body">
       <h1>New albums {'&'} singles</h1>
       <main>
-        {albumArray.map(item => {
+        {data.albums.items.map(item => {
           return (
             <>
-              <Card key={item.id} />
+              <Card album={item}/>
             </>
           );
         })}

@@ -11,12 +11,12 @@
 }
 
 .card {
-    grid: min-content; /*This doesn't work atm*/
+    grid-column: min-content; /*This doesn't work atm*/
     display: flex;
     flex-direction: column;
 }
 
-.album-cover {
+.image-container {
     position: relative;
 }
 
