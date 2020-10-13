@@ -79,6 +79,24 @@
     justify-content: center;
     align-items: center;
   }
+  /* Icons */
+  
+  .heartIcon {
+    width: 50px;
+    filter: invert(1);
+  }
+  
+  .playIcon {
+    width: 100px;
+    filter: invert(1);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .dotsIcon {
+    width: 50px;
+    filter: invert(1);
+  }
+  /* Media queries*/
   
   @media (min-width: 668px) {
     /* Tablet device */
