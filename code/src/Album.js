@@ -1,6 +1,6 @@
 import React from "react";
 
-
+//props are passed into components like arguments are into function
 export const Album = (props) => {
   return (
     <>
