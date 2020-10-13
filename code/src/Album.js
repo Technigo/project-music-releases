@@ -1,4 +1,5 @@
 import React from "react";
+import { Artist } from "./Artist";
 
 //props are passed into components like arguments are into function
 export const Album = (props) => {
@@ -9,10 +10,12 @@ export const Album = (props) => {
         {props.name}
       </p>
       <p>
-        {props.artists}.map((artist) => {
-          return <Album key={album.name} name={album.name} img={album.images} artists={album.artists} />
-
-        })
+        {props.artists.map(artist =>
+          <Artist
+            key={artist.name}
+            name={artist.name}
+          />
+        )}
       </p>
     </>
   );
