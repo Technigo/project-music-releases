@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+  /*** GENERAL STYLING ***/
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #000000;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Helvetica", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  /* Header */
+  
+  .header {
+    font-size: 16px;
+    margin: 10px;
+  }
+  
+  .header,
+  .album-name {
+    color: #ffffff;
+  }
+  /* Container for all albums */
+  
+  .album-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  /* The cards for each album containing album-image, album-name and artist(s)-name */
+  
+  .album-wrapper {
+    margin: 10px;
+    width: 180px;
+    justify-self: center;
+  }
+  
+  .album-card {
+    width: 180px;
+  }
+  
+  .album-cover {
+    width: 160px;
+  }
+  
+  .album-name,
+  .artist-name {
+    font-size: 14px;
+    margin: 4px 0;
+  }
+  
+  .artist-name {
+    color: #a0a0a0;
+  }
+  
+  .album-image {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .album-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 668px) {
+    /* Tablet device */
+    .album-container {
+      flex-wrap: wrap;
+    }
+    .album-wrapper {
+      flex: 40%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* Desktop device */
+    .album-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .album-wrapper {
+      flex: 20%;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+    }
+    .album-card {
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+    }
+    .album-image,
+    .album-cover {
+      width: 200px;
+    }
+  }
