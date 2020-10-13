@@ -50,8 +50,11 @@ p {
 
 .icon-container {
   position: absolute;
-  top: 42%;
-  left: 25%;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
   border: 1px solid yellow;
 }
 
