@@ -1,7 +1,7 @@
 import React from 'react';
 import data from './data.json';
 import Card from './Card';
-import './style.css';
+import './app.css';
 
 //import Artist from 'Artist';
 
@@ -9,9 +9,9 @@ console.log(data);
 
 export const App = () => {
   return (
-    <div className="body">
+    <div>
       <h1>New albums {'&'} singles</h1>
-      <main>
+      <main className="main-grid-container">
         {data.albums.items.map(item => {
           return (
             <>

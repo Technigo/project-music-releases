@@ -1,11 +1,16 @@
 import React from 'react';
+import Icons from './Icons'
+import './image.css'
 
 const Image = props => {
   return (
-    <picture className="album-cover">
+    <div className="album-cover">
+      <Icons />
+    <picture >
       <source srcSet={props.imageBig} media="(min-width: 1024px)" />
       <img src={props.imageSmall} alt="Album cover" />
     </picture>
+    </div>
   );
 };
 

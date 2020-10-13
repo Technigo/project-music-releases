@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-grid-container{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;/*repeat(auto-fit, 250px)*/
+    grid-template-rows: repeat(min-content);
+    gap: 5px;
+    justify-content: center;
+}
+
+@media (min-width: 768px){
+    .main-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

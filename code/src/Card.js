@@ -3,6 +3,7 @@ import Image from "Image";
 import Artist from "Artist";
 import Album from "Album";
 import Icons from "Icons";
+import './card.css'
 
 /* WHAT WE ACTUALLY DID HERE:
 Album: Enter each album, fetch name for both key and albumName, and fetch url, 
@@ -13,13 +14,12 @@ const Card = (props) => {
   const album = props.album
   return (
     <>
-        <article>
+        <article className="card">
           <Image
             key={album.href}
             imageBig={album.images[0].url}
             imageSmall={album.images[1].url}
           />
-          <Icons />
           <Album
             key={album.name}
             albumName={album.name}

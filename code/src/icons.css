@@ -1,0 +1,21 @@
+.icon-box {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+    width: 50%;
+}
+
+.icons {
+    width: 100%;
+}
+
+.heart, .play, .dots {
+    width: 5px;
+}
+
+.heart:hover {}
+
+.play:hover {}
+
+.dots:hover {}

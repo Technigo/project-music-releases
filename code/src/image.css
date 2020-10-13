@@ -1,0 +1,8 @@
+
+.album-cover {
+    position: relative;
+}
+
+.album-cover img {
+    width: 100%;
+}
