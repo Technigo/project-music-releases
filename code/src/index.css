@@ -51,14 +51,14 @@ h3 {
 }
 
 .play-button {
-  width: 50px;
+  width: 70px;
 }
 
 /*Hover effects*/
 /* makes Play button bigger on hover*/
 .play-button:hover {
-  width: 62px;
-  height: 62px;
+  width: 80px;
+  height: 80px;
   display: inline-block;
   margin: 10px;
 }

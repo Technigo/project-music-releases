@@ -9,7 +9,7 @@ export const Album = (props) => {
             <img className="play-button" src="icons/play.png" alt=""/>
             <img className="dots-button" src="icons/dots.png" alt=""/>          
           </div>
-          <a href={props.albumurl} className="album-img-hover" target="_blank"><img src={props.imgsrc} alt="" className="album-cover-img"/></a>
+          <a href={props.albumurl} className="album-img-hover" target="_blank" rel="noopener noreferrer"><img src={props.imgsrc} alt="" className="album-cover-img"/></a>
         </div>
 
       <div>
@@ -18,7 +18,7 @@ export const Album = (props) => {
 
       <div className="album-artists">
       {props.artists.map((artist) => {
-        return <span key={artist.id}><a className="artists-link" href={artist.external_urls.spotify} target="_blank">{artist.name}</a><span>,&nbsp;</span></span>
+        return <span key={artist.id}><a className="artists-link" href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">{artist.name}</a><span>,&nbsp;</span></span>
       })}
       </div>
     </div>
@@ -26,3 +26,4 @@ export const Album = (props) => {
 };
 
 //We do a .map on artists to be able to get all the artists names who are involved, since the names are inside an array
+//rel="noopener noreferrer" is added to the a linking elements, got a warning that not adding this rel would be a security risk
