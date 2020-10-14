@@ -10,11 +10,13 @@ export const Musicimage = (prop) => {
         // Musicimage will only return one image tag 
         <div className="image-container">
             <div className="icons-container">
-                <Hearticon className="icon" />
-                <Playicon className="icon" />
-                <Doticon className="icon" />
+                <Hearticon className="heart" />
+                <Playicon className="play" />
+                <Doticon className="dot" />
             </div>
-            <img alt="album cover" className="album-image" src={prop.image[1].url} /> 
+            <div className="album-image-hover">
+                <img alt="album cover" src={prop.image[1].url} className="album-image"/> 
+            </div>
         </div>  
     );
 };
