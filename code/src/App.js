@@ -7,7 +7,7 @@ import './app.css';
 
 console.log(data);
 
-export const App = () => {
+export const App = props => {
   return (
     <div>
       <h1>New albums {'&'} singles</h1>
@@ -15,7 +15,7 @@ export const App = () => {
         {data.albums.items.map(item => {
           return (
             <>
-              <Card album={item}/>
+              <Card key={item.id} album={item} />
             </>
           );
         })}
