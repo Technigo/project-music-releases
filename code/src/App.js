@@ -1,12 +1,10 @@
 import React from "react";
 import data from "./data.json";
 import "./app.css";
-import Header from "./components/Header";
-import Album from "./components/Album";
+import { Header } from "./components/Header";
+import { Album } from "./components/Album";
 
-console.log(data);
-
-const App = () => {
+export const App = () => {
   return (
     <div className="app">
       < Header />
@@ -23,4 +21,3 @@ const App = () => {
   );
 };
 
-export default App;

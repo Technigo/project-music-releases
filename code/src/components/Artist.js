@@ -1,9 +1,8 @@
 import React from "react";
 import "./artist.css"
 
-const Artist = ({ item }) => {
+export const Artist = (props) => {
     return (
-        <a className="artistTitle" href={item.external_urls.spotify}> {item.name}</a>
+        <a className="artistTitle" href={props.item.external_urls.spotify}> {props.item.name}</a>
     )
 }
-export default Artist;

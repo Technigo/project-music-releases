@@ -1,7 +1,7 @@
 import React from "react";
 import "./icons.css";
 
-const Icon = () => {
+export const Icons = () => {
     return (
         <div className="icons">
             <img src="icons/heart.svg" alt="like button" className="heartIcon" />
@@ -10,4 +10,3 @@ const Icon = () => {
         </div>
     )
 }
-export default Icon;
