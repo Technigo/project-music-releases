@@ -7,6 +7,7 @@ a {
     width: 100%;
     margin: 10px;
     align-items: center;
+    position: relative;
 }
 .album img {
     width: 100%;
@@ -25,7 +26,41 @@ h1:hover, h2:hover {
 }
 
 .animation{
-    display: none;}
+    display: none;
+}
+
+.animation svg {
+    width: 80px;
+    transition: all 1s ease-in-out;
+}
+
+.animation svg:hover {
+    transform: scale(1.2);
+}
+
+.animation svg path {
+    fill: white;
+    transition: fill 0.3s ease-in-out;
+}
+
+.animation svg:hover path {
+    /* fill: red; */
+}
+
+.album:hover .animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    bottom: 150px;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
 
 @media (min-width: 668px) {
     .album {
@@ -36,6 +71,6 @@ h1:hover, h2:hover {
 
 @media (min-width: 1024px) {
     .album {
-        width: 30%;
+        width: 25%;
     }
 }

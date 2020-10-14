@@ -12,13 +12,14 @@ export const Album = props => {
                 <img src={props.album.images[1].url}>
                 </img>
                 <div className="animation">
-                    <Play />
+                    <a href={props.album.external_urls.spotify}>
+                        <Play />
+                    </a>
                 </div>
             </div>
             <a href={props.album.artists[0].external_urls.spotify}>
 
                 <h1>
-
                     {props.album.artists.map(item => {
                         return (
                             <Artist key={item.id} item={item} />
