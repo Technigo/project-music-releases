@@ -20,16 +20,21 @@ export const Album = props => {
             </div>
 
             <a href={props.album.external_urls.spotify}>
-                <h1>{props.album.name}</h1>
+                <h2>{props.album.name}</h2>
             </a>
+            
+            <h3>
+            {props.album.artists.map(item => {
+                return (
+                    <Artist 
+                        key={item.id} 
+                        name={item.name} 
+                        url={item.external_urls.spotify}
+                    />
+                )
+            })}
+            </h3>
 
-            <h2>
-                {props.album.artists.map(item => {
-                    return (
-                        <Artist key={item.id} item={item} url={item.external_urls.spotify}/>
-                    )
-                })}
-            </h2>
         </article>
         </section>
     )
