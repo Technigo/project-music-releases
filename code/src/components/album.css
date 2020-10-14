@@ -23,8 +23,8 @@
   justify-content: space-around;
 }
 .albumContainer {
-  width: 20%;
-  margin: 10px;
+  width: 100%;
+  padding: 10px;
   justify-content: space-evenly;
 }
 
@@ -36,9 +36,24 @@
   width: 100%;
   object-fit: cover;
 }
+
 .albumTitle {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: #ffffff;
   text-decoration: none;
+}
+
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .albumContainer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .albumContainer {
+    width: 25%;
+  }
 }
