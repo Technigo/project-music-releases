@@ -13,20 +13,27 @@ export const Album = (props) => {
   //create a string from the array with commas between the names.
   const artistsStr = artistsArr.join(", ");
   console.log(artistsStr);
+
+  //create artistURLs
+  const artistURLs = props.artists.map(artist => artist.external_urls.spotify)
+
+
   return (
     <>
       <div className="album-container">
-        <div className="image-container">
-          <img className="album-image" src={props.img[1].url} alt="Album cover" />
-          <div className="icon-container">
-            <HeartButton className="album-icon" />
-            <PlayButton className="album-icon play-icon" />
-            <DotButton className="album-icon dots-icon" />
+        <a href={props.album_url}>
+          <div className="image-container">
+            <img className="album-image" src={props.img[1].url} alt="Album cover" />
+            <div className="icon-container">
+              <HeartButton className="album-icon" />
+              <PlayButton className="album-icon play-icon" />
+              <DotButton className="album-icon dots-icon" />
+            </div>
           </div>
-        </div>
-        <h2>
-          {props.name}
-        </h2>
+          <h2>
+            {props.name}
+          </h2>
+        </a>
         <p>
           <Artist
             key={artistsStr}
