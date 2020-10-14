@@ -1,0 +1,24 @@
+.albumArt {
+  height: 300px;
+  width : 300px;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.heartIcon {
+  height : 30px;
+  width : 30px;
+}
+
+.playButton {
+  height : 70px;
+  width : 70px;
+}
+
+.dotsIcon {
+  height: 30px;
+  width: 30px
+}
