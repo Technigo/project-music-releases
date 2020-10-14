@@ -4,9 +4,7 @@ import './Artist.css'
 export const Artist = (props) => { 
     return (
       <div>
-        <a href= {props.link} target="_blank">
-        <p>{props.name}</p>
-        </a>
+          <p>{props.name}</p>
       </div>
     )
 }

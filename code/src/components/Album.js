@@ -3,7 +3,10 @@ import { Artist } from './Artist.js'
 import './Album.css'
 
 export const Album = (props) => { 
-  
+  /* create a new array with artist.name. use join.method to turn the array into a string and then seperate them with a "," */
+  const artistArray = props.artists.map(artist => artist.name);
+  const artistString = artistArray.join(", ");
+
     return (
         <article className="album-card">
           <section className="cover">
@@ -11,12 +14,11 @@ export const Album = (props) => {
             <a href={props.albumLink} target="_blank">
               <h2>{props.albumTitle}</h2>
             </a>
-            <div>
-              {props.artists.map(artist => {
-              return <Artist key={artist.id} name={artist.name} link={artist.external_urls.spotify}/>
-              })}
-            </div>
-          
+            <a href={props.artistLink} target="_blank">
+              <div>
+                <Artist key={artistString} name={artistString}/>
+              </div>
+            </a>
             <section className="icons">
               <img className="heart" src="icons/heart.svg"/>
               <img className="play" src="icons/play.svg"/>
@@ -27,5 +29,4 @@ export const Album = (props) => {
     )
 }
 
-/* line 10 - iterate over artists array and returns the Artist component for every artist that is in the array.
-Props in artist component connects with the values in the returning Artist tag. Artist.name is props.name in artist component. Key value must b a unique value.*/
+/* moved artistLink from artist.js to album js to get imported with album.js component in the App.js component. */

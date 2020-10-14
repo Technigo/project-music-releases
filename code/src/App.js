@@ -3,6 +3,7 @@ import data from './data.json'
 import './index.css'
 import { Header } from './components/Header.js'
 import { Album } from './components/Album.js'
+import { Artist } from './components/Artist.js'
 
 console.log(data)
 
@@ -17,6 +18,7 @@ export const App = () => {
            image = {album.images[0].url}
            artists = {album.artists}
            albumLink = {album.external_urls.spotify}
+           artistLink = {album.artists[0].external_urls.spotify}
            />
         })}
       </div>
