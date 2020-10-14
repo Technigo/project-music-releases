@@ -1,34 +1,20 @@
 import React from "react";
+import CardOptions from "./CardOptions";
 
 const Card = (props) => {
   return (
     <>
       <div className="card">
         <div className="card__img">
-          <img
-            src={props.imgSrc}
-            alt="Picture of site about information Did you sleep well?"
-          />
+          <img src={props.images[0].url} alt="album cover" />
         </div>
-        <div className="icon__container">
-          <img
-            className="heart-icon"
-            src="/icons/heart.svg"
-            alt="heart button"
-          />
-          <img
-            className="play-button"
-            src="/icons/play.svg"
-            alt="play button"
-          />
-          <img className="dots-icon" src="/icons/dots.svg" alt="dots-button" />
-        </div>
-        <a href="">
-          <h1 className="card__title">{props.title}</h1>
+        <a href={props.external_urls.spotify} target="_blank">
+          <h1 className="card__title">{props.name}</h1>
         </a>
-        <a href="">
-          <p className="card__info">{props.info}</p>
+        <a href={props.artists[0].external_urls.spotify} target="_blank">
+          <p className="card__info">{props.artists[0].name}</p>
         </a>
+        <CardOptions />
       </div>
     </>
   );

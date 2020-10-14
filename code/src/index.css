@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: whitesmoke;
+  padding: 30px 50px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  border: 0.5px solid rgb(77, 75, 75);
+  margin-top: -10px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card > a:hover {
+  text-decoration: underline whitesmoke;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  position: relative;
+  padding: 5px;
+  flex: 1 0 21%;
+}
+
+.card__img:hover {
+  filter: brightness(0.2);
+}
+
+.card__img:hover ~ .card-options {
+  display: block;
+}
+
+.card-options ~ .card__img {
+  filter: brightness(0.2);
+}
+
+.card .card__img > img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.card .card__title {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #ffffff;
+}
+
+.card .card__info {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.card-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.card-options:hover {
+  display: block;
+}
+
+.card-options img {
+  filter: invert(1);
+}
+
+.card-options__like,
+.card-options__more {
+  width: 20%;
+  padding: 0 5px;
+  opacity: 0.6;
+}
+
+.card-options__play {
+  transition: all 0.2s ease-in-out;
+  width: 30%;
+  opacity: 0.6;
+}
+.card-options__play:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Responive tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+  .card {
+    flex: 0 0 35%;
+  }
+}
+
+/* Responsive mobile */
+@media (max-width: 667px) {
+  .card {
+    flex: 0 0 65%;
+    height: 280px;
+  }
 }
