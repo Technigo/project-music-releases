@@ -97,39 +97,39 @@ h3:hover {
 }
 
 /*hides the comma from the last element in the artists names group*/
-.album-artists span:last-child span {
+.album-artists a:last-child span {
   display: none
 }
 
-  /*Media Queries*/
-  /*Tablet*/
-  @media (min-width: 667px) and (max-width: 1024px) {
-    .albums-container {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
-  
-    .album-card {
-    width: 40%;
-    }
+/*Media Queries*/
+/*Tablet*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albums-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   }
-  
-  /*Desktop*/
-  @media (min-width: 1025px) {
-    .albums-container {
-    width: 95%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    }
-  
-    .album-card {
-    width: 20%;
-    }
+
+  .album-card {
+  width: 40%;
   }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+  .albums-container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+
+  .album-card {
+  width: 20%;
+  }
+}
