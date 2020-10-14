@@ -1,7 +1,6 @@
 import React from 'react';
 import { Albumartistname } from './Albumartistname'
 // import data from  './data.json';
-
 // console.log(data.albums.items[0].name);
 
 

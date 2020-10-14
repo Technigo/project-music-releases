@@ -6,7 +6,7 @@ import React from 'react'
 import data from './data.json'
 import Header from './Header'
 import { Albumcontainer } from './Albumcontainer'
-
+import {Play} from './Play'
 // console.log(data.albums.items[0].name)
 // const name = data.albums.items[0].name
 // console.log(data.albums.items[0].images[0].url)
@@ -29,12 +29,14 @@ export const App = () => {
       < Header />
       <article>
         {data.albums.items.map(album=>{return <Albumcontainer key={album.id} 
-      name={album.name} 
-      link={album.external_urls.spotify} 
-      image={album.images[0].url}
-      artists={album.artists} />
+        name={album.name} 
+        link={album.external_urls.spotify}
+        image={album.images[0].url}
+        artists={album.artists} />
+        // icon = {}
         })}
-        </article> 
+        {/* <Play /> */}
+        </article>
       {/* < Card name={data.albums.items[0].name} image={data.albums.items[0].images[0].url} artistname={data.albums.items[0].artists[0].name}/> 
       < Card name={data.albums.items[1].name} image={data.albums.items[1].images[0].url} artistname={data.albums.items[1].artists[0].name}/>  */}
     </>
