@@ -1,3 +1,7 @@
-.artist:not(:last-child)::after {
+.artist:not(:last-child):not(:nth-last-child(2))::after {
     content: ', ';
   }
+
+.artist:not(:first-child):last-child::before {
+    content: ' & ';
+}
