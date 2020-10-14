@@ -6,14 +6,16 @@ import { Play } from './Play'
 // Körs en gång för varje varv i map, returnerar bild, artist coh album
 export const Album = props => {
     return (
+        <section className="wrapper">
         <article className='album'>
             {/* ist för data.album... använder vi props som skickas med när <Album /> monteras i App.js */}
             <div className="image-container">
+
                 <img src={props.album.images[1].url}>
                 </img>
                 <div className="animation">
                     <a href={props.album.external_urls.spotify}>
-                        <Play />
+                    <Play />
                     </a>
                 </div>
             </div>
@@ -33,6 +35,7 @@ export const Album = props => {
             </a>
 
         </article>
+        </section>
     )
 }
 
