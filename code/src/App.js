@@ -5,14 +5,15 @@ import './app.css'
 
  
 console.log(data);
+const albumArray = data.albums.items;
 
 export const App = () => {
   return (
     <section className="albumList">
 
       {/* Mappar igenom allt under items, anropar Album.js för varje album i data.json. Skickar med props. */}
-      {data.albums.items.map(album => (
-        <Album key={album.id} album={album}/> //måste ha en unik key
+      {albumArray.map(album => (
+        <Album key={album.id} album={album}/>
       ))}
     </section>
   )
