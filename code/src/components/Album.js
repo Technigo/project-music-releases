@@ -6,7 +6,7 @@ import Icons from "./Icons";
 const Album = ({ item }) => {
     return (
         <div className="albumContainer">
-            <div className="albumInfo">
+            <div className="albumWrapper">
                 <img src={item.images[1].url} alt="album cover" className="albumCover" />
                 <Icons />
             </div>
