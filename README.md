@@ -11,4 +11,4 @@ On this project we are doing pair-programing and using React for the first time 
 - The page is responsive and we have managed to implement some nice hover effects on the different Album covers, which proved a bit challenging, but with the right HTML structure and class naming we got it to work 💪
 
 ## View it live
-Find our first of many more React projects Live here: https://epic-tesla-7afe8f.netlify.app/ 🎶
+Find our first of many more React projects Live here: https://epic-tesla-7afe8f.netlify.app/ 🎶 (Built by Nathalie Nordström and Vanessa Sue Smith)
