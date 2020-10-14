@@ -3,20 +3,18 @@ import data from './data.json'
 // import { Dots } from './components/Dots'
 // import { Heart} from './components/Heart'
 // import { Play } from './components/Play'
-// import { Button } from './components/Button'
+import { AlbumContainer } from './components/AlbumContainer'
 import { AlbumCard } from './components/AlbumCard'
-
-
 
 console.log(data)
 
 export const App = () => {
   return (
 
-    <div>
+    <div className="AlbumContainer">
       {/* <Dots /> */}
-      {/* <Button /> */}
-      <AlbumCard albums={data.albums.items}/>
+      <AlbumContainer albums={data.albums.items}/>
+
       {/* <Heart />
       <Play />  */}
     </div>

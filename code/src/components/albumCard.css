@@ -1,31 +1,3 @@
- /* stylade som i J:s exempel med articel */
-.album {
-  position: relative;
-  width: 25%;
-  background-size: cover;
-  min-height: 50vh;
-  padding: 20px;
-  color: black;
-}  
-
-
-/* god to know play.svg svg is a tag you can style */
-
-/* @media (max-with: 1024px) {
-  .album {
-    width: 50%;
-  }
-}
-
-@media (max-with: 668px) {
-  .album {
-    width: 50%;
-  }
+/* .album-cards {
+    border: white solid 3 px;
 } */
-/* 
-ytterligare anpassningar här */
-
-/* moreDetails {
-    display: none;
-} */
-
