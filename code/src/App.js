@@ -1,13 +1,24 @@
 import React from 'react'
 import data from './data.json'
-// import '/.app.css'  
+// import { Dots } from './components/Dots'
+// import { Heart} from './components/Heart'
+// import { Play } from './components/Play'
+// import { Button } from './components/Button'
+import { AlbumCard } from './components/AlbumCard'
+
+
 
 console.log(data)
 
 export const App = () => {
   return (
+
     <div>
-      Find me in src/app.js!
+      {/* <Dots /> */}
+      {/* <Button /> */}
+      <AlbumCard albums={data.albums.items}/>
+      {/* <Heart />
+      <Play />  */}
     </div>
   )
-}
+    }
