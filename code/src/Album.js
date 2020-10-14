@@ -1,15 +1,16 @@
 import React from 'react';
+import { DisplayIcons } from './DisplayIcons'
 import { Artist } from './Artist';
 
  export const Album = (props) => {
   return (
     <>
       <article className="album-container">
-        <img src={props.image} alt="Album cover" />
-        <a href={props.albumUrl}>Album name: {props.name}</a> 
-        <p>
-          Album URL: {props.albumUrl}
-        </p>
+        <div className="image-container">
+          <img className="album-image" src={props.image} alt="Album cover" />
+          <DisplayIcons />
+        </div>
+        <a className="album-name" href={props.albumUrl} target="_blank">{props.name}</a> 
         {
           props.artists.map(artist => {
             return (

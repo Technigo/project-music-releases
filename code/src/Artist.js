@@ -3,12 +3,9 @@ import React from 'react';
 export const Artist = (props) => {
   return (
     <>
-      <p>
-        Artist name: {props.artistName}
-      </p>
-      <p>
-        Artist URL: {props.artistUrl}
-      </p>
+      <div>
+        <a className="artist-name" href={props.artistUrl} target="_blank">{props.artistName}</a>
+      </div>
     </>
   );
 }
