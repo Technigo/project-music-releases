@@ -11,6 +11,11 @@
     width: 100%;
 }
 
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 668px) {
   .albumCard {
     width: 30%;
