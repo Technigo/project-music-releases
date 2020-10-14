@@ -9,7 +9,7 @@ export const Album = props => {
         <article className='album'>
             {/* ist för data.album... använder vi props som skickas med när <Album /> monteras i App.js */}
             <div className="image-container">
-                <img src={props.album.images[1].url}>
+                <img src={props.album.images[1].url} alt="">
                 </img>
                 <div className="animation">
                     <a href={props.album.external_urls.spotify}>
@@ -17,25 +17,19 @@ export const Album = props => {
                     </a>
                 </div>
             </div>
-            <a href={props.album.artists[0].external_urls.spotify}>
-
-                <h1>
-                    {props.album.artists.map(item => {
-                        return (
-                            <Artist key={item.id} item={item} />
-                        )
-                    })}
-                </h1>
-            </a>
 
             <a href={props.album.external_urls.spotify}>
-                <h2>{props.album.name}</h2>
+                <h1>{props.album.name}</h1>
             </a>
 
+            <h2>
+                {props.album.artists.map(item => {
+                    return (
+                        <Artist key={item.id} item={item} url={item.external_urls.spotify}/>
+                    )
+                })}
+            </h2>
         </article>
     )
 }
 
-
-
-// Kommenterade ut denna då jag gjorde en ny komponent <h1>{props.album.artists[0].name}</h1>
