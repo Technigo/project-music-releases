@@ -7,7 +7,7 @@ import './index.css';
 // Extracts array with 50 album objects from main data object
 const albumsArray = data.albums.items;
 
-/* Here on App.js we extract the data from the json object via props and use 
+/* Here on App.js we extract the data from the json object via props and use
 those properties' names in the components */
 
 export const App = () => {
@@ -16,12 +16,12 @@ export const App = () => {
       <Header />
       <div className="albums-container">
         {albumsArray.map((album) => {
-          return <Album 
-          key={album.name} 
-          name={album.name}
-          imgsrc={album.images[0].url}
-          artists={album.artists}
-          albumurl={album.external_urls.spotify} />
+          return <Album
+            key={album.name}
+            name={album.name}
+            imgsrc={album.images[0].url}
+            artists={album.artists}
+            albumurl={album.external_urls.spotify} />
         })}
       </div>
     </>
