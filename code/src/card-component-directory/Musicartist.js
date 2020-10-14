@@ -8,7 +8,7 @@ const iterateArtistNames = (name) => {
 export const Musicartist = (prop) => {
     return (
         <a href={prop.artistsname[0].external_urls.spotify} target="_blank" rel="noopener noreferrer">
-           <h4>{prop.artistsname.map(iterateArtistNames).join(", ")}</h4>
+           <h4 class="artist-name">{prop.artistsname.map(iterateArtistNames).join(", ")}</h4>
         </a>       
     );
 };  
