@@ -5,11 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000;
+  background: rgb(40,40,40);
+  background: linear-gradient(180deg, rgba(40,40,40,1) 0%, rgba(0,0,0,1) 5%);
   color: #fafafa;
   box-sizing: border-box;
   line-height: 1.4;
-  margin-top: 40px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 code {
@@ -17,17 +19,15 @@ code {
     monospace;
 }
 
-/* MAIN HÄR ÄR NYTT */
 main {
-  /* max-width: 1200px; */
   margin: auto;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .header-style {
-  font-size: 20px;
-  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.2);
+  font-size: 24px;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15);
   padding-bottom: 8px;
   margin: 0 auto;
   max-width: 1200px;
@@ -35,12 +35,12 @@ main {
   grid-gap: 1rem;
 }
 
-.AlbumCard {
+.album-card {
   width: 100%;
   font-size: 16px;
 }
 
-.albumImage {
+.album-image {
   width: 100%;
 }
 
@@ -49,37 +49,63 @@ main {
   font-weight: 600;
   margin-bottom: 4px;
   margin-top: 8px;
+  display: block;
+  text-decoration: none;
+}
+
+.album-text:hover {
+  text-decoration: underline;
 }
 
 .artist-text {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 3px;
+  display: inline;
+  text-decoration: none;
+}
+
+.spotifake-logo {
+  opacity: 0.30;
+  width: 180px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+/* Add a comma after each artist */
+.artist-text::after {
+  content: ", ";
+}
+
+/* Remove the comma after the last artist */
+.artist-text:last-child::after {
+  content: ""
+}
+
+.artist-text:hover {
+  text-decoration: underline;
 }
 
 .album-grid {
-  max-width: 1200px;
-  /* max-width: 80%; */
+  max-width: 1180px;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
+  row-gap: 3rem;
   padding-top: 32px;
 }
 
 .image-container {
-  border: 1px dashed salmon;
   position: relative;
 }
 
 .overlay {
   opacity: 0;
-  border: 1px dashed blueviolet;
   width: 100%;
   height: 100%;
-  /* DET HÄR CENTRERAR BUTTON-CONTAINER VERTIKALT */
   display: flex;
   align-items: center;
   background-color: rgba(0,0,0,0.5);
-  /* DEN HÄR, TILLSAMMANS MED POSITION: RELATIVE I PARENT:EN LÄGGER OVERLAY:EN ÖVER KORTET */
   position: absolute;
 }
 
@@ -93,19 +119,17 @@ main {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  border: 1px dashed green;
   align-items: center;
-  padding: 0 24px 0 24px;
+  padding: 0 12% 0 12%;
 }
 
 .button-small {
-  border: 1px dashed blue;
   width: 32px;
   height: 32px;
 }
 
 .button-small:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .button-small:hover {
