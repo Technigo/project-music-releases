@@ -1,0 +1,65 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+  }
+
+a {
+    text-decoration: none;
+}
+  
+.album-card{
+    width: 100%;
+    margin: 20px;
+    height: 100%;
+}
+
+.album-cover {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.cover {
+    position: relative;
+}
+
+.cover:hover .icons{
+    display: flex;
+}
+
+.cover:hover .album-cover {
+    opacity: 0.5;
+}
+
+.icons{
+    display: none;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+.heart, .dots {
+    filter: invert (100%);
+    width: 20%;
+    height: 20%;
+}
+
+.play {
+    filter: invert (100%);
+    width: 40%;
+    height: 40%;
+    transition: 0.5s;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.play:hover {
+    width: 60%;
+    height: 60%;
+    margin-left: 7%;
+    margin-right: 7%;   
+}

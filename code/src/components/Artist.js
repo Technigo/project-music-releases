@@ -1,9 +1,12 @@
 import React from 'react';
+import './Artist.css'
 
-export const Artist = (props) => {
+export const Artist = (props) => { 
     return (
       <div>
-      <h3></h3>
+        <a href= {props.link} target="_blank">
+        <p>{props.name}</p>
+        </a>
       </div>
     )
 }
