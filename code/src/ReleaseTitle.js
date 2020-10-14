@@ -1,9 +1,10 @@
 import React from 'react'
+import 'ReleaseTitle.css'
 
 export const ReleaseTitle = (props) => {
   return (
-    <a href={props.albumURL} className='title'>
-      <p className='title'>{props.albumName}</p>
+    <a href={props.albumURL} className='releaseTitle'>
+      {props.albumName}
     </a>
   )
 }

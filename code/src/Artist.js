@@ -1,4 +1,5 @@
 import React from 'react'
+import 'Artist.css'
 
 export const Artists = (props) => {
   return (
