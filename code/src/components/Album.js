@@ -1,6 +1,6 @@
 import React from "react";
 import "./album.css";
-import Artist from "./Artist"
+import Artist from "./Artist";
 
 const Album = ({ item }) => {
     return (
