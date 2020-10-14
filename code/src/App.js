@@ -14,9 +14,7 @@ export const App = props => {
       <main className="main-grid-container">
         {data.albums.items.map(item => {
           return (
-            <>
               <Card key={item.id} album={item} />
-            </>
           );
         })}
       </main>

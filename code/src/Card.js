@@ -25,43 +25,20 @@ const Card = props => {
           albumName={album.name}
           albumURL={album.external_urls.spotify}
         />
-        {album.artists.map(artist => {
-          return (
-            <Artist
-              key={artist.id}
-              artistName={artist.name}
-              artistURL={artist.external_urls.spotify}
-            />
-          );
-        })}
+        <div className="artist-box">
+          {album.artists.map(artist => {
+            return (
+              <Artist
+                key={artist.id}
+                artistName={artist.name}
+                artistURL={artist.external_urls.spotify}
+              />
+            );
+          })}
+        </div>
       </article>
     </>
   );
 };
 
 export default Card;
-
-/* const Card = props => {
-  return (
-    <>
-      {data.albums.items.map(item => (
-        <article className="card">
-          <div className="image-container">
-            <Image key={item.images[0].url} item={item} />
-            <Icons />
-          </div>
-          <Artist
-            key={item.artists[0].id}
-            artistName={item.artists[0].name}
-            artistURL={item.artists[0].external_urls.spotify}
-          />
-          <Album
-            key={item.name}
-            albumName={item.name}
-            albumURL={item.external_urls.spotify}
-          />
-        </article>
-      ))}
-    </>
-  );
-}; */

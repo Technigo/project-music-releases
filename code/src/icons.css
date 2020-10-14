@@ -9,7 +9,7 @@
 }
 
 .icon {
-  margin: 5px;
+  margin: 10px;
   overflow: hidden;
   object-fit: contain;
   filter: invert(1);

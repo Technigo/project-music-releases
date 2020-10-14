@@ -1,7 +1,12 @@
+.artist-box {
+    display: flex;
+}
+
 .artist-name {
     font-family: sans-serif;
     color: #fff;
     text-decoration: none;
+    margin: 2px;
 }
 
 .artist-name:hover {
