@@ -1,0 +1,24 @@
+.playIcon {
+  width: 30px;
+  color: white;
+  filter: invert(1);
+}
+.heartIcon {
+  width: 20px;
+  color: white;
+  filter: invert(0.8);
+}
+.dotsIcon {
+  width: 20px;
+  color: white;
+  filter: invert(0.8);
+}
+
+.albumContainer {
+  margin: 10px;
+  justify-content: space-evenly;
+}
+
+.albumInfo {
+  justify-content: space-evenly;
+}

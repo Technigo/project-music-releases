@@ -1,5 +1,5 @@
 import React from "react";
-// import "album.css";
+import "./album.css";
 
 const Album = ({ item }) => {
     return (
@@ -7,8 +7,8 @@ const Album = ({ item }) => {
             <div className="albumInfo">
                 <img src={item.images[1].url} alt="album cover" className="albumCover" />
                 <div className="icons">
-                    <img src="icons/play.svg" alt="play button" className="playIcon" />
                     <img src="icons/heart.svg" alt="like button" className="heartIcon" />
+                    <img src="icons/play.svg" alt="play button" className="playIcon" />
                     <img src="icons/dots.svg" alt="more button" className="dotsIcon" />
                 </div>
             </div>
