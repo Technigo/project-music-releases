@@ -17,10 +17,36 @@ code {
   margin-bottom: 6px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-header {
+    padding-left: 63px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-header {
+    font-size: 16px;
+    padding-left: 150px;
+  }
+}
+
 .header-line {
   height: 0.7px;
   background-color: #383838;
   margin: 0 33px 16px 33px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header-line {
+    margin: 0 auto 16px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-line {
+    max-width: 874px;
+    margin: 0 auto 16px;
+  }
 }
 
 h2 {
@@ -59,23 +85,41 @@ a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 3px solid orange;
+}
+
+@media (min-width: 1024px) {
+  .albums {
+    max-width: 900px;
+    margin: 0 auto;
+  }
 }
 
 .album-container {
-  border: 2px solid white;
   width: min-content;
   margin-bottom: 30px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .album-container {
+    margin: 0 15px 30px 15px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-container {
+    margin: 0 8px 30px 8px;
+  }
+}
+
 .image-container {
-  border: 1px solid green;
   width: fit-content;
   position: relative;
-  z-index: 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+}
+
+@media (min-width: 1024px) {
+  img {
+    width: 200px;
+  }
 }
 
 .image-container:hover {
@@ -89,7 +133,6 @@ a:hover {
   left: 0;
   display: flex;
   justify-content: center;
-  border: 1px solid yellow;
   width: 100%;
   height: 100%;
   opacity: 0;

@@ -7,7 +7,7 @@ console.log(data)
 const albumArr = data.albums.items;
 export const App = () => {
   return (
-    <>
+    <div className="master-container">
       <h1 className="site-header">New albums &#38; singles</h1>
       <div className="header-line"></div>
       <div className="albums">
@@ -24,7 +24,7 @@ export const App = () => {
         }
         )}
       </div >
-    </>
+    </div>
   )
 }
 
