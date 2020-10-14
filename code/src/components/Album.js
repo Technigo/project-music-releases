@@ -14,10 +14,10 @@ const Album = ({ item }) => {
                 </div>
             </div>
             <div>
-                <a href={item.external_urls.spotify} className="title"></a>
+                <a className="albumTitle" href={item.external_urls.spotify}>{item.name}</a>
             </div>
 
-            <div className="artist">
+            <div className="artistTitle">
                 {item.artists.map(item => {
                     return (
                         < Artist key={item.id} item={item} />
