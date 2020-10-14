@@ -6,17 +6,20 @@ display: inline-block;
 text-decoration: none;
 }
 
-/*removed separate a tag styling (text-decoration none) to artist-title 
-because the hover effect did not work*/
-
 .artist-title:hover {
 text-decoration: underline;
 }
-
-.artist-title:nth-of-type(n+2)::before {
+.artist-title:nth-of-type(n+2)::before{
     content: ", ";
-} 
-
-.artist-title:nth-of-type(n+3)::before {
-    content: " & ";
-}
+    margin: 0px;
+  }
+  
+  .artist-title:last-of-type::before{
+    content: "& ";
+    margin-left: 4px;
+  }
+  
+  .artist-title:first-of-type::before{
+    content: "";
+    margin: 0px;
+  } 

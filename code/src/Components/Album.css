@@ -1,6 +1,7 @@
 .albums-container {
     display: flex;
     flex-wrap: wrap;
+    width: 70%;
 }
 
 .album-wrapper {
@@ -41,6 +42,8 @@ img {
 @media (min-width: 768px) {
     .albums-container {
         justify-content: space-evenly;
+        width: 80%;
+
     }
 	.album-wrapper{
         width: 40%;
@@ -48,6 +51,10 @@ img {
 }
 
 @media (min-width: 1024px) {
+    .albums-container {
+        justify-content: space-between;
+        width: 75%;
+    }
     .album-wrapper {
         width: 23%;
     }

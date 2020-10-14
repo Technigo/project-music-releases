@@ -1,8 +1,4 @@
-/* .albums-container {
+.content-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-} */
-
-/*do we need this? maybe we can remove this css file.*/
+}
