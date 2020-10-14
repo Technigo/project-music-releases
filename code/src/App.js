@@ -1,12 +1,15 @@
-import React from 'react'
-import data from './data.json'
+import React from 'react';
+import data from './data.json';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { MusicContainer } from './MusicContainer';
 
-console.log(data)
-
-export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+export const App = (props) => {
+	return (
+		<>
+			<Header />
+			<MusicContainer />
+			<Footer />
+		</>
+	);
+};
