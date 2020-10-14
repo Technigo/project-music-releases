@@ -1,68 +1,63 @@
 .albums-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
 }
 
 .album-wrapper {
-    margin-bottom: 35px;
-    width: 100%;
-    position: relative;
-    display: block;
+	margin-bottom: 35px;
+	width: 100%;
+	position: relative;
+	display: block;
 }
 
 .image-wrapper {
-    width: 100%;
+	width: 100%;
 }
 
 img {
-    width: 100%;
-    margin-bottom: 10px;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
-/*styled img tag insted of className album-image*/
-
 .image-wrapper:hover .album-image {
-    opacity: 0.5;
-    transition: all .5s ease-in-out;
+	opacity: 0.5;
+	transition: all 0.5s ease-in-out;
 }
 
 .album-title {
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
 }
 
 .album-title:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 @media (min-width: 768px) {
-    .albums-container {
-        justify-content: space-between;
-        width: 80%;
-
-    }
-	.album-wrapper{
-        width: 49%;
-    }
+	.albums-container {
+		justify-content: space-between;
+		width: 80%;
+	}
+	.album-wrapper {
+		width: 49%;
+	}
 }
 
 @media (min-width: 1024px) {
-    .albums-container {
-        justify-content: space-between;
-        width: 75%;
-    }
+	.albums-container {
+		justify-content: space-between;
+		width: 75%;
+	}
 
-   
+	.album-wrapper {
+		width: 23%;
+	}
 
-    .album-wrapper {
-        width: 23%;
-    }
-
-    .albums-wrapper:last-of-type {
-        justify-content: center;
-    }
+	.albums-wrapper:last-of-type {
+		justify-content: center;
+	}
 }
