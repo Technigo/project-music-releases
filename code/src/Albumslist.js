@@ -1,21 +1,22 @@
 import React from'react';
-import Album from './Album'
+import {Album} from './Album'
 import data from './data.json'
 
-console.log(data.albums.items[0].artists[0].name)
-const album0 = data.albums.items[0]
+const albums = data.albums.items;
 
-const Albumslist = () =>{
+export const Albumslist = () =>{
         return (  
-            <section className="albumlist-section">
-            <Album albumArtist= {album0.artists[0].name} albumTitle = {album0.name} albumImg={album0.images[1].url}/> 
-            <Album albumArtist = {album0.artists[0].name} albumTitle = {album0.name} albumImg={album0.images[1].url}/> 
-            <Album albumArtist = {album0.artists[0].name} albumTitle = {album0.name} albumImg={album0.images[1].url}/> 
-            <Album albumArtist = {album0.artists[0].name} albumTitle = {album0.name} albumImg={album0.images[1].url}/> 
-
-            </section>
+            <div className="albumlist-section">
+            {albums.map((albumElement) => {
+              return <Album key={albumElement.name} 
+                albumTitle={albumElement.name}
+                albumImg={albumElement.images[1].url}
+                albumArtist={albumElement.artists} 
+              />
+            })}
+          </div>
+          
         );
 }
-       
 
-export default Albumslist;
+

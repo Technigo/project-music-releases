@@ -37,4 +37,43 @@ header{
 }
 .album-container{
   margin: 10px;
+  width: 300px;
+  position: relative;
+  
 }
+.album-container img{
+ 
+}
+.album-cover{
+  position: relative;
+  width: 300px;
+  height: 300px;;
+}
+.hover-cover{
+  display:none;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  justify-content:space-evenly;
+  z-index: 1;
+}
+.album-cover:hover .hover-cover{
+  display:flex;
+}
+.album-cover:hover .album-img {
+  filter: brightness(40%);
+}
+.hover-icons{
+  width: 30px;
+
+}
+.play-icon{
+  width: 65px;
+}
+
+.play-icon:hover{
+width: 80px;
+}
+
+
+

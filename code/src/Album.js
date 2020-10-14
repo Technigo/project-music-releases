@@ -1,13 +1,25 @@
 import React from 'react'
 
-const Album = props =>{
+export const Album = props =>{
     return(
         <article className ="album-container">
-            <img src={props.albumImg} alt="Album cover"></img>
+        <div className="album-cover">
+          <div className="hover-cover">
+            <img className="hover-icons"src="./icons/heart.svg" alt="like icon"></img>
+            <img className="play-icon" src="./icons/play.svg" alt="like icon"></img>
+            <img className="hover-icons"src="./icons/dots.svg" alt="like icon"></img>
+          </div>
+          <img className="album-img"src={props.albumImg} alt="Album cover"></img>
+           </div>
             <h2>{props.albumTitle}</h2>
-            <p>{props.albumArtist}</p>
-        </article>
-    );
+            <p>
+           {props.albumArtist.map((artist) => {
+             return artist.name + " "
 
-}
-export default Album;
+           })}
+            </p> 
+          
+        </article>
+  );
+};
+        
