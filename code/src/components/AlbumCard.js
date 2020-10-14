@@ -15,8 +15,8 @@ export const AlbumCard = (props) => {
         <img className="albumImage" src={props.image} alt={props.artistName} />
       </div>
       
-      <p className="artist-text">{props.albumName}</p>
-      <p className="album-text">{props.artistName}</p>
+      <p className="album-text">{props.albumName}</p>
+      <p className="artist-text">{props.artistName}</p>
     </div>
   );
 };
