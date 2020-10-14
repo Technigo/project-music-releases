@@ -9,10 +9,10 @@ console.log(data)
 export const App = () => {
   return ( 
     <section class="site-container">
-      <section>
+      
         <Header />
         <AlbumContainer />
-      </section>
+      
     </section>
   )
 }
