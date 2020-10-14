@@ -1,24 +1,38 @@
 .playIcon {
-  width: 30px;
+  width: 60px;
   color: white;
   filter: invert(1);
 }
 .heartIcon {
-  width: 20px;
+  width: 40px;
   color: white;
   filter: invert(0.8);
 }
 .dotsIcon {
-  width: 20px;
+  width: 40px;
   color: white;
   filter: invert(0.8);
 }
 
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  bottom: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
 .albumContainer {
+  width: 20%;
   margin: 10px;
   justify-content: space-evenly;
 }
 
 .albumInfo {
-  justify-content: space-evenly;
+  position: relative;
+}
+
+.albumCover {
+  width: 100%;
+  object-fit: cover;
 }

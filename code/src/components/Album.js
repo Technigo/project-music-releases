@@ -1,5 +1,6 @@
 import React from "react";
 import "./album.css";
+import Artist from "./Artist"
 
 const Album = ({ item }) => {
     return (
@@ -15,14 +16,30 @@ const Album = ({ item }) => {
             <div>
                 <a href={item.external_urls.spotify} className="title"></a>
             </div>
-            <div>
-                <a className="artist" href={item.artists[0].external_urls.spotify}>
-                    {" "}
-                    {item.name}
-                </a>
+
+            <div className="artist">
+                {item.artists.map(item => {
+                    return (
+                        < Artist key={item.id} item={item} />
+                    )
+                })}
+
             </div>
         </div>
     );
 };
 
 export default Album;
+
+
+/* <div className="artist">
+    {item.artists.map(item => {
+        return (
+            < Artist key={item.id} item={item} />
+        )
+    })}
+
+</div>
+</div >
+);
+}; */
