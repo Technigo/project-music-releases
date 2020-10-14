@@ -23,10 +23,18 @@ h2{
   font-family: Helvetica; 
   color: #ffffff;
 }
-p{
+p a{
   font-size: 14px;
   font-family: Helvetica; 
   color: #a0a0a0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: #ffffff;
+  color:#ffffff;
 }
 header{
   border-bottom: 2px solid #232323;

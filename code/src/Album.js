@@ -11,10 +11,10 @@ export const Album = props =>{
           </div>
           <img className="album-img"src={props.albumImg} alt="Album cover"></img>
            </div>
-            <h2>{props.albumTitle}</h2>
+            <a href={props.albumUrl}><h2>{props.albumTitle}</h2></a>
             <p>
            {props.albumArtist.map((artist) => {
-             return artist.name + " "
+             return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name + " "}</a>
 
            })}
             </p> 

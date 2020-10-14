@@ -12,6 +12,7 @@ export const Albumslist = () =>{
                 albumTitle={albumElement.name}
                 albumImg={albumElement.images[1].url}
                 albumArtist={albumElement.artists} 
+                albumUrl={albumElement.external_urls.spotify}
               />
             })}
           </div>
