@@ -4,7 +4,8 @@ import Card from './Card';
 import './app.css';
 
 //import Artist from 'Artist';
-
+const jsonArray = data.albums.items;
+console.log(jsonArray)
 console.log(data);
 
 export const App = props => {
@@ -12,7 +13,7 @@ export const App = props => {
     <div>
       <h1>New albums {'&'} singles</h1>
       <main className="main-grid-container">
-        {data.albums.items.map(item => {
+        {jsonArray.map(item => {
           return (
               <Card key={item.id} album={item} />
           );

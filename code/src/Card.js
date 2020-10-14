@@ -12,6 +12,7 @@ props.album = props.the html attribute, so in app.js "album" is album={whatever 
 
 const Card = props => {
   const album = props.album;
+  
   return (
     <>
       <article className="card">
@@ -42,3 +43,13 @@ const Card = props => {
 };
 
 export default Card;
+
+/*{album.artists.map(artist => {
+            return (
+              <Artist
+                key={artist.id}
+                artistName={artist.name}
+                artistURL={artist.external_urls.spotify}
+              />
+            );
+          })} */

@@ -14,3 +14,8 @@
 .artist-name:hover {
     text-decoration: underline;
 }
+/* 
+.artist-name:nth-of-type(n+2){
+    content: ", ";
+    color: #fff;
+} */
