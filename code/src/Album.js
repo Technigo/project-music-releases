@@ -8,14 +8,20 @@ import { ReactComponent as DotButton } from './icons/dots.svg';
 export const Album = (props) => {
 
   //create array that converts the array of objects into an array with names only.
-  const artistsArr = props.artists.map(artist => artist.name);
+  //const artistsArr = props.artists.map(artist => artist.name);
 
   //create a string from the array with commas between the names.
-  const artistsStr = artistsArr.join(", ");
-  console.log(artistsStr);
+  //const artistsStr = artistsArr.join(", ");
+  //console.log(artistsStr);
 
   //create artistURLs
   const artistURLs = props.artists.map(artist => artist.external_urls.spotify)
+
+  const artistsArr = props.artists.map((artist) => {
+    const name = artist.name;
+    const url = artist.external_urls.spotify;
+    return { name, url };
+  });
 
 
   return (
@@ -34,12 +40,16 @@ export const Album = (props) => {
             {props.name}
           </h2>
         </a>
-        <p>
+
+        {artistsArr.map((artist, index, arr) => (
           <Artist
-            key={artistsStr}
-            artistNames={artistsStr}
+            name={artist.name}
+            url={artist.url}
+            index={index}
+            length={arr.length}
           />
-        </p>
+        ))}
+
       </div>
     </>
   );

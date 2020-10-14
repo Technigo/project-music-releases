@@ -12,18 +12,47 @@ code {
 
 .site-header {
   color: #FFFFFF;
+  padding-left: 33px;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.header-line {
+  height: 0.7px;
+  background-color: #383838;
+  margin: 0 33px 16px 33px;
 }
 
 h2 {
   font-family: Helvetica;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
-p {
+a, a:visited {
+  font-family: Helvetica;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration-color: #ffffff;
+  text-decoration: underline;
+}
+
+.artist-name {
   font-family: Helvetica;
   color: #a0a0a0;
   font-size: 14px;
+}
+
+.artist-name:hover {
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .albums {
