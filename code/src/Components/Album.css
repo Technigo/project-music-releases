@@ -41,12 +41,12 @@ img {
 
 @media (min-width: 768px) {
     .albums-container {
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 80%;
 
     }
 	.album-wrapper{
-        width: 40%;
+        width: 49%;
     }
 }
 

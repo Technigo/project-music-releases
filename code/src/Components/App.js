@@ -4,7 +4,7 @@ import stretchGoal from '../stretch-goal.json' //black-level
 import { Album } from './Album';
 import { Heading } from './Heading';
 import { Playlist } from './Playlist';
-import { PlaylistHeader } from './PlaylistHeader';
+
 import './App.css'
 
 //console.log(data);

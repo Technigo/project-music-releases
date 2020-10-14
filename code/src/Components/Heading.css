@@ -1,4 +1,38 @@
 header {
     border-bottom: 1px solid #a0a0a0;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+h1 {
+    font-size: 21px;
+    width: 70%
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    width: 30%
+}
+
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 21px;
+        width: 80%
+    }
+    
+    h2 {
+        font-size: 18px;
+        width:20%
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        margin: 0 28px 16px 28px;
+    }
+}
+
