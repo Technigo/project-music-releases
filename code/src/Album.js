@@ -13,9 +13,15 @@ export const Album = props =>{
            </div>
             <a href={props.albumUrl}><h2>{props.albumTitle}</h2></a>
             <p>
-           {props.albumArtist.map((artist) => {
-             return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name + " "}</a>
-
+           {props.albumArtist.map((artist, index) => {
+             if(index<props.albumArtist.length-1){
+               console.log("Inne i for loop");
+              return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name + ", "}</a>
+             }
+             else{
+              console.log(props.albumArtist.length);
+              return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name}</a>
+             }
            })}
             </p> 
           
