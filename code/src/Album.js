@@ -15,15 +15,17 @@ const Album = props => {
           <Dots />
         </div>
       </a>
-      <a className="spotify-link" href={props.link} target="_blank">
-        <h3>{props.name}</h3>
+      <a className="album-text" href={props.link} target="_blank">
+        {props.name}
       </a>
-      {props.artists.map(artist => {
-        return (
-          <a className="spotify-link" href={artist.external_urls.spotify} target="_blank">
-            <h4>{artist.name}</h4>
-          </a>)
-      })}
+      <div className="artist-text-container">
+        {props.artists.map(artist => {
+          return (
+            <a className="artist-text" href={artist.external_urls.spotify} target="_blank">
+              {artist.name}
+            </a>)
+        })}
+      </div>
     </article>
 
   )

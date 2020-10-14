@@ -16,12 +16,13 @@ code {
     monospace;
 }
 
-h1, h3, h4 {
+h1 {
   margin: 0;
 }
 
 a {
   text-decoration: none;
+  margin: 0;
 }
 
 header {
@@ -51,6 +52,7 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-bottom: 10px;
 }
 
 .icon-container {
@@ -65,7 +67,7 @@ h1 {
   max-width: 100%;
   height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
+  box-shadow: 10px 10px 19px -8px rgba(0,0,0,0.71);
 }
 
 .album-container:hover .album-image {
@@ -78,48 +80,47 @@ h1 {
 
 .icon-heart, .icon-dots {
   width: 10%;
-  fill: #ffffff;
+  fill: #cccccce5;
 }
 
 .icon-play {
   width: 22%;
-  fill: #ffffff;
+  fill: #cccccce5;
   transition: .2s ease;
 }
 
 .icon-play:hover{
   transform: scale(1.2);
+  fill: #ffffff;
 }
 
-.spotify-link h3 {
+.artist-text-container {
+  padding-bottom: 30px;
+}
+
+.album-text, .artist-text {
   color: #ffffff;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.5;
 }
 
-.spotify-link h4 {
+.artist-text {
   color: #a0a0a0;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 30px;
+  margin-right: 3px;
 }
 
-h3:hover, h4:hover {
+.album-text:hover, .artist-text:hover {
   text-decoration: underline;
 }
 
-/* make the paragraphs inline */
-.spotify-link > h4 { 
-  display: inline-block; 
-}
-
 /* appending the commas */
-.spotify-link > h4:after {
+.artist-text-container .artist-text:after {
   content: ", ";
 }
 
 /* removing it for the last index */
-.spotify-link > h4:last-of-type:after { 
+.artist-text-container .artist-text:last-child:after { 
   content: "";
 }
 
@@ -127,8 +128,7 @@ h3:hover, h4:hover {
 
 @media screen and (min-width: 667px) and (max-width: 1024px) {
   .album-cards {
-    width: 48%;
-    
+    width: 48%;   
   }
   
 }
