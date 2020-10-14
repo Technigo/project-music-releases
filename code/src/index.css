@@ -20,19 +20,121 @@ h1, h3, h4 {
   margin: 0;
 }
 
-section {
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 50px 50px 30px 50px;
+}
+
+h1 {
+  border-bottom: solid 1px #a0a0a0;
+  padding-bottom: 5px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.album-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 50px 50px 50px;
+}
+
+.album-cards {
+  width: 23%;
 }
 
 .album-container {
-  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-container {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+  opacity: 0;
+  transition: .5s ease;
 }
 
 .album-image {
-  background-image: url(https://i.pinimg.com/originals/48/24/93/48249335e8c3852d59a5a27e054bb8d2.jpg);
-  background-size: contain; 
-  width: 200px;
-  height: 200px;
+  max-width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.album-container:hover .album-image {
+  filter: brightness(0.3);
+}
+
+.album-container:hover .icon-container{
+  opacity: 1;
+}
+
+.icon-heart, .icon-dots {
+  width: 10%;
+  fill: #ffffff;
+}
+
+.icon-play {
+  width: 22%;
+  fill: #ffffff;
+  transition: .2s ease;
+}
+
+.icon-play:hover{
+  transform: scale(1.2);
+}
+
+.spotify-link h3 {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.spotify-link h4 {
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h3:hover, h4:hover {
+  text-decoration: underline;
+}
+
+/* make the paragraphs inline */
+.spotify-link > h4 { 
+  display: inline-block; 
+}
+
+/* appending the commas */
+.spotify-link > h4:after {
+  content: ", ";
+}
+
+/* removing it for the last index */
+.spotify-link > h4:last-of-type:after { 
+  content: "";
+}
+
+/**** Responsive IPAD ****/
+
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  .album-cards {
+    width: 48%;
+    
+  }
+  
+}
+/**** Responsive MOBILE ****/
+@media screen and (max-width: 666px) {
+  .album-cards {
+    width: 100%;
+  }
 }
