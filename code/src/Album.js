@@ -14,13 +14,17 @@ export const Album = props =>{
             <a href={props.albumUrl}><h2>{props.albumTitle}</h2></a>
             <p>
            {props.albumArtist.map((artist, index) => {
-             if(index<props.albumArtist.length-1){
+             if(index<props.albumArtist.length-2){
                console.log("Inne i for loop");
-              return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name + ", "}</a>
+              return <> <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name}</a><span>, </span></>
              }
-             else{
-              console.log(props.albumArtist.length);
+             else if(index === props.albumArtist.length-1){
               return <a href = {artist.external_urls.spotify} key={artist.name}> {artist.name}</a>
+             }
+             else if (index === props.albumArtist.length-2){
+              console.log(props.albumArtist.length);
+             return <><a href = {artist.external_urls.spotify} key={artist.name}> {artist.name}</a><span> & </span></>
+              
              }
            })}
             </p> 

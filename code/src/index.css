@@ -23,6 +23,11 @@ h2{
   font-family: Helvetica; 
   color: #ffffff;
 }
+p{
+  font-size: 14px;
+  font-family: Helvetica; 
+  color: #a0a0a0;
+}
 p a{
   font-size: 14px;
   font-family: Helvetica; 
