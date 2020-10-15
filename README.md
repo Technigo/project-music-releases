@@ -1,8 +1,8 @@
-# Music Releases
+# Music Releases 🎵
 The aim of this project was to work in a pair to create a music release page in React using components based on the object information from the Spotify API. 
 We had to follow a specific design template and make the page responsive for mobile, tablet and desktop. 
 
-# What we achieved
+# What we achieved 🏆
 We aimed for the blue level requirements, which we feel that we achieved and we managed to do some of the red requirements.
 1. We managed to create a structure in react using different components and then linking these together with props.
 2. We put the different components for the Musiccard e.g. Musicalbum, Musicartist and Musicimage into a folder as to keep them seperate from the mainjs files.
@@ -11,7 +11,7 @@ We aimed for the blue level requirements, which we feel that we achieved and we 
 5. For the red level requirements we managed to give the play button a lighter opactiy in the first state and then when you hover on the button it give it a full opacity.
 6. We also managed to give the artist name a space and comma using the join method. 
 
-# What tools we used
+# What tools we used 🧰
 1. HTML, CSS and React.
 2. NPM to allow us to access and install the react library we needed.
 3. Used the Spotify object, that was collected from the Spotify API, and stored in the data.json.
