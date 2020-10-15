@@ -113,13 +113,13 @@ header hr {
   transform: scale(1.1);
 }
 
-.artist-name a:link {
+.artist-name a:visited, a:link {
   color: #a0a0a0;
   text-decoration: none;
 }
 
-.artist-name a:visited {
-  color: #a0a0a0;
+.album-title a:link, a:visited {
+  color: #ffffff;
   text-decoration: none;
 }
 
