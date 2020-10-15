@@ -4,8 +4,6 @@ import './index.css'
 import { Header } from './components/Header.js'
 import { Album } from './components/Album.js'
 
-console.log(data)
-
 export const App = () => {
   return (
     <>
@@ -25,4 +23,3 @@ export const App = () => {
     </>
   )
 }
-/* changed items to album to make it more clear what it is we are printin in the DOM. */

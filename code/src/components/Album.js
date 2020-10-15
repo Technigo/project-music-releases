@@ -1,5 +1,5 @@
 import React from 'react'
-import { Artist } from './Artist.js'
+/*import { Artist } from './Artist.js'*/
 import './Album.css'
 
 export const Album = (props) => { 
@@ -22,14 +22,17 @@ export const Album = (props) => {
             </a>
 
             <div>
-              {props.artists.map(artist => {
+              {props.artists.map((artist) => {
                 return (
-                  <Artist key={artist.id}
-                  name={artist.name} 
-                  artistLink={artist.external_urls.spotify} 
-                  />
+                <a key={artist.id}
+                  className="artists-names"
+                  href={artist.external_urls.spotify} 
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {artist.name} 
+                  </a>
                 )  
-              })}
+                })}
             </div> 
 
           </section>
@@ -42,4 +45,9 @@ export const Album = (props) => {
 
   /* create a new array with artist.name. use join.method to turn the array into a string and then seperate them with a "," */
   /*const artistArray = props.artists.map(artist => artist.name);
-  const artistString = artistArray.join(", "); */
+  const artistString = artistArray.join(", "); 
+  
+  
+  */
+
+
