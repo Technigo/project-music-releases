@@ -4,7 +4,7 @@ export const Artist = (props) => {
   return (
     <>
       <p className="artist-name">
-        <a href={props.artistUrl}>{props.artistName}</a>
+         <a className="artist-name" href={props.artistUrl} target="_blank">{props.artistName}</a>
       </p>
     </>
   );

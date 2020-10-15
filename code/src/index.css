@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -79,3 +83,83 @@ desktop width of 100%*/
     width: 23%;
   }
 }
+
+.image-container {
+  position: relative;
+
+}
+
+.album-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+}
+
+.album-actions {
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: .5s ease;
+  width: 100%;
+}
+
+.album-actions-inner {
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-actions-icon {
+  height: 40px;
+}
+
+.album-actions-icon.-play {
+  height: 80px;
+  transition: .5s ease;
+}
+
+.music-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container:hover .album-actions {
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+}
+
+.album-actions-icon.-play:hover {
+  transform: scale(1.2);
+}
+
+.album-name {
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.album-name:hover,
+.artist-name:hover {
+  text-decoration: underline;
+  transition: .5s ease;
+}
+
+
+
+
