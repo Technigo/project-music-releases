@@ -2,21 +2,30 @@ import React from "react";
 import CardOptions from "./CardOptions";
 
 const Card = (props) => {
+  const artists = () => {
+    return props.artists
+      .map((item) => {
+        return item.name;
+      })
+      .join(", ")
+      .replace(/, ([^,]*)$/, " & $1");
+  };
+
   return (
-    <>
-      <div className="card">
+    <div className="card">
+      <div className="card__content">
         <div className="card__img">
           <img src={props.images[0].url} alt="album cover" />
+          <CardOptions />
         </div>
         <a href={props.external_urls.spotify} target="_blank">
           <h1 className="card__title">{props.name}</h1>
         </a>
         <a href={props.artists[0].external_urls.spotify} target="_blank">
-          <p className="card__info">{props.artists[0].name}</p>
+          <p className="card__info">{artists()}</p>
         </a>
-        <CardOptions />
       </div>
-    </>
+    </div>
   );
 };
 
