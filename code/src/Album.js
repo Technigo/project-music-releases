@@ -7,16 +7,7 @@ import { ReactComponent as DotButton } from './icons/dots.svg';
 //props are passed into components like arguments are into function
 export const Album = (props) => {
 
-  //create array that converts the array of objects into an array with names only.
-  //const artistsArr = props.artists.map(artist => artist.name);
-
-  //create a string from the array with commas between the names.
-  //const artistsStr = artistsArr.join(", ");
-  //console.log(artistsStr);
-
-  //create artistURLs
-  const artistURLs = props.artists.map(artist => artist.external_urls.spotify)
-
+  //create array of objects containing artist name, URL for each album.
   const artistsArr = props.artists.map((artist) => {
     const name = artist.name;
     const url = artist.external_urls.spotify;
@@ -30,6 +21,7 @@ export const Album = (props) => {
         <a href={props.album_url}>
           <div className="image-container">
             <img className="album-image" src={props.img[1].url} alt="Album cover" />
+            <div></div>
             <div className="icon-container">
               <HeartButton className="album-icon" />
               <PlayButton className="album-icon play-icon" />
@@ -40,7 +32,7 @@ export const Album = (props) => {
             {props.name}
           </h2>
         </a>
-
+        {/* Mount artist component for each element in the artists array */}
         {artistsArr.map((artist, index, arr) => (
           <Artist
             name={artist.name}
@@ -49,7 +41,6 @@ export const Album = (props) => {
             length={arr.length}
           />
         ))}
-
       </div>
     </>
   );

@@ -10,42 +10,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+.master-container {
+  width: 300px;
+  margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .master-container {
+    width: 660px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .master-container {
+    width: 864px;
+  }
+}
+
 .site-header {
   color: #FFFFFF;
-  padding-left: 33px;
   font-size: 20px;
   margin-bottom: 6px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .site-header {
-    padding-left: 63px;
+    padding: 0 15px;
   }
 }
 
 @media (min-width: 1024px) {
   .site-header {
     font-size: 16px;
-    padding-left: 150px;
+    padding: 0 9px;
+    margin: 10px 0 5px 0;
   }
 }
 
 .header-line {
   height: 0.7px;
   background-color: #383838;
-  margin: 0 33px 16px 33px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-line {
-    margin: 0 auto 16px auto;
+    margin: 0 15px 16px 15px;
   }
 }
 
 @media (min-width: 1024px) {
   .header-line {
     max-width: 874px;
-    margin: 0 auto 16px;
+    margin: 0 9px 16px 9px;
   }
 }
 
@@ -56,6 +73,12 @@ h2 {
   text-decoration: none;
   margin-top: 6px;
   margin-bottom: 0;
+}
+
+@media (min-width:1024px) {
+  h2 {
+    font-size: 14px;
+  }
 }
 
 a, a:visited {
