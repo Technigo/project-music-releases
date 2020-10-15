@@ -11,59 +11,38 @@ props.album = props.the html attribute, so in app.js "album" is album={whatever 
 
 const Card = props => {
   const album = props.album;
-  console.log(album);
-
   /* Array with artists' names and urls */
   const artistsArray = album.artists.map(artist => {
     const name = artist.name;
     const URL = artist.external_urls.spotify;
     return { name, URL };
   });
-  console.log(artistsArray);
   return (
-    <>
-      <article className="card">
-        <Image
-          key={album.href}
-          imageBig={album.images[0].url}
-          imageSmall={album.images[1].url}
-        />
-        <Album
-          key={album.name}
-          albumName={album.name}
-          albumURL={album.external_urls.spotify}
-        />
-        <div className="artist-box">
-          {/* {artistsArray.map((artist, index) => (
+    <article className="card">
+      <Image
+        key={album.href}
+        imageBig={album.images[0].url}
+        imageSmall={album.images[1].url}
+      />
+      <Album
+        key={album.name}
+        albumName={album.name}
+        albumURL={album.external_urls.spotify}
+      />
+      <div className="artist-box">
+        {artistsArray.map((artist, index) => {
+          return (
             <Artist
-              key={artist.name}
-              name={artist.name}
-              URL={artist.URL}
+              key={artist.id}
               index={index}
+              artistName={artist.name}
+              artistURL={artist.URL}
+              length={artistsArray.length}
             />
-          ))} */}
-
-          {/* <Artist
-            key={album.id}
-            artistsArray={album.artists}
-            name={album.name}
-            urlArray={album.URL}
-          /> */}
-          {artistsArray.map((artist, index) => {
-            console.log(artist, artistsArray.length, index);
-            return (
-              <Artist
-                key={artist.id}
-                index={index}
-                artistName={artist.name}
-                artistURL={artist.url}
-                length={artistsArray.length}
-              />
-            );
-          })}
-        </div>
-      </article>
-    </>
+          );
+        })}
+      </div>
+    </article>
   );
 };
 
@@ -78,3 +57,20 @@ export default Card;
               />
             );
           })} */
+
+/*GAMMAL KOD:
+{/* {artistsArray.map((artist, index) => (
+            <Artist
+              key={artist.name}
+              name={artist.name}
+              URL={artist.URL}
+              index={index}
+            />
+          ))}}
+
+          { <Artist
+            key={album.id}
+            artistsArray={album.artists}
+            name={album.name}
+            urlArray={album.URL}
+          /> } */

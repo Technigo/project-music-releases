@@ -4,9 +4,63 @@ import './artist.css';
 /*We need to make a split-function here for artistName */
 
 const Artist = props => {
-  console.log(props);
+  if (props.index === 0) {
+    return (<a
+      className="artist-name"
+      /* key={artist.id} */
+      href={props.artistURL}
+    >
+      {props.artistName}
+    </a>
+    )
+    /* INGET KOMMA TECKEN */
+  } else if (props.index === props.length - 1) {
+    return (<a
+      className="artist-name"
+      /* key={artist.id} */
+      href={props.artistURL}
+    >
+      {'& ' + props.artistName}
+    </a>
+    )
+  } else {
+    /* RETURNERA ARTIST MED KOMMA TECKEN FÖRE */
+    return (<a
+      className="artist-name"
+      /* key={artist.id} */
+      href={props.artistURL}
+    >
+      {', ' + props.artistName}
+    </a>
+    )
+  };
+};
+  export default Artist;
 
-  /* Påbörjat för att kolla hur lång props-arrayen är. Om index = 0, returnera bara artist.name, om längre, returnera artist.name med komma om sista med & */
+  //   // if (props.length === 1)
+  //   //   return (
+  //   //     <a className="artist-name" href={props.artistURL}>
+  //   //       {artist.name}
+  //   //     </a>
+  //   //   );
+  //   // else {
+  //   //   if (props.index < props.length - 1)
+  //   //     return (
+  //   //       <a className="artist-name" href={props.artistURL}>
+  //   //         <span>{props.artistName}, </span>
+  //   //       </a>
+  //   //     );
+  //   //   else
+  //   //     return (
+  //   //       <a className="artist-name" href={props.artistURL}>
+  //   //         {props.artistName}
+  //   //       </a>
+  //   //     );
+  //   // }
+  // });
+
+
+/* Påbörjat för att kolla hur lång props-arrayen är. Om index = 0, returnera bara artist.name, om längre, returnera artist.name med komma om sista med & */
   // console.log(props.length);
   // console.log(props.index, props.artistName, props.length);
   // if (props.index === 1)
@@ -74,7 +128,7 @@ const Artist = props => {
   //   );
   // });
 
-  /* Skriver ut namnen med komma emellan */
+/* Skriver ut namnen med komma emellan */
 
   // if (props.artistsArray.length === 1) {
   //   return props.artistsArray.map((artist, index) => {
@@ -105,39 +159,5 @@ const Artist = props => {
   //   });
   // }
 
-  return props.artistsArray.map(artist => {
-    console.log(artist);
-    return (
-      <a
-        className="artist-name"
-        key={artist.id}
-        href={artist.external_urls.spotify}
-      >
-        {artist.name}
-      </a>
-    );
-    }
-  //   // if (props.length === 1)
-  //   //   return (
-  //   //     <a className="artist-name" href={props.artistURL}>
-  //   //       {artist.name}
-  //   //     </a>
-  //   //   );
-  //   // else {
-  //   //   if (props.index < props.length - 1)
-  //   //     return (
-  //   //       <a className="artist-name" href={props.artistURL}>
-  //   //         <span>{props.artistName}, </span>
-  //   //       </a>
-  //   //     );
-  //   //   else
-  //   //     return (
-  //   //       <a className="artist-name" href={props.artistURL}>
-  //   //         {props.artistName}
-  //   //       </a>
-  //   //     );
-  //   // }
-  // });
-};
-
-export default Artist;
+/* return (props.artistsArray.map(artist => {
+  console.log(artist); */

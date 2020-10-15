@@ -1,4 +1,3 @@
-/*Gjort en liten preliminär lösning genom att sätta en div runt artist-komponenten. Men vore bättre om vi kan få till en array tycker jag!*/
 
 .artist-box {
   display: flex;
@@ -15,7 +14,7 @@
   color: #fff;
   text-decoration: underline;
 }
-
+/* 
 .artist-name::after {
   content: ', ';
 }
@@ -23,7 +22,7 @@
 .artist-name:last-child::after {
   content: ' &';
 }
-
+ */
 /* .artist-name:nth-of-type(n + 2)::before {
   content: ', ';
   margin: 0px;
