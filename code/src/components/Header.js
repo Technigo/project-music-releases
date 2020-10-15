@@ -5,7 +5,7 @@ export const Header = () => {
     return (
         <div>
             <header>
-                <h1 className="title">New music releases</h1>
+                <h1 className="title">New albums & singles</h1>
             </header>
         </div>
     );

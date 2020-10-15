@@ -10,6 +10,6 @@ h1 {
 }
 header {
   margin-left: 30px;
+  margin: 30px 30px 10px;
   border-bottom: 0.01em solid #404040;
-  margin-right: 100px;
 }

@@ -2,6 +2,9 @@
   width: 20%;
   margin: 10px;
   position: relative;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-evenly;
 }
 
 .albumWrapper:hover .albumCover {
@@ -26,6 +29,7 @@
   max-height: 300px;
   object-fit: cover;
 }
+
 .albumTitle {
   font-size: 14px;
   font-family: Helvetica;
@@ -39,4 +43,16 @@
 }
 .icons {
   display: none;
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .albumContainer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .albumContainer {
+    width: 25%;
+  }
 }
