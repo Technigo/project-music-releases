@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: #000;
@@ -8,15 +12,15 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-main h1 {
+header {
+  border-bottom: 1px solid #383838;
+}
+
+header h1 {
   color: #fff;
-  text-align: left;
   font-size: 18px;
-  margin-top: 30px;
 }
 
 /* Music list section that contains the music-card-container */
@@ -25,7 +29,6 @@ main h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
   margin: auto;
 }
 
@@ -35,8 +38,9 @@ main h1 {
   flex-direction: column;
   align-items: flex-start;
   background-color: #000;
-  margin: 20px;
+  margin: 10px 0px;
   width: 300px;
+  height: 400px;
 }
 
 /* Music image container which contains the album image and icons*/
@@ -93,6 +97,11 @@ main h1 {
 }
 
 /* Album name & artist name*/
+
+.album-name-container {
+  width: 300px;
+}
+
 a {
   text-decoration: none;
 }
@@ -101,20 +110,37 @@ a {
   color: white;
   font-size: 14px;
   margin-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .artist-name {
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 10px;
+  padding-bottom: 5px;
 }
 
-.album-name:hover {
+.album-name:hover, .artist-name:hover {
   text-decoration: underline;
 }
 
-.artist-name:hover {
-  text-decoration: underline;
+@media (min-width: 768px) {
+  .music-list-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .music-card-container {
+    margin: 10px;
+    width: 35%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .music-card-container {
+    max-width: 22%;
+  }
 }
 
 
