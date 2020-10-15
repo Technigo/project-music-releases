@@ -17,3 +17,21 @@ export const Artist = (props) => {
         </div>
     )
 }
+
+// This was our first approach but we had a problem that the .join was also adding commas between 
+// the links when there was more than one artist and then we saw this thread on SO 
+
+// export const Artist = (props) => {
+//     const getArtistNames = (artists) => {
+//         return artists.map((artist) => artist.name).join(", ");
+//     }
+//         const getAlbumUrl = (artists) => {
+//             return artists.map((artist) => artist.external_urls.spotify)
+//     }
+//     return (
+//         <div className='artist-name'>
+//             {getArtistNames(props.item.artists)}
+//             <a href={getAlbumUrl(props.item.artists)}/>
+//         </div>
+//     )
+//   };
