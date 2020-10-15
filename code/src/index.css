@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-header { 
+h1 { 
   font-size: 22px; 
   font-family: Helvetica, sans-serif;
   color: #fff;
@@ -28,6 +28,7 @@ header hr {
 
 .album-container {
   display: flex;
+  width: auto;
   justify-content: space-evenly;
   flex-flow: wrap;
   
@@ -48,11 +49,12 @@ header hr {
 
 .album-title {
   color: #ffffff;
+  font-weight: bold;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   margin-left: 15px;
+  padding-bottom: 5px;
 }
-
 
 .icons {
   display: flex;
@@ -78,10 +80,6 @@ header hr {
   transition: 0.3s ease;
 }
 
-.image-overlay:hover {
-  background-color: #000000a1;
-}
-
 .play-button {
   width: 60px;
   height: 60px;
@@ -101,6 +99,12 @@ header hr {
   padding-top: 15px
 }
 
+/** HOVER EFFECTS **/
+
+.image-overlay:hover {
+  background-color: #000000a1;
+}
+
 .album-image:hover .icons {
   display: flex;
 }
@@ -109,15 +113,33 @@ header hr {
   transform: scale(1.1);
 }
 
+.artist-name a:link {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist-name a:visited {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
 .artist-name:hover {
-  text-decoration: underline solid white;
+  color: #ffffff;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .album-title:hover {
-  text-decoration: underline solid white;
+  color: #ffffff;
+  text-decoration: underline;
   cursor: pointer;
 }
+
+.artist-name a:last-child span { /* to prevent commas being added even if it's only one artist*/
+  display: none
+} 
+
+/** MEDIA QUERIES**/
 
 
 @media (min-width:667px) and (max-width: 1023px) {
@@ -131,7 +153,6 @@ header hr {
 @media (min-width:1024px) {
   
   .album-container {
-    width: 100%;
     margin: 40px;
   }
 

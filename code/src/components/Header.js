@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Header = () => { 
     return <header>
-        New albums & singles 
-        <hr></hr>
-        </header>
+            <h1>New albums & singles</h1>
+            <hr></hr>
+           </header>
 }

@@ -2,13 +2,18 @@ import React from 'react'
 
 
 export const Artist = (props) => {
-    const getArtistNames = (artists) => {
-        return artists.map((artist) => artist.name).join(", ");
-    }
     return (
         <div className='artist-name'>
-            {getArtistNames(props.item.artists)}
+            {
+                props.item.artists.map((artist) => {
+                    return <a 
+                        key={artist.id} 
+                        href={artist.external_urls.spotify}>
+                             {artist.name}
+                             <span>,&nbsp;</span>
+                            </a>
+                })
+            }
         </div>
     )
-  };
-
+}
