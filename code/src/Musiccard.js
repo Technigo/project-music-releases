@@ -10,8 +10,10 @@ export const Musiccard = (prop) => {
         <div className="music-card-container">
             {/* Here we're only getting one album, album name and artist name */}
             <Musicimage image={prop.item.images}/>
-            <Musicalbum albumname={prop.item.name} albumlink={prop.item.external_urls}/>
-            <Musicartist artistsname={prop.item.artists}/>
+            <div className="album-name-container">
+                <Musicalbum albumname={prop.item.name} albumlink={prop.item.external_urls}/>
+                <Musicartist artistsname={prop.item.artists}/>
+            </div>
         </div>       
     );
 };
