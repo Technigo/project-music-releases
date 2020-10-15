@@ -23,4 +23,4 @@ The page is responsive and we have some hover effects on the different Album cov
 
 ## View it live
 
-Here you can find the result:
+Here you can find the result: https://spotify-sandra-moa.netlify.app/
