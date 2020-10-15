@@ -1,7 +1,7 @@
-import React from 'react';
-import data from './data.json';
-import { Header } from './Header';
-import { Album } from './Album.js';
+import React from "react";
+import data from "./data.json";
+import { Header } from "./Header";
+import { Album } from "./Album.js";
 
 //const albums = data.albums;
 //console.log(albums)
@@ -23,29 +23,26 @@ console.log(albumArray);
     //console.log(artistArray);
 }); */
 
-
 export const App = () => {
   return (
     <>
       <Header />
-      {
-        albumArray.map(album => {
+      <section className="album-wrapper">
+        {albumArray.map(album => {
           return (
-          <Album 
-          key = {album.name}
-          name = {album.name}
-          image = {album.images[1].url}
-          albumUrl = {album.external_urls.spotify}
-          artists = {album.artists}
-          />
-          )
-        
-      })}
-      
-     
+            <Album
+              key={album.name}
+              name={album.name}
+              image={album.images[1].url}
+              albumUrl={album.external_urls.spotify}
+              artists={album.artists}
+            />
+          );
+        })}
+      </section>
     </>
   );
-}
+};
 
 /*ReactDOM.render(<App />, document.getElementById('root'))
 
@@ -55,7 +52,7 @@ artist
 
 //console.log(data)
 
-  /*const dataArray = data.albums.items.map((item) => {
+/*const dataArray = data.albums.items.map((item) => {
     const albumName = item.name;
     const artistName
     console.log(albumName);

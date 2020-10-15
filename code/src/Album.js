@@ -6,9 +6,8 @@ import { Artist } from './Artist';
     <>
       <article className="album-container">
         <img src={props.image} alt="Album cover" />
+        <p className="album-name">
         <a href={props.albumUrl}>Album name: {props.name}</a> 
-        <p>
-          Album URL: {props.albumUrl}
         </p>
         {
           props.artists.map(artist => {
