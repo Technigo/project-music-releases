@@ -18,10 +18,18 @@ const Card = (props) => {
           <img src={props.images[0].url} alt="album cover" />
           <CardOptions />
         </div>
-        <a href={props.external_urls.spotify} target="_blank">
+        <a
+          href={props.external_urls.spotify}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <h1 className="card__title">{props.name}</h1>
         </a>
-        <a href={props.artists[0].external_urls.spotify} target="_blank">
+        <a
+          href={props.artists[0].external_urls.spotify}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <p className="card__info">{artists()}</p>
         </a>
       </div>

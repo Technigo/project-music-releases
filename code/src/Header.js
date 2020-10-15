@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       {" "}
       <h1> New albums & singles </h1>
-      <h2 />
+      <hr />
     </header>
   );
 };
