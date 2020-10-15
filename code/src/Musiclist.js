@@ -15,8 +15,8 @@ const iterateAlbumsItems = (arrayelement) => {
 // inserts each array element into the Musicitem div
 export const Musiclist = (prop) => {
     return (
-        <section class="music-list-container">
-            {prop.albums.items.map(iterateAlbumsItems)}
+        <section className="music-list-container">
+            {prop.item_array.map(iterateAlbumsItems)}
         </section>
     );
 };
