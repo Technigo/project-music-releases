@@ -1,7 +1,7 @@
 import React from 'react'
 import 'Album.css'
 
-export const Albums = (props) => {
+export const Album = props => {
   return (
     <div className="coverContainer">
       <img src={props.url} alt={props.name} className='albumArt'></img>

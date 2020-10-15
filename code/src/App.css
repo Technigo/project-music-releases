@@ -6,7 +6,6 @@
 }
 
 .albumCard {
-    border: 3px solid grey;
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -23,13 +22,13 @@
   flex-direction: row;
 }
 
-@media (min-width: 668px) {
+@media (min-width: 667px) {
   .albumCard {
     width: 30%;
   }
 } 
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .albumCard {
     width: 20%
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './data.json'
 import { Header } from './Header.js'
-import { Albums } from './Album.js'
+import { Album } from './Album.js'
 import { Artists } from './Artist.js'
 import { ReleaseTitle } from './ReleaseTitle.js'
 import 'App.css'
@@ -17,7 +17,7 @@ export const App = () => {
           return (
 
             <div className='albumCard'>
-              <Albums
+              <Album
                 key={album.id}
                 url={album.images[0].url}
                 name={album.name}
