@@ -4,7 +4,7 @@ import React from 'react';
 export const Musicalbum = (prop) => {
     return (
         <a href={prop.albumlink.spotify} target="_blank" rel="noopener noreferrer">
-           <h4 className="album-name">{prop.albumname}</h4>
-        </a>       
+            <h4 className="album-name">{prop.albumname}</h4>
+        </a>            
     );
 };  
