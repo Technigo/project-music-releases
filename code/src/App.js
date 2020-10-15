@@ -1,5 +1,4 @@
 import React from 'react';
-import data from './data.json';
 
 import { Header } from './Components/Header';
 import { AlbumContainer } from './Components/AlbumContainer';
