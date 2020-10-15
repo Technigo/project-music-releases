@@ -1,10 +1,9 @@
 import React from 'react';
-import data from './data.json';
 
 import { AlbumDiv } from './AlbumDiv';
 
+// Container for all the album-cards
 export const AlbumContainer = () => {
-  
   return (
   <section className="album-container">
     <AlbumDiv /> 

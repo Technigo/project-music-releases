@@ -1,5 +1,4 @@
   /*** GENERAL STYLING ***/
-  
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -17,19 +16,17 @@
     background-color: #000000;
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Helvetica", sans-serif;
-  }
-  
   a {
     text-decoration: none;
   }
+
   /* Header */
-  
   .header {
     width: 100%;
     font-size: 16px;
-    margin: 0 0 15px;
+    margin: 20px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 0.1px solid #34363A;
   }
   
   .header,
@@ -37,7 +34,6 @@
     color: #ffffff;
   }
   /* Container for all albums */
-  
   .site-container {
     width: 85%;
     max-width: 1280px;
@@ -51,23 +47,39 @@
     justify-content: center;
     align-items: center;
   }
+
   /* The cards for each album containing album-image, album-name and artist(s)-name */
-  
   .album-name {
     font-size: 14px;
+    font-weight: bold;
     padding-top: 6px;
     margin: 0;
   }
-  
-  .artist-name {
+
+   .artist-name {
     color: #a0a0a0;
     font-size: 14px;
     padding-top: 4px;
     margin: 0;
   }
-  
-  artist-name a:not(:last-child):after {
-    content: ", ";
+
+  .album-name:hover, 
+  .artist-name:hover {
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+  }
+
+  .artists-links:last-child .comma { /* Removes the comma on the last artist-name */
+    display: none;
+  }
+
+  /* Styling of the comma, since it is a <span> element it needs separate styling */
+  a span .comma {
+    text-decoration: none;
+  }
+
+ .comma {
+    color: #a0a0a0;
   }
   
   .album-card {
@@ -92,11 +104,10 @@
   .album-cover:hover .album-image {
     opacity: 0.4;
   }
+
   /* Icons */
-  
   .icons-container {
     display: none;
-    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
@@ -131,6 +142,7 @@
     width: 30px;
     filter: invert(1);
   }
+
   /* Media queries*/
   
   @media (min-width: 668px) {
@@ -139,8 +151,10 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
     .album-card {
       width: 40%;
+      height: 330px; 
     }
   }
   
@@ -150,6 +164,7 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
     .album-card {
       width: 21%;
     }

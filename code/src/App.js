@@ -1,14 +1,14 @@
 import React from 'react';
 import data from './data.json';
 
-import { Header } from './Header';
-import { AlbumContainer } from './AlbumContainer';
+import { Header } from './Components/Header';
+import { AlbumContainer } from './Components/AlbumContainer';
 
 console.log(data)
 
 export const App = () => {
   return ( 
-    <section class="site-container">
+    <section className="site-container">
       
         <Header />
         <AlbumContainer />
