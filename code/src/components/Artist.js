@@ -19,7 +19,7 @@ export const Artist = (props) => {
 }
 
 // This was our first approach but we had a problem that the .join was also adding commas between 
-// the links when there was more than one artist and then we saw this thread on SO 
+// the links when there was more than one artist and then we saw this thread on StackOverflow https://stackoverflow.com/c/technigo/questions/1658
 
 // export const Artist = (props) => {
 //     const getArtistNames = (artists) => {
