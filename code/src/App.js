@@ -28,13 +28,16 @@ export const App = () => {
                   albumName={album.name}
                   albumURL={album.external_urls.spotify}
                 />
-                {album.artists.map((musician) =>
-                  <Artists
-                    key={musician.id}
-                    artist={musician.name}
-                    artistURL={musician.external_urls.spotify}
-                  />
-                )}
+                <div className="artistContainer">
+                  {album.artists.map((musician) =>
+                    <Artists
+                      key={musician.id}
+                      artist={musician.name}
+                      artistArray={album.artists}
+                      artistURL={musician.external_urls.spotify}
+                    />
+                  )}
+                </div>
               </div>
             </div>
           )

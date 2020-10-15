@@ -18,9 +18,14 @@
   flex-direction: column;
 }
 
+.artistContainer {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (min-width: 668px) {
   .albumCard {
-    width: 27%;
+    width: 30%;
   }
 } 
 
