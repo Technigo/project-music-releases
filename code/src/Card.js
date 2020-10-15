@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'Image';
 import Artist from 'Artist';
 import Album from 'Album';
-import Icons from 'Icons';
 import './card.css';
 
 /* WHAT WE ACTUALLY DID HERE:
@@ -12,7 +11,15 @@ props.album = props.the html attribute, so in app.js "album" is album={whatever 
 
 const Card = props => {
   const album = props.album;
-  
+  console.log(album);
+
+  /* Array with artists' names and urls */
+  const artistsArray = album.artists.map(artist => {
+    const name = artist.name;
+    const URL = artist.external_urls.spotify;
+    return { name, URL };
+  });
+  console.log(artistsArray);
   return (
     <>
       <article className="card">
@@ -27,12 +34,30 @@ const Card = props => {
           albumURL={album.external_urls.spotify}
         />
         <div className="artist-box">
-          {album.artists.map(artist => {
+          {/* {artistsArray.map((artist, index) => (
+            <Artist
+              key={artist.name}
+              name={artist.name}
+              URL={artist.URL}
+              index={index}
+            />
+          ))} */}
+
+          {/* <Artist
+            key={album.id}
+            artistsArray={album.artists}
+            name={album.name}
+            urlArray={album.URL}
+          /> */}
+          {artistsArray.map((artist, index) => {
+            console.log(artist, artistsArray.length, index);
             return (
               <Artist
                 key={artist.id}
+                index={index}
                 artistName={artist.name}
-                artistURL={artist.external_urls.spotify}
+                artistURL={artist.url}
+                length={artistsArray.length}
               />
             );
           })}

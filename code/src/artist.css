@@ -1,21 +1,40 @@
 /*Gjort en liten preliminär lösning genom att sätta en div runt artist-komponenten. Men vore bättre om vi kan få till en array tycker jag!*/
 
 .artist-box {
-    display: flex;
+  display: flex;
 }
 
 .artist-name {
-    font-family: sans-serif;
-    color: #fff;
-    text-decoration: none;
-    margin: 2px;
+  font-family: sans-serif;
+  color: #a0a0a0;
+  text-decoration: none;
+  margin: 2px;
 }
 
 .artist-name:hover {
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
-/* 
-.artist-name:nth-of-type(n+2){
-    content: ", ";
-    color: #fff;
+
+.artist-name::after {
+  content: ', ';
+}
+
+.artist-name:last-child::after {
+  content: ' &';
+}
+
+/* .artist-name:nth-of-type(n + 2)::before {
+  content: ', ';
+  margin: 0px;
+}
+
+.artist-name:last-of-type::before {
+  content: '& ';
+  margin-left: 4px;
+}
+
+.artist-name:first-of-type::before {
+  content: '';
+  margin: 0px;
 } */
