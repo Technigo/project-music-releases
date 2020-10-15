@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Artist = () => {
+const Artist = (props) => {
+    //console.log(props);
     return (
-        <p className="artist">Artist</p>
-    )
-};
+        <a href={props.artist.map(artist => artist.external_urls.spotify)} className="artist">
+            {props.artist.map(artist => artist.name).join(', ')}
+        </a>
+       )
+    };
 
 export default Artist;
