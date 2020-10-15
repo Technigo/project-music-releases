@@ -179,7 +179,8 @@ a:hover {
 }
 
 .play-icon:hover {
-  width: 90px;
+  width: 80px;
+  margin: 0;
 }
 
 .dots-icon {
