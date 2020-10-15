@@ -20,6 +20,10 @@
     text-decoration: none;
   }
 
+  span {
+    color: #a0a0a0;
+  }
+
   /* Header */
   .header {
     width: 100%;
@@ -53,7 +57,7 @@
     font-size: 14px;
     font-weight: bold;
     padding-top: 6px;
-    margin: 0;
+    margin: 6px 0;
   }
 
    .artist-name {
@@ -135,7 +139,7 @@
   
   .playIcon:hover {
     transform: scale(1.3);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   
   .dotsIcon {
@@ -144,28 +148,22 @@
   }
 
   /* Media queries*/
-  
   @media (min-width: 668px) {
     /* Tablet device */
-    .album-container {
+    .album-container { /*Wrapping on rows instead*/
       flex-direction: row;
       flex-wrap: wrap;
     }
 
     .album-card {
       width: 40%;
-      height: 330px; 
+      height: 350px; 
     }
   }
   
   @media (min-width: 1024px) {
     /* Desktop device */
-    .album-container {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .album-card {
+       .album-card {
       width: 21%;
     }
   }

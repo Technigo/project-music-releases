@@ -35,4 +35,5 @@ We have used some CSS in the project to make it responsive for desktop, tablet a
 
 ## View it live
 
-Link to see our project live: 
+Link to see our project live: https://musicreleases.netlify.app/
+
