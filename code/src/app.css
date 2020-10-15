@@ -1,29 +1,31 @@
 .app {
   margin: 0 auto;
-  padding: 20px;
-  max-width: 1300px;
+  padding: 5px;
+  max-width: 1250px;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .appData {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 100%;
 }
 /* MEDIA QUERIES */
-@media (min-width: 667px) and (max-width: 1023px) {
+@media (max-width: 667px) {
   .appData {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .app {
+    margin: 0px;
   }
 }
-
-/* DESKTOP */
-@media (min-width: 1024px) {
+@media (min-width: 668px) and (max-width: 1024px) {
   .appData {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
