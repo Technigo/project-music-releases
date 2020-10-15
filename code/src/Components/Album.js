@@ -14,6 +14,7 @@ export const Album = props => {
 				<a href={props.albumUrl} className="album-title">
 					{props.name}
 				</a>
+
 				<div className="artist-wrapper">
 					{props.artists.map(artist => {
 						return (
