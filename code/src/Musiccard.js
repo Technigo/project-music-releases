@@ -1,19 +1,20 @@
 import React from 'react';
-import { Musicimage } from './card-component-directory/Musicimage';
-import { Musicalbum} from './card-component-directory/Musicalbum';
-import { Musicartist} from './card-component-directory/Musicartist';
+import { MusicImage } from './card-component-directory/MusicImage';
+import { MusicAlbum} from './card-component-directory/MusicAlbum';
+import { MusicArtist} from './card-component-directory/MusicArtist';
 
 
-// Component for the music item which will house the album image, album title and artist name
-export const Musiccard = (prop) => {
+// MusicCard component for the music item which will house the album image, album title and artist name
+export const MusicCard = (prop) => {
     return (
         <div className="music-card-container">
-            {/* Here we're only getting one album, album name and artist name */}
-            <Musicimage image={prop.item.images}/>
-            <div className="album-name-container">
-                <Musicalbum albumname={prop.item.name} albumlink={prop.item.external_urls}/>
-                <Musicartist artistsname={prop.item.artists}/>
-            </div>
+            {/* Here we're only creating one album, accessing the array information for each of the elements inside the 
+            card which will then be able to be accessed in their respective component files e.g MusicImage,
+            MusicAlbum and MusicArtist to then further specify which part of these we want to use in that
+            component folder */}
+            <MusicImage image={prop.item.images}/>
+            <MusicAlbum albumname={prop.item.name} albumlink={prop.item.external_urls}/>
+            <MusicArtist artistsname={prop.item.artists}/>
         </div>       
     );
 };
