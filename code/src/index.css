@@ -5,9 +5,65 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.headermain {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #ffffff;
+}
+.container {
+  display: inline-block;
+  position: relative;
+}
+.container img {
+  display: block;
+}
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+
+  /* display: block;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+} */
+}
+
+.icons {
+  /* position: absolute; */
+  /* display: flex; */
+  /* justify-content: space-around;  */
+  width: 35px;
+  height: 35px;
+  fill: white;
+}
+a {
+  text-decoration: none;
+}
+a .albumsname {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+}
+a .albumsname:hover {
+  text-decoration: underline;
+}
+a .artist-name {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+a .artist-name:hover {
+  text-decoration: underline;
 }
