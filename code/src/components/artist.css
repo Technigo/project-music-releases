@@ -14,3 +14,8 @@
 .artistTitle:not(:last-child):after {
   content: ", ";
 }
+@media (min-width: 668px) and (max-width: 1024px) {
+  .artistTitle {
+    font-size: 16px;
+  }
+}

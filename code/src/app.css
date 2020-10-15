@@ -1,9 +1,14 @@
+.app {
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .appData {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: top;
+  width: 100%;
+  /* align-items: top;
   margin: 0px 20px 20px;
-  padding: 0;
+  padding: 0; */
 }
