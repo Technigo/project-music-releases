@@ -1,9 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week's project is to use React components to build a page which shows new album and single releases.
 
 ## The problem
+We started by creating three different components - Album, Artist & Header and a ccs-file for each component. Then we started using React and show 50 different releases trough Spotify API. Our task was to use this, along with .map() to mount an 'Album' component for each album.
+
+
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
