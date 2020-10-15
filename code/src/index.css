@@ -14,33 +14,81 @@ code {
 }
 
 header {
+  display: grid;
+  grid-template-columns: 1fr 230px 1fr;
   font-family: 'Helvetica';
   color: #ffffff;
   margin: 15px;
 }
 
+.title {
+  grid-column-start: 2;
+  font-size: 18px;
+  margin: 0;
+}
+
 .releases-list {
-  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 230px 1fr;
+  justify-self: center;
   border-top: 1px solid #353535;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 15px 0;
 }
 
 .release {
+  grid-column-start: 2;
   display: flex;
   flex-direction: column;
   width: 200px;
   height: 300px;
-  margin: 15px;
 }
 
-.artist {
-  font-family: 'Helvetica';
-  font-size: 14px;
-  color: #a0a0a0;
-  margin: 15px 0 15px 0;
-  text-decoration: none;
+.image-container {
+  position: relative;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  opacity: 0;
+}
+
+.image-container:hover .image {
+  opacity: 0.3;
+}
+
+.image-container:hover .icon-container {
+  opacity: 1;
+}
+
+.play-container {
+  width: 60px;
+  text-align: center;
+}
+
+.play {
+  opacity: 0.5;
+}
+
+.play:hover {
+  width: 60px;
+  opacity: 1;
+}
+
+.album-container {
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 
 .album {
@@ -48,7 +96,6 @@ header {
   font-size: 14px;
   color: #ffffff;
   margin: 15px 0 0 0;
-  height: 25px;
   text-decoration: none;
 }
 
@@ -56,17 +103,35 @@ header {
   text-decoration: underline;
 }
 
-.image {
-  width: 200px;
-  height: 200px;
-  border: 1px solid white;
+.artists {
+  margin: 10px 0 15px 0;
+  display: flex;
 }
 
-.image:hover {
-  opacity: 0.5;
+.artist {
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist-list > :not(:last-child):not(:first-child):before {
+  content: ", ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+.artist-list > :last-child:before {
+  content: " & ";
+  white-space: pre;
+  color: #a0a0a0;
 }
 
 @media (min-width: 768px) {
+  header {
+    grid-template-columns: 1fr 230px 230px 1fr;
+  }
+
   .releases-list {
     display: grid;
     grid-template-columns: 1fr 230px 230px 1fr;
@@ -87,8 +152,11 @@ header {
   }
 }
 
-
 @media (min-width: 1024px) {
+  header {
+    grid-template-columns: 1fr 230px 230px 230px 230px 1fr;
+  }
+
   .releases-list {
     grid-template-columns: 1fr 230px 230px 230px 230px 1fr;
     padding: 15px 0;
