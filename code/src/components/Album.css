@@ -2,7 +2,7 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     font-size: 14px;
-  }
+}
 
 a {
     text-decoration: none;
@@ -20,26 +20,33 @@ a {
     transition: 0.5s;
 }
 
-.cover {
+.cover-wrapper {
     position: relative;
 }
 
-.cover:hover .icons{
+.cover-wrapper:hover .icons{
     display: flex;
 }
 
-.cover:hover .album-cover {
+.cover-wrapper:hover .album-cover {
     opacity: 0.5;
+}
+
+.album-cover-container{
+    display: flex;
+    place-items: center;
 }
 
 .icons{
     display: none;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transition: 0.5s;
     transform: translate(-50%, -50%);
+    width: 50%;
 }
 
 .heart, .dots {
@@ -53,13 +60,37 @@ a {
     width: 40%;
     height: 40%;
     transition: 0.5s;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .play:hover {
     width: 60%;
     height: 60%;
-    margin-left: 7%;
-    margin-right: 7%;   
+    margin-left: 20%;
+    margin-right: 20%;   
+}
+
+h2:hover {
+    text-decoration: underline;  
+}
+
+.artists-names::after {
+    content: ", ";
+}
+  
+.artist-names:last-child::after {
+    content: ""
+}
+
+@media (min-width: 678px) {
+    .album-card {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .album-card {
+        width: 20%;
+    }
 }

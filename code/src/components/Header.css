@@ -1,0 +1,22 @@
+h1{
+    color: #fff;
+    font-size: 40px;
+    font-family: helvetica;
+    margin-left: 20px;
+}
+
+@media (min-width: 678px) {
+    h1{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    h1{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 80px;
+    }
+  }
