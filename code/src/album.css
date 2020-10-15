@@ -5,7 +5,10 @@
 
 .coverContainer:hover {
   opacity: 0.7;
-  z-index: 7;
+}
+
+.coverContainer:hover .iconContainer {
+  opacity: 1;
 }
 
 .coverContainer {
@@ -24,8 +27,7 @@
 }
 
 .iconContainer:hover {
-  opacity: 1;
-  z-index: 10;
+  opacity:1;
 }
 
 .heartIcon {
@@ -46,14 +48,3 @@
   height: 30px;
   width: 30px
 }
-
-
-.imageOverlay {
-    width: 100%;
-    top: 5px;
-    transition: 0.3s ease;
-  }
-  
-  .imageOverlay:hover {
-    background-color: #000000a1;
-  }
