@@ -12,7 +12,7 @@ export const App = () => {
     <> 
     <div className="headermain">
       < Header /></div>
-      <article>
+      <article className="main">
         {data.albums.items.map(album=>{return <Albumcontainer key={album.id} 
         name={album.name} 
         linkAlbum={album.external_urls.spotify} 

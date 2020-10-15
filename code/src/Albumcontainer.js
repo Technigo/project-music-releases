@@ -21,7 +21,7 @@ export const Albumcontainer = props => {
       
     <div className="albumsname">{props.name}</div>
 
-    <div>
+    <div className="newartist">
       {props.artists.map (artist => {return <Albumartistname
       key={artist.id}
       name={artist.name}

@@ -6,6 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 code {
@@ -13,10 +16,20 @@ code {
     monospace;
 }
 .headermain {
+  display: flex;
   font-family: Helvetica;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   color: #ffffff;
+  border-bottom: solid 1px gray;
 }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
 .container {
   display: inline-block;
   position: relative;
@@ -31,39 +44,134 @@ code {
   align-items: center;
   position: absolute;
   top: 50%;
-  width: 100%;
-
-  /* display: block;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; 
-} */
+  width: 300px;
 }
 
 .icons {
-  /* position: absolute; */
-  /* display: flex; */
-  /* justify-content: space-around;  */
   width: 35px;
   height: 35px;
   fill: white;
 }
+
+/* albumsname and artistname */
 a {
   text-decoration: none;
 }
+
 a .albumsname {
   font-family: Helvetica;
   font-size: 14px;
   color: #ffffff;
+  width: 300px;
 }
-a .albumsname:hover {
+
+.albumsname :hover {
   text-decoration: underline;
 }
-a .artist-name {
+
+a .artistname {
   font-family: Helvetica;
   font-size: 14px;
   color: #a0a0a0;
+  width: 300px;
+  text-decoration: none;
 }
-a .artist-name:hover {
+
+/* Add the comma after the first artist */
+/* .artistname::after {
+  content: ", ";
+} */
+
+.newartist:not(:last-child):after {
+  content: ",";
+}
+/* Remove the comma after the last artist
+.artistname:last-child::after {
+  content: "";
+} */
+
+a .artistname :hover {
   text-decoration: underline;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+.album-card:hover {
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.album-cover {
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-left: 27px;
+  }
+
+  a .albumsname {
+    font-size: 10px;
+    width: 300px;
+  }
+
+  a .artistname {
+    font-size: 10px;
+    width: 300px;
+  }
+
+  .album-card {
+    display: flex;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    margin-left: 18px;
+  }
+
+  .album-card {
+    display: flex;
+    width: 25%;
+    margin-bottom: 10px;
+  }
+
+  .album-cover {
+    width: 250px;
+    height: 250px;
+  }
+
+  a .albumsname {
+    font-size: 12px;
+    width: 250px;
+  }
+
+  a .artistname {
+    font-size: 12px;
+    width: 250px;
+  }
+
+  .icon-wrapper {
+    width: 250px;
+  }
 }
