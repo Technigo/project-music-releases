@@ -1,12 +1,23 @@
 # Music Releases
-Replace this readme with your own information about your project.
+The aim of this project was to work in a pair to create a music release page in React using components based on the object information from the Spotify API. 
+We had to follow a specific design template and make the page responsive for mobile, tablet and desktop. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# What we achieved
+We aimed for the blue level requirements, which we feel that we achieved and we managed to do some of the red requirements.
+1. We managed to create a structure in react using different components and then linking these together with props.
+2. We put the different components for the Musiccard e.g. Musicalbum, Musicartist and Musicimage into a folder as to keep them seperate from the mainjs files.
+3. We also move the icon folder into the card-component-directory so we could import those images into the Musiccard, rather than inserting them directly into the HTML file using an img tag.
+4. We used one CSS file to style our page, using the className that we had defined in specific jsx elements. We also saw that you can split up the css code inline with the react components that are created. This seemed a good work flow and something to consider when we're working in larger projects in the future. 
+5. For the red level requirements we managed to give the play button a lighter opactiy in the first state and then when you hover on the button it give it a full opacity.
+6. We also managed to give the artist name a space and comma using the join method. 
 
-## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+# What tools we used
+1. HTML, CSS and React.
+2. NPM to allow us to access and install the react library we needed.
+3. Used the Spotify object, that was collected from the Spotify API, and stored in the data.json.
+4. Google.
+5. Bounced ideas off on another.
+6. Asking others for advice.
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://objective-wing-b8f314.netlify.app/
