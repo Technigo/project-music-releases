@@ -7,9 +7,11 @@ console.log(data)
 export const App = () => {
   return (
     <main>
-      <h1>New albums & singles</h1>
+      <header>
+        <h1>New albums & singles</h1>
+      </header>
       {/* Below accessing all album information & sending it as the prop albums to Musiclist */}
-      <Musiclist albums={data.albums} /> 
-    </main>     
+      <Musiclist item_array={data.albums.items} /> 
+    </main>
   );
 };
