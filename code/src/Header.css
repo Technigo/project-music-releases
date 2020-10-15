@@ -3,3 +3,7 @@
   color: White;
   font-size: 30px;
 }
+
+.header hr {
+  border: 1px solid rgba(71, 71, 71, 0.514);
+}

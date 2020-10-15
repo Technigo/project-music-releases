@@ -3,4 +3,11 @@
   font-size: 14px;
   color: #ffffff;
   text-decoration: none;
+  margin-left: 15px;
+  padding: 5px 0px;
+}
+
+.releaseTitle:hover {
+  text-decoration: underline solid white;
+  cursor: pointer;
 }
