@@ -1,5 +1,5 @@
 import React from 'react'
-import './artist.css'
+import './Artist.css'
 
 export const Artists = props => {
   if ((props.artistArray).length > 1) {

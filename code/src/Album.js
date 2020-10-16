@@ -1,5 +1,5 @@
 import React from 'react'
-import './album.css'
+import './Album.css'
 
 export const Album = props => {
   return (

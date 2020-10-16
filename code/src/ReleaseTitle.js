@@ -1,5 +1,5 @@
 import React from 'react'
-import './releaseTitle.css'
+import './ReleaseTitle.css'
 
 export const ReleaseTitle = props => {
   return (
