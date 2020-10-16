@@ -10,12 +10,12 @@
   overflow: hidden;
   object-fit: contain;
   filter: invert(1);
-  width: 50px;
+  width: 30px;
 }
 
 .icon__play {
   opacity: 0.7;
-  width: 85px;
+  width: 55px;
   transition: all 0.3s ease-in-out;
 }
 

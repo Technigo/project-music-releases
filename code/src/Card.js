@@ -17,60 +17,36 @@ const Card = props => {
     const URL = artist.external_urls.spotify;
     return { name, URL };
   });
+
   return (
-    <article className="card">
-      <Image
-        key={album.href}
-        imageBig={album.images[0].url}
-        imageSmall={album.images[1].url}
-      />
-      <Album
-        key={album.name}
-        albumName={album.name}
-        albumURL={album.external_urls.spotify}
-      />
-      <div className="artist__container">
-        {artistsArray.map((artist, index) => {
-          return (
-            <Artist
-              key={artist.id}
-              index={index}
-              artistName={artist.name}
-              artistURL={artist.URL}
-              length={artistsArray.length}
-            />
-          );
-        })}
-      </div>
-    </article>
+    <section className="single">
+      <article className="card">
+        <Image
+          key={album.href}
+          imageBig={album.images[0].url}
+          imageSmall={album.images[1].url}
+        />
+        <Album
+          key={album.name}
+          albumName={album.name}
+          albumURL={album.external_urls.spotify}
+        />
+        <div className="artist__container">
+          {artistsArray.map((artist, index) => {
+            return (
+              <Artist
+                key={artist.id}
+                index={index}
+                artistName={artist.name}
+                artistURL={artist.URL}
+                length={artistsArray.length}
+              />
+            );
+          })}
+        </div>
+      </article>
+    </section>
   );
 };
 
 export default Card;
-
-/*{album.artists.map(artist => {
-            return (
-              <Artist
-                key={artist.id}
-                artistName={artist.name}
-                artistURL={artist.external_urls.spotify}
-              />
-            );
-          })} */
-
-/*GAMMAL KOD:
-{/* {artistsArray.map((artist, index) => (
-            <Artist
-              key={artist.name}
-              name={artist.name}
-              URL={artist.URL}
-              index={index}
-            />
-          ))}}
-
-          { <Artist
-            key={album.id}
-            artistsArray={album.artists}
-            name={album.name}
-            urlArray={album.URL}
-          /> } */
