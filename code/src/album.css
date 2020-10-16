@@ -1,10 +1,12 @@
-.album-name {
-  font-family: sans-serif;
+.album__name {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
+  margin-top: 8px;
 }
 
-.album-name:hover {
+.album__name:hover {
   text-decoration: underline;
 }

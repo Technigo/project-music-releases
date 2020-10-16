@@ -29,7 +29,7 @@ const Card = props => {
         albumName={album.name}
         albumURL={album.external_urls.spotify}
       />
-      <div className="artist-box">
+      <div className="artist__container">
         {artistsArray.map((artist, index) => {
           return (
             <Artist

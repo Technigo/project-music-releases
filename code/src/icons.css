@@ -1,11 +1,22 @@
-.icon-box {
+.icon__container {
+  display: none;
+  width: 100%;
   position: absolute;
+  align-items: center;
+  top: 0;
+  right: 0;
+  margin: 0;
+  /* position: absolute;
   display: flex;
   justify-content: space-evenly;
   top: 45%;
   left: 25%;
   width: 50%;
-  z-index: 2;
+  z-index: 2; */
+}
+
+.icon__container:hover {
+  display: flex;
 }
 
 .icon {
@@ -13,18 +24,20 @@
   overflow: hidden;
   object-fit: contain;
   filter: invert(1);
+  width: 50px;
 }
 
-.play {
+.icon__play {
   opacity: 0.7;
-  transform: scale(2);
+  width: 85px;
+  transition: all 0.3s ease-in-out;
 }
 
-.overlay:hover {
+.icon__overlay:hover {
   display: block;
 }
 
-.play:hover {
-  transform: scale(2.2);
+.icon__play:hover {
+  transform: scale(1.2);
   opacity: 1;
 }

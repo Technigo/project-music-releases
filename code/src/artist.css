@@ -1,16 +1,16 @@
-
-.artist-box {
+.artist__container {
   display: flex;
 }
 
-.artist-name {
-  font-family: sans-serif;
+.artist__name {
+  font-family: 'Helvetica', sans-serif;
   color: #a0a0a0;
   text-decoration: none;
-  margin: 2px;
+  font-size: 14px;
+  margin-top: 8px;
 }
 
-.artist-name:hover {
+.artist__name:hover {
   color: #fff;
   text-decoration: underline;
 }

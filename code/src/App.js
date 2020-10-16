@@ -9,8 +9,8 @@ const albumArray = data.albums.items;
 export const App = () => {
   return (
     <>
-      <h1>New albums {'&'} singles</h1>
-      <main className="main-grid-container">
+      <h1 className="app__header">New albums {'&'} singles</h1>
+      <main className="app__grid">
         {albumArray.map(album => {
           return <Card key={album.name} album={album} />;
         })}
