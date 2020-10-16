@@ -7,11 +7,19 @@ export const Music = (props) => {
 		<>
 			<div>
 				<img src={props.image} alt="" />
-				<p>{props.albumName}</p>
+				<a href={props.albumUrl} target="_blank" rel="noopener noreferrer">
+					<p>{props.albumName}</p>
+				</a>
 			</div>
 			<div>
 				{props.artistName.map((item) => {
-					return <Artist key={item.id} artistName={item.name} />;
+					return (
+						<Artist
+							key={item.id}
+							artistName={item.name}
+							artistUrl={item.external_urls.spotify}
+						/>
+					);
 				})}
 			</div>
 		</>
