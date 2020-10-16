@@ -17,7 +17,7 @@ export const App = () => {
       <h1 className="app__header">New albums {'&'} singles</h1>
       <main className="app__grid">
         <aside classNAme="app__aside">
-          <h2 className="heading-two">Hello Aside</h2>
+          <h2 className="heading-two">Editor's Pick</h2>
           {playlistArray.map(playlist => {
             return(
             <Aside 

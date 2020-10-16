@@ -62,18 +62,18 @@ body {
 
 @media (min-width: 1024px) {
   .app__grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(10, 1fr);
   }
   .heading-two {
     grid-column: span 4;
     grid-row: 1;
   }
   .app__singles-grid {
-    grid-column: 2/4;
+    grid-column: 2/6;
     grid-template-columns: repeat(4, 1fr);
   }
   .app__album-grid {
-    grid-column: 4/6;
+    grid-column: 6/10;
     grid-template-columns: repeat(4, 1fr);
   }
 
