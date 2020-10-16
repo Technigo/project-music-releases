@@ -4,8 +4,6 @@ import { Album } from './components/Album'
 import data from './data.json'
 import './app.css'
 
- 
-console.log(data);
 const albumArray = data.albums.items;
 
 export const App = () => {
