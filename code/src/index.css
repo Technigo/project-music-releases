@@ -145,8 +145,11 @@ header {
   .album-container {
     width: 220px;
   }
-
   header {
     width: 940px;
+  }
+  .hover-cover{
+    width: 220px;
+    height: 220px;
   }
 }
