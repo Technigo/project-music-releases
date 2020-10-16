@@ -31,6 +31,7 @@
 
 .icon-container {
     display: none;
+    transition: 1.5s ease-in-out;
 }
 
 .image-container:hover .icon-container {
