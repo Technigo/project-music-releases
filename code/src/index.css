@@ -122,6 +122,10 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.album-container:hover .album-image {
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .album-container {
     margin: 0 15px 30px 15px;
@@ -143,10 +147,6 @@ a:hover {
   img {
     width: 200px;
   }
-}
-
-.image-container:hover {
-  opacity: 0.5;
 }
 
 .icon-container {

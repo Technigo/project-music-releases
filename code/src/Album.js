@@ -21,7 +21,6 @@ export const Album = (props) => {
         <a href={props.album_url} target="_blank" rel="noopener noreferrer">
           <div className="image-container">
             <img className="album-image" src={props.img[1].url} alt="Album cover" />
-            <div></div>
             <div className="icon-container">
               <HeartButton className="album-icon" />
               <PlayButton className="album-icon play-icon" />
