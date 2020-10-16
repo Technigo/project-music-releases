@@ -1,5 +1,4 @@
 import React from "react";
-import "./playlist.css"
 
 export const Playlist = (props) => {
 
