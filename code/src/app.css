@@ -43,14 +43,14 @@ body {
 
 @media (min-width: 768px) {
   .app__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
   }
   .app__singles-grid {
-    grid-column: 2/3;
+    grid-column: 2/5;
     grid-template-columns: 1fr 1fr;
   }
   .app__album-grid {
-    grid-column: 3/5;
+    grid-column: 5/7;
     grid-template-columns: 1fr 1fr;
   }
   .heading-two {

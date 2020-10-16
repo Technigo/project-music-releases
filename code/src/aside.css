@@ -3,11 +3,29 @@
     grid-area: 'aside';
     grid-row: repeat(mincontent);
     grid-template-columns: 1fr;
+    justify-content: center;
   }
+
+.aside__playlist-wrapper img {
+    width: 100%;
+}
 
 @media (min-width:768px) {
     .app__aside {
         grid-column: 1;
         grid-row: 1 repeat(min-content);
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .aside__playlist-wrapper {
+        grid-column-start: 2;
+    }
+    .aside__playlist-wrapper img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px){
+    .app__aside {
+
     }
 }
