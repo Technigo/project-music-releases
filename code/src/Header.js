@@ -1,4 +1,4 @@
 import React from 'react';
 
-const Header = () => <header>New albums and singles</header>
+const Header = () => <header>New albums & singles</header>
 export default Header;
