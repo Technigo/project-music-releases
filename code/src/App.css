@@ -1,35 +1,35 @@
-.cardContainer {
+.card-container {
     border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.albumCard {
+.album-card {
     display: flex;
     flex-direction: column;
     width: 300px;
     margin: 20px;
 }
 
-.textContainer {
+.text-container {
   display: flex;
   flex-direction: column;
 }
 
-.artistContainer {
+.artist-container {
   display: flex;
   flex-direction: row;
 }
 
 @media (min-width: 667px) {
-  .albumCard {
+  .album-card {
     width: 30%;
   }
 } 
 
 @media (min-width: 1024px) {
-  .albumCard {
+  .album-card {
     width: 20%
   }
 }

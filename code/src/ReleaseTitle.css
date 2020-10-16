@@ -1,4 +1,4 @@
-.releaseTitle {
+.release-title {
   font-family: Helvetica;
   font-size: 14px;
   color: #ffffff;
@@ -8,7 +8,7 @@
   font-weight: 600;
 }
 
-.releaseTitle:hover {
+.release-title:hover {
   text-decoration: underline solid white;
   cursor: pointer;
 }

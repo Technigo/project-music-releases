@@ -1,4 +1,4 @@
-.albumArt {
+.album-art {
   height: 100%;
   width : 100%;
 }
@@ -7,22 +7,22 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 1px;
+  top: 0;
 }
 
-.coverContainer:hover .overlay {
+.cover-container:hover .overlay {
   background-color: rgba(0, 0,0, 0.5);
 }
 
-.coverContainer:hover .iconContainer {
+.cover-container:hover .icon-container {
   opacity: 1;
 }
 
-.coverContainer {
+.cover-container {
   position: relative;
 }
 
-.iconContainer {
+.icon-container {
   position: absolute;
   width: 100%;
   top: 45%;
@@ -33,21 +33,21 @@
   opacity : 0;
 }
 
-.heartIcon {
+.heart-icon {
   height : 30px;
   width : 30px;
 }
 
-.playButton {
+.play-button {
   height : 60px;
   width : 60px;
 }
 
-.playButton:hover {
+.play-button:hover {
   transform: scale(1.3)
 }
 
-.dotsIcon {
+.dots-icon {
   height: 30px;
   width: 30px
 }

@@ -6,29 +6,24 @@ import { Artists } from './Artist.js'
 import { ReleaseTitle } from './ReleaseTitle.js'
 import 'App.css'
 
-console.log(data)
-
 export const App = () => {
   return (
-    <div className='sectionContainer'>
+    <div className='section-container'>
       <Header />
-      <section className='cardContainer'>
+      <section className='card-container'>
         {data.albums.items.map((album) => {
           return (
-
-            <div className='albumCard'>
+            <div className='album-card' key={album.id} >
               <Album
-                key={album.id}
                 url={album.images[0].url}
                 name={album.name}
               />
-              <div className='textContainer'>
+              <div className='text-container'>
                 <ReleaseTitle
-                  key={album.name}
                   albumName={album.name}
                   albumURL={album.external_urls.spotify}
                 />
-                <div className="artistContainer">
+                <div className="artist-container">
                   {album.artists.map((musician) =>
                     <Artists
                       key={musician.id}
