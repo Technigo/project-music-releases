@@ -12,7 +12,7 @@ export const App = () => {
   return (
     <>
       <Header headerText="New albums &amp; singles"/>
-      <section className="albumList">        
+      <section className="album-list">        
 
         {/* Mappar igenom allt under items, anropar Album.js för varje album i data.json. Skickar med props. */}
         {albumArray.map(album => (
