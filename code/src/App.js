@@ -4,7 +4,7 @@ import { Header } from './Header.js'
 import { Album } from './Album.js'
 import { Artists } from './Artist.js'
 import { ReleaseTitle } from './ReleaseTitle.js'
-import 'App.css'
+import 'app.css'
 
 export const App = () => {
   return (
