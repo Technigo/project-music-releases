@@ -8,7 +8,6 @@ const Artist = props => {
         {props.artistName}
       </a>
     );
-    /* INGET KOMMA TECKEN */
   } else if (props.index === props.length - 1) {
     return (
       <a className="artist__name" href={props.artistURL}>
@@ -16,7 +15,6 @@ const Artist = props => {
       </a>
     );
   } else {
-    /* RETURNERA ARTIST MED KOMMA TECKEN FÖRE */
     return (
       <a className="artist__name" href={props.artistURL}>
         {', ' + props.artistName + ' '}
