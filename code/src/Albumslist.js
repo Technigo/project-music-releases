@@ -6,7 +6,7 @@ const albums = data.albums.items;
 
 export const Albumslist = () =>{
         return (  
-            <div className="albumlist-section">
+          <div className="albumlist-section">
             {albums.map((albumElement) => {
               return <Album key={albumElement.name} 
                 albumTitle={albumElement.name}
@@ -15,8 +15,7 @@ export const Albumslist = () =>{
                 albumUrl={albumElement.external_urls.spotify}
               />
             })}
-          </div>
-          
+          </div>       
         );
 }
 
