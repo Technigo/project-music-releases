@@ -3,7 +3,7 @@ import { ReactComponent as HeartIcon } from './icons/heart.svg';
 import { ReactComponent as PlayIcon } from './icons/play.svg';
 import { ReactComponent as DotsIcon } from './icons/dots.svg';
 
-export const DisplayIcons = () => {
+export const MusicIcons = () => {
   return (
     <>
       <section className="album-actions">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { DisplayIcons } from './DisplayIcons'
+import { MusicIcons } from './MusicIcons'
 import { Artist } from './Artist';
 
  export const Album = (props) => {
@@ -8,7 +8,7 @@ import { Artist } from './Artist';
       <article className="album-container">
         <div className="image-container">
           <img src={props.image} alt="Album cover" />
-          <DisplayIcons />
+          <MusicIcons />
         </div>
         <p className="album-name">
          <a className="album-name" href={props.albumUrl} target="_blank">{props.name}</a> 

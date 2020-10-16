@@ -21,6 +21,7 @@ code {
 .header {
   margin: 10px 5px;
   border-bottom: 1px solid rgb(51, 51, 51);
+  padding-bottom: 8px;
 }
 
 .main-section {
@@ -36,7 +37,7 @@ code {
 }
 
 .album-container img {
-  width: 95%;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -44,6 +45,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 .artist-name a {
@@ -86,7 +88,6 @@ desktop width of 100%*/
 
 .image-container {
   position: relative;
-
 }
 
 .album-image {
@@ -94,7 +95,7 @@ desktop width of 100%*/
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .album-actions {
@@ -105,7 +106,7 @@ desktop width of 100%*/
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   width: 100%;
 }
 
@@ -122,7 +123,8 @@ desktop width of 100%*/
 
 .album-actions-icon.-play {
   height: 80px;
-  transition: .5s ease;
+  transition: 0.5s ease;
+  opacity: 0.6;
 }
 
 .music-icon {
@@ -131,12 +133,13 @@ desktop width of 100%*/
 }
 
 .image-container:hover .album-actions {
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
 
 .album-actions-icon.-play:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
 
 .album-name {
@@ -157,9 +160,5 @@ desktop width of 100%*/
 .album-name:hover,
 .artist-name:hover {
   text-decoration: underline;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-
-
-
-
