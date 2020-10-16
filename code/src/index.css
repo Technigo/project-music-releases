@@ -1,13 +1,132 @@
+/*Mobile first*/
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #000;
+	color: #fff;
+}
+
+header {
+	width: 300px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 20px;
+	width: 300px;
+	text-align: left;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+
+a {
+	font-size: 14px;
+	font-family: Helvetica, sans-serif;
+}
+
+.main-section {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.music-container {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.album-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	margin: 10px;
+}
+
+.album-image-container:hover img {
+	opacity: 0.5;
+}
+
+.album-image-container:hover .icon-container {
+	display: flex;
+}
+
+.icon-container {
+	position: absolute;
+	display: flex;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.heart-button {
+	width: 30px;
+	margin: 20px;
+}
+
+.play-button {
+	width: 60px;
+	height: auto;
+	margin: 20px;
+}
+
+.dot-button {
+	width: 30px;
+	margin: 20px;
+}
+
+.play-button:hover {
+	transform: scale(1.5);
+}
+
+.album-name {
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+.album-name:hover {
+	text-decoration: underline;
+}
+
+.artist-name {
+	text-decoration: none;
+	color: #a0a0a0;
+}
+
+.artist-name:hover {
+	text-decoration: underline;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+@media (min-width: 768px) {
+	main {
+		align-items: flex-start;
+	}
+
+	h1 {
+		margin-left: 90px;
+	}
+	.main-section {
+		flex-flow: row wrap;
+		justify-content: center;
+	}
 }

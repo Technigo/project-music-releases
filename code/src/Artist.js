@@ -2,10 +2,48 @@ import React from 'react';
 
 export const Artist = (props) => {
 	return (
-		<div>
-			<a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+		<span>
+			<a href={props.albumUrl}>{props.albumName}</a>
+			<a
+				className="artist-name"
+				href={props.artistUrl}
+				target="_blank"
+				rel="noopener noreferrer">
 				{props.artistName}
 			</a>
-		</div>
+		</span>
 	);
 };
+
+// 	if (props.length === 1) {
+// 		return (
+// 			<a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+// 				<span className="artist-name">{props.artistName}</span>
+// 			</a>
+// 		);
+// 	} else if {
+// 		 (props.index < props.lenght - 1) {
+// 		return (
+// 			<a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+// 				<span className="artist-name">{props.artistName}, </span>
+// 			</a>
+// 		);
+// 	} else {
+// 		return (
+// 			<a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+// 				<span className="artist-name">{props.artistName}</span>
+// 			</a>
+// 		);
+// 	}
+// };
+
+// 			</a>
+// 		);
+// 	} else {
+// 		return (
+// 			<a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+// 				<span className="artist-name">{props.artistName}</span>
+// 			</a>
+// 		);
+// 	}
+// };
