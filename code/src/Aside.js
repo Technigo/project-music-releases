@@ -1,14 +1,11 @@
 import React from 'react';
 import './aside.css';
-import stretchGoal from './stretch-goal.json'
 
-console.log(stretchGoal)
-
-export const Aside = () => {
+export const Aside = props => {
     return (
-        <div className="aside">
-            <h2>Hello Aside</h2>
-        </div>
+        <article className="playlist">
+            <a href={props.playlistURL} className="playlist"><img className="playlist-cover" src={props.image} alt="Cover of playlist" /></a>
+        </article>
     )
 
 };
