@@ -7,7 +7,7 @@ import { AlbumInfo } from './AlbumInfo';
 export const AlbumDiv = () => {
     return (
         <>
-            {data.albums.items.map(album => {
+            {data.albums.items.map(album => { // Mapping through the album array to get album-name, images, and the artist array.
                 return <AlbumInfo 
                 key={album.name}
                 image={album.images[0].url} 
@@ -21,7 +21,6 @@ export const AlbumDiv = () => {
                     rel="noopener noreferrer" 
                     className="artists-links">
                         <span key={artist.name} className="artist-name">{artist.name}</span>
-                        <span className="comma">,&nbsp;</span> 
                     </a>
                     )
                 })} 

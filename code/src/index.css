@@ -20,10 +20,6 @@
     text-decoration: none;
   }
 
-  span {
-    color: #a0a0a0;
-  }
-
   /* Header */
   .header {
     width: 100%;
@@ -73,24 +69,18 @@
     -webkit-text-decoration-line: underline;
   }
 
-  .artists-links:last-child .comma { /* Removes the comma on the last artist-name */
-    display: none;
-  }
-
-  /* Styling of the comma, since it is a <span> element it needs separate styling */
-  a span .comma {
-    text-decoration: none;
-  }
-
- .comma {
+  /* Adds a comma on right place + styling of it  */
+  .artists-links:not(:last-child)::after {
+    content: ', ';
     color: #a0a0a0;
   }
-  
+
   .album-card {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 15px;
+    cursor: pointer;
   }
   
   .album-cover {
