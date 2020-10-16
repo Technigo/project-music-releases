@@ -1,6 +1,7 @@
 import React from 'react';
 import data from './data.json';
 import Card from './Card';
+import { Aside } from './Aside';
 import './app.css';
 
 //import Artist from 'Artist';
@@ -11,6 +12,7 @@ export const App = () => {
     <>
       <h1 className="app__header">New albums {'&'} singles</h1>
       <main className="app__grid">
+        <Aside/>
         {albumArray.map(album => {
           return <Card key={album.name} album={album} />;
         })}

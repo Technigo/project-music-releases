@@ -11,8 +11,9 @@ body {
 .app__grid {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr; /*repeat(auto-fit, 250px)*/
-  grid-template-rows: repeat(min-content);
+  grid-template-columns: 1fr 5fr; /*repeat(auto-fit, 250px)*/
+  grid-template-rows: repeat(auto-fill);
+  grid-template-areas: 'aside' 'card';
   column-gap: 25px;
   row-gap: 50px;
   justify-content: center;
@@ -24,12 +25,12 @@ body {
 
 @media (min-width: 768px) {
   .app__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .app__grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr repeat(5, 1fr);
   }
 }

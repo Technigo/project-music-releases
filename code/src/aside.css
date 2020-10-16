@@ -1,0 +1,4 @@
+.aside {
+    grid-area: 'aside';
+    grid-row: 1/span last-line;
+}

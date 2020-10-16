@@ -15,7 +15,7 @@ const Artist = props => {
         className="artist__name"
         href={props.artistURL}
       >
-        {'\u00A0 ' + ' & ' + props.artistName}
+        {'\u00A0 & ' + props.artistName}
       </a>
     );
   } else {
