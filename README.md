@@ -1,12 +1,19 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Music Releases 🎶🎹
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+##This project was created by Katarina Torninger and Amanda Flodström
+
+Week 9 project at the Technigo bootcamp was to build a music releases website using Spotify's API!
+
+##Tech stack used:
+HTML
+CSS
+JSX
+React
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started off by creating each component, one by one, styling and importing them until our music relases website was complete and repsonsive on all devices. If we had more time, we would have included the sidebar for which we already have styling and components for.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to the deployed project:
