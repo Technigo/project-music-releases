@@ -17,3 +17,4 @@ We started off by creating each component, one by one, styling and importing the
 ## View it live
 
 Link to the deployed project:
+https://katarina-amanda-music.netlify.app/
