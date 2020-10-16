@@ -55,7 +55,6 @@ h1:hover, h2:hover {
 }
 
 .animation svg {
-    width: 80px;
     transition: all 1s ease-in-out;
 }
 
@@ -66,10 +65,6 @@ h1:hover, h2:hover {
 .animation svg path {
     fill: white;
     transition: fill 0.3s ease-in-out;
-}
-
-.animation svg:hover path {
-    /* fill: red; */
 }
 
 .image-container:hover .animation {
@@ -85,6 +80,7 @@ h1:hover, h2:hover {
     background: rgba(0,0,0,0.5);
     padding: 20px;
 }
+
 
 
 @media (min-width: 668px) {

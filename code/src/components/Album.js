@@ -13,6 +13,7 @@ export const Album = props => {
                 <img src={props.album.images[1].url} alt="">
                 </img>
                 <div className="animation">
+                    
                     <a href={props.album.external_urls.spotify}>
                     <Play />
                     </a>
