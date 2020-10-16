@@ -30,10 +30,12 @@ export const Music = (props) => {
 						{props.albumName}
 					</a>
 					<div className="artist-container">
-						{props.artistName.map((item) => {
+						{props.artistName.map((item, index, array) => {
 							return (
 								<Artist
 									key={item.id}
+									index={index}
+									array={array}
 									artistName={item.name}
 									artistUrl={item.external_urls.spotify}
 								/>
