@@ -11,7 +11,7 @@ body {
 .app__grid {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 5fr; /*repeat(auto-fit, 250px)*/
+  grid-template-columns: 1fr 4fr; /*repeat(auto-fit, 250px)*/
   grid-template-rows: repeat(auto-fill);
   grid-template-areas: 'aside' 'card';
   column-gap: 25px;
