@@ -1,14 +1,5 @@
-a {
-    text-decoration: none;
-    color: white;
-}
-
-h1{
-    font-size: 15px;
-}
-
-h2{
-    font-size: 10px;
+.albumList {
+    margin: 0 15px;
 }
 
 .wrapper{
@@ -18,72 +9,71 @@ h2{
     align-items: center;
     justify-content: center;
     margin: 10px;
-    
 }
 .album {
     width: 100%;
-    margin: 10px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.image-container{
+.image-container {
     width: 100%;
     align-items: center;
     position: relative;
 }
-.album img {
+
+.cover-img {
     width: 100%;
-    transition: .5s ease;
-    backface-visibility: hidden; /* Kan vi ta bort denna? */
 }
 
-.album img:hover {
-    opacity: 0.3;
-    cursor: pointer;
-}        
-        
-h1:hover, h2:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.animation{
+.icon-container {
     display: none;
 }
 
-.animation svg {
-    transition: all 1s ease-in-out;
-}
-
-.animation svg:hover {
-    transform: scale(1.2);
-}
-
-.animation svg path {
-    fill: white;
-    transition: fill 0.3s ease-in-out;
-}
-
-.image-container:hover .animation {
+.image-container:hover .icon-container {
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     position: absolute;
     color: white;
     top: 0;
     right: 0;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
 }
 
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.play-icon .icon {
+    width: 50px;
+    height: 50px;
+}
+
+.play-icon:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
+}
+
+h2:hover, h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
 
 
 @media (min-width: 668px) {
+
     .wrapper {
         flex-direction: row;
         width: 50%;
