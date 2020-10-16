@@ -10,11 +10,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* HEADER */
 .headermain {
   display: flex;
   font-family: Helvetica;
@@ -23,7 +24,6 @@ code {
   color: #ffffff;
   border-bottom: solid 1px gray;
 }
-
 header {
   display: flex;
   justify-content: flex-start;
@@ -32,72 +32,7 @@ header {
   margin-bottom: 10px;
 }
 
-.container {
-  display: inline-block;
-  position: relative;
-}
-
-.container img {
-  display: block;
-}
-
-.icons-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  width: 300px;
-}
-
-.icons {
-  width: 35px;
-  height: 35px;
-  fill: white;
-}
-
-/* albumsname and artistname */
-a {
-  text-decoration: none;
-}
-
-a .albumsname {
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #ffffff;
-  width: 300px;
-}
-
-.albumsname :hover {
-  text-decoration: underline;
-}
-
-a .artistname {
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #a0a0a0;
-  width: 300px;
-  text-decoration: none;
-}
-
-/* Add the comma after the first artist */
-/* .artistname::after {
-  content: ", ";
-} */
-
-.newartist:not(:last-child):after {
-  content: ",";
-}
-/* Remove the comma after the last artist
-.artistname:last-child::after {
-  content: "";
-} */
-
-a .artistname :hover {
-  text-decoration: underline;
-}
-
+/* ALBUM-CARD WITH THE IMAGE AND THE ICONS */
 .album-card {
   display: flex;
   flex-direction: column;
@@ -107,38 +42,124 @@ a .artistname :hover {
   width: 100%;
   padding: 5px 0;
 }
-.album-card:hover {
-  transition: all 0.8s ease;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-}
-
 .album-cover {
   width: 300px;
   height: 300px;
+}
+/* HOVER EFFECTS ON THE CARD */
+.container {
+  display: inline-block;
+  position: relative;
+}
+.container img {
+  display: block;
+}
+/* .container :hover {
+  filter: brightness(0.4);
+  opacity: 1;
+} */
+
+.album-card :hover .album-cover {
+  filter: brightness(0.4);
+  opacity: 1;
+}
+.album-card :hover .icons-wrapper {
+  display: flex;
+  width: 300px;
+}
+.album-card :hover {
+  text-decoration: underline;
+}
+/* ICONS PLAY, HEART AND DOT */
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 300px;
+  display: none;
+  fill: white;
+}
+.iconheart {
+  width: 20px;
+  height: 20px;
+}
+.iconplay {
+  width: 50px;
+  height: 50px;
+}
+.icondots {
+  width: 20px;
+  height: 20px;
+}
+/* ICONS HOVER EFFECT */
+
+.iconplay :hover {
+  width: 55px;
+  height: 55px;
+  transform: scale(1.2);
+  fill: white;
+}
+
+/*ALBUMS NAME AND ARTISTS NAME */
+a {
+  text-decoration: none;
+}
+.albumsname {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+  width: 300px;
+}
+.artistname {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  width: 300px;
+  text-decoration: none;
+}
+.artistname a:visited,
+a:link {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+.artistname a:hover {
+  text-decoration: underline;
+}
+/* ADD COMMAS AFTER THE ARTISTS NAMES IF THERE ARE MORE THAN ONE */
+.artistname::after {
+  content: ",";
+}
+.artistname:not(:last-child):after {
+  content: ",";
+}
+.artistname:last-child::after {
+  content: "";
 }
 
 @media (min-width: 768px) {
   header {
     margin-left: 27px;
   }
-
-  a .albumsname {
+  .albumsname {
     font-size: 10px;
     width: 300px;
   }
-
-  a .artistname {
+  .artistname {
     font-size: 10px;
     width: 300px;
   }
-
   .album-card {
     display: flex;
     width: 50%;
     margin-bottom: 10px;
   }
-
   .main {
     display: flex;
     flex-direction: row;
@@ -147,35 +168,35 @@ a .artistname :hover {
     align-items: center;
     flex-wrap: wrap;
   }
+  .icons-wrapper {
+    width: 300px;
+  }
 }
-
 @media (min-width: 1024px) {
   header {
     margin-left: 18px;
   }
-
   .album-card {
     display: flex;
     width: 25%;
     margin-bottom: 10px;
   }
-
   .album-cover {
     width: 250px;
     height: 250px;
   }
-
-  a .albumsname {
+  .albumsname {
     font-size: 12px;
     width: 250px;
   }
-
-  a .artistname {
+  .artistname {
     font-size: 12px;
     width: 250px;
   }
-
-  .icon-wrapper {
+  .icons-wrapper {
+    width: 250px;
+  }
+  .album-card :hover .icons-wrapper {
     width: 250px;
   }
 }

@@ -9,28 +9,26 @@ export const Albumcontainer = props => {
   console.log("We want album name:", props)
     return (
     <>
-    <a className="album-card" href={props.linkAlbum}>
+    <div className="album-card">
       <div className="container">
-        <img className="album-cover" src={props.image} alt="Album cover" ></img>
-        <div class="icons-wrapper">
-      <div className="icons"><Heart /></div>
-      <div className="icons"><Play /></div>
-      <div className="icons"><Dots /></div>
+        <a href={props.linkAlbum}>
+          <img className="album-cover" src={props.image} alt="Album cover" ></img>
+        </a>
+      <div class="icons-wrapper">
+      <div className="icons iconheart"><Heart /></div>
+      <div className="icons iconplay"><Play /></div>
+      <div className="icons icondots"><Dots /></div>
     </div>
       </div>
-      
+  
     <div className="albumsname">{props.name}</div>
-
-    <div>
-      {props.artists.map (artist => {return <Albumartistname
+<div> {props.artists.map (artist => {return <Albumartistname
       key={artist.id}
       name={artist.name}
       linkArtist={artist.external_urls.spotify}
       />
-      // artists.name.map(artist => artist.name).join(", ")
-    })}
+    })}</div>
     </div>
-    </a>
     </>
     );
   }
