@@ -1,4 +1,4 @@
-# Music Releases
+# Music Releases 
 
 Responsive site with new music releases built with react components and data from Spotify API. Built with web accessibility in mind.
 
@@ -16,3 +16,5 @@ Testing has been done in different browsers such as Edge, FireFox and Chrome in 
 ## View it live
 
 View the project live here: https://spotifymusicrelease.netlify.app/
+
+Created by Cornelia Ryås & Marjaana Tienaho
