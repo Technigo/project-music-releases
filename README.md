@@ -17,4 +17,4 @@ For the layout we applyed flexbox.
 We had some data to display which was stored in arrays and in order to do that we used the map function.
 
 ## View it live
-music-relises-website-johanna-liza.netlify.app
+https://music-releases-website-johanna-liza.netlify.app/
