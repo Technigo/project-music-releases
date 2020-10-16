@@ -7,7 +7,8 @@ import { AlbumList } from './components/AlbumList'
 console.log(data)
 
 export const App = () => {
-  return (<div>
+  return (
+    <div>
       <Header/>
       <AlbumList/>
     </div>
