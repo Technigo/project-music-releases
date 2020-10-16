@@ -15,11 +15,11 @@ export const AlbumDiv = () => {
                 artist={album.artists.map(artist => { // Mapping through the artist array for when having several artists
                     return (
                     <a 
-                    key={artist.external_urls.spotify} 
-                    href={artist.external_urls.spotify} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="artists-links">
+                        key={artist.external_urls.spotify} 
+                        href={artist.external_urls.spotify} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="artists-links">
                         <span key={artist.name} className="artist-name">{artist.name}</span>
                     </a>
                     )

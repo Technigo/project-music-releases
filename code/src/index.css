@@ -33,6 +33,7 @@
   .album-name {
     color: #ffffff;
   }
+
   /* Container for all albums */
   .site-container {
     width: 85%;
@@ -55,26 +56,31 @@
     padding-top: 6px;
     margin: 6px 0;
   }
-
-   .artist-name {
+  
+  .artist-name {
     color: #a0a0a0;
     font-size: 14px;
     padding-top: 4px;
     margin: 0;
   }
-
-  .album-name:hover, 
+  
+  .album-name:hover,
   .artist-name:hover {
     text-decoration-line: underline;
     -webkit-text-decoration-line: underline;
   }
 
-  /* Adds a comma on right place + styling of it  */
-  .artists-links:not(:last-child)::after {
+  /* Adds a comma and &-sign on right place + styling of it  */
+    .artists-links:not(:last-child):not(:nth-last-child(2))::after {
     content: ', ';
     color: #a0a0a0;
   }
-
+  
+  .artists-links:not(:first-child):last-child::before {
+    content: ' & ';
+    color: #a0a0a0;
+  }
+  
   .album-card {
     width: 100%;
     display: flex;
@@ -138,22 +144,21 @@
   }
 
   /* Media queries*/
-  @media (min-width: 668px) {
-    /* Tablet device */
-    .album-container { /*Wrapping on rows instead*/
+  @media (min-width: 668px) { /* Tablet device */
+    .album-container {
+      /*Wrapping on rows instead*/
       flex-direction: row;
       flex-wrap: wrap;
     }
 
     .album-card {
       width: 40%;
-      height: 350px; 
+      height: 350px;
     }
   }
   
-  @media (min-width: 1024px) {
-    /* Desktop device */
-       .album-card {
+  @media (min-width: 1024px) { /* Desktop device */
+    .album-card {
       width: 21%;
     }
   }
