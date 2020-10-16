@@ -12,6 +12,9 @@
   justify-content: center;
   width: 100%;
 }
+.side-playlist h1 {
+  font-size: 15px;
+}
 /* MEDIA QUERIES */
 @media (max-width: 667px) {
   .app-data {

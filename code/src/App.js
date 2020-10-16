@@ -10,6 +10,7 @@ export const App = () => {
   return (
     <div className="app">
       <section className="side-playlist">
+        <h1>Popular Spotify playlists</h1>
         {playlistdata.playlists.items.map(item => {
           return (
             <Playlist key={item.id} item={item} />
