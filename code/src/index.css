@@ -57,6 +57,7 @@ a {
 
 .album-image-container:hover .icon-container {
 	display: flex;
+	opacity: 0.5;
 }
 
 .icon-container {
@@ -88,6 +89,7 @@ a {
 
 .play-button:hover {
 	transform: scale(1.5);
+	opacity: 1;
 }
 
 .album-name {

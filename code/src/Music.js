@@ -29,15 +29,17 @@ export const Music = (props) => {
 					<a className="album-name" href={props.albumUrl}>
 						{props.albumName}
 					</a>
-					{props.artistName.map((item) => {
-						return (
-							<Artist
-								key={item.id}
-								artistName={item.name}
-								artistUrl={item.external_urls.spotify}
-							/>
-						);
-					})}
+					<div className="artist-container">
+						{props.artistName.map((item) => {
+							return (
+								<Artist
+									key={item.id}
+									artistName={item.name}
+									artistUrl={item.external_urls.spotify}
+								/>
+							);
+						})}
+					</div>
 				</div>
 			</section>
 		</>

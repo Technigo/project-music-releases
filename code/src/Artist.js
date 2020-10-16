@@ -3,7 +3,6 @@ import React from 'react';
 export const Artist = (props) => {
 	return (
 		<span>
-			<a href={props.albumUrl}>{props.albumName}</a>
 			<a
 				className="artist-name"
 				href={props.artistUrl}
