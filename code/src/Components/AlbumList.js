@@ -32,7 +32,6 @@ const AlbumList = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="artist-name--link"
-                      key={album.id}
                     >
                       {artist.name}
                     </a>
