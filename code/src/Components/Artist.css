@@ -10,7 +10,7 @@
 	text-decoration: underline;
 }
 
-.artist-title:nth-of-type(n + 2)::before {
+.artist-title:nth-of-type(n)::before {
 	content: ', ';
 	margin: 0px;
 }
