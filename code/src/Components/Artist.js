@@ -1,12 +1,13 @@
 import React from 'react';
 
-// console.log(data)
-
 const Artist = (props) => {
   return (
-    <a href={props.url}>
-      <p className="artist-name">{props.names}</p>
-    </a>
-)}
+    <>
+      {/* p-tag with prop containing all available 
+      artists for each album */}
+      <p className="artist-name">{props.names} </p>
+    </>
+  );
+};
 
-export default Artist
+export default Artist;
