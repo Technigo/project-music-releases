@@ -11,9 +11,9 @@ body {
 .app__grid {
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 4fr; /*repeat(auto-fit, 250px)*/
+  grid-template-columns: 1fr 2fr 2fr;
   grid-template-rows: repeat(auto-fill);
-  grid-template-areas: 'aside' 'card';
+  grid-template-areas: 'albums' 'singles' 'aside';
   column-gap: 25px;
   row-gap: 50px;
   justify-content: center;
@@ -23,14 +23,53 @@ body {
   margin-top: 0;
 }
 
+.app__singles-grid {
+  display: grid;
+  grid-area: 'singles';
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(min-content);
+}
+
+.app__album-grid {
+  display: grid;
+  grid-area: 'albums';
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(min-content);
+}
+
+.heading-two {
+  grid-row: 1;
+}
+
 @media (min-width: 768px) {
   .app__grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .app__singles-grid {
+    grid-column: 2/3;
+  }
+
+  .app__album-grid {
+    grid-column: 3/5;
+  }
+
 }
 
 @media (min-width: 1024px) {
   .app__grid {
-    grid-template-columns: 1fr repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
+  .heading-two {
+    grid-column: span 2;
+  }
+  .app__singles-grid {
+    grid-column: 2/4;
+    grid-template-columns: 1fr 1fr;
+  }
+  .app__album-grid {
+    grid-column: 4/7;
+    grid-template-columns: 1fr 1fr;
+  }
+
 }

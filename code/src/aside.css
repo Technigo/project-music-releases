@@ -1,4 +1,12 @@
 .aside {
+    display: grid;
     grid-area: 'aside';
     grid-row: repeat(mincontent);
+    grid-template-columns: 1fr;
+  }
+
+@media (min-width:768px) {
+    .aside {
+        grid-column: 1/3;
+    }
 }

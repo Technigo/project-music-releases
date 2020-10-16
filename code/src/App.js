@@ -14,24 +14,22 @@ export const App = () => {
   return (
     <>
       <h1 className="app__header">New albums {'&'} singles</h1>
+      <main className="app__grid">
       <aside>
         <Aside />
       </aside>
-      <main className="app__grid">
-        <div className="app__grid">
-          <section>
-            <h2>Singles</h2>
+          <section className="app__singles-grid">
+            <h2 className="heading-two">Singles</h2>
             {singleArray.map(album => {
               return <Card key={album.name} album={album} />;
             })}
           </section>
-          <section>
-            <h2>Albums</h2>
+          <section className="app__album-grid">
+            <h2 className="heading-two">Albums</h2>
             {albumArray.map(album => {
               return <Card key={album.name} album={album} />;
             })}
           </section>
-        </div>
       </main>
     </>
   );
