@@ -1,4 +1,4 @@
-.artistTitle {
+.artist-title {
   font-size: 14px;
   font-weight: bold;
   font-family: Helvetica;
@@ -6,16 +6,16 @@
   text-decoration: none;
   margin-top: 3px;
 }
-.artistTitle:hover {
+.artist-title:hover {
   letter-spacing: 0.5px;
 }
 
 /* Reference for this property: https://stackoverflow.com/questions/7788018/css-selector-for-other-than-the-first-child-and-last-child/7788037 */
-.artistTitle:not(:last-child):after {
+.artist-title:not(:last-child):after {
   content: ", ";
 }
 @media (min-width: 668px) and (max-width: 1024px) {
-  .artistTitle {
+  .artist-title {
     font-size: 18px;
   }
 }

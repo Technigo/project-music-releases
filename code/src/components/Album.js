@@ -5,16 +5,16 @@ import { Icons } from "./Icons";
 
 export const Album = (props) => {
     return (
-        <div className="albumContainer">
-            <div className="albumWrapper">
-                <img src={props.item.images[1].url} alt="album cover" className="albumCover" />
+        <div className="album-container">
+            <div className="album-wrapper">
+                <img src={props.item.images[1].url} alt="album cover" className="album-cover" />
                 <Icons />
             </div>
             <div>
-                <a className="albumTitle" href={props.item.external_urls.spotify}>{props.item.name}</a>
+                <a className="album-title" href={props.item.external_urls.spotify}>{props.item.name}</a>
             </div>
 
-            <div className="artistTitle">
+            <div className="artist-title">
                 {props.item.artists.map(item => {
                     return (
                         < Artist key={item.id} item={item} />

@@ -3,19 +3,19 @@
   padding: 5px;
   max-width: 1250px;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.appData {
+.app-data {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
 }
 /* MEDIA QUERIES */
 @media (max-width: 667px) {
-  .appData {
+  .app-data {
     padding: 15px;
   }
   .app {
@@ -23,7 +23,7 @@
   }
 }
 @media (min-width: 668px) and (max-width: 1024px) {
-  .appData {
+  .app-data {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

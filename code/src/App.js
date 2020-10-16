@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <div className="app">
       < Header />
-      <div className="appData">
+      <div className="app-data">
         {data.albums.items.map(item => {
           return (
             <Album key={item.id} item={item} />

@@ -1,29 +1,30 @@
-.playIcon {
+.play-icon {
   width: 50px;
   color: white;
   filter: invert(0.8);
 }
-.playIcon:hover {
+.play-icon:hover {
   cursor: pointer;
   filter: invert(1.2);
   transform: scale(1.2);
+  opacity: 1;
   transition: 0.3s ease-in-out;
 }
-.heartIcon {
+.heart-icon {
   width: 30px;
   color: white;
   filter: invert(0.8);
 }
-.heartIcon:hover {
+.heart-icon:hover {
   cursor: pointer;
   filter: invert(1);
 }
-.dotsIcon {
+.dots-icon {
   width: 30px;
   color: white;
   filter: invert(0.8);
 }
-.dotsIcon:hover {
+.dots-icon:hover {
   cursor: pointer;
   filter: invert(1);
 }
