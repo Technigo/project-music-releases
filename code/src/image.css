@@ -1,9 +1,14 @@
-.album-cover {
+.image__container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.album-cover img {
+.image {
   width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .overlay {
@@ -14,6 +19,9 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
-.album-cover:hover .overlay {
+.image__container:hover .overlay {
   display: block;
+}
+.image__container:hover .icon__container {
+  display: flex;
 }

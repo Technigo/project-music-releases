@@ -6,11 +6,7 @@ import './artist.css';
 const Artist = props => {
   if (props.index === 0) {
     return (
-      <a
-        className="artist__name"
-        /* key={artist.id} */
-        href={props.artistURL}
-      >
+      <a className="artist__name" href={props.artistURL}>
         {props.artistName}
       </a>
     );
@@ -22,7 +18,7 @@ const Artist = props => {
         /* key={artist.id} */
         href={props.artistURL}
       >
-        {' & ' + props.artistName}
+        {'\u00A0 ' + ' & ' + props.artistName}
       </a>
     );
   } else {
@@ -33,7 +29,7 @@ const Artist = props => {
         /* key={artist.id} */
         href={props.artistURL}
       >
-        {', ' + props.artistName}
+        {', ' + props.artistName + ' '}
       </a>
     );
   }

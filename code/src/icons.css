@@ -2,21 +2,7 @@
   display: none;
   width: 100%;
   position: absolute;
-  align-items: center;
-  top: 0;
-  right: 0;
-  margin: 0;
-  /* position: absolute;
-  display: flex;
-  justify-content: space-evenly;
-  top: 45%;
-  left: 25%;
-  width: 50%;
-  z-index: 2; */
-}
-
-.icon__container:hover {
-  display: flex;
+  justify-content: center;
 }
 
 .icon {
