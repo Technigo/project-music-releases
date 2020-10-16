@@ -5,18 +5,7 @@ import { App } from './App'
 
 
 
-// const App = () => { 
-    
-//     return (
-//     <>
 
-//     <Header />
-//     <Album />
-
-//     </>
-
-//     );
-// }
 
 ReactDOM.render(<App />, document.getElementById('root'))
 

@@ -1,2 +1,48 @@
 
+body {
+    background-color: black;
+    color: white;
+}
 
+/* god to know play.svg, svg is a tag you can style */
+
+/* icons:hover {
+  z-index: 1;
+  top:115px;
+  left:50px;
+  position: absolute;
+  filter: brightness(100%)
+} */
+
+ .album-container {
+    max-width: 1200px;
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    grid-gap: 1rem; 
+    position: relative;
+    background-size: cover;
+    min-height: 50vh;
+    padding: 20px;
+    margin: 0 auto;
+  }   
+  
+  /* .album-cards {
+  
+  }
+   */
+  
+   
+  @media (min-width: 668px) {
+    .album-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       /* Få till snyggar övergång? */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+  .album-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    }
+  } 

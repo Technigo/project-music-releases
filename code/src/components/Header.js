@@ -1,2 +1,11 @@
+import React from 'react'
+import './header.css'
 
-// Rubrik: New albums and singles, ska denna h1 kodas eller hämtas från datan?
+
+export const Header = () => {
+
+return( <header className='main-heading'>New albums and singles</header>
+
+)
+
+}
