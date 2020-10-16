@@ -11,7 +11,8 @@ export const App = () => {
       <section className="album-container">
         {data.albums.items.map((album) => {
           return (
-            <Album key = {album.id}
+            <Album 
+            key = {album.id}
             albumTitle = {album.name}
             image = {album.images[0].url}
             artists = {album.artists}

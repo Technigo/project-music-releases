@@ -26,7 +26,8 @@ export const Album = (props) => {
             <div>
               {props.artists.map((artist) => {
                 return (
-                <a key={artist.id}
+                <a
+                  key={artist.id}
                   className="artists-names"
                   href={artist.external_urls.spotify} 
                   target="_blank"
