@@ -13,18 +13,21 @@ import { Artist } from './Artist';
         <p className="album-name">
          <a className="album-name" href={props.albumUrl} target="_blank">{props.name}</a> 
         </p>
-        
+        <div className="artist-box">
         {
-          props.artists.map(artist => {
+          props.artists.map((artist, index) => {
             return (
               <Artist 
-              key = {artist.name}
-              artistName = {artist.name}
-              artistUrl = {artist.external_urls.spotify}
+                index = {index} 
+                length = {props.artists.length}
+                key = {artist.name}
+                artistName = {artist.name}
+                artistUrl = {artist.external_urls.spotify}
               />
             )
           })
         }
+        </div>
       </article>
     </>
     );

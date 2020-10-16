@@ -48,7 +48,7 @@ code {
   justify-content: center;
 }
 
-.artist-name a {
+/*.artist-name a {
   color: #a0a0a0;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +57,7 @@ code {
 
 .artist-name :hover {
   text-decoration: underline;
-}
+} MOVING TO ARTIST.CSS*/
 
 .album-name a {
   color: #ffffff;
@@ -73,18 +73,6 @@ p {
 /*
 tablet width of 40 %
 desktop width of 100%*/
-
-@media (min-width: 768px) {
-  .album-container {
-    width: 40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .album-container {
-    width: 23%;
-  }
-}
 
 .image-container {
   position: relative;
@@ -161,4 +149,16 @@ desktop width of 100%*/
 .artist-name:hover {
   text-decoration: underline;
   transition: 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  .album-container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-container {
+    width: 23%;
+  }
 }
