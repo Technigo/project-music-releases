@@ -8,7 +8,7 @@ export const App = () => {
   return (
     <>
       <Header />
-      <div className="album-container">
+      <section className="album-container">
         {data.albums.items.map((album) => {
           return (
             <Album key = {album.id}
@@ -19,7 +19,7 @@ export const App = () => {
             />
            )
         })}
-      </div>
+      </section>
     </>
   )
 }
