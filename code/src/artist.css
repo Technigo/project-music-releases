@@ -14,26 +14,3 @@
   color: #fff;
   text-decoration: underline;
 }
-/* 
-.artist-name::after {
-  content: ', ';
-}
-
-.artist-name:last-child::after {
-  content: ' &';
-}
- */
-/* .artist-name:nth-of-type(n + 2)::before {
-  content: ', ';
-  margin: 0px;
-}
-
-.artist-name:last-of-type::before {
-  content: '& ';
-  margin-left: 4px;
-}
-
-.artist-name:first-of-type::before {
-  content: '';
-  margin: 0px;
-} */
