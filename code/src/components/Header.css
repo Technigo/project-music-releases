@@ -1,8 +1,12 @@
 h1{
     color: #fff;
-    font-size: 40px;
+    font-size: 20px;
     font-family: helvetica;
     margin-left: 20px;
+}
+
+header {
+    border-bottom: #25282b 1px solid;
 }
 
 @media (min-width: 678px) {
