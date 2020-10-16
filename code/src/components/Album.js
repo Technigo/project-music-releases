@@ -32,7 +32,7 @@ export const Album = (props) => {
                   target="_blank"
                   rel="noopener noreferrer">
                   {artist.name} 
-                  </a>
+                </a>
                 )  
                 })}
             </div> 
