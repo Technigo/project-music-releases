@@ -8,7 +8,6 @@ const Artist = props => {
     return (
       <a
         className="artist__name"
-        /* key={artist.id} */
         href={props.artistURL}
       >
         {props.artistName}
@@ -19,7 +18,6 @@ const Artist = props => {
     return (
       <a
         className="artist__name"
-        /* key={artist.id} */
         href={props.artistURL}
       >
         {' & ' + props.artistName}
@@ -30,7 +28,6 @@ const Artist = props => {
     return (
       <a
         className="artist__name"
-        /* key={artist.id} */
         href={props.artistURL}
       >
         {', ' + props.artistName}
