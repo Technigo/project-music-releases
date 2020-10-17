@@ -19,8 +19,12 @@
   justify-content: center;
 }
 
-.aside__image {
+.aside__image-container {
   width: 100%;
+}
+
+.aside__image {
+  width: 70%;
   object-fit: contain;
 }
 
