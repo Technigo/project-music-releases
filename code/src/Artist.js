@@ -16,7 +16,7 @@ export const Artist = (props) => {
           } else {
             console.log("else")
             return (
-              <a className="artist-name" href={props.artistUrl} target="_blank">{ ', ' + props.artistName}</a>
+              <a className="artist-name" href={props.artistUrl}>{ ', ' + props.artistName}</a>
             )
           }
           
