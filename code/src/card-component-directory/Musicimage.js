@@ -4,7 +4,7 @@ import { ReactComponent as PlayIcon } from './icons/play.svg';
 import { ReactComponent as DotIcon } from './icons/dots.svg';
 
 
-// Component for the music item which will house the album image and icons
+/*Component for the music item which will house the album image and icons */
 export const MusicImage = (prop) => {
     return (
         <div className="image-container">
@@ -19,5 +19,9 @@ export const MusicImage = (prop) => {
         </div>  
     );
 };
+
+/* Above we're setting the jsx element structure for the information we collect from the 
+items array. In the img tag you can see that we're accessing the image prop that we defined 
+in the previous MusicCard component and accessing the image whcich has an index of 1 and it's url */
 
 
