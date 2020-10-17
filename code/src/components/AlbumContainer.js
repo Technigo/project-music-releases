@@ -17,6 +17,8 @@ return (
                     title={album.name} 
                     artists={album.artists}
                     image={album.images[1].url}
+                    coverLink={album.external_urls.spotify}
+                    artistLink={album.external_urls.href}
                 />
             )
         })}
