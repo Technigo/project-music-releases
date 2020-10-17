@@ -48,7 +48,7 @@ code {
   justify-content: center;
 }
 
-/*.artist-name a {
+.artist-name a {
   color: #a0a0a0;
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +57,11 @@ code {
 
 .artist-name :hover {
   text-decoration: underline;
-} MOVING TO ARTIST.CSS*/
+}
+
+.artist-box {
+  display: flex;
+}
 
 .album-name a {
   color: #ffffff;
@@ -69,10 +73,6 @@ code {
 p {
   margin: 0;
 }
-
-/*
-tablet width of 40 %
-desktop width of 100%*/
 
 .image-container {
   position: relative;

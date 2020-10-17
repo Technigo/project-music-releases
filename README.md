@@ -1,12 +1,21 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Technigo boot camp week 9 - Pair-programming project
+This weeks assignment was to to build a music release site using a data response from the Spotify API.
+The site was to be built using React components, and needed to be responsive (desktop, tablet and mobile).
 
-## The problem
+## What we learned
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Basic theory of React.
+How to structure a HTML site using React components and JSX.
+How to use props to implement our data.
+
+## Tech
+
+JSX
+React
+CSS
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Created by Jamie and Tara - https://jt-music.netlify.app/
