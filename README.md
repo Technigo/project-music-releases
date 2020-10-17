@@ -6,9 +6,9 @@ The site was to be built using React components, and needed to be responsive (de
 
 ## What we learned
 
-Basic theory of React.
-How to structure a HTML site using React components and JSX.
-How to use props to implement our data.
+1. Basic theory of React.
+2. How to structure a HTML site using React components and JSX.
+3. How to use props to implement our data.
 
 ## Tech
 
