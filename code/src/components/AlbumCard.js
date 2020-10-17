@@ -4,14 +4,6 @@ import { ReactComponent as Heart } from "./Icons/Heart.svg";
 import { ReactComponent as Play } from "./Icons/Play.svg";
 import { ReactComponent as Dot } from "./Icons/Dots.svg";
 
-{
-  /* <div className="image-container">
-        <a href={props.coverLink} target="_blank">
-        <img src={props.image} alt="Album cover"/>
-        </a>
-      
-      </div> */
-}
 
 export const AlbumCard = (props) => {
   const { title, artists, image, coverLink } = props;
@@ -42,16 +34,3 @@ export const AlbumCard = (props) => {
     </article>
   );
 };
-
-// {props.artists.map((artist, index, artists) => {
-//   return <Artist key={artist.id} name={artist.name} link={artist.external_urls.spotify} index={index} artists={artists} />
-// })}
-
-// {artists.map(artist => {
-//   return <div key={artist.name}>
-//    <a href={props.artistLink} target="_blank">{artist.name}</a>
-//    </div>
-// })}
-// </article>
-// )
-// }
