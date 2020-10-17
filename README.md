@@ -1,4 +1,4 @@
-# The project: Music Release webpage 🎵
+# Project Music Releases 🎵
 The aim of this project was to work in a pair to create a music release page in React using components based on the object information from the Spotify API. 
 We had to follow a specific design template and make the page responsive for mobile, tablet and desktop. 
 
