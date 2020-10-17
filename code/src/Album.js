@@ -11,7 +11,7 @@ import { Artist } from './Artist';
           <MusicIcons />
         </div>
         <p className="album-name">
-         <a className="album-name" href={props.albumUrl} target="_blank">{props.name}</a> 
+         <a className="album-name" href={props.albumUrl}>{props.name}</a> 
         </p>
         <div className="artist-box">
         {
