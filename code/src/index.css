@@ -52,12 +52,11 @@ a {
 }
 
 .album-image-container:hover img {
-	opacity: 0.5;
+	filter: brightness(50%);
 }
 
 .album-image-container:hover .icon-container {
 	display: flex;
-	opacity: 0.5;
 }
 
 .icon-container {
@@ -69,22 +68,26 @@ a {
 	justify-content: center;
 	align-items: center;
 	display: none;
+	z-index: 1;
 }
 
 .heart-button {
 	width: 30px;
 	margin: 20px;
+	opacity: 0.5;
 }
 
 .play-button {
 	width: 60px;
 	height: auto;
 	margin: 20px;
+	opacity: 0.5;
 }
 
 .dot-button {
 	width: 30px;
 	margin: 20px;
+	opacity: 0.5;
 }
 
 .play-button:hover {
