@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-
+import { Header } from './Header';
 import { Footer } from './Footer';
 import { Singles } from './Singles';
 import { Artist } from './Artist';
@@ -11,6 +11,7 @@ export const App = () => {
 
 	return (
 		<>
+			<Header />
 			<main>
 				<section className="main-section">
 					<h1>New singles</h1>
