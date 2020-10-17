@@ -12,22 +12,20 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  column-gap: 25px;
+  column-gap: 35px;
   row-gap: 50px;
   justify-content: center;
 }
 
-.app__grid--single {
+.app__item {
   display: grid;
   grid-template-columns: 1fr;
   grid-column: 2/3;
   grid-row: 1;
+  gap: 25px;
 }
 
-.app__grid--album {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column: 2/3;
+.app__item--album {
   grid-row: 2;
 }
 
@@ -39,22 +37,34 @@ body {
 .app__subheader {
   font-size: 18px;
   border-bottom: 1px solid #a0a0a0;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
-  .app__grid--single {
+  .app__grid {
+    grid-template-columns: 1fr 3fr;
+    column-gap: 35px;
+  }
+
+  .app__item {
     grid-template-columns: 1fr 1fr;
   }
-  .app__grid--album {
-    grid-template-columns: 1fr 1fr;
+
+  .app__subheader {
+    grid-column: 1/3;
   }
 }
 
 @media (min-width: 1024px) {
-  .app__grid--single {
-    grid-template-columns: repeat(4, 1fr);
+  .app__grid {
+    grid-template-columns: 1fr 4fr;
   }
-  .app__grid--album {
-    grid-template-columns: repeat(4, 1fr);
+
+  .app__item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .app__subheader {
+    grid-column: 1/4;
   }
 }

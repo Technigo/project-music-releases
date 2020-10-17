@@ -1,24 +1,30 @@
 .aside {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 60px;
 }
 
-.aside__playlist-wrapper img {
+.aside__header {
+  font-size: 16px;
+}
+
+.aside__section {
+  margin: 25px 0;
+}
+
+.aside__link {
+  display: flex;
+  justify-content: center;
+}
+.aside__image {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .app__aside {
-    grid-column: 1;
-    grid-row: 1 repeat(min-content);
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .aside__playlist-wrapper {
-    grid-column-start: 2;
-  }
-  .aside__playlist-wrapper img {
-    width: 50%;
+  .aside__image {
+    width: 80%;
   }
 }
 

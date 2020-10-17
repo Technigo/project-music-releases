@@ -15,7 +15,7 @@ export const App = () => {
       <h1 className="app__header">New albums {'&'} singles</h1>
       <main className="app__grid">
         <aside className="aside">
-          <h2 className="app__subheader">Editor's Pick</h2>
+          <h2 className="aside__header">Editor's Pick</h2>
           {playlistArray.map(playlist => {
             return (
               <Aside
@@ -28,14 +28,14 @@ export const App = () => {
           })}
         </aside>
 
-        <section className="app__grid--single">
+        <section className="app__item">
           <h2 className="app__subheader">Singles</h2>
           {singleArray.map(album => {
             return <Card key={album.name} album={album} />;
           })}
         </section>
 
-        <section className="app__grid--album">
+        <section className="app__item app__item--album">
           <h2 className="app__subheader">Albums</h2>
           {albumArray.map(album => {
             return <Card key={album.name} album={album} />;

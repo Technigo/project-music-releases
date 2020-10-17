@@ -2,7 +2,7 @@
   display: none;
   width: 100%;
   position: absolute;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .icon {
@@ -17,6 +17,7 @@
   opacity: 0.7;
   width: 55px;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .icon__overlay:hover {

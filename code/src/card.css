@@ -1,5 +1,11 @@
 .card {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    align-items: unset;
+  }
 }
