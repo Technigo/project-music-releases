@@ -21,6 +21,7 @@
 .image__container:hover .overlay {
   display: block;
 }
+
 .image__container:hover .icon__container {
   display: flex;
 }

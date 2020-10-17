@@ -18,9 +18,10 @@
   display: flex;
   justify-content: center;
 }
+
 .aside__image {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
