@@ -4,15 +4,48 @@ body {
     color: white;
 }
 
-/* god to know play.svg, svg is a tag you can style */
-
-/* icons:hover {
-  z-index: 1;
-  top:115px;
-  left:50px;
-  position: absolute;
-  filter: brightness(100%)
+/* img{
+  opacity: 0.2;
+  transition: all .3s ease-in-out;
+ 
 } */
+
+
+a {
+  color: white;
+  text-decoration: none;
+
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.album-cards {
+  position: relative;
+}
+.image-container {
+  position: relative;
+}
+.icons {
+  position: absolute;
+  z-index: 5;
+  width: 50%;
+  fill: black;
+  display: flex;
+  justify-content: space-between;
+  top: 40%;
+  left: 30%;
+}
+.heart, .dot {
+  width: 30px;
+}
+.play {
+  width: 60px;
+}
+.play:hover {
+  opacity: 20%;
+}
 
  .album-container {
     max-width: 1200px;
@@ -26,11 +59,7 @@ body {
     margin: 0 auto;
   }   
   
-  /* .album-cards {
-  
-  }
-   */
-  
+
    
   @media (min-width: 668px) {
     .album-container {
