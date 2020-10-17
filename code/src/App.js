@@ -14,7 +14,7 @@ export const App = () => {
 			<Header />
 			<main>
 				<section className="main-section">
-					<h1>New singles</h1>
+					<h2>New singles</h2>
 					{data.albums.items.map((item) => (
 						<Singles
 							key={item.id}
@@ -27,7 +27,7 @@ export const App = () => {
 						/>
 					))}
 				</section>
-				<h1>New albums</h1>
+				<h2>New albums</h2>
 				<section className="main-section">
 					{data.albums.items.map((item) => (
 						<Albums
