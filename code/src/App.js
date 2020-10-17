@@ -10,7 +10,8 @@ export const App = () => {
       <header>
         <h1>New albums & singles</h1>
       </header>
-      {/* Below accessing the items array that's inside the album object and sending it as the prop albums to Musiclist */}
+      {/* Below accessing the items array that's inside the album object and sending it 
+      as the prop items_array to Musiclist */}
       <MusicList item_array={data.albums.items} /> 
     </main>
   );
