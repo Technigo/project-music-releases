@@ -96,18 +96,17 @@ a {
   text-decoration: none;
 }
 
-.album-name {
-  color: white;
+h4 {
+  margin: 10px 0 0;
   font-size: 14px;
-  margin-bottom: 0;
-  padding-bottom: 5px;
 }
 
-.artist-name {
+.album-name {
+  color: white;
+}
+
+.artist-name, .separator {
   color: #a0a0a0;
-  font-size: 14px;
-  margin-top: 10px;
-  padding-bottom: 5px;
 }
 
 .album-name:hover, .artist-name:hover {
