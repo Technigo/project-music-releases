@@ -8,15 +8,18 @@ import { MusicArtist} from './card-component-directory/MusicArtist';
 export const MusicCard = (prop) => {
     return (
         <div className="music-card-container">
-            {/* Here we're only creating one album, accessing the array information for each of the elements inside the 
-            card which will then be able to be accessed in their respective component files e.g MusicImage,
-            MusicAlbum and MusicArtist to then further specify which part of these we want to use in that
-            component folder */}
             <MusicImage image={prop.item.images}/>
             <MusicAlbum albumname={prop.item.name} albumlink={prop.item.external_urls}/>
-            <MusicArtist artistsname={prop.item.artists}/>
+            <MusicArtist artists={prop.item.artists}/>
         </div>       
     );
 };
+    /* Here we're only creating one template card for each of the 50 artists */
+
+    /* In each of the componenet paths above we're accessing, via the prop, the item prop we 
+    defined in the previous component. This is in essence the items array and from that we 
+    are accessing the object properties that we want to filter further in the specific components MusicImage,
+    MusicAlbum and MusicArtist. We're then putting these in to new props to the be accessed in the next component
+    cards */
 
 
