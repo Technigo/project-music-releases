@@ -19,9 +19,8 @@
   justify-content: center;
 }
 .aside__image {
-  width: 70%;
-  height: auto;
-  padding: 10px;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
