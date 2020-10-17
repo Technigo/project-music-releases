@@ -27,11 +27,16 @@ a:hover{
 .image-container {
   position: relative;
 }
+
+.image-container:hover {
+  opacity: 40%;
+}
+
 .icons {
   position: absolute;
   z-index: 5;
   width: 50%;
-  fill: black;
+  fill: white;
   display: flex;
   justify-content: space-between;
   top: 40%;
@@ -42,9 +47,10 @@ a:hover{
 }
 .play {
   width: 60px;
+  transition: .4s ease;
 }
 .play:hover {
-  opacity: 20%;
+  transform: scale(1.3);
 }
 
  .album-container {
