@@ -27,8 +27,3 @@
     width: 80%;
   }
 }
-
-@media (min-width: 1024px) {
-  .app__aside {
-  }
-}
