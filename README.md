@@ -1,12 +1,15 @@
-# Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# Music Releases
+
+This project was to use React components to build a page which shows new album and single releases by extracting spotify API data.
+Focus was to learn how to write React components, use .map to iterate over arrays and use props to to feed information to components.
+this was done as a par-programming project.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We struggled quite a bit with getting album cover img to show on the website and how we were gonna structure the code.
+It took a lot of trial and error to make it work.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://suspicious-fermi-63bd8e.netlify.app/
