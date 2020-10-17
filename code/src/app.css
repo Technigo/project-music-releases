@@ -61,10 +61,10 @@ body {
   }
 
   .app__item {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .app__subheader {
-    grid-column: 1/4;
+    grid-column: 1/5;
   }
 }
