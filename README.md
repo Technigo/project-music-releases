@@ -11,5 +11,11 @@ We did the red level, and that was what we aimed for.
 
 If we had more time we would like to dig deeper into the problems we encountered.
 
+## Known errors
+There are 2 bugs on mobile view on iPhone:
+- On Safari, the hover effect does not work.
+- On Firefox there is a white line appearing in the right corner on hover effect on the albums.
+On Android we don't get these errors.
+
 ## View it live
 https://music-releases-site-hanna-johanna.netlify.app/
