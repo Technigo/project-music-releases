@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project was to create a music listing site, similar to the New Releases section on Spotify – but this week we were introduced to React.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started by going through the brief to make sure we understood what was required from us. After that we took the knowledge we'd gotten from the tutorials and video lectures, and managed to extract the data and put it into React components. Once that was done (we struggled with the multiple artists part), we went on to styling, to make sure it looks like the reference designs. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The page can be viewed here: https://spotifake.netlify.app/
