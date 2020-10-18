@@ -3,7 +3,7 @@ import data from './data.json';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Singles } from './Singles';
-import { Artist } from './Artist';
+
 import { Albums } from './Albums';
 import { AsidePlaylists } from './AsidePlaylists';
 import stretchGoal from './stretch-goal.json';
