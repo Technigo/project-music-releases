@@ -10,4 +10,4 @@ smoothly. We decided that we wanted to divide the content on the page and sort t
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://zen-franklin-39903e.netlify.app/
