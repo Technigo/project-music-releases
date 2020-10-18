@@ -67,7 +67,6 @@ a:hover {
   .album-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Få till snyggar övergång? */
   }
 }
 

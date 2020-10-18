@@ -3,9 +3,6 @@ import data from "./data.json";
 import "./app.css";
 import { Header } from "./components/Header";
 import { AlbumContainer } from "./components/AlbumContainer";
-import { AlbumCard } from "./components/AlbumCard";
-
-console.log(data);
 
 export const App = () => {
   return (

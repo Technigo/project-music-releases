@@ -1,9 +1,10 @@
 import React from "react";
 import { AlbumCard } from "./AlbumCard";
 
+
 export const AlbumContainer = (props) => {
   const { albums } = props;
-  console.log("albums", albums);
+ 
 
   return (
     <article className="album-container">
