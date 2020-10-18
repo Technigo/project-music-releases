@@ -137,17 +137,8 @@ a:hover {
   margin: 5px 0 30px 0;
 }
 
-.artist-name--link {
+.artist-text {
   color: #a0a0a0;
-}
-
-.artist-name--link:hover {
-  color: #fff;
-  border-bottom: 2px solid #fff;
-}
-
-.last-child-comma:last-child {
-  display: none;
 }
 
 /* Playlist */
