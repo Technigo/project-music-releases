@@ -41,6 +41,7 @@ export const Header = () => {
 					</DropdownMenu>
 				</Dropdown>
 			</div>
+			<MockifyIcon className="mockify-icon-desktop" />
 			<div className="header-text-container">
 				<h1>Mockify</h1>
 			</div>

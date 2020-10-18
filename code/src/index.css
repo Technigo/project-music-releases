@@ -30,7 +30,12 @@ body {
 	width: 50px;
 	height: 50px;
 	padding: 5px;
+	margin-top: 5px;
 	font-family: Helvetica, sans-serif;
+}
+
+.mockify-icon-desktop {
+	display: none;
 }
 
 .menu-icon {
@@ -215,6 +220,10 @@ a {
 	left: 0;
 }
 
+.aside-playlist {
+	display: none;
+}
+
 footer {
 	text-align: center;
 }
@@ -238,8 +247,27 @@ code {
 }
 
 @media (min-width: 1200px) {
+	main {
+		flex-direction: row;
+	}
+
+	.header-text-container h1 {
+		text-align: left;
+		margin-left: 0px;
+		margin-top: 5px;
+	}
 	h2 {
 		margin-left: 160px;
+	}
+
+	.header-styling {
+		display: flex;
+		align-items: center;
+	}
+
+	.mockify-icon-desktop {
+		display: block;
+		padding: 10px;
 	}
 
 	.drop-down-content a {
@@ -247,5 +275,24 @@ code {
 		color: #a0a0a0;
 		font-size: 15px;
 		padding: 10px;
+	}
+
+	.dropdown {
+		display: none;
+	}
+
+	.aside-playlist {
+		display: flex;
+		flex-direction: column;
+		padding: 100px;
+	}
+
+	.aside-playlists-links {
+		margin: 5px;
+	}
+
+	.aside-playlists-links img {
+		width: 150px;
+		height: auto;
 	}
 }
