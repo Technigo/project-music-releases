@@ -9,8 +9,6 @@ import { ReactComponent as MockifyIcon } from './icons8-spotify.svg';
 import { Playlists } from './Playlists';
 import stretchGoal from './stretch-goal.json';
 
-console.log(stretchGoal.playlists);
-
 export const Header = () => {
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -46,28 +44,5 @@ export const Header = () => {
 				<h1>Mockify</h1>
 			</div>
 		</div>
-
-		// <div>
-		// 	<Button id={toggler}>Playlists</Button>
-		// 	<div className="menu-icon"></div>
-		// 	<MockifyIcon className="mockify-icon" />
-		// 	<h1>Mockify</h1>
-		// 	<UncontrolledCollapse toggler="#toggler">
-		// 		<Card>
-		// 			<CardBody>
-		// 				<div className="drop-down-content">
-		// 					{stretchGoal.playlists.items.map((item) => (
-		// 						<Playlists
-		// 							className="playlist"
-		// 							key={item.id}
-		// 							playListName={item.name}
-		// 							playListUrl={item.external_urls.spotify}
-		// 						/>
-		// 					))}
-		// 				</div>
-		// 			</CardBody>
-		// 		</Card>
-		// 	</UncontrolledCollapse>
-		// </div>
 	);
 };
