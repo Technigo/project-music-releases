@@ -10,7 +10,7 @@ import { Playlists } from './Playlists';
 import stretchGoal from './stretch-goal.json';
 
 export const Header = () => {
-	const [dropdownOpen, setDropdownOpen] = useState(false);
+	const [dropdownOpen, setDropdownOpen] = useState(true);
 	const toggle = () => setDropdownOpen((prevState) => !prevState);
 
 	return (
