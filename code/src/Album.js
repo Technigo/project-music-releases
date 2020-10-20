@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Artist } from "./Artist";
 import { ReactComponent as PlayButton } from './icons/play.svg';
 import { ReactComponent as HeartButton } from './icons/heart.svg';
@@ -16,32 +17,31 @@ export const Album = (props) => {
 
 
   return (
-    <>
-      <div className="album-container">
-        <a href={props.album_url} target="_blank" rel="noopener noreferrer">
-          <div className="image-container">
-            <img className="album-image" src={props.img[1].url} alt="Album cover" />
-            <div className="icon-container">
-              <HeartButton className="album-icon" />
-              <PlayButton className="album-icon play-icon" />
-              <DotButton className="album-icon dots-icon" />
-            </div>
+
+    <div className="album-container">
+      <a href={props.album_url} target="_blank" rel="noopener noreferrer">
+        <div className="image-container">
+          <img className="album-image" src={props.img[1].url} alt="Album cover" />
+          <div className="icon-container">
+            <HeartButton className="album-icon" />
+            <PlayButton className="album-icon play-icon" />
+            <DotButton className="album-icon dots-icon" />
           </div>
-          <h2>
-            {props.name}
-          </h2>
-        </a>
-        {/* Mount artist component for each element in the artists array */}
-        {artistsArr.map((artist, index, arr) => (
-          <Artist
-            name={artist.name}
-            url={artist.url}
-            index={index}
-            length={arr.length}
-          />
-        ))}
-      </div>
-    </>
+        </div>
+        <h2>
+          {props.name}
+        </h2>
+      </a>
+      {/* Mount artist component for each element in the artists array */}
+      {artistsArr.map((artist, index, arr) => (
+        <Artist
+          name={artist.name}
+          url={artist.url}
+          index={index}
+          length={arr.length}
+        />
+      ))}
+    </div>
   );
 
 }

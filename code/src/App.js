@@ -1,5 +1,6 @@
 import React from 'react';
 import data from './data.json';
+
 import { Album } from "./Album";
 
 //array of albums to fetch album data from

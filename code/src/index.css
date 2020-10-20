@@ -28,7 +28,7 @@ code {
 }
 
 .site-header {
-  color: #FFFFFF;
+  color: #fff;
   font-size: 20px;
   margin-bottom: 6px;
 }
@@ -68,7 +68,7 @@ code {
 
 h2 {
   font-family: Helvetica;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
   text-decoration: none;
   margin-top: 6px;
@@ -83,13 +83,13 @@ h2 {
 
 a, a:visited {
   font-family: Helvetica;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration-color: #ffffff;
+  text-decoration-color: #fff;
   text-decoration: underline;
 }
 
@@ -100,7 +100,7 @@ a:hover {
 }
 
 .artist-name:hover {
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 

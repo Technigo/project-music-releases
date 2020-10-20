@@ -14,8 +14,9 @@ What technologies did you use?
 - React, FlexBox, array.map() function, conditional statements
 
 If you had more time, what would be next?
-- improve the hover effect by applying lower opacity to image only, excluding the icons sitting on top
-- add "&" sign between the (last) two artists  
+- render a list of popular playlists in a sidebar using another API response
+- sort the albums from the singles and create two different sections on the site
+- incorporate more information from the API response to make the site richer
 
 ## View it live
 https://threol-music-release.netlify.app/ 
