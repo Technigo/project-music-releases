@@ -6,12 +6,12 @@ import { ReactComponent as Dot } from "./Icons/Dots.svg";
 
 
 export const AlbumCard = (props) => {
-  const { title, artists, image,  albumLink } = props;
+  const { title, artists, image, albumLink, artistLink } = props;
 
   return (
     <article className="album-cards">
       <div className="image-container">
-        <img src={props.image} alt="Album cover" />
+        <img src={image} alt="Album cover" />
       </div>
       <div className="icons">
         <Heart className="heart" />
@@ -19,13 +19,13 @@ export const AlbumCard = (props) => {
         <Dot className="dot" />
       </div>
 
-      <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
+      <a href={albumLink} target="_blank" rel="noopener noreferrer">
         <h1>{title}</h1>
       </a>
       {artists.map((artist, index) => {
         return (
           <div key={artist.name} index={index}>
-            <a href={props.artistLink} target="_blank" rel="noopener noreferrer" >
+            <a href={artistLink} target="_blank" rel="noopener noreferrer" >
               {artist.name}
             </a>
           </div>

@@ -20,7 +20,7 @@ a:hover {
 }
 
 .image-container:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .album-cards:hover .icons {
