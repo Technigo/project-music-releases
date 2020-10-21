@@ -1,16 +1,9 @@
 import React from "react";
+
 import CardOptions from "./CardOptions";
+import Artists from "./Artists";
 
 const Card = (props) => {
-  const artists = () => {
-    return props.artists
-      .map((item) => {
-        return item.name;
-      })
-      .join(", ")
-      .replace(/, ([^,]*)$/, " & $1");
-  };
-
   return (
     <div className="card">
       <div className="card__content">
@@ -25,13 +18,9 @@ const Card = (props) => {
         >
           <h1 className="card__title">{props.name}</h1>
         </a>
-        <a
-          href={props.artists[0].external_urls.spotify}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p className="card__info">{artists()}</p>
-        </a>
+        <p className="card__info">
+          <Artists artists={props.artists} />
+        </p>
       </div>
     </div>
   );

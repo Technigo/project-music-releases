@@ -1,8 +1,10 @@
 import React from "react";
+
 import data from "./data.json";
-import "./index.css";
 import Header from "./Header";
 import Card from "./Card/Card";
+
+import "./index.css";
 
 export const App = () => {
   return (

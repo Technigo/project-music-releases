@@ -65,14 +65,22 @@ a {
 .card .card__title {
   font-size: 14px;
   font-family: Helvetica;
-  color: #ffffff;
+  color: #fff;
 }
 
 .card .card__info {
   font-size: 14px;
   font-family: Helvetica;
-  color: #a0a0a0;
   margin: 0;
+  color: #a0a0a0;
+}
+
+.card .card__info .link {
+  color: #a0a0a0;
+}
+
+.card .card__info .link:hover {
+  text-decoration: underline #a0a0a0;
 }
 
 .card-options {
