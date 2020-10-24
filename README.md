@@ -1,6 +1,6 @@
 # Music Releases
 
-This is a pair-programming project done by Gabriella Bolin and Mats Johansen. The project has been to build a Music Release site, similar to Spotify, to show new album and single releases by using React components. 
+This is a pair-programming project done by Gabriella Bolin and Mats Johansen @mats-johansen. The project has been to build a Music Release site, similar to Spotify, to show new album and single releases by using React components. 
 
 ## The problem
 
