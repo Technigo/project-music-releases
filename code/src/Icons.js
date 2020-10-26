@@ -3,7 +3,6 @@ import './icons.css';
 
 const Icons = () => {
   return (
-    <>
       <div className="icon__container">
         <img className="icon" src="../icons/heart.svg" alt="Heart icon" />
         <img
@@ -13,7 +12,6 @@ const Icons = () => {
         />
         <img className="icon" src="../icons/dots.svg" alt="Dots icon" />
       </div>
-    </>
   );
 };
 

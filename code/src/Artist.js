@@ -10,15 +10,21 @@ const Artist = props => {
     );
   } else if (props.index === props.length - 1) {
     return (
+      <>
+      <span className="artist__ampersand">{'\u00A0&\u00A0'}</span>
       <a className="artist__name" href={props.artistURL}>
-        {'\u00A0& ' + props.artistName}
+        {props.artistName}
       </a>
+      </>
     );
   } else {
     return (
+      <>
+      <span>, </span>
       <a className="artist__name" href={props.artistURL}>
-        {', ' + props.artistName + ' '}
+        {props.artistName + ' '}
       </a>
+      </>
     );
   }
 };

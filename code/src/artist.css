@@ -14,3 +14,12 @@
   color: #fff;
   text-decoration: underline;
 }
+
+.artist__ampersand {
+  padding-top: 4px;
+  color:#a0a0a0;
+}
+
+.artist__ampersand:hover{
+  color: #fff;
+}
