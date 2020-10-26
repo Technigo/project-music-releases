@@ -8,7 +8,8 @@ export const AlbumCard = () => {
   return (
     <>
       {data.albums.items.map(album => { // Mapping through the album array to get album-name, images, and the artist array.
-        return <AlbumInfo 
+        return (
+        <AlbumInfo 
           key={album.name}
           image={album.images[0].url} 
           name={album.name} 
@@ -22,10 +23,11 @@ export const AlbumCard = () => {
                 className="artists-links">
                 <span key={artist.name} className="artist-name">{artist.name}</span>
               </a>
-            )
+            );
           })} 
           linkAlbum={album.external_urls.spotify}
         />
+        );
       })}
     </>
   );
