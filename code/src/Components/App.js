@@ -6,19 +6,13 @@ import { Heading } from './Heading';
 import { Playlist } from './Playlist';
 import './App.css';
 
-//const albumArray = albums.items;
 const albumArray = data.albums.items;
-
-//creates a new array of playlist in stretch goal json
 const playlistArray = stretchGoal.playlists.items;
 
 export const App = () => {
 	return (
 		<>
-			<header className="heading">
-				<Heading />
-			</header>
-
+			<Heading />
 			<section className="content-wrapper">
 				<div className="albums-container">
 					{albumArray.map(album => {
