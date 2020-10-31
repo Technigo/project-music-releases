@@ -1,10 +1,10 @@
 import React from "react";
+
 import data from "./data.json";
 import { Header } from "./Header";
 import { Album } from "./Album.js";
 
 const albumArray = data.albums.items;
-
 
 export const App = () => {
   return (
@@ -26,4 +26,3 @@ export const App = () => {
     </>
   );
 };
-
