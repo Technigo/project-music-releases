@@ -19,9 +19,9 @@ export const Album = props => {
         {props.artists.map((artist, index) => {
           return (
             <Artist
+              key={artist.name}
               index={index}
               length={props.artists.length}
-              key={artist.name}
               artistName={artist.name}
               artistUrl={artist.external_urls.spotify}
             />
