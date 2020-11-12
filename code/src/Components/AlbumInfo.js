@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Icons } from "./Icons";
 
 // The album-card containing the props and including the icons. 
