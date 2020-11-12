@@ -1,5 +1,5 @@
 
-## Project 6: Music Releases
+## Project 7: Music Releases
 
 This is a pair-programming based project. It is a page with music releases.
 Each album card has a cover image, some icons on it, album's name and artist's name.
