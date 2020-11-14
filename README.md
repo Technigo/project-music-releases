@@ -12,9 +12,9 @@ The site was to be built using React components, and needed to be responsive (de
 
 ## Tech
 
-JSX
-React
-CSS
+- JSX
+- React
+- CSS
 
 ## View it live
 
