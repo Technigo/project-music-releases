@@ -1,37 +1,35 @@
 .album-list {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 a {
-    text-decoration: none;
-    color: #b4b4b4
+  text-decoration: none;
+  color: #b4b4b4;
 }
 
-
 h1 {
-    font-size: 20px;
-    margin: 30px 25px -10px 25px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #2c2c2c;
+  font-size: 20px;
+  margin: 30px 25px -10px 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2c2c2c;
 }
 
 h2 {
-    font-size: 16px;
-    margin: 5px 0 -5px 0;
+  font-size: 16px;
+  margin: 5px 0 -5px 0;
 }
 
 a h2 {
-    color: #eee;
+  color: #eee;
 }
 
 h3 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 @media (min-width: 668px) {
-    h1 {
-        margin: 40px 45px -5px 45px;
-        
-    }
+  h1 {
+    margin: 40px 45px -5px 45px;
+  }
 }

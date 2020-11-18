@@ -1,10 +1,11 @@
-import React from 'react';
-import './artist.css';
+import React from "react";
 
-export const Artist = props => {
-    return (
-            <a className="artist" href={props.url}>            
-                {props.name}               
-            </a>
-    )
-}
+import "./artist.css";
+
+export const Artist = (props) => {
+  return (
+    <a className="artist" href={props.url}>
+      {props.name}
+    </a>
+  );
+};

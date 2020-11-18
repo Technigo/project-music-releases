@@ -1,7 +1,7 @@
 .artist:not(:last-child):not(:nth-last-child(2))::after {
-    content: ', ';
-  }
+  content: ", ";
+}
 
 .artist:not(:first-child):last-child::before {
-    content: ' & ';
+  content: " & ";
 }
