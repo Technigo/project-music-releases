@@ -12,31 +12,41 @@ a:hover {
   text-decoration: underline;
 }
 
-.album-cards {
+/* 
+<article className="album-card"> */
+.album-card {
   position: relative;
 }
 .image-container {
   position: relative;
 }
 
-.image-container:hover {
+.image-container:hover{
   opacity: 0.4;
+
 }
 
-.album-cards:hover .icons {
-  display: flex;
-}
-
-.icons {
+.icons-container {
   position: absolute;
-  z-index: 5;
-  width: 50%;
+  z-index: 2;
   fill: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   top: 40%;
   left: 30%;
-  display: none;
+  border: blue 2px solid;
+}
+/* These should be placed on top of the image-container!!! */
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: green 4px solid;
+  width: 150px;  
+  justify-content: space-between;
+  /* display: none; */
 }
 
 .heart,
@@ -53,7 +63,7 @@ a:hover {
 
 .album-container {
   max-width: 1200px;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 2fr);
   display: grid;
   grid-gap: 1rem;
   position: relative;
@@ -63,7 +73,9 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (min-width: 668px) {
+
+/* Designed from Mobil first, from 668px show 2 cards */
+@media (min-width: 600px) {
   .album-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

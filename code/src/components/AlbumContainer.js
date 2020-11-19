@@ -16,7 +16,6 @@ export const AlbumContainer = (props) => {
             artists={album.artists}
             image={album.images[1].url}
             albumLink={album.external_urls.spotify}
-            artistLink={album.external_urls.spotify}
           />
         );
       })}
