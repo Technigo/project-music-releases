@@ -30,7 +30,7 @@ export const AlbumCard = (props) => {
         return (
           <div key={artist.name} index={index}>
             <a href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer" >
-             c
+            {artist.name}
             </a>
           </div>
         );

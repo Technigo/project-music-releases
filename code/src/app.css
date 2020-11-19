@@ -12,8 +12,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 
-<article className="album-card"> */
 .album-card {
   position: relative;
 }
@@ -21,33 +19,37 @@ a:hover {
   position: relative;
 }
 
-.image-container:hover{
+.image-container:hover {
   opacity: 0.4;
-
+ 
 }
 
+
+.icons:hover{
+  display: block;
+}
 .icons-container {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   fill: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 40%;
-  left: 30%;
-  border: blue 2px solid;
+  top: 45%;
+  left: 20%;
 }
-/* These should be placed on top of the image-container!!! */
+
 .icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: green 4px solid;
-  width: 150px;  
+  width: 180px;  
   justify-content: space-between;
-  /* display: none; */
+  display: none;
 }
+
+
 
 .heart,
 .dot {
