@@ -5,6 +5,5 @@ export const Header = () => {
     <header>
       <h1 className="header-style">New albums & singles</h1>
     </header>
-  );
+  )
 }
-

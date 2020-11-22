@@ -154,9 +154,7 @@ main {
   margin-right: auto;
 }
 
-/* DEN HÄR FÖRSTORAR PLAY-KNAPPEN */
 .button-play:hover {
-  /* transform: scale(1.05, 1.05); */
   width: 64px;
   height: 64px;
   border: 1px solid rgba(255,255,255,1);
@@ -165,7 +163,6 @@ main {
 }
 
 .button-play:active {
-  /* transform: scale(1, 1); */
   width: 62px;
   height: 62px;
   border: 1px solid rgba(255,255,255,0.8);
@@ -177,16 +174,12 @@ main {
 @media (min-width: 500px) {
   .album-grid {
     grid-template-columns: repeat(2, 1fr);
-    /* max-width: 80%; */
   }
 }
 
 @media (min-width: 700px) {
   .album-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-  main {
-    /* max-width: 80%; */
   }
 }
 

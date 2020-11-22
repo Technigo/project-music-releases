@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export const AlbumCard = (props) => {
   return (
@@ -13,12 +13,20 @@ export const AlbumCard = (props) => {
         </div>
         <img className="album-image" src={props.image} alt={props.artistName} />
       </div>
-      <a href={props.albumURL} target="_blank" rel="noopener noreferrer" className="album-text">{props.albumName}</a>
+
+      <a 
+        href={props.albumURL} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className="album-text">
+        {props.albumName}
+      </a>
 
       {/* Loops over each artist in the "artists" array  */}
       {props.artists.map((artist) => {
           console.log(artist)
-          return <a
+          return (
+          <a
             key={artist.id}
             className="artist-text"
             href={artist.external_urls.spotify}
@@ -26,8 +34,8 @@ export const AlbumCard = (props) => {
             rel="noopener noreferrer">
             {artist.name}
           </a>
+          )
         })}
-
     </div>
-  );
-};
+  )
+}
