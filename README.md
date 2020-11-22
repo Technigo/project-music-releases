@@ -9,3 +9,7 @@ We started by going through the brief to make sure we understood what was requir
 ## View it live
 
 The page can be viewed here: https://spotifake.netlify.app/
+
+## Webmasters
+
+Axel Hammarbäck and Destiny Lindgren
