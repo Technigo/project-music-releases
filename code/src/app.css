@@ -54,9 +54,10 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px;
+  /* margin-right: 0; */
   top: 45%;
   left: 20%;
+ 
 }
 
 .icons {
@@ -66,7 +67,8 @@ a:hover {
   align-items: center;
   width: 180px;
   justify-content: space-between;
-  display: none;
+  margin-right: 90px;
+  /* display: none; */
 
 }
 
