@@ -3,16 +3,15 @@ body {
   color: white;
 }
 
-
 header {
-  display:flex;
+  display: flex;
   justify-content: center;
   font-size: 80px;
   margin-right: 60px;
 }
 
 a {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: white;
@@ -28,15 +27,18 @@ a:hover {
 }
 
 .album-card {
-  position: relative;
-  
+  grid-column: span 12;
 }
+
+img {
+  width: 100%;
+}
+
 .image-container {
   position: relative;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 80px;
 }
 
 .image-container:hover img {
@@ -54,10 +56,9 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-right: 0; */
+  margin: auto;
   top: 45%;
   left: 20%;
- 
 }
 
 .icons {
@@ -65,19 +66,17 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 180px;
+  width: 300px;
   justify-content: space-between;
-  margin-right: 90px;
   display: none;
-
 }
 
 .heart,
 .dot {
-  width: 30px;
+  width: 50px;
 }
 .play {
-  width: 60px;
+  width: 80px;
   transition: 0.4s ease;
 }
 .play:hover {
@@ -85,47 +84,54 @@ a:hover {
 }
 
 .album-container {
-  max-width: 1200px;
-  grid-template-columns: repeat(1, 1fr);
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
   position: relative;
   background-size: cover;
   min-height: 50vh;
   padding: 20px;
-  margin: 0  auto;
+  margin: 0 auto;
 }
 
 header {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
-/* Design Mobil first, under 668px show 1 card */
+
+/* Designed Mobile first, then from 668px show 2 cards */
 
 @media (min-width: 668px) {
-  .album-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .album-card {
+    grid-column: span 6;
   }
 
-  .icons-container {
-    margin-left: 15px;
+  .icons {
+    width: 250px;
+  }
+
+  .heart,
+  .dot {
+    width: 40px;
+  }
+  .play {
+    width: 70px;
   }
 }
 
 @media (min-width: 1024px) {
-  .album-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .album-card {
+    grid-column: span 3;
+  }
+  .icons {
+    width: 190px;
   }
 
-  .icons-container {
-    margin-left: 15px;
+  .heart,
+  .dot {
+    width: 30px;
   }
-
-  header {
-    display:flex;
-    justify-content: center;
-    font-size: 80px;
+  .play {
+    width: 60px;
   }
 }
