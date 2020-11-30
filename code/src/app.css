@@ -67,7 +67,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin: auto; */
   top: 45%;
   left: 20%;
 }
@@ -77,10 +76,8 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* justify-content: space-evenly; */
   width: 100%;
- 
-  /* display: none; */
+  display: none;
 }
 
 .heart,
@@ -97,8 +94,6 @@ img {
   transform: scale(1.3);
 }
 
-
-
 /* Designed Mobile first, then from 668px show 2 cards */
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -107,17 +102,15 @@ img {
   }
 
   .heart,
-.dot {
-  width: 40px;
-  padding-right: 30px;
+  .dot {
+    width: 40px;
+    padding-right: 30px;
+  }
+  .play {
+    width: 65px;
+    padding-right: 30px;
+  }
 }
-.play {
-  width: 65px;
-  padding-right: 30px;
- 
-}
-} 
-
 
 @media (min-width: 901px) and (max-width: 1023px) {
   .album-card {
@@ -131,16 +124,14 @@ img {
   .play {
     width: 65px;
     padding-right: 50px;
-  } 
-} 
-
-
+  }
+}
 
 @media (min-width: 1024px) {
   .album-card {
     grid-column: span 3;
   }
-  
+
   .heart,
   .dot {
     width: 40px;
@@ -149,5 +140,5 @@ img {
   .play {
     width: 60px;
     padding-right: 25px;
-  } 
-} 
+  }
+}
