@@ -16,19 +16,13 @@ code {
 }
 
 /* HEADER */
-.headermain {
-  display: flex;
+.header-main {
   font-family: Helvetica;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
   border-bottom: solid 1px gray;
-}
-header {
-  display: flex;
-  justify-content: flex-start;
   padding: 20px;
-  margin-left: 15px;
   margin-bottom: 10px;
 }
 
@@ -42,6 +36,7 @@ header {
   width: 100%;
   padding: 5px 0;
 }
+
 .album-cover {
   width: 300px;
   height: 300px;
@@ -51,25 +46,25 @@ header {
   display: inline-block;
   position: relative;
 }
+
 .container img {
   display: block;
 }
-/* .container :hover {
-  filter: brightness(0.4);
-  opacity: 1;
-} */
 
 .album-card :hover .album-cover {
   filter: brightness(0.4);
   opacity: 1;
 }
+
 .album-card :hover .icons-wrapper {
   display: flex;
   width: 300px;
 }
+
 .album-card :hover {
   text-decoration: underline;
 }
+
 /* ICONS PLAY, HEART AND DOT */
 .icons-wrapper {
   display: flex;
@@ -82,20 +77,23 @@ header {
   display: none;
   fill: white;
 }
+
 .iconheart {
   width: 20px;
   height: 20px;
 }
+
 .iconplay {
   width: 50px;
   height: 50px;
 }
+
 .icondots {
   width: 20px;
   height: 20px;
 }
-/* ICONS HOVER EFFECT */
 
+/* ICONS HOVER EFFECT */
 .iconplay :hover {
   width: 55px;
   height: 55px;
@@ -107,7 +105,8 @@ header {
 a {
   text-decoration: none;
 }
-.albumsname {
+
+.album-name {
   display: flex;
   justify-content: flex-start;
   font-family: Helvetica;
@@ -115,7 +114,8 @@ a {
   color: #ffffff;
   width: 300px;
 }
-.artistname {
+
+.artist-name {
   display: flex;
   justify-content: flex-start;
   font-family: Helvetica;
@@ -124,22 +124,27 @@ a {
   width: 300px;
   text-decoration: none;
 }
-.artistname a:visited,
+
+.artist-name a:visited,
 a:link {
   color: #a0a0a0;
   text-decoration: none;
 }
-.artistname a:hover {
+
+.artist-name a:hover {
   text-decoration: underline;
 }
+
 /* ADD COMMAS AFTER THE ARTISTS NAMES IF THERE ARE MORE THAN ONE */
-.artistname::after {
+.artist-name::after {
   content: ",";
 }
-.artistname:not(:last-child):after {
+
+.artist-name:not(:last-child):after {
   content: ",";
 }
-.artistname:last-child::after {
+
+.artist-name:last-child::after {
   content: "";
 }
 
@@ -147,19 +152,23 @@ a:link {
   header {
     margin-left: 27px;
   }
-  .albumsname {
+
+  .album-name {
     font-size: 10px;
     width: 300px;
   }
-  .artistname {
+
+  .artist-name {
     font-size: 10px;
     width: 300px;
   }
+
   .album-card {
     display: flex;
     width: 50%;
     margin-bottom: 10px;
   }
+
   .main {
     display: flex;
     flex-direction: row;
@@ -168,34 +177,42 @@ a:link {
     align-items: center;
     flex-wrap: wrap;
   }
+
   .icons-wrapper {
     width: 300px;
   }
 }
+
 @media (min-width: 1024px) {
   header {
     margin-left: 18px;
   }
+
   .album-card {
     display: flex;
     width: 25%;
     margin-bottom: 10px;
   }
+
   .album-cover {
     width: 250px;
     height: 250px;
   }
-  .albumsname {
+
+  .album-name {
     font-size: 12px;
     width: 250px;
   }
-  .artistname {
+
+  .artist-name {
     font-size: 12px;
     width: 250px;
   }
+
   .icons-wrapper {
     width: 250px;
   }
+
   .album-card :hover .icons-wrapper {
     width: 250px;
   }

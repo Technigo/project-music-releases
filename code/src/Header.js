@@ -1,4 +1,7 @@
 import React from 'react';
 
-const Header = () => <header>New albums & singles</header>
-export default Header;
+export const Header = () => {
+  return (
+<header className="header-main">New albums & singles</header>
+  )
+}
