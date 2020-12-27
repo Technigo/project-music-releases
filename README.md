@@ -23,9 +23,3 @@ Make a better alignments and maybe add a loader.
 
 https://music-releases-website-johanna-liza.netlify.app/
 
-<<<<<<< HEAD
-## View it live
-
-music-relises-website-johanna-liza.netlify.app
-=======
->>>>>>> 592267996faef14bc0e9fc059ea7d586379c26c8
