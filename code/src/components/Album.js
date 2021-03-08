@@ -5,19 +5,21 @@ import AlbumImage from './AlbumImage'
 
 const Album = (props) =>{
     return (
-        <ul>hej
-            {console.log(props.data.albums.items)}
-            {props.data.albums.items.map((item) => {
-                return (
-                    <li key={item.id}> 
-                        <a target="_blank" rel="noopener noreferrer" href={item.external_urls.spotify}>{item.name}</a>
-                        <Artist item={item}/>
-                        <AlbumImage item={item}/>
-                    </li>
-                )
-              
-            })}
-        </ul>
+        <div className="main-wrapper">
+            <ul className="album-list">
+                {console.log(props.data.albums.items)}
+                {props.data.albums.items.map((item) => {
+                    return (
+                        <li key={item.id}> 
+                            <AlbumImage item={item}/>
+                            <a target="_blank" rel="noopener noreferrer" href={item.external_urls.spotify}> <h2 className="album-name">{item.name}</h2></a>
+                            <Artist item={item}/>
+                        </li>
+                    )
+                
+                })}
+            </ul>
+        </div>
     )
 }
 
