@@ -20,3 +20,21 @@ export const App = () => {
   )
 }
 
+<<<<<<< HEAD
+=======
+export const Blipp = () => {
+  return (
+    <div>
+      Hej hej
+    </div>
+  )
+}
+
+export const Tre = () => {
+  return (
+    <div>
+      Nästa försök
+    </div>
+  )
+}
+>>>>>>> e70134d986e65da04849b8fc73c2bb7b4631c1b3
