@@ -1,4 +1,4 @@
-{
+ {
   "albums": {
     "href": "https://api.spotify.com/v1/browse/new-releases?offset=0&limit=50",
     "items": [
