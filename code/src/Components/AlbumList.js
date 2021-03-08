@@ -1,18 +1,19 @@
 import React from 'react';
-import data from './data.json';
+import data from '../data.json';
 
 const AlbumList = () => {
   return (
     <>
-     <div className = "album-container">
+    <h1>hello</h1>
+     {/* <div className = "album-container">
        {data.albums.items.map ((item) =>
 
 
        )}
 
-      </div>
+      </div> */}
     </>
   );
 }
 
-export default Albumlist;
+export default AlbumList;
