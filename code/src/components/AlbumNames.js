@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Album = (props) => {
+export const AlbumNames = (props) => {
 
 
 
