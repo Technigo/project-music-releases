@@ -11,3 +11,18 @@ export const App = () => {
   )
 }
 
+export const Blipp = () => {
+  return (
+    <div>
+      Hej hej
+    </div>
+  )
+}
+
+export const Tre = () => {
+  return (
+    <div>
+      Nästa försök
+    </div>
+  )
+}
