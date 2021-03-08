@@ -12,6 +12,8 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
+/* Header */
+
 .header {
   border-bottom: 1px solid white;
   margin: 5px 25px;
@@ -24,6 +26,8 @@ code {
 
 }
 
+/* Container for all the cards */
+
 .big-container {
   display: flex;
   flex-wrap: wrap;
@@ -32,11 +36,13 @@ code {
   padding: 10px;
 }
 
+/* Album Card container */
+
 .album-card {
   display: flex;
   flex-direction: column;
-  margin: 5px 5px 50px 5px;
-  width: 80%;
+  margin: 5px 5px 20px 5px;
+  width: 90%;
 }
 
 .album-cover {
@@ -47,6 +53,14 @@ code {
 .image {
   width: 100%;
 }
+
+/* Hover that makes image darker */
+
+.album-cover:hover .image {
+  opacity: 0.7;
+}
+
+/* The icons on image that appears on hover */
 
 .image-icons {
   width: 100%;
@@ -63,8 +77,10 @@ code {
   display: flex;
 }
 
-.dot-icon {
-  width: 50px;
+/* Icons */
+
+.dot-icon, .heart-icon {
+  width: 40px;
   margin: 20px;
 }
 
@@ -76,14 +92,10 @@ code {
 }
 
 .play-icon:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
-.heart-icon {
-  width: 50px;
-  margin: 20px;
-}
-
+/* Album title and artist */
 
 .album-title {
   margin: 10px 0px 0px 0px;
@@ -113,12 +125,13 @@ code {
 
 @media (min-width: 768px) {
   .album-card {
-    width: 40%;
+    width: 45%;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .album-card {
     width: 23%;
+    margin: 5px 5px 40px 5px;
   }
 }
