@@ -5,9 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.header {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 22px 0 0 50px;
+  color: #ffffff;
+}
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 20px 50px;
+}
+
+.album-image {
+  width: 100%;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  margin: 5px 0 10px 0;
+}
+
+.album-name {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+}
+
+
+
