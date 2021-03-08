@@ -2,7 +2,9 @@ import React from 'react';
 
 
 export const Header = () => {
-    return ( <
-        div className = 'Header' > New albums and Singles < /div> 
+    return ( 
+        <header className ='header'> 
+            <h1 className="h1">New albums & Singles</h1> 
+        </header> 
     )
 };

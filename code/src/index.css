@@ -5,8 +5,120 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: black;
     color: white;
+    font-family: Helvetica;
 }
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.header {
+  border-bottom: 1px solid white;
+  margin: 5px 25px;
+}
+
+.h1 {
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.big-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 50px 5px;
+  width: 80%;
+}
+
+.album-cover {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+.image-icons {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.album-cover:hover .image-icons {
+  display: flex;
+}
+
+.dot-icon {
+  width: 50px;
+  margin: 20px;
+}
+
+.play-icon {
+  width: 80px;
+  margin: 20px;
+  cursor: pointer;
+  fill: white;
+}
+
+.play-icon:hover {
+  transform: scale(1.2);
+}
+
+.heart-icon {
+  width: 50px;
+  margin: 20px;
+}
+
+
+.album-title {
+  margin: 10px 0px 0px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.artist {
+  margin: 5px 0px 10px 0px;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist:hover {
+  text-decoration: underline;
+}
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .album-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album-card {
+    width: 23%;
+  }
 }
