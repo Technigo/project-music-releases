@@ -34,7 +34,48 @@ code {
   flex-direction: column;  
   width: 100%;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
+
+.imageAndIcon {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.albumImage {
+  /* position: relative; */
+}
+
+/* .albumCard a {
+  position: absolute;
+  display: block;
+  background: url("/code/public/icons/heart.svg") no-repeat fixed center;
+  height: 100%;
+  width: 100%;
+  background-size: 50px 50px;
+  z-index: 2;
+} */
+
+
+
+.iconsHidden {
+  position: absolute;
+  z-index: 2;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.heart {
+  width: 50px;
+}
+
 
 .albumTitle {
   font-size: 14px;
@@ -52,10 +93,6 @@ code {
   margin-top: 0;
 }
 
-
-.albumImage {
-/* width: 45%; */
-}
 
 
 /* RESPONSIVE */
