@@ -2,6 +2,9 @@ import React from 'react'
 
 export const FavoriteButton = () => {
     return (
-        <button className="favoriteButton"> </button>
+        <button className="favoriteButton">
+            heart
+            <img src="./icons/heart.svg" />
+        </button>
     )
 }

@@ -2,6 +2,8 @@ import React from 'react'
 
 export const PlayButton = () => {
     return (
-        <button className="playButton"> </button>
+        <button className="playButton">play
+            <img src="./icons/play.svg" />
+        </button>
     )
 }
