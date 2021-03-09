@@ -8,5 +8,8 @@ export const App = () => {
     <div>
       Find me in src/app.js!
     </div>
+    //.maps happen here we think
   )
 }
+
+
