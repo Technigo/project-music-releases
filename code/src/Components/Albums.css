@@ -1,3 +1,71 @@
-p {
-  color:blue;
+.album-container {
+  position: relative;
+}
+
+.album-container:hover .icons-container {
+  background-color: rgba(0,0,0,0.5);
+  display: block;
+} 
+
+.album-container:hover .icons {
+opacity: 1;
+
+}
+
+.album-image {
+  /* position: relative; */
+  display: inline-block;
+}
+
+.album-image:hover {
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+}
+
+.icons-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid blue;
+  display: none;
+}
+
+.icons { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0.5;
+}
+
+.icon-play {
+  width: 60px;
+  height: 60px;
+}
+
+.icon-play:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.icon-heart {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-dots {
+  width: 30px;
+  height: 30px;
+}
+
+.album-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #ffffff; 
+}
+
+.album-title:hover {
+  text-decoration: underline;
 }

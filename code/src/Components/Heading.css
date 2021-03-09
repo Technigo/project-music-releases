@@ -1,0 +1,9 @@
+.header-title {
+  font-family: 'Helvetica', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.header-title hr {
+  border: 1px solid #4A4A4A;
+}

@@ -1,14 +1,10 @@
-// import React from 'react'
-// import data from 'data.json'
+import React from 'react'
+import './Artists.css'
 
-// const Artists = () => {
-//   return (
-//     <div>
-//       <p>
-//         Artist
-//       </p>
-//     </div>
-//   )
-// }
-
-// export default Artists 
+export const Artists = () => {
+  return (
+      <p className='artist-name'>
+        Artist
+      </p>
+  )
+}
