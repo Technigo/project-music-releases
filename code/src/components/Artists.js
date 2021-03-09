@@ -7,10 +7,10 @@ const Artists = () => {
         {data.albums.items.map(album => {
             return (
             <div> 
-                <a href="{album.external_urls.spotify}">
+                <a href={album.external_urls.spotify} target="_blank">
                     <p>{album.name}</p>
                 </a>
-                <a href="{album.artists[0].external_urls.spotify}">
+                <a href={album.artists[0].external_urls.spotify} target="_blank">
                     <p>{album.artists[0].name}</p>
                 </a>
             </div>

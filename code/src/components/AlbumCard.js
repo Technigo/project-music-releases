@@ -8,10 +8,11 @@ const albumArray = data.albums.items;
     <div>
     {albumArray.map(album => {
         return (
+        <div>
+        <img src={album.images[1].url} />
         <div> 
             <Artists />
-            <p>Title: {album.name}</p>
-            <p>Link: {album.external_urls.spotify}</p>
+        </div>
         </div>
         )
     })}
