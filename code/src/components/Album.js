@@ -45,5 +45,15 @@
     );
   };
   
+  /* We do a .map on artists to be able to get all the artists names who
+are involved, since the names are inside an array of objects */
+
+/* rel="noopener noreferrer" is added to the a linking elements, got
+a warning that not adding this rel would be a security risk */
+
+/* <span>,&nbsp;</span> on line 21 is an HTML entity no break space: this span
+will add a comma and a non-breaking line space, in order to keep the artists
+names in the same line. We hide the comma in the last name via CSS:
+https://stackoverflow.com/questions/18753828/keeping-a-string-of-text-together-on-one-line */
 
   
