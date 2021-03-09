@@ -1,6 +1,7 @@
 import React from 'react'
 import data from './data.json'
 import {Album} from './Album'
+let i=0;
 
 console.log(data)
 
@@ -16,5 +17,15 @@ export const App = () => {
 }
 
 const MapAlbum = (item) => {
-  return <Album image = {item.images[0].url} albumName = {item.name} artist = {item.artists[0].name}/>
+  i++
+  if(i<9){
+  return <Album 
+  key = {item.name} 
+  image = {item.images[0].url} 
+  albumName = {item.name} 
+  artist = {item.artists[0].name}
+  albumLink = {item.external_urls.spotify}
+  artistLink = {item.artists[0].external_urls.spotify}
+  />
+  }
 }
