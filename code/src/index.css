@@ -5,9 +5,122 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.heading {
+  font-size: 20px;
+  font-family: 'Helvetica';
+  color: #FFFFFF;
+  margin: 20px;
+
+}
+
+.albumWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.albumCard {
+  display: flex;
+  flex-direction: column;  
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.albumTitle {
+  font-size: 14px;
+  font-family: 'Helvetica';
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.artistName {
+  font-size: 14px;
+  font-family: 'Helvetica';
+  font-weight: 400;
+  color: #a0a0a0;
+  margin-top: 0;
+}
+
+
+.albumImage {
+/* width: 45%; */
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 767px) {
+
+  .heading {
+    margin: 50px 50px 10px 50px;
+    font-size: 24px;
+  }
+
+  .albumWrapper {
+    margin: 25px 50px 50px 50px;
+  }
+
+  .albumCard {
+    width: 47%;
+  }
+
+  .albumTitle {
+    font-size: 17px;
+  }
+  
+  .artistName {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .albumCard {
+    width: 23%;
+  }
+}
+
+@media (min-width: 1300px) {
+  
+
+
+  .heading {
+    /* margin: 20px 150px; */
+    /* max-width: 1300px;
+    text-align: left;
+    align-items: left;
+    justify-content: left; */
+  }
+
+  .headerContainer {
+    /* display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left; */
+
+  }
+
+  .albumWrapper {
+    /* margin: 20px 150px;
+    max-width: 1300px; */
+  }
+
+
+  .main {
+   /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+   
+  }
+
 }
