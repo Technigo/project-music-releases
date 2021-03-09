@@ -5,13 +5,16 @@ import React from 'react'
 export const App = () => {
   return (
     <main className="album">
-      <h1>New Albums and singles</h1>
+      <h2>New Albums & Singles</h2>
       <div>
         <article>
-          <Album/>         
+          <Album />
+
         </article>
       </div>
     </main>
-  
 
-  )}
+
+  )
+}
+
