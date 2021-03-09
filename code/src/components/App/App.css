@@ -1,0 +1,20 @@
+.section-wrapper {
+  margin: 0 5%;
+  max-width: 1350px;
+}
+
+.section-wrapper > * {
+  margin: 1em;
+}
+
+.album--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 1073px) {
+  .section-wrapper {
+    margin: 0 auto;
+  }
+}

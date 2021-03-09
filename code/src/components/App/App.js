@@ -8,10 +8,27 @@ console.log(data);
 const App = () => {
   return (
     <>
-      <header>
-        <h1>Page Header</h1>
+      <header className="section-wrapper ">
+        <h1>New Albums & Singles</h1>
       </header>
-      <main>
+      <main className="section-wrapper album--wrapper">
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
+        <Album />
         <Album />
       </main>
     </>
