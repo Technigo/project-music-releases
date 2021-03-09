@@ -2,9 +2,10 @@ import React from 'react'
 
 import { ButtonContainer } from "./ButtonContainer"
 
-export const CoverImage = () => {
+export const CoverImage = (props) => {
     return (
-        <div className="coverImage">
+        <div className="coverImageContainer">
+            <img className="coverImage" src={props.image} />
             <ButtonContainer />
         </div>
     )

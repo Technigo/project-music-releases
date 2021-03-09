@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const InfoTitle = () => {
+export const InfoTitle = (props) => {
     return (
-        <p className="infoTitle">Title</p>
+        <a className="infoTitle" href={props.titleURL}>{props.title}</a>
     )
 }

@@ -10,7 +10,7 @@ export const App = () => {
   return (
     <div>
       <CategoryHeading />
-      <CategoryContainer />
+      <CategoryContainer data={data.albums.items} />
     </div>
   )
 }
