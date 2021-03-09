@@ -1,12 +1,13 @@
 import React from 'react'
-import data from '../data.json'
 
-const albumImage= data.albums.items[0].images[0].url
-
-const Image = () => {
+const Image = ({ coverImage, url}) => {
   return (
     <div>
-      <img src={albumImage}/>
+      <a href= {url}>
+      <img  src={coverImage[1].url} alt="album-cover" />
+
+      </a>
+      
     </div>
   )
 }
