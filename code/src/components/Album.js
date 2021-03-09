@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Album = props => {
     return (
-    <a href={props.albumLink} class="album-title">
+    <a href={props.albumLink} className="album-title">
         {props.albumTitle}
     </a>
     )  

@@ -16,24 +16,98 @@ code {
 
 .header {
   border-bottom: 1px solid white;
-  margin: 5px 25px;
+  margin: 5px 10px;
 }
 
 .h1 {
   font-size: 18px;
   padding-top: 10px;
   margin-bottom: 5px;
+}
 
+/* Container for the whole site */
+
+.main-container {
+  display: flex;
+}
+
+/* Playlist */
+
+.playlists {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.playlist-header {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.playlist-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: "Helvetica";
+  color: #a0a0a0;
+}
+
+.playlist-link:hover {
+  text-decoration: underline;
+}
+
+/* Box with cover image and hover that makes image go darker */
+
+.playlist-cover {
+  width: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-playlist {
+  width: 100%;
+}
+
+.playlist-cover:hover .image-playlist {
+  opacity: 0.7;
+}
+
+/* Small play-icon that show on image hovering and gets bigger when hover on icon */
+
+.play-icon-small {
+  width: 40px;
+  position: absolute;
+  display: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.play-icon-small:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.playlist-cover:hover .play-icon-small {
+  display: flex;
 }
 
 /* Container for all the cards */
 
-.big-container {
+.album-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 20px;
-  padding: 10px;
+  padding-top: 10px;
 }
 
 /* Album Card container */
@@ -89,13 +163,15 @@ code {
   margin: 20px;
   cursor: pointer;
   fill: white;
+  opacity: 0.7;
 }
 
 .play-icon:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
 
-/* Album title and artist */
+/* Album title */
 
 .album-title {
   margin: 10px 0px 0px 0px;
@@ -109,8 +185,18 @@ code {
   text-decoration: underline;
 }
 
-.artist {
+/* Artist, and added , and & when it is several artists */
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin: 5px 0px 10px 0px;
+}
+
+.artist {
+  display: flex;
+  margin-right: 5px;
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
@@ -120,10 +206,31 @@ code {
   text-decoration: underline;
 }
 
+.artist:not(:last-child):not(:nth-last-child(2))::after {
+  content: ', ';
+}
+
+.artist:not(:first-child):last-child::before {
+  margin-right: 5px;
+  content: ' & ';
+}
+
 
 /* Media queries */
 
 @media (min-width: 768px) {
+  .header {
+    margin: 5px 20px;
+  }
+
+  .playlists {
+    padding: 0px 20px;
+  }
+
+  .playlist-cover {
+    width: 100px;
+  }
+
   .album-card {
     width: 45%;
   }
