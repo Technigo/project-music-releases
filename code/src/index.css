@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #191919;
+  color: #ffffff;
 }
 
 code {
@@ -13,11 +14,15 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .header {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   margin: 22px 0 0 50px;
-  color: #ffffff;
 }
 
 .album-wrapper {
@@ -39,10 +44,13 @@ code {
 }
 
 .album-name {
-  color: #ffffff;
   font-weight: 600;
   margin: 10px 0 0 0;
 }
 
+.artist-name:hover, .album-name:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
 
 
