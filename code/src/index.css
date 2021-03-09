@@ -5,9 +5,114 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
+  padding: 20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: #FFF;
+  font-size: 16px;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  border: solid purple 2px;
+}
+
+.album {
+  /* margin: 25px 0 40px; */
+  width: 100%;
+  border: solid white 2px;
+  display: inline-block;
+}
+
+.cover-container {
+  position: relative;
+  width: 100%;
+}
+
+.cover {
+  object-fit: cover;
+  width: 100%;
+  border: solid turquoise 5px;
+}
+
+.cover:hover {
+  filter: brightness(50%)
+}
+
+.album-title {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #FFF;
+}
+
+.artist-name {
+  font-family: Helvetica;
+  font-size: 14px;
+  padding-top: 7px;
+  color: #a0a0a0;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border: solid pink 2px;
+}
+
+.icons-container:hover {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.heart-icon {
+  width: 9%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.play-icon {
+  width: 20%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.dots-icon {
+  width: 7%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+@media (min-width: 667px) {
+  .main {
+    flex-flow: row wrap; 
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .album {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .album {
+    width: 24%;
+  }
 }
