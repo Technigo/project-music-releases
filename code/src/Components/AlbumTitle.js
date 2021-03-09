@@ -1,9 +1,10 @@
 import React from 'react';
 
-const AlbumTitle = () => {
+const AlbumTitle = (props) => {
   return (
     <div>
-    <a href="https://github.com/sofiavazs/project-music-releases/blob/master/code/src/components/AlbumTitle.js"></a>
+      <a href={props.item.external_urls.spotify}>
+      <h2 className="album-title">{props.item.name} </h2></a>
     </div>
   );
 }

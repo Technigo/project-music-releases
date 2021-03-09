@@ -1,8 +1,8 @@
 import React from 'react';
 
-const AlbumCover = () => {
+const AlbumCover = (props) => {
   return (
-    <img src="https://dummyimage.com/600x400" alt=""></img>
+    <img src={props.item.images[1].url} alt="Album cover"></img>
   );
 }
 
