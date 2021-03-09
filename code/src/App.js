@@ -1,12 +1,15 @@
 import React from 'react'
-import data from './data.json'
+// import data from './data.json'
+import Header from './components/Header'
+import AlbumCard from './components/AlbumCard'
 
-console.log(data)
+// console.log(data)
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+    <Header /> 
+    <AlbumCard />
+    </>
   )
 }
