@@ -1,9 +1,11 @@
 .header-title {
   font-family: 'Helvetica', sans-serif;
   color: white;
-  font-size: 30px;
-}
-
-.header-title hr {
-  border: 1px solid #4A4A4A;
+  font-size: 16px;
+  text-align: left;
+  margin: 0 1em 1em 1em;
+  border: 2px;
+  border-color: #3a3a3a;
+  border-style: none none solid none;
+  line-height: 18px;
 }

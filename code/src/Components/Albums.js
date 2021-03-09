@@ -18,7 +18,7 @@ export const Albums = (data) => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='album-text'>
         <p className='album-title'>
           <strong>Album title</strong>
         </p>

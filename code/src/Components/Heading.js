@@ -5,8 +5,7 @@ export const Heading = () => {
   
   return (
     <header className='header-title'>
-      <h1>New albums and Singles</h1>
-      <hr></hr>
+      <h1>New albums &#38; singles</h1>
     </header>
 
   ) 
