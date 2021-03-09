@@ -1,18 +1,13 @@
 import React from 'react'
-// import data from './data.json'
 
-import AlbumName from './AlbumName'
-import AlbumImage from './AlbumImage'
-
-const Album = () => {
+const Album = (prop) => {
     
-
     return (
         <div>
-            <AlbumImage/>
-            <AlbumName/>
-            
-            
+            <img src={prop.image}/>
+            <h2>{prop.title}</h2>
+            <h3>{prop.artist}</h3>
+            <h4>{prop.albumType}</h4>
         </div>
     )
 }
