@@ -1,6 +1,6 @@
 import React from 'react'
 import data from './data.json'
-import {AlbumNames} from "./components/AlbumNames"
+import Album from "./components/Album"
 
 console.log(data)
 
@@ -11,9 +11,16 @@ export const App = () => {
   return (
     <div>
       Find me in src/app.js!
+      
       { albums.map((album) => {
-        return <AlbumNames name={album.name}/>
+        return <Album
+        image={album.images[1].url}
+        name={album.name}
+        artists={album.artists[0].name}
+        />
       }) }
+
+
     </div>
   )
 }
