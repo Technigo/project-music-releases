@@ -3,23 +3,25 @@ import { Artist } from './Artist'
 
 const Album = (props) => {
     return (
-        <div>
-            Album: {props.albumName}
-            <br></br> 
-            Artists: {props.artists.map((artist, index) => {
-                if(index === props.artists.length-1) {
-                    return `${artist.name}`;
+        <div className="album">
+            <div className="albumArt">
+                <img src={props.image}></img>
+            </div>
+            <div className="albumName">
+                <a href={props.albumUrl}>{props.albumName}</a>
+            </div>
+            <div className="artists">
+                {props.artists.map((artist, index) => {
+                if(index === props.artists.length-1) { //would mean that you are at the last artist
+                    console.log(index)
+                    console.log(artist.external_urls.spotify)
+                    return (<a href={artist.external_urls.spotify}>{artist.name}</a>)
                 }
-                else {
-                    return `${artist.name}, `;
+                else {  //would mean that you are NOT at the last artist
+                    return (<a href={artist.external_urls.spotify}>{artist.name}, </a>)
                 }
-            })}
-            <br></br>
-            Image url: <img src={props.image}></img>
-            <br></br>
-            Album url: <a href={props.albumUrl}>Listen on Spotify</a>
-            <br></br>
-            Artist url: <a href={props.artistUrl}>{props.artists[0].name}</a>
+                })}
+            </div>
         </div>
     )
 }

@@ -1,0 +1,44 @@
+
+body {
+    background: black;
+    color: #fff;
+   
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.album {
+    border: 2px solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 20px;
+}
+
+.albumArt img {
+    border: 2px solid rgb(59, 216, 255);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.albumName a {
+    border: 2px solid rgb(195, 44, 255);
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.artists a {
+    border: 2px solid rgb(255, 47, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
