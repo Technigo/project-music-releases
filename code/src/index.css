@@ -16,7 +16,14 @@ code {
 .header {
   color:#ffffff;
   font-size: 20px;
+  margin-left:15px;
+  margin-bottom: 5px;
+  text-align: center;
+}
 
+header hr {
+  border: 1px solid rgba(71, 71, 71, 0.514);
+  width: 80%;
 }
 
 .albums a, .artists a {
@@ -31,12 +38,170 @@ code {
   font-family: Helvetica;
   font-size: 14px;
   color:#ffffff;
+  margin-bottom: 0;
+  max-width: 300px;
 }
 
+.artists {
+  display: flex;
+  /* font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration:none;
+  margin-top:3px;
+  margin-right: 5px; */
+}
 
 .artist-name {
   font-family: Helvetica;
   font-size: 14px;
   color: #a0a0a0;
-  text-decoration:none;
+  /* text-decoration:none; */
+  margin-top:3px;
+  margin-right: 5px;
+}
+
+.artist-name:not(:last-child):not(:nth-last-child(2))::after {
+  content: ', ';
+}
+
+.artist-name:not(:first-child):last-child::before {
+  content: ' & ';
+}
+
+
+/* .album-cover {
+  display: flex;
+  position: relative;
+}
+
+.icons-overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.icon-heart {
+  height: 30px;
+  width: 30px;
+  padding-top: 15px;
+}
+
+.icon-play {
+  height: 60px;
+  width: 60px;
+  /* opacity: 0,5; */
+  padding-left:20px;
+  padding-right:20px;
+  color:white;
+
+}
+
+.icon-dots {
+  height: 30px;
+  width: 30px;
+  padding-top: 15px;
+}
+
+.music-card {
+  margin-left:20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.album-img {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  height: 300px;
+  width: 300px;
+}
+
+.album-img:hover {
+  filter: brightness(50%);
+}
+
+.icon-play:hover {
+  transform: scale(1.1);
+}
+
+.icons{
+  display: flex;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  top:45%;
+  left:20%;
+  /* display:none; */
+}
+
+
+.icons:hover{
+  display: flex;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  /* top:0;
+  left:0;
+  right:0;
+  bottom: 0; */
+  top:45%;
+  left:20%;
+
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px
+}
+
+
+
+/**** MEDIA QUERIES ***/
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .music-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+
+  .music-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
+
+  .header {
+    text-align: left;
+    margin-left: 50px
+  }
+
 }

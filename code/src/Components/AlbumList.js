@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../data.json';
+
 import AlbumTitle from './AlbumTitle'
 import AlbumCover from './AlbumCover'
 import Artists from './Artists';
@@ -11,7 +12,7 @@ const AlbumList = () => {
     <div className="music-container" >
 
       {data.albums.items.map ((item) => (
-        <div className="music-card" key={item.id}>
+        <div className="music-card"key={item.id}>
           <AlbumCover
             key={item.image}
             item={item}
