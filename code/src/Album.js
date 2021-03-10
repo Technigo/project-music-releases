@@ -6,7 +6,16 @@ export const Album = (props) => {
         <div className="album">
             <img src={props.imageSrc} alt={props.albumName}></img>
             <p>{props.albumName}</p>
-            <Artist artists={props.artists}/>
+            {props.artists.map((artist, index) => {
+                return (
+                    <Artist
+                    key={artist.id} 
+                    artistUrl={artist.external_urls.spotify}
+                    artistName={artist.name}
+                    />
+                )
+            })}
+
         </div>
     )
 }

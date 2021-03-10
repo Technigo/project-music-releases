@@ -2,8 +2,10 @@ import React from 'react'
 
 export const Artist = (props) => {
     return (
-        <div>{props.artists.map((artist) => {
-            return artist.name
-        })}</div>
+        <div>
+            <a href={props.artistUrl} target="_blank">
+                <p className="artists">{props.artistName}</p>
+            </a>
+        </div>
     )
     }
