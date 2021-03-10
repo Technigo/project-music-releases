@@ -1,15 +1,12 @@
 import React from 'react'
-import data from 'data.json'
 import './Albums.css'
-import { Artists } from './Artists'
 
-export const Albums = (data) => {
 
+export const Albums = (props) => {
   return ( 
-    <>
+    <div className="main-container-albums">
       <div className="album-container">
-        <img className="album-image" src="https://via.placeholder.com/300" alt="Album cover"/>
-        {/* <img src={data.url} alt={data.name}></img> */}
+        <img className="album-image" src={props.albumContent.images[1].url} alt="Album-image"></img> 
         <div className="icons-container">
           <div className="icons">
             <img className="icon-heart" src="icons/heart.svg"/>
@@ -18,12 +15,13 @@ export const Albums = (data) => {
           </div>
         </div>
       </div>
+
       <div className='album-text'>
+
         <p className='album-title'>
-          <strong>Album title</strong>
-        </p>
-          <Artists />
+          <strong> {props.albumContent.name}</strong>
+        </p>          
       </div>
-    </>
-  );
+    </div>
+  )
 }

@@ -1,15 +1,41 @@
 .main-container {
-text-align: center;
+text-align: left;
 }
 
 .album-cards-container {
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 justify-content: space-evenly;
 }
 
 .album-card {
   display: flex;
   flex-direction: column;
-  width: 300px;
 }
+
+ @media (min-width:667px) {
+  .album-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .album-card {
+    width:30%;
+  }
+
+  .album-text {
+    max-width: 300px;
+  }
+
+}
+
+@media (min-width:992px) {
+  .album-cards-container{
+    
+  }
+
+  .album-card {
+    width:40%;
+  }
+} 
+

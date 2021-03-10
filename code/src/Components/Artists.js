@@ -1,10 +1,11 @@
 import React from 'react'
 import './Artists.css'
 
-export const Artists = () => {
+export const Artists = (props) => {
+  console.log(props)
   return (
       <p className='artist-name'>
-        Artist
+        Artist: {props.artistsContent.name}
       </p>
   )
 }

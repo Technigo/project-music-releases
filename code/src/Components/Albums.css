@@ -98,3 +98,9 @@
 .album-title:hover {
   text-decoration: underline;
 }
+
+/* @media (min-width: 667px) {
+  .album-container {
+    width
+  }
+} */
