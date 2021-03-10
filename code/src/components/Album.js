@@ -9,9 +9,9 @@ const Album = (props) => {
         <div className="cover-wrapper">
           <img className="cover" src={props.albumContent.images[1].url} alt="cover" />
           <div className="icons">
-            <img className="icon" src={require("./heart.svg")} alt="favorite icon" />
-            <img className="icon" src={require("./play.svg")} alt="play icon" />
-            <img className="icon" src={require("./dots.svg")} alt="dots icon" />
+            <img className="icon favorite" src={require("./heart.svg")} alt="favorite icon" />
+            <img className="icon play" src={require("./play.svg")} alt="play icon" />
+            <img className="icon dots" src={require("./dots.svg")} alt="dots icon" />
           </div>
         </div>
         <h3>{props.albumContent.name}</h3>

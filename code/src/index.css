@@ -50,10 +50,16 @@ code {
 }
 
 .icon {
-  
   width: 20%;
 }
 
+.play { 
+  transition: all .2s ease-in-out; 
+}
+
+.play:hover { 
+  transform: scale(1.4); 
+}
 
 .artist-container {
   display: inline;
