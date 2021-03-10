@@ -20,6 +20,10 @@ code {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 .album {
   width: 100%;
 }
@@ -59,6 +63,10 @@ code {
 
 .play:hover { 
   transform: scale(1.4); 
+}
+
+.underline:hover {
+  text-decoration: underline;
 }
 
 .artist-container {

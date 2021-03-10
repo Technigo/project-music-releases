@@ -14,10 +14,10 @@ const Album = (props) => {
             <img className="icon dots" src={require("./dots.svg")} alt="dots icon" />
           </div>
         </div>
-        <h3>{props.albumContent.name}</h3>
+        <h3 className="underline">{props.albumContent.name}</h3>
       </a>
       <div>{props.albumContent.artists.map((name) => {
-        return <a className="artist-container" href={name.external_urls.spotify}><span>{name.name}</span></a>
+        return <a className="artist-container" href={name.external_urls.spotify}><span className="underline">{name.name}</span></a>
         })}</div>
     </div>
   )
