@@ -36,14 +36,81 @@ a {
   padding: 16px;
 }
 
-.artist-name{
+.artist-name {
+  display:inline-block;
+  margin: 0;
   font-family: 'Helvetica';
   font-size: 14px;
   color: #a0a0a0;
 }
 
-.album-name{
+.album-name {
   font-family: 'Helvetica';
   font-size: 14px;
   color:#ffffff;
+  max-width: 250px;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.image-wrapper{
+  position: relative;
+}
+
+
+.all-icons{
+  opacity: 0;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.all-icons:hover{
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.icon-heart{
+  width: 45px;
+  height: 45px;
+}
+
+.icon-play{
+  width: 60px;
+  height: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-play:hover{
+  width: 70px;
+  height: 70px;
+}
+
+.icon-dots{
+  width: 45px;
+  height: 45px;
+}
+
+.artist-container:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-container:only-child::before { 
+  content: ""; 
 }
