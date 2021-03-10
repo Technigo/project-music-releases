@@ -15,7 +15,16 @@ code {
 
 .header {
   color:#ffffff;
+  font-size: 20px;
 
+}
+
+.albums a, .artists a {
+  text-decoration: none;
+}
+
+.albums a:hover, .artists a:hover {
+  text-decoration: underline 2px white;
 }
 
 .album-title {
@@ -24,13 +33,10 @@ code {
   color:#ffffff;
 }
 
-.artist-name a {
+
+.artist-name {
   font-family: Helvetica;
   font-size: 14px;
   color: #a0a0a0;
-  /* text-decoration:none; */
-}
-
-.artist-name a {
   text-decoration:none;
 }

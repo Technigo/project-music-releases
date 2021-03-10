@@ -2,7 +2,9 @@ import React from 'react';
 
 const AlbumCover = (props) => {
   return (
-    <img src={props.item.images[1].url} alt="Album cover"></img>
+    <div className="album-cover">
+        <img src={props.item.images[1].url} alt="Album cover"></img>
+    </div>
   );
 }
 
