@@ -17,10 +17,7 @@ export const Albums = (props) => {
       </div>
 
       <div className='album-text'>
-
-        <p className='album-title'>
-          <strong> {props.albumContent.name}</strong>
-        </p>          
+        <a className='album-title' href={props.albumContent.external_urls.spotify}>{props.albumContent.name}</a>        
       </div>
     </div>
   )
