@@ -12,11 +12,11 @@ body {
 
 /* ------------------------------- TYPOGRAPHY ------------------------------- */
 
-h3,
-h4 {
+.link {
   font-size: 14px;
   line-height: 1.5em;
   font-weight: normal;
+  text-decoration: none;
 }
 h1 {
   font-size: 24px;
@@ -24,10 +24,15 @@ h1 {
   padding: 0.5em 0;
   border-bottom: 1px solid #a0a0a0;
 }
-h3,
+.link__album,
 h1 {
   color: white;
 }
-h4 {
+.link__artists {
   color: #a0a0a0;
+}
+
+/* Hover effects to text links */
+.link:hover {
+  text-decoration: underline;
 }

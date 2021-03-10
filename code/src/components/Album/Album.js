@@ -9,7 +9,13 @@ const Album = (props) => {
       <div className="album__image--wrapper">
         <AlbumImage image={props.image} url={props.url} />
       </div>
-      <h3>{props.name}</h3>
+      <a
+        href={props.url}
+        target="_blank"
+        rel="noreferrer"
+        className="link link__album">
+        {props.name}
+      </a>
       {props.artists.map((artist) => (
         <Artists
           key={artist.id}
