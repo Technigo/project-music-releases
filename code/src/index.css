@@ -10,19 +10,43 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  font-size: 20px;
-  border-bottom: 0.5px solid rgb(128, 128, 128);
-  margin-bottom: 40px;
-  padding-left: 40px;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
+.header {
+  font-size: 20px;
+  border-bottom: 0.5px solid rgb(128, 128, 128);
+  margin-bottom: 40px;
+  padding-left: 80px;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  padding: 0 50px;
+  margin-top: 70px;
+  border-right:rgb(128, 128, 128) 0.5px solid;
+  display: none;
+}
+
+h3 {
+  margin-top: 0;
+  padding-left: 40px;
+  font-size: 28px;
+}
+
+li {
+  list-style: none;
+  padding: 10px 0;
+}
+
 .container {
+  padding-top: 70px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -126,16 +150,16 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
 .album-name {
   font-family: Helvetica;
   font-size: 14px;
   margin: 5px 0;
   font-weight: 700;
-}
-
-.album-name:hover, .artist:hover {
-  text-decoration-line: underline;
-  cursor: pointer;
 }
 
 .artist {
@@ -160,19 +184,41 @@ a {
 
 @media screen and (min-width:700px) {
   .container {
-    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .album-container {
+    width: 80%;
+    height: 35vw;
   }
 
   .header {
+    padding-left: 38%;
     font-size: 25px;
   }
+
+  .sidebar {
+    width: 30%;
+    padding: 0 25px;
+    margin-top: 70px;
+    display: block;
+  }
+  
 }
 
 @media screen and (min-width: 1024px) {
   .container {
+    width: 85%;
     margin: 0 4%;
     grid-template-columns: repeat(4, 20%);
     grid-column-gap: 4%;
+  }
+
+  .sidebar {
+    width: 15%;
+    padding: 0 50px;
+    margin-top: 70px;
   }
 
   .gallery-item {
@@ -181,9 +227,6 @@ a {
 
   .album-container {
     width: 100%;
-  }
-
-  .albumFront-container {
     height: 20vw;
   }
 
@@ -193,7 +236,7 @@ a {
 
   .header {
     font-size: 30px;
-    padding-left: 4%;
+    padding-left: 22%;
   }
 
 }
