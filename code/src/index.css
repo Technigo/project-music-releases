@@ -66,11 +66,15 @@ a {
   width: 20%;
   height: 20%;
   transition: all .2s ease-in-out;
+  border-radius: 50%;
 }
 
 .play:hover {
   transform: scale(1.1);
   cursor: pointer;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.537);
+  box-shadow:inset 5px 5px 5px 10px rgba(0, 0, 0, 0.537);
 }
 
 .dot, .heart {

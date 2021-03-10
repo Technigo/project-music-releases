@@ -1,11 +1,8 @@
 import React from 'react'
-import data from '../data.json'
 
 
 const Artist = (props) => {
-  console.log(props.artists)
-  console.log(props.artists.length)
-
+  
   const generateDelimiter = (index, length) => {
     if (index === length - 2) {
       return " & "
@@ -18,7 +15,7 @@ const Artist = (props) => {
   
    return props.artists.map((artist, index) => {
       return (
-        <span className="delimiter">
+        <span key={artist.id} className="delimiter">
           <a className="artist-name" href={artist.external_urls.spotify}>
           {artist.name}</a>{generateDelimiter(index, props.artists.length)}
         </span>
