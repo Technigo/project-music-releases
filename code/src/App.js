@@ -19,7 +19,8 @@ export const App = () => {
             key={album.id}
             name={album.name}
             artist={album.artists[0].name}
-            url={album.href}
+            url={album.external_urls.spotify}
+            urlArtist={album.artists[0].external_urls.spotify}
           />
         </div>
         )

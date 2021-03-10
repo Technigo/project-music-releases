@@ -1,3 +1,7 @@
+* {
+  border: red solid 1px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,48 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.album {
+  border: solid 1px pink;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+
+
+}
+
+a, .artist, .url-link {
+  display: inline-flex;
+  text-decoration: none;
+}
+
+
+.album-image {
+  width: 100%;
+  
+}
+
+.album-information-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.album-name {
+  color: #fff;
+}
+
+.artist {
+  color: #a0a0a0;
+}
+
