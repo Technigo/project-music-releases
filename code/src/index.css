@@ -40,26 +40,18 @@ code {
 }
 
 
-.albumImage {
-
-}
-
 /* ON HOVER */
-.albumImage:hover {
+/* .albumImage:hover {
+  opacity: 0.5;
+} */
+
+.albumCard:hover .albumImage {
   opacity: 0.5;
 }
 
- /* .iconsHidden {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; 
+.albumCard:hover .hidden{
   display: flex;
-  justify-content: center;
-  align-content: center;
-}  */
+}
 
 
 
@@ -86,8 +78,6 @@ code {
   z-index: 2;
   display: flex;
   justify-content: space-around;
-  display: none;
-
   top: 0;
   bottom: 0;
   left: 0;
@@ -95,9 +85,11 @@ code {
   margin: 0% 10%;
 }
 
-.hidden { 
-  display: flex
-} 
+.hidden {
+  display: none;
+}
+
+
 
 /* .hidden:hover {
   display: none;
