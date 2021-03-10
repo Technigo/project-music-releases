@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -24,60 +26,105 @@ h1 {
   font-family: Helvetica;
   color: #FFF;
   font-size: 16px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  border: solid purple 2px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+/*ALBUM STYLING*/
+
 .album {
-  /* margin: 25px 0 40px; */
   width: 100%;
-  border: solid white 2px;
-  display: inline-block;
+  height: auto;
+  margin-bottom: 27px;
 }
 
 .cover-container {
   position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
 }
+
+/*Cover image*/
 
 .cover {
   object-fit: cover;
   width: 100%;
-  border: solid turquoise 5px;
 }
 
 .cover:hover {
   filter: brightness(50%)
 }
 
+
+/*Album title*/
+
 .album-title {
   font-family: Helvetica;
   font-size: 14px;
+  margin-top: 7px;
   color: #FFF;
+  width: fit-content;
 }
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+/*Artist name*/
+
+.artist-container:not(:first-child, :last-child)::before {
+  content: ", ";
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+}
+
+.artist-container:only-child::before { content: "";}
 
 .artist-name {
   font-family: Helvetica;
   font-size: 14px;
-  padding-top: 7px;
+  margin-top: 7px;
   color: #a0a0a0;
+  width: fit-content;
 }
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+/*Icons*/
 
 .icons-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  border: solid pink 2px;
+}
+
+.play-icon:hover {
+  transition: all .1s ease;
+  transform: scale(1.1);
 }
 
 .icons-container:hover {
