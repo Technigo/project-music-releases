@@ -30,13 +30,13 @@
   }
 }
 
-@media (max-width: 1073px) {
+@media (min-width: 1073px) {
   .album {
-    flex: 1 0 calc(25% - 10px);
-    max-width: calc(25% - 10px);
+    flex: 1 0 calc(20% - 10px);
+    max-width: calc(20% - 10px);
   }
 }
-@media (max-width: 815px) {
+@media (max-width: 1073px) {
   .album {
     flex: 1 0 calc(50% - 10px);
     max-width: calc(45% - 10px);
