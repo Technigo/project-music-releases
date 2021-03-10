@@ -1,8 +1,7 @@
 import React from 'react'
 import data from './data.json'
-import AlbumCover from './Components/AlbumCover.js'
-import AlbumTitle from './Components/AlbumTitle.js'
-import ArtistName from './Components/ArtistName.js'
+import Album from './Components/Album.js'
+
 
 console.log(data)
 
@@ -12,8 +11,14 @@ export const App = () => {
   return (
     <div>
       {AlbumArray.map((album) => {
-        return <AlbumCover imgsrc={album.images[0].url}/>
-        return <AlbumTitle {album.name}/>
+        return <div className="album"> 
+        <Album
+          imgsrc={album.images[0].url}
+          key={album.name}
+          album={album.name}
+        />
+        </div>
+
       })}
     </div>
   )
