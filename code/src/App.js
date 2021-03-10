@@ -1,12 +1,29 @@
 import React from 'react'
+
+//import Artist from './components/Artist';
+import Album from './components/Album';
+import Header from './components/Header';
+
 import data from './data.json'
 
-console.log(data)
+
+
 
 export const App = () => {
+  console.log(data);
+
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+    <Header />
+    <Album />
+    </>
+    
+   /* <div>
+      <Album />
+       {data.map(item => (
+         <Album key={album} />
+       ))}
+    </div> */
   )
 }
+export default App;
