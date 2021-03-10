@@ -1,3 +1,7 @@
+* {
+  border: solid 1px black;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* HEADING */
+.heading-1 {
+  font-size: 20px;
+}
+
+/* CARD */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* IMAGE CONTAINER */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.album-cover {
+  width: 100%;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.heart-icon {
+  width: 64px;
+  margin: 10px;
+}
+
+.play-icon {
+  width: 64px;
+  margin: 10px;
+}
+.dots-icon {
+  width: 64px;
+  margin: 10px;
+}
+
+/* TEXT CONTAINER */
+
+
+
+
+
+
+/* TABLET */
+/* DESKTOP */

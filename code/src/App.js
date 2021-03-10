@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
     <Header /> 
-    <div>
+    <div className="container">
     {data.albums.items.map(item => (
         <AlbumCard key={item.id} albumContent = {item} />
       ))}
