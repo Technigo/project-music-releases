@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <h1>New albums and singles</h1>
+        <h1 className="heading-1">New albums & singles</h1>
     );
 }
 
