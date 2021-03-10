@@ -35,12 +35,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  filter: opacity(0%)
-}
-
-.buttonContainer:hover {
   filter: opacity(50%)
 }
+
+
 
 button {
   padding: 10px;
@@ -65,10 +63,7 @@ button {
   width: 100%;
 }
 
-.playButton:hover {
-  transform: scale(1.2);
-  filter: invert(100%) opacity(100%);
-}
+
 
 .moreButton{
   width: 20%;
@@ -84,12 +79,15 @@ button {
 
 .info p {
   margin: 5px 0 0;
+  font-family: Helvetica, sans-serif; 
+  font-size: 14px; 
+  color: #a0a0a0;
 }
 
 a:any-link{
   text-decoration: none;
   font-family: Helvetica, sans-serif; 
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 a:hover {
@@ -123,6 +121,16 @@ code {
   }
   .categoryContainer {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .buttonContainer {
+    filter: opacity(0%)
+  }
+  .buttonContainer:hover {
+    filter: opacity(50%)
+  }
+  .playButton:hover {
+    transform: scale(1.2);
+    filter: invert(100%) opacity(100%);
   }
 }
 @media (min-width: 1920px) {
