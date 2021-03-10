@@ -38,16 +38,15 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+/* a:hover {
   text-decoration: underline;
   color: #FFF;
-}
+} */
 
 /*ALBUM STYLING*/
 
 .album {
   width: 100%;
-  height: auto;
   margin-bottom: 27px;
 }
 
@@ -66,10 +65,58 @@ a:hover {
   width: 100%;
 }
 
-.cover:hover {
-  filter: brightness(50%)
+/*Icons*/
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
 }
 
+.icons-container:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.heart-icon {
+  width: 9%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.heart-icon:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  width: 20%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.play-icon:hover {
+  opacity: 1;
+  transition: all 0.1s ease;
+  transform: scale(1.1);
+}
+
+.dots-icon {
+  width: 7%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.dots-icon:hover {
+  opacity: 1;
+}
 
 /*Album title*/
 
@@ -78,7 +125,6 @@ a:hover {
   font-size: 14px;
   margin-top: 7px;
   color: #FFF;
-  width: fit-content;
 }
 
 .album-title:hover {
@@ -87,79 +133,55 @@ a:hover {
 
 /*Artist name*/
 
-.artist-container:not(:first-child, :last-child)::before {
-  content: ", ";
-}
-
-.artist-container:last-child::before {
-  content: " & ";
-}
-
-.artist-container:only-child::before { content: "";}
-
 .artist-name {
   font-family: Helvetica;
   font-size: 14px;
   margin-top: 7px;
   color: #a0a0a0;
-  width: fit-content;
 }
 
 .artist-name:hover {
   text-decoration: underline;
 }
 
-/*Icons*/
-
-.icons-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+/*adding , between artists if they're more than 3, but not on the last one*/
+.artist-container:not(:first-child, :last-child)::before {
+  content: ", ";
 }
 
-.play-icon:hover {
-  transition: all .1s ease;
-  transform: scale(1.1);
+/*adding & between artists if they're 2*/
+.artist-container:last-child::before {
+  content: " & ";
 }
 
-.icons-container:hover {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
+/*not adding anything if 1 artist*/
+.artist-container:only-child::before { content: "";}
 
-.heart-icon {
-  width: 9%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.play-icon {
-  width: 20%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.dots-icon {
-  width: 7%;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
 
 @media (min-width: 667px) {
+
   .main {
     flex-flow: row wrap; 
-    justify-content: space-between;
     align-items: flex-start;
   }
   
   .album {
-    width: 48%;
+    flex: 0 0 48%;
   }
+  
+  .album:not(:nth-child(2n+1)) {
+    margin-left: calc( (100% - (48% * 2)) / 1);
+  }
+
 }
 
 @media (min-width: 1024px) {
+
   .album {
-    width: 24%;
+    flex: 0 0 24%;
+  }
+
+  .album:not(:nth-child(4n+1)) {
+    margin-left: calc( (100% - (24% * 4)) / 3);
   }
 }
