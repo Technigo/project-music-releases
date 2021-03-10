@@ -14,7 +14,7 @@ const AlbumCard = (props) => {
                     <img className="dots-icon" src="./icons/dots.svg" alt="dots icon"></img>
                 </div>
             </div>
-        </div>
+
         <div className="text-container">
             <a className="title" href={props.albumContent.external_urls.spotify} target="_blank">
                 {props.albumContent.name}
