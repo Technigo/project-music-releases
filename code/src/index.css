@@ -12,7 +12,7 @@ body {
 
 /* ------------------------------- TYPOGRAPHY ------------------------------- */
 
-.link {
+.link, .text-inline {
   font-size: 14px;
   line-height: 1.5em;
   font-weight: normal;
@@ -28,11 +28,12 @@ h1 {
 h1 {
   color: white;
 }
-.link__artists {
+.text-inline {
   color: #a0a0a0;
 }
 
 /* Hover effects to text links */
 .link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }

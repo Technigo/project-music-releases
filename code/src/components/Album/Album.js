@@ -16,13 +16,7 @@ const Album = (props) => {
         className="link link__album">
         {props.name}
       </a>
-      {props.artists.map((artist) => (
-        <Artists
-          key={artist.id}
-          name={artist.name}
-          url={artist.external_urls.spotify}
-        />
-      ))}
+      <Artists artists={props.artists} />
     </div>
   );
 };
