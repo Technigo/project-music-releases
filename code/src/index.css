@@ -22,9 +22,50 @@ code {
 
 .album {
   width: 22%;
-  
+}
+
+.cover-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cover-wrapper:hover .icons {
+  display: flex;
 }
 
 .cover {
   width: 100%;
 }
+
+.cover-wrapper:hover {
+  filter: brightness(50%);
+}
+
+.icons {
+  position: absolute;
+  bottom:40%; 
+  display: none;
+  justify-content: space-around;
+}
+
+.icon {
+  
+  width: 20%;
+}
+
+
+.artist-container {
+  display: inline;
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-container:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-container:only-child::before { content: ""; }
