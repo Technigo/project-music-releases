@@ -17,9 +17,9 @@ export const App = () => {
       </div>
       <div className="albumWrapper">
 
-        {albumArray.map((album, index) => {
+        {albumArray.map((album) => {
               return (
-              <Album image={album.images[0].url} title={album.name} artist={album.artists[0].name} key={index}/>
+              <Album image={album.images[0].url} title={album.name} artist={album.artists[0].name} key={album.name}/>
               )
           })
         }
