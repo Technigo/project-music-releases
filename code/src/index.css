@@ -10,29 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.album-name {
-  font-size: 15px;
-  margin: 5px 0;
-  font-weight: 700;
-}
-
-.album-name:hover, .artist:hover {
-  text-decoration-line: underline;
-  cursor: pointer;
-}
-
-.artist {
-  font-size: 14px;
-  margin: 0;
-  font-weight: 400;
-  color: rgb(173, 169, 169);
-}
-
 .header {
   font-size: 20px;
   border-bottom: 0.5px solid rgb(128, 128, 128);
@@ -144,17 +121,46 @@ button img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.album-name {
+  font-family: Helvetica;
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: 700;
+}
+
+.album-name:hover, .artist:hover {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.artist {
+  font-family: Helvetica;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  color: #a0a0a0;
+}
+
+.artist::after {
+  content: ", ";
+}
+
+.artist:nth-last-of-type(2)::after {
+  content: " & ";
+}
+
+.artist:last-of-type::after {
+  content: "";
+}
+
 @media screen and (min-width:700px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .album-name {
-    font-size: 16px;
-  }
-
-  .artist {
-    font-size: 15px;
   }
 
   .header {
@@ -183,14 +189,6 @@ button img {
 
   .image-container {
     height: 20vw;
-  }
-
-  .album-name {
-    font-size: 17px;
-  }
-
-  .artist {
-    font-size: 16px;
   }
 
   .header {

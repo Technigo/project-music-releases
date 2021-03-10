@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './data.json'
-import {Album} from './Album'
-let i=0;
+import {Album} from './components/Album'
+import {Artists} from './components/Artists'
 
 console.log(data)
 
@@ -17,15 +17,22 @@ export const App = () => {
 }
 
 const MapAlbum = (item) => {
-  i++
-  if(i<9){
-  return <Album 
+  return (
+  <Album 
   key = {item.name} 
   image = {item.images[0].url} 
   albumName = {item.name} 
-  artist = {item.artists[0].name}
   albumLink = {item.external_urls.spotify}
-  artistLink = {item.artists[0].external_urls.spotify}
-  />
-  }
+  artist = {item.artists.map(artist => MapArtists(artist))}
+  />)
+}
+
+const MapArtists = (artist) => {
+  return (
+    < Artists 
+      key = {artist.name} 
+      name = {artist.name} 
+      url = {artist.external_urls.spotify} 
+    />
+  )
 }
