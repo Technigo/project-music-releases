@@ -1,3 +1,4 @@
+/* ---------------------------- WRAPPER AND ALIGN --------------------------- */
 .section-wrapper {
   margin: 0 5%;
   max-width: 1350px;
@@ -13,8 +14,12 @@
   justify-content: center;
 }
 
-@media (min-width: 1073px) {
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+/* Makes sure that when viewing the page on an
+    extra large screen, the main content is centrally aligned
+*/
+@media (min-width: 1351px) {
   .section-wrapper {
-    margin: 0 auto;
+    margin: 2em auto;
   }
 }

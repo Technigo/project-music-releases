@@ -9,7 +9,7 @@ const App = () => {
   const albums = data.albums.items;
   return (
     <>
-      <header className="section-wrapper ">
+      <header className="section-wrapper">
         <h1>New Albums & Singles</h1>
       </header>
       <main className="section-wrapper album--wrapper">
