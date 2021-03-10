@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const CategoryHeading = () => {
+export const CategoryHeading = (props) => {
     return (
-        <h1 className="categoryHeading">New albums & singles</h1>
+        <h1 className="categoryHeading">New {props.heading}s</h1>
     )
 }
