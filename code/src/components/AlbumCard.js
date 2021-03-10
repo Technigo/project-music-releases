@@ -9,7 +9,7 @@ const albumArray = data.albums.items;
     {albumArray.map(album => {
         return (
         <div>
-        <img src={album.images[1].url} />
+            <img src={album.images[1].url} />
         <div> 
             <Artists />
         </div>
