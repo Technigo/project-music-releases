@@ -2,22 +2,59 @@ body {
   background-color: #252424;
   color: #ffffff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family:  "Helvetica Neue";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.main {
+  margin: 20px 40px;
 }
 
 .album-box {
   position: relative;
-  margin: 15px 0;
+  margin: 10px 0;
+}
+
+.album-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.image-icon {
+  display: none;
+}
+
+/*.image-icon {
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+}*/
+
+.image-icon:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+ }
+
+.icon {
+  width: 30px;
+  height: 30px;
+ }
+
+.play {
+  width: 70px;
+  height: 70px;
+}
+
+.play:hover {
+  transform: scale(1.5);
+  transition: transform 0.5s;
 }
 
 .album-name {
@@ -43,70 +80,82 @@ code {
   color: #ffffff;
 }
 
-.album-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
- }
 
- .image-icon {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  opacity: 0;
- }
-
-.image-icon:hover {
-   opacity: 1;
-   background-color: rgba(0, 0, 0, 0.6);
- }
-
- .icon {
-   width: 30px;
-   height: 30px;
-  
-  }
-
-.play {
-    width: 70px;
-    height: 70px;
-  }
-
-.play:hover {
-    transform: scale(1.5);
-    transition: transform 0.5s;
-  }
-
-  
 @media (min-width: 768px) {
   .album-wrapper {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin: 0 50px;
+    gap: 15px;
    }
 
-   .album-box {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-  
+   .album-image {
+    height: 400px;
   }
 
-  @media (min-width: 1200px) {
-    .album-wrapper {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 10px;
-     }
+  .image-icon {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+
+  .image-icon img {
+    margin: 30px;
+   }
+
+}
+
+@media (min-width: 1200px) {
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+   }
+   
+   .image-icon {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+   }
+
+   .album-image {
+     height: 400px;
+   }
   
-    
-    
-    }
+}
+@media (min-width: 1928px) {
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+   }
+   .album-name , .artist-name{
+     font-size: 22px
+   }
+   .image-icon {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+   }
+
+   .album-image {
+     height: 600px;
+   }
+  
+}
+
+
   
 
 

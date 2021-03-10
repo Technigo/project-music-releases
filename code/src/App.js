@@ -4,7 +4,7 @@ import React from 'react'
 
 export const App = () => {
   return (
-    <main className="album">
+    <main className="main">
       <h2>New Albums & Singles</h2>
       <div>
         <article>
