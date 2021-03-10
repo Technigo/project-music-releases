@@ -3,19 +3,22 @@ import './Album.css';
 import Artists from 'components/Artists/Artists';
 import AlbumIcons from 'components/AlbumIcons/AlbumIcons';
 
-const Album = () => {
+const Album = (props) => {
+  // console.log(props);
   return (
     <div className="album">
-      <img
-        className="album__image"
-        src="https://i.scdn.co/image/a8b8d0bd26dc496f5b9ea65994172c5d541aa1b9"
-        alt="hdjak"
-      />
+      <img className="album__image" src={props.image} alt="Album Cover Art" />
       <div className="album__icons--wrapper">
         <AlbumIcons />
       </div>
-      <h3>Album Name</h3>
-      <Artists />
+      <h3>{props.name}</h3>
+      {props.artists.map((artist) => (
+        <Artists
+          key={artist.id}
+          name={artist.name}
+          url={artist.external_urls.spotify}
+        />
+      ))}
     </div>
   );
 };
