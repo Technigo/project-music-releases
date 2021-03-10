@@ -1,15 +1,13 @@
 import React from 'react';
 import './Album.css';
 import Artists from 'components/Artists/Artists';
-import AlbumIcons from 'components/AlbumIcons/AlbumIcons';
+import AlbumImage from 'components/AlbumImage/AlbumImage';
 
 const Album = (props) => {
-  // console.log(props);
   return (
     <div className="album">
-      <img className="album__image" src={props.image} alt="Album Cover Art" />
-      <div className="album__icons--wrapper">
-        <AlbumIcons />
+      <div className="album__image--wrapper">
+        <AlbumImage image={props.image} url={props.url} />
       </div>
       <h3>{props.name}</h3>
       {props.artists.map((artist) => (
