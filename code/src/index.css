@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #181818;
+
 }
 
 code {
@@ -38,43 +39,28 @@ code {
   z-index: 1;
 }
 
-.imageAndIcon {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
 
 .albumImage {
-  /* position: relative; */
+
 }
 
-/* .albumCard a {
-  position: absolute;
-  display: block;
-  background: url("/code/public/icons/heart.svg") no-repeat fixed center;
-  height: 100%;
-  width: 100%;
-  background-size: 50px 50px;
-  z-index: 2;
-} */
+/* ON HOVER */
+.albumImage:hover {
+  opacity: 0.5;
+}
 
-
-
-.iconsHidden {
+ /* .iconsHidden {
   position: absolute;
   z-index: 2;
-  /* top: 0;
+  top: 0;
   bottom: 0;
   left: 0;
-  right: 0; */
+  right: 0; 
   display: flex;
   justify-content: center;
   align-content: center;
-}
+}  */
 
-.heart {
-  width: 50px;
-}
 
 
 .albumTitle {
@@ -92,6 +78,53 @@ code {
   color: #a0a0a0;
   margin-top: 0;
 }
+
+/* PLAYING WITH ICONS */
+
+.icons {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  display: none;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0% 10%;
+}
+
+.hidden { 
+  display: flex
+} 
+
+/* .hidden:hover {
+  display: none;
+}  */
+
+.icons img {
+  /* width: 20%; */
+  margin-bottom: 70px;
+}
+
+
+.icon-heart {
+  width: 14%;
+}
+
+.icon-play {
+  width: 30%;
+}
+
+.icon-play:hover {
+  width: 35%;
+} 
+
+.icon-dots {
+  width: 8%;
+}
+
 
 
 

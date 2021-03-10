@@ -10,6 +10,7 @@ console.log(albumArray)
 
 export const App = () => {
   return (
+    <>
     <div className="main">
       <div className="headerContainer">
         <h1 className="heading">New albums & singles</h1>
@@ -24,5 +25,6 @@ export const App = () => {
         }
       </div>
     </div>
+    </>
   )
 }
