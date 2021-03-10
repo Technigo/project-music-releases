@@ -1,13 +1,65 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  background-color: #181818;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.heading {
+  width: 300px;
+  font-size: 18px; 
+  color: #fcfcfc;
+}
+.albums-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+.album-card {
+  height: 360px;
+  margin: 15px 20px;
+}
+
+.album-image {
+  margin-bottom: 5px;
+}
+
+.album-name {
+  color: #fff;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+@media (min-width: 668px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 0 100px;
+  }
+  .heading {
+    width: 643px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .heading {
+    width: 1338px;
+  }
 }
