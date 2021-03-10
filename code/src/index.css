@@ -18,19 +18,32 @@ code {
 }
 
 .album {
-  border: solid 1px pink;
+ width: 100%;
+ display: flex;
+}
+
+.album-card {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
   font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  
 
 
 }
 
-a, .artist, .url-link {
+.url-link {
   display: inline-flex;
-  text-decoration: none;
+}
+
+
+
+a:link, a:visited {
+  text-decoration: none; 
+  color: #a0a0a0;
 }
 
 
@@ -48,9 +61,36 @@ a, .artist, .url-link {
 
 .album-name {
   color: #fff;
+  margin: 5px 0 0 0;
 }
 
 .artist {
   color: #a0a0a0;
+  margin: 5px 0 0 0;
+}
+
+
+@media (min-width: 768px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .album {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .album {
+    width: 22%;
+  }
+
+
 }
 

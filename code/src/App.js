@@ -9,14 +9,13 @@ const AlbumArray = data.albums.items;
 
 export const App = () => {
   return (
-    <>
+    <div className="main-container">
       {AlbumArray.map((album) => {
         console.log(album.name)
         return ( 
-        <div className="album"> 
+        <div key={album.id} className="album"> 
           <Album
             imgsrc={album.images[0].url}
-            key={album.id}
             name={album.name}
             artist={album.artists[0].name}
             url={album.external_urls.spotify}
@@ -25,6 +24,6 @@ export const App = () => {
         </div>
         )
       })}
-    </>
+    </div>
   )
 }
