@@ -6,6 +6,8 @@ const Album = (props) => {
       <div className="album">
         <img src={props.imgsrc}></img>
         <p>{props.name}</p>
+        <p>{props.artist}</p>
+        <p>{props.url}</p>
         
       </div>
     );
