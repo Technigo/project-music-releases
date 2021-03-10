@@ -1,3 +1,7 @@
+* {
+  border: red solid 1px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,88 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.album {
+ width: 100%;
+ display: flex;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+  
+
+
+}
+
+.url-link {
+  display: inline-flex;
+}
+
+
+
+a:link, a:visited {
+  text-decoration: none; 
+  color: #a0a0a0;
+}
+
+
+.album-image {
+  width: 100%;
+  
+}
+
+.album-information-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.album-name {
+  color: #fff;
+  margin: 5px 0 0 0;
+}
+
+.artist {
+  color: #a0a0a0;
+  margin: 5px 0 0 0;
+}
+
+
+@media (min-width: 768px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .album {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .album {
+    width: 22%;
+  }
+
+
+}
+
