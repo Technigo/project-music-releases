@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+/* .album-container (sätt classen i div:en i App.js)
+display: grid;
+grid-template-column: repeat(4, 1fr);
+grid-gap: 10px; */
