@@ -21,12 +21,13 @@ code {
 }
 
 .album {
-  width: 22%;
+  width: 100%;
 }
 
 .cover-wrapper {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 .cover-wrapper:hover .icons {
@@ -69,3 +70,17 @@ code {
 }
 
 .artist-container:only-child::before { content: ""; }
+
+
+@media(min-width: 768px) {
+  .album {
+    width: 45%;
+  }
+}
+
+
+@media(min-width: 992px) {
+  .album {
+    width: 22%;
+  }
+}
