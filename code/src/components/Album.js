@@ -5,9 +5,8 @@ import AlbumImage from './AlbumImage'
 
 const Album = (props) =>{
     return (
-        <div className="main-wrapper">
+        <div className="">
             <ul className="album-list">
-                {console.log(props.data.albums.items)}
                 {props.data.albums.items.map((item) => {
                     return (
                         <li key={item.id}> 

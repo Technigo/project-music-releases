@@ -31,7 +31,7 @@ a {
 }
 
 .main-wrapper {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 16px;
 }
@@ -110,6 +110,7 @@ a {
 
 .icon-heart:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .icon-play{
@@ -123,6 +124,7 @@ a {
   width: 70px;
   height: 70px;
   opacity: 1;
+  cursor: pointer;
 }
 
 .icon-dots{
@@ -130,12 +132,13 @@ a {
   height: 45px;
   transition: all 0.2s ease-in-out;
   opacity: 0.5;
+  
 }
 
 .icon-dots:hover{
   opacity: 1;
+  cursor: pointer;
 }
-
 
 .artist-container:not(:first-child, :last-child)::before {
   color: #a0a0a0;
@@ -150,4 +153,32 @@ a {
 .artist-container:only-child::before { 
   content: ""; 
 
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+
+.side-bar{
+  margin-top: 20px;
+}
+
+.playlist-header{
+  text-transform: uppercase;
+  color:#ffffff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1.5px;
+}
+
+.playlist-names{
+  font-size: 12px;
+  line-height: 2;
+  color: #a0a0a0;
+}
+
+.playlist-names:hover{
+  color:#ffffff;
+  cursor: pointer;
 }
