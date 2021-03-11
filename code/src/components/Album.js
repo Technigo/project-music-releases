@@ -20,14 +20,16 @@ export const Album = (props) => {
           <div className="album-artist-container">
           <h2>
             <a className="album-link" href={props.albumLink} target='_blank' rel="noopener noreferrer">
-              {props.name}
+              {props.title}
             </a>
           </h2>
-          <h2 className="artist-name">
+          <div>
+          <h2 className="artist-name">{props.artistName}</h2></div>
+{/*           <h2 className="artist-name">{props.artistName}
             <a className="artist-link" href={props.artistLink} target='_blank' rel="noopener noreferrer">
               {props.artists}
             </a>
-          </h2>
+          </h2> */}
         </div>
        </div>
     )

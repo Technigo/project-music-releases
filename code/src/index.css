@@ -158,7 +158,7 @@ a {
 }
 
 /*not adding anything if 1 artist*/
-.artist-link:only-child::before { content: "";}
+.artist-link:only-child::before { content: "";} 
 
 
 @media (min-width: 667px) {
