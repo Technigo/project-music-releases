@@ -38,7 +38,7 @@ a {
 
 .main-header {
   color: #ffffff;
-  margin: 0;
+  margin: 10 0;
   padding: 8px 0;
   font-size: 20px;
   border-bottom: 1px solid rgba(160, 160, 160, 0.5);
@@ -66,6 +66,7 @@ a {
   max-width: 250px;
   border-bottom: 1px solid transparent;
   transition: all 0.5s ease-in-out;
+  margin:0;
 }
 
  .album-name:hover{
