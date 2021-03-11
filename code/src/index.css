@@ -1,13 +1,254 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+    font-family: "Helvetica";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Header */
+
+.header {
+  border-bottom: 1px solid white;
+  margin: 5px 10px;
+}
+
+.h1 {
+  font-size: 18px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Container for the whole site */
+
+.main-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+/* Playlist */
+
+.playlists {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+.playlist-header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.playlist-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: "Helvetica";
+  color: #a0a0a0;
+}
+
+.playlist-link:hover {
+  text-decoration: underline;
+}
+
+/* Box with cover image and hover that makes image go darker */
+
+.playlist-cover {
+  width: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image-playlist {
+  width: 100%;
+}
+
+.playlist-cover:hover .image-playlist {
+  opacity: 0.7;
+}
+
+/* Small play-icon that show on image hovering and gets bigger when hover on icon */
+
+.play-icon-small {
+  width: 40px;
+  position: absolute;
+  display: none;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.play-icon-small:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.playlist-cover:hover .play-icon-small {
+  display: flex;
+}
+
+/* Container for all the cards */
+
+.album-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-left: 1px solid #a0a0a0;
+}
+
+/* Album Card container */
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0px 20px 0px;
+  width: 90%;
+}
+
+.album-cover {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  width: 100%;
+}
+
+/* Hover that makes image darker */
+
+.album-cover:hover .image {
+  opacity: 0.7;
+}
+
+/* The icons on image that appears on hover */
+
+.image-icons {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.album-cover:hover .image-icons {
+  display: flex;
+}
+
+/* Icons */
+
+.dot-icon, .heart-icon {
+  width: 40px;
+  margin: 20px;
+}
+
+.play-icon {
+  width: 80px;
+  margin: 20px;
+  cursor: pointer;
+  fill: white;
+  opacity: 0.7;
+}
+
+.play-icon:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Album title and type */
+.album-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.album-title {
+  margin: 5px 0px 0px 0px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.album-type {
+  margin: 5px 0px 0px 0px;
+  font-size: 12px;
+  color: #a0a0a0;
+  text-transform: capitalize;
+}
+
+/* Artist, and logic for when several artists */
+
+.artists {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px 10px 0px;
+}
+
+.artist {
+  display: flex;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artist:hover {
+  text-decoration: underline;
+}
+
+.artist:not(:last-child):not(:nth-last-child(2))::after {
+  content: ', ';
+}
+
+.artist:not(:first-child):last-child::before {
+  margin-right: 5px;
+  content: ' & ';
+}
+
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  .header {
+    margin: 5px 20px;
+  }
+
+  .playlists {
+    padding: 0px 20px;
+  }
+
+  .playlist-cover {
+    width: 100px;
+  }
+
+  .album-card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .album-card {
+    width: 23%;
+    margin: 0px 5px 40px 5px;
+  }
 }
