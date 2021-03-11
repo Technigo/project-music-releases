@@ -13,4 +13,4 @@ The task was to apply different hovering effects on the links and icons. We stru
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-new-releases.netlify.app/

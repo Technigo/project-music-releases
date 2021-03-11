@@ -1,4 +1,5 @@
 Link to my deployed project:
+https://project-new-releases.netlify.app/
 
 
 My reflections on how this week's project turned out:
