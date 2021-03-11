@@ -1,7 +1,7 @@
 import React from 'react'
 import data from './data.json'
-import AlbumCard from './components/AlbumCard'
 import Header from 'components/Header'
+import AlbumCard from './components/AlbumCard'
 
 console.log(data.albums.items)
 const albumsArray = data.albums.items
@@ -11,9 +11,8 @@ export const App = () => {
     <>
       <Header />
       <div className='albums-container'>
-        <AlbumCard albumsArray = {albumsArray}/>
+        <AlbumCard albumsArray={albumsArray} />
       </div>
-     
     </>
   )
 }
