@@ -86,6 +86,25 @@ code {
   margin-top: 0;
 }
 
+/* .artist-container a:not(:last-child):after {
+  content: " , ";
+  color: #a0a0a0;
+}  */
+
+/* .artistName:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+} */
+
+/* .artistName:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+} */
+
+/* .artistName:only-child::before { 
+  content: ""; 
+} */
+
 .artistName:hover {
   text-decoration: underline;
   text-underline-position: under;

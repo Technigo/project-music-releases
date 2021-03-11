@@ -1,5 +1,9 @@
 import React from 'react'
 
+import Artist from './Artist'
+
+
+
 
 const Album = (prop) => {
     
@@ -11,8 +15,18 @@ const Album = (prop) => {
                     <img className="icon-dots" src="/icons/dots.svg" alt="more options"/>
                 </div>
             <img className="albumImage" id="albumImage" src={prop.image}/> 
-            <h2 className="albumTitle">{prop.title}</h2>
-            <h3 className="artistName">{prop.artist}</h3>
+
+            <a href={prop.href} target="_blank">
+                <h2 className="albumTitle">{prop.title}</h2>
+            </a>  
+            <a className="artistName">{prop.artist}</a> 
+
+
+
+            
+            
+             
+            
         </div>     
     )
 }
