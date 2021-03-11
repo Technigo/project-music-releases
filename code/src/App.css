@@ -18,10 +18,8 @@ margin:20px;
 }
 
 .album-cards-text {
-  color: #ffffff;
   word-wrap: normal;
   max-width: 300px;
-  
 }
 
 .artist-container {
@@ -43,10 +41,6 @@ margin:20px;
     justify-content: space-around;
   }
 
-  .album-cards {
-    /* width: 30%; */
-  }
-
   .album-text {
     max-width: 300px;
   }
@@ -54,6 +48,11 @@ margin:20px;
 }
 
 @media (min-width:1024px) {
+
+  .main-container {
+    max-width: 1200px;
+    margin: auto;
+  }
 
   .album-cards-container {
     flex-direction: row;
