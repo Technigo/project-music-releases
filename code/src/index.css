@@ -20,28 +20,27 @@ code {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 14px;
 }
 
 h1 {
   font-family: Helvetica;
   color: #FFF;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  padding-top: 14px;
+  border-top: solid 1px #2f2f2f;
 }
 
 a {
   text-decoration: none;
 }
 
-/* a:hover {
-  text-decoration: underline;
-  color: #FFF;
-} */
 
 /*ALBUM STYLING*/
 
@@ -56,6 +55,10 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+}
+
+.album-artist-container {
+  padding-top: 8px;
 }
 
 /*Cover image*/
@@ -120,46 +123,50 @@ a {
 
 /*Album title*/
 
-.album-title {
+.album-link {
   font-family: Helvetica;
   font-size: 14px;
   margin-top: 7px;
   color: #FFF;
 }
 
-.album-title:hover {
+.album-link:hover {
   text-decoration: underline;
 }
 
 /*Artist name*/
 
-.artist-name {
+.artist-link {
   font-family: Helvetica;
   font-size: 14px;
   margin-top: 7px;
   color: #a0a0a0;
 }
 
-.artist-name:hover {
+.artist-link:hover {
   text-decoration: underline;
 }
 
 /*adding , between artists if they're more than 3, but not on the last one*/
-.artist-container:not(:first-child, :last-child)::before {
+.artist-link:not(:first-child, :last-child)::before {
   content: ", ";
 }
 
 /*adding & between artists if they're 2*/
-.artist-container:last-child::before {
+.artist-link:last-child::before {
   content: " & ";
 }
 
 /*not adding anything if 1 artist*/
-.artist-container:only-child::before { content: "";}
+.artist-link:only-child::before { content: "";}
 
 
 @media (min-width: 667px) {
 
+  h1 {
+    font-size: 22px;
+  }
+  
   .main {
     flex-flow: row wrap; 
     align-items: flex-start;
@@ -169,6 +176,7 @@ a {
     flex: 0 0 48%;
   }
   
+  /*calculates the needed left margin on all items but the first in each row, to align to the left if the items don't fill up the row*/
   .album:not(:nth-child(2n+1)) {
     margin-left: calc( (100% - (48% * 2)) / 1);
   }
@@ -181,6 +189,7 @@ a {
     flex: 0 0 24%;
   }
 
+  /*calculates the needed left margin on all items but the first in each row, to align to the left if the items don't fill up the row*/
   .album:not(:nth-child(4n+1)) {
     margin-left: calc( (100% - (24% * 4)) / 3);
   }
