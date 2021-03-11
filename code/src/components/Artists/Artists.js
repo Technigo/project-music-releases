@@ -15,9 +15,10 @@ const Artists = (props) => {
   return (
     <span>
       {props.artists.map((artist, index) => (
-        <span className="text-inline">
+        <span key={artist.id} className="text-inline">
           {getDelimiter(props.artists.length, index)}
           <a
+            key={artist.id}
             href={artist.url}
             target="_blank"
             rel="noreferrer"
