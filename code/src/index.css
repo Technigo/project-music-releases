@@ -70,7 +70,7 @@ header hr {
 }
 
 
-/* .album-cover {
+.album-cover {
   display: flex;
   position: relative;
 }
@@ -80,15 +80,6 @@ header hr {
   width: 300px;
   height: 300px;
 }
-
-.icons {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .icon-heart {
   height: 30px;
@@ -103,7 +94,6 @@ header hr {
   padding-left:20px;
   padding-right:20px;
   color:white;
-
 }
 
 .icon-dots {
@@ -111,12 +101,19 @@ header hr {
   width: 30px;
   padding-top: 15px;
 }
+ /*
 
-.music-card {
-  margin-left:20px;
-  margin-right: 20px;
-  margin-bottom: 40px;
-}
+.icons {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
+
 
 .album-img {
   position: relative;
@@ -126,48 +123,63 @@ header hr {
   width: 300px;
 }
 
-.album-img:hover {
-  filter: brightness(50%);
-}
-
 .icon-play:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
-.icons{
+.icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Montserrat;
   font-size: 28px;
   font-weight: bolder;
   color: white;
   position: absolute;
-  top:45%;
-  left:20%;
-  /* display:none; */
-}
-
-
-.icons:hover{
-  display: flex;
-  font-family: Montserrat;
-  font-size: 28px;
-  font-weight: bolder;
-  color: white;
-  position: absolute;
-  /* top:0;
+  top:0;
   left:0;
   right:0;
-  bottom: 0; */
-  top:45%;
-  left:20%;
-
+  bottom: 0; 
+  /*top: 45%;
+  left: 20%;
+  /*display: none;*/
+  opacity: 0;
 }
+
+.icons:hover {
+  /*display: flex;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;*/
+  /*position: absolute;*/
+  /*top:0;
+  left:0;
+  right:0;
+  bottom: 0; 
+  top:45%;
+  left:20%;*/
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+} 
+
+
+
+
+
+
 
 .music-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 25px
+}
+
+.music-card {
+  margin-left:20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 
