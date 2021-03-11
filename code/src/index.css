@@ -147,18 +147,6 @@ header hr {
 }
 
 .icons:hover {
-  /*display: flex;
-  font-family: Montserrat;
-  font-size: 28px;
-  font-weight: bolder;
-  color: white;*/
-  /*position: absolute;*/
-  /*top:0;
-  left:0;
-  right:0;
-  bottom: 0; 
-  top:45%;
-  left:20%;*/
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
 } 
