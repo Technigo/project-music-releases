@@ -1,28 +1,28 @@
 import React from 'react';
 import data from 'data.json';
+import dataPlaylists from 'stretch-goal.json';
 import './App.css';
-import Album from 'components/Album/Album';
-
-// console.log(data);
+import List from 'components/List/List';
+import Sidebar from 'components/Sidebar/Sidebar';
+import toggleSidebar from 'actions/toggleSidebar';
 
 const App = () => {
-  const albums = data.albums.items;
+  const albums = data.albums.items.filter((album) => {
+    return album.album_type === 'album';
+  });
+  const singles = data.albums.items.filter((album) => {
+    return album.album_type === 'single';
+  });
   return (
     <>
-      <header className="section-wrapper">
-        <h1>New Albums & Singles</h1>
-      </header>
-      <main className="section-wrapper album--wrapper">
-        {albums.map((album) => (
-          <Album
-            key={album.id}
-            name={album.name}
-            image={album.images[0].url}
-            artists={album.artists}
-            url={album.external_urls.spotify}
-          />
-        ))}
-      </main>
+      <div className="main-wrapper">
+        <Sidebar playlists={dataPlaylists.playlists.items} />
+        <main>
+          <List type="Albums" items={albums} />
+          <List type="Singles" items={singles} />
+        </main>
+      </div>
+      <div id="overlay" className="overlay" onClick={toggleSidebar} aria-hidden="true" />
     </>
   );
 };

@@ -1,0 +1,9 @@
+.list__wrapper > * {
+  margin: 1em;
+}
+
+.list__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
