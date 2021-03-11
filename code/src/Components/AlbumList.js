@@ -11,24 +11,27 @@ const AlbumList = () => {
     <>
     <div className="music-container" >
 
-      {data.albums.items.map ((item) => (
-        <div className="music-card"key={item.id}>
-          <AlbumCover
-            key={item.image}
-            item={item}
-          />
+      {data.albums.items.map ((item) => {
+        return (
 
-          <AlbumTitle
-            key={item.name}
-            item={item}
-          />
+          <div className="music-card"key={item.id}>
+            <AlbumCover
+              key={item.href}
+              item={item}
+            />
 
-          <Artists
-            key={item.artists}
-            item={item}
-          />
-        </div>
-      ))}
+            <AlbumTitle
+              key={item.name}
+              item={item}
+            />
+            <Artists
+              key={item.artists}
+              item={item}
+            />
+          </div>
+        )
+      })}
+
     </div>
     </>
   );
