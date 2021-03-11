@@ -59,7 +59,7 @@ h3 {
   transform: translate(-50%, -50%);
   display: none;
   /* Change SVG to white color */
-  -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
