@@ -9,6 +9,7 @@ import AlbumImage from './Album-image'
 
 
 const Album = (prop) => {
+
     
     return (
         <div className="albumCard">
@@ -20,13 +21,7 @@ const Album = (prop) => {
             <Artist artist={prop.artist} hrefArtist={prop.hrefArtist}/>
             {/* ADDED ARTIST COMPONENT*/}
             {/* <a className="artistName">{prop.artist}</a>  */}
-
-
-
-            
-            
-             
-            
+    
         </div>     
     )
 }

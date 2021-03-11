@@ -12,11 +12,15 @@ import React from 'react'
 
 
 const Artist = (prop) => {
+
+
+
     return (
         <a href={prop.hrefArtist} target="_blank">
             <h3 className="artistName">{prop.artist}</h3>
         </a>
     )
+
 }
 
 // const allArtist = albumArray.map(album => album.artists)

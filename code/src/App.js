@@ -7,7 +7,7 @@ export const App = () => {
 
 // AN ARRAY WITH ALL ALBUMS
 const albumArray = data.albums.items
-console.log(albumArray)
+// console.log(albumArray)
 
 // AN ARRAY WITH ARTISTS
 const allArtists = albumArray.map(album => album.artists)
@@ -19,8 +19,9 @@ const nameOfArtists = allArtists.map(artist => artist.map((item) => item.name))
 
 // URLS TO ARTISTS
 const artistURL = allArtists.map(artist => artist.map((item) => item.external_urls.spotify))
-console.log(artistURL)
-  
+// console.log(artistURL)
+
+
 
   return (
     <>
@@ -36,10 +37,10 @@ console.log(artistURL)
               image={album.images[0].url} 
               title={album.name} 
               hrefAlbum={album.external_urls.spotify} 
-              artist={album.artists.map((item, index) => item.name)}
+              artist={album.artists.map((item, index) => <a>{item.name}</a>)}
               hrefArtist={album.artists.map((item) => item.external_urls.spotify)}
               key={album.name}/>
-              )
+             )
           })
         }
       </div>
