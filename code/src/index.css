@@ -23,9 +23,7 @@ a {
   font-size: 20px;
   font-family: 'Helvetica';
   color: #FFFFFF;
-  /* margin: 20px; */
-  margin: 10%;
-
+  margin: 10% 10% 5%;
 }
 
 /* ALBUMS */
@@ -34,38 +32,30 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /* flex-direction: flex-start; */
-  /* justify-content: flex-start; */
-  /* margin: 20px; */
-  margin: 10%;
-}
-
-
-
-.albumCard:last-child {
-
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5% 10% 10%;
 }
 
 .albumCard {
-  display: flex;
-  flex-direction: column;  
   width: 100%;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
-  /* padding: 10px; */
-
 }
 
+.album-controls {
+  display: flex;
+  flex-direction: column;
+}
 
 /* ON HOVER */
 
-.albumCard:hover .albumImage {
+.album-controls:hover .albumImage {
   opacity: 0.5;
 }
 
-.albumCard:hover .hidden{
+.album-controls:hover .hidden{
   display: flex;
 }
 
@@ -106,7 +96,7 @@ a {
   color: #a0a0a0;
 }
 
-/* PLAYING WITH ICONS */
+/* ICONS */
 
 .icons {
   position: absolute;
@@ -144,27 +134,36 @@ a {
   width: 8%;
 }
 
+.albumImage {
+  object-fit: contain;
+  width: 100%;
+}
 
 
 
-/* RESPONSIVE */
+/* TABLET VIEW */
 
 @media (min-width: 767px) {
 
   .heading {
-    /* margin: 50px 50px 10px 50px; */
     font-size: 24px;
-    margin: 3% 6%;
+    margin: 5% 10% 2%;
   }
 
   .albumWrapper {
-    /* margin: 25px 50px 50px 50px; */
-    margin: 3% 2%;
+    margin-top: 0;
   }
 
   .albumCard {
     width: 44%;
-    margin: 1% 2%;
+  }
+
+  .albumCard:nth-child(2n+1) {
+    margin-right: 6%;
+  }
+
+  .albumCard:nth-child(2n) {
+    margin-left: 6%
   }
 
   .albumTitle {
@@ -179,75 +178,31 @@ a {
 @media (min-width: 1100px) {
 
 .heading {
-  margin: 5% 6% 0% 6%;
   font-size: 30px;
 }
 
-.albumWrapper {
-  margin: 1% 4% 5% 4%;
-  /* margin: 3% 2%; */
-}
-
-.albumCard {
-  /* width: 23%; */
-
+.albumCard:nth-child(n) {
   width: 21%;
-  /* width: 44%;
-  margin: 1% 2%; */
+  margin-right: 5.333%;
+  margin-left: 0;
 }
 
-.albumTitle {
-  /* font-size: 17px; */
+.albumCard:nth-child(4n) {
+  margin-right: 0;
 }
-
-.artistName {
-  /* font-size: 17px; */
-}
-
-
-  /* ADDING A MARGIN TO THE LAST CARD OF THE ROW */
-  /* .albumCard:last-child{
-    margin-left: 2.5%;
-  } */
-
-.albumWrapper:after {
-  content: "";
-  flex: auto;
-}  
 
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   
-
-
   .heading {
-    /* margin: 20px 150px; */
-    /* max-width: 1300px;
-    text-align: left;
-    align-items: left;
-    justify-content: left; */
-  }
-
-  .headerContainer {
-    /* display: flex;
-    text-align: left;
-    align-items: left;
-    justify-content: left; */
-
+    margin: 50px auto ;
+    max-width: 1300px; 
   }
 
   .albumWrapper {
-    /* margin: 20px 150px;
-    max-width: 1300px; */
-  }
-
-
-  .main {
-   /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-   
+    margin: 0 auto;
+    max-width: 1300px; 
   }
 
 }

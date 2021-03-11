@@ -13,8 +13,11 @@ const Album = (prop) => {
     
     return (
         <div className="albumCard">
-            <Icons/>
-            <AlbumImage image={prop.image}/>
+            <div className="album-controls">
+                <Icons/>
+                <AlbumImage image={prop.image}/>
+            </div>
+            
 
             <AlbumTitle title={prop.title} hrefAlbum={prop.hrefAlbum}/>
 
