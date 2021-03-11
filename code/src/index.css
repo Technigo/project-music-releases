@@ -10,6 +10,11 @@ body {
   padding: 0 20px ;
 }
 
+.categoryHeading {
+  padding: 5px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
 .categoryContainer {
   display: grid;
   grid-template-columns: 1fr;
@@ -26,6 +31,10 @@ body {
   margin-bottom: 5px;
 } 
 
+.coverImageContainer:hover .coverImage {
+  filter: opacity(50%);
+}
+
 .buttonContainer {
   position: absolute;
   top: 0;
@@ -35,20 +44,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  filter: opacity(50%)
 }
-
-
 
 button {
   padding: 10px;
   background-color: transparent;
-  border: none; 
-  filter: invert(100%);
+  border: none;  
+  filter: opacity(50%)
 }
 
 .favoriteButton {
-  width: 20%;
+  width: 20%;  
 }
 
 .favoriteButton img {
@@ -56,17 +62,15 @@ button {
 }
 
 .playButton {
-  width: 40%;
+  width: 40%;  
 }
 
 .playButton img {
   width: 100%;
 }
 
-
-
 .moreButton{
-  width: 20%;
+  width: 20%; 
 }
 
 .moreButton img {
@@ -119,19 +123,27 @@ code {
   body {
     padding: 0 100px;
   }
+
   .categoryContainer {
     grid-template-columns: repeat(4, 1fr);
   }
-  .buttonContainer {
+
+  button {
     filter: opacity(0%)
   }
-  .buttonContainer:hover {
+
+  .buttonContainer:hover .moreButton,
+  .buttonContainer:hover .favoriteButton,
+  .buttonContainer:hover .playButton {
     filter: opacity(50%)
   }
+  
+
   .playButton:hover {
     transform: scale(1.2);
-    filter: invert(100%) opacity(100%);
+    filter: opacity(100%)!important;
   }
+  
 }
 @media (min-width: 1920px) {
   body {
