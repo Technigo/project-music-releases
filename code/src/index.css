@@ -1,4 +1,14 @@
+:root {
+  font-size: 14px;  /* base value for usage of REM:s throughout and for responsiveness */
+  --primary: #181818;
+  --secondary:#ffffff;
+  --tertiary: #a0a0a0;
+
+}
+
+
 body {
+  background-color: var(--primary); 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -14,16 +24,119 @@ code {
 
 
 
+/* TILLFÄLLIG STYLE AV P TILLS VI HAR MER DATA */
+p {
+  margin: 5px;
+}
+
+.header {
+  color: var(--secondary);
+  font-family: Helvetica;
+}
+
+
+
 .album-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem;
 }
+
+/* TEST IMPORTING ICONS 
+
+.album-container div {
+  background-image: url("/icons/heart.svg");
+  z-index: 10;
+}
+*/
+
+.contributors :not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+
 
 .cover-image {
   width: 100%;
 }
+
+.cover-image:hover {
+  opacity: 40%;
+}
+
+.icons-container {
+ display: flex;
+ }
+
+/* .icons-container:hover {
+  display: none;
+} */
+
+
+.icon-heart {
+  filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(159deg) brightness(119%) contrast(102%);
+  width: 2rem;
+  padding: 1rem;
+}
+
+.icon-play {
+  filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(159deg) brightness(119%) contrast(102%);
+  width: 4rem;
+  padding: 1rem;
+}
+
+.icon-play:hover {
+  transform: scale(1.2);
+}
+
+
+
+.icon-dot {
+  filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(159deg) brightness(119%) contrast(102%);
+  width: 1.5rem;
+  padding: 1rem;
+}
+
+.album-title {
+  color: var(--secondary);
+  font-weight: bold;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline 1px;
+  color: var(--secondary);
+}
+
+
+
+
 .contributors {
-  font-size: 14px;
+  font-size: 1rem;
+  color: var(--tertiary);
+}
+
+
+/* MEDIA QUERIE TABLET */
+@media only screen and (min-width: 768px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+/* MEDIA QUERIE DESKTOP */
+@media only screen and (min-width: 992px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
 }

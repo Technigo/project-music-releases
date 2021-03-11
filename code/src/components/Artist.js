@@ -1,13 +1,20 @@
-import React from 'react'
+//Initially used as a component mounted in Album. Replaced with different solution.  
 
-const Artist = (props) => {
-    
-        const test = props.artists.map(artist => {
-            return artist.name
-        })
-        return (
-            <p className="contributors">{test}</p>
-        )
-}
 
-export default Artist
+// import React from 'react'
+
+
+
+// const Artist = (props) => {
+//     console.log(props) 
+// const contributors = props.artists.map(artist => {
+//  return artist.name
+//          })
+//          return (
+//              <p className="contributors">{contributors}</p>
+             
+//          )
+//  }
+
+// export default Artist
+
