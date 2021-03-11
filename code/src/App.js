@@ -11,8 +11,9 @@ export const App = () => {
   return (
     <div>
       <h1 className="header-text">
-      New albums and singles
+      New albums & singles
       </h1>
+      <hr />
       <div className="album-container">
         
       { albums.map((album) => {
@@ -21,7 +22,8 @@ export const App = () => {
         image={album.images[1].url}
         name={album.name}
         artists={album.artists[0].name}
-
+        albumURL={album.external_urls.spotify}
+        artistURL={album.artists[0].external_urls.spotify}
         />
       }) }
         
