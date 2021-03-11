@@ -2,7 +2,7 @@ import React from 'react'
 import Artist from './Artist'
 
 const Album = (props) => {
-
+  console.log(props)
   return (
     <div className="album-wrapper">
     {props.items.map(album => {
@@ -16,8 +16,8 @@ const Album = (props) => {
           </div>
           <img className="album-image" src={album.images[0].url} alt={album.name} />
         </div>
-        <a className="album-name" href={album.url}>
-          <p>{album.name}</p>
+        <a className="album-name" href={album.external_urls.spotify}>
+          {album.name}
         </a>
         
         <div>

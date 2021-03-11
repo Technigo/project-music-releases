@@ -14,16 +14,23 @@ code {
     monospace;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
+/* HEADER */
 
 .header {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  margin: 20px 20px 0 20px;
+  margin: 20px 20px 20px 20px;
 }
+
+/* MAIN */
+
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* ALBUM SECTION */
 
 .album-wrapper {
   display: grid;
@@ -31,10 +38,11 @@ a {
   grid-gap: 20px;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  width: 60%;
 }
 
 .album-card {
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .album-cover {
@@ -60,7 +68,6 @@ a {
   top: 0;
   bottom: 0;
 }
-
 
 .play {
   width: 20%;
@@ -91,29 +98,97 @@ a {
   z-index: -1;
 }
 
-.artist-name {
+.artist-name, 
+.tracks {
   color: #a0a0a0;
-  margin: 5px 0 10px 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 .delimiter {
   color: #a0a0a0;
 }
-.album-name {
+
+.album-name, .playlist-name {
   font-weight: 600;
-  margin: 10px 0 0 0;
+  margin: 0px 0 0 0;
+  text-decoration: none;
+  color: inherit;
 }
 
-.artist-name:hover, .album-name:hover {
+.artist-name:hover, .album-name:hover, .playlist-name:hover {
   text-decoration: underline;
   color: #ffffff;
 }
+
+/* PLAYLIST SECTION */
+
+.playlists-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border-left: 2px solid #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.playlists-header {
+  margin: 0;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  text-align: center;
+}
+
+.playlist-cover {
+  position: relative;
+  transition: 0.3s;
+}
+
+.playlist-cover:hover {
+  background-color:rgba(0, 0, 0, 0.537);
+}
+
+.playlist-cover:hover .playlist-icon {
+  display: flex;
+}
+
+.playlist-img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.playlist-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.play-big {
+  width: 40%;
+  height: 40%;
+}
+
+/* RESPONSIVE TABLET */
 
 @media (min-width: 768px) {
   .album-wrapper {
     grid-template-columns: repeat(2, 1fr);
     margin: 30px;
     row-gap: 50px;
+    width: 80%;
   }
   
   .album-card {
@@ -123,12 +198,19 @@ a {
   .header {
     margin: 30px 30px 0 30px;
   }
+
+  .playlists-wrapper {
+    padding: 0 20px;
+    width: 15%;
+  }
 }
+
+/* RESPONSIVE DESKTOP */
 
 @media (min-width: 998px) {
   .album-wrapper {
     grid-template-columns: repeat(4, 1fr);
-    margin: 20px 50px;
+    margin: 20px 30px 20px 50px;
   }
 
   .header {
