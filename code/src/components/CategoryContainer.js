@@ -6,7 +6,7 @@ export const CategoryContainer = (props) => {
     return (
         <div className="categoryContainer">
             {props.data.map((item) =>
-                < Card title={item.name} titleURL={item.external_urls.spotify} artist={item.artists} artistURL={item.artists[0].external_urls.spotify} image={item.images[0].url} />
+                < Card key={item.external_urls.spotify} title={item.name} titleURL={item.external_urls.spotify} artist={item.artists} artistURL={item.artists[0].external_urls.spotify} image={item.images[0].url} />
             )}
         </div>
     )
