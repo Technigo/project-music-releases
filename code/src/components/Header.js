@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <h1>
-                New albums and singles
+                New albums & singles
             </h1>
         </header>
     )
