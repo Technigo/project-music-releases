@@ -5,9 +5,9 @@
       <div className="album-card">
         <div className="album-cover">
           <div className="icons">
-            <img className="heart-button" src="icons/heart.png" alt="" />
-            <img className="play-button" src="icons/play.png" alt="" />
-            <img className="dots-button" src="icons/dots.png" alt="" />
+            <img className="heart-button" src="icons/heart.svg" alt="" />
+            <img className="play-button" src="icons/play.svg" alt="" />
+            <img className="dots-button" src="icons/dots.svg" alt="" />
           </div>
           <a href={props.albumurl} className="album-img-hover" target="_blank" rel="noopener noreferrer">
             <img src={props.imgsrc} alt="" className="album-cover-img" />
