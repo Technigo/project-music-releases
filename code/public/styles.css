@@ -1,8 +1,7 @@
 
 body {
-    background: black;
-    color: #fff;
-   
+    background: #191919;
+    color: #fff;   
 }
 
 .app {
@@ -15,7 +14,7 @@ body {
     border: 2px solid greenyellow;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center;*/
     width: 80%;
     margin: 20px;
 }
@@ -23,22 +22,58 @@ body {
 .albumArt img {
     border: 2px solid rgb(59, 216, 255);
     width: 100%;
+    height: 100%;
+    /* height: 500px; */
     box-sizing: border-box;
+    /* object-fit: contain; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.albumArt img:hover {
+    filter: brightness(60%); 
+}
+
+.screwYou {
+    height: 640px;
+    background:palevioletred;
 }
 
 .albumName a {
     border: 2px solid rgb(195, 44, 255);
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
+    font-weight: bold;
     color: #ffffff;
     text-decoration: none;
 }
 
 .artists a {
     border: 2px solid rgb(255, 47, 47);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #a0a0a0;
     text-decoration: none;
+}
+
+.albumName a:hover,.artists a:hover {
+    text-decoration: 2px underline;
+}
+
+.icons {
+    position: relative;
+    margin-bottom: -60px;
+    bottom: -200%;
+    display:flex;   
+    justify-content: space-around;
+}
+
+.icons img {
+    width: 15%;
+    /* position: absolute; */
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
 }
 
