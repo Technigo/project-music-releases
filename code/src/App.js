@@ -10,17 +10,22 @@ console.log(albums)
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
-      
+      <h1 className="header-text">
+      New albums and singles
+      </h1>
+      <div className="album-container">
+        
       { albums.map((album) => {
         return <Album
+        
         image={album.images[1].url}
         name={album.name}
         artists={album.artists[0].name}
+
         />
       }) }
-
-
+        
+      </div>
     </div>
   )
 }

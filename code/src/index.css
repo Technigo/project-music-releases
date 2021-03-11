@@ -11,3 +11,85 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-text {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.album-container {
+  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.album-card {
+  margin: 20px 30px;
+
+}
+
+.album-image {
+width: 100%;
+}
+
+img:hover{
+  filter: brightness(50%);
+}
+
+.album-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+.album-artist {
+  color: #a0a0a0;
+  margin: 0px;
+  
+}
+
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px)
+{   
+  .album-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .album-card {
+      width: 44%;
+      margin: 25px 0px;
+  
+  }
+
+}
+
+/*MEDIA QUERIES DESKTOP*/
+@media (min-width: 1024px)
+{
+  .album-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      
+  }
+
+  .album-card {
+      width: 22%;
+      margin: 20px 5px;
+  }
+
+
+}
