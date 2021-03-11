@@ -47,9 +47,18 @@ h4 {
   font-size: 20px;
 }
 
+p {
+  font-weight: 400;
+  color: #a0a0a0;
+  margin: 0;
+  font-size: 12px;
+}
+
 li {
   list-style: none;
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -176,6 +185,10 @@ a:hover {
   color: #a0a0a0;
 }
 
+.info {
+  margin-top: 20px;
+}
+
 .artist:not(:last-of-type)::after {
   content: ", ";
 }
@@ -199,13 +212,7 @@ a:hover {
     width: 100%;
   }
 
-  .singles-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-  }
-
-
+  .singles-container,
   .albums-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -247,7 +254,6 @@ a:hover {
 
 @media screen and (min-width: 1024px) {
 
-
   .singles-container,
   .albums-container {
     display: grid;
@@ -255,13 +261,11 @@ a:hover {
     column-gap: 20px;
   }
 
-
   .sidebar {
     width: 25%;
     padding: 0 ;
     margin-top: 70px;
   }
-
 
   .image-container {
     height: 19vw;

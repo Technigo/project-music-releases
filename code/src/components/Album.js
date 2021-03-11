@@ -15,6 +15,10 @@ export const Album = (props) => {
               <div className='artist-names'> 
                 {props.artist}
               </div>
+              <div className='info'>
+              <p>Total tracks: {props.tracks}</p>
+                <p>Release date: {props.release}</p>
+              </div>
               </div>
             </div>
           </div>

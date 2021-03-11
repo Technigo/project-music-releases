@@ -16,6 +16,8 @@ export const App = () => {
             image={item.images[0].url}
             albumName={item.name}
             albumLink={item.external_urls.spotify}
+            tracks={item.total_tracks}
+            release={item.release_date}
             artist={item.artists.map((artist) => (
               <Artists
                 key={artist.name}
@@ -39,6 +41,7 @@ export const App = () => {
               key={list.id}
               list={list.name}
               link={list.external_urls.spotify}
+              tracks={list.tracks.total}
             />
           ))}
         </div>
