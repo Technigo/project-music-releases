@@ -3,17 +3,12 @@ import './Artists.css'
 
 export const Artists = (props) => {
 
-  return (
-      <>
-        {props.albumContent.artists.map((artists) => {
-          
-          return <div 
-                  key={artists.id} 
-                  className="artist-name">
-                  <a href={artists.external_urls.spotify}>{artists.name}</a>
-                  </div>
-          
-        })}
-      </>
-  )
+      return (
+          <div className="artist-wrapper">
+            <a className="artist-name" href={props.artistURL}>
+              {props.artist}
+            </a>
+          </div>
+        )
+    
 }

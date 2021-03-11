@@ -1,9 +1,26 @@
-.artist-name a {
+.artist-name {
   font-family: 'Helvetica', sans-serif;
   font-size: 14px;
   color:#a0a0a0;
   text-decoration: none;
-  
+  margin-left: 4px;
+}
+
+.artist-wrapper {
+  display: flex;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color:#a0a0a0;
+}
+
+.artist-wrapper + .artist-wrapper:last-child::before {
+content: "and";
+color:#a0a0a0;
+}
+
+.artist-wrapper:nth-of-type(n+2):not(:last-child)::before {
+content: ",";
+color:#a0a0a0;
 }
 
 .artist-name:hover {
