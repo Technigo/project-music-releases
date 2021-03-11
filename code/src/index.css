@@ -5,7 +5,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: black;
     color: white;
-    font-family: Helvetica;
+    font-family: "Helvetica";
 }
 
 code {
@@ -29,6 +29,7 @@ code {
 
 .main-container {
   display: flex;
+  margin-top: 30px;
 }
 
 /* Playlist */
@@ -38,13 +39,12 @@ code {
   width: 15%;
   display: flex;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 0px 15px;
 }
 
 .playlist-header {
   font-size: 14px;
   font-weight: bold;
-  padding-top: 20px;
 }
 
 .playlist-link {
@@ -65,7 +65,7 @@ code {
 /* Box with cover image and hover that makes image go darker */
 
 .playlist-cover {
-  width: 70px;
+  width: 60px;
   position: relative;
   display: flex;
   align-items: center;
@@ -106,8 +106,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20px;
-  padding-top: 10px;
+  border-left: 1px solid #a0a0a0;
 }
 
 /* Album Card container */
@@ -115,7 +114,7 @@ code {
 .album-card {
   display: flex;
   flex-direction: column;
-  margin: 5px 5px 20px 5px;
+  margin: 5px 0px 20px 0px;
   width: 90%;
 }
 
@@ -171,10 +170,14 @@ code {
   opacity: 1;
 }
 
-/* Album title */
+/* Album title and type */
+.album-box {
+  display: flex;
+  justify-content: space-between;
+}
 
 .album-title {
-  margin: 10px 0px 0px 0px;
+  margin: 5px 0px 0px 0px;
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
@@ -185,7 +188,14 @@ code {
   text-decoration: underline;
 }
 
-/* Artist, and added , and & when it is several artists */
+.album-type {
+  margin: 5px 0px 0px 0px;
+  font-size: 12px;
+  color: #a0a0a0;
+  text-transform: capitalize;
+}
+
+/* Artist, and logic for when several artists */
 
 .artists {
   display: flex;
@@ -239,6 +249,6 @@ code {
 @media (min-width: 1200px) {
   .album-card {
     width: 23%;
-    margin: 5px 5px 40px 5px;
+    margin: 0px 5px 40px 5px;
   }
 }

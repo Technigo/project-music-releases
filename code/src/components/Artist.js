@@ -1,4 +1,7 @@
-import React from 'react';
+import React from "react";
+
+
+// Component for the artist name and link
 
 export const Artist = props => {
     return (
