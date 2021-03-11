@@ -1,5 +1,6 @@
 import React from 'react'
 import Overlay from './Overlay'
+import Artist from 'components/Artist'
 
 const AlbumCard = (props) => {
   const albumsArray = props.albumsArray
@@ -12,10 +13,12 @@ const AlbumCard = (props) => {
             <img src={item.images[1].url} className='album-image' alt='Cover'/>
             <Overlay />
           </div>
-          <a href={item.external_urls.spotify} className='album-name'>{item.name}</a>
-          <div className='artists'>{item.artists.map((artist) => (
-            <a className='artist-name' href={artist.external_urls.spotify} key={artist.id}>{artist.name}</a>
-          ))}
+          <div className="album-text">
+            <a href={item.external_urls.spotify} className='album-name'>{item.name}</a>
+            <div className='artists'>{item.artists.map((artist) => (
+              <Artist artist={artist}/>
+            ))}
+            </div>
           </div>
         </div>
       ))}

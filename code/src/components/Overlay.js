@@ -7,7 +7,6 @@ const Overlay = () => {
       <img src="/icons/play.svg" className="play-button" alt='Play button'/>
       <img src="/icons/dots.svg" className="three-dots" alt='Three dots'/>
     </div>
-
   )
 }
 
