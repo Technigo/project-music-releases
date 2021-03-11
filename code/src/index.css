@@ -91,6 +91,12 @@ p {
   text-decoration: none;
 }
 
+/* Artist links */
+.artist-links {
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
 
 /*** MEDIA QUERIES ***/
 
@@ -121,7 +127,7 @@ p {
   }
 
 
-  /* Album cover */              /*NY KOD*/
+  /* Album cover */          
   .icons {
     position: absolute;
     display: flex;

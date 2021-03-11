@@ -2,16 +2,15 @@ import React from 'react'
 import { Artist } from './Artist'
 
 export const Album = (props) => {
-  // const getDelimiter = (index, arrayLength) => {
-  //     if(index === arrayLength - 2){
-  //       return ' & '
-  //     }
-  //     else if(index < arrayLength - 2){
-  //       return ', '
-  //     }
-      
-  //     return ''
-  //   }
+  const generateDelimiter = (index, arrayLength) => {
+    if (index === arrayLength - 2) {
+      return ' & '
+    } else if (index < arrayLength - 2) {
+      return ', '
+    } 
+    
+    return ''
+  }
 
   return (
     <div className="album-card">
@@ -29,18 +28,17 @@ export const Album = (props) => {
 
       <a className="album-name" href={props.albumLink}>{props.albumName}</a>
       
-      <p>{props.artists.map((artist) => {
+      <p>{props.artists.map((artist, index, array) => {
           return (
-            <Artist 
-            key={artist.id}
-            url={artist.external_urls.spotify}
-            name={artist.name}
-            />
-
-            
-
+            <span className="artist-links">
+              <Artist 
+              key={artist.id}
+              url={artist.external_urls.spotify}
+              name={artist.name}
+              />
+              <span>{generateDelimiter(index, array.length)}</span>
+            </span>
           )
-
       })  
       }
       </p>
