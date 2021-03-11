@@ -1,5 +1,4 @@
 import React from 'react'
-import data from './data.json'
 
 // // ALL ALBUM
 // const albumArray = data.albums.items
@@ -14,7 +13,9 @@ import data from './data.json'
 
 const Artist = (prop) => {
     return (
-        <h3 className="artistName" >{prop.artist}</h3>
+        <a href={prop.hrefArtist} target="_blank">
+            <h3 className="artistName">{prop.artist}</h3>
+        </a>
     )
 }
 
