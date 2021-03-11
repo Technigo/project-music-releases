@@ -1,0 +1,11 @@
+.album-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #ffffff; 
+  text-decoration: none;  
+  width: 100%;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}

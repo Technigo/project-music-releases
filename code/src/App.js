@@ -3,6 +3,7 @@ import data from './data.json'
 import { Albums } from './Components/Albums'
 import { Heading } from './Components/Heading'
 import { Artists } from './Components/Artists'
+import { AlbumTitle } from './Components/AlbumTitle'
 import './App.css'
 
 
@@ -13,25 +14,26 @@ export const App = () => {
       <div className='main-container'>
         <Heading />
 
-      <section  className='album-cards-container'>
-          {data.albums.items.map(album => (
-            <Albums 
-            key={album.id}
-            albumContent={album}
-            />
-          ))}
-          
-        
-          <>
-             {data.albums.items.map(albums => (
-            <Artists
-            key={albums.href}
-            albumContent={albums}
-            />
-          ))}
-          </>
+        <section  className='album-cards-container'>
+            {data.albums.items.map(album => (
+              <div className="album-cards">
+                <Albums 
+                key={album.id}
+                albumContent={album}
+                />
 
-      </section>
+                <div className="album-cards-text">
+                  <AlbumTitle 
+                   albumContent={album}
+                  />
+                  <Artists 
+                  albumContent={album}
+                  />
+                </div>
+              </div>
+
+          ))}
+        </section>
       </div>  
     </>
   )

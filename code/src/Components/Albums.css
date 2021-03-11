@@ -1,7 +1,9 @@
 
 .album-container {
   position: relative;
-}
+  display: flex;
+  justify-content: center;
+} 
 
 .album-container:hover .icons-container {
   background-color: rgba(0,0,0,0.5);
@@ -85,22 +87,3 @@
   transform: scale(1.1);
 }
 
-.album-text {
-  text-align: left;
-}
-
-.album-title {
-  font-family: 'Helvetica', sans-serif;
-  font-size: 14px;
-  color: #ffffff; 
-}
-
-.album-title:hover {
-  text-decoration: underline;
-}
-
-/* @media (min-width: 667px) {
-  .album-container {
-    width
-  }
-} */

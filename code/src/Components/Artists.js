@@ -6,7 +6,13 @@ export const Artists = (props) => {
   return (
       <>
         {props.albumContent.artists.map((artists) => {
-          return <div key={artists.id} className="artists">Artist: {artists.name}</div>
+          
+          return <div 
+                  key={artists.id} 
+                  className="artist-name">
+                  <a href={artists.external_urls.spotify}>{artists.name}</a>
+                  </div>
+          
         })}
       </>
   )

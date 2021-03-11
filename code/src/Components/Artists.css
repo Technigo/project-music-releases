@@ -1,10 +1,12 @@
-.artist-name {
+.artist-name a {
   font-family: 'Helvetica', sans-serif;
   font-size: 14px;
   color:#a0a0a0;
+  text-decoration: none;
   
 }
 
 .artist-name:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
