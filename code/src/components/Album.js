@@ -3,12 +3,18 @@ import React from 'react';
 
 const Album = (props) => {
     console.log(props);
-
     return (
-        <div>
-            <div>{albums.images[1].url}</div>
+        <div className="artistcard">
+            <a href={props.albumurl}>
+                <img src={props.picture} alt="albumcover" />
+            </a>
+            <div className="artistName">
+            <h2>{props.name}</h2>
+            <a href={props.externalurls}>
+                <h3>{props.artist}</h3>
+            </a>
+            </div>
         </div>
-        // <img src={props.images[0].url} alt="album" />
     )
 }
 
