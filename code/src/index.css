@@ -24,8 +24,8 @@ p {
 /*** MAIN TITLE ***/
 .main-title {
   color: white;
-  font-size: 16px;
-  margin-left: 10px;
+  font-size: 18px;
+  margin-left: 15px;
 }
 
 
@@ -44,18 +44,45 @@ p {
   margin-bottom: 35px;
 }
 
+/* Album cover */
+.album-cover { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icons {            
+  display: none;
+}
+
+.icon-heart {
+  width: 10%;
+}
+
+.icon-play {
+  width: 15%;
+}
+
+.icon-dots {
+  width: 10%;
+}
+
 .album-cover-image {
   width: 100%;
   margin-bottom: 10px;
 }
 
+/* Album name */
 .album-name {
   color: #ffffff;
   font-family: Helvetica, sans-serif;
   font-size: 14px; 
   margin-bottom: 10px;
+  text-decoration: none;
 }
 
+/* Album artist */
 .album-artist {
   color: #a0a0a0;
   font-family: Helvetica, sans-serif;
@@ -81,7 +108,50 @@ p {
 
 /* Desktop */
 @media (min-width: 1025px) {  
+  /* Main title */
+  .main-title {
+    margin-left: 5px;
+    font-size: 25px;
+  }
+  
+
+  /* Album card */
   .album-card {
     width: 24%;
+  }
+
+
+  /* Album cover */              /*NY KOD*/
+  .icons {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+  }
+
+  .album-cover:hover .icons {
+    opacity: 1;
+  }
+
+  .album-cover:hover .album-cover-image {
+    filter: brightness(60%);
+  }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+  }
+    
+  .grow:hover { 
+    transform: scale(1.1); 
+  }
+
+  /* Album name */
+  .album-name:hover {
+    text-decoration: underline;
+  }
+
+  /* Album artist */
+  .album-artist:hover {
+    text-decoration: underline;
   }
 }
