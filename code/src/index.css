@@ -28,6 +28,10 @@ body {
   font-weight: normal;
   text-decoration: none;
 }
+.text--small {
+  font-size: .8em;
+  text-transform: uppercase;
+}
 .list__title {
   font-size: 24px;
   margin: 0.5em !important;
@@ -44,7 +48,7 @@ body {
 .list__title, .list__subtitle {
   color: white;
 }
-.text-inline {
+.text-inline, .link__artists {
   color: #a0a0a0;
 }
 .link__playlist {

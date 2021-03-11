@@ -13,6 +13,7 @@ const Sidebar = (props) => {
       </button>
       <div className="sidebar__list">
         <h3 className="list__subtitle">PLAYLISTS</h3>
+        <h4 className="text-inline text--small">{props.title}</h4>
         <ul>
           {props.playlists.map((item) => (
             <li key={item.id}>

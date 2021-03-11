@@ -5,7 +5,7 @@ import Album from 'components/Album/Album';
 const List = (props) => {
   return (
     <>
-      <h1 className="list__title">New {props.type}</h1>
+      <h1 className="list__title">{props.type} Released 2019</h1>
       <section className="list__wrapper">
         {props.items.map((album) => (
           <Album
@@ -13,6 +13,7 @@ const List = (props) => {
             name={album.name}
             image={album.images[0].url}
             artists={album.artists}
+            releaseDate={album.release_date}
             url={album.external_urls.spotify}
           />
         ))}

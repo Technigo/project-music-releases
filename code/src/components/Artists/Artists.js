@@ -19,7 +19,7 @@ const Artists = (props) => {
           {getDelimiter(props.artists.length, index)}
           <a
             key={artist.id}
-            href={artist.url}
+            href={artist.external_urls.spotify}
             target="_blank"
             rel="noreferrer"
             className="link link__artists">
