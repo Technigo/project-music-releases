@@ -43,7 +43,7 @@ body {
 }
 
 .play:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
   transition: transform 0.5s;
   opacity: 1;
 }
@@ -98,7 +98,6 @@ body {
   color: #ffffff;
 }
 
-
 @media (min-width: 768px) {
   .main {
     margin: 20px 40px 20px 160px;
@@ -123,7 +122,6 @@ body {
   }
   
   .playlist-link {
-    font-size: 15px;
     color:white;
     text-decoration: none; 
   }
@@ -160,7 +158,7 @@ body {
   }
 
   .image-icon img {
-    margin: 30px;
+    margin: 20px;
    }
 
 }
