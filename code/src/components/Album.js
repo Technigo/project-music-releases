@@ -12,7 +12,7 @@ export const Album = (props) => {
           <img
             className="heart"
             src={require("../images/heart.svg")}
-            alt="like icon"
+            alt="favorite icon"
           />
           <a href={props.albumURL}>
             <img
