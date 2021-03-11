@@ -1,10 +1,4 @@
-/* App.js */
-.main{
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
+/* SET UP CODE */
 body {
   width: 100vw;
   margin: 0;
@@ -24,11 +18,21 @@ code {
     monospace;
 }
 
+/* APP.JS */
+.main{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 header{
   text-align: center;
   margin: 30px 0 30px 0;
   font-size: 8px;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
 }
 
 /* FONTS */
@@ -40,6 +44,7 @@ h3{
   margin: 0;
 }
 
+/* ALBUM.JS */
 
 .artistcard-container {
   width: 100vw;
@@ -75,3 +80,59 @@ h3{
   font-size: 8px;
   text-decoration: none;
 }
+
+@media (min-width: 767px){
+
+/* APP.JS */
+  .main{
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  header{
+    font-size: 15px;
+    margin: 40px 0 40px 0;
+  }
+/* FONTS */
+  h2{
+    margin: 5px;
+  }
+
+  h3{
+    margin: 5px;
+  }
+
+/* ALBUM.JS */
+
+  .artistcard-container {
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+  .albumimg{
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .artistlink{
+    color: #ffffff;
+    font-family: Helvetica;
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .albumlink{
+    color: #a0a0a0;
+    font-family: Helvetica;
+    font-size: 8px;
+    text-decoration: none;
+  }
+
+  }
+
+@media (min-width: 1200px){
+  /* APP.JS */
+  
+  /* FONTS */
+  
+  /* ALBUM.JS */
+  }

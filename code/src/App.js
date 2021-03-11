@@ -13,11 +13,12 @@ const albumArray = data.albums.items;
 export const App = () => {
   return (
     <>
+      <div className="main">
         <Header />
-          <div className="main">
-          {albumArray.map(item => (
-              <Album key={item.id} albumContent={item} />
-          ))}
+        
+        {albumArray.map(item => (
+        <Album key={item.id} albumContent={item} />
+        ))}
       </div>
     </>
   )
