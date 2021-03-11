@@ -10,12 +10,12 @@ body {
   padding: 0 20px ;
 }
 
-.categoryHeading {
+.category-heading {
   padding: 5px;
   border-bottom: 1px solid #2e2e2e;
 }
 
-.categoryContainer {
+.category-container {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center; 
@@ -26,16 +26,16 @@ body {
   max-width: 500px;
 }
 
-.coverImageContainer {
+.cover-image-container {
   position: relative;
   margin-bottom: 5px;
 } 
 
-.coverImageContainer:hover .coverImage {
+.cover-image-container:hover .cover-image {
   filter: opacity(50%);
 }
 
-.buttonContainer {
+.button-container {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -53,31 +53,31 @@ button {
   filter: opacity(50%)
 }
 
-.favoriteButton {
+.favorite-button {
   width: 20%;  
 }
 
-.favoriteButton img {
+.favorite-button img {
   width: 100%;
 }
 
-.playButton {
+.play-button {
   width: 40%;  
 }
 
-.playButton img {
+.play-button img {
   width: 100%;
 }
 
-.moreButton{
+.more-button{
   width: 20%; 
 }
 
-.moreButton img {
+.more-button img {
   width: 100%;
 }
 
-.coverImage {
+.cover-image {
   width: 100%;
 } 
 
@@ -98,12 +98,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.infoTitle {
+.info-title {
   color: #fff;
   font-weight: bold;
 }
 
-.infoArtist {
+.info-artist {
   color: #a0a0a0;
 }
 
@@ -113,7 +113,7 @@ code {
 }
 
 @media (min-width: 768px) {
-  .categoryContainer {
+  .category-container {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;    
   }
@@ -124,7 +124,7 @@ code {
     padding: 0 100px;
   }
 
-  .categoryContainer {
+  .category-container {
     grid-template-columns: repeat(4, 1fr);
   }
 
@@ -132,14 +132,14 @@ code {
     filter: opacity(0%)
   }
 
-  .buttonContainer:hover .moreButton,
-  .buttonContainer:hover .favoriteButton,
-  .buttonContainer:hover .playButton {
+  .button-container:hover .more-button,
+  .button-container:hover .favorite-button,
+  .button-container:hover .play-button {
     filter: opacity(50%)
   }
   
 
-  .playButton:hover {
+  .play-button:hover {
     transform: scale(1.2);
     filter: opacity(100%)!important;
   }

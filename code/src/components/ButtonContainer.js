@@ -6,7 +6,7 @@ import { MoreButton } from './MoreButton'
 
 export const ButtonContainer = () => {
     return (
-        <div className="buttonContainer">
+        <div className="button-container">
             <FavoriteButton />
             <PlayButton />
             <MoreButton />
