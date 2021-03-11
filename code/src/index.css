@@ -81,6 +81,9 @@ header{
   font-size: 8px;
   text-decoration: none;
 }
+.icons{
+  display: none;
+}
 
 @media (min-width: 767px){
 
@@ -112,6 +115,7 @@ header{
   .albumimg{
     width: 80%;
     margin-top: 15px;
+    position: relative;
   }
 
   .artistlink{
@@ -124,6 +128,27 @@ header{
     color: #a0a0a0;
     font-family: Helvetica;
     text-decoration: none;
+  }
+
+  .albumcover{
+    position: relative;
+  }
+
+  .icons{
+    display: flex;
+    width: 15%;
+    margin: 15px;
+  }
+
+  .hover-icons{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
   }
 
   }
