@@ -39,7 +39,7 @@ h3 {
 
 /* Play Buttons */
 
-/* .album-cover {
+.album-cover {
   position: relative;
 }
 
@@ -54,7 +54,7 @@ h3 {
   top: 50%;
   transform: translate(-50%, -50%);
   display: none;
-} */
+}
 
 /* Tablet */
 @media (min-width: 667px) and (max-width: 1024px) {
