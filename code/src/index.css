@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
 }
 
 code {
@@ -12,9 +13,75 @@ code {
     monospace;
 }
 
+p {
+  margin: 0;
+}
+
+.main {
+  margin: 0px 17px;
+}
+
+/*** MAIN TITLE ***/
+.main-title {
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+}
 
 
-/* .album-container (sätt classen i div:en i App.js)
-display: grid;
-grid-template-column: repeat(4, 1fr);
-grid-gap: 10px; */
+/*** ALBUM CARDS ***/
+.album-cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-card {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 35px;
+}
+
+.album-cover-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.album-name {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px; 
+  margin-bottom: 10px;
+}
+
+.album-artist {
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+/* Tablet */
+@media (min-width: 768px) {
+  .album-cards-container {
+    flex-flow: row wrap;
+  }
+  
+  .album-card {
+    width: 45%;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {  
+  .album-card {
+    width: 24%;
+  }
+}
