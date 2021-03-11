@@ -8,8 +8,8 @@ body {
   font-size: 14px;
 }
 
-.main {
-  margin: 20px 40px;
+.playlist {
+  display: none;
 }
 
 .album-box {
@@ -26,17 +26,6 @@ body {
   display: none;
 }
 
-/*.image-icon {
-  position: absolute;
-  top:0;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  opacity: 0;
-}*/
-
 .image-icon:hover {
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.6);
@@ -50,11 +39,13 @@ body {
 .play {
   width: 70px;
   height: 70px;
+  opacity: 0.5;
 }
 
 .play:hover {
   transform: scale(1.5);
   transition: transform 0.5s;
+  opacity: 1;
 }
 
 .album-name {
@@ -75,6 +66,33 @@ body {
   text-decoration: none;
 }
 
+/*.artist-name::after {
+  content: " , ";
+}
+
+.artist-name:last-child::after {
+  content: "";
+}*/
+
+/*comma or & if we have two artists 
+.artist-name:not(:first-child, :last-child)::before {
+  content: ', ';
+
+}
+
+.artist-name:first-child::after { 
+  content: " p "; 
+}
+
+.artist-name:last-child::after {
+  content: " p "; 
+  color:red
+} 
+*/
+
+
+/**************/
+
 .artist-name:hover {
   text-decoration: underline;
   color: #ffffff;
@@ -82,13 +100,51 @@ body {
 
 
 @media (min-width: 768px) {
+  .main {
+    margin: 20px 40px 20px 160px;
+  }
+
+  .main h2 {
+    margin: 0 0 0 30px;
+  }
+  
+  .playlist {
+    display: block;
+    width: 160px;
+    height: 100%;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    overflow-x: hidden;
+  }
+  
+  .playlist-title {
+    padding-left: 8px;
+  }
+  
+  .playlist-link {
+    font-size: 15px;
+    color:white;
+    text-decoration: none; 
+  }
+  
+  .playlist-content {
+    padding-left: 8px;
+    opacity: 0.6;
+  }
+  
+  .playlist-content:hover {
+    opacity: 1;
+  }
+  
   .album-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
+    margin: 0 0 0 30px;
    }
 
-   .album-image {
+  .album-image {
     height: 400px;
   }
 
@@ -130,6 +186,9 @@ body {
   
 }
 @media (min-width: 1928px) {
+  .main {
+    margin: 20px 40px 20px 100px;
+  }
   .album-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
