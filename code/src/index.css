@@ -1,19 +1,10 @@
-/* Fonts 
-Album title - 14px Helvetica #ffffff
-*/
+/***  Base  ***/
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
-}
-
-.artists-link {
-  text-decoration: none;
-  color: #a0a0a0;
-  font-family: Helvetica;
-  font-size: 14px;
 }
 
 h1 {
@@ -26,6 +17,8 @@ h3 {
   font-size: 14px;
 }
 
+/***  Main Layout ***/
+
 .albums-container {
   display: flex;
   flex-direction: column;
@@ -37,7 +30,18 @@ h3 {
   width: 100%;
 }
 
-/* Play Buttons */
+.album-card {
+  margin: 20px;
+}
+
+.artists-link {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+/*** Play Button Icons ***/
 
 .album-cover {
   position: relative;
@@ -55,9 +59,12 @@ h3 {
   transform: translate(-50%, -50%);
   display: none;
 }
+/***  Hover Effects  ***/
+
+/***  Media Queries  ***/
 
 /* Tablet */
-@media (min-width: 667px) and (max-width: 1024px) {
+@media (min-width: 667px) and (max-width: 1020px) {
   .albums-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,7 +77,7 @@ h3 {
 }
 
 /*Desktop*/
-@media (min-width: 1025px) {
+@media (min-width: 1021px) {
   .albums-container {
     flex-direction: row;
     flex-wrap: wrap;
