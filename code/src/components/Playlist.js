@@ -1,9 +1,9 @@
 import React from 'react'
 import data from '../stretch-goal.json'
 
-const Playlist = () => {
+const Playlist = (props) => {
     return (
-      <article className="playlist">
+      <article key={props.id} className="playlist">
          <h4 className="playlist-title">Popular playlist</h4>
 
         { data.playlists.items.map(playlists => 
@@ -13,6 +13,7 @@ const Playlist = () => {
             <a 
             className="playlist-link" 
             href={playlists.external_urls.spotify} 
+            key= {props.child}
             rel="noopener noreferrer"
             >
               <p className="playlist-content">{playlists.name}</p>

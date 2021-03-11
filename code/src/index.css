@@ -66,32 +66,22 @@ body {
   text-decoration: none;
 }
 
-/*.artist-name::after {
-  content: " , ";
+.artist {
+  display: inline;
 }
 
-.artist-name:last-child::after {
-  content: "";
-}*/
-
-/*comma or & if we have two artists 
-.artist-name:not(:first-child, :last-child)::before {
-  content: ', ';
+.artist:not(:first-child, :last-child)::before {
+  content: ", ";
 
 }
 
-.artist-name:first-child::after { 
-  content: " p "; 
-}
-
-.artist-name:last-child::after {
-  content: " p "; 
-  color:red
+.artist:last-child::before {
+  content: " & "; 
 } 
-*/
 
-
-/**************/
+.artist:first-child::before {
+  content: " "; 
+} 
 
 .artist-name:hover {
   text-decoration: underline;
