@@ -2,7 +2,6 @@ import React from 'react'
 import Artists from './Artists'
 
 const AlbumCard = (props) => {
-    // console.log(props)
     return (
     <div className="card-container">
         <div className="image-container">
@@ -14,9 +13,10 @@ const AlbumCard = (props) => {
                     <img className="dots-icon" src="./icons/dots.svg" alt="dots icon"></img>
                 </div>
             </div>
+        </div>
 
         <div className="text-container">
-            <a className="title" href={props.albumContent.external_urls.spotify} target="_blank">
+            <a className="title" href={props.albumContent.external_urls.spotify} target="_blank" rel="noopener noreferrer">
                 {props.albumContent.name}
             </a>
             {props.albumContent.artists.map(item => (
@@ -26,4 +26,4 @@ const AlbumCard = (props) => {
     </div>
         )
 }
-export default AlbumCard;
+export default AlbumCard

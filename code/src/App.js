@@ -3,14 +3,12 @@ import data from './data.json'
 import Header from './components/Header'
 import AlbumCard from './components/AlbumCard'
 
-// console.log(data)
-
 const App = () => {
   return (
     <>
     <Header /> 
     <div className="container">
-    {data.albums.items.map(item => (
+      {data.albums.items.map(item => (
         <AlbumCard key={item.id} albumContent = {item} />
       ))}
     </div>
