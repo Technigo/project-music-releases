@@ -9,7 +9,7 @@ We quite quickly manage to display the data on the site and create a grid with a
 
 We were able to advance to the strech goals and also incorporate the playlist section which went a lot quicker, now that we knew how to do it. 
 
-# If you had more time, what would be next?
+## If you had more time, what would be next?
 - We would have liked to make the site look a bit more like a website, with a top bar, menu, header etc. 
 - We would also have sorted the albums from the singles, since this was the only strech goal we didn't do. 
 
