@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 body {
@@ -59,7 +59,7 @@ header hr {
   font-size: 14px;
   margin-bottom: 0;
   color:#fff;
-} 
+}
 
 .albums a, .artists a {
   text-decoration: none;
@@ -111,25 +111,25 @@ header hr {
 }
 
 .icon-heart {
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
   padding-top: 15px;
 }
 
 .icon-play {
-  height: 60px;
-  width: 60px;
+  height: 90px;
+  width: 90px;
   padding-right: 20px;
   padding-left: 20px;
   color: white;
 }
 
 .icon-dots {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   padding-top: 15px;
 }
- 
+
 .icons:hover {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
@@ -188,7 +188,7 @@ header hr {
   .header {
     text-align: start;
   }
-  
+
   .music-card {
     width: 25%;
   }
