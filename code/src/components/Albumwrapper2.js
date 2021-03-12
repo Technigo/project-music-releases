@@ -4,10 +4,11 @@ import Album from 'components/Album'
 import Artist from 'components/Artist'
 import { render } from 'react-dom'
 
+
 //console.log(data.albums.items[0].artists[0].id)
 
 const Albumwrapper2 = (props) => {
-  console.log({tetsar:props.albumWrap.albums.items[0].album_type})
+  console.log({testar:props.albumWrap.albums.items.album_type})
   const test = props.albumWrap.albums.items
 
   return (  

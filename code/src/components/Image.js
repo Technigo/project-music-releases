@@ -11,7 +11,7 @@ const Image = ({coverImage, url}) => {
     href={url} 
     rel="noopener noreferrer"
     >
-      <img className="album-image" src={coverImage[1].url} alt="album-cover" />
+      <img className="album-image" src={coverImage[0].url} alt="album-cover" />
       <div className="image-icon">
         <img className="icon" src={IconHeart} alt="heart-icon" />
         <img className="icon play" src={IconPlay} alt="play-icon" />

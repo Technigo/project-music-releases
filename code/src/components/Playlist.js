@@ -3,18 +3,16 @@ import data from '../stretch-goal.json'
 
 const Playlist = (props) => {
     return (
-      <article key={props.id} className="playlist">
-         <h4 className="playlist-title">Popular playlist</h4>
+      <article key={props.id}className="playlist">
+        <h4 className="playlist-title">Popular playlist</h4>
 
-        { data.playlists.items.map(playlists => 
-        
-        {
+        {data.playlists.items.map(playlists => {
           return(
             <a 
             className="playlist-link" 
             href={playlists.external_urls.spotify} 
-            key= {props.child}
             rel="noopener noreferrer"
+            key= {playlists.id}
             >
               <p className="playlist-content">{playlists.name}</p>
             </a>
