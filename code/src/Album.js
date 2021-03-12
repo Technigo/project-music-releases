@@ -7,11 +7,13 @@ export const Album = (props) => {
             <div className="album">
                 <div className="image-container">
                     <img src={props.imageSrc} alt={props.albumName}></img>
-                    <div className="icons-container">
-                        <img className="heart" src="./icons/heart.svg"/>
-                        <img className="play-button" src="./icons/play.svg"/>
-                        <img className="dots" src="./icons/dots.svg"/>
-                    </div>
+                        <div className="overlay">
+                            <div className="icons-container">
+                                <img className="heart" src="./icons/heart.svg"/>
+                                <img className="play-button" src="./icons/play.svg"/>
+                                <img className="dots" src="./icons/dots.svg"/>
+                            </div>
+                        </div>
                 </div>
                 <p className="album-title">{props.albumName}</p>
                 <div className="artists">
