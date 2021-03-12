@@ -8,7 +8,7 @@ import { Artist } from './components/Artist'
 
 const albums = data.albums.items;
 
-//.map to loop through the albums and extract the correct values from the array
+//.map to loop through the albums and extract the values that we want from the array
 
 export const App = () => {
   return ( 
