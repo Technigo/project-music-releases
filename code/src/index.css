@@ -13,3 +13,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.album-img:hover {
+  -webkit-filter: brightness(30%);
+
+
+   filter: brightness(30%);
+
+
+}
