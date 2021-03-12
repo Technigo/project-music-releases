@@ -2,7 +2,7 @@ import React from 'react'
 import data from './data.json'
 import Playlist from 'components/Playlist'
 import Albumwrapper from 'components/Albumwrapper'
-import Albumwrapper2 from 'components/Albumwrapper2'
+import NewSingles from 'components/NewSingles'
 
 console.log(data.albums.items[0].album_type)
 
@@ -13,8 +13,8 @@ export const App = () => {
       <article>
         <Playlist />
         <Albumwrapper albumWrap={data}/>
-        <h2>New Singles</h2>
-        <Albumwrapper2 albumWrap={data}/>
+        <h2 className="single">New Singles</h2>
+        <NewSingles albumWrap={data}/> 
       </article>
     </main>
   )

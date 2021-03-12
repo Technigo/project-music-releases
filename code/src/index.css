@@ -16,6 +16,10 @@ body {
   display: none;
 }
 
+.single {
+  margin-top: 50px !important;
+}
+
 .album-box {
   position: relative;
   margin: 20px;

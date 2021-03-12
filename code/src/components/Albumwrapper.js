@@ -8,7 +8,8 @@ import Artist from 'components/Artist'
 const Albumwrapper = (props) => {
   return (
     <article className="album-wrapper">
-      {props.albumWrap.albums.items.map(album => {
+      {props.albumWrap.albums.items.filter(album =>
+      album.album_type ==="album").map((album)=>{
         return (
           <div key={album.id} className="album-box" >
             <div className="box">
@@ -18,10 +19,10 @@ const Albumwrapper = (props) => {
             </div>
           </div>
         )
-      })
-      }
 
-    </article>
+      }) 
+      }
+      </article>
   )
 }
 
