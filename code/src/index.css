@@ -135,13 +135,24 @@ a:link, a:visited {
   margin: 5px 0 0 0;
 }
 
+.album-name:hover {
+  text-decoration: underline;
+}
+
 .artist-container {
   width: 100%;
 }
 
-.artist {
+.artists-link {
   color: #a0a0a0;
+  font-weight: bold;
   margin: 5px 0 0 0;
+}
+
+ .artists-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
 
 /* removes comma from last child in artist names */
