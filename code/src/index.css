@@ -30,6 +30,7 @@ code {
   font-size: 14px;
   padding: 10px;
   margin: 10px;
+ 
   
 
 
@@ -52,6 +53,47 @@ a:link, a:visited {
   
 }
 
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+
+}
+
+.image-overlay {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .5);
+}
+
+
+
+.image-container:hover {
+
+}
+
+.buttons-container {
+   postion: absolute;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 50%;
+   left: 50%;
+  
+}
+
+.buttons-container img {
+  width: 70px;
+  margin-right: 25px;  
+}
+
 .album-information-container {
   display: flex;
   flex-direction: column;
@@ -64,10 +106,21 @@ a:link, a:visited {
   margin: 5px 0 0 0;
 }
 
+.artist-container {
+  width: 100%;
+  
+}
+
 .artist {
   color: #a0a0a0;
   margin: 5px 0 0 0;
 }
+
+/* removes comma from last child in artist names */
+.artist-container:last-child span {
+  display: none;
+}
+
 
 
 @media (min-width: 768px) {

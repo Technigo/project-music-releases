@@ -1,13 +1,17 @@
 import React from 'react'
+import Buttons from './Buttons.js'
 
 //image needs an URL
 const Album = (props) => {
   console.log(props)
     return (
       <div className="album-card">
-        <a className="url-link" href={props.url}>
-          <img className="album-image" src={props.imgsrc}></img>
-        </a>
+          <div className="image-container">
+          <a className="url-link" href={props.url}>
+            <img className="album-image" src={props.imgsrc}></img>
+          </a>
+          <Buttons />
+          </div>        
         <div className="album-information-container">
           <h3 className="album-name">{props.name}</h3>
         </div>
