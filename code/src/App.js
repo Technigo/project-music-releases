@@ -4,8 +4,6 @@ import Playlist from 'components/Playlist'
 import Albumwrapper from 'components/Albumwrapper'
 import NewSingles from 'components/NewSingles'
 
-console.log(data.albums.items[0].album_type)
-
 export const App = () => {
   return (
     <main className="main">

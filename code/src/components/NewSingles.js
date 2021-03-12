@@ -3,9 +3,6 @@ import Image from 'components/Image'
 import Album from 'components/Album'
 import Artist from 'components/Artist'
 
-
-//console.log(data.albums.items[0].artists[0].id)
-
 const Albumwrapper2 = (props) => {
   return (
     <article className="album-wrapper">
