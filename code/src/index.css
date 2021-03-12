@@ -58,14 +58,20 @@ p {
 
 .icon-heart {
   width: 10%;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .icon-play {
   width: 15%;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .icon-dots {
   width: 10%;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 
 .album-cover-image {
@@ -137,6 +143,11 @@ p {
 
   .album-cover:hover .icons {
     opacity: 1;
+    transition: 0.3s;
+  }
+
+  .icon-play:hover, .icon-heart:hover, .icon-dots:hover {
+    opacity: 1;
   }
 
   .album-cover:hover .album-cover-image {
@@ -150,6 +161,7 @@ p {
   .grow:hover { 
     transform: scale(1.1); 
   }
+
 
   /* Album name */
   .album-name:hover {

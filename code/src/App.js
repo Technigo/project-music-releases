@@ -2,8 +2,6 @@ import React from 'react'
 import data from './data.json'
 import { Album } from './components/Album'
 
-console.log(data.albums.items) //Ta bort denna senare
-
 export const App = () => {
   return (
     <div className="main">
