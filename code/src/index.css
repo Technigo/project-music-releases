@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +15,157 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body {
+  background-color: #181818;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Helvetica;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.header-text {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 15px 0px 5px 30px;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  margin: 0px 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.album-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.album-card {
+  margin: 20px 30px;
+}
+.album-cover {
+  position: relative;
+}
+
+.album-image {
+  display: block;
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  transition: all 0.2s ease-in;
+}
+
+.icons:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in;
+}
+
+.heart {
+  margin: 20px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.heart:hover {
+  transform: scale(1.3);
+}
+
+.play {
+  margin: 20px;
+  height: 70px;
+  transition: all 0.2s ease-in-out;
+}
+
+.play:hover {
+  cursor: pointer;
+  transform: scale(1.6);
+}
+
+.dots {
+  margin: 20px;
+  height: 35px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dots:hover {
+  transform: scale(1.3);
+}
+
+.album-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.album-artist {
+  color: #a0a0a0;
+  margin: 0;
+  /*font-weight: bold;*/
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.album-artist:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px) {
+  .album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .album-card {
+    width: 44%;
+    margin: 20px 0px;
+  }
+
+  .play {
+    height: 80px;
+  }
+}
+
+/*MEDIA QUERIES DESKTOP*/
+@media (min-width: 1024px) {
+  .album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .album-card {
+    width: 22%;
+    margin: 18px 5px;
+  }
 }
