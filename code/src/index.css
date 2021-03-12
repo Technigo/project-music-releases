@@ -10,11 +10,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #222;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-container {
+  width: 100%;
+}
+
+.header-title {
+  width: 80%;
+  color: white;
+  font-size: 28px;
+  margin: 20px;
 }
 
 .album {
@@ -68,12 +80,12 @@ a:link, a:visited {
   height: 100%;
   justify-content: center;
   align-items: center;
-  /* background: rgba(0, 0, 0, .5); */
+  
 }
 
 
 
-.image-container, .image-overlay:hover {
+.image-container:hover .image-overlay {
   background: rgba(0, 0, 0, 0.6);
   transition: 0.5s ease;
 }
@@ -83,19 +95,26 @@ a:link, a:visited {
   position: absolute;
   width: 100%;
   display: none;
-}
-
-.buttons-container:hover {
-  display: flex;
   justify-content: center;
   align-items: center;
-  top: 40%;
-   
+  top: 50%;
+  
+}
+
+.image-container:hover .buttons-container {
+  display: flex;
+    
 }
 
 .buttons-container img {
   width: 70px;
-  margin-right: 25px;  
+  margin: 0 15px;
+    
+}
+
+.play-button:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
 }
 
 .album-information-container {
@@ -134,7 +153,10 @@ a:link, a:visited {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+  }
+
+  .header-title {
+    width: 85%;
   }
 
   .album {
@@ -144,6 +166,9 @@ a:link, a:visited {
 
 @media (min-width: 992px) {
 
+  .header-title {
+    width: 86%;
+  }
   .album {
     width: 22%;
   }
