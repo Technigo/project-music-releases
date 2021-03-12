@@ -41,7 +41,6 @@ a {
   text-decoration: none;
 }
 
-
 /*ALBUM STYLING*/
 
 .album {
@@ -55,10 +54,6 @@ a {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-}
-
-.album-artist-container {
-  padding-top: 8px;
 }
 
 /*Cover image*/
@@ -123,9 +118,13 @@ a {
 
 /*Album title*/
 
+.album-container {
+  padding: 8px 0 8px 0;
+}
+
 .album-link {
   font-family: Helvetica;
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 7px;
   color: #FFF;
 }
@@ -138,8 +137,7 @@ a {
 
 .artist-link {
   font-family: Helvetica;
-  font-size: 14px;
-  margin-top: 7px;
+  font-size: 16px;
   color: #a0a0a0;
 }
 
@@ -181,6 +179,18 @@ a {
     margin-left: calc( (100% - (48% * 2)) / 1);
   }
 
+  .album-container {
+    padding: 8px 0 5px 0;
+  } 
+
+  .album-link {
+    font-size: 18px;
+  }
+
+  .artist-link {
+    font-size: 18px;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -192,5 +202,13 @@ a {
   /*calculates the needed left margin on all items but the first in each row, to align to the left if the items don't fill up the row*/
   .album:not(:nth-child(4n+1)) {
     margin-left: calc( (100% - (24% * 4)) / 3);
+  }
+
+  .album-link {
+    font-size: 14px;
+  }
+
+  .artist-link {
+    font-size: 14px;
   }
 }

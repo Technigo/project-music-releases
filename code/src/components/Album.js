@@ -1,7 +1,5 @@
 import React from 'react'
 
-// Contructing the album with props
-
 export const Album = (props) => {
     return (
       <div className="album">
@@ -17,20 +15,19 @@ export const Album = (props) => {
           </div>
           </a>
           
-          <div className="album-artist-container">
+          <div className="album-container">
           <h2>
             <a className="album-link" href={props.albumLink} target='_blank' rel="noopener noreferrer">
               {props.title}
             </a>
           </h2>
-          <div>
-          <h2 className="artist-name">{props.artistName}</h2></div>
-{/*           <h2 className="artist-name">{props.artistName}
-            <a className="artist-link" href={props.artistLink} target='_blank' rel="noopener noreferrer">
-              {props.artists}
-            </a>
-          </h2> */}
-        </div>
+          </div>
+          
+          <div className="artist-container">
+          <h2 className="artist-name">
+            {props.artistName}
+            </h2>
+          </div>
        </div>
     )
   }
