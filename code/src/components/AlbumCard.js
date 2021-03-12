@@ -4,6 +4,7 @@ import Artist from 'components/Artist'
 
 const AlbumCard = (props) => {
   const albumsArray = props.albumsArray
+  console.log(albumsArray)
 
   return (
     <>
@@ -16,7 +17,7 @@ const AlbumCard = (props) => {
           <div className="album-text">
             <a href={item.external_urls.spotify} className='album-name'>{item.name}</a>
             <div className='artists'>{item.artists.map((artist) => (
-              <Artist artist={artist}/>
+              <Artist artist={artist} key={artist.id}/>
             ))}
             </div>
           </div>
