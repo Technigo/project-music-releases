@@ -99,12 +99,12 @@ code {
   height: 100%;
 }
 
-.image-container:hover .image-overlay{
+.image-container:hover:active .image-overlay{
   background: rgba(0, 0, 0, 0.6);
   transition: 0.5s ease;
 }
 
-.image-container:hover .icon-container {
+.image-container:hover:active .icon-container {
   display: flex;
 }
 
