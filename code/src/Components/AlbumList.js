@@ -5,7 +5,6 @@ import AlbumTitle from './AlbumTitle'
 import AlbumCover from './AlbumCover'
 import Artists from './Artists';
 
-// moved up container, as it should not be created for each album. only once
 const AlbumList = () => {
   return (
     <>

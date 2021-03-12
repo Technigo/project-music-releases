@@ -11,7 +11,6 @@ const Artists = (props) => {
           <h2 className="artist-name">{artist.name}<span>,&nbsp;</span></h2>
         </a>);
       })}
-
     </div>
   )
 }
