@@ -17,7 +17,7 @@ const Album = (props) => {
         <h3 className="underline">{props.albumContent.name}</h3>
       </a>
       <div>{props.albumContent.artists.map((name) => {
-        return <a className="artist-container" href={name.external_urls.spotify}><span className="underline">{name.name}</span></a>
+        return <a className="artist-container" key={name.name} href={name.external_urls.spotify}><span className="artist-name underline">{name.name}</span></a>
         })}</div>
     </div>
   )

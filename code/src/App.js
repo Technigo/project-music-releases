@@ -9,7 +9,7 @@ const App = () => {
     <>
       <h1>New Albums and singles</h1>
       <div className="container">
-        {data.albums.items.map(item => (
+        {data.albums.items.map((item) => (
             <Album key= {item.id} albumContent={item} />
         ))}
       </div>
