@@ -94,7 +94,7 @@ header hr {
 
 .icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   position: absolute;
   font-family: Montserrat;
@@ -111,23 +111,19 @@ header hr {
 }
 
 .icon-heart {
-  height: 50px;
-  width: 50px;
-  padding-top: 15px;
+  height: 30px;
+  width: 30px;
 }
 
 .icon-play {
-  height: 90px;
-  width: 90px;
-  padding-right: 20px;
-  padding-left: 20px;
+  height: 60px;
+  width: 60px;
   color: white;
 }
 
 .icon-dots {
-  height: 40px;
-  width: 40px;
-  padding-top: 15px;
+  height: 30px;
+  width: 30px;
 }
 
 .icons:hover {
