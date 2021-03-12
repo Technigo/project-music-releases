@@ -1,10 +1,10 @@
 * {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 
 body {
   margin: 0;
-  padding-left: 8px;
+  padding: 0 8px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -19,6 +19,11 @@ code {
     monospace;
 }
 
+.body-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
@@ -31,6 +36,7 @@ h1 {
   display:flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  width: auto;
 }
 
 .album {
@@ -65,16 +71,13 @@ h1 {
   content: '';
 }
 
-/* .artist:not(:first-child, :last-child)::before {
-  content: ", ";
-} */
-
-
 
 @media (min-width: 768px) {
 
   .album {
-    width: 45%;
+    width: 48%;
+    /* min-width: 40%;
+    max-width: 55%; */
   }
 
 }
