@@ -1,6 +1,4 @@
-* {
-  border: red solid 1px;
-}
+
 
 body {
   margin: 0;
@@ -29,6 +27,12 @@ code {
   color: white;
   font-size: 28px;
   margin: 20px;
+}
+
+.header-line { 
+  width: 90%;
+  border-top: 2px solid #3f3f3f;  
+  margin-left: 20px;
 }
 
 /*ALBUM CONTAINER*/
@@ -60,6 +64,7 @@ a:link, a:visited {
 
 .album-image {
   width: 100%;
+  object-fit: contain; /*Prevents image stretching*/
   
 }
 
@@ -74,7 +79,7 @@ a:link, a:visited {
 }
 
 .image-overlay {
-  
+  z-index: 1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -94,7 +99,6 @@ a:link, a:visited {
   justify-content: center;
   align-items: center;
   top: 50%;
-  z-index: 1;
   
 }
 
@@ -160,6 +164,11 @@ a:link, a:visited {
     width: 85%;
   }
 
+  .header-line {
+    width: 86%;
+    margin: 0;
+  }
+
   .album {
     width: 45%;
   }
@@ -176,10 +185,14 @@ a:link, a:visited {
 
 /*DESKTOP*/
 @media (min-width: 992px) {
-
+  
   .header-title {
     width: 86%;
   }
+  .header-line {
+    width: 85%;
+  }
+
   .album {
     width: 22%;
   }

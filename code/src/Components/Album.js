@@ -11,7 +11,7 @@ const Album = (props) => {
             <Buttons />
           </div>        
         <div className="album-information-container">
-          <a className="url-link" href={props.url}>
+          <a className="url-link" href={props.url} target="_blank">
             <h3 className="album-name">{props.name}</h3>
           </a>
         </div>
