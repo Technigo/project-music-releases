@@ -1,12 +1,23 @@
 import React from 'react'
 import data from './data.json'
+import playlistData from './stretch-goal.json'
 
-console.log(data)
+import { Category } from "./components/Category"
+import { SideBar } from "./components/SideBar"
 
+console.log(playlistData)
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <SideBar playlistData={playlistData.playlists.items} />
+      <Category
+        data={data.albums.items}
+        filter="single"
+      />
+      <Category
+        data={data.albums.items}
+        filter="album"
+      />
+    </>
   )
 }
