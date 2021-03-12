@@ -7,6 +7,7 @@
 }
 
 
+
 body {
   background-color: var(--primary); 
   margin: 0;
@@ -24,17 +25,24 @@ code {
 
 
 
-/* TILLFÄLLIG STYLE AV P TILLS VI HAR MER DATA */
-p {
-  margin: 5px;
-}
+/* HEADER STYLES */
 
 .header {
   color: var(--secondary);
   font-family: Helvetica;
+  font-size: 1.6rem;
+  margin-left: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  border-bottom: 0.2rem solid #a0a0a017;
+  padding-bottom: 5px;
 }
 
 
+
+/* ALBUM STYLES */
 
 .album-container {
   display: grid;
@@ -43,19 +51,11 @@ p {
   margin: 1.5rem;
 }
 
-/* TEST IMPORTING ICONS 
-
-.album-container div {
-  background-image: url("/icons/heart.svg");
-  z-index: 10;
-}
-*/
 
 .contributors :not(:first-child, :last-child)::before {
   color: #a0a0a0;
   content: ", ";
 }
-
 
 
 .cover-image {
@@ -66,13 +66,23 @@ p {
   opacity: 40%;
 }
 
+.cover-container {
+  position: relative;
+  
+}
+
 .icons-container {
+ position: absolute;
+ top: 40%;
+ left: 25%;
  display: flex;
+ opacity: 0%;
  }
 
-/* .icons-container:hover {
-  display: none;
-} */
+ 
+.icons-container:hover {
+  opacity: 100%;
+} 
 
 
 .icon-heart {

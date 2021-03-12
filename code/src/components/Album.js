@@ -18,7 +18,7 @@ const Album = (props) => {
                     <p className="album-title">{props.album}</p>
                     </a>
                     <a href={props.artisturl} target="_blank" rel="noopener noreferrer"> 
-                    <p className="contributors">{props.contributors}</p>
+                    <p className="contributors">{props.contributors}</p>         
                     </a>
             </div>
     )
@@ -30,4 +30,4 @@ export default Album;
 
 // import Artist from './Artist'
 //<Artist artists={props.artist} />
-
+//

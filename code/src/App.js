@@ -5,7 +5,7 @@ import Header from './components/Header'
 
 
 console.log(data)
-console.log(data.albums.items[0].images[0].url)
+
 
 
 
@@ -24,4 +24,4 @@ export const App = () => {
   )
 }
 
-//items.artists[0].external_urls.spotify
+
