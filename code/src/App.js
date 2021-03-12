@@ -1,21 +1,25 @@
 import React from 'react'
 import data from './data.json'
+/* import Artist from './components/Artists.js' */
+import Album from './components/Album.js'
 
 console.log(data)
+/* console.log(artists) */
 
 export const App = () => {
-  const exampleHeading = 'Welcome to my website!';
-  const imageSrc = 'https://via.placeholder.com/150';
+/*   const Artists = ;
+  const imageSrc = 'https://via.placeholder.com/150'; */
 
   return (
     <>
         <header>
-            <h1>Article website</h1>
+            <h1>New releases</h1>
         </header>
         <div>
-            <h3>{exampleHeading}</h3>
+            <Album album={data.albums.items}/>
+           {/* <h3>{artist}</h3> */}
             <p>Spring is coming!</p>
-            <img src={imageSrc} alt="Spring" />      
+
         </div>
     </>
   )
