@@ -46,9 +46,9 @@ export const App = () => {
           ))}
         </div>
         <div class="container">
-          <h4 className="singles">Singles</h4>
+          <h4>Singles</h4>
           <div className="singles-container">{mapMusic("single")}</div>
-          <h4 className="album">Albums</h4>
+          <h4>Albums</h4>
           <div className="albums-container">{mapMusic("album")}</div>
         </div>
       </div>

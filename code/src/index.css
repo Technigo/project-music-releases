@@ -31,7 +31,7 @@ code {
 .sidebar {
   padding: 0 50px;
   margin-top: 70px;
-  border-right:rgb(128, 128, 128) 0.5px solid;
+  border-right: rgb(128, 128, 128) 0.5px solid;
   display: none;
 }
 
@@ -75,20 +75,18 @@ li {
   align-items: center;
 }
 
-.album-container {
+.gallery-item__front {
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.albumFront-container {
-  width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.gallery-item__front:hover button {
+  display: flex;
+}
+
+.gallery-item__front:hover .image-container {
+  opacity: 0.5;
 }
 
 .image-container {
@@ -98,18 +96,10 @@ li {
   overflow: hidden;
 }
 
-.albumFront-container:hover button {
-  display: flex;
-}
-
-.albumFront-container:hover .image-container {
-opacity: 0.5;
-}
-
 .image-container img {
   position: absolute;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .buttons {
@@ -126,13 +116,14 @@ button {
   position: relative;
   height: 30px;
   width: 30px;
-  display:none;
+  display: none;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   margin: 0 20px;
-  filter: invert(73%) sepia(99%) saturate(1%) hue-rotate(34deg) brightness(102%) contrast(93%);
+  filter: invert(73%) sepia(99%) saturate(1%) hue-rotate(34deg) brightness(102%)
+    contrast(93%);
   z-index: 1;
   cursor: pointer;
 }
@@ -150,14 +141,16 @@ button img {
 
 .play-button:hover {
   transform: scale(1.5);
-  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(165deg) brightness(104%) contrast(101%);
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(165deg)
+    brightness(104%) contrast(101%);
 }
 
-.title-container {
+.gallery-item__text {
   font-family: Helvetica;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  margin-bottom: 40px;
 }
 
 a {
@@ -177,39 +170,57 @@ a:hover {
   font-weight: 700;
 }
 
-.artist {
+.artist-container {
+  display: flex;
+}
+
+.artist-name {
   font-family: Helvetica;
   font-size: 14px;
-  margin: 0;
+  width: fit-content;
+  margin: 5px 0;
   font-weight: 400;
   color: #a0a0a0;
 }
 
-.info {
+.album-info {
   margin-top: 20px;
 }
 
-.artist:not(:last-of-type)::after {
-  content: ", ";
+.artist-name:not(:last-child):after {
+  content: ", \00a0";
+  float: right;
 }
 
-.artist:nth-last-of-type(2)::after {
-  content: " & ";
+.artist-name:nth-last-child(2):after {
+  content: "\00a0 & \00a0";
+  float: right;
 }
 
-@media screen and (min-width:700px) {
+@media screen and (min-width: 700px) {
+  .main {
+    justify-content: flex-start;
+  }
 
-  .main{
-  justify-content: flex-start;
+  h4 {
+    margin-left: 5px;
+  }
+
+  .header {
+    padding-left: 30%;
+    font-size: 25px;
+  }
+
+  .sidebar {
+    width: 35%;
+    padding: 0 2%;
+    margin-top: 70px;
+    display: block;
   }
 
   .container {
     width: 100%;
     margin: 0 1%;
-  }
-
-  .album-container {
-    width: 100%;
   }
 
   .singles-container,
@@ -219,40 +230,31 @@ a:hover {
     column-gap: 20px;
   }
 
-  .albumFront-container
-  {
-    height: fit-content;
-  }
-
-  .album-container {
+  .gallery-item__front {
     width: 100%;
     height: fit-content;
   }
 
+  .gallery-item__text {
+    width: 100%;
+  }
 
   .image-container {
-    height: 35vw;
+    height: 33vw;
   }
-
-  .header {
-    padding-left: 30%;
-    font-size: 25px;
-  }
-
-  h4 {
-    margin-left: 5px;
-  }
-  
-  .sidebar {
-    width: 35%;
-    padding: 0 2%;
-    margin-top: 70px;
-    display: block;
-  }
-  
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    font-size: 30px;
+    padding-left: 21%;
+  }
+
+  .sidebar {
+    width: 25%;
+    padding: 0;
+    margin-top: 70px;
+  }
 
   .singles-container,
   .albums-container {
@@ -261,32 +263,21 @@ a:hover {
     column-gap: 20px;
   }
 
-  .sidebar {
-    width: 25%;
-    padding: 0 ;
-    margin-top: 70px;
-  }
-
   .image-container {
     height: 19vw;
   }
-
-  .header {
-    font-size: 30px;
-    padding-left: 21%;
-  }
-
 }
 
 @media screen and (min-width: 1800px) {
-
   .sidebar {
     width: 15%;
   }
 
-  .header { 
+  .header {
     padding-left: 14%;
   }
-  
-}
 
+  .image-container {
+    height: 21vw;
+  }
+}
