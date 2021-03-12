@@ -5,6 +5,7 @@ import { Heading } from './Components/Heading'
 import { Artists } from './Components/Artists'
 import { AlbumTitle } from './Components/AlbumTitle'
 import { TypeOf } from './Components/TypeOf'
+import { Footer } from './Components/Footer'
 import './App.css'
 
 
@@ -16,7 +17,7 @@ export const App = () => {
         <Heading />
 
         <section  className='album-cards-container'>
-            {data.albums.items.map(album => (
+            {data.albums.items.map((album) => 
               <div className="album-cards">
                 <Albums 
                 key={album.id}
@@ -27,7 +28,6 @@ export const App = () => {
                   <AlbumTitle 
                    albumContent={album}
                   />
-
                   <div className="artist-container">
                     {album.artists.map((artistname) =>
                        <Artists 
@@ -47,9 +47,11 @@ export const App = () => {
                 
                 </div>
               </div>
-          ))}
+          )}
         </section>
+        
       </div>  
+      <Footer />
     </>
   )
 }

@@ -36,8 +36,6 @@
   border-radius: 6px;
 }
 
-
-
  @media (min-width:667px) {
   .album-cards-container {
     flex-direction: row;

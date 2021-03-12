@@ -11,4 +11,4 @@ We have used the Technigo resources (lectures, teachers, reading material) and a
 If we had more time we would add more information from the JSON file, mostly for practice. It would also be fun to try to sort the albums/singles.
 
 ## View it live
-Link to our project on Netlify: 
+Link to our project on Netlify: https://quizzical-noether-570a46.netlify.app/
