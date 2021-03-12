@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+  background-color: #181818;
   color: white;
 }
 
@@ -91,7 +91,6 @@ h3 {
   display: flex;
 }
 
-/* General Sibling Combinator  */
 .icons:hover ~ .album-img-hover {
   filter: brightness(0.2);
 }

@@ -1,12 +1,15 @@
 # Music Releases
-Replace this readme with your own information about your project.
+This is a pair-programming project and the task was to build a Music Release site by using pre-fetched data from an API from Spotify.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started by scetching up all of the requirements for the project on a Trello board to get an overview, and then we decided where to start.
+We created components to display the album data and used .map to print out the data that we were supposed to. 
+We were not sure of how to import components from one file to another so we wrote a question on Stack Overflow and got some help to solve it.
+We finished the project by adding all of the styling in CSS, where we also added the hover effects. 
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+View the project live: music-site-project-9.netlify.app
