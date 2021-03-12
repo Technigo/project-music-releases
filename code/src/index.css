@@ -189,11 +189,11 @@ header{
     top: 0;
   }
 
-  .play-icon {
+ /* .play-icon {
     transition: 2s ease-in-out;
   }
 
   .play-icon:hover {
     transform: scale(1.5);
-  }
+  } */
 }
