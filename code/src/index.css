@@ -132,7 +132,6 @@ a:link, a:visited {
 
 .artist-container {
   width: 100%;
-  
 }
 
 .artist {
@@ -165,7 +164,7 @@ a:link, a:visited {
   }
 
   .buttons-container {
-    top: 40%;
+    top: 45%;
   }
 
   .buttons-container img {
