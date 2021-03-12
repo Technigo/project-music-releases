@@ -25,7 +25,7 @@ const albumArray = data.albums.items
               hrefAlbum={album.external_urls.spotify} 
               artist={album.artists.map((item, index) => <a>{item.name}</a>)}
               hrefArtist={album.artists.map((item) => item.external_urls.spotify)}
-              key={album.name}/>
+              key={album.id}/>
              )
           })
         }

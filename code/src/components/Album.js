@@ -13,7 +13,7 @@ const Album = (prop) => {
         <div className="album-card">
             <div className="album-controls">
                 <Icons/>
-                <AlbumImage image={prop.image}/>
+                <AlbumImage image={prop.image} key={prop.id}/>
             </div>
             <AlbumTitle title={prop.title} hrefAlbum={prop.hrefAlbum}/>
             <Artist artist={prop.artist} hrefArtist={prop.hrefArtist}/>
