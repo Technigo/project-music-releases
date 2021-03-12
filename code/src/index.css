@@ -22,12 +22,16 @@ code {
   width: 100%;
 }
 
+/*HEADER*/
+
 .header-title {
   width: 80%;
   color: white;
   font-size: 28px;
   margin: 20px;
 }
+
+/*ALBUM CONTAINER*/
 
 .album {
  width: 100%;
@@ -42,17 +46,11 @@ code {
   font-size: 14px;
   padding: 10px;
   margin: 10px;
- 
-  
-
-
 }
 
 .url-link {
   display: inline-flex;
 }
-
-
 
 a:link, a:visited {
   text-decoration: none; 
@@ -64,6 +62,8 @@ a:link, a:visited {
   width: 100%;
   
 }
+
+/*IMAGE CONTAINER*/
 
 .image-container {
   width: 100%;
@@ -80,16 +80,12 @@ a:link, a:visited {
   height: 100%;
   justify-content: center;
   align-items: center;
-  
 }
-
-
 
 .image-container:hover .image-overlay {
   background: rgba(0, 0, 0, 0.6);
   transition: 0.5s ease;
 }
-
 
 .buttons-container {
   position: absolute;
@@ -106,6 +102,8 @@ a:link, a:visited {
     
 }
 
+/*BUTTONS*/
+
 .buttons-container img {
   width: 70px;
   margin: 0 15px;
@@ -117,11 +115,14 @@ a:link, a:visited {
   transition: 0.3s ease;
 }
 
+/*ALBUM TEXT*/
+
 .album-information-container {
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 100%;
+  font-size: 14px;
 }
 
 .album-name {
@@ -145,7 +146,7 @@ a:link, a:visited {
 }
 
 
-
+/*TABLET*/
 @media (min-width: 768px) {
 
   .main-container {
@@ -162,8 +163,18 @@ a:link, a:visited {
   .album {
     width: 45%;
   }
+
+  .buttons-container {
+    top: 40%;
+  }
+
+  .buttons-container img {
+    width: 50px;
+    margin: 0 10px;
+  }
 }
 
+/*DESKTOP*/
 @media (min-width: 992px) {
 
   .header-title {
@@ -173,6 +184,14 @@ a:link, a:visited {
     width: 22%;
   }
 
+  .buttons-container {
+    top: 45%;
+  }
+
+  .buttons-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
 
 }
 
