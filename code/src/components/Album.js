@@ -1,5 +1,6 @@
 import React from "react";
 import { MenuBtns } from "./MenuBtns";
+import { Artists } from "./Artists";
 
 export const Album = (props) => {
   return (
@@ -14,7 +15,15 @@ export const Album = (props) => {
         <a className="album-name" href={props.albumLink}>
           {props.albumName}
         </a>
-        <div className="artist-container">{props.artist}</div>
+        <div className="artist-container">
+          {props.artist.map((artist) => (
+            <Artists
+              key={artist.name}
+              name={artist.name}
+              url={artist.external_urls.spotify}
+            />
+          ))}
+        </div>
         <div className="album-info">
           <p>Total tracks: {props.tracks}</p>
           <p>Release date: {props.release}</p>

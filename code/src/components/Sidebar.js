@@ -8,7 +8,7 @@ export const Sidebar = (props) => {
           <a href={props.link}>{props.list}</a>
           <p> Total tracks: {props.tracks}</p>
         </li>
-      </ul>
+      </ul >
     </>
   );
 };

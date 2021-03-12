@@ -187,11 +187,13 @@ a:hover {
   margin-top: 20px;
 }
 
+/* adds comma after each artist (but not the last element) */
 .artist-name:not(:last-child):after {
   content: ", \00a0";
   float: right;
 }
 
+/*adds & before the last artist. Float:right is used so that the :after content wont be affected by hover effect */
 .artist-name:nth-last-child(2):after {
   content: "\00a0 & \00a0";
   float: right;

@@ -2,10 +2,12 @@ import React from "react";
 import playlist from "./playlist.json";
 import data from "./data.json";
 import { Album } from "./components/Album";
-import { Artists } from "./components/Artists";
 import { Sidebar } from "./components/Sidebar";
 
 export const App = () => {
+
+  /*function is used for maping album_type single and album and display
+  in different divs for separation on the site */
   const mapMusic = (type) => {
     return data.albums.items
       .filter((item) => item.album_type === type)
@@ -18,13 +20,7 @@ export const App = () => {
             albumLink={item.external_urls.spotify}
             tracks={item.total_tracks}
             release={item.release_date}
-            artist={item.artists.map((artist) => (
-              <Artists
-                key={artist.name}
-                name={artist.name}
-                url={artist.external_urls.spotify}
-              />
-            ))}
+            artist={item.artists}
           />
         );
       });
