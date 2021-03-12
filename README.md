@@ -1,12 +1,15 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Project members
+Johan Löfgren & Katharina Liebig
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# Music Releases
+
+This project served as an introduction to React, where we learned how to use components and props.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started by destructuring the design we were given and deciding on which components we needed to build, and in which dependency. After building the components we added the props.
+Our work was very organised from the beginning, as we were planning to reach the black levels goals, so we kept those in mind while building the basic structure. Our goal was to be able to reuse the components of the basic structure for the black level goals, which we also achieved.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://project-music-release.netlify.app/
