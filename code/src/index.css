@@ -1,4 +1,3 @@
-/* SET UP CODE */
 body {
   width: 100vw;
   margin: 0;
@@ -81,9 +80,11 @@ header{
   font-size: 8px;
   text-decoration: none;
 }
-.icons{
+
+.hover-icons{
   display: none;
 }
+
 
 @media (min-width: 767px){
 
@@ -134,24 +135,7 @@ header{
     position: relative;
   }
 
-  .icons{
-    display: flex;
-    width: 15%;
-    margin: 15px;
-  }
-
-  .hover-icons{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-  }
-
-  }
+}
 
 @media (min-width: 1200px){
   .main{
@@ -179,9 +163,37 @@ header{
     margin-bottom: 20px;
     width: 25%;
   }
+  
   .albumimg{
     width: 95%;
   }
 
+ .icons{
+    width: 15%;
+    margin: 15px;
+  }
 
+  .play-icon{
+    width: 15%;
+    margin: 15px;
+  }
+
+  .albumimg:hover + .hover-icons{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  .play-icon {
+    transition: 2s ease-in-out;
+  }
+
+  .play-icon:hover {
+    transform: scale(1.5);
+  }
 }
