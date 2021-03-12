@@ -65,7 +65,7 @@ code {
 
 .heart-icon:hover {
   transform: scale(1.1);
-  opacity: 100%;
+  opacity: 1;
 }
 
 .play-icon {
@@ -99,12 +99,12 @@ code {
   height: 100%;
 }
 
-.image-container:hover:active .image-overlay{
+.image-container:hover .image-overlay{
   background: rgba(0, 0, 0, 0.6);
   transition: 0.5s ease;
 }
 
-.image-container:hover:active .icon-container {
+.image-container:hover .icon-container {
   display: flex;
 }
 
