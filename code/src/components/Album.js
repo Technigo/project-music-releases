@@ -15,7 +15,6 @@ const Album = (props) =>{
                             <Artist item={item}/>
                         </li>
                     )
-                
                 })}
             </ul>
         </div>

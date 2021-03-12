@@ -157,7 +157,7 @@ a {
 
 .page-container {
   display: grid;
-  grid-template-columns: 2fr 8fr;
+  grid-template-columns: 1fr 8fr;
 }
 
 /*******PlAYLIST*******/
