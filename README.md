@@ -12,4 +12,4 @@ We finished the project by adding all of the styling in CSS, where we also added
 
 ## View it live
 
-View the project live: music-site-project-9.netlify.app
+View the project live: https://music-site-project-9.netlify.app/
