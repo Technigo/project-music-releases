@@ -13,7 +13,9 @@ export const App = () => {
     <>
       <Header />
       <AlbumList />
+
     </>
   )
 }
+
 

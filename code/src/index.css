@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; 
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -13,18 +17,49 @@ code {
     monospace;
 }
 
+
+
+/*HEADER COMPONENT*/
+
 .header {
-  color:#ffffff;
   font-size: 20px;
-  margin-left:15px;
+  margin-right: 20px;
   margin-bottom: 5px;
+  margin-left: 20px;
   text-align: center;
+  color: #fff;
 }
 
 header hr {
   border: 1px solid rgba(71, 71, 71, 0.514);
-  width: 80%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
+
+
+
+/*ALBUM COMPONENT & ARTIST COMPONENT*/
+
+
+/*Album*/
+
+.album-cover {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.album-img {
+  width: 100%;
+}
+
+.album-title {
+  font-family: Helvetica;
+  font-size: 14px;
+  margin-bottom: 0;
+  color:#fff;
+} 
 
 .albums a, .artists a {
   text-decoration: none;
@@ -34,140 +69,92 @@ header hr {
   text-decoration: underline 2px white;
 }
 
-.album-title {
-  font-family: Helvetica;
-  font-size: 14px;
-  color:#ffffff;
-  margin-bottom: 0;
-  max-width: 300px;
-}
+
+/*Artist*/
 
 .artists {
   display: flex;
-  /* font-family: Helvetica;
-  font-size: 14px;
-  color: #a0a0a0;
-  text-decoration:none;
-  margin-top:3px;
-  margin-right: 5px; */
+  flex-direction: row;
 }
 
 .artist-name {
   font-family: Helvetica;
   font-size: 14px;
-  color: #a0a0a0;
-  /* text-decoration:none; */
-  margin-top:3px;
+  margin-top: 3px;
   margin-right: 5px;
+  color: #a0a0a0;
 }
 
-.artist-name:not(:last-child):not(:nth-last-child(2))::after {
-  content: ', ';
-}
-
-.artist-name:not(:first-child):last-child::before {
-  content: ' & ';
+.artists a:last-child span { /* to remove commas being added if it's only one artist*/
+  display: none
 }
 
 
-.album-cover {
+/*Icons*/
+
+.icons {
   display: flex;
-  position: relative;
-}
-
-.icons-overlay {
+  justify-content: space-evenly;
+  align-items: center;
   position: absolute;
-  width: 300px;
-  height: 300px;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: bolder;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  color: white;
 }
 
 .icon-heart {
   height: 30px;
   width: 30px;
-  padding-top: 15px;
 }
 
 .icon-play {
   height: 60px;
   width: 60px;
-  /* opacity: 0,5; */
-  padding-left:20px;
-  padding-right:20px;
-  color:white;
+  color: white;
 }
 
 .icon-dots {
   height: 30px;
   width: 30px;
-  padding-top: 15px;
 }
- /*
-
-.icons {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-
-
-
-.album-img {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  height: 300px;
-  width: 300px;
+ 
+.icons:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .icon-play:hover {
   transform: scale(1.3);
 }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Montserrat;
-  font-size: 28px;
-  font-weight: bolder;
-  color: white;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom: 0; 
-  /*top: 45%;
-  left: 20%;
-  /*display: none;*/
-  opacity: 0;
-}
-
-.icons:hover {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.5);
-} 
 
 
-
-
-
-
+/*ALBUMLIST COMPONENT*/
 
 .music-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 25px
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+  padding: 0 10px 0;
 }
 
 .music-card {
-  margin-left:20px;
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 40px;
+  padding: 0 10px 0;
+  width: 100%;
 }
 
 
@@ -181,27 +168,25 @@ header hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
   }
 
+  .music-card {
+    width: 50%;
+  }
 
 }
+
 
 /*Desktop*/
 @media (min-width: 1025px) {
 
-  .music-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap:wrap;
-    justify-content: center;
-  }
-
   .header {
-    text-align: left;
-    margin-left: 50px
+    text-align: start;
+  }
+  
+  .music-card {
+    width: 25%;
   }
 
 }
