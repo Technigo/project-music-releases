@@ -1,0 +1,31 @@
+/* ---------------------------- MAIN AND ALIGN --------------------------- */
+.album {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.album__image--wrapper {
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+
+/* Large screens */
+@media (min-width: 1073px) {
+  .album {
+    max-width: calc(20% - 10px);
+  }
+}
+/* Medium Screens (tablets and smaller desktops */
+@media (max-width: 1073px) {
+  .album {
+    max-width: calc(45% - 10px);
+  }
+}
+/* Small screens (mobile phones and smaller tablets) */
+@media (max-width: 555px) {
+  .album {
+    max-width: calc(90% - 10px);
+  }
+}

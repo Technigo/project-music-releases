@@ -1,0 +1,33 @@
+/* ---------------------------- MAIN ELEMENT AND ALIGN --------------------------- */
+
+.album__icons {
+  background: var(--overlayColor);
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.icon {
+  margin: 0.5em;
+  fill: var(--lightgrey);
+  transition: all 0.2s ease-in-out;
+}
+
+/* ---------------------------------- ICONS --------------------------------- */
+
+/* Makes sure that the outer icons are smaller */
+.icon--smaller {
+  width: 50%;
+}
+.icon--big {
+  width: 100%;
+}
+
+/* ---------------------------------- HOVER --------------------------------- */
+
+/* Hover effects for the play icon */
+.icon--interactable:hover {
+  transform: scale(1.2);
+  fill: white;
+}

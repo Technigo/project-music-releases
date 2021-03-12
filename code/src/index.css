@@ -1,13 +1,67 @@
-body {
+:root {
+  --leftMargin: calc(5% + 130px);
+  --sidebarSmallWidth: calc(130px / 3);
+  --lightgrey: #a0a0a0;
+  --darkBackground: rgb(27, 27, 27);
+  --overlayColor: #0f1011a6;
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+}
+body {
+  background: #202124;
+  width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* General class to use when an element is toggled from display:none */
+.display {
+  display: block !important;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* ------------------------------- TYPOGRAPHY ------------------------------- */
+
+.link,
+.text-inline {
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: normal;
+  text-decoration: none;
+}
+.text--small {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+.list__title {
+  font-size: 24px;
+  margin: 0.5em !important;
+  padding: 0.5em 0;
+  border-bottom: 1px solid var(--lightgrey);
+}
+.list__subtitle {
+  margin-top: 2em;
+  font-weight: normal;
+  font-size: 16px;
+}
+.link__album,
+.link__playlist,
+.list__title,
+.list__subtitle {
+  color: white;
+}
+.text-inline,
+.link__artists {
+  color: var(--lightgrey);
+}
+.link__playlist {
+  line-height: 2em;
+  color: var(--lightgrey);
+}
+/* Hover effects to text links */
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
