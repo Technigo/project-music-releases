@@ -5,10 +5,7 @@ import toggleSidebar from 'actions/toggleSidebar';
 const Sidebar = (props) => {
   return (
     <aside id="sidebar" className="sidebar">
-      <button
-        className="sidebar__button"
-        type="button"
-        onClick={toggleSidebar}>
+      <button className="sidebar__button" type="button" onClick={toggleSidebar}>
         &#9776;
       </button>
       <div className="sidebar__list">

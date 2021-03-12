@@ -8,6 +8,7 @@ import Sidebar from 'components/Sidebar/Sidebar';
 import toggleSidebar from 'actions/toggleSidebar';
 
 const App = () => {
+  // Filters arrays into albums and singles
   const albums = data.albums.items.filter((album) => {
     return album.album_type === 'album';
   });
@@ -15,13 +16,16 @@ const App = () => {
     return album.album_type === 'single';
   });
   // Sorts the filtered arrays by date (oldest -> latest)
-  singles.sort((a, b) => moment(a.release_date).diff(moment(b.release_date)))
-  albums.sort((a, b) => moment(a.release_date).diff(moment(b.release_date)))
+  singles.sort((a, b) => moment(a.release_date).diff(moment(b.release_date)));
+  albums.sort((a, b) => moment(a.release_date).diff(moment(b.release_date)));
 
   return (
     <>
       <div className="main-wrapper">
-        <Sidebar title={dataPlaylists.message} playlists={dataPlaylists.playlists.items} />
+        <Sidebar
+          title={dataPlaylists.message}
+          playlists={dataPlaylists.playlists.items}
+        />
         <main>
           <List type="Albums" items={albums} />
           <List type="Singles" items={singles} />

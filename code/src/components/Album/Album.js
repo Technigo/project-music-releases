@@ -19,7 +19,9 @@ const Album = (props) => {
         {props.name}
       </a>
       <Artists artists={props.artists} />
-      <p className="text-inline text--small">Released <b>{date.format('MMM DD')}</b></p>
+      <p className="text-inline text--small">
+        Released <b>{date.format('MMM DD')}</b>
+      </p>
     </div>
   );
 };

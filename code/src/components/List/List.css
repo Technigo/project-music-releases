@@ -1,9 +1,11 @@
-.list__wrapper > * {
-  margin: 1em;
-}
-
+/* -------------------------------- WRAPPERS -------------------------------- */
 .list__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* makes sure that each element in the list has good spacing  */
+.list__wrapper > * {
+  margin: 1em;
 }

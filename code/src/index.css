@@ -1,6 +1,9 @@
 :root {
   --leftMargin: calc(5% + 130px);
-  --sidebarLeftPosition: calc(130px / 3);
+  --sidebarSmallWidth: calc(130px / 3);
+  --lightgrey: #a0a0a0;
+  --darkBackground: rgb(27, 27, 27);
+  --overlayColor: #0f1011a6;
 }
 
 * {
@@ -29,14 +32,14 @@ body {
   text-decoration: none;
 }
 .text--small {
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 .list__title {
   font-size: 24px;
   margin: 0.5em !important;
   padding: 0.5em 0;
-  border-bottom: 1px solid #a0a0a0;
+  border-bottom: 1px solid var(--lightgrey);
 }
 .list__subtitle {
   margin-top: 2em;
@@ -45,15 +48,17 @@ body {
 }
 .link__album,
 .link__playlist,
-.list__title, .list__subtitle {
+.list__title,
+.list__subtitle {
   color: white;
 }
-.text-inline, .link__artists {
-  color: #a0a0a0;
+.text-inline,
+.link__artists {
+  color: var(--lightgrey);
 }
 .link__playlist {
   line-height: 2em;
-  color: #a0a0a0;
+  color: var(--lightgrey);
 }
 /* Hover effects to text links */
 .link:hover {

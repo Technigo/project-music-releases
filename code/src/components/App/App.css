@@ -17,7 +17,7 @@
 /* Small screens (mobile phones and smaller tablets) */
 @media (max-width: 555px) {
   .main-wrapper {
-    margin: 0 5% 0 var(--sidebarLeftPosition);
+    margin: 0 5% 0 var(--sidebarSmallWidth);
   }
   /* Overlay to be shown when user opens the sidebar in mobile view */
   .overlay {
@@ -27,7 +27,7 @@
     top: 0;
     position: fixed;
     z-index: 1;
-    background: #0f1011a6;
+    background: var(--overlayColor);
     display: none;
   }
 }

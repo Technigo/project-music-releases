@@ -1,7 +1,7 @@
 /* ---------------------------- MAIN ELEMENT AND ALIGN --------------------------- */
 
 .album__icons {
-  background: rgba(0, 0, 0, 0.515);
+  background: var(--overlayColor);
   display: flex;
   height: 100%;
   align-items: center;
@@ -10,7 +10,7 @@
 
 .icon {
   margin: 0.5em;
-  fill: rgb(240, 240, 240);
+  fill: var(--lightgrey);
   transition: all 0.2s ease-in-out;
 }
 

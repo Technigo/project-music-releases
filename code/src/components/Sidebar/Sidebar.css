@@ -1,3 +1,5 @@
+/* ------------------------------ MAIN ELEMENT ------------------------------ */
+
 .sidebar {
   width: var(--leftMargin);
   height: 100%;
@@ -5,11 +7,13 @@
   left: 0px;
   position: fixed;
   z-index: 2;
-  background-color: rgb(27, 27, 27);
+  background-color: var(--darkBackground);
   overflow-x: hidden;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
+
+/* ---------------------------- ELEMENT SPECIFIC ---------------------------- */
 
 ul {
   list-style: none;
@@ -21,6 +25,8 @@ ul {
   display: none;
 }
 
+/* ------------------------------ MEDIA QUERIES ----------------------------- */
+
 /* Small screens (mobile phones and smaller tablets) */
 @media (max-width: 555px) {
   .sidebar {
@@ -30,10 +36,10 @@ ul {
   }
   .sidebar,
   .sidebar__button {
-    width: var(--sidebarLeftPosition);
+    width: var(--sidebarSmallWidth);
   }
   .active {
-    width: calc(var(--sidebarLeftPosition) + 40%) !important;
+    width: calc(var(--sidebarSmallWidth) + 40%) !important;
   }
   .active > .sidebar__list {
     width: fit-content !important;
@@ -46,7 +52,7 @@ ul {
     align-self: flex-end;
     display: block;
     margin-top: 1em;
-    background-color: rgb(27, 27, 27);
+    background-color: var(--darkBackground);
     border: none;
     color: white;
     text-align: center;
