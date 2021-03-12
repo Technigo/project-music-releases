@@ -78,7 +78,7 @@ hr {
 
 .heart {
   margin: 20px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -89,7 +89,7 @@ hr {
 
 .play {
   margin: 20px;
-  height: 60px;
+  height: 70px;
   transition: all 0.2s ease-in-out;
 }
 
@@ -100,7 +100,7 @@ hr {
 
 .dots {
   margin: 20px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -149,6 +149,10 @@ a {
   .album-card {
     width: 44%;
     margin: 20px 0px;
+  }
+
+  .play {
+    height: 80px;
   }
 }
 

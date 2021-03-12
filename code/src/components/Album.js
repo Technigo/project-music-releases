@@ -41,7 +41,6 @@ export const Album = (props) => {
             </a>
           );
         }
-
         return (
           <a key={artist.id} href={artist.external_urls.spotify}>
             <span className="album-artist">{artist.name} </span>
