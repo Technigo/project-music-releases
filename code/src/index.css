@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +7,208 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191919;
+  padding: 20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 14px;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: #FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 14px;
+  border-top: solid 1px #2f2f2f;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ALBUM STYLING*/
+
+.album {
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.cover-container {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+/*Cover image*/
+
+.cover {
+  object-fit: cover;
+  width: 100%;
+}
+
+/*Icons*/
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.icons-container:hover {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.heart-icon {
+  width: 9%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.heart-icon:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  width: 20%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.play-icon:hover {
+  opacity: 1;
+  transition: all 0.1s ease;
+  transform: scale(1.1);
+}
+
+.dots-icon {
+  width: 7%;
+  opacity: 0.8;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.dots-icon:hover {
+  opacity: 1;
+}
+
+/*Album title*/
+
+.album-container {
+  padding: 8px 0 10px 0;
+}
+
+.album-link {
+  font-family: Helvetica;
+  font-size: 16px;
+  margin-top: 7px;
+  color: #FFF;
+}
+
+.album-link:hover {
+  text-decoration: underline;
+}
+
+/*Artist name*/
+
+.artist-link {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+
+.artist-link:hover {
+  text-decoration: underline;
+}
+
+/*adding , between artists if they're more than 3, but not on the last one*/
+.artist-link:not(:first-child, :last-child)::before {
+  content: ", ";
+}
+
+/*adding & between artists if they're 2*/
+.artist-link:last-child::before {
+  content: " & ";
+}
+
+/*not adding anything if 1 artist*/
+.artist-link:only-child::before { content: "";} 
+
+
+@media (min-width: 667px) {
+
+  h1 {
+    font-size: 22px;
+  }
+  
+  .main {
+    flex-flow: row wrap; 
+    align-items: flex-start;
+  }
+  
+  .album {
+    flex: 0 0 48%;
+  }
+  
+  /*calculates the needed left margin on all items but the first in each row, to align to the left if the items don't fill up the row*/
+  .album:not(:nth-child(2n+1)) {
+    margin-left: calc( (100% - (48% * 2)) / 1);
+  }
+
+  .album-container {
+    padding: 8px 0 5px 0;
+  } 
+
+  .album-link {
+    font-size: 18px;
+  }
+
+  .artist-link {
+    font-size: 18px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .album {
+    flex: 0 0 24%;
+  }
+
+  /*calculates the needed left margin on all items but the first in each row, to align to the left if the items don't fill up the row*/
+  .album:not(:nth-child(4n+1)) {
+    margin-left: calc( (100% - (24% * 4)) / 3);
+  }
+
+  .album-link {
+    font-size: 14px;
+  }
+
+  .artist-link {
+    font-size: 14px;
+  }
 }
