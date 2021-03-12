@@ -6,14 +6,14 @@ const Album = (props) => {
   console.log(props)
     return (
       <div className="album-card">
-          <div className="image-container">
-            <a className="url-link" href={props.url}>
-              <img className="album-image" src={props.imgsrc}></img>
-            </a>
+          <div className="image-container">            
+              <img className="album-image" src={props.imgsrc}></img>          
             <Buttons />
           </div>        
         <div className="album-information-container">
-          <h3 className="album-name">{props.name}</h3>
+          <a className="url-link" href={props.url}>
+            <h3 className="album-name">{props.name}</h3>
+          </a>
         </div>
 
         {props.artist.map((artist) => {

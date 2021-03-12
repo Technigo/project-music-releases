@@ -74,7 +74,7 @@ a:link, a:visited {
 }
 
 .image-overlay {
-  z-index: 2;
+  
   position: absolute;
   width: 100%;
   height: 100%;
@@ -94,6 +94,7 @@ a:link, a:visited {
   justify-content: center;
   align-items: center;
   top: 50%;
+  z-index: 1;
   
 }
 
