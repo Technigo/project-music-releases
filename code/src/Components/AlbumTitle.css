@@ -1,6 +1,7 @@
 
 .album-title-wrapper {
   margin-left: 4px;
+  margin-top: 3px;
 }
 
 .album-title {
@@ -9,6 +10,7 @@
   color: #ffffff; 
   text-decoration: none;  
   width: 100%;
+  
 }
 
 .album-title:hover {

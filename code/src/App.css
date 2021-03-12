@@ -1,12 +1,12 @@
 .main-container {
-text-align: left;
+  text-align: left;
 }
 
 .album-cards-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:20px;
 }
 
 .album-cards {
@@ -30,6 +30,12 @@ margin:20px;
 .artist-container :not(:first-child) {
   margin-left: 4px;
 } 
+
+.type-of-container {
+  margin: 0; 
+  border-radius: 6px;
+}
+
 
 
  @media (min-width:667px) {

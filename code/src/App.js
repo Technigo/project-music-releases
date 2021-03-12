@@ -4,6 +4,7 @@ import { Albums } from './Components/Albums'
 import { Heading } from './Components/Heading'
 import { Artists } from './Components/Artists'
 import { AlbumTitle } from './Components/AlbumTitle'
+import { TypeOf } from './Components/TypeOf'
 import './App.css'
 
 
@@ -35,9 +36,15 @@ export const App = () => {
                        artistURL={artistname.external_urls.spotify}
                        />
                     
-                      )}
-                   
+                      )}                   
                   </div>
+
+                  <div className="type-of-container">
+                    < TypeOf 
+                      type={album.album_type}
+                    />
+                  </div>
+                
                 </div>
               </div>
           ))}

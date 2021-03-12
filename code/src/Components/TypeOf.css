@@ -1,0 +1,12 @@
+.type {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin: 4px 4px;
+}
+
+mark {
+  background-color: #a0a0a0;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 5px;
+}
