@@ -67,6 +67,11 @@ h1 {
   text-decoration: none;
 }
 
+.album-title:hover, .artist:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .artist:not(:first-child, :last-child)::before {
   content: ", ";
 }
@@ -111,14 +116,24 @@ h1 {
   /* position: relative; */
   width: 8%; 
   margin: auto 20px;
+  opacity: 0.7;
+  transition: all .1s ease;
 }
 
 .icons-container .play-button {
   width: 20%;
+  border-radius: 50%;
+
 }
 
 .icons-container .play-button:hover {
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.80);
+  transform: scale(1.1);
+}
+
+.icons-container img:hover {
+  opacity: 1;
+  /* background: rgb(0, 0, 0); */
 }
 /* BREAKPOINTS */
 
