@@ -1,13 +1,14 @@
 import React from 'react'
 import data from './data.json'
 import { Album } from './Album'
+import { Heading } from './Heading'
 
 console.log(data)
 
 export const App = () => {
   return (
     <div className="body-container">
-      <h1>New albums & singles</h1>
+      <Heading title="New albums & singles" />
       <div className="album-container">
         {data.albums.items.map((album) => {
           return (
