@@ -15,9 +15,43 @@ code {
 }
 .album-img:hover {
   -webkit-filter: brightness(30%);
+  filter: brightness(30%);
+}
+
+.cards{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-wrapper{
+  position: relative;
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.artist-name{
+color: white;
+}
 
 
-   filter: brightness(30%);
 
 
+@media (min-width: 1073px) {
+  .Cards {
+    max-width: calc(20% - 10px);
+  }
+}
+/* Medium Screens (tablets and smaller desktops */
+@media (max-width: 1073px) {
+  .Cards {
+    max-width: calc(45% - 10px);
+  }
+}
+/* Small screens (mobile phones and smaller tablets) */
+@media (max-width: 555px) {
+  .Cards {
+    max-width: calc(90% - 10px);
+  }
 }

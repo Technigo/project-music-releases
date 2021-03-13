@@ -18,7 +18,6 @@ export const App = () => {
         <div>
             <Album album={data.albums.items}/>
            {/* <h3>{artist}</h3> */}
-            <p>Spring is coming!</p>
 
         </div>
     </>
