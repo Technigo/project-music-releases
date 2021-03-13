@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  /*width: 100vw;*/
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -8,8 +8,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #181818;
   color: #FFFFFF;
-  display: flex;
-  justify-content: self;
+  /*display: flex;*/  
+  /*justify-content: self;*/
 }
 
 code {
@@ -18,12 +18,13 @@ code {
 }
 
 /* APP.JS */
+
+/* 
 .main{
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 /* FONTS */
@@ -31,8 +32,16 @@ h2{
   margin: 0;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
 h3{
   margin: 0;
+}
+
+h3:hover {
+  text-decoration: underline;
 }
 
 /* HEADER.JS */
@@ -47,52 +56,103 @@ header{
 /* ALBUM.JS */
 
 .artistcard-container {
-  width: 100vw;
+  margin: 20px;
   text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 20px;
 }
 
-.artistcard{
-  width: 100vw;
+.albumcover{
+  position: relative;
+  width: 100%;
 }
 
-.albumimg{
-  width: 80%;
+.albumimg {
+  width: 10%;
+  object-fit: cover;
+  position: relative;
 }
+
+.albumoverlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.albumoverlay:hover{
+opacity: 1;
+}
+
+.icons, .play-icon{
+  width: 15%;
+  margin: 15px;
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(204deg) brightness(110%) contrast(101%);
+}
+
+.hover-icons{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.hover-icons:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  transition: 1s ease-in-out;
+}
+
+.play-icon:hover {
+  transform: scale(1.5);
+} 
 
 .artistname{
   margin: 6px 0 6px 0;
 }
 
 .artistlink{
-  color: #ffffff;
-  font-family: Helvetica;
-  font-size: 10px;
-  text-decoration: none;
-}
-
-.albumlink{
   color: #a0a0a0;
   font-family: Helvetica;
   font-size: 8px;
   text-decoration: none;
 }
 
-.hover-icons{
-  display: none;
+
+.albumlink{
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  text-decoration: none;
 }
+
+
 
 
 @media (min-width: 767px){
 
 /* APP.JS */
   .main{
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
   }
+
   header{
     font-size: 15px;
     margin: 20px 0 10px 0;
@@ -107,39 +167,37 @@ header{
   }
 
 /* ALBUM.JS */
-
   .artistcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 20px;
-    width: 50%;
-  }
+    width: 45%;
+    margin: 10px;
+ }
+ 
 
   .albumimg{
-    width: 80%;
-    margin-top: 15px;
-    position: relative;
+    width: 100%;
   }
 
   .artistlink{
-    color: #ffffff;
-    font-family: Helvetica;
-    text-decoration: none;
-  }
-
-  .albumlink{
     color: #a0a0a0;
     font-family: Helvetica;
     text-decoration: none;
   }
 
-  .albumcover{
-    position: relative;
+  .albumlink{
+    color: #ffffff;
+    font-family: Helvetica;
+    text-decoration: none;
   }
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px){ 
   .main{
-    padding: 0 5% 0 5% ;
+    padding: 0 5% 0 5%;
   }
 
   /* HEADER.JS */
@@ -161,39 +219,12 @@ header{
   /* ALBUM.JS */
   .artistcard-container {
     margin-bottom: 20px;
-    width: 25%;
+    width: 20%;
   }
   
   .albumimg{
-    width: 95%;
+    width: 100%;
   }
 
- .icons{
-    width: 15%;
-    margin: 15px;
-  }
 
-  .play-icon{
-    width: 15%;
-    margin: 15px;
-  }
-
-  .albumimg:hover + .hover-icons{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-  }
-
- /* .play-icon {
-    transition: 2s ease-in-out;
-  }
-
-  .play-icon:hover {
-    transform: scale(1.5);
-  } */
 }
