@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #181818;
   color: #ffffff;
+  
 }
 
 code {
@@ -36,6 +37,10 @@ h1 {
   border-bottom: 1px solid  #3b3b3b;
 }
 
+h1.albums {
+  margin-top: 100px;
+}
+
 .album-container {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +63,8 @@ h1 {
 .album-title {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .artist {
@@ -148,8 +155,13 @@ h1 {
 
 @media (min-width: 992px) {
 
+  body {
+    padding: 24px 0 24px 24px;
+  }
+
   .album {
-    min-width: 22%;
+    min-width: 23%;
+    max-width: 23%;
   }
 
 }
