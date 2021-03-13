@@ -23,18 +23,31 @@ code {
   display: flex;
   flex-wrap: wrap;
 }
-.image-wrapper{
+
+.image-container{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
   position: relative;
   width: 300px;
-  height: auto;
+  height: 300px;
   margin: 10px;
   border-radius: 20px;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .artist-name{
 color: white;
 }
-
+.all-icons{
+  display: grid;
+  grid-template-columns: 10px 10px 10px;
+}
+.icon-heart{
+background-color: antiquewhite;
+}
 
 
 
