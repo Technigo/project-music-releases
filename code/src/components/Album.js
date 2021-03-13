@@ -21,25 +21,32 @@ const Album = (props) => {
 
                 <div className="artistinfo">
 
-                     <div className="albumname">
+                   <div className="albumname">
                         <a className="albumlink" href={props.albumContent.external_urls.spotify}>
                             <h3>{props.albumContent.name}</h3>
                         </a>
                     </div>
 
                     <div className="artistname">
-                        <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
-                            <h2>{props.albumContent.artists[0].name}</h2>
-                        </a>
+                        {props.albumContent.artists.map((artists) => {
+                                return (
+                                <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}  target="_blank" rel="noopener noreferrer" key={artists}>    
+                                    <h2 key={artists} className="artists"></h2>
+    
+                                   
+                                </a>
+                            
+                                );
+                            }
+            )}
+                        
                     </div>
-                
-                 
                 </div>
             </div>
         </div>
         </>
     );
-    }
+}
     
     
 

@@ -67,7 +67,7 @@ header{
 }
 
 .albumimg {
-  width: 10%;
+  width: 100%;
   object-fit: cover;
   position: relative;
 }
@@ -171,11 +171,9 @@ opacity: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
     width: 45%;
     margin: 10px;
  }
- 
 
   .albumimg{
     width: 100%;
@@ -192,7 +190,6 @@ opacity: 1;
     font-family: Helvetica;
     text-decoration: none;
   }
-
 }
 
 @media (min-width: 1200px){ 
@@ -216,12 +213,14 @@ opacity: 1;
   h3{
     font-size: 14px;
   }
+
   /* ALBUM.JS */
   .artistcard-container {
     margin-bottom: 20px;
     width: 20%;
   }
   
+
   .albumimg{
     width: 100%;
   }
