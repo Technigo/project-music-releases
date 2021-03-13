@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.image {
+width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.albums-name {
+font-family: helvetica;
+font-size: 14px;
+color: white;
+}
+
+.artist-name {
+  font-family: helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.artist-name :not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name :last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-name :only-child::before {content: "";
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+.albums-name:hover {
+  text-decoration: underline;
+}
+
+.card {
+  margin: 5px;
+  padding: 5px;
+}
+
+.icons {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.dots-icon, .heart-icon {
+  width: 30px;
+  height: 30px;
+  padding-top: 15px;
+}
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/*HOVER EFFECTS*/
+.image:hover {
+  filter: brightness(0.20);
+}
+
+.picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+.picture:hover .icons {
+  display: flex;
+}
+
+.play-icon:hover {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+  .main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media(min-width: 1025px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }

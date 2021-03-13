@@ -1,12 +1,29 @@
 # Music Releases
-Replace this readme with your own information about your project.
+<h1>Project Music Releases🎵🎹🎤</h1>
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The aim of this project was to start using React to build a Spotify-inspired page to show new album and single releases. 
 
-## The problem
+## The problem ☕
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The focus of this assignment was to practice with React and an already given response from the Spotify API. We worked in the modality of pair-programming and had a great experience at organizing.
 
-## View it live
+<h2>What we learned</h2>🤓
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+<ul>
+<li>How to write React components.</li>
+<li>How to use .map to iterate over an array of data and mount many components.</li>
+<li>How to use React props to feed information to components.</li>
+<li>How to structure React projects into small chunks.</li>
+</ul>
+
+<h2>Technologies that we used</h2> ⚙️
+
+<ul>
+<li>JavaScript ES6</li>
+<li>React</li>
+<li>CSS3</li>
+</ul>
+
+<h2>View it live</h2> 📺
+
+You can take a look at our project here:
