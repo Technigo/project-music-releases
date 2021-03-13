@@ -1,12 +1,15 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The assignment was to build a music release site using React components with data from the Spotify API
 
 ## The problem
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
+We started by making only one component for each album that handled everything, but upon realizing the point of the assignment - to learn how to make many components work together and become modular - we restructured our code into several components. 
+
+We used javaScript return statements to render components written in JSX. We used Props to pass along variables into our components, requiring us to mix JSX and javaScript by means of curlybrackets ({}). In instances where we needed conditionals, we used conditional rendering, meaning that javaScript was used to determine which return statement to use for rendering. To render as many albums as the Spotify data gave, we used the .map() array method to mount a new AlbumWrapper component for each, which in turn mounted components AlbumArt and Artist.
+
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Netlify build: xenodochial-bhabha-d66c30.netlify.app
