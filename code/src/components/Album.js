@@ -30,14 +30,12 @@ const Album = (props) => {
 
 
                     <div className="artistname">
-                            <div class="single-artist">
-                                <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
-                                {props.albumContent.name.map((artist) => {
-                                    return <h2 key={artist} className="artists">{artist}</h2>
-                                })}
-                                </a>
-                            </div>
+                        <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
+                            <h2>{props.albumContent.artists[0].name}</h2>
+                        </a>
                     </div>
+
+                 
                 </div>
             </div>
         </div>
@@ -49,18 +47,3 @@ const Album = (props) => {
 
 export default Album;
 
-/*<div className="artistname">
-{props.albumContent.map((albums) => {
-    <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}  target="_blank" rel="noopener noreferrer" key={artists}>    
-         {artists.map(singleArtist)}   
-            
-            <h2 key={artists} className="artists"></h2>
-
-           
-    </a>
-    
-        );
-    }
-)}
-
-</div>*/
