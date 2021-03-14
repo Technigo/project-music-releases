@@ -1,7 +1,7 @@
 # Music Releases
 By Maria Bergman and Nazanin Adampira
 
-We are building a Ner Releases music site.
+We are building a New Releases music site.
 
 ## The problem
 

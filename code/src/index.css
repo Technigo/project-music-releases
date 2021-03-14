@@ -13,10 +13,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.album-img:hover {
-  -webkit-filter: brightness(30%);
-  filter: brightness(30%);
-}
+
 
 .cards{
   position: relative;
@@ -25,10 +22,10 @@ code {
 }
 
 .image-container{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  position: relative;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   width: 300px;
   height: 300px;
   margin: 10px;
@@ -38,18 +35,73 @@ code {
   background-size: cover;
 }
 
+.image-container:hover {
+  transition: all 0.5s ease-in-out;
+  opacity: 0.4;
+  background-color: black;
+}
+
+.image-container:hover > img {
+  transition: all 0.5s ease-in-out;
+  display: inline;
+  opacity: 100%;
+}
+
+.album-name{
+  display:inline-block;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color:#ffffff;
+  max-width: 250px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
 .artist-name{
-color: white;
-}
-.all-icons{
-  display: grid;
-  grid-template-columns: 10px 10px 10px;
-}
-.icon-heart{
-background-color: antiquewhite;
+  color: white;
+  display:inline-block;
+  margin: 0;
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: #a0a0a0;
+  border-bottom: 1px solid transparent;
+  transition: all 0.5s ease-in-out;
 }
 
+.icon-heart {
+  display: none;
+  width: 45px;
+  height: 45px;
+}
 
+.icon-heart:hover {
+  cursor: pointer;
+}
+
+.icon-play {
+  display: none;
+  width: 60px;
+  height: 60px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-play:hover {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.icon-dots {
+  display: none;
+  width: 45px;
+  height: 45px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-dots:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 
 @media (min-width: 1073px) {
   .Cards {

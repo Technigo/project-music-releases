@@ -8,18 +8,16 @@ console.log(data)
 /* console.log(artists) */
 
 export const App = () => {
-
   return (
     <>
-        <header>
-            <h1>New releases</h1>
-        </header>
-        <div>
-            <Album album={data.albums.items}/>
-        </div>
+      <header>
+        <h1>New releases</h1>
+      </header>
+      <div className="cards">
+          <Album album={data.albums.items}/>
+      </div>
     </>
   )
-  
 }
 
 export default App;
