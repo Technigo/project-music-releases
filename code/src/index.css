@@ -163,6 +163,7 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    max-width: 1000px;
   }
 
   header{
@@ -183,8 +184,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 300px;
-    margin: 10px;
+    max-width: 300px;
+
  }
 
   .albumimg{
@@ -206,26 +207,22 @@ header{
 }
 
 @media (min-width: 1200px){ 
-  .main{
-    padding: 0 5% 0 5%;
-  }
+.main{
 
+  justify-items: center;
+}
   /* HEADER.JS */
   header{
+    margin-left: 110px;
     font-size: 14px;
     text-align: left;
-    margin: 0;
+
   }
 
   /* ALBUM.JS */
   .artistcard-container {
-    margin-bottom: 20px;
-    max-width: 250px;
-  }
-  
-
-  .albumimg{
-    width: 100%;
+    max-width: 200px;
+    margin: 0 10px 20px 10px;
   }
 
 
