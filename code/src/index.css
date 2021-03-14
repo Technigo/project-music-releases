@@ -1,11 +1,10 @@
 :root {
-  font-size: 14px;  /* base value for usage of REM:s throughout and for responsiveness */
+  
   --primary: #181818;
   --secondary:#ffffff;
   --tertiary: #a0a0a0;
 
 }
-
 
 
 body {
@@ -16,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;  /* base value for usage of REM:s throughout and for responsiveness */
 }
 
 code {
@@ -24,8 +24,8 @@ code {
 }
 
 
-
 /* HEADER STYLES */
+
 
 .header {
   color: var(--secondary);
@@ -35,14 +35,15 @@ code {
   margin-bottom: 2rem;
 }
 
+
 .header h1 {
   border-bottom: 0.2rem solid #a0a0a017;
   padding-bottom: 5px;
 }
 
 
-
 /* ALBUM STYLES */
+
 
 .album-container {
   display: grid;
@@ -52,24 +53,39 @@ code {
 }
 
 
-.contributors :not(:first-child, :last-child)::before {
-  color: #a0a0a0;
-  content: ", ";
+/* COMMA AND & SEPARATION  --- NOT WORKING ---
+
+
+.contributors + .contributors p:last-child::before {
+  content: "and";
 }
+
+
+.contributors :nth-of-type(n+2):not(:last-child)::before {
+  content: ",";
+}
+
+*/
+
+
+/* COVER IMAGE */
 
 
 .cover-image {
   width: 100%;
 }
 
+
 .cover-image:hover {
   opacity: 40%;
 }
+
 
 .cover-container {
   position: relative;
   
 }
+
 
 .icons-container {
  position: absolute;
@@ -91,16 +107,17 @@ code {
   padding: 1rem;
 }
 
+
 .icon-play {
   filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(159deg) brightness(119%) contrast(102%);
   width: 4rem;
   padding: 1rem;
 }
 
+
 .icon-play:hover {
   transform: scale(1.2);
 }
-
 
 
 .icon-dot {
@@ -109,22 +126,23 @@ code {
   padding: 1rem;
 }
 
+
 .album-title {
   color: var(--secondary);
   font-weight: bold;
 
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 a:hover {
   text-decoration: underline 1px;
   color: var(--secondary);
 }
-
-
 
 
 .contributors {
@@ -142,8 +160,12 @@ a:hover {
   }
 }
 
+
 /* MEDIA QUERIE DESKTOP */
 @media only screen and (min-width: 992px) {
+  body {
+    font-size: 16px;
+  } 
   .album-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;

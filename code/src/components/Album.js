@@ -1,8 +1,7 @@
 import React from 'react'
-
+import Artist from './Artist'
 
 const Album = (props) => {
-    console.log(props)
     return (
         
             <div>
@@ -15,18 +14,23 @@ const Album = (props) => {
                     </div>
                 </div>
                     <a href={props.albumurl} target="_blank" rel="noopener noreferrer">
-                    <p className="album-title">{props.album}</p>
+                        <p className="album-title">{props.album}</p>
                     </a>
-                    <a href={props.artisturl} target="_blank" rel="noopener noreferrer"> 
-                    <p className="contributors">{props.contributors}</p>         
-                    </a>
-            </div>
+                    <Artist 
+                        artists={props.artist} /> 
+            </div> 
     )
 }
 
 export default Album;
 
 
+
+
+// left for reference to earlier attempts
+//<a href={props.artisturl} target="_blank" rel="noopener noreferrer"> 
+//<p className="contributors">{props.contributors}</p>         
+//</a>
 
 // import Artist from './Artist'
 //<Artist artists={props.artist} />

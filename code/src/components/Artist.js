@@ -1,17 +1,20 @@
-//Initially used as a component mounted in Album. Replaced with different solution.  
-
-// import React from 'react'
+import React from 'react'
 
 
+const Artist = (props) => {
+    const contributors = props.artists.map(artist => {
+        return artist.name
+    })  
+    return (
+            <div key={contributors.id} className="contributors">
+                <a href={contributors.external_urls} target="_blank" rel="noopener noreferrer">
+                    <p>{contributors}</p>
+                </a>
+            </div>
+        )
+}
 
-// const Artist = (props) => {
-//     const contributors = props.artists.map(artist => {
-//     return artist.name
-//          })
-//          return (
-//              <p className="contributors">{contributors}</p>  
-//          )
-//  }
+export default Artist
 
-// export default Artist
+
 
