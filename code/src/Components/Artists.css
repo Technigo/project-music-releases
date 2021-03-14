@@ -1,0 +1,25 @@
+.artist-wrapper {
+  display: flex;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color:#a0a0a0;
+}
+
+.artist-wrapper + .artist-wrapper:last-child::before {
+content: "and";
+}
+
+.artist-wrapper:nth-of-type(n+2):not(:last-child)::before {
+content: ",";
+}
+
+.artist-name {
+  color:#a0a0a0;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
