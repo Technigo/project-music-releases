@@ -36,8 +36,8 @@ const Album = (props) => {
                                     
                                     <React.Fragment key={artist.id}>
                                     <div className="artist-item">   
-                                      <span className="comma"> {index > 0 && index !== props.albumContent.artists.length - 1 && ', '}</span>
-                                      <span className="comma"> {index !== 0 && index === props.albumContent.artists.length - 1 && ' & '}</span>
+                                      <p className="comma"> {index > 0 && index !== props.albumContent.artists.length - 1 && ' , '}</p>
+                                      <p className="comma"> {index !== 0 && index === props.albumContent.artists.length - 1 && ' & '}</p>
 
                                       <h2 key={artist} className="artists">{artist.name}</h2>
                                     </div>

@@ -20,6 +20,7 @@ code {
 /* FONTS */
 h2{
   margin: 0;
+  font-size: 10px;
 }
 
 h2:hover {
@@ -50,7 +51,6 @@ header{
   text-align: center;
   margin-bottom: 20px;
 }
-
 .albumcover{
   position: relative;
   width: 100%;
@@ -77,7 +77,7 @@ header{
 }
 
 .albumoverlay:hover{
-opacity: 1;
+  opacity: 1;
 }
 
 .icons, .play-icon{
@@ -99,6 +99,11 @@ opacity: 1;
   top: 0;
 }
 
+.artistinfo{
+  width: 100%;
+  margin: 0;
+}
+
 .hover-icons:hover {
   opacity: 1;
 }
@@ -118,9 +123,11 @@ opacity: 1;
 .artistlink{
   color: #a0a0a0;
   font-family: Helvetica;
-  font-size: 8px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
+
 .albumlink{
   color: #ffffff;
   font-family: Helvetica;
@@ -131,13 +138,18 @@ opacity: 1;
 .artist-item{
   width: max-content;
   display: flex;  
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
 
 .comma{
-  font-size: 12px;
+  font-family: Helvetica;
+  font-size: 10px;
+  margin: 0;
+  padding-right: 2px;
+
 }
-.artist{
+
+.artists{
   width: max-content;
   margin: 0;
 }
@@ -171,7 +183,7 @@ opacity: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 45%;
+    width: 300px;
     margin: 10px;
  }
 
@@ -190,6 +202,7 @@ opacity: 1;
     font-family: Helvetica;
     text-decoration: none;
   }
+
 }
 
 @media (min-width: 1200px){ 
@@ -203,21 +216,11 @@ opacity: 1;
     text-align: left;
     margin: 0;
   }
-  /* APP.JS */
-  
-  /* FONTS */
-  h2{
-    font-size: 14px;
-  }
-
-  h3{
-    font-size: 14px;
-  }
 
   /* ALBUM.JS */
   .artistcard-container {
     margin-bottom: 20px;
-    width: 20%;
+    max-width: 250px;
   }
   
 
