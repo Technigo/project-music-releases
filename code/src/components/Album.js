@@ -2,7 +2,8 @@ import React from 'react';
 
 
 const Album = (props) => {
-    return (
+
+    return(
         <>
         <div className="artistcard-container">
            <div className="artistcard">
@@ -27,27 +28,39 @@ const Album = (props) => {
                         </a>
                     </div>
 
+
                     <div className="artistname">
-                        {props.albumContent.artists.map((artists) => {
-                                return (
-                                <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}  target="_blank" rel="noopener noreferrer" key={artists}>    
-                                    <h2 key={artists} className="artists"></h2>
-    
-                                   
+                            <div class="single-artist">
+                                <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
+                                {props.albumContent.name.map((artist) => {
+                                    return <h2 key={artist} className="artists">{artist}</h2>
+                                })}
                                 </a>
-                            
-                                );
-                            }
-            )}
-                        
+                            </div>
                     </div>
                 </div>
             </div>
         </div>
         </>
-    );
+    )
 }
     
     
 
 export default Album;
+
+/*<div className="artistname">
+{props.albumContent.map((albums) => {
+    <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}  target="_blank" rel="noopener noreferrer" key={artists}>    
+         {artists.map(singleArtist)}   
+            
+            <h2 key={artists} className="artists"></h2>
+
+           
+    </a>
+    
+        );
+    }
+)}
+
+</div>*/
