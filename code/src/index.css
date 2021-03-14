@@ -14,9 +14,6 @@ code {
     monospace;
 }
 
-/* APP.JS */
-
-
 /* FONTS */
 h2{
   margin: 0;
@@ -51,6 +48,7 @@ header{
   text-align: center;
   margin-bottom: 20px;
 }
+
 .albumcover{
   position: relative;
   width: 100%;
@@ -146,7 +144,6 @@ header{
   font-size: 10px;
   margin: 0;
   padding-right: 2px;
-
 }
 
 .artists{
@@ -154,9 +151,7 @@ header{
   margin: 0;
 }
 
-
 @media (min-width: 767px){
-
 /* APP.JS */
   .main{
     display: flex;
@@ -168,8 +163,9 @@ header{
 
   header{
     font-size: 15px;
-    margin: 20px 0 10px 0;
+    margin: 0px 0 10px 0;
   }
+
 /* FONTS */
   h2{
     margin: 5px;
@@ -185,8 +181,11 @@ header{
     flex-wrap: wrap;
     justify-content: center;
     max-width: 300px;
+  }
 
- }
+ .header{
+   text-align: center;
+  }
 
   .albumimg{
     width: 100%;
@@ -203,27 +202,23 @@ header{
     font-family: Helvetica;
     text-decoration: none;
   }
-
 }
 
 @media (min-width: 1200px){ 
-.main{
-
-  justify-items: center;
-}
-  /* HEADER.JS */
-  header{
-    margin-left: 110px;
-    font-size: 14px;
-    text-align: left;
-
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
+  /* HEADER.JS */
+  header{
+    font-size: 14px;
+    text-align: center;
+  }
+  
   /* ALBUM.JS */
   .artistcard-container {
     max-width: 200px;
     margin: 0 10px 20px 10px;
   }
-
-
 }

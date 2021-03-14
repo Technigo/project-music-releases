@@ -15,9 +15,8 @@ export const App = () => {
     <>
       <div className="main">
         <Header />
-        
         {albumArray.map(item => (
-        <Album key={item.id} albumContent={item} />
+          <Album key={item.id} albumContent={item} />
         ))}
       </div>
     </>
