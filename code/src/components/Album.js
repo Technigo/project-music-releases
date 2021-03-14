@@ -28,13 +28,26 @@ const Album = (props) => {
                         </a>
                     </div>
 
-
                     <div className="artistname">
-                        <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
-                            <h2>{props.albumContent.artists[0].name}</h2>
-                        </a>
-                    </div>
+                            <div class="single-artist">
+                                <a className="artistlink" href={props.albumContent.artists[0].external_urls.spotify}>
+                                {props.albumContent.artists.map((artist, index) => {
+                                    return ( 
+                                    
+                                    <React.Fragment key={artist.id}>
+                                    <div className="artist-item">   
+                                      <span className="comma"> {index > 0 && index !== props.albumContent.artists.length - 1 && ', '}</span>
+                                      <span className="comma"> {index !== 0 && index === props.albumContent.artists.length - 1 && ' & '}</span>
 
+                                      <h2 key={artist} className="artists">{artist.name}</h2>
+                                    </div>
+                                    </React.Fragment>                                   
+                                )
+                                })}
+                                </a>
+                            </div>
+                    </div>
+                 
                  
                 </div>
             </div>
