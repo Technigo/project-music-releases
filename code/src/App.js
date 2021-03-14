@@ -18,9 +18,8 @@ export const App = () => {
 
         <section  className='album-cards-container'>
             {data.albums.items.map((album) => 
-              <div className="album-cards">
+              <div className="album-cards" key={album.id}>
                 <Albums 
-                key={album.id}
                 albumContent={album}
                 />
 
