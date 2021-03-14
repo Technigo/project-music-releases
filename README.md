@@ -1,12 +1,17 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Our project for this week was to work with mob-programming and build a page which shows new album and single releases from the Spotify API response. The focus of this assignment was to practice to use React components.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We made the page with a mobile-first approach and used a combination of flexbox and CSS grid for creating the layout. Our page is also responsive for tablet and desktop view. 
+
+The most challenging parts were to create hover effects on the image and come up with the solution to show ", " and "&" between the artists. Regarding hover effects we found good tutorials and articles on the internet and the solution for ", " and "&" was found on Stack Overflow.
+
+Techniques: Mob-programming, HTML5, CSS3, React, Flexbox, CSS-grid, Responsive design, Mobile-first design.
+
+Tools: VS Code, Live Server, VS Live Share, Node Package Manager, React Developer Tools for Chrome, Slack, StackOverflow, Google Chrome, Firefox, Microsoft Edge.
 
 ## View it live
 
-Live: https://elated-swirles-682235.netlify.app
+View it live: https://elated-swirles-682235.netlify.app
