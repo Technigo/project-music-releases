@@ -1,10 +1,10 @@
 import React from 'react'
+
 import Overlay from './Overlay'
 import Artist from 'components/Artist'
 
 const AlbumCard = (props) => {
   const albumsArray = props.albumsArray
-  console.log(albumsArray)
 
   return (
     <>
