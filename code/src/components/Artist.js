@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Artist = ({ artistcontainer, albumlink }) => {
   return (
     <a 
@@ -8,12 +7,11 @@ const Artist = ({ artistcontainer, albumlink }) => {
     href={albumlink}
     rel="noopener noreferrer"
     >
-      <>{artistcontainer.map(artist => {
+      {artistcontainer.map(artist => {
           return (
             <p className="artist" key={artist.id}>{artist.name}</p>
           )
         })}
-      </>
     </a>
   )
 }

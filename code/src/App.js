@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './data.json'
+
 import Playlist from 'components/Playlist'
 import Albumwrapper from 'components/Albumwrapper'
 import NewSingles from 'components/NewSingles'

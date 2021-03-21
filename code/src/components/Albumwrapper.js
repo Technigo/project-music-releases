@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Image from 'components/Image'
 import Album from 'components/Album'
 import Artist from 'components/Artist'
@@ -8,7 +9,7 @@ const Albumwrapper = (props) => {
   return (
     <article className="album-wrapper">
       {props.albumWrap.albums.items.filter(album =>
-      album.album_type ==="album").map((album)=>{
+      album.album_type ==="album").map((album)=> {
         return (
           <div key={album.id} className="album-box" >
             <div className="box">

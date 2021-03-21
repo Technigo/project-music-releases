@@ -1,8 +1,8 @@
 import React from 'react'
+
 import IconDots from 'icons/dots.svg'
 import IconHeart from 'icons/heart.svg'
 import IconPlay from 'icons/play.svg'
-
 
 const Image = ({coverImage, url}) => {
   return (
