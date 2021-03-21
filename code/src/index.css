@@ -15,10 +15,12 @@ code {
 }
 
 
-.cards{
+.cards {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: auto;
+  gap: 20px;
 }
 
 .image-container{
@@ -26,9 +28,8 @@ code {
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  width: 300px;
   height: 300px;
-  margin: 10px;
+  width: 300px;
   border-radius: 20px;
   justify-content: center;
   background-position: center;
@@ -104,19 +105,19 @@ code {
 }
 
 @media (min-width: 1073px) {
-  .Cards {
-    max-width: calc(20% - 10px);
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 /* Medium Screens (tablets and smaller desktops */
 @media (max-width: 1073px) {
-  .Cards {
-    max-width: calc(45% - 10px);
+  .cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* Small screens (mobile phones and smaller tablets) */
 @media (max-width: 555px) {
-  .Cards {
-    max-width: calc(90% - 10px);
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
