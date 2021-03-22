@@ -5,9 +5,166 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p {
+  margin: 0;
+}
+
+.main {
+  margin: 0px 17px;
+}
+
+/*** MAIN TITLE ***/
+.main-title {
+  color: white;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+
+/*** ALBUM CARDS ***/
+.album-cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+/* Album cover */
+.album-cover { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.album-cover-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* Icons */
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+}
+
+.icon-heart {
+  width: 10%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.icon-play {
+  width: 15%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.icon-dots {
+  width: 10%;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.album-cover:hover .icons {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.icon-play:hover, .icon-heart:hover, .icon-dots:hover {
+  opacity: 1;
+}
+
+.album-cover:hover .album-cover-image {
+  filter: brightness(60%);
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+  
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+
+/* Album name */
+.album-name {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px; 
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
+
+/* Album artist */
+.album-artist {
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.album-artist:hover {
+  text-decoration: underline;
+}
+
+/* Artist links */
+.artist-links {
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+/*** MEDIA QUERIES ***/
+
+/* Tablet */
+@media (min-width: 768px) {
+  .album-cards-container {
+    flex-flow: row wrap;
+  }
+  
+  .album-card {
+    width: 45%;
+  }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {  
+  /* Main title */
+  .main-title {
+    margin-left: 5px;
+    font-size: 25px;
+  }
+  
+
+  /* Album card */
+  .album-card {
+    width: 24%;
+  }
 }
