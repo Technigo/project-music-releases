@@ -1,6 +1,7 @@
 import React from 'react'
-import data from './data.json'
+
 import { Album } from './components/Album'
+import data from './data.json'
 
 export const App = () => {
   return (

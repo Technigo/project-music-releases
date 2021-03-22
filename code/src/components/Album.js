@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Artist } from './Artist'
 
 export const Album = (props) => {

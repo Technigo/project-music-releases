@@ -34,13 +34,12 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 }
 
 .album-card {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 35px;
 }
 
@@ -52,8 +51,18 @@ p {
   justify-content: center;
 }
 
-.icons {            
-  display: none;
+.album-cover-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* Icons */
+.icons {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
 }
 
 .icon-heart {
@@ -74,10 +83,27 @@ p {
   transition: 0.3s;
 }
 
-.album-cover-image {
-  width: 100%;
-  margin-bottom: 10px;
+.album-cover:hover .icons {
+  opacity: 1;
+  transition: 0.3s;
 }
+
+.icon-play:hover, .icon-heart:hover, .icon-dots:hover {
+  opacity: 1;
+}
+
+.album-cover:hover .album-cover-image {
+  filter: brightness(60%);
+}
+
+.grow { 
+  transition: all .2s ease-in-out; 
+}
+  
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
 
 /* Album name */
 .album-name {
@@ -88,6 +114,11 @@ p {
   text-decoration: none;
 }
 
+.album-name:hover {
+  text-decoration: underline;
+}
+
+
 /* Album artist */
 .album-artist {
   color: #a0a0a0;
@@ -97,12 +128,17 @@ p {
   text-decoration: none;
 }
 
+.album-artist:hover {
+  text-decoration: underline;
+}
+
 /* Artist links */
 .artist-links {
   color: #a0a0a0;
   font-family: Helvetica, sans-serif;
   font-size: 14px;
 }
+
 
 /*** MEDIA QUERIES ***/
 
@@ -130,46 +166,5 @@ p {
   /* Album card */
   .album-card {
     width: 24%;
-  }
-
-
-  /* Album cover */          
-  .icons {
-    position: absolute;
-    display: flex;
-    justify-content: space-evenly;
-    opacity: 0;
-  }
-
-  .album-cover:hover .icons {
-    opacity: 1;
-    transition: 0.3s;
-  }
-
-  .icon-play:hover, .icon-heart:hover, .icon-dots:hover {
-    opacity: 1;
-  }
-
-  .album-cover:hover .album-cover-image {
-    filter: brightness(60%);
-  }
-
-  .grow { 
-    transition: all .2s ease-in-out; 
-  }
-    
-  .grow:hover { 
-    transform: scale(1.1); 
-  }
-
-
-  /* Album name */
-  .album-name:hover {
-    text-decoration: underline;
-  }
-
-  /* Album artist */
-  .album-artist:hover {
-    text-decoration: underline;
   }
 }
