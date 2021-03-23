@@ -1,12 +1,18 @@
 import React from 'react'
-import data from './data.json'
 
-console.log(data)
+import data from './data.json'
+import Header from 'components/Header'
+import AlbumCard from './components/AlbumCard'
+
+const albumsArray = data.albums.items
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <Header />
+      <div className='albums-container'>
+        <AlbumCard albumsArray={albumsArray} />
+      </div>
+    </>
   )
 }
