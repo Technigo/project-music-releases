@@ -1,9 +1,9 @@
 import React from 'react'
 
-const AlbumTitle = (prop) => {
+const AlbumTitle = ({ hrefAlbum, title }) => {
     return (
-        <a href={prop.hrefAlbum} target="_blank" rel="noopener noreferrer">
-            <h2 className="album-title">{prop.title}</h2>
+        <a href={hrefAlbum} target="_blank" rel="noopener noreferrer">
+            <h2 className="album-title">{title}</h2>
         </a>
     )
 }

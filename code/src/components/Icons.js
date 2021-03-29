@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Icons = (prop) => {
+const Icons = () => {
     return (
         <div className="icons hidden" id="hidden">
             <img className="icon-heart hidden" src="/icons/heart.svg" alt="favorite"/>

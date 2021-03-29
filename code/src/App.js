@@ -10,7 +10,6 @@ const albumArray = data.albums.items
 
 
   return (
-    <>
     <div className="main">
       <div className="header-container">
         <h1 className="heading">New albums & singles</h1>
@@ -23,7 +22,7 @@ const albumArray = data.albums.items
               image={album.images[0].url} 
               title={album.name} 
               hrefAlbum={album.external_urls.spotify} 
-              artist={album.artists.map((item, index) => <a>{item.name}</a>)}
+              artist={album.artists.map((item) => <a>{item.name}</a>)}
               hrefArtist={album.artists.map((item) => item.external_urls.spotify)}
               key={album.id}/>
              )
@@ -31,7 +30,6 @@ const albumArray = data.albums.items
         }
       </div>
     </div>
-    </>
   )
 }
 

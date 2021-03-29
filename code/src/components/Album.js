@@ -7,16 +7,16 @@ import AlbumImage from './AlbumImage'
 
 
 
-const Album = (prop) => {
+const Album = ({ image, id, title, hrefAlbum, artist, hrefArtist }) => {
    
     return (
         <div className="album-card">
             <div className="album-controls">
                 <Icons/>
-                <AlbumImage image={prop.image} key={prop.id}/>
+                <AlbumImage image={image} key={id}/>
             </div>
-            <AlbumTitle title={prop.title} hrefAlbum={prop.hrefAlbum}/>
-            <Artist artist={prop.artist} hrefArtist={prop.hrefArtist}/>
+            <AlbumTitle title={title} hrefAlbum={hrefAlbum}/>
+            <Artist artist={artist} hrefArtist={hrefArtist}/>
         </div>     
     )
 }

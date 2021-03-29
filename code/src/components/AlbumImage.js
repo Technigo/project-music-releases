@@ -1,8 +1,8 @@
 import React from 'react'
 
-const AlbumImage = (prop) => {
+const AlbumImage = ( { image } ) => {
     return (
-          <img className="album-image" id="albumImage" src={prop.image} alt="album-cover"/>   
+          <img className="album-image" id="albumImage" src={image} alt="album-cover"/>   
     )
 }
 
