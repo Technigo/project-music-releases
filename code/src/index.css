@@ -100,6 +100,7 @@ header{
 .artistinfo{
   width: 100%;
   margin: 0;
+  text-align: left;
 }
 
 .hover-icons:hover {
@@ -123,7 +124,6 @@ header{
   font-family: Helvetica;
   text-decoration: none;
   display: flex;
-  justify-content: center;
 }
 
 .albumlink{
@@ -192,15 +192,11 @@ header{
   }
 
   .artistlink{
-    color: #a0a0a0;
-    font-family: Helvetica;
-    text-decoration: none;
+    font-size: 11px;
   }
 
   .albumlink{
-    color: #ffffff;
-    font-family: Helvetica;
-    text-decoration: none;
+    font-size: 11px;
   }
 }
 
@@ -217,6 +213,14 @@ header{
   }
   
   /* ALBUM.JS */
+  .artistlink{
+    font-size: 14px;
+  }
+  
+  .albumlink{
+    font-size: 14px;
+  }
+
   .artistcard-container {
     max-width: 200px;
     margin: 0 10px 20px 10px;
