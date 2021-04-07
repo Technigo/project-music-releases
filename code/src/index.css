@@ -5,9 +5,224 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
+  color: #FFFFFF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* FONTS */
+h2{
+  margin: 0;
+  font-size: 10px;
+}
+
+h2:hover {
+  text-decoration: underline;
+}
+
+h3{
+  margin: 0;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
+/* HEADER.JS */
+header{
+  text-align: center;
+  margin: 28px 0 28px 0;
+  font-size: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+}
+
+/* ALBUM.JS */
+
+.artistcard-container {
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.albumcover{
+  position: relative;
+  width: 100%;
+}
+
+.albumimg {
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.albumoverlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.albumoverlay:hover{
+  opacity: 1;
+}
+
+.icons, .play-icon{
+  width: 15%;
+  margin: 15px;
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(204deg) brightness(110%) contrast(101%);
+}
+
+.hover-icons{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.artistinfo{
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.hover-icons:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  transition: 1s ease-in-out;
+}
+
+.play-icon:hover {
+  transform: scale(1.5);
+} 
+
+.artistname{
+  margin: 6px 0 6px 0;
+}
+
+.artistlink{
+  color: #a0a0a0;
+  font-family: Helvetica;
+  text-decoration: none;
+  display: flex;
+}
+
+.albumlink{
+  color: #ffffff;
+  font-family: Helvetica;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.artist-item{
+  width: max-content;
+  display: flex;  
+  flex-wrap: wrap
+}
+
+.comma{
+  font-family: Helvetica;
+  font-size: 10px;
+  margin: 0;
+  padding-right: 2px;
+}
+
+.artists{
+  width: max-content;
+  margin: 0;
+}
+
+@media (min-width: 767px){
+/* APP.JS */
+  .main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1000px;
+  }
+
+  header{
+    font-size: 15px;
+    margin: 0px 0 10px 0;
+  }
+
+/* FONTS */
+  h2{
+    margin: 5px;
+  }
+
+  h3{
+    margin: 5px;
+  }
+
+/* ALBUM.JS */
+  .artistcard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+  }
+
+ .header{
+   text-align: center;
+  }
+
+  .albumimg{
+    width: 100%;
+  }
+
+  .artistlink{
+    font-size: 11px;
+  }
+
+  .albumlink{
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1200px){ 
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* HEADER.JS */
+  header{
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* ALBUM.JS */
+  .artistlink{
+    font-size: 14px;
+  }
+  
+  .albumlink{
+    font-size: 14px;
+  }
+
+  .artistcard-container {
+    max-width: 200px;
+    margin: 0 10px 20px 10px;
+  }
 }
