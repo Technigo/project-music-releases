@@ -1,6 +1,6 @@
 # Music Releases
 
-We built a music releases site using React components which shows new album and single releases.
+I built this project together with a team member. We did a music releases site using React components which shows new album and single releases.
 
 
 ## The problem
@@ -11,9 +11,9 @@ The first thing we did was to analyze the given design and think about how to st
 
 With the React components in place, we proceeded to add general style according to the given design. We made the page responsive using media queries and Flexbox for the album cards. Furthermore, when hovering over an album we added an effect that made the album cover image go darker and display three icons on top of it with less opacity. Also, when hovering over one of these icons it grew and showed full opacity.
 
-If we had more time we would have tried to do the black level stretch goals, such as adding a sidebar with playlists.
+If we had more time we would have tried to add a sidebar with playlists for the user to choose from.
 
 
 ## View it live
 
-Our deployed projec: https://dazzling-aryabhata-b33e50.netlify.app/
+View the deployed project here: https://dazzling-aryabhata-b33e50.netlify.app/
