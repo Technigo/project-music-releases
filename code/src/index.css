@@ -21,6 +21,7 @@ grid-template-columns: 1fr;
 
 .image {
 width: 100%;
+display: block;
 }
 
 .link {
@@ -35,19 +36,23 @@ color: white;
 }
 
 .artist-name {
+  display: inline-block;
   font-family: helvetica;
   font-size: 14px;
   color: #a0a0a0;
 }
 
+
 .artist-name :not(:first-child, :last-child)::before {
   color: #a0a0a0;
   content: ", ";
+  align-self: center;
 }
 
 .artist-name :last-child::before {
   content: " & ";
   color: #a0a0a0;
+  align-self: center;
 }
 
 .artist-name :only-child::before {content: "";
@@ -62,8 +67,16 @@ color: white;
 }
 
 .card {
-  margin: 5px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
+  margin: 5px;
+}
+
+.picture {
+  display:inline-block;
+  position: relative;
 }
 
 .icons {
@@ -86,16 +99,28 @@ color: white;
 }
 
 .play-icon {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 
 /*HOVER EFFECTS*/
+
+.card:hover .image {
+  filter: brightness(0.2);
+  opacity: 1;
+}
+
+.card:hover .icons {
+  display: flex;
+  width: 280px;
+}
+
+
 .image:hover {
-  filter: brightness(0.20);
+  filter:brightness(0.20);
 }
 
 .picture {
@@ -106,13 +131,11 @@ color: white;
   transition: all 0.4s ease-in-out;
 }
 
-.picture:hover .icons {
-  display: flex;
-}
+
 
 .play-icon:hover {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   display: inline-block;
   margin: 10px;
 }
