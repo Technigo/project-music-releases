@@ -1,10 +1,11 @@
-# Music Releases
-This weeks project was about React - what it is, how to use it and applied it to this project. 
+# Bootcamp-Project #07: Music Releases
+This weeks project was about React - what it is, how it works, its opportunities and how to work with it. This project was realized in a pair programming set up and the design was given.  
 
-## The problem
-The first struggles we stumbled over was getting the data displayed on the browser. Working with the ressources we got from wednesdays lecture got us on the right way but it was the exchaning with a teammember, that brought us there in the end even though we went for a different approach than our teammember in the end. After that we had a rough time with the styling (flexbox), even though we both had quite a good understanding of the flexbox model. Especially getting several artist seperated with "," and "&" in line took quite some time. 
+## Learning content and lessons learned: 
+- introduction to React (Structuring Components, JSX, Props)
+- use .map to iterate over array of data and mount many components
 
-Even though there were several different ways to solve this weeks project we could find answers on stackoverflow and from our teammembers. Also the demo on friday helped us getting faster further with our project.
+This weeks project gave us a bit of a rocky start. There was a lot of new input to wrap our heads around and we both need the big picture first to understand what we are suppose to do and be able to break it into chunks. Exchanging ideas and approaches with teammates helped us in the end to get the project started. After having all the data as requested on browser the next challenge (styling with flexbox) was waiting around the corner. This project was quite challenging but very valuable for the learning process. Once more we realized how valuable our team is. Exchanging ideas and different approaches not only helped with understanding React better, but also speeded up our progress with the project. 
 
 ## View it live
 https://project-music-release-anna-kaisa-noemi.netlify.app/
