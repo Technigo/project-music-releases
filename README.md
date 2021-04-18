@@ -2,6 +2,8 @@
 This weeks project was about React - what it is, how it works, its opportunities and how to work with it. This project was realized in a pair programming set up and the design was given.  
 
 ## Learning content and lessons learned: 
+- API
+- dependencies
 - introduction to React (Structuring Components, JSX, Props)
 - use .map to iterate over array of data and mount many components
 
