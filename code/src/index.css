@@ -1,13 +1,217 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #181818;
+    width: 100vw;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.album-card {
+    margin-bottom: 30px;
+}
+
+.inner-artist-container:not(:first-child, :last-child)::before {
+    content: ", ";
+    color: #a0a0a0;
+}
+
+.inner-artist-container:last-child::before {
+    content: " & ";
+    color: #a0a0a0;
+}
+
+.inner-artist-container:only-child::before {
+    content: "";
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.title {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.artist {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #a0a0a0
+}
+
+.icon-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 85px 1fr;
+    justify-items: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(24, 24, 24, 0.5);
+}
+
+.icon-container:hover {
+    opacity: 1;
+}
+
+.heart-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+.play-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 80px;
+}
+
+.play-button:hover {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 85px;
+    height: 85px;
+}
+
+.dots-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.album-image {
+    width: 200px;
+}
+
+
+/*Styling for tablet and small laptop*/
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 300px;
+        margin: 0 30px 30px 30px;
+    }
+    .album-image {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/*Styling for laptop*/
+
+@media (min-width: 1200px) {
+    .card-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 250px;
+        margin: 0 20px 30px 20px;
+    }
+    .image-container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    .album-image {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/* Styling for desktop */
+
+@media (min-width: 1450px) {
+    .card-container {
+        width: 1450px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .album-card {
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .image-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    .album-image {
+        width: 300px;
+        height: 300px;
+    }
 }

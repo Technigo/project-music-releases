@@ -1,12 +1,12 @@
 # Music Releases
-Replace this readme with your own information about your project.
+The focus on this project was to practice using React components and to build a page which shows new albums and singles. The music-release data comes from a downloaded response from the Spotify API.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We were 3 people working on this project together. We used pair-programming and did not divide the work amongst us. We started to plan the project in Trello. We used map() to display the proper parts of the data like the album-cover-image, the artists name and the album name. We used flexbox to create a responsive design. We find inspiration to solve our problems by looking at stackOverflow and Github.
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://loving-curie-music-releases.netlify.app/ 
