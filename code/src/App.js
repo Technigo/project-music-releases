@@ -1,10 +1,9 @@
 import React from 'react'
+
 import data from './data.json'
 import Album from './Components/Album.js'
 import Header from './Components/Header.js'
 
-
-console.log(data)
 
 const AlbumArray = data.albums.items;
 
@@ -14,7 +13,6 @@ export const App = () => {
       <div className="main-container">
       <Header />
         {AlbumArray.map((album) => {
-          console.log(album.name)
           return ( 
           <div key={album.id} className="album"> 
             <Album

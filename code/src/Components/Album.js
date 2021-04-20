@@ -1,9 +1,9 @@
 import React from 'react'
+
 import Buttons from './Buttons.js'
 
 //image needs an URL
 const Album = (props) => {
-  console.log(props)
     return (
       <div className="album-card">
           <div className="image-container">            
@@ -17,7 +17,6 @@ const Album = (props) => {
         </div>
 
         {props.artist.map((artist) => {
-          console.log(artist)  
           return <div key={artist.id} className="artist-container">
           <a
             className="artists-link"
