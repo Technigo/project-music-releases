@@ -5,9 +5,154 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: black;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main {
+display: grid;
+grid-template-columns: 1fr;
+}
+
+.image {
+width: 100%;
+display: block;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.albums-name {
+font-family: helvetica;
+font-size: 14px;
+color: white;
+}
+
+.artist-name {
+  display: inline-block;
+  font-family: helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+
+.artist-name :not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+  align-self: center;
+}
+
+.artist-name :last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+  align-self: center;
+}
+
+.artist-name :only-child::before {content: "";
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+.albums-name:hover {
+  text-decoration: underline;
+}
+
+.card {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+}
+
+.picture {
+  display:inline-block;
+  position: relative;
+}
+
+.icons {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.dots-icon, .heart-icon {
+  width: 30px;
+  height: 30px;
+  padding-top: 15px;
+}
+
+.play-icon {
+  width: 50px;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+/*HOVER EFFECTS*/
+
+.card:hover .image {
+  filter: brightness(0.2);
+  opacity: 1;
+}
+
+.card:hover .icons {
+  display: flex;
+  width: 280px;
+}
+
+
+.image:hover {
+  filter:brightness(0.20);
+}
+
+.picture {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.play-icon:hover {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  margin: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+  .main {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+}
+
+@media(min-width: 1025px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }
