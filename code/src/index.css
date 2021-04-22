@@ -72,11 +72,11 @@ a:link, a:visited {
 
 .image-container {
   width: 100%;
-  position: relative; 
-
+  position: relative;
 }
 
 .image-overlay {
+  top: 0;
   z-index: 1;
   position: absolute;
   width: 100%;
