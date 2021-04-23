@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +7,214 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.main-container {
+  width: 100%;
+}
+
+/*HEADER*/
+
+.header-title {
+  width: 80%;
+  color: white;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.header-line { 
+  width: 90%;
+  border-top: 2px solid #3f3f3f;  
+  margin-left: 20px;
+}
+
+/*ALBUM CONTAINER*/
+
+.album {
+ width: 100%;
+ display: flex;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.url-link {
+  display: inline-flex;
+}
+
+a:link, a:visited {
+  text-decoration: none; 
+  color: #a0a0a0;
+}
+
+
+.album-image {
+  width: 100%;
+  object-fit: contain; /*Prevents image stretching*/
+  
+}
+
+/*IMAGE CONTAINER*/
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-overlay {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .image-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
+}
+
+.buttons-container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  
+}
+
+.image-container:hover .buttons-container {
+  display: flex;
+    
+}
+
+/*BUTTONS*/
+
+.buttons-container img {
+  width: 70px;
+  margin: 0 15px;
+    
+}
+
+.play-button:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+}
+
+/*ALBUM TEXT*/
+
+.album-information-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+}
+
+.album-name {
+  color: #fff;
+  margin: 5px 0 0 0;
+  word-wrap: break-word;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.artist-container {
+  width: 100%;
+}
+
+.artists-link {
+  color: #a0a0a0;
+  font-weight: bold;
+  margin: 5px 0 0 0;
+}
+
+ .artists-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
+/* removes comma from last child in artist names */
+.artist-container:last-child span {
+  display: none;
+}
+
+
+/*TABLET*/
+@media (min-width: 768px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header-title {
+    width: 85%;
+  }
+
+  .header-line {
+    width: 86%;
+    margin: 0;
+  }
+
+  .album {
+    width: 45%;
+  }
+
+  .buttons-container {
+    top: 45%;
+  }
+
+  .buttons-container img {
+    width: 50px;
+    margin: 0 10px;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+  
+  .header-title {
+    width: 86%;
+  }
+  .header-line {
+    width: 85%;
+  }
+
+  .album {
+    width: 22%;
+  }
+
+  .buttons-container {
+    top: 45%;
+  }
+
+  .buttons-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+}
+
