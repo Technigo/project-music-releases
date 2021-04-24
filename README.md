@@ -24,4 +24,4 @@ We are building a New Releases music site.
 
 ## View it live
 
-Netlify link here.
+Link to live site: https://nazanin-music-releases-site.netlify.app/
