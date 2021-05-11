@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,7 +11,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -37,16 +37,17 @@ a {
   width: 100%;
 }
 
+.cover-wrapper:hover .cover {
+  opacity: 0.3;
+}
+
 .cover-wrapper:hover .icons {
   display: flex;
 }
 
 .cover {
   width: 100%;
-}
-
-.cover:hover {
-  filter: brightness(25%);
+  opacity: 1;
 }
 
 h1 {
@@ -59,28 +60,31 @@ h3 {
 
 .icons {
   position: absolute;
-  bottom:40%; 
+  bottom: 40%;
   display: none;
+  width: 100%;
   justify-content: center;
 }
 
 .icon {
-  filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(286deg) brightness(1200%) contrast(95%);
-  margin-right: 30px;
+  filter: invert(100%) sepia(0%) saturate(7483%) hue-rotate(286deg)
+    brightness(1200%) contrast(95%);
+  margin: 0 15px;
 }
 
-.play { 
+.play {
   width: 20%;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   opacity: 0.7;
 }
 
-.favorite, .dots {
+.favorite,
+.dots {
   width: 10%;
 }
 
-.play:hover { 
-  transform: scale(1.3); 
+.play:hover {
+  transform: scale(1.3);
   opacity: 1;
 }
 
@@ -102,26 +106,27 @@ h3 {
 }
 
 .artist-container:last-child::before {
-  content: " & ";
+  content: ' & ';
   color: #a0a0a0;
 }
 
 .artist-container:not(:first-child, :last-child)::before {
   color: #a0a0a0;
-  content: ", ";
+  content: ', ';
 }
 
-.artist-container:only-child::before { content: ""; }
+.artist-container:only-child::before {
+  content: '';
+}
 
-
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     grid-template-columns: 1fr 1fr;
   }
-}  
+}
 
-@media(min-width: 992px) {
+@media (min-width: 992px) {
   .container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}  
+}
