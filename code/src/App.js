@@ -1,12 +1,19 @@
-import React from 'react'
-import data from './data.json'
+import React from 'react';
+import data from './data.json';
 
-console.log(data)
+import Album from './components/Album';
 
-export const App = () => {
+const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <>
+      <h1>New Albums and singles</h1>
+      <div className='container'>
+        {data.albums.items.map((item) => (
+          <Album key={item.id} albumContent={item} />
+        ))}
+      </div>
+    </>
+  );
+};
+
+export default App;
