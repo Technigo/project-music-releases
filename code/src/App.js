@@ -1,12 +1,19 @@
 import React from 'react'
-import data from './data.json'
 
-console.log(data)
+import data from './data.json'
+import Album from './components/Album.js'
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <header>
+        <h1>New releases</h1>
+      </header>
+      <div className="cards">
+          <Album album={data.albums.items}/>
+      </div>
+    </>
   )
 }
+
+export default App;
