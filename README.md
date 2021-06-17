@@ -1,4 +1,4 @@
-This is a project made during the Technigo Bootcamp. 
+Project week 9 of Technigo bootcamp
 
 # Music Releases
 This project assignment was to use React components to build a page which shows new album and single releases, using a downloaded response from the Spotify API.
