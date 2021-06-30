@@ -75,7 +75,7 @@ code {
 .icons-container {
  position: absolute;
  top: 40%;
- left: 25%;
+ left: 15%;
  display: flex;
  opacity: 0;
  }
@@ -143,6 +143,9 @@ a:hover {
     gap: 1.5rem;
     margin: 1.5rem;
   }
+  .icons-container {
+    left: 18%;
+  }  
 }
 
 
@@ -156,4 +159,7 @@ a:hover {
     gap: 1.5rem;
     margin: 1.5rem;
   }
+  .icons-container {
+    left: 30%;
+  }  
 }
