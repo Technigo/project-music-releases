@@ -53,26 +53,12 @@ code {
 }
 
 
-/* COMMA AND & SEPARATION  --- NOT WORKING ---
-
-
-.contributors + .contributors p:last-child::before {
-  content: "and";
-}
-
-
-.contributors :nth-of-type(n+2):not(:last-child)::before {
-  content: ",";
-}
-
-*/
-
-
 /* COVER IMAGE */
 
 
 .cover-image {
   width: 100%;
+  opacity: 100%;
 }
 
 
