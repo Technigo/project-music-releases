@@ -1,14 +1,19 @@
 # Music Releases
-This project was made during the Technigo Bootcamp. The assignment was to build a music releases site, with data from a provided JSON file. 
-The project was built with React.
+This is a pair-programming project, that was made during the Technigo Bootcamp. The assignment was to build a music releases site, using React components. The data shows new album and single releases from downloaded JSON file from Spotify's API.
 
 ## The problem
-We started off with trying to build different components and then linking them together. Then we tried to get the data, and ran in to some issues with figure out the right path to fetch the data. 
-In the end we needed to redo some of the code and split it into more components, to make it more clear and easy to read. 
+We started off with a close look at the provided design to determine which components we would need and how to set them up. After that we constructed these basic components and their relations to each other. 
 
-For the next React project we will plan the structure better of the components before starting to code. 
-We have used the Technigo resources (lectures, teachers, reading material) and also Google of course. 
-If we had more time we would add more information from the JSON file, mostly for practice. It would also be fun to try to sort the albums/singles.
+We had some small issues with fetching the data correctly. To solve this we needed to redo some of the code. This also made the code more easy so follow because we divided it into more components.
+We used the map-method to display an Album-component for each album and an Artist component for each artist. 
+
+We also did Javascript logic so that if there are only two artists you show a "&" between them, and if there are more than two artists, you show "," between all artists except the last two which should have "&".
+When we had the functionality in place, we implemented all of the design.
+
+For the next React project we will plan the structure even better of the components before starting to code. 
+ 
+If we had more time we would display more information from the data file, mostly for practice. It would also be fun to try to sort the albums/singles and add filtering possibilities.
 
 ## View it live
-Link to our project on Netlify: https://quizzical-noether-570a46.netlify.app/
+Link to our project on Netlify: 
+https://quizzical-noether-570a46.netlify.app/
