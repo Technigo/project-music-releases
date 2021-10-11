@@ -10,7 +10,7 @@ console.log(AlbumArray);
 
 export const App = () => {
   return (
-    <div>
+    <div className="albums-wrapper">
       {AlbumArray.map((album) => {
         return (
           <Album

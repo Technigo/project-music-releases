@@ -6,10 +6,12 @@ const Album = (props) => {
   console.log(props);
 
   return (
-    <div key={props.id} className="album">
-      <img src={props.img} alt="#" />
-      <h2>{props.name}</h2>
-      <Artist name={props.name} external_urls={props.exterrnal_urls} />
+    <div className="album-wrapper">
+      <div key={props.id} className="album">
+        <img src={props.img} alt="#" />
+        <h2>{props.name}</h2>
+        <Artist name={props.name} external_urls={props.external_urls} />
+      </div>
     </div>
   );
 };

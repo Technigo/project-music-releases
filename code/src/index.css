@@ -5,9 +5,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #171818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h2 {
+  color: white;
+  font-size: 17px;
+}
+
+a {
+  color: #a0a0a0;
+}
+
+.albums-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  border: blue 3px solid;
+}
+
+.album-wrapper {
+  width: 20%;
+  margin: 15px;
+}
+
+.album-wrapper img {
+  width: 100%;
+}
+
+.album {
+  border: 1px grey solid;
 }
