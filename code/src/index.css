@@ -1,13 +1,42 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(36, 35, 35);
+  cursor: default;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.heading {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+hr {
+  opacity: 0.1;
+}
+
+.album-cover {
+  width: 250px;
+}
+
+.album-title {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.album-artist {
+  font-family: 14px;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.album-title:hover, .album-artist:hover {
+  text-decoration: underline;
 }
