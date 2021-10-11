@@ -3,7 +3,7 @@ import data from "./data.json";
 import { Header } from "./components/Header";
 import { Albumcard } from "./components/Albumcard";
 import { Footer } from "./components/Footer";
-import { Overlay } from "./components/Overlay";
+// import { Overlay } from "./components/Overlay";
 
 console.log(data);
 
