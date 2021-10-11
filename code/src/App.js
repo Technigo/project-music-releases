@@ -1,24 +1,30 @@
 import React from 'react'
 import data from './data.json'
-import Article from "./components/Article"
+import AlbumCard from "./components/AlbumCard"
 
 
 export const App = () => {
+  console.log(data.albums.items[1].images[0])
+  console.log(data.albums.items[0].name)
+  console.log(data.albums.items[0].artists[0].name)
+  
+  
   return (
+    
    <div>
-     <Article 
-      title="spring is coming" 
-      description="Just a description" 
-      img = "http://via.placeholder.com/150x150"
-      weather = "weather"
+   {data.albums.items.map((item)=> {
+     
+     return <AlbumCard 
+      img = {item.images[1].url}
+      song={item.name} 
+      artist = {item.artists[0].name}
+      key = {item.name} 
       />
-      <Article 
-      title="winter is coming" 
-      description="Just a description" 
-      img = "http://via.placeholder.com/300x300"
-      weather = "weather"
-      />
+      
+    })}
    </div>
-   
+  
   )
+
 }
+
