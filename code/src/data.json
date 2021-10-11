@@ -1861,11 +1861,7 @@
             "uri": "spotify:artist:4Ui2kfOqGujY81UcPrb5KE"
           }
         ],
-        "available_markets": [
-          "CA",
-          "MX",
-          "US"
-        ],
+        "available_markets": ["CA", "MX", "US"],
         "external_urls": {
           "spotify": "https://open.spotify.com/album/3ZQmXtYVICH0hhck3f53rm"
         },
