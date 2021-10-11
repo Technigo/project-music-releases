@@ -1,13 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #181818;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+hr {
+  background: #2c2c2c;
+  height: 2px;
+  border: 0;
+}
+
+.song-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  width: 100%;
+  max-width: auto;
+  border: 2px solid green;
+}
+
+.song-card {
+  border: 2px solid red;
+  /* width: 25%; */
+  grid-column: span 1;
+}
+
+.cover-image {
+  width: 100%;
+}
+
+.song-title {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.04em;
+}
+
+.artist {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  letter-spacing: 0.04em;
 }

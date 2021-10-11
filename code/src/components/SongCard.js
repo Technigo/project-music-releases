@@ -1,27 +1,20 @@
 import React from 'react';
-import data from '../data.json';
 
 import { SongTitle } from './SongTitle';
-import { Artists } from './Artists';
-import { CoverImages } from './CoverImages';
+import { Artist } from './Artist';
+import { CoverImage } from './CoverImage';
 
 export const SongCard = (props) => {
-  const myComponents = [CoverImages, SongTitle, Artists];
+  console.log(props);
   return (
     <>
-      <div>
-        {myComponents.map((AnyComponent, index) => (
-          <div key={index.id}>
-            <AnyComponent />
-          </div>
-        ))}
-      </div>
+      <article className='song-card'>
+        <CoverImage image={props.item.images[1].url} />
+        <SongTitle title={props.item.name} />
+        {props.item.artists.map((artist, index) => {
+          return <Artist key={index} artist={artist} />;
+        })}
+      </article>
     </>
   );
-  //<h2>{data.albums.items[0].name}</h2>
-  //<h3>{data.albums.items[0].artists[0].name}</h3>
-
-  // <CoverImages />
-  // <SongTitle />
-  // <Artists />
 };
