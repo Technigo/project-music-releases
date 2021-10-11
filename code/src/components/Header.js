@@ -1,8 +1,9 @@
-import React from "react"
+import React from "react";
 
 export const Header = () => {
-    return (
-        <h1>New albums &#38;
-        Singles</h1>
-    )
-}
+  return (
+    <div className="header-container">
+      <h1>New albums &#38; Singles</h1>
+    </div>
+  );
+};
