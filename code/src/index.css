@@ -21,14 +21,22 @@ hr {
   opacity: 0.1;
 }
 
+.album-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .album-cover {
-  width: 250px;
+  width: 300px;
 }
 
 .album-title {
   font-family: Helvetica;
   font-size: 14px;
   color: #ffffff;
+  width: 300px;
 }
 
 .album-artist {
