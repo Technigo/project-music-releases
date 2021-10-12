@@ -5,7 +5,13 @@ const Artists = (props) => {
   const allArtists = artistsArray.map((artist) => {
     return artist.name;
   });
-  return <h3 className="artist">{allArtists.join(', ')}</h3>;
+  return (
+    <a>
+      {allArtists.map((artist) => {
+        return <h3 className="artist">{artist}</h3>;
+      })}
+    </a>
+  );
 };
 
 export default Artists;

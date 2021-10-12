@@ -60,22 +60,25 @@ a {
   display: none;
   flex-direction: row;
   justify-content: space-evenly;
-  /* position: relative; */
 }
 
 .song-image:hover + .icons-overlay {
   display: flex;
 }
 
-/* .heart .play .dots */
-.icons-overlay img {
+/* If this one is first, the second overwrites it. If the styling was via a parent, like 
+icons.overlay-img it will always overwrite code added to a separate child */
+.heart {
+  width: 15px;
+  height: 15px;
+}
+
+/* The problem was that we did not have any comas... */
+.heart,
+.play,
+.dots {
   margin-top: -150px;
   width: 50px;
   height: 50px;
   filter: invert(1);
 }
-/* 
-.heart {
-  width: 15px;
-  height: 15px;
-} */
