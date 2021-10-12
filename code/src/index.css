@@ -53,14 +53,24 @@ h1{
   padding-left: var(--leftPadding);
   margin-left: 5px;
   color: white;
+  position: relative;
 }
 
 .album-card:hover{
   opacity: 0.5;
-  transition: 0.5s;
-  /* z-index: 3; */
-  
+  transition: 0.5s;  
 }
+
+/* .album-text-container{
+  min-height: 120px;
+}
+
+.album-card p{
+  position: absolute;
+  bottom: 0;
+} */
+
+
 
 /* - - - - - - - -  -TABLER VIEW - - - - - - - - */
 @media (max-width: 1280px){
