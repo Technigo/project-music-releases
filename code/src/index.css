@@ -20,18 +20,28 @@ code {
   margin-left: 10px;
   font-size: 18px;
 }
-.song-title {
+.song-title a {
   font-family: Helvetica;
   color: #ffffff;
   line-height: 10px;
   font-size: 14px;
+  text-decoration: none;
 }
 
-.song-artists {
+.song-title a:hover {
+  text-decoration: underline;
+}
+
+.song-artists a {
   font-family: Helvetica;
   color: #a0a0a0;
   line-height: 10px;
   font-size: 14px;
+  text-decoration: none;
+}
+
+.song-artists a:hover {
+  text-decoration: underline;
 }
 .album-container {
   width: 100%;
