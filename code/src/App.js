@@ -10,20 +10,16 @@ export const App = () => {
       <h1 className="header">New albums & singles </h1>
 
       <section className="album-container">
-        <article className="album-card">
-          <img src="#" alt="#" />
-          <div className="text-wrapper">
-            {/* import artist/song info component here */}
-          </div>
-        </article>
+        {data.albums.items.map((item) => (
+          <Album key={item.id} item={item} />
+        ))}
 
+        {/* <Album />
         <Album />
         <Album />
         <Album />
         <Album />
-        <Album />
-        <Album />
-        <Album />
+        <Album /> */}
       </section>
     </>
   );
