@@ -1,21 +1,18 @@
 import React from "react";
 import Artist from "./Artist";
-// import Artist from "./Artist";
+import CoverAlbum from "./CoverAlbum";
+import SongTitle from "./SongTitle";
 
-const Album = (props) => {
-  console.log(props);
-
+const Album = ({ image, title, titleLink, artist, artistlink }) => {
   return (
     <div className="album-wrapper">
-      <div key={props.id} className="album">
-        <img src={props.img} alt="#" />
-        <h2>{props.name}</h2>
-        <Artist name={props.name} external_urls={props.external_urls} />
+      <div className="album">
+        <CoverAlbum image={image} />
+        <SongTitle titleLink={titleLink} title={title} />
+        <Artist artistLink={artistlink} artist={artist} />
       </div>
     </div>
   );
 };
 
 export default Album;
-
-/* <p>{props.artists}</p> */
