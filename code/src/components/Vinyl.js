@@ -1,11 +1,17 @@
 import React from 'react'
 
-export const Vinyl = (props) => {
+// first we do an album/vinyl
+const Vinyl = (props) => {
   return (
-    <article className="card">
-      <img src={props.album.images[1].url} alt="{props.album.name}" />
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
+    <article className="vinyl-card">
+      <div className="icon-container">
+        <img src="/icons/heart.svg" alt="heart" className="icons" />
+        <img src="/icons/play.svg" alt="play" className="icons" />
+        <img src="/icons/dots.svg" alt="dots" className="icons" />
+      </div>
+      <img className="album-cover" src={props.cover} alt="album artwork" />
+      <h2 className="song-title">{props.song}</h2>
+      <h2 className="artist">{props.artist}</h2>
     </article>
   )
 }
