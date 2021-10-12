@@ -3,36 +3,45 @@ body {
   background-color: #181818;
 }
 
-.albums-container {
-display: grid;
-grid-template-columns: repeat(12, 1fr);
+h1 {
+  color: #fff;
+  border-bottom: 1px solid #34363a;
+  padding-bottom: 12px;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90%;
 }
 
 .album-image {
-  display: grid;
-  grid-column: span 12;
   width: 100%;
-  object-fit: cover;
-  }
+}
 
-  h1 {
-    color: #fff;
-    border-bottom: 1px solid #34363a;
-    padding-bottom: 12px;
-  }
+.album-text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-  .icons {
-      display: grid;
-      width: 25%;
-    }
-  
-    .album-text {
-      font-size: 14px;
-      color: #fff
-      
-    }
+.artist-text-container a {
+  font-size: 14px;
+  color: #a0a0a0;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    .artist-text-container a {
-      font-size: 14px;
-      color:  #a0a0a0;
-    }
+.icons {
+  position: absolute;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+}

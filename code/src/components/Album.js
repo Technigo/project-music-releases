@@ -6,7 +6,7 @@ export const Album = (props) => {
 		//Vi har en artikel med olika klasser. Props.link är länken till albumet på Spotify
 		//props.image.url är länken till omslaget
 		<article className="album-cards">
-			<a className="album-container" href={props.link} target="_blank" rel="noopener noreferrer">
+			<a className="album-container" href={props.link} target="_blank" rel="noopener noreferrer"> {/*Essentially, adding rel="noopener noreferrer" to links protects your site's users against having the site you've linked to potentially hijacking the browser*/}
 				<img className="album-image" src={props.image.url} alt="image of album"></img>
 			</a>
 
@@ -20,10 +20,10 @@ export const Album = (props) => {
 			<div className="artist-text-container">
 				{props.artists.map(artist => {
 					return (
-						< a className="artist-text" href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+						<a className="artist-text" href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
 							{artist.name}
-							<span>,&nbsp;</span> 
-							{/* https://stackoverflow.com/questions/18753828/keeping-a-string-of-text-together-on-one-line%20 */}
+							<span>,&nbsp;</span>
+							{/* &nbsp - HTML Non-Breaking Space https://stackoverflow.com/questions/18753828/keeping-a-string-of-text-together-on-one-line%20 */}
 						</a>)
 				})}
 			</div>
