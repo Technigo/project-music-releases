@@ -4,10 +4,9 @@ import Album from './components/Album'
 
 console.log(data)
 
-// import Article from './components/Article'
-
 export const App = () => {
   const albums = data.albums.items;
+
   return (
     <div>
       <h1>New albums & singles</h1>
