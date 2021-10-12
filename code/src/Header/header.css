@@ -1,0 +1,16 @@
+.header {
+    margin: 5px 10px;
+    border-bottom: 1px solid grey;
+}
+.header-text {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        margin: 5px 20px;
+    }
+}

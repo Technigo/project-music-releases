@@ -1,0 +1,62 @@
+.album-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5px 0px 20px 0px;
+}
+.album-cover {
+    position:relative;
+    width:100%
+}
+.image {
+    width:100%;
+}
+.album-cover:hover .image {
+    opacity: 0.5;
+}
+.icons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.album-cover:hover .icons {
+    display: flex;
+}
+.dot-icon, .heart-icon {
+    width: 30px;
+    margin: 20px;
+}
+
+.play-icon {
+    width: 80px;
+    margin:20px;
+    cursor: pointer;
+}
+.album-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin: 5px 0px 0px 0px;
+}
+.album-title:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .album-card{
+        width: 45%;
+    }
+}
+
+@media (min-width: 992px) {
+    .album-card{
+        width: 23%;
+        margin: 0px 5px 40px 5px;
+    }
+}

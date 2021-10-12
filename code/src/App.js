@@ -1,36 +1,48 @@
 import React from 'react'
 import data from './data.json'
-import Album from './Album /Album'
+import Album from './Album/Album'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
+import Artist from './Artist/Artist'
 
-console.log(data)
+
+
 
 const App = () => {
-  const albumArray = data.albums.items
+  const albumArray = data.albums.items;
 
   return (
-    <div>
+    <div className='main'>
       <Header />
-      {albumArray.map((album) => {
-        return (
-          <div>
-            <Album image={album.images[0].url}
-              albumTitle={album.name}
-              albumLink={album.external_urls.spotify}
-              artistName={album.artists.map((artist) => {
-                return artist.name
-              })}
-              artistLink={album.artists.map((artist) => {
-                return artist.external_urls.spotify
-              })}
-            />
-          </div>
+      <div className="album-wrapper">
+        {albumArray.map((album) => {
+          return (
+            <div className="album-card" key={album.id}>
+              <Album
+                image={album.images[0].url}
+                albumTitle={album.name}
+                albumLink={album.external_urls.spotify} />
+              <div className="artists">
+                {album.artists.map(artist => {
+                  return (
+                    <Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                      artistName={artist.name} />
+                  )
+                })
+                }
+
+              </div>
+            </div>
+          )
+        }
         )
-      })}
+        }
+      </div >
       <Footer />
     </div>
   )
 }
+
+
 
 export default App
