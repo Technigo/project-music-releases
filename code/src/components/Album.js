@@ -1,11 +1,22 @@
 import React from "react";
-import data from "../data.json";
 
 export const Album = (props) => {
-  const albumImage = data.albums.items.map((item) => item.images);
-  console.log(data);
-  console.log(albumImage[1]);
   return (
-    <img className="album-cover" src={albumImage[1].url} alt="album cover" />
+    <div className="album">
+      <img
+        className="album-cover"
+        src={props.item.images[1].url}
+        alt="album cover"
+      />
+      <h3 className="album-title">
+        <a href={props.item.external_urls.spotify}>{props.item.name}</a>
+      </h3>
+
+      <h4 className="artist-name">
+        <a href={props.item.artists[0].external_urls.spotify}>
+          {props.item.artists[0].name}
+        </a>
+      </h4>
+    </div>
   );
 };

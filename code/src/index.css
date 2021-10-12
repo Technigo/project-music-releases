@@ -12,7 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-album-cover {
+#root {
+  margin: 0;
+  display: flex;
+}
+.album-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   width: 100%;
+  justify-content: flex-start;
+}
+
+.album {
+  flex-direction: column;
+  margin: 30px;
+  width: 20%;
+}
+.artist-name a {
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+.artist-name {
+  margin: 5px 0px;
+}
+
+.album-title {
+  margin: 5px 0px;
+}
+.album-title a {
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
