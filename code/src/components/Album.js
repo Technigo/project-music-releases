@@ -1,4 +1,5 @@
 import React from 'react';
+import Artist from './Artist'
 
 const Album = (props) => {
     console.log(props)
@@ -11,6 +12,7 @@ const Album = (props) => {
             alt={props.album.name}
         />
         <h2>{props.album.name}</h2>
+        <h2>{props.album.artists[0].name}</h2>
         </>
     )
 }

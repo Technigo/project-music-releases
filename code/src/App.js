@@ -10,11 +10,11 @@ export const App = () => {
   return (
     <div>
       <h1>New albums & singles</h1>
-      <div>
-        {albums.map((album) => {
-          return <Album album={album}/>;
-        })}
+        <div>
+          {albums.map((album) => {
+            return <Album album={album}/>;
+          })}
+        </div>
       </div>
-    </div>
   )
 }
