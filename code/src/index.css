@@ -27,3 +27,8 @@ code {
   grid-column-gap: 5px;
   grid-row-gap: 20px;
 }
+
+.title:hover,
+.artist:hover {
+  text-decoration: underline;
+}
