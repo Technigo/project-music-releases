@@ -3,16 +3,18 @@ import data from "./data.json";
 import Artist from "./components/Artist";
 
 //console.log(data);
+const items = data.albums.items;
+console.log(items);
 
-export const App = ({ numberOfItems = 8 } = {}) => {
-  const items = data.albums.items.slice(0, numberOfItems - 1);
-  console.log(items);
+export const App = () => {
   return (
     <>
+      <div className="header">New albums & singels</div>
       <div className="article-container">
         {items.map((item) => {
           return (
             <Artist
+              key={item.name}
               img={item.images[0].url}
               title={item.name}
               description={item.artists[0].name}
