@@ -3,26 +3,38 @@ import data from './data.json'
 
 import Album from './components/Album';
 import Header from './components/Header';
+import Icons from './components/Icons';
+
+import './index.css'
+
+
+  const album = data.albums.items[0];
+  
 
 
 export const App = () => {
   return (
     <div>
 <Header
-title="New Album and Singles"
-/>
- 
-	<Album
-				title="Spring is coming!"
-				description="Just a description"
-				img="https://via.placeholder.com/150x150"
-			/>
+title="New albums and singles"/>
 
-			<Album
-				title="Winter is coming sooner!"
-				description="Just another description"
-				img="https://via.placeholder.com/300x300"
-			/>    
-      </div>
+<Icons/>
+
+{data.albums.items.map((album) => { //vi renderar ut varje album
+return <Album 
+link={album.external_urls.spotify}
+artists={album.artists}
+name={album.name}
+image={album.images[0]}
+/>
+
+
+
+}
+)}
+
+
+
+</div>
   );
 };
