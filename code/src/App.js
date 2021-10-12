@@ -9,12 +9,16 @@ export const App = () => {
     <main className="main">
       <h1>New albums & singles</h1>
 
-       {/* {data.map((album) => {
-         return <Album key={album.limit} albumName={album.name} />;
-       })} */}
+       {data.albums.map((album) => {
+         return <Album key={album.items.type} albumName={album.items.name} img={album.items.images[1].url}  />;
+       })}
 
-       <Album albumName="lalaland" />
-       <Album albumName={data.albums.limit} />
+       {/* <Album 
+       albumImg={data.albums.items[0].images[1].url}
+       albumName={data.albums.items[0].name} 
+        /> */}
+        
+
 
     </main>
   )
