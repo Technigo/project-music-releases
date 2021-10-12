@@ -2,11 +2,9 @@ import React from 'react'
 
 const Artist = ({ artistLink, artistName }) => {
     return (
-        <div>
-            <a href={artistLink} className="artist">
-                {artistName}
-            </a>
-        </div>
+        <a href={artistLink} className="artist" target="_blank" rel="noreferrer noopener" >
+            {artistName}
+        </a>
     )
 }
 

@@ -9,6 +9,7 @@
     font-size: 14px;
     display: flex;
 }
+
 .artist:hover {
     text-decoration: underline;
 }
