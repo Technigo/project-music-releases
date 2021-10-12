@@ -19,6 +19,7 @@ export const App = () => {
               src={album.images[1].url}
               title={album.name}
               artistsArray={album.artists}
+              albumURL={album.external_urls.spotify}
             />
           );
         })}
