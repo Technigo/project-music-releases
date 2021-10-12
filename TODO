@@ -1,0 +1,36 @@
+# Structure
+
+Use`data` which includes the full JSON response., along with `.map()` to mount an 'Album' component for each album.
+Within those components, you could then break things up further. For example, your app could have a structure like this:
+
+- `App` component which has the `data`
+  - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
+    - `Artist` component which is rendered using `.map()` using each item in the `artists` array, inside the `Album` component to show the artist name and a link.
+
+# Requirements 🔵
+
+- Your app should have components
+- _Your page should look as close as possible to the design provided_.
+- You should display the following for each album:
+  - album cover image ✅
+  - album name
+  - the name of each artist involved with a comma between
+- Hover effects:
+  - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
+  - When you hover over the play button, it should grow (see the design sketch)
+  - Hovering an artist name or an album name should match the design sketch
+- When you click on the album, it should link to the album's external url in the data
+- When you click on an artist, it should link to the artist's external url in the data
+- Your page should be responsive:
+  - showing 4 albums per row on desktop
+  - 2 per row on tablet
+  - 1 per row on mobile.
+
+# Design
+
+Album title - 14px Helvetica #ffffff
+Artist name - 14px Helvetica #a0a0a0
+
+# Working in teams:
+
+https://www.notion.so/technigo/Working-in-teams-on-GitHub-17a1f1dc7e684ae48a574f547b241bb4

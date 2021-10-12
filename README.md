@@ -1,7 +1,7 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project was to build a page which shows new album and single releases using React and creating components by data from Spotify.
+It was a pair programming project made by Harry Bäcklin and Ida Aspen.
 
 ## The problem
 
