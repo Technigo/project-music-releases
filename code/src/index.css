@@ -24,19 +24,29 @@ code {
 h1{
   color: white;
 }
+/* Container for whole site to make it center and control weight */
+.site-container{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+ }
 
+ /* Container for header to make it left-aligned */
 .header-container{
   justify-content: left;
   padding-left: var(--leftPadding);
   margin-left: 5px;
 }
 
-
-
-.article-tag-container{
-  display: flex;
+/* Grid for all albums, 4 colomns in desktop, 2 in tablet and 1 in mobile */
+.grid-for-album{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
+/* Each album-card container */
 .album-card{
   background-color: black;
   max-width: 320px;
@@ -45,22 +55,45 @@ h1{
   color: white;
 }
 
-.site-container{
- background-color: black;
- display: flex;
- flex-direction: column;
- max-width: 1240px;
- margin: 0 auto;
- 
-}
-
-.grid-for-album{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  
+.album-card:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+  /* z-index: 3; */
   
 }
 
+/* - - - - - - - -  -TABLER VIEW - - - - - - - - */
+@media (max-width: 1280px){
+  
+  .grid-for-album{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+  
+  .site-container{
+    max-width: 768px;
+  }
+    
+  }
+/* - - - - - - - -  -Mobile VIEW - - - - - - - - */
+  @media (max-width: 767px){
 
+    .album-card{
+      padding-left: 0;
+      margin-left: 0;
+      max-width: 300px;
+    }
+  
+    .grid-for-album{
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      
+    }
+    
+    .site-container{
+      max-width: 340px;
+    }
+      
+    }
 
 
