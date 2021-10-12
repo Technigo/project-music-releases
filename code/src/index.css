@@ -12,8 +12,18 @@ code {
     monospace;
 }
 
+.article-tag-container {
+  display:flex;
+}
+
+.article-tag {
+  background-color: gray;
+  padding: 5px;
+  border: black solid 2px;
+  margin: 1px;
+}
+
 .article {
-  display: flex;
   border: black 4px solid;
   width: 350px;
   
