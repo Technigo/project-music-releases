@@ -1,11 +1,7 @@
 import React from "react"
 
-const Artists = (props) => {
-  return (
-    <article>
-      <h3>{props.artist}</h3>
-    </article>
-  )
+const Image = ({ coverImage }) => {
+  return <img className="album-cover" src={coverImage} alt="Album cover" />
 }
 
-export default Artists
+export default Image

@@ -1,30 +1,16 @@
 import React from "react"
 
-const Albums = (props) => {
+const Albums = ({ albumName, albumLink }) => {
   return (
-    <article>
-      <h2>{props.album}</h2>
-    </article>
+    <a
+      className="links"
+      href={albumLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <h2>{albumName}</h2>
+    </a>
   )
 }
 
 export default Albums
-
-// const musicArray = data.albums.items
-// console.log("MUSIC ARRAY", musicArray
-
-// export const MusicContainer = () => {
-//   musicArray.map((albums) => {
-//     return (
-//       <div>
-//         <Albums
-//           image={albums.items.image}
-//           album="ALBUM"
-//           artist={albums.items.name}
-//         />
-//       </div>
-//     )
-//   })
-//   return <Albums />
-// }
-// console.log("AFTER MAP", MusicContainer)

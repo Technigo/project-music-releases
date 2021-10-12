@@ -1,13 +1,97 @@
 body {
-  margin: 0;
+  margin: 0 15px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(24, 24, 20);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  color: #fff;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Helvetica";
+  font-size: 17px;
+  color: #ffffff;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Helvetica";
+  font-size: 17px;
+  color: #a0a0a0;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.album-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+.album-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 15px 30px;
+  }
+
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
 }
