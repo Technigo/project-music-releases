@@ -1,4 +1,5 @@
 import React from 'react'
+import Artists from './Artists'
 
 // first we do an album/vinyl
 const Vinyl = (props) => {
@@ -13,8 +14,9 @@ const Vinyl = (props) => {
         <img className="album-cover" src={props.cover} alt="album artwork" />
       </div>
       <h2 className="song-title">{props.song}</h2>
-      <h2 className="artist">{props.artist}</h2>
-      {/* <h2 className="artist">{artistArray}</h2> */}
+      <div className="artist-wrapper">
+        <Artists artistList={props.artist} />
+      </div>
     </article>
   )
 }
