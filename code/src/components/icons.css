@@ -1,3 +1,12 @@
+/* 
+
+TODO
+
+borde få till så att hover på play bara händer när man är på play,
+nu är det hela höjden på albumet som reagerar.
+tror iconerna blir utdragna pga justify-content: space-evenly;
+
+*/
 .icons-container {
   position: absolute;
   top: 0;
