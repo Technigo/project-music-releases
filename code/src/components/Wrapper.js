@@ -14,7 +14,7 @@ const Wrapper = ({
 }) => {
   return (
     <div className="album-card">
-      <Image coverImage={coverImage} key={id} />
+      <Image coverImage={coverImage} />
       <Albums albumName={albumName} albumLink={albumLink} />
       <Artists artistName={artistName} artistLink={artistLink} />
     </div>

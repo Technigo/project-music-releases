@@ -1,5 +1,5 @@
 body {
-  margin: 0 15px;
+  margin: 0 15%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -34,6 +34,14 @@ h3 {
   text-align: left;
 }
 
+h2:hover {
+  text-decoration: underline;
+}
+
+h3:hover {
+  text-decoration: underline;
+}
+
 .links {
   text-decoration: none;
 }
@@ -51,6 +59,61 @@ h3 {
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.album-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  display: hidden;
+}
+
+.overlay:hover {
+  /* display: block; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 79%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(4, 4, 4, 0.647);
+  transition: 0.5s ease;
+}
+
+.icons {
+  display: hidden;
+}
+
+.icons:hover {
+  display: block;
+}
+.heart {
+  width: 35px;
+  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+.play {
+  width: 80px;
+  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
+}
+
+.play:hover {
+  width: 90px;
+}
+
+.dots {
+  width: 20px;
+  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
 }
 
 @media (min-width: 768px) {

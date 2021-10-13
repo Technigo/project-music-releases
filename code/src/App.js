@@ -15,6 +15,7 @@ export const App = () => {
           return (
             <div className="album-card">
               <Wrapper
+                key={album.artists.id}
                 coverImage={album.images[1].url}
                 albumName={album.name}
                 albumLink={album.external_urls.spotify}
@@ -24,7 +25,6 @@ export const App = () => {
                 artistLink={album.artists.map(
                   (item) => item.external_urls.spotify
                 )}
-                key={album.id}
               />
             </div>
           )
