@@ -14,7 +14,7 @@ code {
 }
 #root {
   margin: 0;
-  display: flex;
+  /*display: flex;*/
 }
 .album-wrapper {
   display: flex;
@@ -32,11 +32,15 @@ code {
 .artist-name a {
   font-size: 14px;
   color: #a0a0a0;
-  text-decoration: none;
+  text-decoration: transparent;
   font-family: Helvetica, sans-serif;
 }
 .artist-name {
   margin: 5px 0px;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: transparent;
+  font-family: Helvetica, sans-serif;
 }
 
 .album-title {
@@ -48,6 +52,53 @@ code {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
 }
+
+header {
+  color: white;
+  margin: 10px 0px;
+}
+h1 {
+  padding-left: 30px;
+}
+.icons {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 50%;
+  top: 50%;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  filter: invert(100%);
+}
+.play-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0px 20px;
+}
+
+.album-cover-wrapper {
+  position: relative;
+  width: fit-content;
+}
+.album-cover-wrapper:hover .icons {
+  display: flex;
+}
+.album-cover {
+  position: relative;
+}
+
+.album-cover:hover {
+  opacity: 0.5;
+}
+.icons:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: underline;
   color: #ffffff;
