@@ -12,6 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
 .title {
   margin: 10px 5px;
   color: #ffffff;
@@ -20,71 +26,28 @@ code {
   padding-bottom: 5px;
 }
 
-.album-name {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.album-name:hover {
-  text-decoration: underline;
-}
-
-.artist-name {
-  color: #a0a0a0;
-  font-size: 14px;
-}
-
-.artist-name:hover {
-  text-decoration: underline;
-}
-
 .album-grid {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.image-container {
-  position: relative;
-}
+@media (min-width: 730px) {
+  .container {
+    width: 650px;
+  }
 
-/* .overlay:hover {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-} */
-/* 
-.icons-container {
-  position: absolute;
-  height: 100%;
-  display: flex;
-  margin-left: 65px;
-}
-
-.heart-icon, .play-icon, .dots-icon {
-  padding: 0 15px;
-  filter: invert();
-}
-
-.play-icon {
-  width: 50px;
-}
-
-.play-icon:hover {
-  width: 60px;
-  transition: 0.3s;
-  padding: 0 10px;
-} */
-
-@media (min-width: 768px) {
   .album-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
 @media (min-width: 1190px) {
+  .container {
+    width: 1100px;
+  }
+
   .album-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 250px);
   }
 }

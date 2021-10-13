@@ -3,25 +3,24 @@ import data from '../data.json'
 import { ArtistName } from 'components/ArtistName'
 import { Icons } from 'components/Icons'
 import { AlbumName } from 'components/AlbumName'
+import 'components/AlbumCover.css'
 
 console.log(data)
 
 export const AlbumCover = () => {
   return data.albums.items.map(item => {
     return (
-      <div key={item.name}>
+      <div className='album-container' key={item.name}>
         <div className='image-container'>
           <Icons />
-          {/* <div className='overlay'> */}
           <img
             src={item.images[1].url}
             alt={'Album cover for: ' + item.name}
-            style={{ margin: '5px', position: 'relative' }}
+            className='album-image'
           />
-          {/* </div> */}
         </div>
-        <p className='album-name'>{item.name}</p> {/* ska länka till album url */}
-        <p><ArtistName artists={item.artists} /></p> {/* länk till artist url */}
+        <AlbumName name={item.name} /> {/* ska länka till album url */}
+        <ArtistName artists={item.artists} /> {/* länk till artist url */}
       </div>
     )
   })

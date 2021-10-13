@@ -1,8 +1,8 @@
 .artist-name {
-    color: #a0a0a0;
-    font-size: 14px;
-  }
-  
-  .artist-name:hover {
-    text-decoration: underline;
-  }
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
