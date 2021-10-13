@@ -13,19 +13,49 @@ code {
     monospace;
 }
 
-.article {
+.header {
+  justify-content: flex-start;
+}
+
+.app-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.app-container {
+  background-color: red;
+}
+
+.album {
   width: 300px;
   border: 2px solid #333;
   padding: 15px;
 }
 
-.article-tag-container {
+.album-tag-container {
   display: flex;
 }
 
-.article-tag {
+.album-tag {
   background: #999;
   padding: 5px;
   border: 1px solid #333;
   margin: 1px;
 }
+
+/* .icons {
+}
+
+.icons-heart {
+}
+
+.icons-play {
+}
+
+.icons-dots {
+} 
+Album title - 14px Helvetica #ffffff
+Artist name - 14px Helvetica #a0a0a0
+
+*/

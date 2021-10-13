@@ -1,20 +1,11 @@
-# Structure
-
-Use`data` which includes the full JSON response., along with `.map()` to mount an 'Album' component for each album.
-Within those components, you could then break things up further. For example, your app could have a structure like this:
-
-- `App` component which has the `data`
-  - `Album` component which is rendered using `.map()` and which you pass the album data into using props.
-    - `Artist` component which is rendered using `.map()` using each item in the `artists` array, inside the `Album` component to show the artist name and a link.
-
 # Requirements 🔵
 
-- Your app should have components
-- _Your page should look as close as possible to the design provided_.
+- Your app should have components ✅
+- Your page should look as close as possible to the design provided.
 - You should display the following for each album:
   - album cover image ✅
-  - album name
-  - the name of each artist involved with a comma between
+  - album name ✅
+  - the name of each artist involved with a comma between (kommatecken kvarstår) 🟡
 - Hover effects:
   - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
   - When you hover over the play button, it should grow (see the design sketch)

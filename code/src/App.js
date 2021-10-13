@@ -9,26 +9,24 @@ import data from "./data.json";
 import Cover from "./components/Cover";
 import Artist from "./components/Artist";
 import Album from "./components/Album";
+import Header from "components/Header";
 
 console.log(data);
 
 export const App = () => {
   return (
-    //if more divs, use React Fragment <>
-    <div className="App">
-      {data.albums.items.map((props) => {
+    /*app-container är allt */
+    <div className="app-section">
+      <Header />
+      {data.albums.items.map((element) => {
         return (
           <>
-            <div className="" key={props.cover}>
-              <Cover key={props.href} item={props} />
-            </div>
+            <div className="app-container">
+              <Cover key={element.href} item={element} />
 
-            <div className="" key={props.album}>
-              <Album key={props.title} item={props} />
-            </div>
+              <Album key={element.title} item={element} />
 
-            <div className="" key={props.artist}>
-              <Artist key={props.name} item={props} />
+              <Artist key={element.artist} item={element} />
             </div>
           </>
         );
