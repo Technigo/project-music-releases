@@ -6,7 +6,7 @@ const Album = (props) => {
   return (
     <article className="album-banana">
       <img src={props.albumimage} alt="Cover of album" />
-      <h1>{props.songtitle}</h1>
+      <h1 className="release-name-text">{props.songtitle}</h1>
     </article>
   );
 };

@@ -7,11 +7,11 @@ export const App = () => {
   const musicData = data.albums.items;
   console.log(musicData);
   return (
-    <div className="container">
+    <div className="grid-container">
       <>
         {musicData.map((album) => {
           return (
-            <div className="wrapper">
+            <div className="album-wrapper">
               <Album
                 key={album.id}
                 albumimage={album.images[1].url}

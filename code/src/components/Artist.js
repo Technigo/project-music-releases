@@ -5,7 +5,11 @@ const Artist = (props) => {
     <div className="artist-banana">
       {props.item.artists.map((artist) => {
         return (
-          <a key={artist.id} href={artist.external_urls.spotify}>
+          <a
+            className="artist-name-link"
+            key={artist.id}
+            href={artist.external_urls.spotify}
+          >
             <h2>{artist.name} </h2>
           </a>
         );
