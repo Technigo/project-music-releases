@@ -3,7 +3,7 @@ import data from '../data.json'
 import { ArtistName } from 'components/ArtistName'
 import { Icons } from 'components/Icons'
 import { AlbumName } from 'components/AlbumName'
-import 'components/AlbumCover.css'
+import './AlbumCover.css'
 
 console.log(data)
 

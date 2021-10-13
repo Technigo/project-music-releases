@@ -1,5 +1,5 @@
 import React from 'react'
-import 'components/Icons.css'
+import './Icons.css'
 
 export const Icons = props => {
   return (
