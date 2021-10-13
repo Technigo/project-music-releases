@@ -24,6 +24,12 @@ code {
 h1{
   color: white;
 }
+
+h2{
+  font-size: 18px;
+}
+
+
 /* Container for whole site to make it center and control weight */
 .site-container{
   background-color: black;
@@ -77,11 +83,12 @@ h1{
   
   .grid-for-album{
     grid-template-columns: repeat(2, 1fr);
-    
+    margin: 0 auto;
   }
   
   .site-container{
     max-width: 768px;
+    
   }
     
   }

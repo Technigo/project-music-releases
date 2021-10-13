@@ -20,7 +20,7 @@ export const App = () => {
      return <AlbumCard 
       img = {item.images[1].url}
       song={item.name} 
-      artist = {item.artists[0].name}
+      artist = {item.artists.map((artist)=> <a href="http://google.com">{artist.name}</a>)}
       key = {item.name} 
       />
       
