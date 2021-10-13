@@ -1,8 +1,8 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --leftPadding: 5px;
 }
 
@@ -21,45 +21,43 @@ code {
     monospace;
 }
 
-h1{
+h1 {
   color: white;
 }
 
-h2{
+h2 {
   font-size: 18px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  content: ", ";
 }
 
-
 /* Container for whole site to make it center and control weight */
-.site-container{
+.site-container {
   background-color: black;
   display: flex;
   flex-direction: column;
   max-width: 1280px;
   margin: 0 auto;
- }
+}
 
- /* Container for header to make it left-aligned */
-.header-container{
+/* Container for header to make it left-aligned */
+.header-container {
   justify-content: left;
   padding-left: var(--leftPadding);
   margin-left: 5px;
 }
 
 /* Grid for all albums, 4 colomns in desktop, 2 in tablet and 1 in mobile */
-.grid-for-album{
+.grid-for-album {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 /* Each album-card container */
-.album-card{
+.album-card {
   background-color: black;
   max-width: 320px;
   padding-left: var(--leftPadding);
@@ -68,22 +66,9 @@ a {
   position: relative;
 }
 
-.name::after  {
-  color: red;
-  content: ", ";
-}
-
-.name{
-  color: aquamarine;
-}
-
-/* :not(:first-of-type, :last-of-type) */
-
-
-
-.album-card:hover{
+.album-card:hover {
   opacity: 0.5;
-  transition: 0.5s;  
+  transition: 0.5s;
 }
 
 /* .album-text-container{
@@ -95,41 +80,41 @@ a {
   bottom: 0;
 } */
 
+.artists a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
 
+.artists a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
 
 /* - - - - - - - -  -TABLER VIEW - - - - - - - - */
-@media (max-width: 1280px){
-  
-  .grid-for-album{
+@media (max-width: 1280px) {
+  .grid-for-album {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
   }
-  
-  .site-container{
+
+  .site-container {
     max-width: 768px;
-    
   }
-    
-  }
+}
 /* - - - - - - - -  -Mobile VIEW - - - - - - - - */
-  @media (max-width: 767px){
+@media (max-width: 767px) {
+  .album-card {
+    padding-left: 0;
+    margin-left: 0;
+    max-width: 300px;
+  }
 
-    .album-card{
-      padding-left: 0;
-      margin-left: 0;
-      max-width: 300px;
-    }
-  
-    .grid-for-album{
-      grid-template-columns: repeat(1, 1fr);
-      margin: 0 auto;
-      
-    }
-    
-    .site-container{
-      max-width: 340px;
-    }
-      
-    }
+  .grid-for-album {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+  }
 
-
+  .site-container {
+    max-width: 340px;
+  }
+}

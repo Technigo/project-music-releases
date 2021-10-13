@@ -17,18 +17,17 @@ export const App = () => {
    
    <section className= "grid-for-album">
    {data.albums.items.map((item)=> {
-     return <AlbumCard 
+     return ( <AlbumCard 
       img = {item.images[1].url}
       song={item.name} 
-      artist = {item.artists.map((artist) => <a className="name">{artist.name}</a>)}
+      artist = {item.artists.map(artist => (
+         <a>{artist.name}</a>))}
       key = {item.name} 
       />
-      
+     );
     })}
     </section> 
    </div>
-  
   )
-
 }
 
