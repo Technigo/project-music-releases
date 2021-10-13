@@ -1,5 +1,6 @@
 :root {
-  --primary: #181818;
+  --primary: #9e9898;
+  /* --primary: #181818; */
   --secondary: #ffffff;
   --tertiary: #a0a0a0;
 }
@@ -19,6 +20,16 @@ code {
     monospace;
 }
 
+/* HEADER */
+.header {
+  color: var(--secondary);
+  font-family: Helvetica;
+  font-size: 1.6rem;
+  margin-left: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+/* Album */
 .album-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -26,8 +37,13 @@ code {
   margin: 1.5rem;
 }
 
-.album-image {
+.cover-image {
   width: 100%;
+  display: block;
+}
+
+.cover-container {
+  position: relative;
 }
 
 .album-title {
@@ -35,7 +51,30 @@ code {
   font-weight: bold;
 }
 
-.artist {
-  color: var(--secondary);
-  font-weight: bold;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline 1px;
+  color: var(--secondary)
+}
+
+/* Artist */
+.artist-name {
+  font-size: 1rem;
+  color: var(--tertiary)
+}
+
+.icons-container {
+  display: flex;
+  position: absolute;
+  
+  width: auto;
+  height: 20px;
+  top: 50%
+}
+
+.icon-heart .icon-play .icon-dot {
+
 }
