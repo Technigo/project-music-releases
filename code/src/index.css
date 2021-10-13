@@ -10,6 +10,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  padding: 20px 0 2px 2%;
+  font-size: 17px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -23,21 +28,17 @@ p {
 .card {
   margin:10px;
   padding: 20px;
-  width:200px;
-  height: 270px;
+  width: 80%;
+  height: auto;
   border-radius: 10px;
   background-color: rgb(27, 27, 27);
+  place-self: center;
 }
 
 .card:hover {
   background-color: rgb(57, 57, 57);
 }
 
-.albums-container {
-  display:flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .artistLink:hover {
   text-decoration: underline;
@@ -60,20 +61,45 @@ p {
 
 .artistName {
   font-size:12px;
-  font-weight: bold;
 }
 
 .albumTitle {
   margin: 10px auto;
+  font-size:12px;
+  font-weight: bold;
+}
+
+.albumTitle:hover {
+  text-decoration: underline;
 }
 
 
+/* mobile */
+@media (max-width: 668px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    margin: 20px auto;
+  }
+}
+
+/* tablet */
+@media (min-width: 669px) and (max-width: 1023px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 2px;
+  }
+}
 
 
-
-
-
-
+/* desktop */
+@media (min-width: 1024px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+}
 
 
 
