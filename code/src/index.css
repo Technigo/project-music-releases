@@ -77,9 +77,17 @@ article.vinyl-card {
 .icons {
   margin: 50% auto;
   margin: 1em;
-  width: 50px;
-  height: 50px;
-  /* opacity: 0; */
+  width: 40px;
+  height: 40px;
+}
+
+.play:hover {
+  transform: scale(2.5);
+}
+
+.icons:hover {
+  opacity: 100%;
+  filter: invert(1);
 }
 
 .icon-container {
@@ -91,26 +99,35 @@ article.vinyl-card {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  border: 2px solid red;
 }
 
 .icon-container:hover {
   opacity: 100%;
-  filter: invert(1);
+  border: 2px solid red;
+  /* filter: invert(1); */
 }
 
-.icon-container:hover .img.album-cover {
-  filter: brightness(0.4);
+.icon-container:hover + .album-cover {
+  /* filter: brightness(0.4); */
+  opacity: 40%;
 }
+
+/* .icon-container:hover + .icons {
+} */
 
 .song-title {
   font-size: 14px;
   font-family: var(--ff);
   color: var(--ffTitle);
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   letter-spacing: 2px;
+}
+
+.song-title:hover {
+  text-decoration: underline;
+  width: content;
 }
 
 .artist {
@@ -118,4 +135,11 @@ article.vinyl-card {
   font-family: var(--ff);
   color: var(--ffName);
   letter-spacing: 1px;
+}
+
+.artist:hover {
+  color: var(--ffTitle);
+  /* border-bottom: 1px solid var(--ffTitle); */
+  text-decoration: underline;
+  width: max-content;
 }
