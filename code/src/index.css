@@ -1,23 +1,92 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #181818;
+  margin: 0;
 }
+/* HEADER */
 
 h1 {
   color: #fff;
   border-bottom: 1px solid #34363a;
   padding-bottom: 12px;
+  text-align: center;
 }
 
+/* ALBUM CARDS AND WRAPPER */
+
 .album-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-cards {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 90%;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ALBUM CARD CONTENT */
+
+.image-container {
+  position: relative;
+  width: 100%;
 }
 
 .album-image {
   width: 100%;
+}
+
+.icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 85px 1fr;
+  justify-items: center;
+  align-items: center;
+  opacity: 0;
+  background-color: rgba(24, 24, 24, 0.5);
+}
+
+.icons:hover {
+  opacity: 1;
+}
+
+.heart-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+
+.play-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 80px;
+}
+
+.play-button:hover {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transform: scale(1.07);
+}
+
+.dots-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 30px;
+  height: 30px;
 }
 
 .album-text {
@@ -27,21 +96,50 @@ h1 {
   text-decoration: none;
 }
 
-.artist-text-container a {
+.artist-text {
   font-size: 14px;
   color: #a0a0a0;
   font-weight: bold;
   text-decoration: none;
 }
 
-.icons {
-  position: absolute;
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  left: 50%;
-  top: 50%;
-  z-index: 5;
+.album-text:hover,
+.artist-text:hover {
+  text-decoration: underline #fff;
+}
+
+/* This code below adds comma and/or "&" when there are several artists */
+
+.inner-artist-container:not(:first-child, :last-child)::before {
+  content: ", ";
+  color: #a0a0a0;
+}
+
+.inner-artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.inner-artist-container:only-child::before {
+  content: "";
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .album-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .album-cards {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  .album-cards {
+    width: 22.5%;
+  }
 }
