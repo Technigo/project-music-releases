@@ -31,6 +31,89 @@ code {
   grid-template-columns: 1fr;
 }
 
+/* ALBUM COVER */
+.album-container {
+  justify-self: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.album-image {
+  width: 100%;
+}
+
+/* ALBUM NAME */
+.album-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ARTIST NAME */
+.artist-name {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+/* ICONS */
+/* 
+
+TODO
+
+borde få till så att hover på play bara händer när man är på play,
+nu är det hela höjden på albumet som reagerar.
+tror iconerna blir utdragna pga justify-content: space-evenly;
+
+*/
+.icons-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon {
+  display: none;
+  padding: 0 15px;
+  filter: invert();
+  z-index: 1;
+}
+
+.play {
+  width: 50px;
+}
+.dots {
+  width: 20px;
+}
+.heart {
+  width: 25px;
+}
+
+.play:hover {
+  width: 60px;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+
+.icons-container:hover {
+  background: rgba(41, 42, 47, 0.5);
+  transition: 0.3s;
+}
+
+.icons-container:hover .icon {
+  display: block;
+  transition: 0.3s;
+}
+
 @media (min-width: 730px) {
   .container {
     width: 620px;
