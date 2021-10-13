@@ -2,15 +2,16 @@ import React from 'react';
 
 const Artists = (props) => {
   const { artistsArray } = props;
-  const allArtists = artistsArray.map((artist) => {
-    return artist.name;
-  });
   return (
-    <a>
-      {allArtists.map((artist) => {
-        return <h3 className="artist">{artist}</h3>;
+    <div className="all-artists-names">
+      {artistsArray.map((artist) => {
+        return (
+          <a href={artist.external_urls.spotify} className="artist">
+            {artist.name}
+          </a>
+        );
       })}
-    </a>
+    </div>
   );
 };
 

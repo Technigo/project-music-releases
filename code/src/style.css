@@ -46,6 +46,14 @@ a {
   text-decoration: underline;
 }
 
+.all-artists-names > a:after {
+  content: ', ';
+}
+
+.all-artists-names > a:last-of-type:after {
+  content: '';
+}
+
 .artist {
   font-size: 14px;
   font-family: 'Helvetica Neue';
