@@ -4,18 +4,23 @@ import Album from "./components/Album";
 
 // console.log(data);
 const AlbumArray = data.albums.items;
-console.log(AlbumArray);
+// console.log(AlbumArray);
+const arraySinglesOnly = AlbumArray.filter(x => x.album_type.includes('single'))
+console.log(arraySinglesOnly)
+
+const arrayAlbumsOnly = AlbumArray.filter(x => x.album_type.includes('album'))
+console.log(arrayAlbumsOnly)
 
 export const App = () => {
   return (
 
     <div className="title-wrapper">
-      <h1>New albums & singles</h1>
+      <h1>New albums</h1>
     
     
       <div className="albums-wrapper">
       
-        {AlbumArray.map((album) => {
+        {arrayAlbumsOnly.map((album) => {
 
           // const numberOfArtists = album.artists.length
 
@@ -28,39 +33,30 @@ export const App = () => {
               titleLink={album.external_urls.spotify}
               artist={album.artists}
 
-              
+            />  
+          );
+          })
+        }
+      
+      </div>
+      <h1>New singles</h1>
+    
+    
+      <div className="albums-wrapper">
+      
+        {arraySinglesOnly.map((album) => {
 
-              // artist={album.artists = ((artist, index) => {
-                
-              //    const numberOfArtists = album.artists.length
+          // const numberOfArtists = album.artists.length
 
-              //   if (numberOfArtists === index + 1 && numberOfArtists !== 1) {
-              //     return <span> & {artist.name}</span>
-              //   } else if (numberOfArtists === index + 2 && index !== 0) {
-              //     return <span>, {artist.name}</span>
-              //   } else {
-              //     return <span>{artist.name}</span>
-              //   }
-                
-              // })}
+          return (
+            
+            <Album
+              key={album.id}
+              image={album.images[1].url}
+              title={album.name}
+              titleLink={album.external_urls.spotify}
+              artist={album.artists}
 
-
-              // artist={album.artists.map((artist, index) => {
-                
-              //    const numberOfArtists = album.artists.length
-
-              //   if (numberOfArtists === index + 1 && numberOfArtists !== 1) {
-              //     return <span> & {artist.name}</span>
-              //   } else if (numberOfArtists === index + 2 && index !== 0) {
-              //     return <span>, {artist.name}</span>
-              //   } else {
-              //     return <span>{artist.name}</span>
-              //   }
-                
-              // })}
-              // artistLink={album.artists.map(
-              //   (artist) => artist.external_urls.spotify
-              // )}
             />  
           );
           })
@@ -68,6 +64,8 @@ export const App = () => {
       
       </div>
     </div>
+
+    
     
   );
 };
