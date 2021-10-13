@@ -13,7 +13,7 @@ code {
 }
 
 .container {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -33,7 +33,7 @@ code {
 
 @media (min-width: 730px) {
   .container {
-    width: 650px;
+    width: 620px;
   }
 
   .album-grid {
@@ -46,7 +46,6 @@ code {
   .container {
     width: 1100px;
   }
-
   .album-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
