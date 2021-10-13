@@ -1,0 +1,15 @@
+h1 {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header {
+    margin: 15px;
+}
+
+header {
+    margin: 20px 90px 10px;
+    border-bottom: 0.01em solid #404040;
+}

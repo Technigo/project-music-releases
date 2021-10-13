@@ -1,0 +1,22 @@
+.artist-title {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
+  text-decoration: none;
+  margin-top: 3px;
+}
+.artist-title:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* Reference for this property: https://stackoverflow.com/questions/7788018/css-selector-for-other-than-the-first-child-and-last-child/7788037 */
+.artist-title:not(:last-child):after {
+  content: ", ";
+}
+
+@media (min-width: 668px) and (max-width: 1024px) {
+  .artist-title {
+    font-size: 18px;
+  }
+}

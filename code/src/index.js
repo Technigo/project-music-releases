@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+
+import { Header } from './components/Header'
 import { App } from './App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import './index.css'
+
+ReactDOM.render(<Header />, document.getElementById('header'));
+ReactDOM.render(<App />, document.getElementById('root'));
