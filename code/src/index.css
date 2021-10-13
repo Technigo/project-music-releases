@@ -26,7 +26,7 @@ code {
   padding-bottom: 5px;
 }
 
-.title:last-of-type {
+.album-grid + .title:last-of-type {
   padding-top: 50px;
 }
 
@@ -83,7 +83,8 @@ a {
 }
 
 .artist-name:hover,
-.album-name:hover {
+.album-name:hover,
+.playlist:hover {
   text-decoration: underline;
 }
 
@@ -131,6 +132,14 @@ a {
 .icons-container:hover .icon {
   display: block;
   transition: 0.3s;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  color: #a0a0a0;
+  padding-top: 40px;
+  margin: 0 15px;
 }
 
 @media (min-width: 730px) {
