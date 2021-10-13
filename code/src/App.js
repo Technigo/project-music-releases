@@ -8,14 +8,22 @@ import { Footer } from "./components/Footer";
 console.log(data);
 
 export const App = () => {
+  const albumArray = data.albums.items;
   return (
     <div>
       <header>
         <Header />
       </header>
 
-      {data.albums.items.map((item) => {
-        return <Albumcard image={item.images[1].url} name={item.name} artist={item.artists[0].name} key={item.id} />;
+      {albumArray.map((album) => {
+        return <Albumcard 
+        key={album.id}
+        image={album.images[0].url} 
+        name={album.name} 
+        hrefAlbum={album.external_urls.spotify} 
+        artists={album.artists.map((item, index) => <a>{item.name}</a>)} 
+        hrefArtists={album.artists.map((item)=> item.external_urls.spotify)} 
+        />;
       })}
       <footer>
         <Footer />

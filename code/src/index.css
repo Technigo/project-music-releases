@@ -38,9 +38,14 @@ code {
   z-index: 1;
 }
 
+.image-container img{
+  width: 250px;
+  height: 250px;
+}
+
 .cover-container {
   position: relative;
-  width: 300px;
+  width: 250px;
   height: 250px;
 }
 
