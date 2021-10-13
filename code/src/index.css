@@ -17,14 +17,18 @@ code {
     monospace;
 }
 
+h1 {
+  display: block;
+  color: white;
+  font-size: 20px;
+  margin: 50px 0 15px 25px;
+  font-family: 'Helvetica', 'san-serif';
+}
 h2 {
   color: white;
   font-size: 15px;
   margin-bottom: 5px;
-}
-
-h2:hover {
-  text-decoration: underline;
+  font-family: 'Helvetica', 'san-serif';
 }
 
 h3 {
@@ -32,15 +36,23 @@ h3 {
   font-size: 15px;
   font-weight: 400;
   margin: 0;
+  font-family: 'Helvetica', 'san-serif';
+  display: inline;
 }
 
-h3:hover {
-  text-decoration: underline;
-}
-
-a {
+/* a {
   text-decoration: none;
 }
+
+a:hover h3 {
+  text-decoration: underline;
+  text-decoration-color: #a0a0a0;
+}
+
+a:hover h2 {
+  text-decoration: underline;
+  text-decoration-color: white;
+} */
 
 p {
   color: white;
@@ -49,24 +61,20 @@ p {
 .albums-wrapper {
   display: flex;
   flex-wrap: wrap;
-  border: blue 3px solid;
   padding: 10px;
 }
 
 .album-wrapper {
   width: 100%;
-  padding: 25px 15px;
+  padding: 0 15px 50px 15px;
 }
 
 .album-wrapper img {
   width: 100%;
 }
 
-/* .album {
-  border: 1px grey solid;
-} */
-
 @media (min-width: 500px) {
+
   .album-wrapper {
     width: 50%;
   }
@@ -77,8 +85,8 @@ p {
     max-width: 25%;
   }
 
-  .albums-wrapper {
-    max-width: 1024px;
+  .albums-wrapper, .title-wrapper {
+    max-width: 1300px;
     margin: 0 auto;
   }
 }
