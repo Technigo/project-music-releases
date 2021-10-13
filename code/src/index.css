@@ -5,6 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191414;
+  color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  margin-block-start: 10px;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-block-start: 6px;
+  margin-block-end: 50px;
 }
 
 code {
@@ -14,15 +34,41 @@ code {
 
 .spotify-album {
   width: 300px;
-  border: 2px solid
-
-
+  height: 422px;
+  border: 2px #191414
 }
 
-.article-tag-container {
-  display: flex;
+.container {
+  width: 325px;
+  margin: 0 auto;
 }
 
-.article-tag {
-  padding: 5px;
+.release-container-all {
+  display: grid;
+  grid-template-columns: 1fr;
 }
+
+/* .release-container-single {
+  margin: 0 auto;
+} */
+
+/* styling for tablet and desktop */
+
+@media only screen and (min-width: 768px) {
+  .release-container-all {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container {
+    width: 650px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .release-container-all {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .container {
+    width: 1360px;
+  }
+}
+

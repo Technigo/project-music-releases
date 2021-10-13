@@ -8,9 +8,9 @@ export const App = () => {
   const albums = data.albums.items;
 
   return (
-    <div>
+    <div class="container">
       <h1>New albums & singles</h1>
-        <div>
+        <div class="release-container-all">
           {albums.map((album) => {
             return <Album album={album}/>;
           })}
