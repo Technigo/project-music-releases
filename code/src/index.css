@@ -70,10 +70,6 @@ article.vinyl-card {
   width: 300px;
 }
 
-.album-cover {
-  padding-bottom: 1em;
-}
-
 .icons {
   margin: 50% auto;
   margin: 1em;
@@ -83,11 +79,6 @@ article.vinyl-card {
 
 .play:hover {
   transform: scale(2.5);
-}
-
-.icons:hover {
-  opacity: 100%;
-  filter: invert(1);
 }
 
 .icon-container {
@@ -105,19 +96,20 @@ article.vinyl-card {
 
 .icon-container:hover {
   opacity: 100%;
-  border: 2px solid red;
-  /* filter: invert(1); */
+  filter: invert(1);
 }
 
-.icon-container:hover + .album-cover {
-  /* filter: brightness(0.4); */
+/* .overlay {
+  width: 300px;
+  height: 300px;
+} */
+
+/* .icon-container:hover + .album-cover {
   opacity: 40%;
-}
-
-/* .icon-container:hover + .icons {
 } */
 
 .song-title {
+  padding-top: 10px;
   font-size: 14px;
   font-family: var(--ff);
   color: var(--ffTitle);
