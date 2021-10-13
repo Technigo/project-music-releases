@@ -13,7 +13,6 @@ import { Album } from './components/Album'
 
 
 const albumsArray = data.albums.items // getting albums array from the object and putting in a variable 
-console.log(albumsArray)
 
 // const allArtists = albumsArray.map(album => album.artists)
 // console.log(allArtists)
@@ -27,15 +26,17 @@ export const App = () => {
       <main className="albums-container">
       
       {albumsArray.map((album) => {
-        console.log(album)
+    
         return (
           <Album 
           key={album.name}
           image={album.images[0].url} 
           title={album.name}
           href={album.external_urls.spotify}
-          artist={album.artists.map((item, index) => <a key={item.name} href={item.name}>{item.name}</a>)} 
-          hrefArtist = {album.artists.map((url, index) => <a key={url.id} >{url.external_urls.spotify}</a>)}
+          // artist={album.artists.map((item, index) => <a key={item.name} href={item.name}>{item.name}</a>)} 
+          // hrefArtist = {album.artists.map((url, index) => <a key={url.id} >{url.external_urls.spotify}</a>)}
+          //
+          album={album.artists} 
           />
 
         )

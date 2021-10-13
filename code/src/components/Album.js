@@ -1,7 +1,8 @@
 import React from 'react';
 
 export const Album  = (props) => {
-
+    console.log('PROPS', props)
+ 
     return (
     <div className="card">
         <a href={props.href}  target="_blank" rel="noopener noreferrer">
@@ -13,21 +14,16 @@ export const Album  = (props) => {
                 <img className="icon" src="./icons/dots.svg" alt="dots-icon" />
             </div> */}
         </a>
-        <a href={props.hrefArtist} className="artistName" target="_blank" rel="noopener noreferrer">
-            <p >{props.artist}</p>
-        </a>
-        {/* <div className="album-artists">
-            {props.artists.map((artist, index) => {
-                
-                return ( 
-                <div>
-                    <p className="song-name">{props.name}</p>
-                    <a key={artist.id} href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
-                        <p className="artist-name">{artist.name}</p>
-                    </a>
-                </div>
-            )})}
-        </div> */}
+
+        {/* ARTIST - we could create a component here, but this solution works as well  */}
+        <div className="artistName">
+			{props.album.map(artist => {
+				return (
+					<a className="artistLink" key={artist.id} href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+						{artist.name}
+                    </a>)
+				})}
+		</div>
     </div>
     );
 };

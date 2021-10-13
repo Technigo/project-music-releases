@@ -39,7 +39,7 @@ p {
   flex-wrap: wrap;
 }
 
-.artistName:hover {
+.artistLink:hover {
   text-decoration: underline;
 }
 
@@ -58,7 +58,10 @@ p {
   color: #ffffff;
 }
 
-
+.artistName {
+  font-size:12px;
+  font-weight: bold;
+}
 
 .albumTitle {
   margin: 10px auto;
