@@ -1,0 +1,23 @@
+.icons-container {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: 65px;
+  }
+  
+  .heart-icon, .play-icon, .dots-icon {
+    padding: 0 15px;
+    filter: invert();
+  }
+  
+  .play-icon {
+    width: 50px;
+  }
+  
+  .play-icon:hover {
+    width: 60px;
+    transition: 0.3s;
+    padding: 0 10px;
+  }
