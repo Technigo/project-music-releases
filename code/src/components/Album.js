@@ -1,9 +1,13 @@
 import React from "react";
+import Icons from "./Icons";
 
 const Album = (props) => {
   return (
     <article className="album-card">
-      <img src={props.item.images[0].url} alt="#" />
+      <div className="image-container">
+        <Icons />
+        <img src={props.item.images[0].url} alt="album cover" />
+      </div>
       <div className="text-wrapper">
         <h2 className="song-title">
           <a href={props.item.external_urls.spotify}>{props.item.name}</a>
@@ -13,10 +17,6 @@ const Album = (props) => {
             {props.item.artists[0].name}
           </a>
         </h3>
-
-        {/* {prop.artists.items.map((items) => (
-            <Artists key={items.id} item={items} />
-          ))} */}
       </div>
     </article>
   );

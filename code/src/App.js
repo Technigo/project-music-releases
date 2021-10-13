@@ -13,13 +13,6 @@ export const App = () => {
         {data.albums.items.map((item) => (
           <Album key={item.id} item={item} />
         ))}
-
-        {/* <Album />
-        <Album />
-        <Album />
-        <Album />
-        <Album />
-        <Album /> */}
       </section>
     </>
   );
