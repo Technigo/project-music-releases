@@ -26,10 +26,54 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  column-gap: 20px;
+  row-gap: 45px;
 }
 
-.album-cover {
+.album-image-container {
+  position: relative;
+}
+
+.album-image {
   width: 300px;
+  display: block;
+}
+
+.album-cover-overlay {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 112.5px 37.5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.album-cover-overlay:hover {
+  opacity: 1;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  position: relative;
+}
+
+img.heart-icon {
+  width: 30px;
+}
+
+img.play-icon {
+  width: 75px;
+}
+
+img.dots-icon {
+  width: 30px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .album-title {
@@ -40,7 +84,7 @@ hr {
 }
 
 .album-artist {
-  font-family: 14px;
+  font-family: Helvetica;
   font-size: 14px;
   color: #a0a0a0;
 }
@@ -48,3 +92,5 @@ hr {
 .album-title:hover, .album-artist:hover {
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {}
