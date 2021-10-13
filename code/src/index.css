@@ -55,6 +55,8 @@ code {
 }
 .album-box {
   border: rgb(114, 107, 114) 2px solid;
+  width: 310px;
+  height: 420px;
 }
 .article-box {
   display: flex;
@@ -67,15 +69,44 @@ code {
   flex-direction: column;
   /* align-items: center; */
   border: 2px solid red;
+  align-items: center;
 }
 .artist-names:not(:first-child, :last-child)::before {
   color: #a0a0a0;
   content: ", ";
 }
 .artist-names:last-child::before {
+  margin-left: 2px;
   content: " & ";
   color: #a0a0a0;
 }
 .artist-names:only-child::before {
   content: "";
+}
+.album-img {
+  width: 100%;
+  height: 100%;
+}
+.icon-image-wrapper {
+  width: 100%;
+}
+.icon-wrapper {
+  /* filter: invert(100%); */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.icon {
+  width: 30px;
+  position: absolute;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
 }

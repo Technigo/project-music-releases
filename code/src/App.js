@@ -56,7 +56,7 @@ export const App = () => {
         {items.map((item) => {
           return (
             // <>
-            <div clasS="album-box">
+            <div className="album-box">
               <Album
                 key={item.id}
                 img={item.images[1].url}
