@@ -2,7 +2,7 @@ import React from "react";
 import data from "./data.json";
 import Article from "./components/Article";
 
-console.log(data.albums.items[0]);
+console.log(data.albums.items[0].artists[0].name);
 
 export const App = () => {
   return (

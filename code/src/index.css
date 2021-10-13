@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -12,6 +13,26 @@ code {
     monospace;
 }
 h1 {
+  color:white;
+}
+h2 {
+  color: white;
+}
+h2:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+}
+p:hover {
+  text-decoration: underline;
+}
+
+img:hover {
+  /* background: rgba(156, 166, 197, 0.7); */
+  background-color: black;
+  
 
 }
 
