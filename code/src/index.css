@@ -29,6 +29,12 @@ h2{
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  content: ", ";
+}
+
 
 /* Container for whole site to make it center and control weight */
 .site-container{
@@ -61,6 +67,19 @@ h2{
   color: white;
   position: relative;
 }
+
+.name::after  {
+  color: red;
+  content: ", ";
+}
+
+.name{
+  color: aquamarine;
+}
+
+/* :not(:first-of-type, :last-of-type) */
+
+
 
 .album-card:hover{
   opacity: 0.5;
