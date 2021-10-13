@@ -35,25 +35,8 @@ code {
   .container {
     width: 650px;
   }
-  /* .image-container {
-  position: relative;
-}
 
-.image-container:hover .album-image {
-  opacity: 0.5;
-}
-
-.image-container:hover .icons-container {
-  opacity: 1;
-}
-
-/* .overlay:hover {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  opacity: 0;
-} */
-  */ .album-grid {
+  .album-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
@@ -65,6 +48,6 @@ code {
   }
 
   .album-grid {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
