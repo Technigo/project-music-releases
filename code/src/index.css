@@ -40,18 +40,17 @@ img:hover {
 }
 
 .overlay {
-  display:none;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .overlay:hover {
-    /* Fallback color */
-    background-color: #1c1c1d;
-    background-color: rgba(46, 41, 41, 0.301);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+   /* Fallback color */
+   background-color: #1c1c1d;
+   background-color: rgba(8, 8, 8, 0.6);
 }
 
 .img-container {

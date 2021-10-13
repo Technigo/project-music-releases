@@ -25,7 +25,7 @@ export const App = () => {
 /* 
 
 TODO
-1. Overlay (Isabel)
+1. Overlay (Isabel) -> klart
 2. tre ikonerna (hjärta osv)()
 3. playknappen skall växa när man hovrar över den. 
 4. each artists with komma between them (Isabel)
@@ -35,3 +35,4 @@ TODO
 8. responsive page. (Hedvig)  
 
 */
+

@@ -5,7 +5,7 @@ const Article = (props) => {
     <article className="article">
       <div class="img-container">
         <div class="overlay"></div>
-        <img src={props.img} alt="album image" />
+		<img src={props.img} alt="album image" />
       </div>
       <h2>{props.title}</h2>
       <p>{props.artist}</p>
