@@ -21,7 +21,16 @@ export const App = () => {
             return <Album
               img = {item.images[1].url}
               title = {item.name}
-              artist = {item.artists[0].name}
+              // artist = {item.artists[0].name}
+
+              artist={item.artists.map((item) => <a>{item.name}</a>)}
+
+
+
+
+
+              albumLink = {item.external_urls.spotify}
+              artistLink = {item.artists[0].external_urls.spotify}
               key = {item.name}
               />
             }
@@ -35,9 +44,6 @@ export const App = () => {
 
 
 
-
-{/* <Album 
-artist={data.albums.items[0].artists[0].name}
-title={data.albums.items[0].name}
-img={data.albums.items[0].images[1].url}
-/> */}
+//the name of each artist involved with a comma between
+//When you click on the album, it should link to the album's external url in the data
+//When you click on an artist, it should link to the artist's external url in the data//
