@@ -89,20 +89,31 @@ code {
 }
 .icon-image-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-wrapper {
-  /* filter: invert(100%); */
+  filter: invert(100%);
   justify-content: center;
   text-align: center;
   width: 100%;
   height: 100%;
   display: flex;
-  position: absolute;
+  position: relative;
+  border: pink 3px solid;
 }
 .icon {
   width: 30px;
   position: absolute;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+}
+.heart-icon {
+  position: absolute;
+  margin-right: 50px;
 }
 
 @media (min-width: 768px) {

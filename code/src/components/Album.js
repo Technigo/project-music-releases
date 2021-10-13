@@ -15,7 +15,7 @@ const Album = ({ img, title, albumLink }) => {
           </a>
           <img className="dots-icon icon" src="./icons/dots.svg"></img>
         </div>
-        <img class="album-img" src={img} alt={title} />
+        <img className="album-img" src={img} alt={title} />
       </div>
 
       <p className="album-name">{title}</p>
