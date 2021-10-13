@@ -57,7 +57,8 @@ code {
   font-size: 14px;
 }
 
-.artist-name:hover {
+.artist-name:hover,
+.album-name:hover {
   text-decoration: underline;
 }
 
