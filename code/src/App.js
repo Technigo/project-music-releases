@@ -1,17 +1,19 @@
-import React from 'react'
-import data from './data.json'
+import React from 'react';
+import data from './data.json';
 
-import { Article } from './components/Article'
+import Album from './components/Album';
 
-console.log(data)
-
-const testar = (data) => {
-  fetch = data
-  .then((res) => res.json())
-  .then((data) => {
-
-
-  }
-    
-  );
-}
+export const App = () => {
+	return (
+		<>
+			{data.albums.items.map((item) => (
+				<Album
+					img={item.images[1].url}
+          albumLink={item.external_urls.spotify}
+					album={item.name}
+					artists={item.artists}
+				/>
+			))}
+		</>
+	);
+  };
