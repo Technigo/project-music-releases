@@ -12,9 +12,9 @@ const Artist = (props) => {
 
       <img className="artist-img" src={props.img} alt="spring view" />
       <h2>{props.title}</h2>
-      <p>
-        {props.description} <a href={props.music}></a>
-      </p>
+      <a href={props.musicLink} target="_blank">
+        <p>{props.artistName}</p>
+      </a>
     </article>
   );
 };

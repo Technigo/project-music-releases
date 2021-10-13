@@ -64,12 +64,12 @@ code {
 
 .icons {
   position: absolute;
-  margin-top: 0px;
-  /* margin-left: 150px; */
-  margin-bottom: 0px;
-  margin-right: 0px;
+  width: 100%;
+  justify-content: center;
+  margin: 0px;
   filter: invert(100%);
-  display: block;
+  display: flex;
+  gap: 50px;
 }
 
 .icons:hover {
@@ -85,7 +85,7 @@ code {
 }
 .img-play {
   /* filter: invert(100%); */
-  width: 50px;
+  width: 80px;
 }
 /* .article .img-dot,
 .img-heart,

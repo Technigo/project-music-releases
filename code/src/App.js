@@ -4,7 +4,8 @@ import Artist from "./components/Artist";
 
 //console.log(data);
 const items = data.albums.items;
-console.log(items);
+const artists = data.albums.items;
+console.log(artists);
 
 export const App = () => {
   return (
@@ -16,9 +17,11 @@ export const App = () => {
             <Artist
               key={item.name}
               img={item.images[0].url}
-              music={item.artists[0].external_url}
               title={item.name}
-              description={item.artists[0].name}
+              artistName={item.artists.map((artistNames) => {
+                return artistNames.name;
+              })}
+              musicLink={item.artists[0].external_url}
             />
           );
         })}
@@ -26,3 +29,9 @@ export const App = () => {
     </>
   );
 };
+
+{
+  /* {(artists = items.artists.map((artist) => {
+          return 
+        }))} */
+}
