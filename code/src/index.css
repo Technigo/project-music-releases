@@ -10,8 +10,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+body {
+  background-color: #191414;
+}
+
 .title {
-  color: green;
+  color: #ffffff;
+}
+
+.album-name {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  font-size: 14px;
 }
 
 .album-grid {
@@ -30,6 +44,7 @@ code {
   align-items: center;
   justify-content: center;
 }
+
 
 @media (min-width: 768px) {
   .album-grid {

@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../data.json'
 import { ArtistName } from 'components/ArtistName'
 import { Icons } from 'components/Icons'
+import { AlbumName } from 'components/AlbumName'
 
 console.log(data)
 
@@ -17,8 +18,8 @@ export const AlbumCover = () => {
             style={{ margin: '5px', position: 'relative' }}
           />
         </div>
-        <p>{item.name}</p> {/* ska länka till album url */}
-        <ArtistName artists={item.artists} /> {/* länk till artist url */}
+        <p className='album-name'>{item.name}</p> {/* ska länka till album url */}
+        <p className='artist-name'><ArtistName artists={item.artists} /></p> {/* länk till artist url */}
       </div>
     )
   })
