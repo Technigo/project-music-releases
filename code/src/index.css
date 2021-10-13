@@ -16,14 +16,19 @@ h1 {
   color:white;
 }
 h2 {
-  color: white;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
 }
+
 h2:hover {
   text-decoration: underline;
 }
 
 p {
-  color: white;
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
 }
 p:hover {
   text-decoration: underline;
@@ -55,10 +60,10 @@ img:hover {
 
 .container {
   display: grid;
-  Grid-template-columns: 1fr 1fr 1fr;
+  Grid-template-columns: 1fr;
   grid-gap: 10px;
   justify-items: center;
-  width: 1024px;
+  width: 320px;
   margin:0 auto;
 }
 .article {
@@ -67,3 +72,40 @@ img:hover {
 }
 
 
+/* Mobil -  */
+@media (min-width: 0px) and (max-width: 767px) { }
+
+
+/* Paddda -  */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    display: grid;
+    Grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    width: 320px;
+    margin:0 auto;
+  }
+  .article {
+    grid-column: span 1;
+  
+  }
+
+}
+
+
+/* Liten Dator -  */
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    Grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+    width: 1024px;
+    margin:0 auto;
+  }
+  .article {
+    grid-column: span 1;
+  
+  }
+}
