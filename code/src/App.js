@@ -4,8 +4,7 @@ import Album from './Album/Album'
 import Header from './Header/Header'
 import Footer from './Footer/Footer'
 import Artist from './Artist/Artist'
-
-
+import Playlists from 'Playlists/Playlists'
 
 
 const App = () => {
@@ -15,6 +14,7 @@ const App = () => {
     <>
       <Header />
       <div className='main'>
+        <Playlists />
         <div className="album-wrapper">
           {albumArray.map((album) => {
             return (
@@ -25,12 +25,30 @@ const App = () => {
                   albumLink={album.external_urls.spotify} />
                 <div className="artists">
                   {album.artists.map((artist, index) => {
-                    return (
-                      <Artist key={artist.id} artistLink={artist.external_urls.spotify}
-                        artistName={artist.name} />)
+                    if (index === 0) {
+                      return <Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                        artistName={artist.name} />
+                      // } else if (index === arr.length - 1) {
+                      //   return <>
+                      //     <span> &nbsp; & &nbsp; </span>
+                      //     <Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                      //       artistName={artist.name} />
+                      //   </>
+                    } else if (index === 1) {
+                      return <>
+                        <span> &nbsp; , &nbsp; </span>
+                        <Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                          artistName={artist.name} />
+                      </>
+                    } else {
+                      return <>
+                        <span>&nbsp; & &nbsp;</span>
+                        <Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                          artistName={artist.name} />
+                      </>
+                    }
                   })
                   }
-
                 </div>
               </div>
             )

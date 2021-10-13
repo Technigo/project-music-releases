@@ -6,9 +6,9 @@ const Album = ({ image, albumTitle, albumLink }) => {
             <div className="album-cover">
                 <img src={image} alt="album-card" className="image" />
                 <div className="icons">
-                    <img className="heart-icon" src="./icons/heart.svg" />
-                    <img className="play-icon" src="./icons/play.svg" />
-                    <img className="dot-icon" src="./icons/dots.svg" />
+                    <img className="heart-icon" src="./icons/heart.svg" alt="heart icon" />
+                    <img className="play-icon" src="./icons/play.svg" alt="play icon" />
+                    <img className="dot-icon" src="./icons/dots.svg" alt="dot icon" />
                 </div>
             </div>
             <a href={albumLink} target="_blank" rel="noreferrer noopener" className="album-title">{albumTitle}</a>
