@@ -3,9 +3,11 @@ import data from '../data.json'
 import { Album } from './Album'
 import { Header } from './Header'
 
-console.log(data)
+console.log("data", data)
 
 const items = data.albums.items
+
+console.log("items", items)
 
 export const App = () => {
   return (
@@ -15,12 +17,11 @@ export const App = () => {
         {items.map((data) => {
           return (
             <Album
-              key={data.artists[0].id}
+              key={data.id}
               src={data.images[1].url}
               title={data.name}
-              artist={data.artists[0].name}
+              arrayOfArtists={data.artists}
               titleUrl={data.external_urls.spotify}
-              artistUrl={data.artists[0].external_urls.spotify}
             />
           )
         })}
