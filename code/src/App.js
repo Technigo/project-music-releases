@@ -17,6 +17,7 @@ export const App = () => {
           //vi renderar ut varje album
           return (
             <Album
+              key={album.id}
               link={album.external_urls.spotify}
               artists={album.artists}
               name={album.name}

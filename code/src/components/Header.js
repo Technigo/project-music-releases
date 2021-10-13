@@ -1,6 +1,6 @@
 import React from "react";
 
-//här är vår header
+{/* Header component  */}
 const Header = (props) => {
 	console.log(props);
 

@@ -1,7 +1,10 @@
 import React from "react";
-
 import Icons from "./Icons";
-export const Album = (props) => {
+ 
+{/* Album components  */}
+
+
+const Album = (props) => {
   return (
     //Vi har en artikel med olika klasser. Props.link är länken till albumet på Spotify
     //props.image.url är länken till omslaget
