@@ -7,7 +7,7 @@ const Album = (props) => {
   const { key, src, title, artistsArray, albumURL } = props;
   return (
     <article className="song-card">
-      <div>
+      <div className="album-art-container">
         <img className="song-image" src={src} alt="album cover" />
         <IconsOverlay />
       </div>

@@ -29,10 +29,15 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .song-card {
   margin: 10px;
+}
+
+.album-art-container {
+  position: relative;
 }
 
 .title {
@@ -65,28 +70,51 @@ a {
 }
 
 .icons-overlay {
-  display: none;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
 }
 
 .song-image:hover + .icons-overlay {
   display: flex;
+  opacity: 1;
 }
 
-/* If this one is first, the second overwrites it. If the styling was via a parent, like 
-icons.overlay-img it will always overwrite code added to a separate child */
-.heart {
-  width: 15px;
-  height: 15px;
+.icons-overlay:hover {
+  display: flex;
+  opacity: 1;
 }
 
-/* The problem was that we did not have any comas... */
+.play:hover {
+  opacity: 1;
+}
+
+.album-art-container:hover > .song-image {
+  opacity: 0.3;
+}
+
+.heart,
+.dots {
+  width: 25px;
+  height: 25px;
+}
+
+.play {
+  width: 60px;
+  height: 60px;
+}
+
 .heart,
 .play,
 .dots {
-  margin-top: -150px;
-  width: 50px;
-  height: 50px;
   filter: invert(1);
+  opacity: 0.5;
+  margin: 20px;
 }
