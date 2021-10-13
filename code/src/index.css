@@ -10,8 +10,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
 }
 
 header {
@@ -46,11 +45,15 @@ header {
   margin: 0px;
   /* margin-left: 30px; */
 }
-
-.article img:hover {
+.article:hover {
   filter: brightness(30%);
   display: block;
 }
+
+/* .article img:hover {
+  filter: brightness(30%);
+  display: block;
+} */
 
 .artist-img {
   width: 100%;
@@ -63,48 +66,72 @@ header {
   justify-content: center;
 }
 
-.icons {
+/* .icons {
   position: absolute;
   width: 100%;
   justify-content: center;
   margin: 0px;
-  filter: invert(100%);
+  /* filter: invert(100%); */
+/* display: flex;
+  gap: 50px;
+} */
+
+.icons:hover ~ .artist-img {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  margin: 0px;
+  /* filter: invert(100%); */
   display: flex;
   gap: 50px;
-}
-
-.icons:hover {
-  display: block;
+  filter: brightness(40%);
 }
 
 .img-dot {
   width: 30px;
+  filter: invert(100%);
 }
+
 .img-heart {
-  /* filter: invert(100%); */
+  filter: invert(0.8);
   width: 30px;
 }
+.img-heart:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+
 .img-play {
-  /* filter: invert(100%); */
+  filter: invert(100%);
   width: 80px;
 }
+
 /* .article .img-dot,
 .img-heart,
 .img-play:hover {
   display: block;
 } */
 
+.artist-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.artist-container p {
+  display: flex;
+  flex-direction: row;
+  color: #a0a0a0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
 .article h2 {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   display: flex;
-}
-.article p {
-  color: #a0a0a0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  margin: 0px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {

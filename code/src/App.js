@@ -17,13 +17,13 @@ export const App = () => {
           return (
             <>
               <Album
-                key={item.name}
+                key={item.id}
                 img={item.images[0].url}
                 title={item.name}
                 albumLink={item.external_urls.spotify}
               />
 
-              {items.artist.map((artistNames) => {
+              {item.artists.map((artistNames) => {
                 return (
                   <Artist
                     artistName={artistNames.name}

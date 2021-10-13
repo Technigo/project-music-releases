@@ -1,11 +1,12 @@
 import React from "react";
 
-const Artist = (props) => {
-  console.log(props);
+const Artist = ({ artistLink, artistName }) => {
   return (
-    <a href={props.artistLink} target="_blank">
-      <p>{props.artistName}</p>
-    </a>
+    <article className="artist-container">
+      <a href={artistLink} target="_blank">
+        <p className="artist-name">{artistName}</p>
+      </a>
+    </article>
   );
 };
 
