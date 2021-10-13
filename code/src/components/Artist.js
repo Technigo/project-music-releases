@@ -1,20 +1,17 @@
 import React from "react";
 
 const Artist = (props) => {
-  const artistData = data.albums.items.artists;
-  console.log(artistData);
-
   return (
-    <div className="container">
-      {artistData.map((popstar) => {
+    <div className="artist-banana">
+      {props.item.artists.map((artist) => {
         return (
-          <h2>
-            key={popstar.id} artist={popstar.name}
-          </h2>
+          <a key={artist.id} href={artist.external_urls.spotify}>
+            <h2>{artist.name} </h2>
+          </a>
         );
       })}
     </div>
   );
 };
 
-// export default Artist;
+export default Artist;
