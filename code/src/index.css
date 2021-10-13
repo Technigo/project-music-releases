@@ -32,16 +32,34 @@ p:hover {
 img:hover {
   /* background: rgba(156, 166, 197, 0.7); */
   background-color: black;
-  
-
 }
 
-.grid {
+.overlay {
+  display:none;
+}
+
+.overlay:hover {
+    /* Fallback color */
+    background-color: #1c1c1d;
+    background-color: rgba(46, 41, 41, 0.301);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.img-container {
+  position:relative;
+}
+
+.container {
   display: grid;
   Grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   justify-items: center;
-
+  width: 1024px;
+  margin:0 auto;
 }
 .article {
   grid-column: span 1;
