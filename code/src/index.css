@@ -30,23 +30,52 @@ code {
   font-family: Helvetica, sans-serif;
   font-size: 14px;
   color: #a0a0a0;
+  display: inline-block;
+  /* display: flex;
+  flex-direction: row; */
+}
+.artist-names {
+  display: inline-block;
+
+  /* border: 2px yellow; */
+}
+
+/* .name-p {
+  flex-direction: row;
+  display: inline-block;
+  border: 2px green; */
+
+.list {
+  color: #fff;
+}
+.artist-box {
+  border: solid 2px rgb(11, 235, 67);
   display: flex;
   flex-direction: row;
 }
-.artists-name {
-  flex-direction: row;
-}
-.list {
-  color: #fff;
+.album-box {
+  border: rgb(114, 107, 114) 2px solid;
 }
 .article-box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  border: 2px solid red;
+}
+.artist-names:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+.artist-names:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+.artist-names:only-child::before {
+  content: "";
 }

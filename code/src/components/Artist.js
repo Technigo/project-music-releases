@@ -4,7 +4,7 @@ const Artist = ({ artistName, artistLink }) => {
   return (
     <div className="artist-names">
       <a href={artistLink}>
-        <p className="artist-name">{artistName}</p>
+        <p>{artistName}</p>
       </a>
     </div>
   );

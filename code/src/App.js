@@ -43,14 +43,9 @@ console.log(
     return names.external_urls.spotify;
   })
 );
-
 const items = data.albums.items;
 console.log(items);
 
-// const artister = data.albums.items.artists[0];
-// console.log(artister);
-
-//Live Share Project!!
 export const App = () => {
   return (
     <div>
@@ -60,22 +55,26 @@ export const App = () => {
       <div className="album-wrapper">
         {items.map((item) => {
           return (
-            <>
+            // <>
+            <div clasS="album-box">
               <Album
                 key={item.id}
                 img={item.images[1].url}
                 title={item.name}
                 albumLink={item.external_urls.spotify}
               />
-              {item.artists.map((artistNames) => {
-                return (
-                  <Artist
-                    artistName={artistNames.name}
-                    artistLink={artistNames.external_urls.spotify}
-                  />
-                );
-              })}
-            </>
+              <div className="artist-box">
+                {item.artists.map((artistNames) => {
+                  return (
+                    <Artist
+                      artistName={artistNames.name}
+                      artistLink={artistNames.external_urls.spotify}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+            // </>
           );
         })}
       </div>
