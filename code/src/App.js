@@ -14,8 +14,8 @@ export const App = () => {
         <hr />
       </header>
       <section className='song-card-container'>
-        {data.albums.items.map((release, index) => {
-          return <SongCard key={index} item={release} />;
+        {data.albums.items.map((release) => {
+          return <SongCard key={release.id} item={release} />;
         })}
       </section>
     </>

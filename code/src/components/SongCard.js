@@ -10,10 +10,18 @@ export const SongCard = (props) => {
     <>
       <article className='song-card'>
         <CoverImage image={props.item.images[1].url} />
-        <SongTitle title={props.item.name} />
-        {props.item.artists.map((artist, index) => {
-          return <Artist key={index} artist={artist} />;
-        })}
+        <a
+          href={props.item.external_urls.spotify}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <SongTitle title={props.item.name} />
+        </a>
+        <div className='artists-container'>
+          {props.item.artists.map((artist) => {
+            return <Artist key={artist.id} artist={artist} />;
+          })}
+        </div>
       </article>
     </>
   );
