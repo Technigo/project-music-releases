@@ -3,10 +3,10 @@ import React from 'react'
 
 export const AlbumName = props => {
   return (
-    <p key={props.name} className='album-name'>
-      {props.name}
+    <p key={props.item.name} className='album-name'>
+      <a href={props.item.external_urls.spotify} target='_blank' rel='noopener noreferrer'>
+        {props.item.name}
+      </a>
     </p>
-  ) /* className för namn för style */
-
-  /*external url*/
+  )
 }

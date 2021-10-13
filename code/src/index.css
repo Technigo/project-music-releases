@@ -26,6 +26,10 @@ code {
   padding-bottom: 5px;
 }
 
+.title:last-of-type {
+  padding-top: 50px;
+}
+
 .album-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -55,6 +59,24 @@ code {
 .artist-name {
   color: #a0a0a0;
   font-size: 14px;
+  display: inline;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.artist-name::after {
+  content: ', ';
+}
+
+.artist-name:last-child::after {
+  content: '';
+}
+
+.artist-name:nth-last-of-type(2)::after {
+  content: ' & ';
 }
 
 .artist-name:hover,
@@ -63,15 +85,7 @@ code {
 }
 
 /* ICONS */
-/* 
 
-TODO
-
-borde få till så att hover på play bara händer när man är på play,
-nu är det hela höjden på albumet som reagerar.
-tror iconerna blir utdragna pga justify-content: space-evenly;
-
-*/
 .icons-container {
   position: absolute;
   top: 0;
@@ -80,6 +94,7 @@ tror iconerna blir utdragna pga justify-content: space-evenly;
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
+  padding: 40% 0;
 }
 
 .icon {
