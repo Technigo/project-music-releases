@@ -54,6 +54,10 @@ main {
   margin-top: 1em;
 }
 
+.test {
+  color: white;
+}
+
 article.vinyl-card {
   width: 300px;
   height: 400px;

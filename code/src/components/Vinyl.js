@@ -14,6 +14,7 @@ const Vinyl = (props) => {
       </div>
       <h2 className="song-title">{props.song}</h2>
       <h2 className="artist">{props.artist}</h2>
+      {/* <h2 className="artist">{artistArray}</h2> */}
     </article>
   )
 }

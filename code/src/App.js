@@ -9,6 +9,7 @@ console.log(data.albums.items[11].artists.map((artists) => artists.name))
 console.log(data.albums.items.map((album) => album.artists))
 // I just put this in variable so it's easier
 const albumArray = data.albums.items
+const artistArray = data.albums.items[11].artists.map((artists) => artists.name)
 
 // then here we have the "entire" website
 // run this and you will see all the albums and artists
@@ -18,6 +19,7 @@ export const App = () => {
       <h1 className="main-heading">New Albums and Singles</h1>
       <hr className="horizontal-line" />
       <div className="container">
+        <div className="test"> {artistArray} </div>
         {albumArray.map((album) => {
           return (
             // prettier-ignore
