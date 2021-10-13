@@ -4,8 +4,6 @@ import data from './data.json';
 import Header from './components/Header';
 import { SongCard } from './components/SongCard';
 
-//console.log(data);
-
 export const App = () => {
   return (
     <>
@@ -14,10 +12,23 @@ export const App = () => {
         <hr />
       </header>
       <section className='song-card-container'>
-        {data.albums.items.map((release) => {
-          return <SongCard key={release.id} item={release} />;
+        {/* map to iterate through each release and put data in to song cards */}
+        {data.albums.items.map((releaseContent) => {
+          return (
+            <SongCard key={releaseContent.id} objectItem={releaseContent} />
+          );
         })}
       </section>
+      <footer>
+        <p>&#169;2021 by Sofia and Katie</p>
+        <p>
+          Team Foxes
+          <span role='img' aria-label='fox emoji'>
+            🦊
+          </span>
+          | Technigo
+        </p>
+      </footer>
     </>
   );
 };
