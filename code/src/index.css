@@ -24,9 +24,14 @@ h2 {
   color: #fff;
 }
 
+
 p {
   font-family: Helvetica;
   font-size: 14px;
+  color: #a0a0a0;
+}
+
+.artist-name-container {
   color: #a0a0a0;
 }
 
