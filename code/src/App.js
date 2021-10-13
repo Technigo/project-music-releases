@@ -4,6 +4,7 @@ import data2 from './data2.json'
 import Article from './components/Article'
 
 console.log(data)
+console.log(data.albums.items)
 console.log(data2)
 
 export const App = () => {
@@ -13,14 +14,12 @@ export const App = () => {
     // react code - looks like html but it is only convenience for us. 
     // Is complex code behind.
     <div>
-      {data2.map((article) => (
+      {data.albums.items.map((album) => (
         <Article 
         // passing props
-          title={article.title}
-          description={article.description}
-          date={article.publishDate}
-          img={article.imgURL}
-          tags={article.tags}
+          img={album.images[1].url}
+          title={album.name}
+          artists={album.artists}
         />
         ))}
       {/* another way of doing it */}
