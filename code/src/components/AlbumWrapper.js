@@ -10,6 +10,7 @@ console.log(data)
 export const AlbumWrapper = props => {
   return data.albums.items
     .filter(item => item.album_type === props.type)
+    .sort((a, b) => Date.parse(a.release_date) - Date.parse(b.release_date))
     .map(item => {
       return (
         <div className='album-container' key={item.name}>

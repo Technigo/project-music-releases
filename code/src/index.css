@@ -33,6 +33,8 @@ code {
 .album-grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
+  row-gap: 40px;
 }
 
 /* ALBUM COVER */
@@ -53,6 +55,7 @@ code {
   color: #ffffff;
   font-size: 14px;
   font-weight: bold;
+  margin: 4px 0;
 }
 
 /* ARTIST NAME */
@@ -137,7 +140,6 @@ a {
 
   .album-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
   }
 }
 
