@@ -10,11 +10,13 @@ console.log(data);
 export const App = () => {
   const albumArray = data.albums.items;
   return (
-    <div>
+    <>
+    <div className="container">
       <header>
         <Header />
       </header>
-
+     <div className="main-wrapper">
+     
       {albumArray.map((album) => {
         return <Albumcard 
         key={album.id}
@@ -25,9 +27,11 @@ export const App = () => {
         hrefArtists={album.artists.map((item)=> item.external_urls.spotify)} 
         />;
       })}
-      <footer>
-        <Footer />
-      </footer>
+      </div>
     </div>
+      <footer>
+      <Footer />
+    </footer>
+</>
   );
 };
