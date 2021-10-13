@@ -30,15 +30,6 @@ code {
   text-decoration: underline;
 }
 
-.artist-name {
-  color: #a0a0a0;
-  font-size: 14px;
-}
-
-.artist-name:hover {
-  text-decoration: underline;
-}
-
 .album-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,43 +39,32 @@ code {
   position: relative;
 }
 
+.image-container:hover .album-image {
+  opacity: 0.5;
+}
+
+.image-container:hover .icons-container {
+  opacity: 1;
+}
+
 /* .overlay:hover {
   position: relative;
   height: 300px;
   width: 300px;
   opacity: 0;
 } */
-/* 
-.icons-container {
-  position: absolute;
-  height: 100%;
-  display: flex;
-  margin-left: 65px;
-}
 
-.heart-icon, .play-icon, .dots-icon {
-  padding: 0 15px;
-  filter: invert();
-}
-
-.play-icon {
-  width: 50px;
-}
-
-.play-icon:hover {
-  width: 60px;
-  transition: 0.3s;
-  padding: 0 10px;
-} */
 
 @media (min-width: 768px) {
   .album-grid {
     grid-template-columns: 1fr 1fr;
+    width: 700px;
   }
 }
 
 @media (min-width: 1190px) {
   .album-grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1300px;
   }
 }

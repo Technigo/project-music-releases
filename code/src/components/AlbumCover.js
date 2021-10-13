@@ -13,7 +13,7 @@ export const AlbumCover = () => {
         <div className='image-container'>
           <Icons />
           {/* <div className='overlay'> */}
-          <img
+          <img className='album-image'
             src={item.images[1].url}
             alt={'Album cover for: ' + item.name}
             style={{ margin: '5px', position: 'relative' }}

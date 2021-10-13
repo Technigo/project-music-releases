@@ -11,4 +11,3 @@ export const Icons = props => {
 }
 
 
-// width: '50px'
