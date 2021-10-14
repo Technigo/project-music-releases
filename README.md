@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The aim of this project was to build a site to display the 50 most recent albums and singles on Spotify, using React and internally stored JSON.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We built an Album component, which was exported and mounted in an App file, where all of the data was stored. We used StackOverflow and on-call support for help, and asked our team mates for help. We had difficulties mounting the Artists component into the Album, we solved this by coding directly into the ALbum component. IF we had more time, we would resolve this issue and from there display all artists.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-rebecca-kara.netlify.app/
