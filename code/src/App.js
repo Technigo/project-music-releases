@@ -1,25 +1,31 @@
-import React from 'react'
-import data from './data.json'
-import {Album} from './components/Album'
+import React from "react";
+import data from "./data.json";
+import { Album } from "./components/Album";
+import { Header } from "./components/Header";
+// import { Artist } from "./components/Artist";
 
-console.log(data)
+console.log(data);
 
 export const App = () => {
   return (
-    <main className="main">
-      <h1>New albums & singles</h1>
+    <>
+      <Header />
 
-       {data.albums.map((album) => {
-         return <Album key={album.items.type} albumName={album.items.name} img={album.items.images[1].url}  />;
-       })}
+      <main className="flex-container">
+      {data.albums.items.map((album) => {
+        return (
+          <Album
+            key={album.name}
+            albumName={album.name}
+            albumImg={album.images[1].url}
+            artists={album.artists}
+          />
+        );
+      })}
 
-       {/* <Album 
-       albumImg={data.albums.items[0].images[1].url}
-       albumName={data.albums.items[0].name} 
-        /> */}
-        
+      </main>
 
-
-    </main>
-  )
-}
+      
+    </>
+  );
+};
