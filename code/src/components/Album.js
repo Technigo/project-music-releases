@@ -1,10 +1,14 @@
 import React from "react";
 
-import { Artist } from "./Artist";
 import { Icons } from "./Icons";
+import { Artist } from "./Artist";
 
 import "./album.css";
 
+    // Here we provide the album covers and import the <Icons/> component,
+    // we go on to provide the album title with a link
+    // and finally the artist(s) imported from the <Artist/> component
+    // where we add a key to them
 export const Album = (props) => {
     return (
         <article className="album-container">
@@ -21,7 +25,7 @@ export const Album = (props) => {
                     {props.item.name}
                 </a>
             </figcaption>
-            <figcaption className="artist-title">
+            <figcaption className="artist-bar">
                 {props.item.artists.map(item => {
                     return (
                         < Artist key={item.id} item={item} />

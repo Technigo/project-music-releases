@@ -6,6 +6,8 @@ import { ReactComponent as Dots } from '../assets/dots.svg';
 
 import "./icons.css";
 
+    // Importing the .svg's from their respective asset
+    // Aiming for proper markup by wrapping them into a div
 export const Icons = () => {
     return (
         <div className="icons">
