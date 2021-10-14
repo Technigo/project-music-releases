@@ -5,9 +5,136 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background-color: #191414;
+    color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* styling for main section */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* styling for each album card */
+.article {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+  margin: 10px 10px;
+}
+
+/* styling for header */
+.header-container {
+  display: grid;
+  grid-column: span 4;
+  margin: 0px 20px;
+}
+
+.header-text {
+  display: flex;
+}
+
+/* styling for overlay and album image */
+.image-container {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.album-image {
+  width: auto;
+}
+
+.overlay {
+  position: absolute;
+  width: 300px; /*här behöver vi ändra till mobile first*/
+  height: 300px; /*här behöver vi ändra till mobile first*/
+  background: rgba(127, 136, 160, 0.7);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/* styling for album name and its link */
+.album-name {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.album-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.album-link:hover {
+  text-decoration: underline;
+}
+
+.album-link:visited {
+  color: #fff;
+}
+
+/* styling for artist names p and div tag */
+.artists-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.artists {
+  text-decoration: none;
+  color: #808080;
+}
+
+.artists:hover {
+  text-decoration: underline;
+}
+
+.artists:visited {
+  color: #808080;;
+}
+
+/* styling for tablet */
+@media (min-width: 668px) {
+  /* styling for each album card */
+  .article {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 2;
+    margin: 10px 10px;
+  }
+  
+  /* styling for header */
+  .header-container {
+    display: grid;
+    grid-column: span 4;
+    margin: 0px 20px;
+  }
+  
+  .header-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-container {
+    display: flex;
+    position: relative;
+  }
+}
+
+/* styling for desktop */
+@media (min-width: 1020px) {
+    /* styling for each album card */
+    .article {
+      display: flex;
+      flex-direction: column;
+      grid-column: span 1;
+      margin: 10px 10px;
+    }
 }
