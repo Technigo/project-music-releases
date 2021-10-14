@@ -23,33 +23,32 @@
     font-size: 12px;
     font-family: Helvetica;
     font-weight: bold;
-    position: absolute;
 }
-.playlist-card {
-    width: 60px;
+.playlist-image {
+    width: 62px;
     position: relative;
     display: flex;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
-.play-2 {
+.icon {
+    position: absolute;
+}
+.play2 {
     width: 40px;
     display: none;
-    bottom:40px;
-    left:40px;
     opacity: 0.5;
     cursor: pointer;
     filter: invert(1);
 }
-.image-playlists:hover {
-    transform: scale(1.2);
-}
-.playlist-card:hover .play-2 {
+.playlist-image:hover .play2 {
     display: flex;
 }
-
-.play-2:hover {
+.image-playlists:hover {
+    transform: scale(1.3);
+}
+.play2:hover {
     transform: scale(1.1);
     opacity: 1;
 }
@@ -65,14 +64,14 @@
     color:#a0a0a0;
 }
 .play2:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     opacity: 1;
 }
 @media (min-width: 768px) {
-    .playlist-card {
+    .playlist-image {
         width: 120px;
     }
     .playlists {
-        padding: 0 15px 0px 10px;
+        padding: 0 20px 0px 10px;
     }
 }
