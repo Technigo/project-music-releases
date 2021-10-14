@@ -84,13 +84,18 @@ a {
   color: #a0a0a0;
   content: ", ";
 }
+/* a::before - puts ", " before every a */
+/* :not(:first-of-type, :last-of-type) -  CSS pseudo-class represents the first element of its type among a group of sibling elements.*/
 
 .artists a:nth-last-of-type(2)::after {
+  color: white;
   content: " & ";
-  color: #a0a0a0;
+  
 }
+/* selectorfor every <a> element that is the second p element of its parent, counting from the last child: */
 
-/* - - - - - - - -  -TABLER VIEW - - - - - - - - */
+
+/* - - - - - - - -  -TABLET VIEW - - - - - - - - */
 @media (max-width: 1280px) {
   .grid-for-album {
     grid-template-columns: repeat(2, 1fr);
