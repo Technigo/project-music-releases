@@ -1,5 +1,5 @@
 body {
-  margin: 0 15%;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -15,31 +15,21 @@ code {
 
 h1 {
   color: #fff;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 h2 {
   font-family: "Helvetica";
-  font-size: 17px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 0;
-  text-align: left;
 }
 
 h3 {
   font-family: "Helvetica";
-  font-size: 17px;
+  font-size: 18px;
   color: #a0a0a0;
-  margin-top: 5px;
-  text-align: left;
-}
-
-h2:hover {
-  text-decoration: underline;
-}
-
-h3:hover {
-  text-decoration: underline;
+  margin-top: 6px;
 }
 
 .links {
@@ -47,114 +37,37 @@ h3:hover {
 }
 
 .album-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 10px;
-  justify-items: center;
-}
-
-.album-card {
-  width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5% 10% 10%;
 }
 
 .album-container {
   width: 100%;
+  margin-bottom: 10px;
   position: relative;
+  z-index: 1;
+}
+
+.image-contanier {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.overlay {
-  display: hidden;
+img {
+  object-fit: contain;
+  width: 100%;
 }
 
-.overlay:hover {
-  /* display: block; */
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 79%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(4, 4, 4, 0.647);
-  transition: 0.5s ease;
-}
-
-.icons {
-  display: hidden;
-}
-
-.icons:hover {
-  display: block;
-}
-.heart {
-  width: 35px;
-  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
-}
-
-.play {
-  width: 80px;
-  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
-}
-
-.play:hover {
-  width: 90px;
-}
-
-.dots {
-  width: 20px;
-  filter: invert(100%) sepia(1%) saturate(2476%) hue-rotate(86deg)
-    brightness(118%) contrast(119%);
+.icons-wrapper {
+  display: none;
 }
 
 @media (min-width: 768px) {
-  body {
-    margin: 15px 30px;
-  }
-
-  .album-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-size: 17px;
-  }
-
-  h3 {
-    font-size: 17px;
-  }
 }
 
 @media (min-width: 1025px) {
-  .album-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 14px;
-  }
-
-  h3 {
-    font-size: 14px;
-  }
 }

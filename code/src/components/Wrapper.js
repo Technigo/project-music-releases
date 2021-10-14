@@ -13,11 +13,15 @@ const Wrapper = ({
   artistLink,
 }) => {
   return (
-    <div className="album-card">
-      <Image coverImage={coverImage} />
-      <Albums albumName={albumName} albumLink={albumLink} />
-      <Artists artistName={artistName} artistLink={artistLink} />
-    </div>
+    <>
+      <div className="image-container">
+        <Image coverImage={coverImage} />
+      </div>
+      <div className="info-container">
+        <Albums albumName={albumName} albumLink={albumLink} />
+        <Artists artistName={artistName} artistLink={artistLink} />
+      </div>
+    </>
   )
 }
 
