@@ -27,6 +27,7 @@ code {
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
   color: #a0a0a0;
+  display: inline;
 }
 
 h1 {
@@ -93,16 +94,24 @@ h1 {
 .heart,
 .dot {
   width: 8%;
+  opacity: 0.3;
   display: none;
 }
 
 .play {
   width: 17%;
   display: none;
+  opacity: 0.3;
 }
 
 .play:hover {
   width: 25%;
+  opacity: 1;
+}
+
+.heart:hover,
+.dot:hover {
+  opacity: 1;
 }
 
 .album-hover-overlay:hover > .play,
