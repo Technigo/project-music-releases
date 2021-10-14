@@ -1,3 +1,8 @@
+:root {
+  --main-color: #fff;
+  --secondary-color: #a0a0a0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +10,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  font-family: Helvetica;
 }
 
 code {
@@ -12,16 +19,106 @@ code {
     monospace;
 }
 
-
-.article {
-  border:2px dashed black;
-  width: 30%;
-  height: auto;
+.header {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 25px;
+  padding-top: 20px;
 }
 
-.flex-container {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.article {
   display: flex;
-  border:2px solid blue;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  color: var(--main-color);
+  padding-bottom: 20px;
+}
+
+.img-container {
+  width: 100%;
+  position: relative;
+}
+
+.album-img {
+  width: 100%;
+}
+
+.album-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.album-link {
+  text-decoration: none;
+  color: var(--main-color);
+  line-height: 20px;
+}
+
+.artists-container {
+  margin-top: 0px;
+}
+
+.artists-container p {
+  margin-top: 1px;
+}
+
+.artists-container a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  line-height: 0px;
+}
+
+.img-container:hover .overlay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(156, 166, 197, 0.5);
+}
+
+.overlay {
+  display: none;
+}
+
+.heart-icon {
+  width: 35px;
+}
+
+.dots-icon {
+  width: 20px;
+}
+
+.play-icon {
+  width: 90px;
+}
+
+.play-icon:hover {
+  transform: scale(1.1, 1.1);
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    padding: 0 40px;
+  }
 }

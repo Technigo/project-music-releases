@@ -11,13 +11,14 @@ export const App = () => {
     <>
       <Header />
 
-      <main className="flex-container">
+      <main className="grid-container">
       {data.albums.items.map((album) => {
         return (
           <Album
             key={album.name}
             albumName={album.name}
             albumImg={album.images[1].url}
+            albumLink={album.external_urls.spotify}
             artists={album.artists}
           />
         );
