@@ -10,12 +10,20 @@ const Album = (props) => {
       </div>
       <div className="text-wrapper">
         <h2 className="song-title">
-          <a href={props.item.external_urls.spotify} target="_blank">
+          <a
+            href={props.item.external_urls.spotify}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {props.item.name}
           </a>
         </h2>
         <h3 className="song-artists">
-          <a href={props.item.artists[0].external_urls.spotify} target="_blank">
+          <a
+            href={props.item.artists[0].external_urls.spotify}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {props.item.artists[0].name}
           </a>
         </h3>
