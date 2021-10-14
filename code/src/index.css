@@ -6,7 +6,7 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 15% auto;
   grid-template-rows: auto;
   grid-template-areas: 'aside main';
 }
@@ -73,7 +73,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 90%;
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -216,7 +216,7 @@ article.vinyl-card {
   grid-template-areas:
     'img name'
     'img track';
-  padding: 0.5em;
+  padding: 0.25em;
   justify-content: center;
 }
 
@@ -248,6 +248,24 @@ article.vinyl-card {
 
 .playlist-container {
   padding-top: 2em;
+}
+
+.signature {
+  margin: 30px;
+  font-family: roboto, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 18px;
+}
+
+.github-link {
+  text-decoration: underline;
+  color: var(--ffTitle);
+}
+
+.github-link:hover {
+  color: var(--ffName);
 }
 
 @media screen and (max-width: 767px) {

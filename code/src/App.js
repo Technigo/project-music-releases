@@ -34,7 +34,13 @@ export const App = () => {
           })}
         </div>
         <hr className="horizontal-line" />
-        <p> made by Lou and Jake</p>
+        <p className="signature">
+          Created by {/* prettier-ignore */}
+          <a href="https://github.com/loulunds" target="_blank" rel="noopener noreferrer"><span className="github-link">Lousanne {' '}</span></a>
+          and {/* prettier-ignore */}
+          <a href="https://github.com/jakobxlindstrom" target="_blank" rel="noopener noreferrer"><span className="github-link">Jakob</span>{' '}</a>
+          for Technigo 2021
+        </p>
       </aside>
       <main>
         <header className="header">
