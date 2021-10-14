@@ -6,4 +6,4 @@ We made a Miro board to plan our project and put the given “list of requiremen
 We started the project by making sure we could catch the correct data needed from the downloaded API information in the JSON file. Then we went on with styling our page.
 If we had more time we would make the site richer through styling, functionality and data displayed.
 View it live
-Please check out our page online here: XXXX.netlify.com
+Please check out our page online here: https://app.netlify.com/sites/heuristic-minsky-f71e10/overview
