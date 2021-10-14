@@ -35,12 +35,15 @@
 .play-icon2 {
     width: 40px;
     position: absolute;
-    display: flex;
+    display: none;
     bottom:40px;
     left:40px;
     opacity: 0.5;
     cursor: pointer;
     filter: invert(1);
+}
+.playlist-cover:hover .play-icon2 {
+    display: flex;
 }
 
 .play-icon:hover {
