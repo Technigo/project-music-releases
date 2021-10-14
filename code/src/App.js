@@ -4,9 +4,6 @@ import data from './data.json'
 // then we the vinyl at import in app.js
 import Vinyl from './components/Vinyl'
 
-// console.log(data)
-console.log(data.albums.items[11].artists.map((artists) => artists.name))
-console.log(data.albums.items.map((album) => album.artists))
 // I just put this in variable so it's easier
 const albumArray = data.albums.items
 
@@ -25,6 +22,7 @@ export const App = () => {
               key={album.artists[0].id}
               cover={album.images[1].url}
               song={album.name}
+              titleUrl={album.external_urls.spotify}
               artist={album.artists} />
           )
         })}

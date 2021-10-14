@@ -1,13 +1,5 @@
 import React from 'react'
 
-// const generateDelimiter = (index, length) => {
-//   if (index === length - 2) {
-//     return ' & '
-//   } else if (index < length - 2) {
-//     return ', '
-//   }
-// }
-
 const Artists = (props) => {
   const generateDelimiter = (index, length) => {
     if (index === length - 2) {
