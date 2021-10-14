@@ -1,7 +1,5 @@
 import React from 'react';
 
 export const Header  = () => {
-    return (
-       <h1>New Albums & singles</h1>
-    );
+    return <h1>New Albums & Singles</h1>
 };

@@ -11,8 +11,13 @@ body {
 }
 
 h1 {
-  padding: 20px 0 2px 2%;
-  font-size: 17px;
+  font-size: 30px;
+  margin: 10px auto;
+}
+
+header {
+  margin: 20px 23px;
+  border-bottom:2px solid  rgb(70, 70, 70);
 }
 
 a {
@@ -21,31 +26,76 @@ a {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-
 .card {
+  position: relative;
   margin:10px;
   padding: 20px;
   width: 80%;
-  height: auto;
+  height: auto; 
   border-radius: 10px;
   background-color: rgb(27, 27, 27);
   place-self: center;
 }
 
-.card:hover {
-  background-color: rgb(57, 57, 57);
-}
-
-
-.artistLink:hover {
-  text-decoration: underline;
+/*HOVER EFFECT AND ICONS STYLING*/
+.img-container {
+  position: relative;
 }
 
 .album-img {
+  opacity: 1;
+  display: block;
   width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-container:hover .album-img{
+  opacity:0.3;
+}
+
+.img-container:hover .icons-container{
+  opacity:1;
+}
+
+.icons-container{
+  position: absolute;
+  opacity:0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.icons {
+  width: 50px;
+  /*changing svg files color */
+  filter: brightness(0) invert(1);
+}
+
+.play-icon {
+  width:80px;
+}
+
+.play-icon:hover {
+  width: 90px;
+  transform: scale(1.07);
+}
+
+/*ARTIST STYLING*/
+.artistLink {
+  font-size: 14px;
+}
+
+.artistLink:hover {
+  text-decoration: underline;
 }
 
 /* adding this styling to separate two artist names*/
@@ -59,19 +109,25 @@ p {
   color: #ffffff;
 }
 
-.artistName {
-  font-size:12px;
-}
-
+/*ALBUM TITLE*/
 .albumTitle {
   margin: 10px auto;
-  font-size:12px;
   font-weight: bold;
 }
 
 .albumTitle:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* mobile */
@@ -103,24 +159,6 @@ p {
 
 
 
-/* article from live session */
-.article {
-  width: 300px;
-  border: 2px solid black;
-  padding: 50px;
-}
-
-.article-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.article-tag {
-  padding: 5px;
-  border: 2px solid red;
-  margin: 1px;
-}
 
 
 
