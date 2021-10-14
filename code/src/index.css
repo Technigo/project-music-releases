@@ -48,6 +48,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
 }
 
 .main-heading {
@@ -59,9 +60,9 @@ main {
 
 .header-logo {
   filter: invert(1);
-  width: 80px;
-  height: 70px;
-  margin-right: 100px;
+  width: 60px;
+  height: 60px;
+  margin-right: 5%;
 }
 
 .horizontal-line {
@@ -224,6 +225,7 @@ article.vinyl-card {
   color: var(--ffTitle);
   font-size: 15px;
   grid-area: name;
+  align-items: end;
 }
 
 .playlist-track {

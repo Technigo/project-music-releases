@@ -18,7 +18,7 @@ export const App = () => {
   return (
     <div className="project-container">
       <aside className="sidebar">
-        <h1 className="main-heading"> Playlist header </h1>
+        <h1 className="main-heading"> Playlists</h1>
         <hr className="horizontal-line" />
         <div className="playlist-container">
           {playlistArray.map((playlist) => {
