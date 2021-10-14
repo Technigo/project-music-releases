@@ -7,19 +7,14 @@ import { ReactComponent as MyHeart } from "../assets/heart.svg";
 import { ReactComponent as MyPlay } from "../assets/play.svg";
 
 const Album = ({ image, title, titleLink, artist }) => {
-  // console.log(artist.length)
   const numberOfArtists = artist.length;
-  console.log(numberOfArtists);
 
   const artistCommaAmpersand = (artist, index) => {
     if (numberOfArtists === index + 1 && numberOfArtists !== 1) {
-      // console.log('Ampersand success!')
       return <span> & {artist.name}</span>;
     } else if (numberOfArtists === index + 2 && index !== 0) {
-      // console.log('Comma success!')
       return <span>, {artist.name}</span>;
     } else {
-      // console.log('Single artist success!')
       return <span>{artist.name}</span>;
     }
   };
@@ -36,8 +31,6 @@ const Album = ({ image, title, titleLink, artist }) => {
           <CoverAlbum image={image} />
         </div>
         <SongTitle titleLink={titleLink} title={title} />
-        {/* <Artist artistLink={artistLink} artist={artist} /> */}
-
         {artist.map((artist, index) => {
           return (
             <Artist
@@ -47,12 +40,6 @@ const Album = ({ image, title, titleLink, artist }) => {
             />
           );
         })}
-
-        {/* {artist.map((ar, index) => {
-            return <Artist 
-            artistLink={ar.external_urls.spotify} artist={ar.name} />
-            
-          })} */}
       </div>
     </div>
   );
