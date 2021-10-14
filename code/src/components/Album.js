@@ -11,12 +11,12 @@ const Album = (props) => {
          <img src={props.url} alt="Album cover" />
         </div>
         <div class="icons-container">
-          <img class="icons" src="./icons/heart.svg" />
-          <img class="play-icon" src="./icons/play.svg" />
-          <img class="icons" src="./icons/dots.svg" />
+          <img class="icons" src="./icons/heart.svg" alt="heart-icon" />
+          <img class="play-icon" src="./icons/play.svg" alt="play-icon" />
+          <img class="icons" src="./icons/dots.svg" alt="three dots-icon" />
         </div>
       </div> 
-      <a className="album-title" href={props.albumUrl} target="_blank">{props.title}</a>
+      <a className="album-title" href={props.albumUrl} target="_blank" rel="noopener noreferrer">{props.title}</a>
       <div className="artist-name-container">
           {props.artist.map((artist) => (
             <Artist 
