@@ -3,6 +3,7 @@ import data from './data.json'
 
 import { Album } from './components/Album'
 import { Header } from './components/Header'
+import { Footer } from './components/Footer'
 
 console.log(data)
 
@@ -22,13 +23,7 @@ export const App = () => {
               img = {item.images[1].url}
               title = {item.name}
               // artist = {item.artists[0].name}
-
-              artist={item.artists.map((item) => <a>{item.name}</a>)}
-
-
-
-
-
+              artist={item.artists.map((item) => <span key = {item.name}>{item.name}</span> ) }
               albumLink = {item.external_urls.spotify}
               artistLink = {item.artists[0].external_urls.spotify}
               key = {item.name}
@@ -37,6 +32,7 @@ export const App = () => {
           )}
 
         </div>
+      <Footer />
     </div>
     
   )
