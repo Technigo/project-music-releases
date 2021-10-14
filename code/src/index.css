@@ -53,8 +53,8 @@ code {
 
 .overlay {
   position: absolute;
-  width: 300px; /*här behöver vi ändra till mobile first*/
-  height: 300px; /*här behöver vi ändra till mobile first*/
+  width: 300px;
+  height: 300px; 
   background: rgba(127, 136, 160, 0.7);
   display: grid;
   justify-content: center;
