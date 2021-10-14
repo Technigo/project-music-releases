@@ -249,3 +249,16 @@ article.vinyl-card {
 .playlist-container {
   padding-top: 2em;
 }
+
+@media all and (max-width: 767px) {
+  aside {
+    display: none;
+  }
+
+  #root {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 'main';
+  }
+}
