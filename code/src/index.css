@@ -34,7 +34,8 @@ h1 {
   display: block;
   color: white;
   font-size: 20px;
-  margin: 50px 0 15px 25px;
+  margin: 50px 0 15px 0;
+  padding-left: 25px;
   font-family: "Helvetica", "san-serif";
 }
 
@@ -84,7 +85,8 @@ h1 {
   right: 0;
   left: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 18%;
 }
 
 .album-hover-overlay:hover {
@@ -92,20 +94,26 @@ h1 {
 }
 
 .heart,
-.dot {
-  width: 8%;
-  opacity: 0.3;
+.dot,
+.play {
+  opacity: 0.4;
   display: none;
+}
+
+.heart {
+  width: 14%;
+}
+
+.dot {
+  width: 13%;
 }
 
 .play {
-  width: 17%;
-  display: none;
-  opacity: 0.3;
+  width: 27%;
 }
 
 .play:hover {
-  width: 25%;
+  width: 30%;
   opacity: 1;
 }
 
@@ -120,13 +128,57 @@ h1 {
   display: block;
 }
 
+.sidebar {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  display: none;
+  padding-right: 25px;
+  overflow-y: scroll;
+}
+
+.playlist-item {
+  padding: 10px 0 5px 25px;
+}
+
+.playlist-item img {
+  width: 100%;
+}
+
+.playlist-title {
+  font-family: "Helvetica", sans-serif;
+  font-size: 14px;
+  color: white;
+  margin: 5px 0 10px 0;
+}
+
 @media (min-width: 500px) {
+  .sidebar {
+    width: 25%;
+    display: inline;
+  }
+
+  .title-wrapper {
+    width: 75%;
+    margin-left: 25%;
+  }
+
   .album-wrapper {
     width: 50%;
   }
 }
 
 @media (min-width: 769px) {
+  .sidebar {
+    width: 18%;
+    max-width: 280px;
+  }
+
+  .title-wrapper {
+    width: 82%;
+    margin-left: 18%;
+  }
+
   .album-wrapper {
     max-width: 25%;
   }
@@ -134,6 +186,5 @@ h1 {
   .albums-wrapper,
   .title-wrapper {
     max-width: 1300px;
-    margin: 0 auto;
   }
 }

@@ -4,7 +4,7 @@ import PlaylistTracks from "./PlaylistTacks";
 
 const Playlist = ({ image, track, trackUrl }) => {
   return (
-    <div>
+    <div  className="playlist-item">
       <PlaylistCover image={image} />
       <PlaylistTracks track={track} trackUrl={trackUrl} />
     </div>

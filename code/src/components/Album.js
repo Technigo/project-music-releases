@@ -15,7 +15,7 @@ const Album = ({ image, title, titleLink, artist }) => {
     } else if (numberOfArtists === index + 2 && index !== 0) {
       return <span>, {artist.name}</span>;
     } else {
-      return <span>{artist.name}</span>;
+      return <span>{artist.name}</span>; 
     }
   };
 

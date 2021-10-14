@@ -20,52 +20,58 @@ const arrayAlbumsOnly = AlbumArray.filter((x) =>
 
 export const App = () => {
   return (
-    <div className="title-wrapper">
-      <h1>New albums</h1>
+    <>
+      <div className="title-wrapper">
+        <h1>New albums</h1>
 
-      <div className="albums-wrapper">
-        {arrayAlbumsOnly.map((album) => {
-          return (
-            <Album
-              key={album.id}
-              image={album.images[1].url}
-              title={album.name}
-              titleLink={album.external_urls.spotify}
-              artist={album.artists}
-            />
-          );
-        })}
+        <div className="albums-wrapper">
+          {arrayAlbumsOnly.map((album) => {
+            return (
+              <Album
+                key={album.id}
+                image={album.images[1].url}
+                title={album.name}
+                titleLink={album.external_urls.spotify}
+                artist={album.artists}
+              />
+            );
+          })}
+        </div>
+        <h1>New singles</h1>
+
+        <div className="albums-wrapper">
+          {arraySinglesOnly.map((album) => {
+            // const numberOfArtists = album.artists.length
+
+            return (
+              <Album
+                key={album.id}
+                image={album.images[1].url}
+                title={album.name}
+                titleLink={album.external_urls.spotify}
+                artist={album.artists}
+              />
+            );
+          })}
+        </div>
       </div>
-      <h1>New singles</h1>
 
-      <div className="albums-wrapper">
-        {arraySinglesOnly.map((album) => {
-          // const numberOfArtists = album.artists.length
-
-          return (
-            <Album
-              key={album.id}
-              image={album.images[1].url}
-              title={album.name}
-              titleLink={album.external_urls.spotify}
-              artist={album.artists}
-            />
-          );
-        })}
-      </div>
-      <div>
+      <div className="sidebar">
         <h1>{data2.message}</h1>
-        {PlaylistArray.map((playlist) => {
-          return (
-            <Playlist
-              key={playlist.id}
-              image={playlist.images[0].url}
-              trackUrl={playlist.external_urls.spotify}
-              track={playlist.name}
-            />
-          );
-        })}
+
+        <div>
+          {PlaylistArray.map((playlist) => {
+            return (
+              <Playlist
+                key={playlist.id}
+                image={playlist.images[0].url}
+                trackUrl={playlist.external_urls.spotify}
+                track={playlist.name}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
