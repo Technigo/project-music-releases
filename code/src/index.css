@@ -74,6 +74,19 @@ article.vinyl-card {
   width: 300px;
 }
 
+.icon-container:hover + .album-cover {
+  opacity: 30%;
+}
+
+.icon-container:hover {
+  opacity: 100%;
+  filter: invert(1);
+}
+
+/* .album-cover:hover {
+  opacity: 40%;
+} */
+
 .icons {
   margin: 50% auto;
   margin: 1em;
@@ -98,18 +111,9 @@ article.vinyl-card {
   align-items: center;
 }
 
-.icon-container:hover {
-  opacity: 100%;
-  filter: invert(1);
-}
-
 /* .overlay {
   width: 300px;
   height: 300px;
-} */
-
-/* .icon-container:hover + .album-cover {
-  opacity: 40%;
 } */
 
 .song-title {

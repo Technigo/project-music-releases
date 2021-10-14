@@ -10,9 +10,7 @@ const Vinyl = (props) => {
         <img src="/icons/play.svg" alt="play" className="icons play" />
         <img src="/icons/dots.svg" alt="dots" className="icons" />
       </div>
-      <div className="overlay">
-        <img className="album-cover" src={props.cover} alt="album artwork" />
-      </div>
+      <img className="album-cover" src={props.cover} alt="album artwork" />
       <h2 className="song-title">{props.song}</h2>
       <div className="artist-wrapper">
         <Artists artistList={props.artist} />
