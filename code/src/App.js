@@ -11,10 +11,11 @@ export const App = () => {
       <div class="container">
         {data.albums.items.map((album) => (
           <Article
-            /* key={article.id} */
             title={album.name}
             img={album.images[1].url}
-            artist={album.artists[0].name}
+            artist={album.artists.map((item, index) => (
+				<a>{index ? ',' : ''} {item.name}</a>
+			))}
           />
         ))}
       </div>
