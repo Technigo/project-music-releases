@@ -1,5 +1,6 @@
 import React from 'react';
 import Artists from './Artists';
+import { Icons } from './Icons';
 
 const Album = (props) => {
 	return (
@@ -7,6 +8,7 @@ const Album = (props) => {
 			<div className="image-container">
 				<a href={props.albumLink}>
 					<div className="overlay"></div>
+					<Icons/>
 					<img 
 						className="album-image"
 						src={props.img} 

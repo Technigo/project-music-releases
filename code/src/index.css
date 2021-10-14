@@ -62,6 +62,52 @@ code {
   color: #fff;
 }
 
+.icons-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40% 0;
+}
+
+.icon {
+  display: none;
+  padding: 0 15px;
+  filter: invert();
+  z-index: 1;
+}
+
+.heart {
+  width: 25px;
+}
+
+.play {
+  width: 50px;
+}
+
+.dots {
+  width: 30px;
+}
+
+.play:hover {
+  width: 60px;
+  transition: 0.3s;
+  padding: 0 10px;
+}
+
+.icons-container:hover {
+  background: rgba(41, 42, 47, 0.5);
+  transition: 0.3s;
+}
+
+.icons-container:hover .icon {
+  display: block;
+  transition: 0.3s;
+}
+
 /* styling for album name and its link */
 .album-name {
   display: flex;
@@ -84,14 +130,25 @@ code {
 /* styling for artist names p and div tag */
 .artists-container {
   display: flex;
-  justify-content: space-evenly;
 }
 
 .artists {
   text-decoration: none;
   color: #808080;
+  display: inline;
 }
 
+.artists::after {
+  content: ', ';
+}
+
+.artists:last-child::after {
+  content: '';
+}
+
+.artists:nth-last-of-type(2)::after {
+  content: ' & ';
+}
 .artists:hover {
   text-decoration: underline;
 }
@@ -138,3 +195,4 @@ code {
       margin: 10px 10px;
     }
 }
+
