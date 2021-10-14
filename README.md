@@ -1,4 +1,5 @@
 Music Releases
+
 Through mob-programming (3 person group) this project was to build a page showing Spotify's new album and single releases. We used React, created components and used data from downloaded Spotify API.
 The problem
 In this project we got to use React.js, HTML, CSS, JSX and React components, .map() to iterate over an array of data and mount many components and React props to feed information to components.
