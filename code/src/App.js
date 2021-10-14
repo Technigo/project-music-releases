@@ -2,49 +2,8 @@ import React from "react";
 import data from "./data.json";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
-console.log(data);
 
-console.log(
-  data.albums.items.map((names) => {
-    return names.images[1].url;
-  })
-);
-console.log(
-  data.albums.items.map((names) => {
-    return names.name;
-  })
-);
-console.log(
-  data.albums.items.map((type) => {
-    return type.album_type;
-  })
-);
-
-console.log(
-  data.albums.items.map((names) => {
-    return names.artists[0].name;
-  })
-);
-console.log(
-  data.albums.items.map((names) => {
-    return names.artists[0].id;
-  })
-);
-
-//sidan till artisten
-console.log(
-  data.albums.items.map((names) => {
-    return names.artists[0].external_urls.spotify;
-  })
-);
-// sidan till låten
-console.log(
-  data.albums.items.map((names) => {
-    return names.external_urls.spotify;
-  })
-);
 const items = data.albums.items;
-console.log(items);
 
 export const App = () => {
   return (
