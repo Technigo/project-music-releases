@@ -8,7 +8,7 @@ const Artists = ({ artistName, artistLink }) => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <h3>{artistName}</h3>
+      <h3 className="artists-divider">{artistName}</h3>
     </a>
   )
 }
