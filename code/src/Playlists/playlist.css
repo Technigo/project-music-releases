@@ -23,6 +23,7 @@
     font-size: 12px;
     font-family: Helvetica;
     font-weight: bold;
+    position: absolute;
 }
 .playlist-card {
     width: 60px;
@@ -34,7 +35,6 @@
 }
 .play-2 {
     width: 40px;
-    position: absolute;
     display: none;
     bottom:40px;
     left:40px;
