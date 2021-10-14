@@ -16,9 +16,19 @@ export const App = () => {
           <AlbumWrapper type={'single'} />
         </div>
       </div>
+      <img
+        className='menu'
+        src='/icons/dots.svg'
+        alt='dot icon'
+        onClick={e =>
+          (e.target.className = e.target.className.includes('open') ? 'menu' : 'menu open')
+        }
+      />
       <aside className='sidebar'>
         <h1 className='title'>Playlists</h1>
-        <Sidebar />
+        <ul>
+          <Sidebar />
+        </ul>
       </aside>
     </div>
   )
