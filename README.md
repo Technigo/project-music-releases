@@ -15,4 +15,4 @@ We styled our website with flexbox to make it responsive.
 
 ## View it live
 
-
+https://project-music-releases-julia-priscila.netlify.app/ 
