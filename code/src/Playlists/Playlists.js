@@ -12,9 +12,10 @@ const Playlists = () => {
                     <div key={playlist.id}>
                         <div className="playlist-cover">
                             <img className="image-playlists" src={playlist.images[0].url} alt="playlist-cover" />
+                            <a href={playlist.external_urls.spotify} className="playlist-link" target="_blank" rel="noreferrer noopener" title="Click to listen"><img className="play-icon2" src="./icons/play.svg" alt="play icon" /></a>
                         </div>
                         <a href={playlist.external_urls.spotify} className="playlist-link" target="_blank" rel="noreferrer noopener">{playlist.name} </a>
-                        <p className="track-amount">Total tracks:{playlist.tracks.total}</p>
+                        <p className="track-amount">{playlist.tracks.total} tracks</p>
                     </div>
                 )
             })}

@@ -1,23 +1,54 @@
 .playlists {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    border-right: 1px solid white;
-    padding: 10px;
+    height:100%;
+    width: 14%;
+    border-right: 1px solid #a0a0a0;
+    padding: 0 28px 0px 10px;
 }
 .playlists-header {
-    font-size: 19px;
+    font-size: 15px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .image-playlists {
     width: 100px;
 }
 .playlist-link {
+    display: flex;
+    flex-direction: column;
     text-decoration: none;
-    color: #fff;
+    color:#ffffff;
     margin: 5px 0px 0px 0px;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: Helvetica;
     font-weight: bold;
+}
+.playlist-cover {
+    width: 60px;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.play-icon2 {
+    width: 40px;
+    position: absolute;
+    display: flex;
+    bottom:40px;
+    left:40px;
+    opacity: 0.5;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.play-icon:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.image-playlists {
+    width: 100%;
 }
 .playlist-link:hover {
     text-decoration: underline;
@@ -25,4 +56,17 @@
 .track-amount {
     font-size: 12px;
     margin-top: 2px;
+    color:#a0a0a0;
+}
+.play-icon2:hover {
+    transform: scale(1.4);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+    .playlist-cover {
+        width: 120px;
+    }
+    .playlists {
+        padding: 0 15px 0px 10px;
+    }
 }

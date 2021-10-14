@@ -8,20 +8,11 @@
     color:#a0a0a0;
     font-size: 14px;
     display: flex;
+    margin: 0px 0px 0px 0px;
 }
 .artist:hover {
     text-decoration: underline;
 }
-/* to display comma after first element only, so no comma for last element and second element
-.artist:not(:nth-child(2), :last-child)::after {
-    content: ',';
-    margin: 0px 2px;
-}
-/* to display & after second element only in the case of 3 elements, so no & before the first child and before the second child as we want to have comma there */
-/* .artist:not(:first-child, :nth-child(2))::before{
-    content: '&';
-    margin: 0px 3px;
-} */
 
 .artist:not(:first-child, :last-child)::before {
     color: #a0a0a0;
@@ -35,5 +26,6 @@
 }
 .artist:only-child::before {
     content: "";
+    margin:0;
 }
 
