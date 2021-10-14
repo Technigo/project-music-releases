@@ -1,6 +1,5 @@
 import React from 'react';
 
-{/* header for page */}
 const Header = () => {
     return (
     <div className="header-container">

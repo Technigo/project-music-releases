@@ -1,7 +1,6 @@
 import React from 'react';
 import Artists from './Artists';
 
-{/* html for image and album/song name */}
 const Album = (props) => {
 	return (
 		<article className="article">
