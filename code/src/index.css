@@ -79,14 +79,14 @@ a:hover {
   z-index: 3;
   height: 30px;
   width: 30px;
-  filter: invert(73%) sepia(99%) saturate(1%) hue-rotate(34deg) brightness(102%) contrast(93%);
+  filter: brightness(0) invert(1);
 }
 
 .play-icon {
   z-index: 3;
   height: 60px;
   width: 60px;
-  filter: invert(73%) sepia(99%) saturate(1%) hue-rotate(34deg) brightness(102%) contrast(93%);
+  filter: brightness(0) invert(1);
 }
 
 .artist:hover {
@@ -103,12 +103,16 @@ a:hover {
   color: #a0a0a0;
 }
 
+/* TABLET */
+
 @media (min-width: 667px) {
   .App {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
 }
+
+/* DESKTOP*/
 
 @media (min-width: 1024px) {
   .App {

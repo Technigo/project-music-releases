@@ -4,7 +4,6 @@ import data from './data.json'
 import Header from './components/Header'
 import Album from './components/Album'
 
-console.log(data)
 
 export const App = () => {
   return (
@@ -25,5 +24,5 @@ export const App = () => {
 );
 };
   
-   
+//The App.js is inserting data from data.json into url, albumUrl, title and artist that were imported from Album.js
 
