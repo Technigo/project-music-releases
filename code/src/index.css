@@ -74,13 +74,18 @@ article.vinyl-card {
 }
 
 .icon-container:hover + .album-cover {
-  opacity: 0.3;
+  opacity: 0.18;
 }
 
 .icon-container:hover {
   opacity: 1;
   filter: invert(1);
 }
+
+/* .icon-container:hover 
+  opacity: 1;
+  filter: invert(1);
+} */
 
 /* .album-cover:hover {
   opacity: 40%;
@@ -93,8 +98,17 @@ article.vinyl-card {
   height: 40px;
 }
 
+/* .play {
+  all: unset;
+} */
+
 .play:hover {
   transform: scale(2.5);
+  opacity: 1;
+}
+
+.play-container {
+  width: 4rem;
 }
 
 .icon-container {
