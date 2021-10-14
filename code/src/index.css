@@ -88,12 +88,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .icon-wrapper {
   justify-content: space-around;
   align-items: center;
-  width: 310px;
-  height: 310px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.644);
   display: none;
@@ -117,6 +120,7 @@ p {
   .album-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .album-box {
     height: 350px;
@@ -124,12 +128,7 @@ p {
 }
 @media (min-width: 992px) {
   .album-box {
-    width: 200px;
-    height: 320px;
-    max-width: 20%;
-  }
-  .icon-wrapper {
-    width: 210px;
-    height: 200px;
+    height: 120%;
+    width: 20%;
   }
 }

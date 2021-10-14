@@ -55,9 +55,8 @@ export const App = () => {
       <div className="album-wrapper">
         {items.map((item) => {
           return (
-            <div className="album-box">
+            <div className="album-box" key={item.id}>
               <Album
-                key={item.name}
                 img={item.images[1].url}
                 title={item.name}
                 albumLink={item.external_urls.spotify}
