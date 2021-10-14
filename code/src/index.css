@@ -22,7 +22,7 @@ code {
 }
 .album-grid-container {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr;
 column-gap: 20px;
 row-gap: 40px;
 }
@@ -47,7 +47,7 @@ row-gap: 40px;
   bottom:0;
   right:0;
   left:0;
-  z-index: +1;
+  z-index: 1;
   display: block;
 }
 
@@ -72,8 +72,8 @@ row-gap: 40px;
   display: none;
 }
 
-.album-image:hover {
-
+.album-image-container:hover > .album-image-overlay{
+display:block;
 }
 .album-name:hover{
   text-decoration: underline;
@@ -81,4 +81,17 @@ row-gap: 40px;
 
 .album-artist:hover{
   text-decoration: underline;
+}
+
+
+@media (min-width: 768px){
+  .album-grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1028px){
+  .album-grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

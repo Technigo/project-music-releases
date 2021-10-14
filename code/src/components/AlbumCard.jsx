@@ -1,7 +1,12 @@
 import React from 'react';
+import ArtistName from './ArtistName';
 
 const AlbumCard = (props)=> {
-    return (
+    // console.log(props.artistUrl)
+
+    
+
+        return (
     <div className="album-card-container">
         <div className="album-image-container">
             <img className="album-image" src={props.image} alt="Album cover" />
@@ -10,7 +15,14 @@ const AlbumCard = (props)=> {
             </div>
         </div>
         <div className="album-name">{props.album}</div>
-        <div className="album-artist">{props.artist.join(", ")}</div>
+         <div className="album-artist">{props.artist.map( (name, index) => {
+            return (
+            <a href={props.artistUrl[index]} target="_blank">{<ArtistName name={name} amount={index}/>}</a>
+            )
+        })
+            }  
+        </div>
+        
     </div>
     );
 };
