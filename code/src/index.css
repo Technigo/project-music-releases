@@ -40,7 +40,7 @@ main {
   margin: 0 auto;
   width: 90%;
   border-top: 1px solid var(--ffName);
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .container {
@@ -75,11 +75,11 @@ article.vinyl-card {
 }
 
 .icon-container:hover + .album-cover {
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .icon-container:hover {
-  opacity: 100%;
+  opacity: 1;
   filter: invert(1);
 }
 
