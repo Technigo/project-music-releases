@@ -19,9 +19,6 @@ export const App = () => {
               img={item.images[1].url}
               song={item.name}
               artist={item.artists}
-              // {item.artists.map(artist => (
-              //   <a>{artist.name}</a>
-              // ))}
               key={item.name}
               // hrefArtist =
             />
