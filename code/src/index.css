@@ -1,6 +1,5 @@
 :root {
-  --primary: #9e9898;
-  /* --primary: #181818; */
+  --primary: #181818;
   --secondary: #ffffff;
   --tertiary: #a0a0a0;
 }
@@ -20,13 +19,18 @@ code {
     monospace;
 }
 
-/* HEADER */
+/* HEADER STYLES */
 .header {
   color: var(--secondary);
   font-family: Helvetica;
   font-size: 1.6rem;
   margin-left: 0.8rem;
   margin-bottom: 2rem;
+}
+
+.header h1 {
+  border-bottom: 0.2rem solid #a0a0a017;
+  padding-bottom: 5px;
 }
 
 /* Album */
@@ -39,7 +43,6 @@ code {
 
 .cover-image {
   width: 100%;
-  display: block;
 }
 
 .cover-container {
@@ -57,24 +60,72 @@ a {
 
 a:hover {
   text-decoration: underline 1px;
-  color: var(--secondary)
+  color: var(--secondary);
 }
 
-/* Artist */
 .artist-name {
   font-size: 1rem;
-  color: var(--tertiary)
+  color: var(--tertiary);
 }
 
 .icons-container {
-  display: flex;
   position: absolute;
-  
-  width: auto;
-  height: 20px;
-  top: 50%
+  background: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  display: flex;
+  opacity: 0;
+  transition: all 0.2s ease;
 }
 
-.icon-heart .icon-play .icon-dot {
+.icons-container:hover {
+  opacity: 3;
+}
 
+.icon-heart {
+  filter: invert(100%);
+  width: 2rem;
+  padding: 1rem;
+}
+
+.icon-play {
+  filter: invert(100%);
+  width: 4rem;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.icon-play:hover {
+  transform: scale(1.2);
+}
+
+.icon-dot {
+  filter: invert(100%);
+  width: 1.5rem;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 1.5rem;
+  }
 }
