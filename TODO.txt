@@ -7,8 +7,10 @@
     - album name - OK! 
     - the name of each artist involved with a comma between - OK!
 - Hover effects:
-    - When you hover over an album, it should go darker, and you should show a play button, a favourite button, and the ellipsis (see the design sketch)
-    - When you hover over the play button, it should grow (see the design sketch)
+    - When you hover over an album, it should go darker, 
+    and you should show a play button, a favourite button, 
+    and the ellipsis (see the design sketch) - OK! 
+    - When you hover over the play button, it should grow (see the design sketch) - OK! 
     - Hovering an artist name should match the design sketch
     - Hovering on an album name should match the design sketch - OK!
 - When you click on the album, it should link to the album's external url in the data -OK! 
@@ -22,4 +24,11 @@
 
 
 ***NOTES***
-data.json = is API response from Spotify
+data.json = is API response from Spotif
+
+
+
+
+
+
+
