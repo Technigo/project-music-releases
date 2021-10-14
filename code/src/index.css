@@ -251,9 +251,9 @@ article.vinyl-card {
 }
 
 @media screen and (max-width: 767px) {
-  /* aside {
+  aside {
     display: none;
-  } */
+  }
 
   .project-container {
     display: grid;

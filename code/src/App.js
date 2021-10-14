@@ -17,7 +17,7 @@ console.log(playlistData.playlists.items)
 export const App = () => {
   return (
     <div className="project-container">
-      <aside className="sidebar">
+      {/* <aside className="sidebar">
         <h1 className="main-heading"> Playlist header </h1>
         <hr className="horizontal-line" />
         <div className="playlist-container">
@@ -35,7 +35,7 @@ export const App = () => {
         </div>
         <hr className="horizontal-line" />
         <p> made by Lou and Jake</p>
-      </aside>
+      </aside> */}
       <main>
         <header className="header">
           <h1 className="main-heading">New Albums and Singles</h1>
@@ -60,6 +60,25 @@ export const App = () => {
           })}
         </div>
       </main>
+      <aside className="sidebar">
+        <h1 className="main-heading"> Playlist header </h1>
+        <hr className="horizontal-line" />
+        <div className="playlist-container">
+          {playlistArray.map((playlist) => {
+            return (
+              // prettier-ignore
+              <Playlists
+                key={playlist.id}
+                cover={playlist.images[0].url}
+                playlistName={playlist.name}
+                playlistUrl={playlist.external_urls.spotify}
+                trackNumber={playlist.tracks.total} />
+            )
+          })}
+        </div>
+        <hr className="horizontal-line" />
+        <p> made by Lou and Jake</p>
+      </aside>
     </div>
   )
 }
