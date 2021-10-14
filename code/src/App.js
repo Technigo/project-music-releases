@@ -1,25 +1,33 @@
 import React from 'react'
 import data from './data.json'
 import Album from './components/Album';
-// import Artist from './components/Artist';
+import Header from './components/Header';
 
 console.log(data)
-console.log(data.albums.items[0].images[1].url)
 
 export const App = () => {
   return (
+    
     <div>
-    {data.albums.items.map((item) => (
-     <Album
-      image = {item.images[1].url} 
-      title = {item.name}
+      <Header />
 
-      />
-    ))}
+      <section className="grid-container">
+      {data.albums.items.map((item) => {
+        return <Album
+          image = {item.images[1].url} 
+          link = {item.external_urls.spotify}
+          title = {item.name}
+          singer = {item.artists.map((item) => <span key = {item.name}>{item.name}</span> )}
+          // singer = {item.artists[0].name}
+          />
+      })}
+    
+    </section>
     </div>
     
   )
 }
 
+export default App
 
 
