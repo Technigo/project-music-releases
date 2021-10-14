@@ -12,6 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
+.album-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .container {
   width: 300px;
   margin: 0 auto;
@@ -136,10 +141,10 @@ a {
 
 .sidebar {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  min-height: 1950vh;
   width: 100%;
   color: #a0a0a0;
   padding-top: 40px;
@@ -168,7 +173,7 @@ ul,
   padding-left: 40px;
 }
 
-.open + .sidebar {
+.open ~ .sidebar {
   display: flex;
   flex-direction: column;
 }
@@ -176,6 +181,10 @@ ul,
 li {
   margin: 5px;
 }
+
+/* .open + div {
+  display: none;
+} */
 
 @media (min-width: 730px) {
   .container {
@@ -193,7 +202,7 @@ li {
     position: initial;
     top: initial;
     right: initial;
-    height: initial;
+    min-height: initial;
     width: initial;
     color: #a0a0a0;
     padding-top: 40px;

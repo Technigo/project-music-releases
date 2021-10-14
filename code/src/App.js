@@ -5,7 +5,16 @@ import { Sidebar } from 'components/Sidebar'
 
 export const App = () => {
   return (
-    <div style={{ display: 'flex', flexDirection: 'row' }}>
+    <div className='album-wrapper'>
+      {/* img tag wants a keyboard eventlistener for accessibility */}
+      <img
+        className='menu'
+        src='/icons/dots.svg'
+        alt='dot icon'
+        onClick={e =>
+          (e.target.className = e.target.className.includes('open') ? 'menu' : 'menu open')
+        }
+      />
       <div className='container'>
         <h1 className='title'>New albums</h1>
         <div className='album-grid'>
@@ -16,15 +25,6 @@ export const App = () => {
           <AlbumWrapper type={'single'} />
         </div>
       </div>
-      {/* img tag wants a keyboard eventlistener for accessibility */}
-      <img
-        className='menu'
-        src='/icons/dots.svg'
-        alt='dot icon'
-        onClick={e =>
-          (e.target.className = e.target.className.includes('open') ? 'menu' : 'menu open')
-        }
-      />
 
       <aside className='sidebar'>
         <h1 className='title'>Playlists</h1>
