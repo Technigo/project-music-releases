@@ -6,7 +6,7 @@ import { Sidebar } from "components/Sidebar";
 export const App = () => {
   return (
     <div className="album-wrapper">
-      {/* img tag wants a keyboard eventlistener for accessibility FUNKADE med ARIA-hidden..? onkeypress = onClick  onkeypress="return keyHandler(e)*/}
+      {/* img tag wants a keyboard eventlistener for accessibility onkeypress = onClick  onkeypress="return keyHandler(e)*/}
       <img
         className="menu"
         src="/icons/dots.svg"
@@ -16,7 +16,6 @@ export const App = () => {
             ? "menu"
             : "menu open")
         }
-        aria-hidden="true"
       />
       <div className="container">
         <h1 className="title">New albums</h1>
