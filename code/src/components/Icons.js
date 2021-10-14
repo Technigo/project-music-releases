@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Icons = () => {
+export const Icons = props => {
 	return (
 		<div className="icons-container">
 			<img className="heart-icon icon" src="/icons/heart.svg" alt="like-icon" />
