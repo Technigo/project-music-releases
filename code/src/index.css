@@ -1,6 +1,15 @@
+:root {
+  --gray-black: #242626;
+}
+
+#wrapper{
+  width:90vw;
+  margin: 0 auto;
+}
+
 body {
   /*added margin*/
-  margin: 20px;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,47 +17,136 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .header {
-  justify-content: flex-start;
+  color:#ffffff;
+  margin:0;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
+  
 }
 
 .app-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  background-color: var(--gray-black);
+  
 }
 
-.app-container {
-  background-color: red;
+.grid-container {
+  display:grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  justify-content: center;
+  grid-column-gap:2em;
+  grid-row-gap:2em;
+  
 }
 
-.album {
+.cover{
+  position: relative;
+}
+/* allt behöver vara i procent inuit card-klassen */
+.cover-img{
+  width:100%;
+  
+}
+
+.cover-img:hover{
+  filter: brightness(20%);
+}
+
+.cover-img:hover + .icons {
+  display:flex;
+  
+}
+
+
+.title {
+  color:#ffffff;
+  margin:0;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  /* Artist name - 14px Helvetica #a0a0a0 */
+}
+
+.artist-name a{
+  color:#a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+}
+
+.icons {
+  display:none;
+  justify-content: center;
+  position: absolute;
+  top:45%;
+}
+
+
+.icon{
+  padding: 0 5%;
+}
+
+/* .icon:hover{
+  fill:#fff;
+} */
+
+/* .icons:hover{
+
+} */
+
+.icons-play{
+  width:23%;
+  /* background-color: #242626; */
+}
+
+
+.icons-small{
+  width:11%;
+}
+
+.icons-play:hover {
+  background-color: #242626;
+}
+
+
+
+
+/* allt behöver vara i procent inuit card-klassen */
+@media (min-width: 980px) {
+  .card-container {
+    /* border: 1px solid white; */
+  }
+
+}
+
+/* .title {
   width: 300px;
   border: 2px solid #333;
   padding: 15px;
-}
+} */
 
-.album-tag-container {
+/* .album-tag-container {
   display: flex;
-}
-
+} */
+/* 
 .album-tag {
   background: #999;
   padding: 5px;
   border: 1px solid #333;
   margin: 1px;
-}
+} */
 
 /* a {
   text-decoration: none;
 } */
 
-/* .icons {
+/* /* .icons {
 }
 
 .icons-heart {
@@ -58,8 +156,15 @@ code {
 }
 
 .icons-dots {
-} 
-Album title - 14px Helvetica #ffffff
-Artist name - 14px Helvetica #a0a0a0
+}  */
+/* Album title - 14px Helvetica #ffffff
+Artist name - 14px Helvetica #a0a0a0 */
 
-*/
+/* allt behöver vara i procent inuit card-klassen */
+/* allt behöver vara i procent inuit card-klassen */
+/* allt behöver vara i procent inuit card-klassen */
+/* allt behöver vara i procent inuit card-klassen */
+/* allt behöver vara i procent inuit card-klassen */
+/* allt behöver vara i procent inuit card-klassen */
+
+
