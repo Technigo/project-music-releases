@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Album = (props) => {
+const Title = (props) => {
   return (
     <a key={props.id} href={props.item.external_urls.spotify}>
-      <h2 className="album">{props.item.name}</h2>{' '}
+      <h2 className="title">{props.item.name}</h2>{' '}
     </a>
   );
 };
 
-export default Album;
+export default Title;

@@ -5,7 +5,7 @@ import data from './data.json';
 
 import Cover from './components/Cover';
 import Artist from './components/Artist';
-import Album from './components/Album';
+import Title from './components/Title';
 
 console.log(data); // REMOVE
 
@@ -18,7 +18,7 @@ export const App = () => {
         return (
           <div key={element.id} className="app-container">
             <Cover item={element} />
-            <Album item={element} />
+            <Title item={element} />
             <Artist item={element} />
           </div>
         );
