@@ -14,7 +14,7 @@
   content: ', ';
 }
 
-.artist-title:nth-last-child(2):after {
+.artist-title:nth-last-child(2)::after {
   content: " & ";
 }
 
