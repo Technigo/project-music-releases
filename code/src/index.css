@@ -19,56 +19,53 @@ code {
 }
 .header {
   border-bottom: 2px solid rgba(53, 51, 51, 0.404);
+  margin: auto auto 10px 10px;
 }
 .album-name {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
   color: #fff;
+}
+p {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+.album-name:hover {
+  text-decoration: underline;
 }
 .artist-names a {
   text-decoration: none;
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
   color: #a0a0a0;
   display: inline-block;
-  /* display: flex;
-  flex-direction: row; */
 }
-.artist-names {
-  display: inline-block;
-
-  /* border: 2px yellow; */
+.artist-names a:hover {
+  text-decoration: underline;
 }
-
-/* .name-p {
-  flex-direction: row;
-  display: inline-block;
-  border: 2px green; */
+.artist-name p {
+  font-size: 14px;
+  padding: 0;
+}
 
 .list {
   color: #fff;
 }
 .artist-box {
-  border: solid 2px rgb(11, 235, 67);
   display: flex;
   flex-direction: row;
 }
 .album-box {
-  border: rgb(114, 107, 114) 2px solid;
   width: 310px;
-  height: 420px;
+  height: 100%;
+  margin: 10px;
 }
 .article-box {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid white;
 }
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  border: 2px solid red;
   align-items: center;
 }
 .artist-names:not(:first-child, :last-child)::before {
@@ -76,7 +73,7 @@ code {
   content: ", ";
 }
 .artist-names:last-child::before {
-  margin-left: 2px;
+  /* margin-left: 2px; */
   content: " & ";
   color: #a0a0a0;
 }
@@ -94,30 +91,54 @@ code {
   align-items: center;
 }
 .icon-wrapper {
-  filter: invert(100%);
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  position: relative;
-  border: pink 3px solid;
+  justify-content: space-around;
+  align-items: center;
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.644);
+  display: none;
 }
+.icon-image-wrapper:hover .icon-wrapper {
+  display: flex;
+}
+
 .icon {
   width: 30px;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
+  filter: invert(100%);
 }
-.heart-icon {
-  position: absolute;
-  margin-right: 50px;
+
+.play-icon:hover {
+  width: 50px;
+  overflow: hidden;
+  margin: -10px;
 }
 
 @media (min-width: 768px) {
+  /*.album-wrapper {
+  }*/
 }
+/*.album-box {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  margin: 0px;
+}*/
 
 @media (min-width: 992px) {
 }
+
+/* .card:hover .image {
+  filter: brightness(0.2);
+  opacity: 1;
+}
+.card:hover .icons {
+  display: flex;
+  width: 280px;
+}
+    
+
+.image:hover {
+  filter:brightness(0.20);
+} */

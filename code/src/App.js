@@ -57,7 +57,7 @@ export const App = () => {
           return (
             <div className="album-box">
               <Album
-                key={item.id}
+                key={item.name}
                 img={item.images[1].url}
                 title={item.name}
                 albumLink={item.external_urls.spotify}

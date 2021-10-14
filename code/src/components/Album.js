@@ -13,6 +13,7 @@ const Album = ({ img, title, albumLink }) => {
               alt="playbutton"
             />
           </a>
+
           <img className="dots-icon icon" src="./icons/dots.svg"></img>
         </div>
         <img className="album-img" src={img} alt={title} />
