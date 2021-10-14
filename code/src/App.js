@@ -11,12 +11,14 @@ export const App = () => {
       <div class="container">
         {data.albums.items.map((album) => (
           <Article
-            /* key={article.id} */
             title={album.name}
             titleClick={album.external_urls.spotify}
             img={album.images[1].url}
-            artist={album.artists[0].name}
-            artistClick={album.artists[0].external_urls.spotify}
+            artist={album.artists.map((item, index) => (
+              <a>
+                {index ? "," : ""} {item.name}
+              </a>
+            ))}
           />
         ))}
       </div>
@@ -39,4 +41,3 @@ TODO
 8. (klart) responsive page. (Hedvig)   
 
 */
-
