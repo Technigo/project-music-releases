@@ -16,6 +16,7 @@ export const App = () => {
           <AlbumWrapper type={'single'} />
         </div>
       </div>
+      {/* img tag wants a keyboard eventlistener for accessibility */}
       <img
         className='menu'
         src='/icons/dots.svg'
@@ -24,6 +25,7 @@ export const App = () => {
           (e.target.className = e.target.className.includes('open') ? 'menu' : 'menu open')
         }
       />
+
       <aside className='sidebar'>
         <h1 className='title'>Playlists</h1>
         <ul>
