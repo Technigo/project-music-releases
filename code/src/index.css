@@ -123,13 +123,6 @@ p {
 
 
 
-
-
-
-
-
-
-
 /* mobile */
 @media (max-width: 668px){
   .albums-container {
@@ -146,6 +139,16 @@ p {
     grid-template-columns: 2fr 2fr;
     grid-column-gap: 2px;
   }
+
+  .card {
+    width: auto;
+    height: 400px;
+    margin-bottom: 5px;
+  }
+
+  .album-img {
+    max-width: 360px;
+  }
 }
 
 
@@ -154,6 +157,13 @@ p {
   .albums-container {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
+    max-width: 1440px;
+  }
+
+  .card {
+    width: auto;
+    height: 370px;
+    margin-bottom: 2px;
   }
 }
 
