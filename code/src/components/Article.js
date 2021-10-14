@@ -3,8 +3,8 @@ import React from "react";
 const Article = (props) => {
   return (
     <article className="article">
-      <div class="img-container">
-        <div class="overlay"></div>
+      <div className="img-container">
+        <div className="overlay"></div>
         <a href="{props.titleClick}">
           <img src={props.img} alt="album image" />
         </a>
