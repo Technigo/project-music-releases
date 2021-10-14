@@ -11,27 +11,30 @@ export const App = () => {
   const albumArray = data.albums.items;
   return (
     <>
-    <div className="container">
-      <header>
-        <Header />
-      </header>
-     <div className="main-wrapper">
-     
-      {albumArray.map((album) => {
-        return <Albumcard 
-        key={album.id}
-        image={album.images[0].url} 
-        name={album.name} 
-        hrefAlbum={album.external_urls.spotify} 
-        artists={album.artists.map((item, index) => <a>{item.name}</a>)} 
-        hrefArtists={album.artists.map((item)=> item.external_urls.spotify)} 
-        />;
-      })}
+      <div className="container">
+        <header>
+          <Header />
+        </header>
+        <div className="main-wrapper">
+          {albumArray.map((album) => {
+            return (
+              <Albumcard
+                key={album.id}
+                image={album.images[0].url}
+                name={album.name}
+                hrefAlbum={album.external_urls.spotify}
+                artists={album.artists.map((item, index) => (
+                  <span>{item.name}</span>
+                ))}
+                hrefArtists={album.artists.map((item) => item.external_urls.spotify)}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
       <footer>
-      <Footer />
-    </footer>
-</>
+        <Footer />
+      </footer>
+    </>
   );
 };
