@@ -141,11 +141,8 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-
   color: #a0a0a0;
   padding-top: 40px;
-
-  /* margin: 0 15px; */
   z-index: 1;
   background: rgba(41, 42, 47, 0.95);
 }
@@ -168,7 +165,6 @@ ul,
 .sidebar h1 {
   list-style: none;
   padding-left: 40px;
-  /* padding: 0; */
 }
 
 .open + .sidebar {
@@ -198,10 +194,8 @@ li {
     right: initial;
     height: initial;
     width: initial;
-    /* flex-direction: column; */
     color: #a0a0a0;
     padding-top: 40px;
-    /* margin: 0 15px; */
     z-index: 1;
     background: initial;
   }
