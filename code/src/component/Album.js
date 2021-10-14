@@ -4,7 +4,12 @@ import React from 'react';
 export const Album = (props) => {
 	//rendering album url and album name in this component
 	return (
-		<a className="album-url" href={props.albumUrl} target="_blank">
+		<a
+			className="album-url"
+			href={props.albumUrl}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			<p className="album-name">{props.albumTitle}</p>
 		</a>
 	);
