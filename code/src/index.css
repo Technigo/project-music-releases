@@ -50,12 +50,20 @@ img:hover {
   position: absolute;
   right: 0;
   top: 0;
+  display:grid;
+  grid-template-columns: auto 50px auto;
 }
 
 .overlay:hover {
    /* Fallback color */
    background-color: #1c1c1d;
    background-color: rgba(8, 8, 8, 0.6);
+}
+.overlay:hover .Heart, .overlay:hover .Dots, .overlay:hover .Play {
+  fill: white;
+  display: block;
+  margin: auto;
+  grid-column: span 1;
 }
 
 .img-container {
@@ -73,6 +81,14 @@ img:hover {
 .article {
   grid-column: span 1;
 
+}
+
+.Heart, .Play, .Dots {
+  fill: white;
+  display: block;
+  margin: auto;
+  grid-column: span 1;
+  display: none;
 }
 
 

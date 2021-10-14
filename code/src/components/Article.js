@@ -1,13 +1,20 @@
 import React from "react";
-import { ReactComponent as MyCustomLogo } from "../icons/heart.svg";
+import { ReactComponent as Heart } from "../icons/heart.svg";
+import { ReactComponent as Play } from "../icons/play.svg";
+import { ReactComponent as Dots } from "../icons/dots.svg";
 
 const Article = (props) => {
   return (
     <article className="article">
-      <img src="./icons/heart.svg" />
-      <MyCustomLogo />
+      {/* <Heart className="Heart" />
+      <Play className="Play" />
+      <Dots className="Dots" /> */}
       <div className="img-container">
-        <div className="overlay"></div>
+        <div className="overlay">
+          <Heart className="Heart" height="50px" width="50px" />
+          <Play className="Play" height="50px" width="50px" />
+          <Dots className="Dots" height="50px" width="50px" />
+        </div>
         <a href="{props.titleClick}">
           <img src={props.img} alt="album image" />
         </a>
