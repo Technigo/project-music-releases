@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  box-sizing: border-box;
 }
 
 code {
@@ -14,27 +15,42 @@ code {
     monospace;
 }
 .content-container {
-  margin: 15px;
+ margin: 15px 30px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 
 .main-heading{
+  width: 100%;
   border-bottom: solid 2px rgb(73, 73, 73);
+  display: block;
+  text-align: center;
 }
 .album-grid-container {
 display: grid;
+justify-self: center;
 grid-template-columns: 1fr;
 column-gap: 20px;
 row-gap: 40px;
 }
 
+.album-grid-container > {
+  justify-self: center;
+}
+
 .album-card-container{
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .album-image-container{
+  width: 100%;
+  max-width:300px;
   position:relative;
-  width: 300px;
-}
+
+ }
 
   /*.album-image {
  position:absolute; 
@@ -48,32 +64,45 @@ row-gap: 40px;
   right:0;
   left:0;
   z-index: 1;
-  display: block;
-}
+  display: none;
+  padding: 20px;
+  }
 
-.heart-icon{
+.heart-icon, .dots-icon{
   width: 30px;
   z-index: 5;
+  fill: white
+}
+
+.play-icon{
+  width: 80px;
+  z-index: 5;
+  fill: white;
 }
 
 .album-name {
+  max-width: 300px;
+  margin-top:10px;
   font-size: 14px;
   font-family: Helvetica;
   color: #fff;
   font-weight: 700; /*makes the text bold*/
+  word-wrap: break-word;
 }
 
 .album-artist {
+  max-width: 300px;
+  margin-top:10px;
   font-size: 14px;
   font-family: Helvetica;
-  color: #a0a0a0;
-}
-.album-image-overlay{
-  display: none;
+  color:white;
+  word-wrap: break-word;
 }
 
 .album-image-container:hover > .album-image-overlay{
-display:block;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
 }
 .album-name:hover{
   text-decoration: underline;
@@ -83,15 +112,71 @@ display:block;
   text-decoration: underline;
 }
 
+.play-icon:hover{
+width: 100px;
+}
+
+.icons { 
+  display: none; 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* I saw this in a thread from stackoverflow:
+
+"You can try this CSS if i understod you question correct. The brightness will get the cover to look a bit dark."
+
+.classname(cover):hover{ 
+  filter: brightness(30%); }
+
+and this to fix the icons:
+.classname(icon):hover~ 
+
+.classname(cover-img) { 
+  filter: brightness(30%); }
+
+I also remember that i struggled a bit with the icons and cover on hover, so a tips if you want :) -->
+
+.icons { 
+  display: none; 
+}
+ 
+.cover:hover .icons{
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute; 
+  z-index: 2; 
+  width: 300px; 
+
+  .icons:hover > .cover-img { 
+    filter: brightness(30%) 
+  }
+} */
+
 
 @media (min-width: 768px){
   .album-grid-container{
     grid-template-columns: 1fr 1fr;
   }
+
+  .main-heading{
+    align-self: start;
+  }
 }
 
-@media (min-width: 1028px){
+@media (min-width: 1280px){
   .album-grid-container{
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .main-heading{
+    align-self: start;
+    padding-left: 20px;
+    text-align: start;
   }
 }

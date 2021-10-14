@@ -9,7 +9,8 @@ let workArr = data.albums.items.map( album => {
     image: album.images[1].url,
     name: album.artists.map( artist => artist.name), 
     album: album.name,
-    artistUrl: album.artists.map( artist => artist.external_urls.spotify)
+    artistUrl: album.artists.map( artist => artist.external_urls.spotify),
+    albumUrl: album.external_urls.spotify
   }
 });
   
@@ -29,6 +30,7 @@ export const App = (props) => {
                                 album={release.album} 
                                 artist={release.name}
                                 artistUrl={release.artistUrl}
+                                albumUrl={release.albumUrl}
                                  />)
 }     
      </div>
