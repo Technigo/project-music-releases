@@ -156,6 +156,7 @@ a {
   z-index: 2;
   margin: 20px 10px;
 }
+
 .menu:hover {
   width: 30px;
   transition: 0.3s;
