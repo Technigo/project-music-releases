@@ -4,7 +4,7 @@
   --ffTitle: #ffffff;
 }
 
-#root {
+.project-container {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: auto;
@@ -250,15 +250,15 @@ article.vinyl-card {
   padding-top: 2em;
 }
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   aside {
     display: none;
   }
 
-  #root {
+  .project-container {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 'main';
   }
-} */
+}

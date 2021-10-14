@@ -16,7 +16,7 @@ console.log(playlistData.playlists.items)
 // run this and you will see all the albums and artists
 export const App = () => {
   return (
-    <>
+    <div className="project-container">
       <aside className="sidebar">
         <h1 className="main-heading"> Playlist header </h1>
         <hr className="horizontal-line" />
@@ -60,6 +60,6 @@ export const App = () => {
           })}
         </div>
       </main>
-    </>
+    </div>
   )
 }
