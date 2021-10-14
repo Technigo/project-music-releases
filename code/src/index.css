@@ -148,7 +148,7 @@ a {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 10px;
   width: 25px;
