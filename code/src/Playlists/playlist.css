@@ -24,7 +24,7 @@
     font-family: Helvetica;
     font-weight: bold;
 }
-.playlist-cover {
+.playlist-card {
     width: 60px;
     position: relative;
     display: flex;
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
 }
-.play-icon2 {
+.play-2 {
     width: 40px;
     position: absolute;
     display: none;
@@ -42,11 +42,14 @@
     cursor: pointer;
     filter: invert(1);
 }
-.playlist-cover:hover .play-icon2 {
+.image-playlists:hover {
+    transform: scale(1.2);
+}
+.playlist-card:hover .play-2 {
     display: flex;
 }
 
-.play-icon:hover {
+.play-2:hover {
     transform: scale(1.1);
     opacity: 1;
 }
@@ -61,12 +64,12 @@
     margin-top: 2px;
     color:#a0a0a0;
 }
-.play-icon2:hover {
-    transform: scale(1.4);
+.play2:hover {
+    transform: scale(1.5);
     opacity: 1;
 }
 @media (min-width: 768px) {
-    .playlist-cover {
+    .playlist-card {
         width: 120px;
     }
     .playlists {

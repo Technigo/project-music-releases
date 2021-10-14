@@ -1,12 +1,18 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Week 9-Technigo bootcamp 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+# Music Releases
+
+This project was made on week 9 for Technigo bootcamp as a pair-programming project (by Priscila Alfaro Segura & Julia Nikitina).
+The goal was to create a "New Releases" music site using data from Spotify and display album and single releases. We practiced with React and used several components to achieve it.  
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We approached the problem by building only one component Album at first, which we rendered using .map() and passed the album data using props, more concretely we destructured our props so we did not need to write the props parameter when using them. 
+But then we realised that we needed one more component for Artists to fetch the data correctly and display the link for each artist if it was more than one that worked on album.
+We easily achieved blue level, so we went for red and some assignements for black level to display Playlists also in a sidebar on the left.  
+We styled our website with flexbox to make it responsive.
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+

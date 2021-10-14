@@ -27,21 +27,21 @@
 .album-cover:hover .icons {
     display: flex;
 }
-.dot-icon, .heart-icon {
+.dot, .heart {
     width: 30px;
     margin: 20px;
     filter: invert(1);
     cursor: pointer;
 }
 
-.play-icon {
+.play {
     width: 80px;
     margin:20px;
     cursor: pointer;
     opacity: 0.7;
     filter: invert(1);
 }
-.play-icon:hover {
+.play:hover {
     transform: scale(1.1);
     opacity: 1;
 }
