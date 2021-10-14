@@ -11,7 +11,7 @@ const Playlists = () => {
                 return (
                     <div key={playlist.id}>
                         <div className="playlist-image">
-                            <img className="image-playlists" src={playlist.images[0].url} alt="image-playlists" />
+                            <img className="image-playlists" src={playlist.images[0].url} alt="playlists" />
                             <div className="icon"><a href={playlist.external_urls.spotify} className="playlist-link" target="_blank" rel="noreferrer noopener" title="Click to listen"><img className="play2" src="./icons/play.svg" alt="play icon" /></a></div>
                         </div>
                         <a href={playlist.external_urls.spotify} className="playlist-link" target="_blank" rel="noreferrer noopener">{playlist.name} </a>
