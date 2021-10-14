@@ -13,8 +13,8 @@ export const App = () => {
     <div>
       <Header title="New albums and singles" />
       <div className="album-container">
-        {data.albums.items.map((album) => {
-          //vi renderar ut varje album
+        {data.albums.items.map((album) => {  {/* Here we render album items */}
+    
           return (
             <Album
               key={album.id}

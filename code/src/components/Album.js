@@ -1,13 +1,12 @@
 import React from "react";
 import Icons from "./Icons";
- 
-{/* Album components  */}
+
+{/* Album components  */ }
 
 
 const Album = (props) => {
   return (
-    //Vi har en artikel med olika klasser. Props.link är länken till albumet på Spotify
-    //props.image.url är länken till omslaget
+
     <article className="album-cards">
       <a
         className="image-container"
@@ -15,8 +14,9 @@ const Album = (props) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {" "}
         {/*Essentially, adding rel="noopener noreferrer" to links protects your site's users against having the site you've linked to potentially hijacking the browser*/}
+
+        {" "}
         <img
           className="album-image"
           src={props.image.url}
@@ -25,7 +25,6 @@ const Album = (props) => {
         <Icons />
       </a>
 
-      {/* En props med länk och namn på albumbet */}
       <a
         className="album-text"
         href={props.link}
@@ -35,9 +34,8 @@ const Album = (props) => {
         {props.name}
       </a>
 
-      {/* En props med artist-namn. Och vi använder .map för att rendera ut varje artist  */}
       <div className="artist-text-container">
-        {props.artists.map((artist) => {
+        {props.artists.map((artist) => {       {/* Here we render artists */}
           return (
             <span className="inner-artist-container">
               <a
@@ -56,7 +54,7 @@ const Album = (props) => {
   );
 };
 
-// Länkar som jag läst igenom och skrivit kod utifrån
+// Links
 // https://stackoverflow.com/c/technigo/questions/285
 // https://stackoverflow.com/c/technigo/questions/869
 // https://stackoverflow.com/c/technigo/questions/301/302#302
