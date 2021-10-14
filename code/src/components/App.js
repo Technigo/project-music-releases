@@ -2,6 +2,7 @@ import React from "react";
 import data from "../data.json";
 import { Album } from "./Album";
 import { Header } from "./Header";
+import { Footer } from "./Footer"
 
 console.log("data", data);
 
@@ -18,6 +19,7 @@ export const App = () => {
           return <Album key={data.id} src={data.images[1].url} title={data.name} arrayOfArtists={data.artists} titleUrl={data.external_urls.spotify} />;
         })}
       </div>
+      <Footer />
     </div>
   );
 };

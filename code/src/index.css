@@ -124,6 +124,18 @@ a {
   text-decoration: underline;
 }
 
+footer {
+  padding-top: 70px;
+}
+
+.creators {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin-top: 6px;
+  text-align: center;
+}
+
 @media (min-width: 660px) {
   header {
     width: 660px;
