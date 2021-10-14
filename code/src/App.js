@@ -1,11 +1,10 @@
 import React from "react";
 import data from "./data.json";
+
+// components//
 import { Header } from "./components/Header";
 import { Albumcard } from "./components/Albumcard";
 import { Footer } from "./components/Footer";
-// import { Overlay } from "./components/Overlay";
-
-console.log(data);
 
 export const App = () => {
   const albumArray = data.albums.items;
