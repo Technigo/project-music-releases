@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Header = (props) => {
+const Header = () => {
   return <h1 className="header">New albums & singles</h1>;
 };
 
