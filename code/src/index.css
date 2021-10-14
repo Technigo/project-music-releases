@@ -19,12 +19,23 @@ h2 {
   margin-block-start: 10px;
   margin-block-end: 0;
 }
+h2 a {
+  text-decoration: none;
+  color: inherit;
+}
+h2:hover, h3:hover, a:hover {
+  text-decoration: underline;
+  
+}
 
 h3 {
   font-size: 14px;
   color: #b3b3b3;
   margin-block-start: 6px;
   margin-block-end: 50px;
+}
+h3:hover, a:hover {
+  font-weight: bold;
 }
 
 code {
@@ -46,11 +57,51 @@ code {
 .release-container-all {
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
 }
 
-/* .release-container-single {
-  margin: 0 auto;
+.spotify-card-container {
+  
+}
+
+.spotify-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+  
+}
+
+/* .spotify-card:hover,
+.icons-container:hover {
+  display: block;
 } */
+
+.heart {
+  width: 25px;
+}
+
+.play {
+  width: 60px;
+ 
+}
+
+.dots {
+  width: 15px
+}
+
+.play:hover {
+  
+  transition: 0.25s ease-in-out;
+  transform: scale(1.2);
+}
 
 /* styling for tablet and desktop */
 

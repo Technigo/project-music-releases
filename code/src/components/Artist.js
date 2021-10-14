@@ -4,7 +4,9 @@ const Artist= (props) => {
     console.log(props)
 
     return (
-        <h2>{props.name}</h2>
+        <h2>{props.album.artists[0].name}</h2>
+        //ej länkat ihop detta rätt
+        
     )
 }
 
