@@ -37,7 +37,14 @@ export const App = () => {
         <p> made by Lou and Jake</p>
       </aside>
       <main>
-        <h1 className="main-heading">New Albums and Singles</h1>
+        <header className="header">
+          <h1 className="main-heading">New Albums and Singles</h1>
+          {/* prettier-ignore */}
+          <img
+            src="/icons/spotify4.svg"
+            alt="spotify logo"
+            className="header-logo" />
+        </header>
         <hr className="horizontal-line" />
         <div className="container">
           {albumArray.map((album) => {

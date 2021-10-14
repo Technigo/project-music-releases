@@ -44,11 +44,24 @@ main {
   grid-area: main;
 }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .main-heading {
   margin-left: 5%;
   padding: 1em 0em 10px 0em;
   color: var(--ffTitle);
   font-size: 28px;
+}
+
+.header-logo {
+  filter: invert(1);
+  width: 80px;
+  height: 70px;
+  margin-right: 100px;
 }
 
 .horizontal-line {
@@ -86,7 +99,6 @@ article.vinyl-card {
 .img.album-cover {
   height: 300px;
   width: 300px;
-  /* z-index: -1; */
 }
 
 .icon-container:hover {
@@ -198,11 +210,6 @@ article.vinyl-card {
 }
 
 .playlist-cards {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: left;
-  justify-content: flex-start; */
   display: grid;
   grid-template-columns: auto 60%;
   grid-template-rows: 1fr 1fr;
@@ -217,19 +224,12 @@ article.vinyl-card {
   color: var(--ffTitle);
   font-size: 15px;
   grid-area: name;
-  /* padding-left: 20px; */
 }
 
 .playlist-track {
-  /* color: var(--ffTitle);
-  font-size: 10px;
-  grid-area: track;
-  padding-left: 20px;
-  align-self: center; */
   color: var(--ffTitle);
   font-size: 15px;
   grid-area: name;
-  /* padding-left: 20px; */
 }
 
 .playlist-name:hover {
@@ -250,7 +250,7 @@ article.vinyl-card {
   padding-top: 2em;
 }
 
-@media all and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   aside {
     display: none;
   }
@@ -261,4 +261,4 @@ article.vinyl-card {
     grid-template-rows: auto;
     grid-template-areas: 'main';
   }
-}
+} */

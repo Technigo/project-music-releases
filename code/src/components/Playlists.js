@@ -10,7 +10,7 @@ const Playlists = (props) => {
         target="_blank"
         rel="noopener noreferrer"
         alt="playlist" />
-      <a href={props.playlistUrl}>
+      <a href={props.playlistUrl} target="_blank" rel="noopener noreferrer">
         <h3 className="playlist-name">{props.playlistName}</h3>
       </a>
       <p className="platlist-track">{props.trackNumber} tracks</p>
