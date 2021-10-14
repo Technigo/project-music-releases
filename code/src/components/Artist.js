@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Artist = (props) => {
-    return <div className="artist-name">{props.artistName}</div>
+    return (
+      <a className="artist-name" href={props.artistUrl} target="_blank">{props.artistName}</a>
+    )
 }
 
 

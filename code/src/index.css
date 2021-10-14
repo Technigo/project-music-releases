@@ -1,5 +1,5 @@
 body {
-
+  padding: 20px;
   background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -14,33 +14,33 @@ code {
 }
 
 
-h1, .artist-name-container {
-  color: #a0a0a0;
+h1 {
+  font-family: Helvetica;
+  color: #fff;
+  font-size: 20px
 }
 
-h2 {
+a {
+  display: inline-block;
   font-family: Helvetica;
   font-size: 14px;
-  color: #fff;
+  color: #a0a0a0;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
-h2:hover {
+a:hover {
   text-decoration: underline;
 }
 
-
-p {
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #a0a0a0;
+.album-title {
+  color: #fff;
 }
 
 .App {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  /* This is better for small screens, once min() is better supported */
-  /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-  gap: 10rem;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
 .image-icons-container {
@@ -93,3 +93,26 @@ p {
   text-decoration: underline;
 }
 
+.artist-name:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+@media (min-width: 667px) {
+  .App {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+}

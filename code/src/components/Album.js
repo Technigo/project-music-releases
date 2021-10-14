@@ -1,7 +1,5 @@
 import React from 'react';
 import Artist from './Artist'
-import data from '../../src/data'
-
 
 const Album = (props) => {
   console.log(props);
@@ -18,13 +16,15 @@ const Album = (props) => {
           <img class="icons" src="./icons/dots.svg" />
         </div>
       </div> 
-      <h2>{props.title}</h2>
+      <a className="album-title" href={props.albumUrl} target="_blank">{props.title}</a>
       <div className="artist-name-container">
-        <p className="artist"> 
-        {props.artist.map((artist) => (
-          <Artist key={artist.name} artistName={artist.name} />
-        ))}
-        </p>
+          {props.artist.map((artist) => (
+            <Artist 
+            key={artist.name} 
+            artistName={artist.name}
+            artistUrl={artist.external_urls.spotify}
+             />
+          ))} 
       </div>
     </article>
   )

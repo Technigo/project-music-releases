@@ -16,7 +16,9 @@ export const App = () => {
               key={item.id} 
               title ={item.name} 
               url={item.images[1].url} 
-              artist={item.artists} />
+              artist={item.artists}
+              albumUrl={item.external_urls.spotify} 
+              />
           })}    
       </div>
     </>      
