@@ -4,6 +4,7 @@
 
 :root {
   --leftPadding: 5px;
+  --white: white;
 }
 
 body {
@@ -13,7 +14,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: grey;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -21,9 +23,6 @@ code {
     monospace;
 }
 
-h1 {
-  color: white;
-}
 
 h2 {
   font-size: 18px;
@@ -39,7 +38,7 @@ a {
   background-color: black;
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
+  max-width: 1340px;
   margin: 0 auto;
 }
 
@@ -54,25 +53,80 @@ a {
 .grid-for-album {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
 }
 
 /* Each album-card container */
 .album-card {
   background-color: black;
   max-width: 320px;
-  padding-left: var(--leftPadding);
-  margin-left: 5px;
-  color: white;
   position: relative;
 }
 
-.album-card:hover {
-  opacity: 0.5;
+.albumCard-container{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
+
+.cover-img{
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  min-height: 150px;
+}
+.img-container:hover {
+  filter: brightness(50%);
   transition: 0.5s;
 }
 
-/* .album-text-container{
-  min-height: 120px;
+.overlay:hover .icon-container{
+  transition: 0.5s;
+  display: flex;
+  
+}
+
+.album-title:hover{
+  text-decoration: underline;
+
+}
+
+.image-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2
+}
+
+.icon-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+  z-index: 3;
+  
+}
+
+.icon{
+  width: 30px;
+}
+
+.icon-play {
+  width: 60px;
 }
 
 .album-card p{
@@ -89,10 +143,13 @@ a {
 
 .artists a:nth-last-of-type(2)::after {
   color: white;
-  content: " & ";
-  
+  content: " & "; 
 }
 /* selectorfor every <a> element that is the second p element of its parent, counting from the last child: */
+
+.artists:hover{
+  text-decoration: underline;
+}
 
 
 /* - - - - - - - -  -TABLET VIEW - - - - - - - - */
@@ -105,12 +162,11 @@ a {
   .site-container {
     max-width: 768px;
   }
+
 }
 /* - - - - - - - -  -Mobile VIEW - - - - - - - - */
 @media (max-width: 767px) {
   .album-card {
-    padding-left: 0;
-    margin-left: 0;
     max-width: 300px;
   }
 

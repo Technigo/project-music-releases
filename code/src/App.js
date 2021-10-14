@@ -7,6 +7,8 @@ export const App = () => {
   console.log(data.albums.items[1].images[0]);
   console.log(data.albums.items[0].name);
   console.log(data.albums.items[0].artists[0].name);
+  console.log(data.albums.items[0].external_urls.spotify);
+  console.log(data.albums.items[0].artists[0].external_urls.spotify)
 
   return (
     <div className="site-container">
@@ -18,9 +20,9 @@ export const App = () => {
             <AlbumCard
               img={item.images[1].url}
               song={item.name}
-              artist={item.artists}
               key={item.name}
-              // hrefArtist =
+              hrefAlbum={item.external_urls.spotify}
+              artist={item.artists}
             />
           );
         })}
@@ -28,3 +30,8 @@ export const App = () => {
     </div>
   );
 };
+
+// TO DO
+// 1. hover effects
+// 2. links to song, artist
+// 3. 
