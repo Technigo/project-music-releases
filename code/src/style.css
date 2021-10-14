@@ -21,19 +21,27 @@ a {
   color: white;
   font-family: 'Helvetica Neue';
   font-size: 18px;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin: 10px auto 10px auto;
+  max-width: 300px;
+}
+
+hr {
+  width: 300px;
+  margin-bottom: 17px;
+  opacity: 0.2;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   margin: 0 auto;
+  justify-items: center;
+  width: 300px;
+  gap: 20px;
 }
 
 .song-card {
-  margin: 10px;
+  justify-content: center;
 }
 
 .album-art-container {
@@ -78,8 +86,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  right: 50%;
-  bottom: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .song-image:hover + .icons-overlay {
@@ -94,6 +101,7 @@ a {
 
 .play:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 
 .album-art-container:hover > .song-image {
@@ -117,4 +125,33 @@ a {
   filter: invert(1);
   opacity: 0.5;
   margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    max-width: 640px;
+  }
+
+  hr {
+    width: 640px;
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .heading {
+    max-width: 1260px;
+  }
+  hr {
+    width: 1260px;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    width: 1260px;
+  }
 }

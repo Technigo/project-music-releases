@@ -4,7 +4,7 @@ import Artists from './Artists';
 import IconsOverlay from './IconsOverlay';
 
 const Album = (props) => {
-  const { key, src, title, artistsArray, albumURL } = props;
+  const { src, title, artistsArray, albumURL } = props;
   return (
     <article className="song-card">
       <div className="album-art-container">
