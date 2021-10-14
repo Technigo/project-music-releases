@@ -19,7 +19,7 @@ code {
 }
 .header {
   border-bottom: 2px solid rgba(53, 51, 51, 0.404);
-  margin: auto auto 10px 10px;
+  margin: auto auto 10px 20px;
 }
 .album-name {
   font-family: Helvetica, sans-serif;
@@ -73,7 +73,6 @@ p {
   content: ", ";
 }
 .artist-names:last-child::before {
-  /* margin-left: 2px; */
   content: " & ";
   color: #a0a0a0;
 }
@@ -115,30 +114,22 @@ p {
 }
 
 @media (min-width: 768px) {
-  /*.album-wrapper {
-  }*/
+  .album-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .album-box {
+    height: 350px;
+  }
 }
-/*.album-box {
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  gap: 20px;
-  margin: 0px;
-}*/
-
 @media (min-width: 992px) {
+  .album-box {
+    width: 200px;
+    height: 320px;
+    max-width: 20%;
+  }
+  .icon-wrapper {
+    width: 210px;
+    height: 200px;
+  }
 }
-
-/* .card:hover .image {
-  filter: brightness(0.2);
-  opacity: 1;
-}
-.card:hover .icons {
-  display: flex;
-  width: 280px;
-}
-    
-
-.image:hover {
-  filter:brightness(0.20);
-} */
