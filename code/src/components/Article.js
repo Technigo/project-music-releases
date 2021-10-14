@@ -1,8 +1,11 @@
 import React from "react";
+import { ReactComponent as MyCustomLogo } from "../icons/heart.svg";
 
 const Article = (props) => {
   return (
     <article className="article">
+      <img src="./icons/heart.svg" />
+      <MyCustomLogo />
       <div className="img-container">
         <div className="overlay"></div>
         <a href="{props.titleClick}">
