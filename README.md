@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This weeks assignment was to build a music releases site using react. We had to create components and learn about component nesting. This project was done with pair programming.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Our problem was to understand the usage of props and how to implement it. We solved it by asking our teammates for help and by googling a lot. We also found solutions on Technigo's stack overflow community.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here's the link to the deployed site: https://sofia-katie-music-releases.netlify.app/
