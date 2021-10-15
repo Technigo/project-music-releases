@@ -1,28 +1,23 @@
 import React from 'react';
 import data from './data.json';
 
-import Album from './components/Album';
+import AlbumCollection from 'components/AlbumCollection';
 
-const albumsArray = data.albums.items;
+const filteredSingles = data.albums.items.filter(
+  (release) => release.album_type === 'single'
+);
+
+const filteredAlbums = data.albums.items.filter(
+  (release) => release.album_type === 'album'
+);
+
 export const App = () => {
   return (
     <div>
-      <h1 className='heading'>New albums & singles</h1>
-      <hr></hr>
-      <div className='container'>
-        {' '}
-        {albumsArray.map((album) => {
-          return (
-            <Album
-              key={album.id}
-              src={album.images[1].url}
-              title={album.name}
-              artistsArray={album.artists}
-              albumURL={album.external_urls.spotify}
-            />
-          );
-        })}
-      </div>
+      <h1 className='heading'>New albums</h1>
+      <AlbumCollection albumList={filteredAlbums} />
+      <h1 className='heading'>New singles</h1>
+      <AlbumCollection albumList={filteredSingles} />
     </div>
   );
 };

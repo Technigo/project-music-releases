@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #191414;
 }
 
 code {
@@ -21,7 +21,7 @@ a {
   color: white;
   font-family: 'Helvetica Neue';
   font-size: 18px;
-  margin: 10px auto 10px auto;
+  margin: 40px auto 10px auto;
   max-width: 300px;
 }
 
@@ -34,7 +34,7 @@ hr {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   justify-items: center;
   width: 300px;
   gap: 20px;
