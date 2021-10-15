@@ -14,8 +14,8 @@ code {
 }
 h1 {
   color:white;
-  margin: 0px 50px;
-  text-align: center;
+  font-size: 1.5em;
+  margin: 30px 50px;
 }
 h2 {
   color: #fff;
@@ -75,8 +75,8 @@ img:hover {
   Grid-template-columns: 1fr;
   grid-gap: 10px;
   justify-items: center;
-  width: 320px;
-  margin:0 auto;
+/*   width: 320px;
+  margin:0 auto; */
 }
 .article {
   grid-column: span 1;
@@ -100,7 +100,7 @@ img:hover {
 @media (min-width: 768px) and (max-width: 991px) {
   h1 {
     margin: 50px;
-    text-align: center;
+    font-size: 2em;
   }
   
   .container {
@@ -108,8 +108,8 @@ img:hover {
     Grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     justify-items: center;
-    width: 700px;
-    margin:0 auto;
+  /*   width: 700px;
+    margin:0 auto; */
   }
   .article {
     grid-column: span 1;
@@ -122,17 +122,32 @@ img:hover {
 /* Liten Dator -  */
 @media (min-width: 992px) {
   h1 {
-  margin: 50px 100px ;
-  text-align: start;
+  font-size: 3em;
+    
 }
   
+  .container {
+    display: grid;
+    Grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+   /*  width: 770px;
+    margin:0 auto; */
+  }
+  .article {
+    grid-column: span 1;
+  
+  }
+}
+/* Stor Dator -  */
+@media (min-width: 1200px) {
   .container {
     display: grid;
     Grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
     justify-items: center;
-    width: 1024px;
-    margin:0 auto;
+    /* width: 1200px;
+    margin: 0 auto; */
   }
   .article {
     grid-column: span 1;
