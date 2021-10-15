@@ -1,11 +1,15 @@
 import React from 'react'
+import Header from './components/Header'
 import data from './data.json'
 // import Header from './components/Header'
 import Article from './components/Article'
+import Album from './compontents/Album'
+
 
 // import Hover from './components/Hover'
 
 console.log(data)
+
 
 export const App = () => {
   return (

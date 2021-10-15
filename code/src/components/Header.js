@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-const Header = (props) => {
-  <div>
-    {props.artists.map((artist) => {
-      return <p key={artist.name}>{artist.name}</p>
-    })}
-  </div>
+const Header = () => {
+    return (
+    <div className="header-container">
+        <h1 className="header-title">New albums and singles</h1>
+    </div>
+    )
 }
 
 export default Header

@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+	background-color: black;
+	color: white;
 }
 
 code {
@@ -28,3 +31,48 @@ code {
   border: 1px solid #333;
   margin: 1px;
 }
+
+.artist-text::after {
+  content: ", ";
+}
+
+.header-title {
+  color:white;
+}
+
+.icons-container:hover {
+    background: gray;
+    transition: 0.5s;
+  }
+  
+.heart {
+  width: 40px;
+}
+
+.play {
+  width: 40px;
+}
+
+.dots {
+  width: 40px;
+}
+
+.artists {
+  margin: 10px 0 15px 0;
+  display: flex;
+}
+
+/* In case of multiple artists, this adds ', ' before every artist that is not the first nor the last one*/
+.artist-list > :not(:last-child):not(:first-child):before {
+  content: ", ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+/* In case of multiple artists, this adds ' & ' before the last artist*/
+.artist-list > :last-child:before {
+  content: " & ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
