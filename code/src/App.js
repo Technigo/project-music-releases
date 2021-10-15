@@ -29,8 +29,7 @@ const App = () => {
                       <Artist key={artist.id} artistLink={artist.external_urls.spotify}
                         artistName={artist.name} />
                     )
-                  })
-                  }
+                  })}
                 </div>
               </div>
             )
@@ -41,7 +40,5 @@ const App = () => {
     </>
   )
 }
-
-
 
 export default App

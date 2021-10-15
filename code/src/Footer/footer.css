@@ -9,9 +9,11 @@ footer {
     letter-spacing: 1px;
     height: 130px;
 }
+
 .turtle {
     margin:0px;
 }
+
 .footer {
     margin: 5px 0px 5px 0px;
     font-size: 13px;
@@ -23,6 +25,7 @@ footer {
     color: #a0a0a0;
     cursor: pointer;
 }
+
 .link-github:hover {
     color: lightgreen;
 }

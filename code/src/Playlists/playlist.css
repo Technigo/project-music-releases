@@ -6,14 +6,17 @@
     border-right: 1px solid #a0a0a0;
     padding: 0 28px 0px 10px;
 }
+
 .playlists-header {
     font-size: 15px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .image-playlists {
     width: 100px;
 }
+
 .playlist-link {
     display: flex;
     flex-direction: column;
@@ -24,6 +27,7 @@
     font-family: Helvetica;
     font-weight: bold;
 }
+
 .playlist-image {
     width: 62px;
     position: relative;
@@ -32,9 +36,11 @@
     justify-content: center;
     align-items: center;
 }
+
 .icon {
     position: absolute;
 }
+
 .play2 {
     width: 40px;
     display: none;
@@ -42,31 +48,39 @@
     cursor: pointer;
     filter: invert(1);
 }
+
 .playlist-image:hover .play2 {
     display: flex;
 }
+
 .image-playlists:hover {
     transform: scale(1.3);
 }
+
 .play2:hover {
     transform: scale(1.1);
     opacity: 1;
 }
+
 .image-playlists {
     width: 100%;
 }
+
 .playlist-link:hover {
     text-decoration: underline;
 }
+
 .track-amount {
     font-size: 12px;
     margin-top: 2px;
     color:#a0a0a0;
 }
+
 .play2:hover {
     transform: scale(1.4);
     opacity: 1;
 }
+
 @media (min-width: 768px) {
     .playlist-image {
         width: 120px;

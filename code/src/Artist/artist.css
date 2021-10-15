@@ -3,6 +3,7 @@
     flex-direction: row;
     margin: 5px 0px 10px 0px;
 }
+
 .artist{
     text-decoration: none;
     color:#a0a0a0;
@@ -10,6 +11,7 @@
     display: flex;
     margin: 0px 0px 0px 0px;
 }
+
 .artist:hover {
     text-decoration: underline;
 }
@@ -19,11 +21,13 @@
     content: ", ";
     margin: 0px 1px;
 }
+
 .artist:last-child::before {
     content: " & ";
     margin: 0px 2px;
     color: #a0a0a0;
 }
+
 .artist:only-child::before {
     content: "";
     margin:0;

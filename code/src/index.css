@@ -14,10 +14,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 .main {
   display: flex;
   margin-top: 20px;
 }
+
 .album-wrapper {
   margin: 30px auto;
   display: flex;
