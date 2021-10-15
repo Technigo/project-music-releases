@@ -1,5 +1,5 @@
 import React from 'react'
-import './albumCover.css'
+import './AlbumCover.css'
 import { Icons } from 'components/Icons'
 
 export const AlbumCover = props => (
