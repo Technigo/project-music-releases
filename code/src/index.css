@@ -13,18 +13,16 @@ code {
     monospace;
 }
 .playlist-album-wrapper {
-  width: 100vw;
   display: flex;
 }
 .playlists-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 20%;
   height: 100%;
   border-left: 1px solid rgba(73, 71, 71, 0.911);
-
-  padding: 30px;
+  padding: 20px;
+  width: 100px;
 }
 .image-playlists {
   width: 70%;
@@ -33,7 +31,7 @@ code {
 .playlist-h2 {
   font-size: 12px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   color: #fff;
 }
 .playlist-link {
@@ -51,6 +49,9 @@ code {
 .playlist-link:hover {
   text-decoration: underline;
 }
+.playlist-image {
+  width: 100%;
+}
 
 .header h1 {
   font-family: Helvetica, sans-serif;
@@ -58,7 +59,7 @@ code {
   color: #fff;
 }
 .header {
-  border-bottom: 2px solid rgba(53, 51, 51, 0.404);
+  border-bottom: 2px solid rgba(85, 84, 84, 0.623);
   margin: auto auto 10px 20px;
 }
 .album-name {
@@ -106,7 +107,7 @@ p {
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
 }
 .artist-names:not(:first-child, :last-child)::before {
   color: #a0a0a0;
