@@ -95,7 +95,7 @@ p {
   flex-direction: row;
 }
 .album-box {
-  width: 220px;
+  width: 290px;
   height: 100%;
   margin: 10px;
 }
@@ -152,13 +152,13 @@ p {
   filter: invert(100%);
 }
 .play-icon {
-  width: 60px;
+  width: 70px;
   opacity: 0.6;
 }
 
 .play-icon:hover {
   opacity: 1;
-  width: 65px;
+  width: 75px;
   margin: -2.5px;
   overflow: hidden;
   transition: ease-in-out 0.2s;
