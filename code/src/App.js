@@ -4,9 +4,7 @@ import data from "./data.json"
 import Wrapper from "./components/Wrapper"
 
 export const App = () => {
-  // AN ARRAY WITH ALL ALBUMS
   const albumData = data.albums.items
-  console.log(albumData)
 
   return (
     <>
@@ -14,23 +12,21 @@ export const App = () => {
       <div className="album-wrapper">
         {albumData.map((album) => {
           return (
-            <div className="album-container">
+            <div key={album.id} className="album-container">
               <Wrapper
-                key={album.artists.id}
                 coverImage={album.images[1].url}
                 albumName={album.name}
                 albumLink={album.external_urls.spotify}
+                // -- map for the artists info --
                 artistName={album.artists.map((item) => (
                   <a
-                    className="artists-divider"
                     href={item.external_urls.spotify}
+                    key={item.id}
+                    className="artists-divider"
                   >
                     {item.name}
                   </a>
                 ))}
-                // artistLink={album.artists.map(
-                //   (item) => item.external_urls.spotify
-                // )}
               />
             </div>
           )
@@ -39,6 +35,3 @@ export const App = () => {
     </>
   )
 }
-
-// artistName={album.artists.name}
-// artistLink={album.artists[0].external_urls.spotify}

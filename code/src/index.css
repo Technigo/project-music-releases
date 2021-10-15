@@ -162,6 +162,7 @@ img {
 
   .play:hover {
     width: 35%;
+    transition: all 0.5s ease-in-out;
   }
 
   .dots {

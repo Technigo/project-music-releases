@@ -6,7 +6,6 @@ import Image from "./Image"
 
 const Wrapper = ({
   coverImage,
-  id,
   albumName,
   albumLink,
   artistName,
