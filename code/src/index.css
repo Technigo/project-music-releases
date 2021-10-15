@@ -13,7 +13,7 @@ code {
     monospace;
 }
 .playlist-album-wrapper {
-  width: 100vw;
+  width: 98vw;
   display: flex;
   justify-content: center;
 }
@@ -24,7 +24,8 @@ code {
   width: 16%;
   height: 100%;
   border-left: 1px solid rgba(53, 51, 51, 0.404);
-  margin-left: 10px;
+  padding-left: 5px;
+  margin-left: 4px;
   justify-content: center;
 }
 .image-playlists {
@@ -105,6 +106,7 @@ p {
 .album-wrapper {
   display: flex;
   flex-direction: column;
+  width: 95%;
 }
 .artist-names:not(:first-child, :last-child)::before {
   color: #a0a0a0;
