@@ -67,29 +67,35 @@ code {
   justify-items: center;
 }
 
-.spotify-card-container {
-  
-}
-
-.spotify-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.image-container {
+  position: relative;
 }
 
 .icons-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
   display: flex;
   justify-content: space-around;
-  width: 300px;
+  padding: 40% 0px;
+}
+
+.icons-container:hover {
+  background: rgba(41, 42, 47, 0.5);
+	transition: 0.3s;
+}
+
+.icon {
+  display: none;
   z-index: 1;
-  position: absolute;
   filter: invert()
 }
 
-/* .spotify-card:hover,
-.icons-container:hover {
+.icons-container:hover .icon {
   display: block;
-} */
+}
 
 .heart {
   width: 25px;
@@ -97,7 +103,6 @@ code {
 
 .play {
   width: 60px;
- 
 }
 
 .dots {
@@ -116,6 +121,10 @@ code {
 
 .artist-name:last-child::after {
   content: "";
+}
+
+.artist-name:nth-last-of-type(2):after {
+  content: " & ";
 }
 
 /* styling for tablet and desktop */

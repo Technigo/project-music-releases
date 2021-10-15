@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Artist = ({ artistLink, artistName }) => {
+const Artist = (props) => {
     return (
         <h3 class="artist-name">
-            <a href={artistLink} className="artist" target="_blank" rel="noreferrer noopener" >
-            {artistName}
+            <a href={props.artistLink} className="artist" target="_blank" rel="noreferrer noopener" >
+            {props.artistName}
             </a>
         </h3>
     )

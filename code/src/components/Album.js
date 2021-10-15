@@ -8,7 +8,7 @@ const Album = (props) => {
         <>
         <div className="spotify-album">
             <div className="spotify-card-container">
-            <div className="spotify-card">
+            <div className="image-container">
                 <img
                     src={props.album.images[1].url}
                     className="cover-img"
@@ -17,17 +17,17 @@ const Album = (props) => {
                 <div className="icons-container">
                     <img 
                         src="../icons/heart.svg"
-                        className="heart"
+                        className="icon heart"
                         alt="heart icon" 
                     />
                     <img 
                         src="../icons/play.svg"
-                        className="play"
+                        className="icon play"
                         alt="play icon"
                     />
                     <img 
                         src="../icons/dots.svg"
-                        className="dots"
+                        className="icon dots"
                         alt="more icon"
                     />
                 </div>
