@@ -44,6 +44,10 @@ a {
 .artist {
   font-size: 14px;
 }
+
+.artistLink {
+color: grey;
+}
 .title:hover,
 .artistLink:hover {
   text-decoration: underline;
@@ -90,12 +94,12 @@ a {
   opacity: 1;
 }
 .artist a:not(:first-of-type, :last-of-type)::before {
-  color: white;
+  color: grey;
   content: ", ";
 }
 .artist a:nth-last-of-type(2)::after {
   content: " & ";
-  color: white;
+  color: grey;
 }
 
 /* footer styling */
