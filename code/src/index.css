@@ -36,11 +36,10 @@ a:hover {
   font-family: "Helvetica", sans-serif;
 }
 
-.artists a:not(:first-of-type, :last-of-type)::before {
+.artists :not(:first-of-type, :last-of-type)::before {
   content: ", ";
 }
-
-.artists a:nth-last-of-type(2)::after {
+.artists :nth-last-of-type(2)::after {
   content: " & ";
 }
 
