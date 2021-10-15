@@ -4,11 +4,6 @@ import AlbumCard from "./components/AlbumCard";
 import Header from "./components/Header";
 
 export const App = () => {
-  console.log(data.albums.items[1].images[0]);
-  console.log(data.albums.items[0].name);
-  console.log(data.albums.items[0].artists[0].name);
-  console.log(data.albums.items[0].external_urls.spotify);
-  console.log(data.albums.items[0].artists[0].external_urls.spotify)
 
   return (
     <div className="site-container">
@@ -31,7 +26,3 @@ export const App = () => {
   );
 };
 
-// TO DO
-// 1. hover effects
-// 2. links to song, artist
-// 3. 

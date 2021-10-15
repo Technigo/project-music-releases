@@ -1,10 +1,9 @@
 import React from "react";
 import DescriptionContainer from "./DescriptionContainer";
-import { ReactComponent as Logo } from '../assets/heart.svg'
+
 
 const AlbumCard = props => {
-  console.log("props.artist",props.artist)
-  console.log("props", props)
+
   return (
     <div className = "albumCard-container">
     <article className="album-card">
@@ -12,9 +11,9 @@ const AlbumCard = props => {
         <img className="cover-img" src={props.img} alt="album or single cover" />
         <div className = "overlay">
           <div className="icon-container">
-            <img className="icon" src="./icons/heart.svg" />
-            <img className="icon-play" src="./icons/play.svg" />
-            <img className="icon" src="./icons/dots.svg" />
+            <img className="icon" src="./icons/heart.svg" alt="icon heart"/>
+            <img className="icon-play" src="./icons/play.svg" alt="icon play" />
+            <img className="icon" src="./icons/dots.svg" alt="icon read more" />
           </div>
         </div>  
       </div>
@@ -23,6 +22,7 @@ const AlbumCard = props => {
         title = {props.song}
         singer = {props.artist}
         hrefAlbum = {props.hrefAlbum}
+        key= {props.song}
       />
    
     </div>
