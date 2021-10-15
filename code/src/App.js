@@ -6,15 +6,18 @@ import Header from "./components/Header";
 
 import "./index.css";
 
-const album = data.albums.items[0];
+// const album = data.albums.items[0];
 
 export const App = () => {
   return (
     <div>
       <Header title="New albums and singles" />
       <div className="album-container">
-        {data.albums.items.map((album) => {  {/* Here we render album items */}
-    
+        {data.albums.items.map((album) => {
+          {
+            /* Here we render album items */
+          }
+
           return (
             <Album
               key={album.id}

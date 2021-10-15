@@ -1,12 +1,12 @@
 import React from "react";
 import Icons from "./Icons";
 
-{/* Album components  */ }
-
+{
+  /* Album components  */
+}
 
 const Album = (props) => {
   return (
-
     <article className="album-cards">
       <a
         className="image-container"
@@ -14,14 +14,8 @@ const Album = (props) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/*Essentially, adding rel="noopener noreferrer" to links protects your site's users against having the site you've linked to potentially hijacking the browser*/}
-
-        {" "}
-        <img
-          className="album-image"
-          src={props.image.url}
-          alt="image of album"
-        ></img>
+        {/*Essentially, adding rel="noopener noreferrer" to links protects your site's users against having the site you've linked to potentially hijacking the browser*/}{" "}
+        <img className="album-image" src={props.image.url} alt="album"></img>
         <Icons />
       </a>
 
@@ -35,9 +29,12 @@ const Album = (props) => {
       </a>
 
       <div className="artist-text-container">
-        {props.artists.map((artist) => {       {/* Here we render artists */}
+        {props.artists.map((artist) => {
+          {
+            /* Here we render artists */
+          }
           return (
-            <span className="inner-artist-container">
+            <span key={artist.id} className="inner-artist-container">
               <a
                 className="artist-text"
                 href={artist.external_urls.spotify}
