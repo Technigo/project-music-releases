@@ -76,7 +76,7 @@ code {
   width: 300px;
   z-index: 1;
   position: absolute;
-  
+  filter: invert()
 }
 
 /* .spotify-card:hover,
