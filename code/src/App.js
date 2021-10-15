@@ -6,20 +6,14 @@ import Playlist from "./components/Playlist";
 
 const AlbumArray = data.albums.items;
 const PlaylistArray = data2.playlists.items;
-
-const arraySinglesOnly = AlbumArray.filter((x) =>
-  x.album_type.includes("single")
-);
-const arrayAlbumsOnly = AlbumArray.filter((x) =>
-  x.album_type.includes("album")
-);
+const arraySinglesOnly = AlbumArray.filter(x => x.album_type.includes("single"));
+const arrayAlbumsOnly = AlbumArray.filter(x => x.album_type.includes("album"));
 
 export const App = () => {
   return (
     <>
       <div className="title-wrapper">
         <h1>New albums</h1>
-
         <div className="albums-wrapper">
           {arrayAlbumsOnly.map((album) => {
             return (
@@ -34,11 +28,8 @@ export const App = () => {
           })}
         </div>
         <h1>New singles</h1>
-
         <div className="albums-wrapper">
           {arraySinglesOnly.map((album) => {
-            // const numberOfArtists = album.artists.length
-
             return (
               <Album
                 key={album.id}
@@ -51,10 +42,8 @@ export const App = () => {
           })}
         </div>
       </div>
-
       <div className="sidebar">
         <h1>Top playlists</h1>
-
         <div>
           {PlaylistArray.map((playlist) => {
             return (

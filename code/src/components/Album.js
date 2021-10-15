@@ -8,7 +8,7 @@ import { ReactComponent as MyPlay } from "../assets/play.svg";
 
 const Album = ({ image, title, titleLink, artist }) => {
   const numberOfArtists = artist.length;
-
+  
   const artistCommaAmpersand = (artist, index) => {
     if (numberOfArtists === index + 1 && numberOfArtists !== 1) {
       return <span> & {artist.name}</span>;

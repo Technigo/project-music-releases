@@ -62,7 +62,8 @@ h1 {
 .albums-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px #36383B solid;
 }
 
 .album-wrapper {
@@ -139,8 +140,14 @@ h1 {
   padding-right: 25px;
 }
 
+.sidebar h1 {
+  padding-left: 0 !important;
+  margin-bottom: 0;
+}
+
 .playlist-item {
-  padding: 10px 0 5px 25px;
+  padding: 20px 0;
+  border-bottom: 3px #36383B solid;
 }
 
 .playlist-item img {
@@ -156,13 +163,14 @@ h1 {
 
 @media (min-width: 500px) {
   .sidebar {
-    width: 25%;
+    width: 26%;
     display: inline;
+    margin-left: 25px;
   }
 
   .title-wrapper {
-    width: 75%;
-    margin-left: 25%;
+    width: 70%;
+    margin-left: 29%;
   }
 
   .album-wrapper {
@@ -172,13 +180,12 @@ h1 {
 
 @media (min-width: 769px) {
   .sidebar {
-    width: 18%;
-    max-width: 280px;
+    width: 20%;
   }
 
   .title-wrapper {
-    width: 82%;
-    margin-left: 18%;
+    width: 75%;
+    margin-left: 24%;
   }
 
   .album-wrapper {

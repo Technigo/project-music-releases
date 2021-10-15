@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This was a pair-programming project from the introduction week to React at Technigo. The assignment was to display newly released singles & albums by using components and props and in line with the provided design sketches for layout and hover effects. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I our main file App.js we mounted two different components (one for albums and playlists) which in their turn had several smaller components mounted into them, such as the titles and names of the artists. We used .map() to map over the arrays to display it on the page. To separate the album releases from the singles we created two separate arrays containing only albums or singles to map over. When displaying several artists we added a ”,” and/or an ”&” in between the names with the help of an if/else statement using logical operators. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://friendly-cray-f55ff2.netlify.app/
