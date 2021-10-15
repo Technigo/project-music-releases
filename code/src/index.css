@@ -49,12 +49,7 @@ row-gap: 40px;
   width: 100%;
   max-width:300px;
   position:relative;
-
  }
-
-  /*.album-image {
- position:absolute; 
-}*/
 
 .album-image-overlay {
   position:absolute;
@@ -87,7 +82,7 @@ row-gap: 40px;
   font-family: Helvetica;
   color: #fff;
   font-weight: 700; /*makes the text bold*/
-  word-wrap: break-word;
+  word-wrap: break-word; /*if the line does not fit, it will make another line underneath*/
 }
 
 .album-artist {
@@ -108,10 +103,6 @@ align-items: center;
   text-decoration: underline;
 }
 
-.album-artist:hover{
-  text-decoration: underline;
-}
-
 .play-icon:hover{
 width: 100px;
 }
@@ -124,40 +115,9 @@ a {
   color: white;
   text-decoration: none;
 }
-
-
-/* I saw this in a thread from stackoverflow:
-
-"You can try this CSS if i understod you question correct. The brightness will get the cover to look a bit dark."
-
-.classname(cover):hover{ 
-  filter: brightness(30%); }
-
-and this to fix the icons:
-.classname(icon):hover~ 
-
-.classname(cover-img) { 
-  filter: brightness(30%); }
-
-I also remember that i struggled a bit with the icons and cover on hover, so a tips if you want :) -->
-
-.icons { 
-  display: none; 
+a:hover {
+  text-decoration: underline;
 }
- 
-.cover:hover .icons{
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  position: absolute; 
-  z-index: 2; 
-  width: 300px; 
-
-  .icons:hover > .cover-img { 
-    filter: brightness(30%) 
-  }
-} */
-
 
 @media (min-width: 768px){
   .album-grid-container{
