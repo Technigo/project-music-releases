@@ -102,16 +102,7 @@ article.vinyl-card {
   width: 300px;
 }
 
-.icon-container:hover {
-  opacity: 1;
-  filter: invert(1);
-}
-
-.icon-container:hover + .album-cover {
-  opacity: 0.24;
-}
-
-.play-container:hover + .icon-container .hide {
+/* .play-container:hover + .icon-container .hide {
   opacity: 0;
 }
 
@@ -122,43 +113,7 @@ article.vinyl-card {
 
 .play-container:hover ~ .album-cover {
   opacity: 0.24;
-}
-
-.icons {
-  margin: 0 auto;
-  margin: 1em;
-  width: 40px;
-  height: 40px;
-  padding-right: 1em;
-  padding-left: 1em;
-  opacity: 1;
-}
-
-.play-container {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 33%;
-  right: 42%;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 5;
-}
-
-.play {
-  transition: 0.1s ease-out;
-  filter: invert(1);
-  opacity: 0;
-}
-
-.play:hover {
-  transform: scale(2.5);
-  opacity: 1;
-}
+} */
 
 .icon-container {
   width: 300px;
@@ -169,8 +124,29 @@ article.vinyl-card {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+.icon-container:hover {
+  opacity: 1;
+  filter: invert(1);
+}
+
+.icon-container:hover + .album-cover {
+  opacity: 0.2;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.play:hover {
+  opacity: 1;
+  transform: scale(2.3);
 }
 
 .song-title {

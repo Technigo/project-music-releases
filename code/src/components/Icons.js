@@ -1,15 +1,18 @@
 import React from 'react'
 
-const Icons = () => {
+const Icons = (props) => {
   return (
     <>
-      <div className="play-container">
+      {/* <div className="play-container">
         <img src="/icons/play.svg" alt="play" className="icons play" />
-      </div>
+      </div> */}
       <div className="icon-container">
-        <img src="/icons/heart.svg" alt="heart" className="icons" />
-        <img src="/icons/play.svg" alt="play" className="icons hide" />
-        <img src="/icons/dots.svg" alt="dots" className="icons" />
+        <img src="/icons/heart.svg" alt="heart" className="heart icons" />
+
+        <a href={props.titleUrl} target="_blank" rel="noopener noreferrer">
+          <img src="/icons/play.svg" alt="play" className="play icons" />
+        </a>
+        <img src="/icons/dots.svg" alt="dots" className="dots icons" />
       </div>
     </>
   )

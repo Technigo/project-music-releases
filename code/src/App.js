@@ -7,6 +7,7 @@ import Vinyl from './components/Vinyl'
 import Playlists from './components/Playlists'
 import MainHeader from './components/MainHeader'
 import SidebarHeader from './components/SidebarHeader'
+import Footer from './components/Footer'
 
 // I just put this in variable so it's easier
 const albumArray = data.albums.items
@@ -35,14 +36,8 @@ export const App = () => {
             )
           })}
         </div>
-        <hr className="horizontal-line" />
-        <p className="signature">
-          Created by {/* prettier-ignore */}
-          <a href="https://github.com/loulunds" target="_blank" rel="noopener noreferrer"><span className="github-link">Lousanne {' '}</span></a>
-          and {/* prettier-ignore */}
-          <a href="https://github.com/jakobxlindstrom" target="_blank" rel="noopener noreferrer"><span className="github-link">Jakob</span>{' '}</a>
-          for Technigo 2021
-        </p>
+        {/* <hr className="horizontal-line" /> */}
+        <Footer />
       </aside>
       <main>
         <MainHeader />
