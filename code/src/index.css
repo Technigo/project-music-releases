@@ -63,13 +63,16 @@ img:hover {
   fill: rgba(255, 255, 255, 0.742);
   display: block;
   margin: auto;
+  transition: 0.5s ease;
 }
 .overlay:hover .Play:hover {
   height: 70px; 
   width: 70px;
+
 }
 .overlay:hover .Play:hover, .overlay:hover .Heart:hover, .overlay:hover .Dots:hover {
 fill: white;
+
 }
 
 .img-container {
@@ -86,16 +89,14 @@ fill: white;
 }
 .article {
   grid-column: span 1;
-
 }
 
+/* These two under are made for trying the hover effects for the icons */
 .Heart, .Play, .Dots {
   fill: white;
   display: block;
   margin: auto;
   grid-column: span 1;
- /*  height: 50px; 
-  width: 50px; */
   display: none;
 }
 .Play:hover {

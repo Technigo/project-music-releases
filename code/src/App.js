@@ -30,14 +30,14 @@ export const App = () => {
 
 TODO
 1. Overlay (Isabel) -> klart
-2. tre ikonerna (hjärta osv)()
-3. playknappen skall växa när man hovrar över den. 
+2. (klar) tre ikonerna (hjärta osv)()
+3. (klar) playknappen skall växa när man hovrar över den. 
 4. each artists with komma between them (Isabel)
 5. fler än två artister - ett & tecken. (Isabel)
 6. when clicking on the album, skall man komma till en extern spotify sida.(Hedvig)
 
 
-7. (klar)when clicking on a artist you should come to an external artist page (Hedvig)
-8. (klart) responsive page. (Hedvig)   
+7. (klar) when clicking on a artist you should come to an external artist page (Hedvig)
+8. (klar) responsive page. (Hedvig)   
 
 */
