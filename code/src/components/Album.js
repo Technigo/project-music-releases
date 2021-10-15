@@ -28,3 +28,5 @@ export const Album = (props) => {
       </article>
     )
   }
+
+  export default Album

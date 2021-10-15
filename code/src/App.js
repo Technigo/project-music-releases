@@ -3,6 +3,7 @@ import Header from './components/Header'
 import data from './data.json'
 import data2 from './data2.json'
 import Article from './components/Article'
+import Album from './compontents/Album'
 
 
 console.log(data)
