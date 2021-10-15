@@ -65,6 +65,10 @@ img:hover {
   margin: auto;
   grid-column: span 1;
 }
+.overlay:hover .Play:hover {
+  height: 60px; 
+  width: 60px;
+}
 
 .img-container {
   position:relative;
@@ -88,6 +92,13 @@ img:hover {
   display: block;
   margin: auto;
   grid-column: span 1;
+ /*  height: 50px; 
+  width: 50px; */
+  display: none;
+}
+.Play:hover {
+  height: 60px; 
+  width: 60px;
   display: none;
 }
 
