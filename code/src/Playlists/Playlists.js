@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react"
+import './playlist.css'
 import stretchgoal from '../stretchgoal.json'
 
 const Playlists = () => {

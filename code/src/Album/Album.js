@@ -1,4 +1,5 @@
 import React from 'react'
+import './album.css'
 
 const Album = ({ image, albumTitle, albumLink }) => {
     return (
