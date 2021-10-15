@@ -10,14 +10,3 @@ export const Play = () => (
     />
   </svg>
 );
-
-/* https://stackoverflow.com/questions/63048194/error-the-style-prop-expects-a-mapping-from-style-properties-to-values-not-aS
-
-//See style in React docs. - "The style attribute accepts a JavaScript object with camelCased properties rather than a CSS string."
-
-It is so simple you used this :
-
-<h1 style="font-size:50px">I am John Doe</h1
-Use this :
-
-<h1 style={{font-size:"50px"}}>I am John Doe</h1> */

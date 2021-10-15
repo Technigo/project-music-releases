@@ -24,10 +24,11 @@ code {
 }
 
 .header-text {
+  font-size: 24px;
   color: #fff;
 }
 
-.release-name-text,
+.releaseNameText,
 .albumLink {
   font-size: 14px;
   color: #fff;
@@ -39,13 +40,18 @@ code {
   text-decoration: underline;
 }
 
-.artist-name-link a {
+.artistNameLink {
+  font-size: 14px;
+  color: #adadad;
+  text-decoration: none;
+}
+.artistNameLink a {
   font-size: 14px;
   color: #adadad;
   text-decoration: none;
 }
 
-.artist-name-link a:hover {
+.artistNameLink a:hover {
   color: #fff;
   text-decoration: underline;
 }
@@ -102,7 +108,6 @@ code {
   width: 300px;
   height: 300px;
 }
-
 .banana:hover .albumIcons {
   display: flex;
   justify-content: space-evenly;
@@ -121,6 +126,10 @@ code {
 
 /* TABLET SIZE*/
 @media (min-width: 666px) {
+  .header-text {
+    font-size: 30px;
+  }
+
   .grid-container {
     grid-template-columns: repeat(auto-fit, min-width(300px, 1fr 1fr));
     gap: 10px;

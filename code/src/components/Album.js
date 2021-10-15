@@ -31,7 +31,7 @@ const Album = (props) => {
         </div>
 
         <a className="albumLink" href={props.albumlink}>
-          <h1 className="release-name-text">{props.songtitle}</h1>
+          <h1 className="releaseNameText">{props.songtitle}</h1>
         </a>
       </div>
     </>
