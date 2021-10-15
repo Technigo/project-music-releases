@@ -1,12 +1,10 @@
 # Music Releases
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This weeks assignement was an introduction to React. By creating components with data from Spotify we created a page of new music releases.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started of by setting a gameplan. Planing when to pair program and when to work separately. And by using React, css and JavaScript we achived our end result.
 
 ## View it live
 

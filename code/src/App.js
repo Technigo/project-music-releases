@@ -6,12 +6,11 @@ import { Sidebar } from "components/Sidebar";
 export const App = () => {
   return (
     <div className="album-wrapper">
-      {/* img tag wants a keyboard eventlistener for accessibility onkeypress = onClick  onkeypress="return keyHandler(e)*/}
       <img
         className="menu"
         src="/icons/dots.svg"
         alt="dot icon"
-        onClick={(e) =>
+        onKeyPress={(e) =>
           (e.target.className = e.target.className.includes("open")
             ? "menu"
             : "menu open")
