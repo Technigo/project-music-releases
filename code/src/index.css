@@ -35,7 +35,7 @@ code {
 }
 
 .icons-container {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -45,13 +45,15 @@ code {
   left: 0;
 }
 
-.icons-container:hover {
-    background: gray;
-    transition: 0.5s;
-  }
+.album-image-container:hover .icons-container{
+  display: flex;
+  background: gray;
+  transition: 0.5s;
+}
   
 .icon {
   width: 40px;
+  filter: invert(100%);
 }
 
 .artists {
