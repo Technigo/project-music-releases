@@ -15,36 +15,28 @@ export const App = () => {
       <div className="article-container">
         {items.map((item) => {
           return (
-            <>
+            <div className="album-container">
               <Album
                 key={item.id}
                 img={item.images[0].url}
                 title={item.name}
                 albumLink={item.external_urls.spotify}
               />
-
-              {item.artists.map((artistNames) => {
-                return (
-                  <Artist
-                    artistName={artistNames.name}
-                    artistLink={artistNames.external_urls.spotify}
-                  />
-                );
-              })}
-            </>
+              <div className="artist-container">
+                {item.artists.map((artistNames) => {
+                  return (
+                    <Artist
+                      key={artistNames.id}
+                      artistName={artistNames.name}
+                      artistLink={artistNames.external_urls.spotify}
+                    />
+                  );
+                })}
+              </div>
+            </div>
           );
         })}
       </div>
     </>
   );
 };
-
-{
-  /* {(artists = items.artists.map((artist) => {
-          return 
-        }))} */
-}
-// artistName={item.artists.map((artistNames) => {
-//   return artistNames.name;
-// })}
-// musicLink={item.artists[0].external_url}

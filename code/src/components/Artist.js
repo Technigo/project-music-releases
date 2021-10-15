@@ -2,11 +2,13 @@ import React from "react";
 
 const Artist = ({ artistLink, artistName }) => {
   return (
-    <article className="artist-container">
+    <div className="artist-container">
       <a href={artistLink} target="_blank">
-        <p className="artist-name">{artistName}</p>
+        <p>
+          <span>{artistName} </span>{" "}
+        </p>
       </a>
-    </article>
+    </div>
   );
 };
 
