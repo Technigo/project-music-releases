@@ -37,6 +37,9 @@ p:hover {
 }
 a {
   text-decoration: none;
+  color: #a0a0a0;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 img:hover {
@@ -78,7 +81,9 @@ fill: white;
 .img-container {
   position:relative;
 }
-
+.wrapper-container {
+  
+}
 .container {
   display: grid;
   Grid-template-columns: 1fr;

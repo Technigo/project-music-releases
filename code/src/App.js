@@ -14,7 +14,11 @@ export const App = () => {
             titleClick={album.external_urls.spotify}
             img={album.images[1].url}
             artist={album.artists.map((item, index) => (
-              <a key={item.id} href={item.external_urls.spotify}>
+              <a
+                key={item.id}
+                href={item.external_urls.spotify}
+                target="_blank"
+              >
                 {index ? "," : ""} {item.name}
               </a>
             ))}

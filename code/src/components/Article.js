@@ -12,14 +12,13 @@ const Article = (props) => {
           <Play className="Play" height="50px" width="50px" />
           <Dots className="Dots" height="50px" width="50px" />
         </div>
-        <a href="{props.titleClick}">
-          <img src={props.img} alt="album image" />
-        </a>
+        <img src={props.img} alt="album image" />
       </div>
-      <h2>{props.title}</h2>
-      <a href="{props.artistClick}">
-        <p>{props.artist}</p>
+      <a href={props.titleClick} target="_blank">
+        <h2>{props.title}</h2>
       </a>
+
+      <p>{props.artist}</p>
     </article>
   );
 };
