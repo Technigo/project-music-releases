@@ -9,22 +9,27 @@ export const App = () => {
   console.log(musicData);
 
   return (
-    <div className="grid-container">
-      <>
-        <Header />
-        {musicData.map((album) => {
-          return (
-            <div className="album-wrapper">
-              <Album
-                key={album.id}
-                albumimage={album.images[1].url}
-                songtitle={album.name}
-              />
-              <Artist item={album} />
-            </div>
-          );
-        })}
-      </>
+    <div className="app-section">
+      <div className="wrapper-container">
+        <div>
+          <Header />
+        </div>
+        <div className="grid-container">
+          {musicData.map((album) => {
+            return (
+              <div className="album-wrapper">
+                <Album
+                  key={album.id}
+                  albumimage={album.images[1].url}
+                  albumlink={album.external_urls.spotify}
+                  songtitle={album.name}
+                />
+                <Artist item={album} />
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

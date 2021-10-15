@@ -1,9 +1,7 @@
 body {
   background-color: #181818;
-  /* margin: 20px; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -16,33 +14,40 @@ code {
 /* this is the grid parent*/
 .grid-container {
   display: grid;
-  /* grid-template-columns: 1fr; */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /*border: 2px solid lime;*/
 }
 
-/* this is the album-wrapper*/
+/* this is the grid-child*/
 .album-wrapper {
-  margin: 10px auto;
-  /*border: 2px solid pink;*/
+  margin: 20px auto;
+  max-width: 300px;
 }
 
 .header-text {
   color: #fff;
 }
 
+.release-name-text,
+.album-link {
+  font-size: 14px;
+  color: #fff;
+  max-width: 300px;
+  text-decoration: none;
+}
+
+.album-link:hover {
+  text-decoration: underline;
+}
+
 .artist-name-link a {
+  font-size: 14px;
   color: #adadad;
   text-decoration: none;
 }
 
-.artist-name-link:hover {
+.artist-name-link a:hover {
   color: #fff;
   text-decoration: underline;
-}
-
-.release-name-text {
-  color: #fff;
 }
 
 /* MEDIA QUERIES START HERE*/
@@ -51,7 +56,6 @@ code {
 @media (min-width: 666px) {
   .grid-container {
     grid-template-columns: repeat(auto-fit, min-width(300px, 1fr 1fr));
-    /* grid-template-columns: 1fr 1fr; */
     gap: 10px;
   }
 }

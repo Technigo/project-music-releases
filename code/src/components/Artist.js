@@ -12,10 +12,8 @@ const Artist = (props) => {
         }
         return (
           <span className="artist-name-link" key={artist.id}>
-            <a href={artist.external_urls.spotify}>
-              {artist.name}
-              {divider}
-            </a>
+            <a href={artist.external_urls.spotify}>{artist.name}</a>
+            {divider}
           </span>
         );
       })}
