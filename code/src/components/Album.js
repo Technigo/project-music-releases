@@ -5,7 +5,7 @@ import { Artists } from "./Artists";
 export const Album = (props) => {
 	const { arrayOfArtists } = props;
 	return (
-		<section>
+		<div>
 			<div className="album-image-container">
 				<div className="album-cover-overlay">
 					<Icons />
@@ -13,10 +13,12 @@ export const Album = (props) => {
 				<img className="album-image" src={props.src} alt="album-cover" />
 			</div>
 
-			<a href={props.titleUrl} target="_blank" rel="noopener noreferrer">
-				<h2 className="album-title">{props.title}</h2>
-			</a>
-			<Artists key={arrayOfArtists.id} arrayOfArtists={arrayOfArtists} />
-		</section>
+			<div className="album-artist-title-container">
+				<a className="album-title" href={props.titleUrl} target="_blank" rel="noopener noreferrer">
+					{props.title}
+				</a>
+				<Artists arrayOfArtists={arrayOfArtists} />
+			</div>
+		</div>
 	);
 };
