@@ -148,17 +148,17 @@ p {
 }
 
 .icon {
-  width: 20px;
+  width: 30px;
   filter: invert(100%);
 }
 .play-icon {
-  width: 50px;
+  width: 60px;
   opacity: 0.6;
 }
 
 .play-icon:hover {
   opacity: 1;
-  width: 55px;
+  width: 65px;
   margin: -2.5px;
   overflow: hidden;
   transition: ease-in-out 0.2s;
