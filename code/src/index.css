@@ -16,7 +16,7 @@ code {
 h1 {
   color: #fff;
   font-size: 22px;
-  margin-left: 10%;
+  margin-bottom: 10%;
 }
 
 h2 {
@@ -53,7 +53,7 @@ a {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  margin: 5% 10% 10%;
+  margin: 2% 10% 10%;
 }
 
 .album-container {
@@ -73,49 +73,59 @@ img {
   width: 100%;
 }
 
-.icons-wrapper {
+.icons-wrapper,
+.sidebar-container,
+.sidebar-heading {
   display: none;
 }
 
 /* ----> MEDIA QUERIES FOR TABLET <---- */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: 0 5%;
+  }
+
+  .heading {
+    grid-column: span 2;
+  }
+
   h1 {
-    margin-top: 5%;
-  }
-  .album-container {
-    width: 44%;
-  }
-
-  .album-container:nth-child(odd) {
-    margin-right: 6%;
-  }
-
-  .album-container:nth-child(even) {
-    margin-left: 6%;
+    font-size: 30px;
+    margin: 5% 0 0;
   }
 }
 
 /* ----> MEDIA QUERIES FOR DESKTOP <---- */
 
 @media (min-width: 1025px) {
+  .content-wrapper {
+    display: flex;
+  }
+
+  .heading {
+    grid-column: span 4;
+    margin: 2% 0;
+  }
+
+  .sidebar-heading {
+    display: block;
+    font-size: 25px;
+    margin: 2% 0 0 1.5%;
+  }
+
   h1 {
-    margin-top: 5%;
     font-size: 30px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
-  a {
-    font-size: 18px;
   }
 
   .album-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
+    margin: 0 3%;
   }
 
   .album-container {
@@ -174,5 +184,47 @@ img {
 
   .icons:hover {
     opacity: 1;
+  }
+
+  /* ---- SIDEBAR STYLING ----- */
+
+  .sidebar-container {
+    display: flex;
+  }
+
+  .sidebar-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    margin-left: 10%;
+    border-right: 1px solid #a0a0a0;
+    padding-right: 35px;
+  }
+
+  .individual-wapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+  }
+
+  .sidebar-image {
+    width: 90%;
+    min-width: 100px;
+    margin-right: 0;
+  }
+
+  .sidebar-text p {
+    color: #a0a0a0;
+    margin-top: 2px;
+  }
+
+  .title {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .title-name {
+    margin-top: 25px;
   }
 }

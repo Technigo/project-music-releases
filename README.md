@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project's purpose was to create a new music releases web page using Spotify's API from 2019. It was created by Bruna Araujo and Emelie Lindblom using React with multiple components.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We approached the project by dividing it into components and handled them individually. We had to figure out how to mount the components and get our data to display. After researching and with the support of our team, we tried out different alternatives and found the solutions we needed. Since it was our first React project, we had difficulties deploying it into Netlify, but we were able to fix after inspecting the deployment process.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://br-em-musicreleases.netlify.app/
