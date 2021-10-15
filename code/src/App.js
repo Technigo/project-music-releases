@@ -13,6 +13,7 @@ export const App = () => {
             <Album 
               img={album.images[1].url}
               title={album.name}
+              albumLink={album.external_urls.spotify}
               artists={album.artists}
             />
         ))}

@@ -15,30 +15,43 @@ code {
     monospace;
 }
 
+.album-container {
+  display: grid;
+}
+
 .album-image-container {
   position: relative;
 }
 
 .album-card {
   width: 300px;
-  border: 2px solid #333;
   padding: 15px;
 }
-
-/* 
-.artist-text::after {
-  content: ", ";
-} */
 
 .header-title {
   color:white;
 }
 
+.album-title {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: white;
+}
+
+.album-title-link {
+  text-decoration: none;
+}
+
+.album-title-link:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+}
+
 .icons-container {
   display: none;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -47,18 +60,45 @@ code {
 
 .album-image-container:hover .icons-container{
   display: flex;
-  background: gray;
+  background: rgba(0, 0, 0, 0.7);
   transition: 0.5s;
 }
   
 .icon {
-  width: 40px;
+  width: 25px;
   filter: invert(100%);
+  opacity: 0.7;
 }
 
-.artists {
-  margin: 10px 0 15px 0;
-  display: flex;
+.icon:hover {
+  opacity: 1;
+}
+
+.icon-play{
+  width: 60px;
+  filter: invert(100%);
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.7;
+}
+
+.icon-play:hover {
+  width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  opacity: 1;
+}
+
+
+.artists, .artist-and {
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.artists:hover {
+  text-decoration: underline;
 }
 
 /* In case of multiple artists, this adds ', ' before every artist that is not the first nor the last one
@@ -75,3 +115,15 @@ code {
   color: #a0a0a0;
 } */ 
 
+@media (min-width: 640px) {
+  .album-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 44px;
+  }
+}
+
+@media (min-width: 1444px) {
+  .album-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

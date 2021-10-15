@@ -7,15 +7,13 @@ export const Album = (props) => {
       <article className="album-card">
         <section className="cover">
           
-          <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
-            <div className="album-image-container">
-              <Icons />
-              <img src= {props.img} className="album-cover" alt={props.albumTitle}/>
-            </div>
-          </a>
+          <div className="album-image-container">
+            <Icons albumLink={props.albumLink}/>
+            <img src= {props.img} className="album-cover" alt={props.albumTitle}/>
+          </div>
   
-          <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
-            <h2>{props.title}</h2>
+          <a href={props.albumLink} target="_blank" rel="noopener noreferrer" className="album-title-link">
+            <h2 className="album-title">{props.title}</h2>
           </a>
 
           <Artists artists={props.artists}/>

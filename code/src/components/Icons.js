@@ -4,7 +4,9 @@ export const Icons = props => {
   return (
     <div className='icons-container'>
       <img className='icon' src='/icons/heart.svg' alt='heart' />
-      <img className='icon' src='/icons/play.svg' alt='play' />
+      <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
+        <img className='icon-play' src='/icons/play.svg' alt='play' />
+      </a>
       <img className='icon' src='/icons/dots.svg' alt='dots' />
     </div>
   )
