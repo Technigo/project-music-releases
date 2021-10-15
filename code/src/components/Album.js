@@ -19,7 +19,12 @@ const Album = (props) => {
         </div>
       </div> 
 
-      <a className="album-title" href={props.albumUrl} target="_blank" rel="noopener noreferrer">{props.title}</a>
+      <a 
+        className="album-title" 
+        href={props.albumUrl} 
+        target="_blank" 
+        rel="noopener noreferrer">{props.title}
+      </a>
       
       <div className="artist-name-container">
           {props.artist.map((artist) => (

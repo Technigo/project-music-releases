@@ -22,7 +22,7 @@ a {
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
-  margin-top: 10px;
+  padding: 10px 0;
 }
 
 a:hover {
@@ -86,6 +86,10 @@ a:hover {
   transform: scale(1.5);
 }
 
+.artist-name {
+  display: inline;
+}
+
 .artist-name:not(:first-of-type, :last-of-type)::before {
   content: ", ";
 }
@@ -93,6 +97,11 @@ a:hover {
 .artist-name:nth-last-of-type(2)::after {
   content: " & ";
 }
+
+.artist-name:first-child::before {
+  content: " "; 
+}
+
 
 /* TABLET */
 
