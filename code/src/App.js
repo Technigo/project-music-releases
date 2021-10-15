@@ -2,20 +2,19 @@ import React from "react";
 import data from "./data.json";
 import Article from "./components/Article";
 
-console.log(data.albums.items[0]);
-
 export const App = () => {
   return (
     <>
       <h1>New Albums and singles</h1>
-      <div class="container">
+      <div className="container">
         {data.albums.items.map((album) => (
           <Article
+            key={album.id}
             title={album.name}
             titleClick={album.external_urls.spotify}
             img={album.images[1].url}
             artist={album.artists.map((item, index) => (
-              <a>
+              <a key={item.id} href={item.external_urls.spotify}>
                 {index ? "," : ""} {item.name}
               </a>
             ))}
