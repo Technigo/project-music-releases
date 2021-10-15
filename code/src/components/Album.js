@@ -1,5 +1,6 @@
 import React from "react";
 import Icons from "./Icons";
+import Artists from "./Artists";
 
 const Album = (props) => {
   return (
@@ -24,7 +25,7 @@ const Album = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {props.item.artists[0].name}
+            <Artists artistArray={props.item.artists} />
           </a>
         </h3>
       </div>
