@@ -7,5 +7,5 @@ The challenge was to fetch information from a data set using a map function to i
 This is the very first project using React and it was challenging to get used to the new structure especially in regard to the components. But we managed and are very happy with the result. You can have a look hear.
 
 ## View it live
-
+https://unruffled-jepsen-52c302.netlify.app/
 
