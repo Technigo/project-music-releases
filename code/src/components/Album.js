@@ -8,7 +8,7 @@ export const Album  = (props) => {
     <div className="card">
         <div className="img-container"> 
             <a href={props.href}  target="_blank" rel="noopener noreferrer">
-    <img src={props.image} alt="" className="album-img" />
+                <img src={props.image} alt="" className="album-img" />
                 <Icons />
             </a>
         </div>

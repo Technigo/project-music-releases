@@ -36,7 +36,6 @@ p {
   width: 80%;
   height: auto; 
   border-radius: 10px;
-  background-color: rgb(27, 27, 27);
   place-self: center;
 }
 
@@ -157,13 +156,11 @@ p {
   .albums-container {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr;
-    max-width: 1440px;
   }
 
   .card {
     width: auto;
-    height: 370px;
-    margin-bottom: 2px;
+
   }
 }
 
