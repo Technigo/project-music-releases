@@ -20,12 +20,14 @@ code {
 .song-title {
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
+  margin: 10px 0 5px 0;
   color: #ffffff;
 }
 
 .artist-title {
   font-family: "Helvetica", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   color: #a0a0a0;
   display: inline;
 }
@@ -134,7 +136,6 @@ h1 {
   width: 20%;
   display: none;
   padding-right: 25px;
-  overflow-y: scroll;
 }
 
 .playlist-item {
@@ -182,9 +183,9 @@ h1 {
   .album-wrapper {
     max-width: 25%;
   }
-
+/* 
   .albums-wrapper,
   .title-wrapper {
     max-width: 1300px;
-  }
+  } */
 }
