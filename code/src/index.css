@@ -19,7 +19,7 @@ code {
     monospace;
 }
 
-/* HEADER STYLES */
+/* Header */
 .header {
   color: var(--secondary);
   font-family: Helvetica;
@@ -63,11 +63,17 @@ a:hover {
   color: var(--secondary);
 }
 
+/* Artists */
 .artist-name {
   font-size: 1rem;
   color: var(--tertiary);
 }
 
+.artist-container {
+  color: var(--tertiary);
+}
+
+/* Icons */
 .icons-container {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
@@ -107,6 +113,14 @@ a:hover {
   filter: invert(100%);
   width: 1.5rem;
   padding: 1rem;
+}
+
+.burger {
+  opacity: 0;
+}
+
+.burger:hover {
+  opacity: 0.3;
 }
 
 /* Tablet */
