@@ -108,6 +108,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
 }
 .artist-names:not(:first-child, :last-child)::before {
   color: #a0a0a0;
@@ -168,6 +169,7 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: baseline;
   }
   .album-box {
     height: 350px;
