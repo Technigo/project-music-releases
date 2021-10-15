@@ -7,7 +7,8 @@ It was a pair programming project made by Harry Bäcklin and Ida Aspen.
 
 The challenge was to structure the code and break down the project to different components which needed to be mounted for each album card.
 
-The styling with different hover effects was also something that was a bit of a struggle.
+The styling with different hover effects was also something that was a bit of a struggle, at least to make the play icon bigger when hover over it.
+We also by misstake started with desktop design first and therefore the media queries below in the css is for mobile and tablet.
 
 ## View it live
 

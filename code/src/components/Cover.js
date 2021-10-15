@@ -1,18 +1,6 @@
 import React from 'react';
 
-// let elementToHover = document.querySelector(".cover")
-
-// function mouseOverFunction(e) {
-//     document.querySelector(".icons").style.display = "flex";
-// }
-
-// function mouseOutFunction() {
-//     document.querySelector(".icons").style.display = "none";
-// }
-
-// elementToHover.addEventListener("mouseover", mouseOverFunction);
-// elementToHover.addEventListener("mouseout", mouseOutFunction);
-
+// ALBUM COVER COMPONENT
 const Cover = (props) => {
   return (
     <div className="cover">

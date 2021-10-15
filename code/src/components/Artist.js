@@ -1,5 +1,6 @@
 import React from 'react';
 
+// ARTIST NAME COMPONENT
 const Artist = (props) => {
   return (
     <div className="artist">
