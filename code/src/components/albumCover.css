@@ -1,0 +1,11 @@
+.album-container {
+  justify-self: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+.album-image {
+  width: 40%;
+}
