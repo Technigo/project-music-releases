@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Pair project by Daniel Vestin & Pinar Demirel for making an app built with React to present recent Albums & Singles from a Spotify api.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First we tried to find where the data we wanted to use were located in the Json.
+After we located the data we started to map() it as props for the Album.js component, also made a map for when there was more than one artist. We then styled those situations to add "&" and "," with CSS.
+If we had more time we would've wanted to add more components for seperated albums/singles and a playlist or so.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://focused-yalow-894cee.netlify.app/
