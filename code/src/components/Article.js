@@ -12,7 +12,7 @@ const Article = (props) =>{
                 <img  className= "icon-heart"src="./icons/heart.svg" alt="heart icon"/>
                 
                 <div>
-                  <a href={props.playIconURL}><img className="icon-play" src="icons/play.svg" alt="play icong" /></a>
+                  <a href={props.playIconURL}><img className="icon-play" src="icons/play.svg" alt="play icon" /></a>
                 </div>
                 <img  className= "icon-dots"src="./icons/dots.svg" alt="dots icon" />
 
