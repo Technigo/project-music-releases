@@ -73,6 +73,7 @@ row-gap: 40px;
   width: 80px;
   z-index: 5;
   fill: white;
+  opacity: 0.8;
 }
 
 .album-name {
@@ -103,8 +104,10 @@ align-items: center;
   text-decoration: underline;
 }
 
+
 .play-icon:hover{
 width: 100px;
+opacity: 1;
 }
 
 .icons { 
