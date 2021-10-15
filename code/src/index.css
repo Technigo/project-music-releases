@@ -121,6 +121,10 @@ img {
     font-size: 30px;
   }
 
+  a:hover {
+    text-decoration: underline;
+  }
+
   .album-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
