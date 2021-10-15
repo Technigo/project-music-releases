@@ -10,4 +10,4 @@ We approached the project by starting to get all the information we wanted from 
 
 ## View it live
 
-https://spotify-new-realeses.netlify.app/
+https://spotify-new-releases.netlify.app
