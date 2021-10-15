@@ -12,9 +12,9 @@ const Article = (props) => {
           <Play className="Play" height="50px" width="50px" />
           <Dots className="Dots" height="50px" width="50px" />
         </div>
-        <img src={props.img} alt="album image" />
+        <img src={props.img} alt="album cover" />
       </div>
-      <a href={props.titleClick} target="_blank">
+      <a href={props.titleClick} target="_blank" rel="noopener noreferrer">
         <h2>{props.title}</h2>
       </a>
 

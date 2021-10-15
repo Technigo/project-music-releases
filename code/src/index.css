@@ -81,9 +81,7 @@ fill: white;
 .img-container {
   position:relative;
 }
-.wrapper-container {
-  
-}
+
 .container {
   display: grid;
   Grid-template-columns: 1fr;
