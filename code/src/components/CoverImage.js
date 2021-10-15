@@ -12,12 +12,14 @@ export const CoverImage = (props) => {
             height='20'
             alt='heart icon'
           />
-          <img
-            src='./icons/play.svg'
-            width='50'
-            height='50'
-            alt='play button icon'
-          />
+          <a href={props.playSong} target='_blank' rel='noopener noreferrer'>
+            <img
+              src='./icons/play.svg'
+              width='50'
+              height='50'
+              alt='play button icon'
+            />
+          </a>
           <img
             src='./icons/dots.svg'
             width='20'

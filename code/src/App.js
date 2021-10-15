@@ -24,7 +24,7 @@ export const App = () => {
         <p>
           Team Foxes
           <span role='img' aria-label='fox emoji'>
-            🦊
+            &nbsp;🦊&nbsp;
           </span>
           | Technigo
         </p>

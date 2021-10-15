@@ -13,7 +13,12 @@ export const SongCard = (props) => {
         <span className='release-date'>{props.objectItem.release_date}</span>
       </div>
       {/* display album cover image */}
-      <CoverImage image={props.objectItem.images[1].url} />
+      <CoverImage
+        /* image = link to cover image url */
+        image={props.objectItem.images[1].url}
+        /* playSong = link to title song url */
+        playSong={props.objectItem.external_urls.spotify}
+      />
       <a
         href={props.objectItem.external_urls.spotify}
         target='_blank'

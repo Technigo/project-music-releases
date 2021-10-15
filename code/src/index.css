@@ -38,7 +38,7 @@ hr {
 /* song cards */
 .song-card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
   width: 100%;
   max-width: auto;
@@ -181,7 +181,7 @@ footer p {
   }
 
   .song-card-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     width: 90%;
     margin: 0 auto;
