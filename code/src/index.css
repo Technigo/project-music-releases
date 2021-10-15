@@ -19,7 +19,8 @@ code {
   padding: 0.3rem 2rem 2rem 2rem;
 }
 
-.album-item {
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -36,13 +37,17 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
-p {
+h3 {
   font-family: Helvetica;
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 0;
 }
 
+h2:hover,
+h3:hover {
+  text-decoration: underline;
+}
 .header {
   padding: 0.5rem 2rem 0 2rem;
 }
@@ -55,34 +60,59 @@ p {
   position: relative;
 }
 
-.cover-img {
+.cover-image {
   width: 100%;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  position: center;
-  opacity: 1;
   display: block;
-  height: auto;
 }
 
-.middle {
-  transition: 0.5s ease;
-  opacity: 0;
+.overlay {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
 }
+
 .cover-image-container:hover .overlay {
   opacity: 1;
 }
-.cover-image-container:hover .middle {
-  opacity: 3;
+
+.controls {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  transform: translate(-50%, -50%);
 }
 
-.svg {
-  width: 100px;
+.heart-icon,
+.dots-icon {
+  width: 32px;
+}
+
+.play-icon {
+  width: 64px;
+}
+.play-icon:hover {
+  transform: scale(1.2);
+  /* perspective: 1px; */
+}
+
+.artist-name span:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name span:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
 }
