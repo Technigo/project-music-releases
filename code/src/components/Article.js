@@ -22,7 +22,7 @@ const Article = (props) =>{
           <img
               className="album-cover"
               src={props.albumCover}
-              />
+              alt="album cover"/>
 
         </div>
 
