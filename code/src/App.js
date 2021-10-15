@@ -7,9 +7,9 @@ const albumsArray = data.albums.items;
 export const App = () => {
   return (
     <div>
-      <h1 className="heading">New albums & singles</h1>
+      <h1 className='heading'>New albums & singles</h1>
       <hr></hr>
-      <div className="container">
+      <div className='container'>
         {' '}
         {albumsArray.map((album) => {
           return (
