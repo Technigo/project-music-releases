@@ -3,7 +3,7 @@ import React from 'react';
 import { Icons } from '../components/Icons'
 
 export const Album  = (props) => {
-    console.log('PROPS', props)
+
     return (
     <div className="card">
         <div className="img-container"> 
