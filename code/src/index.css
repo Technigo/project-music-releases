@@ -28,6 +28,7 @@ code {
 }
 
 .grid-container {
+  /* main */
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
@@ -62,6 +63,10 @@ code {
   line-height: 20px;
 }
 
+.album-link:hover {
+  text-decoration: underline;
+}
+
 .artists-container {
   margin-top: 0px;
 }
@@ -73,7 +78,21 @@ code {
 .artists-container a {
   text-decoration: none;
   color: var(--secondary-color);
-  line-height: 0px;
+  line-height: 17px;
+}
+
+.artists-container a:hover {
+  text-decoration: underline;
+}
+
+/* Add a comma after each artist */
+.artists-container span::after {
+  content: ", ";
+}
+
+/* Remove the comma after the last artist */
+.artists-container span:last-child::after {
+  content: ""
 }
 
 .img-container:hover .overlay {
@@ -85,7 +104,7 @@ code {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(156, 166, 197, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .overlay {
@@ -101,7 +120,7 @@ code {
 }
 
 .play-icon {
-  width: 90px;
+  width: 70px;
 }
 
 .play-icon:hover {

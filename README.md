@@ -3,7 +3,7 @@ Practicing React and creating components by using data from Spotify. We built a 
 
 ## The project
 
-The project incldes:
+The project includes:
 
 - Our app has 3 components called Album, Artist and Header.
 - Our page looks like the design provided.
@@ -12,7 +12,7 @@ The project incldes:
     - album name
     - the name of each artist involved with a comma between
 - Hover effects:
-    - When you hover over an album, it goes darker, is show's a play button, a favourite button, and an ellipsis
+    - When you hover over an album, it goes darker, it show's a play button, a favourite button, and an ellipsis
     - When you hover over the play button, it grows
     - Hovering an artist name or an album name matches the design sketch
 - When you click on the album, it links to the album's external url in the data
