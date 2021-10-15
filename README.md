@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+MUSIC RELEASES: This project was a pair-programming project with Jessica Falk and Lena Simma, The aim of the project was to build a music site giving an overview on 10 album releases using JSX and React components. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The challenge was to fetch information from a data set using a map function to iterate over an array as well as mounting several components.
+This is the very first project using React and it was challenging to get used to the new structure especially in regard to the components. But we managed and are very happy with the result. You can have a look hear.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
