@@ -1,9 +1,7 @@
 import React from "react";
 import Icons from "./Icons";
 
-{
-  /* Album components  */
-}
+/* Album components  */
 
 const Album = (props) => {
   return (
@@ -30,9 +28,7 @@ const Album = (props) => {
 
       <div className="artist-text-container">
         {props.artists.map((artist) => {
-          {
-            /* Here we render artists */
-          }
+          /* Here we render artists */
           return (
             <span key={artist.id} className="inner-artist-container">
               <a

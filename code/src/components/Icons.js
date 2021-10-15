@@ -1,8 +1,7 @@
 import React from "react";
-{/* Icon components  */}
+/* Icon components */
 
 const Icons = (props) => {
-
   return (
     <div className="icons">
       <img className="heart-button" src="icons/heart.svg" alt="heart" />

@@ -10,11 +10,8 @@ export const App = () => {
       <Header title="New albums and singles" />
       <div className="album-container">
         {data.albums.items.map((album) => {
-          {
-            /* Here we render album items */
-          }
-
           return (
+            /* Here we render album items */
             <Album
               key={album.id}
               link={album.external_urls.spotify}
