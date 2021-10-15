@@ -8,4 +8,4 @@ We used mostly pair-programming techniques to solve the tasks.  When we didn´t 
 
 ## View it live
 
-Netlify link:  
+Netlify link: https://cocky-bell-87ebaa.netlify.app
