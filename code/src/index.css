@@ -12,6 +12,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.playlist-album-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.playlists-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  height: 100%;
+  border-right: 1px solid rgba(53, 51, 51, 0.404);
+  margin-right: 10px;
+  justify-content: center;
+}
+.image-playlists {
+  width: 90%;
+  position: relative;
+}
+.playlist-h2 {
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+.playlist-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px 0px 0px 0px;
+  font-size: 12px;
+  font-family: Helvetica;
+  margin: 0 auto 10px auto;
+}
+.playlist-link:hover {
+  text-decoration: underline;
+}
+
 .header h1 {
   font-family: Helvetica, sans-serif;
   font-size: 19px;
@@ -54,7 +93,7 @@ p {
   flex-direction: row;
 }
 .album-box {
-  width: 310px;
+  width: 220px;
   height: 100%;
   margin: 10px;
 }
@@ -66,7 +105,6 @@ p {
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .artist-names:not(:first-child, :last-child)::before {
   color: #a0a0a0;
@@ -134,7 +172,7 @@ p {
 }
 @media (min-width: 992px) {
   .album-box {
-    height: 120%;
     width: 20%;
+    height: 300px;
   }
 }
