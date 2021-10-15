@@ -1,11 +1,14 @@
 import React from 'react'
+import Header from './components/Header'
 import data from './data.json'
 import data2 from './data2.json'
 import Article from './components/Article'
 
+
 console.log(data)
 console.log(data.albums.items)
 console.log(data2)
+
 
 export const App = () => {
     // one line of code 
