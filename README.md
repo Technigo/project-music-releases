@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This is our first React project. We practiced to use components and props. We used data based om spotifys API to make an app that shows the upcoming album and singel releases.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+It took some time for us to understand how to connect the different parts of the script. We also had some problems with the external links.
+
+Whit some stack overflow magic - we finally made it work. We also found the hover effect challenging, and found out that we could lay an hover on top of another. We made the team work work even though we had very different schedules
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+view our project here: https://spotify-album-releases.netlify.app/
