@@ -165,6 +165,9 @@ p {
 }
 
 @media (min-width: 768px) {
+  .playlists-wrapper {
+    width: 150px;
+  }
   .album-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
