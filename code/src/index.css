@@ -131,20 +131,20 @@ code {
 /* styling for tablet and desktop */
 
 @media only screen and (min-width: 768px) {
-  .release-container-all {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .container {
     width: 650px;
+  }
+  .release-container-all {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .release-container-all {
-    grid-template-columns: repeat(4, 1fr);
-  }
   .container {
     width: 1300px;
+  }
+  .release-container-all {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
