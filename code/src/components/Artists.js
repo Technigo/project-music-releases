@@ -8,7 +8,6 @@ const Artists = (props) => {
 
   else {
     return ( <p key={props.artists[0].id}>
-        {console.log(props.artists.splice(0, props.artists.length - 2))}
         {props.artists.splice(0, props.artists.length - 2).map((artist) => (
           <>{artist.name}, </>
         ))}

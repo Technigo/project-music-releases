@@ -1,29 +1,25 @@
 import React from 'react'
+import Artists from './Artists'
+import Icons from './Icons'
 
 export const Album = (props) => {
     return (
       <article className="album-card">
         <section className="cover">
-  
-          <a href={props.albumLink} target="_blank">
-            <img src= {props.image} className="album-cover"/>
+          
+          <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
+            <div className="album-image-container">
+              <Icons />
+              <img src= {props.img} className="album-cover" alt={props.albumTitle}/>
+            </div>
           </a>
   
-          <a href={props.albumLink} target="_blank">
-            <h2>{props.albumTitle}</h2>
+          <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
+            <h2>{props.title}</h2>
           </a>
+
+          <Artists artists={props.artists}/>
   
-          <div className={`artists ${props.artists.length > 1 ? 'artist-list' : ''}`}> 
-            {props.artists.map(artist => {
-              return (
-                <Artist
-                  key={artist.id}
-                  name={artist.name}
-                  artistLink={artist.external_urls.spotify}
-                />
-              )
-            })}
-          </div>
         </section>
       </article>
     )

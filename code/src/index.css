@@ -15,29 +15,34 @@ code {
     monospace;
 }
 
-.album {
+.album-image-container {
+  position: relative;
+}
+
+.album-card {
   width: 300px;
   border: 2px solid #333;
   padding: 15px;
 }
 
-.article-tag-container {
-  display: flex;
-}
-
-.article-tag {
-  background: #999;
-  padding: 5px;
-  border: 1px solid #333;
-  margin: 1px;
-}
-
+/* 
 .artist-text::after {
   content: ", ";
-}
+} */
 
 .header-title {
   color:white;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .icons-container:hover {
@@ -45,15 +50,7 @@ code {
     transition: 0.5s;
   }
   
-.heart {
-  width: 40px;
-}
-
-.play {
-  width: 40px;
-}
-
-.dots {
+.icon {
   width: 40px;
 }
 
@@ -62,7 +59,7 @@ code {
   display: flex;
 }
 
-/* In case of multiple artists, this adds ', ' before every artist that is not the first nor the last one*/
+/* In case of multiple artists, this adds ', ' before every artist that is not the first nor the last one
 .artist-list > :not(:last-child):not(:first-child):before {
   content: ", ";
   white-space: pre;
@@ -70,9 +67,9 @@ code {
 }
 
 /* In case of multiple artists, this adds ' & ' before the last artist*/
-.artist-list > :last-child:before {
+/* .artist-list > :last-child:before {
   content: " & ";
   white-space: pre;
   color: #a0a0a0;
-}
+} */ 
 
