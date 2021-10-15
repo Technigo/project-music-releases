@@ -105,6 +105,10 @@ a {
 	width: 300px;
 }
 
+.artists-container {
+	margin-top: 6px;
+}
+
 .album-title {
 	font-family: Helvetica;
 	font-size: 14px;
@@ -117,7 +121,6 @@ a {
 	font-size: 14px;
 	color: #a0a0a0;
 	font-weight: bold;
-	line-height: 28px;
 }
 
 .album-title:hover,
