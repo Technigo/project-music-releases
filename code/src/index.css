@@ -2,8 +2,8 @@
   --gray-black: #242626;
 }
 
-#wrapper{
-  width:90vw;
+#wrapper {
+  width: 90vw;
   margin: 0 auto;
 }
 
@@ -20,75 +20,81 @@ body {
 a {
   text-decoration: none;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .header {
-  color:#ffffff;
-  margin:0;
+  color: #ffffff;
+  margin: 0;
   border-bottom: 2px solid white;
   margin-bottom: 1em;
-  
 }
 
 .app-section {
   background-color: var(--gray-black);
-  
 }
 
 .grid-container {
-  display:grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  grid-column-gap:2em;
-  grid-row-gap:2em;
-  
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
 }
 
-.cover{
+.cover {
   position: relative;
 }
 /* allt behöver vara i procent inuit card-klassen */
-.cover-img{
-  width:100%;
-  
+.cover-img {
+  width: 100%;
 }
 
-.cover-img:hover{
+.cover-img:hover {
   filter: brightness(20%);
 }
 
 .cover-img:hover + .icons {
-  display:flex;
-  
+  display: flex;
 }
 
-
 .title {
-  color:#ffffff;
-  margin:0;
+  color: #ffffff;
+  margin: 0;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
   /* Artist name - 14px Helvetica #a0a0a0 */
 }
 
-.artist-name a{
-  color:#a0a0a0;
+.title:hover {
+  text-decoration: underline 1px;
+}
+
+.artist-name a {
+  color: #a0a0a0;
   font-size: 14px;
   font-family: Helvetica, sans-serif;
 }
 
-.icons {
-  display:none;
-  justify-content: center;
-  position: absolute;
-  top:45%;
+.artist-name:hover {
+  text-decoration: underline 1px;
 }
 
+.artist-name {
+  color: #a0a0a0;
+}
 
-.icon{
+.icons {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  top: 45%;
+}
+
+.icon {
   padding: 0 5%;
 }
 
@@ -100,30 +106,45 @@ code {
 
 } */
 
-.icons-play{
-  width:23%;
+.icons-play {
+  width: 23%;
   /* background-color: #242626; */
 }
 
+.icons-play:hover {
+}
 
-.icons-small{
-  width:11%;
+.icons-small {
+  width: 11%;
 }
 
 .icons-play:hover {
   background-color: #242626;
 }
 
-
-
-
 /* allt behöver vara i procent inuit card-klassen */
 @media (min-width: 980px) {
   .card-container {
     /* border: 1px solid white; */
   }
+}
+
+/* STYLING FOR TABLET */
+@media (max-width: 980px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-container {
+    width: 100%;
+  }
+}
+
+/* STYLING FOR DESKTOP */
+/* @media (max-width: 1024px) {
 
 }
+ */
 
 /* .title {
   width: 300px;
@@ -142,21 +163,6 @@ code {
   margin: 1px;
 } */
 
-/* a {
-  text-decoration: none;
-} */
-
-/* /* .icons {
-}
-
-.icons-heart {
-}
-
-.icons-play {
-}
-
-.icons-dots {
-}  */
 /* Album title - 14px Helvetica #ffffff
 Artist name - 14px Helvetica #a0a0a0 */
 
@@ -166,5 +172,3 @@ Artist name - 14px Helvetica #a0a0a0 */
 /* allt behöver vara i procent inuit card-klassen */
 /* allt behöver vara i procent inuit card-klassen */
 /* allt behöver vara i procent inuit card-klassen */
-
-

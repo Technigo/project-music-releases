@@ -7,26 +7,8 @@ It was a pair programming project made by Harry Bäcklin and Ida Aspen.
 
 The challenge was to structure the code and break down the project to different components which needed to be mounted for each album card.
 
+The styling with different hover effects was also something that was a bit of a struggle.
+
 ## View it live
 
-import React from 'react';
-
-const Artist = (props) => {
-return (
-<div className="artist">
-{props.item.artists.map((artist) => {
-return (
-<a key={artist.id} href={artist.external_urls.spotify}>
-<h2 className="artist-name">
-{artist.name}
-<span>,&nbsp;</span>
-</h2>
-</a>
-);
-})}
-</div>
-// https://stackoverflow.com/c/technigo/questions/1666
-);
-};
-
-export default Artist;
+https://aspen-backlin-project-music.netlify.app

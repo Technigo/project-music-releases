@@ -10,7 +10,6 @@ import React from 'react';
 //     document.querySelector(".icons").style.display = "none";
 // }
 
-
 // elementToHover.addEventListener("mouseover", mouseOverFunction);
 // elementToHover.addEventListener("mouseout", mouseOutFunction);
 
@@ -24,8 +23,16 @@ const Cover = (props) => {
       />
 
       <div className="icons">
-        <img className="icons-heart icons-small icon" src="./icons/heart.svg" alt="like icon" />
-        <img className="icons-play icon" src="./icons/play.svg" alt="play icon" />
+        <img
+          className="icons-heart icons-small icon"
+          src="./icons/heart.svg"
+          alt="like icon"
+        />
+        <img
+          className="icons-play icon"
+          src="./icons/play.svg"
+          alt="play icon"
+        />
         <img
           className="icons-dots icons-small icon"
           src="./icons/dots.svg"
