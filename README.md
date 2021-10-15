@@ -10,4 +10,4 @@ If we had more time we would've wanted to add more components for seperated albu
 
 ## View it live
 
-https://focused-yalow-894cee.netlify.app/
+https://music-app-by-pinar-and-daniel.netlify.app/
