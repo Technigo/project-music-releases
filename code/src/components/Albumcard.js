@@ -16,9 +16,7 @@ export const Albumcard = (props) => {
         <h2 className="album-name">
           <a href={props.hrefAlbum}>{props.name}</a>
         </h2>
-        <h3 className="artists">
-          <a href={props.hrefArtists}>{props.artists}</a>
-        </h3>
+        <h3 className="artists">{props.artists}</h3>
       </article>
     </section>
   );

@@ -23,7 +23,9 @@ export const App = () => {
                 name={album.name}
                 hrefAlbum={album.external_urls.spotify}
                 artists={album.artists.map((item, index) => (
-                  <span key={item.href}>{item.name}</span>
+                  <a target="_blank" key={item.href} href={item.external_urls.spotify}>
+                    {item.name}
+                  </a>
                 ))}
                 hrefArtists={album.artists.map((item) => item.external_urls.spotify)}
               />
