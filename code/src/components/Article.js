@@ -13,8 +13,8 @@ const Article = (props) => {
         <div className="overlay">
           {/* <Heart className="Heart" viewBox="0 0 100 100" /> */}
           <Heart className="Heart" height="50px" width="50px" />
-          {/* <Play className="Play" height="50px" width="50px" /> */}
-          <Play className="Play" viewBox="0 0 100 100" />
+          <Play className="Play" height="50px" width="50px" />
+          {/* <Play className="Play" viewBox="0 0 100 100" /> */}
           {/* <Dots className="Dots" viewBox="0 0 100 100" /> */}
           <Dots className="Dots" height="50px" width="50px" />
         </div>

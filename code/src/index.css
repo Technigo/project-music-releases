@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(24, 24, 20);
 }
 
 code {
@@ -50,8 +50,8 @@ img:hover {
   position: absolute;
   right: 0;
   top: 0;
-  display:grid;
-  grid-template-columns: auto 50px auto;
+  display:flex;
+  justify-content: center;
 }
 
 .overlay:hover {
@@ -60,14 +60,16 @@ img:hover {
    background-color: rgba(8, 8, 8, 0.6);
 }
 .overlay:hover .Heart, .overlay:hover .Dots, .overlay:hover .Play {
-  fill: white;
+  fill: rgba(255, 255, 255, 0.742);
   display: block;
   margin: auto;
-  grid-column: span 1;
 }
 .overlay:hover .Play:hover {
-  height: 60px; 
-  width: 60px;
+  height: 70px; 
+  width: 70px;
+}
+.overlay:hover .Play:hover, .overlay:hover .Heart:hover, .overlay:hover .Dots:hover {
+fill: white;
 }
 
 .img-container {
