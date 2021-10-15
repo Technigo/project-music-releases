@@ -1,5 +1,6 @@
 import React from 'react'
 import data from '../stretch-goal.json'
+// import './sidebar.css'
 
 // console.log(data)
 

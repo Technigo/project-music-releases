@@ -1,6 +1,24 @@
 .artist-name {
   color: #a0a0a0;
   font-size: 14px;
+  display: inline;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.artist-name::after {
+  content: ', ';
+}
+
+.artist-name:last-child::after {
+  content: '';
+}
+
+.artist-name:nth-last-of-type(2)::after {
+  content: ' & ';
 }
 
 .artist-name:hover {

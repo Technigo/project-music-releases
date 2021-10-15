@@ -1,0 +1,31 @@
+.sidebar {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #a0a0a0;
+  padding-top: 40px;
+  z-index: 1;
+  background: rgba(41, 42, 47, 0.95);
+}
+
+ul,
+.sidebar h1 {
+  list-style: none;
+  padding-left: 40px;
+}
+
+.open ~ .sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin: 5px;
+}
+
+.playlist:hover {
+  text-decoration: underline;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-// import './ArtistName.css'
+// import './artistName.css'
 
 export const ArtistName = props =>
   props.artists.map(artist => (

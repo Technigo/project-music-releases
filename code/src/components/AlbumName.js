@@ -1,5 +1,5 @@
 import React from 'react'
-// import './AlbumName.css'
+// import './albumName.css'
 
 export const AlbumName = props => (
   <p key={props.item.name + props.item.id} className='album-name'>

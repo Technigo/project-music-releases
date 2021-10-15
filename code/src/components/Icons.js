@@ -1,7 +1,7 @@
 import React from 'react'
-// import './Icons.css'
+// import './icons.css'
 
-export const Icons = props => {
+export const Icons = () => {
   return (
     <div className='icons-container'>
       <img className='icon heart' src='/icons/heart.svg' alt='heart icon' />
