@@ -2,15 +2,18 @@ import React from 'react'
 import data from './data.json'
 import playlistData from './stretch-goal.json'
 
-// then we the vinyl at import in app.js
+// components to import in app.js
 import Vinyl from './components/Vinyl'
 import Playlists from './components/Playlists'
+import MainHeader from './components/MainHeader'
+import SidebarHeader from './components/SidebarHeader'
 
 // I just put this in variable so it's easier
 const albumArray = data.albums.items
 const playlistArray = playlistData.playlists.items
 
-console.log(playlistData.playlists.items)
+// lets delete this.
+// console.log(playlistData.playlists.items)
 
 // then here we have the "entire" website
 // run this and you will see all the albums and artists
@@ -18,8 +21,7 @@ export const App = () => {
   return (
     <div className="project-container">
       <aside className="sidebar">
-        <h1 className="main-heading"> Playlists</h1>
-        <hr className="horizontal-line" />
+        <SidebarHeader />
         <div className="playlist-container">
           {playlistArray.map((playlist) => {
             return (
@@ -43,14 +45,7 @@ export const App = () => {
         </p>
       </aside>
       <main>
-        <header className="header">
-          <h1 className="main-heading">New Albums and Singles</h1>
-          {/* prettier-ignore */}
-          <img
-            src="/icons/spotify4.svg"
-            alt="spotify logo"
-            className="header-logo" />
-        </header>
+        <MainHeader />
         <hr className="horizontal-line" />
         <div className="container">
           {albumArray.map((album) => {

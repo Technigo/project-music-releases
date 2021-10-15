@@ -1,10 +1,12 @@
 import React from 'react'
 import Artists from './Artists'
+import Icons from './Icons'
 
 // first we do an album/vinyl
 const Vinyl = (props) => {
   return (
     <article className="vinyl-card">
+      <Icons />
       <div className="play-container">
         <img src="/icons/play.svg" alt="play" className="icons play" />
       </div>
