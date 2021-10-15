@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Artist= (props) => {
-    console.log(props)
-
+const Artist = ({ artistLink, artistName }) => {
     return (
-        <h2>{props.album.artists[0].name}</h2>
-        //ej länkat ihop detta rätt
-        
+        <h3 class="artist-name">
+            <a href={artistLink} className="artist" target="_blank" rel="noreferrer noopener" >
+            {artistName}
+            </a>
+        </h3>
     )
 }
 

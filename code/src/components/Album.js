@@ -1,5 +1,5 @@
 import React from 'react';
-// import Artist from './Artist';
+import Artist from './Artist';
 
 const Album = (props) => {
     console.log(props)
@@ -40,7 +40,14 @@ const Album = (props) => {
                 {props.album.name}
             </a>
             </h2>
-            <h3>{props.album.artists[0].name}</h3>
+            <div className="artists">
+                {props.album.artists.map((artist, index) => {
+                    return (<Artist key={artist.id} artistLink={artist.external_urls.spotify}
+                        artistName={artist.name} />
+                    )
+                })
+                }
+            </div>
         </div>
         </>
     )
