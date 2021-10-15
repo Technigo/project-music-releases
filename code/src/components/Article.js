@@ -9,12 +9,12 @@ const Article = (props) =>{
           <div className = "image-container">
 
           <div className = "overlay">
-                <img  className= "icon-heart"src="./icons/heart.svg"/>
+                <img  className= "icon-heart"src="./icons/heart.svg" alt="heart"/>
                 
                 <div>
-                  <a href={props.playIconURL}><img className="icon-play" src="icons/play.svg" alt="Play" /></a>
+                  <a href={props.playIconURL}><img className="icon-play" src="icons/play.svg" alt="play" /></a>
                 </div>
-                <img  className= "icon-dots"src="./icons/dots.svg"/>
+                <img  className= "icon-dots"src="./icons/dots.svg" alt="dots" />
 
               
           </div>
