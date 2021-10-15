@@ -1,4 +1,5 @@
 import React from "react"
+import "./index.css"
 import data from "./data.json"
 import Wrapper from "./components/Wrapper"
 
