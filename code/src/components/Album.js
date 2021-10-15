@@ -1,18 +1,41 @@
 import React from "react";
+import { Play } from "./AlbumIcons/Play";
+import { Heart } from "./AlbumIcons/Heart";
+import { Dots } from "./AlbumIcons/Dots";
 
 const Album = (props) => {
   // console.log('PROPS', props);
 
   return (
-    <article className="album-banana">
-      <img src={props.albumimage} alt="Cover of album" />
-      <a className="album-link" href={props.albumlink}>
-        <h1 className="release-name-text">{props.songtitle}</h1>
-      </a>
-    </article>
+    <>
+      <div className="albumCard">
+        <div className="banana">
+          <div className="albumIcons">
+            <img
+              src="../icons/heart.svg"
+              className="icon heart"
+              alt="heart icon"
+            />
+            <img
+              src="../icons/play.svg"
+              className="icon play"
+              alt="play icon"
+            />
+            <img
+              src="../icons/dots.svg"
+              className="icon dots"
+              alt="more icon"
+            />
+          </div>
+          <img src={props.albumimage} alt="Cover of album" />
+        </div>
+
+        <a className="albumLink" href={props.albumlink}>
+          <h1 className="release-name-text">{props.songtitle}</h1>
+        </a>
+      </div>
+    </>
   );
 };
-
-// <a href={albums.external_urls.spotify}>{artist.name}</a>
 
 export default Album;

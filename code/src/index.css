@@ -28,14 +28,14 @@ code {
 }
 
 .release-name-text,
-.album-link {
+.albumLink {
   font-size: 14px;
   color: #fff;
   max-width: 300px;
   text-decoration: none;
 }
 
-.album-link:hover {
+.albumLink:hover {
   text-decoration: underline;
 }
 
@@ -49,6 +49,79 @@ code {
   color: #fff;
   text-decoration: underline;
 }
+
+/* OVERLAY AND ICONS ///////////////////////*/
+
+.albumIcons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: space-evenly;
+  border: 2px solid lime;
+}
+
+.heart {
+  width: 60px;
+  filter: invert();
+}
+
+.heart:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.2);
+}
+
+.play {
+  width: 60px;
+  filter: invert();
+}
+
+.play:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.2);
+}
+
+.dots {
+  width: 60px;
+  filter: invert();
+}
+
+.dots:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.2);
+}
+
+.albumCard {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+  border: 2px solid yellow;
+}
+.banana {
+  border: 2px solid blue;
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.banana:hover .albumIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.5); */
+  padding: 20px;
+}
+
+/* END OF OVERLAY-SECTION  ///////////////////////////*/
 
 /* MEDIA QUERIES START HERE*/
 
