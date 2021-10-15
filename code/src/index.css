@@ -136,16 +136,19 @@ a:hover {
   content: ", ";
   color: #a0a0a0;
   margin-top: 14px;
+  margin-right: 2px;
 }
 
 .artist-container :last-child::before {
   content: " & ";
   color: #a0a0a0;
   margin-top: 14px;
+  margin-right: 2px;
 }
 
 .artist-container :only-child::before {
   content: "";
+  margin-right: 0;
 }
 
 @media (min-width: 768px) {
