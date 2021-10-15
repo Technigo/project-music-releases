@@ -4,16 +4,12 @@ import Album from "./components/Album";
 import data2 from "./stretch-goal.json";
 import Playlist from "./components/Playlist";
 
-console.log(data2);
 const AlbumArray = data.albums.items;
-console.log(AlbumArray);
 const PlaylistArray = data2.playlists.items;
-console.log(PlaylistArray);
 
 const arraySinglesOnly = AlbumArray.filter((x) =>
   x.album_type.includes("single")
 );
-
 const arrayAlbumsOnly = AlbumArray.filter((x) =>
   x.album_type.includes("album")
 );
@@ -57,7 +53,7 @@ export const App = () => {
       </div>
 
       <div className="sidebar">
-        <h1>{data2.message}</h1>
+        <h1>Top playlists</h1>
 
         <div>
           {PlaylistArray.map((playlist) => {

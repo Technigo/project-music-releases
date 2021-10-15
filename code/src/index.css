@@ -117,6 +117,7 @@ h1 {
 .play:hover {
   width: 30%;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .heart:hover,
@@ -183,9 +184,4 @@ h1 {
   .album-wrapper {
     max-width: 25%;
   }
-/* 
-  .albums-wrapper,
-  .title-wrapper {
-    max-width: 1300px;
-  } */
 }
