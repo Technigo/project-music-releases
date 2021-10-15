@@ -2,6 +2,7 @@ import React from "react";
 import { Artist } from "./Artist";
 
 export const Album = (props) => {
+  // console.log(artistList);
   return (
     <div className="album">
       <div className="album-cover-wrapper">
@@ -25,10 +26,7 @@ export const Album = (props) => {
           {props.item.name}
         </a>
       </h3>
-
-      {props.item.artists.map((item) => {
-        return <Artist key={item.id} item={item} />;
-      })}
+      <Artist key={props.item.id} artistList={props.artist} />;
     </div>
   );
 };

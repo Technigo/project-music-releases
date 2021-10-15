@@ -10,7 +10,7 @@ export const App = () => {
       <Header />
       <div className="album-wrapper">
         {data.albums.items.map((item) => (
-          <Album key={item.id} item={item} />
+          <Album key={item.id} item={item} artist={item.artists} />
         ))}
       </div>
     </>
