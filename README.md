@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week project was start of learning React building a "New Releases"music site. Goal was to practice React and creating components using data from Spotify.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We had a challenging time creating components and then bringing them together in the mother file.If we had more time would like to practice that more.
+Since it was first week of react our goal was to make small steps that we then understand well rather then to take a big bite into the project.
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.

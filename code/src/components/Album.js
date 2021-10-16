@@ -1,10 +1,6 @@
 import React from "react";
 
-//console.log(data.albums.items[0].artists[0].name)
-
 const Album = (props) => {
-  //console.log('aleksa', props);
-
   return (
     <article className="album-item">
       <div className="cover-image-container">
@@ -32,9 +28,7 @@ const Album = (props) => {
       <a className="album-name" href={props.albumLink} target="_blank">
         <h2>{props.title}</h2>
       </a>
-      <a className="artist-name" href={props.artistLink} target="_blank">
-        <h3>{props.singer}</h3>
-      </a>
+      <h3>{props.singer}</h3>
     </article>
   );
 };

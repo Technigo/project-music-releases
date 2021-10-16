@@ -21,6 +21,14 @@ code {
 
 a {
   text-decoration: none;
+  font-family: Helvetica;
+  color: #a0a0a0;
+  font-size: 14px;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: under;
 }
 
 h1 {
@@ -34,15 +42,20 @@ h2 {
   font-family: Helvetica;
   color: #ffffff;
   font-size: 14px;
+  line-height: 20px;
   margin-bottom: 0.5rem;
 }
 
-h3 {
+.artist-name {
+  margin: 0;
+}
+
+/* h3 {
   font-family: Helvetica;
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 0;
-}
+} */
 
 h2:hover,
 h3:hover {
@@ -50,10 +63,6 @@ h3:hover {
 }
 .header {
   padding: 0.5rem 2rem 0 2rem;
-}
-
-.artist-name {
-  color: #ffffff;
 }
 
 .cover-image-container {
@@ -92,6 +101,7 @@ h3:hover {
   left: 50%;
   width: 75%;
   transform: translate(-50%, -50%);
+  transition: all 2s ease-in-out;
 }
 
 .heart-icon,
@@ -104,15 +114,14 @@ h3:hover {
 }
 .play-icon:hover {
   transform: scale(1.2);
-  /* perspective: 1px; */
 }
 
-.artist-name span:not(:first-of-type, :last-of-type)::before {
+.artist-name a:not(:first-of-type, :last-of-type)::before {
   color: #a0a0a0;
   content: ", ";
 }
 
-.artist-name span:nth-last-of-type(2)::after {
+.artist-name a:nth-last-of-type(2)::after {
   content: " & ";
   color: #a0a0a0;
 }
