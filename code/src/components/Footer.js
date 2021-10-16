@@ -1,5 +1,6 @@
 import React from 'react'
 
+// This component is the footer in the sidebar.
 const Footer = () => {
   return (
     <>

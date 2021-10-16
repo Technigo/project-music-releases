@@ -13,15 +13,13 @@ import Footer from './components/Footer'
 const albumArray = data.albums.items
 const playlistArray = playlistData.playlists.items
 
-// lets delete this.
-// console.log(playlistData.playlists.items)
-
 // then here we have the "entire" website
 // run this and you will see all the albums and artists
 export const App = () => {
   return (
     <div className="project-container">
       <aside className="sidebar">
+        {/* Editor's picks sidebar container */}
         <SidebarHeader />
         <div className="playlist-container">
           {playlistArray.map((playlist) => {
@@ -36,12 +34,12 @@ export const App = () => {
             )
           })}
         </div>
-        {/* <hr className="horizontal-line" /> */}
         <Footer />
       </aside>
       <main>
         <MainHeader />
         <hr className="horizontal-line" />
+        {/* main container for the vinyls */}
         <div className="container">
           {albumArray.map((album) => {
             return (

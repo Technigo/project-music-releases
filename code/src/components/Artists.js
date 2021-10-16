@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Artists = (props) => {
+  // this makes the , and & between the names
   const generateDelimiter = (index, length) => {
     if (index === length - 2) {
       return ' & '
@@ -8,8 +9,6 @@ const Artists = (props) => {
       return ', '
     }
   }
-  // lets delete this, when console log is commented out we get the key error.
-  // console.log(props)
   return (
     <>
       {props.artistList.map((artists, index) => {

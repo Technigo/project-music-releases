@@ -6,7 +6,7 @@ import Icons from './Icons'
 const Vinyl = (props) => {
   return (
     <article className="vinyl-card">
-      <Icons />
+      <Icons link={props.titleUrl} />
       <img className="album-cover" src={props.cover} alt="album artwork" />
       <a href={props.titleUrl} target="_blank" rel="noopener noreferrer">
         <h2 className="song-title">{props.song}</h2>
