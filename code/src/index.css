@@ -123,6 +123,7 @@ a:hover {
   color: #a0a0a0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
+  margin: 0;
 }
 
 .article h2 {
@@ -135,14 +136,14 @@ a:hover {
 .artist-container :not(:first-child, :last-child)::before {
   content: ", ";
   color: #a0a0a0;
-  margin-top: 14px;
+  /* margin-top: 14px; */
   margin-right: 2px;
 }
 
 .artist-container :last-child::before {
   content: " & ";
   color: #a0a0a0;
-  margin-top: 14px;
+  /* margin-top: 14px; */
   margin-right: 2px;
 }
 
