@@ -13,6 +13,7 @@ export const App = () => {
         <h1>New albums & singels</h1>
       </header>
       <div className="playlist-album-wrapper">
+        <Playlist />
         <div className="album-wrapper">
           {items.map((item) => {
             return (
@@ -37,7 +38,6 @@ export const App = () => {
             );
           })}
         </div>
-        <Playlist />
       </div>
     </div>
   );

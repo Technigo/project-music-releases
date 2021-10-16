@@ -20,12 +20,12 @@ code {
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-left: 1px solid rgba(73, 71, 71, 0.911);
-  padding: 20px;
+  border-right: 1px solid rgba(73, 71, 71, 0.911);
+  padding: 5px;
   width: 100px;
 }
 .image-playlists {
-  width: 70%;
+  width: 80%;
   position: relative;
 }
 .playlist-h2 {
@@ -40,10 +40,10 @@ code {
   text-decoration: none;
   color: #ffffff;
   margin: 5px 0px 0px 0px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Helvetica;
   margin: 0 0 10px 0;
-  width: 60%;
+  width: 80%;
   text-align: left;
 }
 .playlist-link:hover {
@@ -60,7 +60,7 @@ code {
 }
 .header {
   border-bottom: 2px solid rgba(85, 84, 84, 0.623);
-  margin: auto auto 10px 20px;
+  margin: auto auto 10px 90px;
 }
 .album-name {
   font-family: Helvetica, sans-serif;
@@ -95,7 +95,7 @@ p {
   flex-direction: row;
 }
 .album-box {
-  width: 290px;
+  width: 260px;
   height: 100%;
   margin: 10px;
 }
@@ -168,6 +168,9 @@ p {
   .playlists-wrapper {
     width: 150px;
   }
+  .header {
+    margin-left: 140px;
+  }
   .album-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -176,6 +179,9 @@ p {
   }
   .album-box {
     height: 350px;
+  }
+  .playlist-link {
+    font-size: 16px;
   }
 }
 @media (min-width: 992px) {
