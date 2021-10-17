@@ -1,12 +1,12 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
     background-color: #191414;
-    color: #fff;
+    margin: 5px;
+    
 }
 
 code {
@@ -22,14 +22,15 @@ code {
 }
 
 .header-text {
-  display: flex;
+  color: #fff;
+  font-size: 25px;
+  /*display: flex;*/
 }
 
 /* styling for main section */
 .main-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
 }
 
 /* styling for each album card */
@@ -37,14 +38,14 @@ code {
   display: flex;
   flex-direction: column;
   grid-column: span 4;
-  
+  margin: 10px 10px;
 }
 
 /* styling for album image */
 .image-container {
-  display: flex;
+  display: flex; /* behövs denna då article har flex*/
   position: relative;
-  justify-content: space-evenly;
+  
 }
 
 .album-image {
@@ -60,11 +61,13 @@ code {
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
+  padding: 40% 0;
 }
 
 /* styling for icons */
 .icon {
   display: none;
+  padding: 0 15px;
   filter: invert();
   z-index: 1;
 }
@@ -74,11 +77,11 @@ code {
 }
 
 .play {
-  width: 50px;
+  width: 60px;
 }
 
 .dots {
-  width: 30px;
+  width: 20px;
 }
 
 .play:hover {
@@ -100,6 +103,9 @@ code {
 .album-name {
   display: flex;
   justify-content: space-evenly;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
 }
 
 .album-link {
