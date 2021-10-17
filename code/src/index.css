@@ -2,13 +2,16 @@ body {
   background-color: black;
   color: white;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 .music {
@@ -27,20 +30,98 @@ a:hover {
 .album-name a {
   font-size: 16px;
   color: #ffff;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .artists a {
   font-size: 14px;
   color: #a0a0a0;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .artists :not(:first-of-type, :last-of-type)::before {
-  content: ", ";
+  content: ', ';
 }
+
 .artists :nth-last-of-type(2)::after {
-  content: " & ";
+  content: ' & ';
+}
+
+.header-container {
+  position: relative;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: #fff;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.header-container.active {
+  right: 200px;
+}
+
+/*Playlist only shows when toggled to active*/
+.playlist-menu.active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  background: black;
+  padding-right: 20px;
+  margin-top: 129px;
+  overflow-y: scroll;
+}
+
+.playlist-menu {
+  display: none;
+}
+
+/*Navbar menu in header displayes Playlist when toggled*/
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(../src/playlist.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/*Changes the navbar icon to a close icon when clicked*/
+.toggle.active {
+  background: url(../src/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
+
+.playlist-title {
+  color: white;
+}
+
+.title-name {
+  font-size: 16px;
+}
+
+.playlist-wrapper {
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+}
+
+.sidebar-image img {
+  width: 100%;
 }
 
 .container {
@@ -122,7 +203,7 @@ a:hover {
 }
 
 footer {
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Helvetica', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
