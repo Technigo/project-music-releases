@@ -14,6 +14,7 @@ export const Album = (props) => {
         </div>
           <img className="album-img" src={props.albumImg} alt="album" />
       </div>
+
       <a className="album-link" href={props.albumLink} target="_blank" rel="noopener noreferrer">
       <div className="album-name">
       <p>{props.albumName}</p>
