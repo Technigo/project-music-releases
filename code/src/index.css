@@ -134,6 +134,19 @@ code {
   }
 }
 
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 40px;
+  }
+
+  .header {
+    justify-content: flex-start;
+    padding-left:40px;
+  }
+}
+
+
 @media (min-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
