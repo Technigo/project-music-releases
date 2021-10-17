@@ -34,7 +34,7 @@ const Album = (props) => {
       >
         <h2>{props.title}</h2>
       </a>
-      <h3>{props.singer}</h3>
+      <h3 className="artist-name">{props.singer}</h3>
     </article>
   );
 };
