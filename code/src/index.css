@@ -37,7 +37,7 @@ code {
   display: flex;
   flex-direction: column;
   grid-column: span 4;
-  margin: 10px 10px;
+  
 }
 
 /* styling for album image */
@@ -60,13 +60,11 @@ code {
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 /* styling for icons */
 .icon {
   display: none;
-  padding: 0 15px;
   filter: invert();
   z-index: 1;
 }
@@ -84,9 +82,8 @@ code {
 }
 
 .play:hover {
-  width: 60px;
-  transition: 0.3s;
-  padding: 0 10px;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
 }
 
 .icons-container:hover {
