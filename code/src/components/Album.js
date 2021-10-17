@@ -4,7 +4,7 @@ const Album = (props) => {
   return (
     <article className="album-item">
       <div className="cover-image-container">
-        <img className="cover-image" src={props.image}></img>
+        <img className="cover-image" alt="cover" src={props.image}></img>
         <div className="overlay">
           <div className="controls">
             <img
@@ -26,7 +26,12 @@ const Album = (props) => {
         </div>
       </div>
 
-      <a className="album-name" href={props.albumLink} target="_blank">
+      <a
+        className="album-name"
+        href={props.albumLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <h2>{props.title}</h2>
       </a>
       <h3>{props.singer}</h3>

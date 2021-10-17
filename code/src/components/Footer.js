@@ -25,7 +25,11 @@ const Footer = () => {
         </a>
         <div className="team-fox">
           <h4>
-            Team Fox <span>🦊</span> Technigo
+            Team Fox{" "}
+            <span role="img" aria-label="fox emoji">
+              🦊
+            </span>{" "}
+            Technigo
           </h4>
         </div>
       </div>
