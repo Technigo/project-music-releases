@@ -8,3 +8,4 @@ We had a challenging time creating components and then bringing them together in
 Since it was first week of react our goal was to make small steps that we then understand well rather then to take a big bite into the project.
 
 ## View it live
+https://aleksaandjessi-musicrelease.netlify.app
