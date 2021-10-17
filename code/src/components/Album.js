@@ -25,6 +25,7 @@ const Album = (props) => {
           </div>
         </div>
       </div>
+
       <a className="album-name" href={props.albumLink} target="_blank">
         <h2>{props.title}</h2>
       </a>

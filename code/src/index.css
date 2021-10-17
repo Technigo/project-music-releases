@@ -1,22 +1,17 @@
 body {
+  box-sizing: border-box;
+  background-color: #181818;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1.5rem;
-  padding: 0.3rem 2rem 2rem 2rem;
 }
 
 a {
@@ -27,42 +22,94 @@ a {
   margin: 0;
 }
 
-a:hover {
-  text-decoration: under;
-}
-
 h1 {
+  font-family: Helvetica;
   color: #fff;
   font-size: 20px;
-  border-bottom: 1px solid #252525;
-  padding-bottom: 0.5rem;
 }
 
 h2 {
   font-family: Helvetica;
   color: #ffffff;
   font-size: 14px;
-  line-height: 20px;
   margin-bottom: 0.5rem;
 }
 
-.artist-name {
-  margin: 0;
-}
-
-/* h3 {
+h3 {
   font-family: Helvetica;
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 0;
-} */
+}
 
 h2:hover,
 h3:hover {
   text-decoration: underline;
 }
+
+h4 {
+  font-family: Helvetica;
+  color: #a0a0a0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+p {
+  font-family: Helvetica;
+  color: #a0a0a0;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.artist-name span:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name span:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
 .header {
-  padding: 0.5rem 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 0 2rem;
+  max-width: 75%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+}
+
+.spotify-logo {
+  height: 32px;
+  margin-right: 1rem;
+  padding-bottom: 3px;
+}
+
+hr {
+  display: block;
+  color: #a0a0a0;
+  border-style: inset;
+  opacity: 0.1;
+  width: 100%;
+}
+
+/* .content {
+  display: flex;
+  flex-direction: row;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 75%;
 }
 
 .cover-image-container {
@@ -70,8 +117,8 @@ h3:hover {
 }
 
 .cover-image {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .overlay {
@@ -94,14 +141,15 @@ h3:hover {
 .controls {
   position: absolute;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   top: 50%;
   left: 50%;
   width: 75%;
   transform: translate(-50%, -50%);
   transition: all 2s ease-in-out;
+  filter: brightness(0) invert(1);
 }
 
 .heart-icon,
@@ -111,7 +159,9 @@ h3:hover {
 
 .play-icon {
   width: 64px;
+  transition: 0.3s ease-in-out;
 }
+
 .play-icon:hover {
   transform: scale(1.2);
 }
@@ -124,4 +174,159 @@ h3:hover {
 .artist-name a:nth-last-of-type(2)::after {
   content: " & ";
   color: #a0a0a0;
+}
+
+.footer {
+  width: 75%;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.team-fox {
+  padding-left: 1rem;
+  padding-bottom: 4px;
+}
+
+.github-logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+.aleksa,
+.jes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+/* Playlist styling */
+
+.playlist-container {
+  /* min-width: 320px; */
+  width: 20%;
+  padding-left: 2rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.playlist-container h4:hover {
+  text-decoration: underline;
+}
+
+.playlist-header {
+  margin-bottom: 2rem;
+}
+
+.playlist-header h2 {
+  text-decoration: none;
+}
+
+.thumbnail {
+  border-radius: 28px;
+  width: 56px;
+  height: 56px;
+  margin-right: 1rem;
+}
+
+.pic-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .playlist-container {
+    display: none;
+  }
+
+  .header {
+    padding: 2rem 2rem 0 2rem;
+    max-width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+    /* padding: 0 2rem 2rem 2rem; */
+  }
+}
+
+/* IPHONE */
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .playlist-container {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem 1rem 0 1rem;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .spotify-logo {
+    height: 28px;
+    padding-bottom: 3px;
+  }
+
+  .footer {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  .team-fox {
+    padding-left: 0;
+  }
+
+  .aleksa,
+  .jes {
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
