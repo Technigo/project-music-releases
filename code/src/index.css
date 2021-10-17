@@ -118,6 +118,7 @@ code {
 
 .play-icon {
   width: 70px;
+  transition: all 1s ease-in-out;
 }
 
 .play-icon:hover {
