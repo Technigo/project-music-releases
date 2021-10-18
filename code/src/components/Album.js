@@ -1,7 +1,4 @@
 import React from "react";
-import { Play } from "./AlbumIcons/Play";
-import { Heart } from "./AlbumIcons/Heart";
-import { Dots } from "./AlbumIcons/Dots";
 
 const Album = (props) => {
   // console.log('PROPS', props);
