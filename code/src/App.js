@@ -1,4 +1,5 @@
 import React from "react";
+import "index.css";
 import data from "./data.json";
 import Album from "./components/Album";
 import Artist from "./components/Artist";
