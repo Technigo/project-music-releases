@@ -12,9 +12,16 @@ code {
     monospace;
 }
 
+/* styling for main section */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* styling for header */
 .header-container {
   margin: 0px 20px;
+  grid-column: span 4;
 }
 
 .header-text {
@@ -23,12 +30,6 @@ code {
   border-bottom: 1px solid rgb(55, 55, 55);
   padding-bottom: 5px;
   text-align: left;
-}
-
-/* styling for main section */
-.main-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 /* styling for each album card */
@@ -57,7 +58,8 @@ code {
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  padding: 40% 0;
+  padding: 0;
+  max-width: 300px;
 }
 
 /* styling for icons */
