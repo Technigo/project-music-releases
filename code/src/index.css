@@ -81,6 +81,7 @@ main {
   justify-content: space-evenly;
   margin: 0 auto;
   margin-top: 1em;
+  overflow-y: scroll;
 }
 
 .test {
@@ -218,6 +219,10 @@ article.vinyl-card {
 
 .playlist-container {
   padding-top: 2em;
+  height: 700px;
+  overflow-y: scroll;
+  position: sticky;
+  top: 0%;
 }
 
 .signature {
@@ -227,6 +232,8 @@ article.vinyl-card {
   font-weight: bolder;
   text-align: center;
   line-height: 18px;
+  position: sticky;
+  top: 90%;
 }
 
 .github-link {
