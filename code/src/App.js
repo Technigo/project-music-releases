@@ -30,6 +30,8 @@ export const App = () => {
                   artistName={album.artists.map((item) => (
                     <a
                       href={item.external_urls.spotify}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       key={item.id}
                       className="artists-divider"
                     >

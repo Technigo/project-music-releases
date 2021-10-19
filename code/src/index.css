@@ -20,7 +20,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Helvetica";
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 0;
@@ -29,7 +28,6 @@ h2 {
 
 h3,
 a {
-  font-family: "Helvetica";
   font-size: 18px;
   color: #a0a0a0;
   margin-top: 6px;
