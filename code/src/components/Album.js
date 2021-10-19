@@ -20,13 +20,13 @@ const Album = (props) => {
           </a>
         </h2>
         <h3 className="song-artists">
-          <a
+          {/*<a
             href={props.item.artists[0].external_urls.spotify}
             target="_blank"
             rel="noopener noreferrer"
-          >
+          ></a>*/}
             <Artists artistArray={props.item.artists} />
-          </a>
+          
         </h3>
       </div>
     </article>

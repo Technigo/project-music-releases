@@ -3,12 +3,15 @@ import React from "react";
 const Artists = (props) => {
   return (
     <div>
-      <h3 className="song-artists">
-        {/*<a href={props.item.artists.external_urls.spotify}></a>*/}
-        {props.artistArray.map((artist) => artist.name)}
+      <h3 className="song-artists">        
+        {props.artistArray.map((artist) =>
+        <a 
+        href={artist.external_urls.spotify}
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        <span>{artist.name}</span></a>)}
       </h3>
     </div>
-  );
-};
-
+)}
 export default Artists;

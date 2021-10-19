@@ -42,14 +42,26 @@ code {
   font-size: 14px;
   text-decoration: none;
 }
+
 .song-artists a {
   color: #a0a0a0;
   text-decoration: none;
 }
 
+.song-artists a::after{
+  /* Add a comma after each artist */
+  content: ", ";
+}
+
+/* Remove the comma after the last artist */
+.song-artists a:last-child::after {
+  content: "";
+}
+
 .song-artists a:hover {
   text-decoration: underline;
 }
+
 .album-container {
   width: 100%;
   display: flex;
@@ -85,19 +97,24 @@ code {
   opacity: 0.8;
   justify-content: space-around;
 }
+
 .overlay {
   display: none;
 }
+
 .overlay .heart {
   width: 14%;
 }
+
 .overlay .dots {
   width: 14%;
   fill: white;
 }
+
 .overlay .play {
   width: 30%;
 }
+
 .overlay .play:hover {
   width: 40%;
 }
