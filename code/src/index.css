@@ -67,7 +67,7 @@ body {
 
 .artist-name{
 	margin: 2px 0;
-	font-size: 14px;color: lightgrey;
+	font-size: 14px;color: rgb(211, 211, 211);
 	flex-direction: row;
 	height: 45px;
 	white-space: wrap;
@@ -76,7 +76,7 @@ body {
 }
 
 .artist-name:hover{
-text-decoration: underline;	
+	text-decoration: underline;	
 }
 
 .link{
