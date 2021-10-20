@@ -2,7 +2,6 @@ import React from "react";
 import data from "./data.json";
 import Album from "components/Album";
 import Header from "components/Header";
-import css from "index.css";
 
 const albumArray = data.albums.items
 
