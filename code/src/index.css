@@ -83,16 +83,17 @@ code {
 }
 
 /* Add a comma after each artist */
-.artists-container span::after {
+.artists-container a::after {
   content: ", ";
 }
 
 /* Remove the comma after the last artist */
-.artists-container span:last-child::after {
-  content: ""
+.artists-container a:last-child::after {
+  content: "";
 }
 
-.img-container:hover .overlay {
+.img-container:hover 
+.overlay {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
