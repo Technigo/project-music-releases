@@ -6,7 +6,7 @@ const Album = (props) => {
 	return (
 		<article className="article">
 			<div className="image-container">
-				<a href={props.albumLink}>
+				<a href={props.albumLink} target="_blank" rel="noopener noreferrer">
 					<div className="overlay"></div>
 					<Icons/>
 					<img 
@@ -16,7 +16,7 @@ const Album = (props) => {
 					/>
 				</a>
 			</div>
-			<a className="album-link" href={props.albumLink}>
+			<a className="album-link" href={props.albumLink} target="_blank" rel="noopener noreferrer">
 				<h2 className="album-name">{props.album}</h2>
 			</a>
             <div className="artists-container">
