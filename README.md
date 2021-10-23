@@ -1,12 +1,8 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This projects is a React app than displays the new albums and singles from Spotify.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We used .map to itterate over arrays to mount the album components and used React props to feed information to the components. We stated by building the album components and then added props to it. Then made the artist component and the n mounting it into the album component. If there was more time we would lower the oppacity on the play button and add a list of popular playlists.
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://ecstatic-hawking-987d29.netlify.app
