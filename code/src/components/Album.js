@@ -2,7 +2,6 @@ import React from "react";
 import { Artist } from "./Artist";
 
 export const Album = (props) => {
-  // console.log(artistList);
   return (
     <div className="album">
       <div className="album-cover-wrapper">
