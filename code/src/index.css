@@ -256,14 +256,17 @@ body {
 
 	.logo-play{
 		width: 100px;
+		opacity: 0;
 
 	}
 
 	.logo-play:hover{
 		width: 100px;
+		opacity: 1;
 	}
 
 	.logo-dot{
 		width: 50px;
+		opacity: 0;
 	}
 }
