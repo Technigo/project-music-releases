@@ -15,4 +15,4 @@ API
 
 ## View it live
 
-https://week9-music-release.netlify.app
+https://j-j-music-app.netlify.app
