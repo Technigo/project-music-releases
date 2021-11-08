@@ -125,29 +125,29 @@ text-decoration: underline;
 
 .logo-heart{
 	width: 40px;
-	opacity: 50%;
+	opacity: 0;
 }
 
 .logo-play{
 	width: 80px;
 	margin: 0 30px;
-	opacity: 50%;
+	opacity: 0;
 }
 
 .logo-play:hover{
 	width: 80px;
 	margin: 0 30px;
-	opacity: 100%;
+	opacity: 1;
 	transform: scale(125%);
 }
 
 .logo-dot{
 	width: 40px;
-	opacity: 50%;
+	opacity: 0;
 }
 
 .logo-dot:hover, .logo-heart:hover{
-	opacity: 100%;
+	opacity: 1;
 }
 
 /* Tablet */
@@ -190,7 +190,7 @@ text-decoration: underline;
 
 	.logo-heart{
 		width: 45px;
-		opacity: 50%;
+		opacity: 0;
 	}
 
 	.logo-play{
@@ -248,7 +248,7 @@ text-decoration: underline;
 
 	.logo-heart{
 		width: 50px;
-		opacity: 50%;
+		opacity: 0;
 	}
 
 	.logo-play{
