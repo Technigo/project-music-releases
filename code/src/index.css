@@ -190,19 +190,22 @@ body {
 
 	.logo-heart{
 		width: 45px;
-		opacity: 50%;
+		opacity: 0;
 	}
 
 	.logo-play{
 		width: 90px;
+		opacity: 0;
 	}
 
 	.logo-play:hover{
 		width: 90px;
+		opacity: 1;
 	}
 
 	.logo-dot{
 		width: 45px;
+		opacity: 0;
 	}
 }
 
@@ -238,7 +241,7 @@ body {
 	}
 
 	.albums img:hover{
-		width: 100%;
+		width: 50%;
 	}
 
 	.overlay {
@@ -248,7 +251,7 @@ body {
 
 	.logo-heart{
 		width: 50px;
-		opacity: 50%;
+		opacity: 0;
 	}
 
 	.logo-play{
