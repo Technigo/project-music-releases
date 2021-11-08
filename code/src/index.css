@@ -125,25 +125,25 @@ body {
 
 .logo-heart{
 	width: 40px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .logo-play{
 	width: 80px;
 	margin: 0 30px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .logo-play:hover{
 	width: 80px;
 	margin: 0 30px;
-	opacity: 1;
+  opacity: 0.5;
 	transform: scale(125%);
 }
 
 .logo-dot{
 	width: 40px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .logo-dot:hover, .logo-heart:hover{
@@ -190,22 +190,22 @@ body {
 
 	.logo-heart{
 		width: 45px;
-		opacity: 0;
+		opacity: 1;
 	}
 
 	.logo-play{
 		width: 90px;
-		opacity: 0;
+		opacity: 1;
 	}
 
 	.logo-play:hover{
 		width: 90px;
-		opacity: 1;
+		opacity: 0.5;
 	}
 
 	.logo-dot{
 		width: 45px;
-		opacity: 0;
+		opacity: 1;
 	}
 }
 
@@ -251,22 +251,22 @@ body {
 
 	.logo-heart{
 		width: 50px;
-		opacity: 0;
+		opacity: 1;
 	}
 
 	.logo-play{
 		width: 100px;
-		opacity: 0;
+		opacity: 1;
 
 	}
 
 	.logo-play:hover{
 		width: 100px;
-		opacity: 1;
+		opacity: 0.5;
 	}
 
 	.logo-dot{
 		width: 50px;
-		opacity: 0;
+		opacity: 1;
 	}
 }
