@@ -67,7 +67,7 @@ body {
 
 .artist-name{
 	margin: 2px 0;
-	font-size: 14px;color: lightgrey;
+	font-size: 14px;color: rgb(211, 211, 211);
 	flex-direction: row;
 	height: 45px;
 	white-space: wrap;
@@ -76,7 +76,7 @@ body {
 }
 
 .artist-name:hover{
-text-decoration: underline;	
+	text-decoration: underline;	
 }
 
 .link{
@@ -195,14 +195,17 @@ text-decoration: underline;
 
 	.logo-play{
 		width: 90px;
+		opacity: 0;
 	}
 
 	.logo-play:hover{
 		width: 90px;
+		opacity: 1;
 	}
 
 	.logo-dot{
 		width: 45px;
+		opacity: 0;
 	}
 }
 
@@ -238,7 +241,7 @@ text-decoration: underline;
 	}
 
 	.albums img:hover{
-		width: 100%;
+		width: 50%;
 	}
 
 	.overlay {
@@ -253,14 +256,17 @@ text-decoration: underline;
 
 	.logo-play{
 		width: 100px;
+		opacity: 0;
 
 	}
 
 	.logo-play:hover{
 		width: 100px;
+		opacity: 1;
 	}
 
 	.logo-dot{
 		width: 50px;
+		opacity: 0;
 	}
 }
