@@ -76,6 +76,7 @@ body {
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
+  height: 20px;
 }
 
 .artist-name:hover {
