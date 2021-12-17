@@ -6,7 +6,7 @@ import data from "./data.json";
 
 export const App = () => {
   return (
-    <>
+    <div className="main-container">
       <Header />
       <div className="album-container">
         {data.albums.items.map((album) => (
@@ -19,6 +19,6 @@ export const App = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };

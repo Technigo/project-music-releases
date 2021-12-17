@@ -15,8 +15,17 @@ code {
     monospace;
 }
 
+.main-container {
+  align-content: center;
+  margin: auto;
+  width: 90%;
+}
+
 .album-container {
   display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  justify-items: center;
+  justify-content: space-evenly;
 }
 
 .album-image-container {
@@ -28,8 +37,14 @@ code {
   padding: 15px;
 }
 
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .header-title {
   color: white;
+  margin-left: 15px;
 }
 
 .album-title {
@@ -101,7 +116,7 @@ code {
   text-decoration: underline;
 }
 
-@media (min-width: 640px) {
+/* @media (min-width: 640px) {
   .album-container {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
@@ -112,4 +127,4 @@ code {
   .album-container {
     grid-template-columns: repeat(4, 1fr);
   }
-}
+} */
