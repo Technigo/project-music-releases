@@ -20,6 +20,7 @@ const Artists = (props) => {
             <a
               href={artist.external_urls.spotify}
               className="artists"
+              key={artist.id}
             >
               {artist.name},{" "}
             </a>
@@ -30,7 +31,7 @@ const Artists = (props) => {
         >
           {props.artists[0].name}
         </a>
-        <span class="artist-and"> & </span>
+        <span className="artist-and"> & </span>
         <a
           href={props.artists[1].external_urls.spotify}
           className="artists"

@@ -15,6 +15,7 @@ export const App = () => {
             title={album.name}
             albumLink={album.external_urls.spotify}
             artists={album.artists}
+            key={album.name}
           />
         ))}
       </div>

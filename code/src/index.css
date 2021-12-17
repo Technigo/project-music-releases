@@ -101,24 +101,10 @@ code {
   text-decoration: underline;
 }
 
-/* In case of multiple artists, this adds ', ' before every artist that is not the first nor the last one
-.artist-list > :not(:last-child):not(:first-child):before {
-  content: ", ";
-  white-space: pre;
-  color: #a0a0a0;
-}
-
-/* In case of multiple artists, this adds ' & ' before the last artist*/
-/* .artist-list > :last-child:before {
-  content: " & ";
-  white-space: pre;
-  color: #a0a0a0;
-} */
-
 @media (min-width: 640px) {
   .album-container {
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 44px;
+    grid-column-gap: 15px;
   }
 }
 
