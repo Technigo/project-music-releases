@@ -1,6 +1,6 @@
 # Music Releases 🎧
 
-This is our very first React project and the goal was to build a music site using JSX and React components. A page that displays new albums and singles releases using data from Spotify .✨🎵
+This is our very first React project and the goal was to build a music site using JSX and React components. A page that displays new albums and singles releases using data from Spotify.✨🎵
 
 ## What have I learned 💡
 
