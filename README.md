@@ -24,4 +24,4 @@ The project includes:
 
 ## View it live
 
-https://friendly-cray-7d0c52.netlify.app/
+https://music-releases-amanda-fatima.netlify.app

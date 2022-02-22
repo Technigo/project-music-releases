@@ -137,6 +137,8 @@ code {
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     padding: 0 40px;
+    grid-gap: 40px;
+
   }
 
   .header {
@@ -145,11 +147,3 @@ code {
   }
 }
 
-
-@media (min-width: 1200px) {
-  .grid-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-    padding: 0 40px;
-  }
-}
