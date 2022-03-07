@@ -13,10 +13,16 @@ code {
 }
 
 .article {
-  width:50%;
-
+  width: 25%;
+  border: 2px solid rgb(31, 28, 28);
+  padding: 15px;
+  border-radius: 4px;
 }
-
 .tag {
+  padding: 5px;
+  border: 1px solid #000;
+}
+.tag-container {
   display: flex;
+  justify-content: space-between;
 }

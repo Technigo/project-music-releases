@@ -1,21 +1,20 @@
 import React from 'react'
 
-import { Article } from 'components/Article'
-// import data from './data.json'
+import { Album } from 'components/Album'
+import data from './data.json'
 
-// console.log(data)
-// divs down
-
+console.log(data)
+const albums = data.albums.items
+console.log(albums)
+// albums.map()
 
 export const App = () => {
   return (<section>
-    <Article 
-    title="Hello Technigo!"
-    description="some text"
-    />
-    <Article 
-    title="second!"
-    description="some other"
+    
+    <Album 
+    img={albums[0].images[1].url}
+    title={data.albums.items[0].name}
+    artist={data.albums.items[0].artists[0].name}
     />
   </section>
     // <article className="article"> 
