@@ -1,4 +1,6 @@
-import React from 'react';
+import React from 'react'
+
+import Artist from './Artist'
 
 // Named export
 const Album = (props) => {
@@ -7,9 +9,18 @@ const Album = (props) => {
         <img src={props.img} />
         <h2>{props.albumName}</h2>
         <a>{props.albumLink}</a>
+
+        {/* <div className="artists">
+            {props.artists.map((artist) => (
+
+        <Artist  
+                artistName={artist.name}
+                artistLink={artist.external_urls.spotify}
+        />
+        ))}
+        </div> */}
     </article>
     )
 }
 
 export default Album
-// Only able to export 1 time with export default
