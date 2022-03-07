@@ -8,5 +8,6 @@ export const App = () => {
     <div>
       Find me in src/app.js!
     </div>
+    <div>Testing testing</div>
   )
 }
