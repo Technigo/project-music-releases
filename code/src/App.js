@@ -1,12 +1,15 @@
-import React from 'react'
-import data from './data.json'
+import React from "react";
 
-console.log(data)
+import data from "./data.json";
+
+//v1 Named import
+import { Article } from "components/Article";
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
-}
+    <section>
+      <Article title="Just another header" description="A lot of text" />
+      <Article title="Header2" description="text2" />
+    </section>
+  );
+};
