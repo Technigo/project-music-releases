@@ -1,7 +1,6 @@
 # Music Releases
-Replace this readme with your own information about your project.
+Our assignment was to create components using data in React to build a website that displays latest music releases. We were to follow a given design.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## The problem
 
