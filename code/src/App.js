@@ -6,7 +6,7 @@ console.log(data)
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+      <h2 className="title">New album singles</h2>
     </div>
   )
 }
