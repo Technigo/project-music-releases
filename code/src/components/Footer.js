@@ -8,11 +8,11 @@ const Footer = (props) => {
       <p className="madeBy">
         Made by :
         <a href="https://github.com/JenFi72" target="_blank">
-          <span className="linkGithub">Jenny</span>
+          <span className="linkGithub"> Jenny </span>
         </a>
         and
         <a href="https://github.com/Kyparn" target="_blank">
-          <span className="linkGithub">Simon </span>
+          <span className="linkGithub"> Simon </span>
         </a>
         Students @ spring 2022 Team Fox 🦊
       </p>

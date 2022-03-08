@@ -20,6 +20,12 @@ code {
     monospace;
 }
 .project-music-container {
-  color: blue;
   padding: 30px;
+  color: blue;
+  display: grid;
+  grid-template-columns: auto;
+}
+.sidebar {
+  background-color: pink;
+  border-radius: 1px solid black;
 }
