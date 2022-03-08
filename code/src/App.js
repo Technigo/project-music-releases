@@ -9,10 +9,10 @@ console.log(playlistData)
 
 // components lägger vi in här.
 
-import Footer from './components/Footer'
-import Playlist from './components/Playlist'
-import MainHeader from './components/MainHeader'
-import SidebarHeader from './components/SidebarHeader'
+// import Footer from './components/Footer'
+// import Playlist from './components/Playlist'
+// import MainHeader from './components/MainHeader'
+// import SidebarHeader from './components/SidebarHeader'
 //Variables
 
 // Här bygger vi våran hemsida, kom ihåg att skriva in className="" ist för class="" för css styleing!!  :)
@@ -21,10 +21,6 @@ export const App = () => {
   return (
     <div className="project-music-container">
       <h1>Hej hej Jenny! :) </h1>
-      <Footer />
-      <Playlist />
-      <MainHeader />
-      <SidebarHeader />
     </div>
   )
 }

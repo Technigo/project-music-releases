@@ -14,7 +14,7 @@ const Footer = (props) => {
         <a href="https://github.com/Kyparn" target="_blank">
           <span className="linkGithub">Simon </span>
         </a>
-        Students @ spring 2022
+        Students @ spring 2022 Team Fox 🦊
       </p>
     </>
   )
