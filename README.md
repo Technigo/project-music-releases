@@ -10,3 +10,12 @@ Describe how you approached to problem, and what tools and techniques you used t
 ## View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
+
+TO DO:
+
+- When you click on the album, it should link to the album's external url in the data
+- When you click on an artist, it should link to the artist's external url in the data
+
+- Styling 
+
