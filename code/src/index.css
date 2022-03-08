@@ -11,20 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.article {
-  width: 50%;
-  border: 2px solid #eaeaee;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-.tag-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tag {
-  border: 1px solid #999;
-  padding: 5px;
-}
