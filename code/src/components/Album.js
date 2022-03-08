@@ -1,17 +1,18 @@
-import React from "react"
-import ImageCovers from "./ImageCovers"
+import React from "react";
+
+import Artist from "./Artist";
 
 // props = AllAlbums in App.js
-const Album = (props) => {
-    return ( 
-      <div>
-        <ImageCovers key="id" data={props.items.map(album => album)} />
-      </div>
-    )
+const Album = ({albums}) => {
+  return (
+    <div>
+      <img src={albums.images[0].url}></img>
+      <h2>{albums.name}</h2>
+      {albums.artists.map((artist =>
+        <Artist key={artist.id} artists={artist} />
+      ))}
+    </div>
+  )
 }
 
 export default Album
-
-//data.albums.items
-//data.albums.items.image === Cover Images
-//data.albums.items.artists === for all artist information

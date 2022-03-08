@@ -8,11 +8,17 @@ console.log(data)
 export const App = () => {
   return (
     <div>
-      <Album key="id" data={data.albums.items.map((album => album))} />
+      <h1>New albums & singles</h1>
+      {data.albums.items.map((album =>
+        <Album key={album.id} albums={album} />
+      ))}
     </div>
   )
 }
 
+
+
 //data.albums.items
 //data.albums.items.image === Cover Images
 //data.albums.items.artists === for all artist information
+
