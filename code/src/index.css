@@ -5,9 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(36, 36, 36);
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song-card {
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
 }
