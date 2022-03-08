@@ -1,13 +1,114 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial" ,"Helvetica Neue", sans-serif;
+  background-color: rgb(20, 20, 20);
+  color: #f1f1f1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1 {
+  font-size: 35px;
+  margin: 15px auto;
+}
+
+header {
+  margin: 20px 15px;
+}
+
+a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+p {
+  font-size: 15px;
+}
+
+.card {
+  position: relative;
+  margin: 10px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  place-self: center;
+}
+
+.img-container {
+  position: relative;
+}
+
+.album-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.img-container:hover .album-img {
+  opacity: .3;
+}
+
+.img-container:hover .iconsContainer {
+  opacity: 1;
+}
+
+.iconsContainer {
+  position: absolute;
+  opacity: 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.play-icon { 
+  width: 80px;
+}
+
+.play-icon:hover { 
+  width: 100px;
+  transform: scale(1.07);
+}
+
+.artistLink{
+  font-size: 14px;
+  color:#a0a0a0;
+}
+
+.artistLink:hover{
+  text-decoration: underline;
+}
+
+.albumTitle{
+  margin: 10px auto;
+  font-weight: bold;
+  font-size:14px;
+}
+
+.albumTitle:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 668px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    margin: 20px auto;
+  }
 }
