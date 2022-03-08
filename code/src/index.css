@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  font-family: Helvetica;
+  color: #ffffff;
+  line-height: 10px;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.song-title {
+  font-family: Helvetica;
+  line-height: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.song-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.song-title a:hover {
+  text-decoration: underline;
+}
+
+.song-artists {
+  font-family: Helvetica;
+  line-height: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.song-artists a {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.song-artists a:hover {
+  text-decoration: underline;
+}
+
+.album-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.album-card {
+  aspect-ratio: auto 3 / 4;
+  width: 90%;
+  background-color: black;
+  margin: 10px auto;
+  
+  
+}
+
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  
+}
+
+.image-container {
+  position: relative;
+  
+}
+
+.image-container:hover .overlay {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0%;
+  background: #201f20;
+  opacity: 0.8;
+  justify-content: space-around;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay .heart {
+  width: 14%;
+}
+
+.overlay .dots {
+  width: 14%;
+  fill: white;
+}
+
+.overlay .play {
+  width: 30%;
+}
+
+.overlay .play:hover {
+  width: 40%;
+  color: #fff;
+}
+
+/* Media Queries*/
+@media (min-width: 768px) {
+  .album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .album-card {
+    width: 40%;
+  }
+}
+
+@media (min-width: 968px) {
+  .album-card {
+    width: 23%;
+  }
 }
