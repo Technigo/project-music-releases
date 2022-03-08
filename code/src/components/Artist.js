@@ -21,7 +21,7 @@ export const Artist = (props) => {
     if (artistList.length > 1) {
         // artistList = artistList.join(', ')
         artistList.forEach(item =>
-            newList.push(item)   
+            newList.push(item)
         )
     }
 

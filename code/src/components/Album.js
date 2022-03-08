@@ -5,10 +5,10 @@ import { Artist } from 'components/Artist'
 export const Album = (props) => {
     const albums = props.albums
     const listAlbums = albums.map((album) =>
-        <div>
-            <img src={album.images[1].url} alt="album-img"/>
-            <h2>{album.name}</h2>
-            <p>{album.artists.name}</p>
+        <div className='album'> 
+            <img src={album.images[0].url} alt="album-img"/>
+
+            <p><a href={album.external_urls.spotify}>{album.name}</a></p>
             <div>
                 <Artist 
                 artist = {album.artists}
