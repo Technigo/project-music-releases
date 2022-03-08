@@ -1,12 +1,19 @@
 import React from 'react'
-import data from './data.json'
+//import data from './data.json'
 
-console.log(data)
+import { Article } from 'components/Article'
+
 
 export const App = () => {
-  return (
-    <div>
-      Find me in src/app.js!
-    </div>
-  )
+  return <section>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+    <Article type="Album/Single" artist="artist name"/>
+  </section>
 }
+
