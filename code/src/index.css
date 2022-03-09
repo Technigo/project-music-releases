@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -12,18 +13,43 @@ code {
     monospace;
 }
 
-.display {
+.container {
+  gap: 100px;
+  width: 100%;
+
+}
+
+/* .album,.container {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .displayAlbum {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 
 }
 
-img {
-  height: auto;
+.icon {
+
+  width: 20px;
+
 }
+
+.button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.image-container {
+  position: relative;
+
+
+}
+
+/* img {
+  
+} */

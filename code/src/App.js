@@ -1,26 +1,49 @@
 import React from 'react'
 import data from './data.json'
+import AlbumPhoto from './AlbumPhoto'
+import AlbumName from 'AlbumName'
 
 console.log(data)
-const MovieData= () => {
-  const AlbumName= data.albums.items.map(album => {
-    return (<div className="display">
-      <img src={album.images[0].url}></img>
-      <p> {
-   album.name
-   } </p>
-      <p> {album.href} </p>
-      <p> {album.album_type} </p>
-      </div> )
-  })
-  return AlbumName
-}
+
 
 export const App = () => {
+  const album=data.albums.items.filter(item => item.album_type === "album" )
+  const single=data.albums.items.filter(item => item.album_type === "single" )
+  
+
   return (
+    <div className='container'>
+      <section>
+    <h2>Albums</h2>
     <div className='displayAlbum'>
-    <MovieData/>
-      Find me in src/app.js!
-    </div>
+    {album.map(props => {
+      return(
+      <div className='album'>
+        <AlbumPhoto photo= {props.images[0].url}/>
+        <AlbumName title= {props.name} 
+        link={props.external_urls.spotify}/>
+      </div>
+      )
+    })
+    }
+  </div>
+</section>
+
+  <section>
+  <h2>Singles</h2>
+  <div className='displayAlbum'>
+    {single.map(props => {
+      return(
+      <div className='album'>
+        <AlbumPhoto photo= {props.images[0].url}/>
+        <AlbumName title= {props.name} 
+        link={props.external_urls.spotify}/>
+      </div>
+      )
+    })
+    }
+  </div>
+  </section>
+</div>
   )
 }
