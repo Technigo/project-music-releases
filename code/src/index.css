@@ -35,10 +35,18 @@ code {
 }
 
 /* Designing the thin grey line top of page */
-hr {
-  border: 1px solid rgba(160, 160, 160, 0.3);
-  margin-top: 2px;
-  margin-bottom: 5px;
+.title-and-border {
+  border-bottom: 1px solid #252525;
+  color: white;
+  margin: 0 16px;
+  padding-bottom: 14px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.album-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Designing each card */
@@ -57,7 +65,7 @@ hr {
   color: #b2b2b2;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 10px;
+  padding-top: 7px;
 }
 
 .image-card {
