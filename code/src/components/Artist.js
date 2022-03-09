@@ -5,9 +5,10 @@ export const Artist = (props) => {
     // console.log(props.artist[0].name)
 
     const artistList = artist.map((artist) =>
-        <div>
-            <a href={artist.external_urls.spotify}>{artist.name}</a>
-        </div>
+        // <div >
+            <a key={artist.id} href={artist.external_urls.spotify}>{artist.name}</a>
+            
+        // </div>
     )
 
     console.log(artistList.length)
