@@ -8,9 +8,9 @@ export const Albums = (props) => {
           </div>
           <div className='album-info'>
           <div className='album-title'>
-            <a href={props.albumURL}>{props.albumTitle}</a>
+            <a href={props.albumURL} target="_blank">{props.albumTitle}</a>
           <div className='artist-name'>
-            {props.artists}
+          <a href={props.artistURL} target="_blank">{props.artists}</a>
           </div>
         </div >
       </div >
