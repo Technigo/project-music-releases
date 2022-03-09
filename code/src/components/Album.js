@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Album = () => {
+const Album = (props) => {
+    console.log(props)
+
     return (
         <article className="album-card">
             <div className="image-container">
