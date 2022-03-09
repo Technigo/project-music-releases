@@ -5,13 +5,16 @@ import React from 'react'
 // Named export
 const Album = (props) => {
     return (
-    <article className="card">
+
+        
+        <article className="card">
+        <hr />
          <a href={props.albumLink}>
             <img className="image-card" src={props.img} alt="album-cover" />
         </a>
         <h2 className="album-name">{props.albumName}</h2>
         <a className="linked-artist" href={props.artistLink}>
-            <p>{props.artistName}</p>
+            <p className="linked-artist">{props.artistName}</p>
         </a> 
 
         {/* <div className="artistContainer">
@@ -24,7 +27,7 @@ const Album = (props) => {
             }
             </div> */}
 
-    </article>
+        </article>
     )
 }
 

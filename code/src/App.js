@@ -7,10 +7,10 @@ import Album from './components/Album'
 
 export const App = () => {
   return (
-
     <main>
+     
     <section className='page'>
-       
+     
         
             {data.albums.items.map((item) => (
             <Album
