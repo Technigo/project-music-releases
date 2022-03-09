@@ -19,26 +19,22 @@ code {
   margin: 0;
   padding: 0;
 }
-
+/* ===== HEADER ===== */
 header {
-  margin: 10px 0 0 80px;;
+  margin: 20px 23px;
+  border-bottom: 2px solid #252525;
 }
 
 h1 {
   font-size: 24px;
+  margin: 10px auto;
 }
 
-hr {
-  border: 1px solid #252525;
-  max-width: 87vw;
-  margin-top: 10px;
-}
-
+/* ===== CARDS ===== */
 .App {
   display: flex;
-  flex-direction: wrap;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .song-card {
@@ -63,38 +59,55 @@ hr {
   color: #A8A8A8;
 }
 
+.img-container {
+  position: relative;
+}
+
 .cover {
   opacity: 1;
   transition: 0.5s ease-in;
   z-index: 1;
 }
 
-.cover:hover{
-  opacity: 0.3;
-}
-
-
-
 .overlay {
   position: absolute;
   width: 300px;
   height: 300px;
+  top: 0;
 }
 
 .icons {
-  position: relative;
+  position: absolute;
   height: 300px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
   align-items: center;
   gap: 30px;
   transition: 0.5s ease;
+  cursor: pointer;
+  opacity: 1;
+}
 
+/* ===== HOVER ===== */
+
+.img-container:hover .cover {
+  opacity: 0.3;
+}
+
+.img-container:hover .icons {
+  opacity: 1;
+}
+
+.play-icon:hover {
+  transform: scale(1.2);
+  transition: 0.4s ease;
 }
 
 .song-info a:hover {
-  border-bottom: 1px solid white;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 
