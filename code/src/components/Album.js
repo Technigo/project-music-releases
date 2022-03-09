@@ -5,10 +5,10 @@ import Artist from './Artist'
 // Named export
 const Album = (props) => {
     return (
-    <article className="album">
+    <article className="card">
         <h2 className="album-name">{props.albumName}</h2>
         <a href={props.albumLink}>
-            <img src={props.img} />
+            <img className="image-card" src={props.img} />
         </a>
 
         {/* <div className="artistContainer">
@@ -21,7 +21,8 @@ const Album = (props) => {
             }
             </div> */}
 
-        <a href={props.artistLink}><p>{props.artistName}</p>
+        <a className="linked-artist" href={props.artistLink}>
+            <p>{props.artistName}</p>
         </a> 
 
     </article>

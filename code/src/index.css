@@ -5,12 +5,13 @@ body {
   box-sizing: border-box;
   background-color: black;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Raleway", sans-serif;
+  color: #ebebeb;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
 }
 
 code {
@@ -18,22 +19,53 @@ code {
     monospace;
 }
 
-.section {
+/* Designing the whole page here */
+.page {
   display: flex;
   flex-wrap: wrap;
+  width: 375px;
+  margin: 25px auto;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
 }
 
-.album {
+/* Designing each card */
+.card {
   width: 300px;
   margin: 15px;
 }
 
+.album-name {
+  font-size: 18px;
+}
+
+.linked-artist {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*---------- HOVER EFFECTS ---------------*/
+.linked-artist:hover {
+  transition: 0.5s ease;
+  color: white;
+  text-decoration: underline;
+}
+
 /*---------- MEDIA QUERY – TABLET ---------------*/
 
-/* @media (min-width: 768px) {
-} */
+@media (min-width: 768px) {
+  .page {
+    width: 80vw;
+  }
+}
 
 /*---------- MEDIA QUERY – DESKTOP ---------------*/
 
-/* @media (min-width: 1100px) {
-} */
+@media (min-width: 1100px) {
+  .page {
+    min-width: 1100px;
+    max-width: 160vw;
+  }
+}

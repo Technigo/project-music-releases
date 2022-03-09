@@ -11,9 +11,9 @@ export const App = () => {
   return (
 
     <main>
-    <section className='section'>
+    <section className='page'>
        
-            
+        
             {data.albums.items.map((item) => (
             <Album
 
@@ -27,8 +27,6 @@ export const App = () => {
               
               />
              ))}
-            
-       
     
     </section>
     </main>
