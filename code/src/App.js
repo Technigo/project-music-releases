@@ -33,7 +33,6 @@ export const App = () => {
     
     </div>
   </section>
-    
   )
 }
 

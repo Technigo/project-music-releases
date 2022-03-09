@@ -7,14 +7,18 @@ export const Album = (props) => {
     return (
         <div key={album.id} className='album'> 
             <img src={album.images[0].url} alt="album-img"/>
-
+            
             <p className='album-name'><a href={album.external_urls.spotify}>{album.name}</a></p>
 
-            {album.artists.map((artist) => 
-                <Artist
-                    artist = {artist}
-                />
-            )}
+            <div className='artist-container'>
+                {album.artists.map((artist, index, array) => 
+                    <Artist
+                        artist = {artist}
+                        index = {index}
+                        length = {array.length}
+                    />
+                )}
+            </div>
         </div>
     )
     // (

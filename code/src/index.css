@@ -59,6 +59,9 @@ a {
   justify-content: center;
 }
 
+.artist-container {
+  display: flex;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
