@@ -1,11 +1,12 @@
 import React from 'react'
-import data from './data.json'
-import { AlbumCover } from 'components/AlbumCover'
-
-console.log(data)
+import data from 'data.json'
+import { Albums } from 'components/Albums'
 
 export const App = () => {
-	return data.albums.items.map(item => {
-		return <AlbumCover url={item.images[0].url} />
-	})
-}
+	return (
+		<section className="albums-wrapper">
+     {data.albums.items.map((item) => {
+          return <Albums key={item.id} albumTitle={item.name} image={item.images[1].url} artists={item.artists[0].name} url={item.external_urls.spotify} />
+        })}
+		</section>
+	)}
