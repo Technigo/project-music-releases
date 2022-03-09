@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Album } from 'components/Album'
+import { Header } from 'components/Header'
 import data from './data.json'
 
 console.log(data)
@@ -19,16 +20,17 @@ const ColoredLine = ({ color }) => (
 
 export const App = () => {
   return (<section className='container'>
-    <h1>New albums and singles</h1>
+    {/* <h1>New albums and singles</h1> */}
+    <Header />
     <ColoredLine 
     color="#a0a0a0" />
     <div className='flex-container'>
-    <Album
-    albums = {albums}
-    // img={albums[0].images[1].url}
-    // title={data.albums.items[0].name}
-    // artist={data.albums.items[0].artists[0].name}
-    />
+      {albums.map((album) => 
+        <Album
+          album = {album}
+        />
+      )}
+    
     </div>
   </section>
     

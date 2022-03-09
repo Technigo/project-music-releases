@@ -1,26 +1,47 @@
 import React from 'react'
 import { Artist } from 'components/Artist'
 
-
 export const Album = (props) => {
-    const albums = props.albums
-    const listAlbums = albums.map((album) =>
+    const album = props.album
+
+    return (
         <div key={album.id} className='album'> 
             <img src={album.images[0].url} alt="album-img"/>
 
-            <p><a href={album.external_urls.spotify}>{album.name}</a></p>
-            <div>
-                <Artist 
-                artist = {album.artists}
+            <p className='album-name'><a href={album.external_urls.spotify}>{album.name}</a></p>
+
+            {album.artists.map((artist) => 
+                <Artist
+                    artist = {artist}
                 />
-                
-            </div>
+            )}
         </div>
     )
-    return (
-        listAlbums
-        )
+    // (
+    //     listAlbums
+    //     )
 }
+
+
+// export const Album = (props) => {
+//     const albums = props.albums
+//     const listAlbums = albums.map((album) =>
+//         <div key={album.id} className='album'> 
+//             <img src={album.images[0].url} alt="album-img"/>
+
+//             <p><a href={album.external_urls.spotify}>{album.name}</a></p>
+//             <div>
+//                 <Artist 
+//                 artist = {album.artists}
+//                 />
+                
+//             </div>
+//         </div>
+//     )
+//     return (
+//         listAlbums
+//         )
+// }
 
 /* <p>{album.artist}</p> */
 

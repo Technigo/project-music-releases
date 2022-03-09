@@ -19,21 +19,44 @@ body {
   color: #fff;
 }
 
+.container {
+  margin: 2rem;
+  /* padding: 2rem 0; */
+}
+
 /* - Album title - 14px Helvetica #ffffff
 - Artist name - 14px Helvetica #a0a0a0 */
 
 a {
   text-decoration: none;
-  color: #a0a0a0;
+  /* color: #a0a0a0; */
   font-size: 14px;
   line-height: 30px;
 }
 
+.artist-name {
+  color: #a0a0a0;
+}
+
+.album-name a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 70vw;
+  margin: 2rem auto;
+  /* padding: 1rem; */
+}
+
 .flex-container {
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  /* gap: 20px; */
+  justify-content: center;
 }
 
 
@@ -60,23 +83,25 @@ code {
   transition: 0.5s ease;
 } */
 
+@media (min-width: 768px) {
+  .album {
+    max-width: 40vw;
+  }
+}
+
 
 @media (min-width: 1025px) {
   a:hover {
     text-decoration: underline;
   }
 
-  .container {
-    margin: 2rem;
-    /* padding: 2rem 0; */
-  }
+  
 
   .album {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    height: 20vw;
-    margin: 2rem;
+    /* display: flex; */
+    /* flex-direction: column; */
+    max-width: 20vw;
+    /* margin: 2rem; */
     /* padding: 1rem; */
   }
 }
