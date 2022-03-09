@@ -1,12 +1,18 @@
 import React from 'react'
 
-const Albuminfo = (props) => {
-    //const itemArray = data.albums.items
-  
+const Albuminfo = (props) => {  
     return (
       <div className="">
-        <p>{props.album}</p>
-        <p>{props.artist}</p>
+        <p className="album-name">
+          <a href={props.url} target="_blank" rel="noopener noreferrer">
+            {props.album}
+          </a>
+        </p>
+        <p className="artist-name">
+          <a href={props.artistUrl} target="_blank" rel="noopener noreferrer">
+            {props.artist}
+          </a>
+        </p>
       </div>
     )
   }

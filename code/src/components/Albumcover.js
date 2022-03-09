@@ -9,9 +9,13 @@ const Albumcover = (props) => {
     //   album: item.artists[0].name
     // }
     return (
-      <div className="">
-        <img src={props.src} alt="bild" />
+      <div className="album-img">
+        
+          <img className="" src={props.src} alt="bild" />
+        
+        {/* <a href={props.url} target="_blank" rel="noopener noreferrer"> */}
         <Icons />
+        {/* </a> */}
       </div>
     )
   }

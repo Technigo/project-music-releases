@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 code {
@@ -12,23 +15,45 @@ code {
     monospace;
 }
 
+header {
+  margin-left: 36px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
-  /* margin: 20px;
-  border: 2px solid red; */
 }
 
 .grid-container-div {
   width: 300px;
   align-items: center;
-  
+}
+
+.album-name {
+  font-weight: 700;
+}
+
+.album-name a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
 }
 
 .icons-container {
-  display: flex;
-  justify-content: center;
+  display: none;
   position: absolute;
   margin-top: -180px;
   margin-left: 65px;
@@ -39,22 +64,43 @@ code {
   padding: 15px;
 }
 
+.album-img:hover > .icons-container {
+  display: flex;
+  justify-content: center;
+}
+
+.album-img:hover{
+  filter: brightness(60%);
+}
+
+.icons-container a:hover > .play-button {
+  width: 60px;
+  transition: all 0.2s ease-in;
+}
+
 .play-button {
   width: 50px;
-}
+} 
 
 
 
 @media screen and (min-width: 768px) {
+  header {
+    margin-left: 5.3%;
+  }
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1200px) {
+  header {
+    margin-left: 2%;
+  }
+
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-   
   }
 }
