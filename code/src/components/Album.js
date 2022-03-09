@@ -1,16 +1,26 @@
 import React from 'react'
 
+// import Artist from './Artist'
+
 const Album = (props) => {
     console.log(props)
+
 
     return (
         <article className="album-card">
             <div className="image-container">
-                <img src={albums.item.images[0].url} alt="album cover"/>
+                <img src={props.img} alt="album cover"/>
             </div>
             <div className="text-wrapper">
-                <p className="album-title">Album Title X</p>
-                <p className="artist-name">Artist Name X</p>
+                <p className="album-title">{props.albumTitle}</p>
+                <p className="artist-name">
+                    {/* {props.artists.map((artist) =>
+                    <Artist 
+                        artist = {artist}
+                    />
+                )
+                } */}
+                </p>
             </div>
         </article>
     )
