@@ -36,12 +36,12 @@ code {
 }
 
 .album-name {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .linked-artist {
   text-decoration: none;
-  color: #fff;
+  color: #b2b2b2;
   font-size: 14px;
   font-weight: 500;
 }

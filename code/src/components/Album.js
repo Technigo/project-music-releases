@@ -6,10 +6,13 @@ import Artist from './Artist'
 const Album = (props) => {
     return (
     <article className="card">
-        <h2 className="album-name">{props.albumName}</h2>
-        <a href={props.albumLink}>
+         <a href={props.albumLink}>
             <img className="image-card" src={props.img} />
         </a>
+        <h2 className="album-name">{props.albumName}</h2>
+        <a className="linked-artist" href={props.artistLink}>
+            <p>{props.artistName}</p>
+        </a> 
 
         {/* <div className="artistContainer">
             {props.artists.map((artist) =>
@@ -20,10 +23,6 @@ const Album = (props) => {
                 )
             }
             </div> */}
-
-        <a className="linked-artist" href={props.artistLink}>
-            <p>{props.artistName}</p>
-        </a> 
 
     </article>
     )
