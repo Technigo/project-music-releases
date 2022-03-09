@@ -4,7 +4,7 @@ const Albuminfo = (props) => {
     //const itemArray = data.albums.items
   
     return (
-      <div>
+      <div className="">
         <p>{props.album}</p>
         <p>{props.artist}</p>
       </div>

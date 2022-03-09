@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Icons from './Icons.js'
+
 const Albumcover = (props) => {
     //const itemArray = data.albums.items
   
@@ -7,8 +9,9 @@ const Albumcover = (props) => {
     //   album: item.artists[0].name
     // }
     return (
-      <div>
+      <div className="">
         <img src={props.src} alt="bild" />
+        <Icons />
       </div>
     )
   }

@@ -20,10 +20,11 @@ console.log(data)
 export const App = () => {
   const itemArray = data.albums.items
   return (
-    <div className="grid-container">
+    <section>
+      <article className="grid-container">
       {itemArray.map(item => {
         return (
-          <div>
+          <div className="grid-container-div">
           <Albumcover 
           key={item.id}
           src={item.images[1].url}
@@ -48,8 +49,8 @@ export const App = () => {
       <p>
         {itemArray.map(item => item.images[2].url)}
       </p> */}
-      Find me in src/app.js!
-    </div>
+      </article>
+  </section>
   )
 }
 

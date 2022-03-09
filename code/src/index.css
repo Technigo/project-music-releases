@@ -14,5 +14,47 @@ code {
 
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  /* margin: 20px;
+  border: 2px solid red; */
+}
+
+.grid-container-div {
+  width: 300px;
+  align-items: center;
   
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: -180px;
+  margin-left: 65px;
+}
+
+.icons-container img {
+  filter: invert(100%);
+  padding: 15px;
+}
+
+.play-button {
+  width: 50px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+   
+  }
 }
