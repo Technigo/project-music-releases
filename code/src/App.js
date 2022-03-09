@@ -20,13 +20,11 @@ export const App = () => {
               img={item.images[1].url}
               albumName={item.name}
               albumLink={item.external_urls.spotify}
-              // artistLink={item.artists[0].external_urls.spotify}
-              // artistName={item.artists[0].name}
-              
-              
-              
+              artists={item.artists} 
               />
              ))}
+
+             
             
        
     
