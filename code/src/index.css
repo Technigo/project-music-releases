@@ -46,6 +46,10 @@ code {
   font-weight: 500;
 }
 
+.image-card {
+  width: 100%;
+}
+
 /*---------- HOVER EFFECTS ---------------*/
 .linked-artist:hover {
   transition: 0.5s ease;
