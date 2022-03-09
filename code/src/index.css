@@ -84,3 +84,15 @@ h1 {
   transition: .2s ease-in-out;
   fill: white;
 }
+
+.artist-link {
+  color: #a0a0a0;
+}
+
+.artist-link:not(:last-child):after {
+  content: ", ";
+}
+
+.artist-link:nth-last-of-type(2)::after {
+  content: " & ";
+}
