@@ -9,8 +9,10 @@ export const App = () => {
      
     <section className='page'>
      
+    <div class="title-container">
+          New albums & singles
+          </div>
 
-     <div class="title-and-border">New albums & singles</div>
         <div class="album-section">
             {data.albums.items.map((item) => (
             <Album

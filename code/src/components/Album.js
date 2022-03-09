@@ -9,16 +9,29 @@ const Album = (props) => {
     return (
 
         
-        <article className="card">
-         <a href={props.albumLink}>
-            <img className="image-card" src={props.img} alt="album-cover" />
-        </a>
-        <h2 className="album-name">{props.albumName}</h2>
-        <a className="linked-artist" href={props.artistLink}>
+    <article className="card">
+        <a href={props.albumLink}>
+            <img className="image-card" src={props.img} alt="album-cover" /></a>
+            <h2 className="album-name">{props.albumName}</h2>
+            <a className="linked-artist" href={props.artistLink}>
             <p className="linked-artist">{props.artistName}</p>
         </a> 
+            
+            <div className="icons-container">
+                <Icons />
+            </div>
 
-        {/* <div className="artistContainer">
+        </article>
+    )
+}
+
+export default Album
+
+
+
+
+
+   {/* <div className="artistContainer">
             {props.artists.map((artist) =>
 
             <Artist
@@ -27,9 +40,3 @@ const Album = (props) => {
                 )
             }
             </div> */}
-
-        </article>
-    )
-}
-
-export default Album

@@ -8,7 +8,7 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: black;
+  background: #191414;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -29,13 +29,13 @@ code {
   display: flex;
   flex-wrap: wrap;
   width: 375px;
-  margin: 25px auto;
+  margin: 40px auto;
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
 }
 
 /* Designing the thin grey line top of page */
-.title-and-border {
+.title-container {
   border-bottom: 1px solid #252525;
   color: white;
   margin: 0 16px;
@@ -53,6 +53,7 @@ code {
 .card {
   width: 300px;
   margin: 15px;
+  position: relative;
 }
 
 .album-name {
@@ -72,7 +73,7 @@ code {
   width: 100%;
 }
 
-/*---------- HOVER EFFECTS ---------------*/
+/*---------- HOVER EFFECTS AND ICONS ------------*/
 .linked-artist:hover {
   transition: 0.5s ease;
   color: #fff;
@@ -83,6 +84,34 @@ code {
   transition: 0.5s ease;
   color: #fff;
   text-decoration: underline;
+}
+
+.icons-container {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icons {
+  display: none;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  width: 40px;
+  padding: 0 12px;
+  filter: brightness(0) invert(1);
+  z-index: 1;
+}
+
+.icons-container:hover .icons {
+  display: flex;
 }
 
 /*---------- MEDIA QUERY – TABLET ---------------*/
