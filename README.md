@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this weeks project we had to make a music releases site fetching data from Spotify and display it using React.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We used React to create components and pass them on to App.js. We started mobile first and followed the design as specified. We learned a lot of React terms and the logic behind it. If we had more time we would apply more features.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
