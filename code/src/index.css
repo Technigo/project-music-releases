@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(36, 36, 36);
+  background-color: #181818;
   color: white;
 }
 
@@ -21,10 +21,18 @@ code {
 }
 
 header {
-  text-align: center;
-  padding: 50px;
+  margin: 10px 0 0 80px;;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+hr {
+  border: 1px solid #252525;
+  max-width: 87vw;
+  margin-top: 10px;
+}
 
 .App {
   display: flex;
@@ -39,3 +47,58 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.song-info {
+  margin: 10px 0;
+}
+
+.song-name {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.song-artist {
+  font-size: 16px;
+  color: #A8A8A8;
+}
+
+.cover {
+  opacity: 1;
+  transition: 0.5s ease-in;
+  z-index: 1;
+}
+
+.cover:hover{
+  opacity: 0.3;
+}
+
+
+
+.overlay {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.icons {
+  position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  transition: 0.5s ease;
+
+}
+
+.song-info a:hover {
+  border-bottom: 1px solid white;
+}
+
+
+
+
+
+
