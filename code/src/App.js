@@ -3,13 +3,33 @@ import data from "./data.json";
 
 import { Album } from "./components/Album";
 // import { Artist } from "./components/Artist";
+import { Header } from "./components/Header";
 
 console.log(data);
 
+const albumsArray = data.albums.items;
+
 export const App = () => {
   return (
-    <section>
-      <Album />
-    </section>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main className="albums-container">
+        {albumsArray.map((album) => {
+          return (
+            <>
+              <Album
+                key={album.name}
+                image={album.images[0].url}
+                title={album.name}
+                href={album.external_urls.spotify}
+                album={album.artists}
+              />
+            </>
+          );
+        })}
+      </main>
+    </>
   );
 };
