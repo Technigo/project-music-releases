@@ -6,24 +6,39 @@ import { Album } from "./components/Album";
 
 import { Artist } from "./components/Artist";
 
-console.log(data);
+import { Header } from "./components/Header";
 
 export const App = () => {
   return (
-    <section>
-      <div className="albums-container">
-        {data.albums.items.map((item) => (
-          <div className="album-container">
-            <Album name={item.name} img={item.images[1].url} />
-            {data.artists.items.map((artist) => (
-              <p>
-                <Artist name={artist.name} />
-              </p>
+    <>
+      <header>
+        <Header />
+      </header>
+      <main>
+        <section>
+          <div className="albums-container">
+            {data.albums.items.map((album) => (
+              <div className="album-container">
+                <Album
+                  key={album.id}
+                  name={album.name}
+                  img={album.images[1].url}
+                  url={album.external_urls.spotify}
+                />
+
+                {album.artists.map((artist) => (
+                  <Artist
+                    key={artist.id}
+                    name={artist.name}
+                    url={artist.external_urls.spotify}
+                  />
+                ))}
+              </div>
             ))}
+            ;
           </div>
-        ))}
-        ;
-      </div>
-    </section>
+        </section>
+      </main>
+    </>
   );
 };

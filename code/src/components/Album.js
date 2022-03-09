@@ -1,10 +1,19 @@
 import React from "react";
 
+import { Icons } from "./Icons";
+
 export const Album = (props) => {
   return (
     <div>
-      <img src={props.img} alt="Album cover" className="album-cover" />
-      <p className="albums"> {props.name}</p>
+      <div class="image-container">
+        <a href={props.url}>
+          <Icons />
+          <img src={props.img} alt="Album cover" className="album-cover" />
+        </a>
+      </div>
+      <a href={props.url}>
+        <p className="albums"> {props.name}</p>
+      </a>
     </div>
   );
 };

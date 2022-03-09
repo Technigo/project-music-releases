@@ -1,4 +1,5 @@
 body {
+  background-color: #000;
   margin: 20px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +11,125 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  color: #fff;
+  border-bottom: 1px #a0a0a0 solid;
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+}
+.albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 15px;
+}
+
+.iconsContainer {
+  display: none;
+}
+.iconsContainer .icons {
+  display: inline;
+}
+
+p {
+  margin: 5px 0 5px 0;
+  font-family: Helvetica, sans-serif;
+}
+
+a {
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.albums {
+  font-weight: 700;
+}
+
+.artist a {
+  color: #a0a0a0;
+}
+
+.album-container {
+  margin: 0 auto;
+}
+
+.album-cover {
+  display: block;
+  height: auto;
+}
+
+.artist {
+  display: inline-block;
+}
+
+.artist:not(:first-of-type)::before {
+  content: " , ";
+  color: #a0a0a0;
+}
+
+/* Tablet  */
+@media screen and (min-width: 667px) and (max-width: 1024px) {
+  .albums-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+  .albums-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .image-container {
+    position: relative;
+  }
+
+  .image-container:hover .album-cover {
+    opacity: 0.3;
+    -webkit-filter: brightness(70%);
+  }
+
+  .album-cover {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    -webkit-filter: brightness(100%);
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .iconsContainer {
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    justify-content: space-between;
+    opacity: 0;
+    width: 80%;
+    z-index: 2;
+  }
+  .icons {
+    width: 50px;
+    filter: invert(1);
+  }
+
+  .iconsContainer:hover {
+    opacity: 1;
+  }
+
+  .play-icon {
+    width: 70px;
+  }
+  .play-icon:hover {
+    width: 90px;
+  }
 }
