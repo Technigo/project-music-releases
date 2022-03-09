@@ -1,13 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album {
+  width: 300px;
+  margin: 15px;
+}
+
+/*---------- MEDIA QUERY – TABLET ---------------*/
+
+/* @media (min-width: 768px) {
+} */
+
+/*---------- MEDIA QUERY – DESKTOP ---------------*/
+
+/* @media (min-width: 1100px) {
+} */

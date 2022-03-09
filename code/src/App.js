@@ -2,16 +2,16 @@ import React from 'react'
 
 import data from './data.json'
 
-import Album from 'components/Album'
+import Album from './components/Album'
 
-console.log(data)
+console.log(data, 'data from app')
 
 
 export const App = () => {
   return (
 
     <main>
-    <section className='Section'>
+    <section className='section'>
        
             
             {data.albums.items.map((item) => (
