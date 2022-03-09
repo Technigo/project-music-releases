@@ -12,9 +12,11 @@ export const Album = (props) => {
                     <Icons />
                 </a>
             </div>
+        {/* ===== ALBUM TITLE ===== */}
         <a href={props.href} target="_blank" rel="noopener noreferrer">
             <p className="albumTitle">{props.title}</p>
         </a>
+        {/* ===== ARTIST ===== */}
         <div className="artistName">
             {props.album.map(artist => {
              return (

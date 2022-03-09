@@ -1,3 +1,5 @@
+/* ===== GLOBAL ATRUBUTES ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +14,13 @@ body {
 }
 
 h1 {
-  font-size: 35px;
-  margin: 15px auto;
+  font-size: 30px;
+  margin: 10px auto;
 }
 
 header {
-  margin: 20px 15px;
+  margin: 20px 23px;
+  border-bottom:2px solid  rgb(70, 70, 70);
 }
 
 a {
@@ -26,8 +29,10 @@ a {
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
 }
+
+/* ===== MAIN CARD & OBJECTS ===== */
 
 .card {
   position: relative;
@@ -60,6 +65,17 @@ p {
   opacity: 1;
 }
 
+.artistLink{
+  font-size: 14px;
+}
+
+.albumTitle{
+  margin: 10px auto;
+  font-weight: bold;
+}
+
+/* ===== ICONS ===== */
+
 .iconsContainer {
   position: absolute;
   opacity: 0;
@@ -81,34 +97,73 @@ p {
   width: 80px;
 }
 
-.play-icon:hover { 
-  width: 100px;
-  transform: scale(1.07);
-}
+/* ===== DIVERSE HOVER CLASSES ===== */
 
-.artistLink{
-  font-size: 14px;
-  color:#a0a0a0;
+.play-icon:hover { 
+  width: 90px;
+  transform: scale(1.07);
 }
 
 .artistLink:hover{
   text-decoration: underline;
 }
 
-.albumTitle{
-  margin: 10px auto;
-  font-weight: bold;
-  font-size:14px;
-}
-
 .albumTitle:hover {
   text-decoration: underline;
 }
+
+/* ===== MULTIPLE ARTISTS ===== */
+
+.artistName a:not(:first-of-type, :last-of-type)::before {
+  color: #ffffff;
+  content: ", ";
+}
+
+.artistName a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #ffffff;
+}
+
+/* ===== PHONE ===== */
 
 @media (max-width: 668px){
   .albums-container {
     display: grid;
     grid-template-columns: 2fr;
     margin: 20px auto;
+  }
+}
+
+/* ===== TABLET ===== */
+
+@media (min-width: 669px) and (max-width: 1023px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 2px;
+  }
+
+  .card {
+    width: auto;
+    height: 400px;
+    margin-bottom: 5px;
+  }
+
+  .album-img {
+    max-width: 360px;
+  }
+}
+
+/* ===== DESKTOP ===== */
+
+@media (min-width: 1024px){
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+
+  .card {
+    width: auto;
+
   }
 }
