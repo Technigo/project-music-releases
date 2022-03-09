@@ -12,7 +12,7 @@ const Artist = (props) => {
          </div>
 
    ) 
+   }
 
-}
 
 export default Artist 
