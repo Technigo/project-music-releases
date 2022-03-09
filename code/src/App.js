@@ -4,8 +4,6 @@ import data from './data.json'
 
 import Album from './components/Album'
 
-console.log(data, 'data from app')
-
 
 export const App = () => {
   return (
@@ -16,7 +14,7 @@ export const App = () => {
         
             {data.albums.items.map((item) => (
             <Album
-
+              key={item.id}
               img={item.images[1].url}
               albumName={item.name}
               albumLink={item.external_urls.spotify}
