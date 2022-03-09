@@ -19,3 +19,31 @@ code {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.artistCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 1%;
+}
+
+.album-text {
+  position: absolute;
+  top: 100%;
+  font-size: 16px;
+}
+
+.album-name a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.artist-name a {
+  font-weight: normal;
+  color: #a0a0a0;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
