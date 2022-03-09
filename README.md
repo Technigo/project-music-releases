@@ -8,4 +8,4 @@ After we got the data we needed from the API we styled the page so it followed t
 
 ## View it live
 
-competent-kare-a80cb6
+https://musiic-releases.netlify.app/
