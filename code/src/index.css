@@ -14,8 +14,8 @@ code {
     monospace;
 }
 
-
 .albums-wrapper {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,3 +49,20 @@ code {
   text-decoration: none;
   margin-top: 5px;
 }
+
+.header {
+  margin-top: 0;
+  display: flex;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  justify-content: center;
+  border-bottom: 1px solid rgba(157, 163, 156, 0.2);
+}
+
+.hover {
+  position: absolute;
+}
+
+
+
