@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -11,3 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.Section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Album {
+  width: 300px;
+  margin: 15px;
+
+}
+
