@@ -6,8 +6,8 @@ const MusicInfo = (props) => {
     <section className="albums-wrapper">
     {props.musicList.albums.items.map((item) => {
          return <Albums key={item.id} albumTitle={item.name} image={item.images[1].url} artists={item.artists[0].name} albumURL={item.external_urls.spotify} artistURL={item.artists[0].external_urls.spotify}/>
-       })}
-       </section>
+      })}
+    </section>
   );
 }
 

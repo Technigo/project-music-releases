@@ -6,7 +6,7 @@ import data from 'data.json'
 
 export const App = () => {
 	return (
-    <section>
+    <section className="page-wrapper">
       <MusicInfo musicList={data} />
     </section>
 	)}
