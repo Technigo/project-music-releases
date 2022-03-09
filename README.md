@@ -7,4 +7,4 @@ We used React to create components and pass them on to App.js. We started mobile
 
 ## View it live
 
-
+https://sjupunkter-releases.netlify.app
