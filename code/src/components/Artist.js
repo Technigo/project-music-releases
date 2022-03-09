@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const Artist = (props) => {
   return (
-    <div>
-        Hello {props.albumName} {props.artistName}
-    </div>
-  )
-}
+    <a
+      className="song-artist"
+      href={props.artistUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {props.artistName}
+    </a>
+  );
+};
 
-export default Artist
+export default Artist;
