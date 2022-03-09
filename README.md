@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we have practice React and creating components by using data from Spotify.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First we identified which components we needed. We decided to start with the App, Album and Artist components and then we created the Header and Icon part.
+After we got the data we needed from the API we styled the page so it followed the desired design.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+competent-kare-a80cb6
