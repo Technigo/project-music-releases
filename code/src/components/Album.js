@@ -8,9 +8,9 @@ const Album = (props) => {
     <article className="Album">
         <img src={props.img} />
         <h2>{props.albumName}</h2>
-        <a href={props.albumLink}>Link</a>
-        <a href={props.artistLink}>Link</a>
-        <p>{props.artistName}</p>
+        <a href={props.albumLink}>
+            <p>{props.artistName}</p>
+        </a>
 
          
     </article>
