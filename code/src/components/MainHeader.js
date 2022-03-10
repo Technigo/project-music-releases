@@ -3,8 +3,19 @@ import React from 'react'
 const MainHeader = (props) => {
   return (
     <header className="header">
-      <h2 className="mainHeading">New Albums & Singles</h2>
-      <img src="/icons/spotify.svg" alt="spotify logo" className="headerLogo" />
+      <h1 className="mainHeading">New Albums & Singles</h1>
+      <hr className="horizontalLine" />
+      <a
+        href="https://www.spotify.com/se/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="/icons/spotify.svg"
+          alt="spotify logo"
+          className="headerLogo"
+        />
+      </a>
     </header>
   )
 }

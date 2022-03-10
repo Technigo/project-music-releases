@@ -6,7 +6,7 @@ const Footer = (props) => {
   return (
     <>
       <h2 className="madeBy">
-        Made by :
+        Made by
         <a
           href="https://github.com/JenFi72"
           target="_blank"
@@ -24,7 +24,7 @@ const Footer = (props) => {
         >
           <span className="Names"> Simon </span>
         </a>
-        Students @ spring 2022 Team Fox 🦊
+        Students @ Technigo spring 2022 Team Fox 🦊
       </h2>
     </>
   )

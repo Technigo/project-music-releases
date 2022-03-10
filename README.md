@@ -1,7 +1,6 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we are going to build a Spotify site, me and Jenny are doing it togheter.
 
 ## The problem
 

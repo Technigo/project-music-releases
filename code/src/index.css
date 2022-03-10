@@ -20,14 +20,20 @@ code {
 }
 .mainHeading {
   color: white;
+  padding: 1em 0 1em;
 }
 .play-list-container {
+  padding: 1em 0 1em;
 }
+
 .project-music-container {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 15% auto;
+  grid-template-areas: 'aside main';
 }
 .sideBar {
+  padding: 1em;
+  margin-left: 5%;
 }
 .horizontalLine {
   display: block;
@@ -35,11 +41,13 @@ code {
   border-style: inset;
   opacity: 0.2;
 }
+.main-container {
+  padding: 1em;
+}
 
 /* ------MainHeader------*/
 
 .header {
-  padding: 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,6 +87,9 @@ code {
   width: 100px;
 }
 .playlistName {
+  color: white;
 }
 .playlistTrack {
+  color: white;
+  padding: 1em;
 }

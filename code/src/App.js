@@ -24,7 +24,6 @@ const playListArray = playlistData.playlists.items
 export const App = () => {
   return (
     <div className="project-music-container">
-      <MainHeader />
       <div className="sideBar">
         <SidebarHeader />
         <div className="play-list-container">
@@ -41,8 +40,11 @@ export const App = () => {
           })}
         </div>
       </div>
-
-      <Footer />
+      <main className="main-container">
+        <MainHeader />
+        <hr className="horizontalLine" />
+        <Footer />
+      </main>
     </div>
   )
 }
