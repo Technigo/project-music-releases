@@ -5,9 +5,142 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  /* #fff for album title, 14 px, helvetica */
+  /* color: #fff;  */
+  /* below color for artist title, 14 px, helvetica */
+  /* color: #a0a0a0; */ 
+  padding: 1em;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+}
+.title{
+  color:#fff;
+  margin: 0.25rem 0;
+}
+.hr{
+  height:2px;
+  border-width:0;
+  color:#a0a0a0;
+}
+.main{
+  margin: 1rem 0;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.album-container{
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.album-image-container{
+  position: relative;
+  display: flex;
+}
+.album-image{
+  width: 300px;
+  height: 300px;
+}
+
+.album-image-container:hover .album-image{
+  opacity: 0.5;
+}
+
+.album-button-container{
+  position: absolute;
+  top:0;
+  left:0;
+  right: 0;
+  bottom:0;
+  opacity:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.album-button-container:hover{
+  opacity:1;
+}
+
+.album-dots,
+.album-play,
+.album-heart{
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 0.5rem;
+}
+
+.album-play{
+  width: 90px;
+  height: 90px;
+}
+
+.album-play:hover{
+  transform: scale(1.3);
+  transition: all 1s ease-out;
+}
+
+.artist-name-container{
+  display: flex;
+}
+.album-title,
+.artist-name{
+  font-family: "Helvetica", Sans-Serif;
+  font-size: 14px;
+  margin: 0.25rem 0;
+  margin-right: 0.5rem;
+  color:#a0a0a0;
+}
+
+.album-title:hover,
+.artist-name:hover{
+  text-decoration: underline;
+  text-decoration-color:#a0a0a0;
+}
+
+.album-title{
+  color:#fff;
+}
+.album-title:hover{
+  text-decoration-color:#fff;
+}
+
+/* Media Query Tablet */
+@media (min-width: 768px) and (max-width:1024px) {
+  .main{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+/* Media Query Desktop */
+@media screen and (min-width: 1025px){
+  .main{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
