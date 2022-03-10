@@ -25,7 +25,7 @@ code {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 5% 1%;
+  margin: 2% 1%;
 }
 
 .album-text {
@@ -50,19 +50,78 @@ code {
   margin-top: 5px;
 }
 
-.header {
-  margin-top: 0;
-  display: flex;
+header {
   color: white;
   font-size: 13px;
   font-weight: bold;
-  justify-content: center;
-  border-bottom: 1px solid rgba(157, 163, 156, 0.2);
+  display: flex;
+  position: relative;
+  margin: 0 10px;
 }
 
-.hover {
+.wrapper {
+  margin: 0 auto;
+}
+
+.iconsWrapper {
+  display: none;
+}
+
+.iconsWrapper .icons {
+  display: inline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.iconsWrapper {
   position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  justify-content: space-between;
+  opacity: 0;
+  width: 80%;
+  z-index: 2;
 }
 
+.icons {
+  width: 50px;
+  filter: invert(1); 
+}
+
+.iconsWrapper:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  width: 70px;
+}
+
+.heart-icon{
+  width: 35px;
+}
+
+.dots-icon{
+  width: 35px;
+}
+
+.play-icon:hover {
+  width: 90px;
+  transition: all 0.7s ease-in-out;
+}
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+  }
+
+.image-wrapper:hover .album-image {
+    opacity: 0.1;
+    transition: all 0.2s ease-in-out;
+}
 
 
