@@ -69,7 +69,7 @@ img {
   width: 50px;
 }
 
-.IconContainer {
+.Icon-Container {
   position: absolute;
   display: flex;
   justify-content: space-between;
