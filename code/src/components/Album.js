@@ -24,7 +24,7 @@ const Album = (props) => {
 
         <section className="song-info">
           <div className="song-name">
-            <a href="#">{props.albumName}</a>
+            <a href="google.se">{props.albumName}</a>
           </div>
           <div className="song-artist">
             {props.artist.map((artist) => (
