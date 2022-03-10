@@ -134,6 +134,11 @@ a {
   font-size: 14px;
   display: flex;
   justify-content: center;
+  letter-spacing: 1px;
+}
+
+.footer span {
+  font-weight: 700;
 }
 
 /* Media Query Tablet */

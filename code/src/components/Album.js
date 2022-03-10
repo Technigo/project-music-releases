@@ -9,7 +9,7 @@ const Album = (props) => {
   return (
     <section className="album-container">
       <a href={props.albumUrl} className="album-image-container">
-      <img src={props.image} alt="album image" className="album-image" />
+      <img src={props.image} alt="" className="album-image" />
         <div className="album-button-container">
           <button type="button" className="album-heart">
             <HeartIcon />

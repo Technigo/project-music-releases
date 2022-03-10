@@ -20,7 +20,7 @@ export const App = () => {
     )
   })}
   </main>
-  <footer className="footer">&#127927; Week 9 | Music Releases Project | Jin Cho & Camilla Hallberg</footer>
+  <footer className="footer">Week 9 - <span>Project Music Releases</span> - © Jin Cho & Camilla Hallberg 2022</footer>
   </>
   );
 }
