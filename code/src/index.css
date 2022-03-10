@@ -64,3 +64,20 @@ img {
   width: 150px;
   height: 150px;
 }
+
+.icons {
+  width: 50px;
+}
+
+.IconContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 80%;
+
+}
+
+.IconPlay:hover {
+width: 100%;
+}
