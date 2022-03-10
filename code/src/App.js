@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <main>
 
+    <div className="container">
     <header>
       <div class="title-container">
           New albums & singles
@@ -29,6 +30,7 @@ export const App = () => {
    
 
     </section>
+    </div>
     </main>
   
   )
