@@ -4,7 +4,7 @@ export const Article = (props) => {
   
     return (
     <article className="album">
-
+      {/* ===== ALBUM COVER ===== */}
       <div className="album-cover">
         <a href={props.articleDetails.external_urls.spotify} target="_blank" rel="noopener noreferrer">
           <img className="album-image" src={props.articleDetails.images[1].url} alt="album cover" />
