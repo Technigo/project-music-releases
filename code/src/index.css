@@ -53,14 +53,15 @@ a {
   flex-direction: column;
   
   max-width: 70vw;
-  margin: 0 2rem 2rem auto;
+  /* margin: 0 2rem 2rem 2rem; */
+padding: 15px;
 }
 
 .flex-container {
   margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .artist-container {
@@ -83,6 +84,7 @@ grid-template-columns: repeat(3, 1fr);
 align-items: center;
 justify-items: center;
 justify-content: center;
+width: 100%
 }
 
 .icons-container a {
@@ -121,9 +123,12 @@ width: 100%;
 @media (min-width: 768px) {
   .album {
     max-width: 40vw;
+    /* max-width: 300px; */
   }
+
   .image-container {
-  width: 40vw;  
+  width: 100%;  
+  
   }
 }
 
@@ -143,9 +148,11 @@ width: 100%;
 
   .album {
     max-width: 20vw;
+    /* max-width: 250px; */
   }
 
   .image-container {
-    width: 20vw;
+    width: 100%;
+    
   }
 }
