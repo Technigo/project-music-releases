@@ -10,14 +10,14 @@ const AlbumPhoto=(props) => {
             <button>
                 <img className='icon' src={Heart} alt='Heart icon'/>
             </button>
-            <button>
+            <a className='play-button' href= {props.link}>
                 <img className='icon' src={Play} alt='Play icon'/>
-            </button>
+            </a>
             <button>
                 <img className='icon' src={Dots} alt='Dots icon'/>
             </button>
             </div>
-            <img src= {props.photo} alt=""/>
+            <img src= {props.photo} alt={props.alt}/>
         </div>
     )
 } 
