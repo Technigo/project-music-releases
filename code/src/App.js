@@ -2,12 +2,8 @@ import React from 'react'
 import data from './data.json'
 import Album from 'components/Album';
 
+export const App = () => { 
 
-console.log(data)
-
-export const App = () => {
-  // const dataArray = JSON.parse(data);
- 
   return (
   <>
     <div><h1 className="title">New albums & singles</h1></div>
@@ -24,6 +20,7 @@ export const App = () => {
     )
   })}
   </main>
+  <footer className="footer">&#127927; Week 9 | Music Releases Project | Jin Cho & Camilla Hallberg</footer>
   </>
   );
 }
