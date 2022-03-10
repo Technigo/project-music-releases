@@ -7,11 +7,19 @@ import Artist from './Artist'
 // Named export
 const Album = (props) => {
     return (
-    <article className="Album">
-        <h2>{props.albumName}</h2>
+    <article className="card">
+       
+
+        <div className="linked-album">
         <a href={props.albumLink}>
-            <img src={props.img} alt={props.albumName} />
+            <img className="hover-album" src={props.img} alt={props.albumName} />
+            <div className="icons-container">
+        <Icons />
+        </div>
         </a>
+        </div>
+        
+        <h2 className="album-name">{props.albumName}</h2>
 
          {<div className="artistContainer">
             {props.artists.map((artist) => (

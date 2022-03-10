@@ -6,7 +6,7 @@ const Artist = (props) => {
    return (
 
       <div className="artist">
-        <a href={props.artistLink}> 
+        <a className="linked-artist" href={props.artistLink}> 
         <p>{props.artistName}</p>
         </a>
          </div>
