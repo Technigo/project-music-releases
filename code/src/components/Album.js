@@ -1,24 +1,21 @@
 import React from 'react'
-
-// import Header from './Header' makes it broken, could put header inside app also
-
 import Artist from './Artist' 
+import Icon from './Icon'
 
 const Album = (props) => {
-    console.log(props)
 
     return (
         <article className="album-card">
             <div className="image-container">
-                <img src={props.item.images[1].url} alt="album cover"/>
+                <Icon />
+                <img src={props.item.images[1].url} className="album-image" alt="album cover"/>
             </div>
             <div className="text-wrapper">
                 <h3 className="album-title">{props.item.name}</h3>
                 <h4 className="artist-name"> <Artist artistArray={props.item.artists} /></h4>
                 <a className="linked-artist" href={props.artistLink}></a>
             </div>
-
-        </article>
+         </article>
     )
 }
 

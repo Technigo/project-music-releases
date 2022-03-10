@@ -4,21 +4,23 @@ import data from './data.json'
 
 import Album from './components/Album'
 
-// import Header from './components/Header'
+import Header from './components/Header'
 
 
 console.log('Data', data)
 
 export const App = () => {
   return (
-	  
-		<section> 
+		<>
+		<Header />
+		<section className="album-wrapper"> 
 			{data.albums.items.map((item) => (
 				<Album 
 				key={item.id} item={item}
 				/> 
 			))}
 		</section>
+		</>
    )
 }
 
