@@ -8,24 +8,49 @@ body {
   color: white;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 a {
   color: white;
   text-decoration: none;
 }
 
-h1 {
-  margin-left: 25px;
+figure {
+  margin: 0;
+  font-weight: 700;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+.main-wrapper {
+  padding: 10px;
 }
 
 .album-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  overflow-y: hidden;
+  overflow-x: scroll;
+} 
+
+.album-wrapper::-webkit-scrollbar {
+  display: none;
 }
 
-.wrapper {
-  margin: 0 30px 20px 0;
+.album-content {
   width: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 400px;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+
+.album-content:hover {
+  transform: scale(1.03);
 }
 
 .image-wrapper {
@@ -72,9 +97,11 @@ h1 {
   max-width: 20%;
   transition: .2s ease-in-out;
   fill: white;
+  opacity: 0.5;
 }
 
 .play-icon:hover {
+  opacity: 1;
   max-width: 25%;
 }
 
@@ -95,4 +122,11 @@ h1 {
 
 .artist-link:nth-last-of-type(2)::after {
   content: " & ";
+}
+
+@media (min-width: 1024px) {
+  .album-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  } 
 }
