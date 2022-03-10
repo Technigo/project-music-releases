@@ -3,7 +3,6 @@ import data from './data.json'
 import playlistdata from './stretch-goal.json'
 
 
-// import { Article } from 'components/Article'
 import { Albums } from 'components/Albums'
 import { Singles } from 'components/Singles'
 import { Playlists } from 'components/Playlists'
