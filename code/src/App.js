@@ -12,14 +12,14 @@ export const App = () => {
     <div className="album-box">
     {data.albums.items.map((singleAlbum) => {
           <Album 
-              key={singleAlbum.id} 
-              albumDetails={singleAlbum}/>
-    })}
-     {data.album.artists.map((artist) => (
+            key={singleAlbum.id} 
+            albumDetails={singleAlbum}/>
+            })}
+        {data.album.artists.map((artist) => (
           <Artist
-          key={artist.id}
-          name={artist.name}
-          url={artist.external_urls.spotify}
+            key={artist.id}
+            name={artist.name}
+            url={artist.external_urls.spotify}
           />
           ))}
         </div>
