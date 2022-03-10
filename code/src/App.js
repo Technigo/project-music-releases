@@ -1,8 +1,8 @@
 import React from 'react'
 import data from './data.json'
 
-import { Header } from './components/Header'
-import { Album } from './components/Album'
+import Header from './components/Header'
+import Album from './components/Album'
 // import { Artist } from './components/Artist' 
 
 export const App = () => {

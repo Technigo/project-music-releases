@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Helvetica", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -9,11 +9,12 @@ body {
 }
 
 code {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 h1 {
   color: #FFFFFF;
+  letter-spacing: 1.7px;
   font-size: 28px;
   margin: 1em 1.75em;
 }
@@ -21,13 +22,18 @@ h1 {
 h2 {
   color: #FFFFFF;
   font-size: 18px;
+  letter-spacing: 1.6px;
   max-width: 300px;
-  margin-bottom: 0em;
+  margin: 0.35em 0em 0.5em;
 }
 
 h3 {
   color: #a0a0a0;
   margin-top: 0em;
+}
+
+/***** Header *****/
+.header {border-top: 1px solid #a0a0a060;
 }
 
 /***** Links *****/
@@ -39,31 +45,128 @@ h3 {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 
-/***** Header *****/
-.header {border-top: 1px solid #a0a0a060;
+/***** Icons *****/
+.icon {
+  width: 35px;
+  filter: brightness(0) invert(0.9);
+}
+
+.icon.play {
+  width: 60px;
 }
 
 /***** Layout *****/
 .album-container {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
-  padding: 1em 1.5em;
+  grid-gap: 1em;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  .album-container {
-    grid-template-columns: repeat(2, 1fr);
+
+/***** Overlay *****/
+.album-group {
+  position: relative;
+}
+
+.album {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.album-group:hover .icon-container {
+  opacity: 1;
+}
+
+.album-group:hover .album{
+  opacity: 0.3;
+}
+
+.icon-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.icon {
+  padding: 0.75em;
+  color: #FFFFFF
+}
+
+.play:hover {
+  transform: scale(1.2);
+}
+
+
+/***** Media queries *****/
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 24px;
+    max-width: 350px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+ 
+  img {
+    width: 350px;
+  }
+
+  .icon {
+    width: 40px;
+  }
+  
+  .icon.play {
+    width: 80px;
   }
 }
 
 @media (min-width: 1201px) {
   .album-container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+
+  .icon {
+    width: 50px;
+    padding: 1em;
+  }
+
+  .icon.play {
+    width: 100px;
+  }
+
+}
+
+@media (min-width: 1700px) {
+  .album-container {
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    grid-gap: 2em;
+  }
+  
+  h2 {
+    max-width: 450px;
+  }
+  
   img {
-    width: 500px;
+    width: 550px;
   }
 }
