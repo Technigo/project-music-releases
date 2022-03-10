@@ -7,25 +7,11 @@ const ArtistName = (props) => {
 
     console.log(props)
     return (
-        <section>
-            <div>
-            <h1>{props.artist}</h1>
-            </div>
-        </section>
+            <a className='artist-name' href={props.artist.external_urls.spotify}>
+            {props.artist.name}
+            </a>
     )
 }
 
 export default ArtistName;
 
-//
-// const fetchArtist = data.albums.items
-
-// const ArtistName = () => {
-//  return (
-//     <div>
-//         {fetchArtist.map((artist) => {
-//           return <SpotifyTest artist={artist[0].name} />
-//         })}
-//     </div>
-//  )
-// }

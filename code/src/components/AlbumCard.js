@@ -1,30 +1,33 @@
 import React from 'react'
 import ArtistName from 'components/ArtistName'
+import Icons from 'components/Icons'
 
+const AlbumCard = (props) => {
+    // console.log('props', props)
+    return (            
+        <article className='album-container'>
+            <div>          
+                <div className='overlay-relative'>
+                    <a href={props.newReleases.external_urls.spotify}><img className='album-cover' src={props.newReleases.images[1].url} alt="Album Cover" />
+                    </a>
+                    <div className='overlay'>
+                        <h2><Icons /></h2>
+                    </div>    
+                </div>
 
-const AlbumCard = ({name, image, props}) => {
-    // console.log(props)
-    // const { name, image } = props
-    return (
-        <section>
-            
-            <div className='album-border'>               
-                <img src={image} alt="Album Cover" />
-                <h1>{name}</h1>
-                <h1>Josse ft {props.album.artists[0].name} and Lisen and Stephy</h1>
-            </div>
-           
-            <div className='all-album-border'>
-                {props.newReleases.map((singleArtist) => {
-                return (<ArtistName artist={singleArtist} />
-                )})}
-                
-             </div>
-
-        </section>
+                <h2><a className='album-name' href={props.newReleases.external_urls.spotify}>{props.newReleases.name}</a></h2>
+                <h2><a className='artist-name' href={props.newReleases.external_urls.spotify} target="_blank" rel="noopener norefferer">
+                    {props.newReleases.artists.map(artist => {
+                        return (
+                            <ArtistName key={artist.id} artist={artist} />
+                        )
+                    })}
+                </a></h2>
+            </div> 
+               
+        </article>
     )
 }
 
 export default AlbumCard; 
 
-/* <ArtistName artist={artist.artists[0].name} /> */
