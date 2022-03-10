@@ -8,10 +8,14 @@ export const App = () => {
     <main>
      
     <section className='page'>
-     
-    <div class="title-container">
+
+      <header>
+        
+      <div class="title-container">
           New albums & singles
           </div>
+
+      </header>
 
         <div class="album-section">
             {data.albums.items.map((item) => (
