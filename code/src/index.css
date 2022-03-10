@@ -13,19 +13,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+h2 {
+  color: white;
+}
 .project-music-container {
-  padding: 30px;
-  color: blue;
   display: grid;
   grid-template-columns: auto;
 }
 .sidebar {
   background-color: pink;
   border-radius: 1px solid black;
+}
+.horizontalLine {
+  display: block;
+  color: #e9f4fe;
+  border-style: inset;
+  opacity: 0.2;
+}
+/* ------HEADER------*/
+.header {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerLogo {
+  width: 100px;
+}
+
+/* ----- FOOTER -----*/
+.madeBy {
+  padding: 1em;
+}
+.Jenny .Simon {
+  color: white;
+}
+/* ----- PlayList -----*/
+.play-list-container {
+  display: grid;
+  grid-template-columns: auto;
 }

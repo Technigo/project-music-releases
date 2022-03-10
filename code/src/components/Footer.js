@@ -5,17 +5,25 @@ import React from 'react'
 const Footer = (props) => {
   return (
     <>
-      <p className="madeBy">
+      <h2 className="madeBy">
         Made by :
-        <a href="https://github.com/JenFi72" target="_blank">
-          <span className="linkGithub"> Jenny </span>
+        <a
+          href="https://github.com/JenFi72"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="Jenny"> Jenny </span>
         </a>
         and
-        <a href="https://github.com/Kyparn" target="_blank">
-          <span className="linkGithub"> Simon </span>
+        <a
+          href="https://github.com/Kyparn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="Simon"> Simon </span>
         </a>
         Students @ spring 2022 Team Fox 🦊
-      </p>
+      </h2>
     </>
   )
 }

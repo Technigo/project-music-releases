@@ -8,10 +8,12 @@ const Playlist = (props) => {
         src={props.cover}
         target="_blank"
         alt="playlist"
+        rel="noopener noreferrer"
       />
-      <a href={props.playlistUrl} target="_blank">
-        <h3 className="playlist-Name">{props.playlist}</h3>
+      <a href={props.playlistUrl} target="_blank" rel="noopener noreferrer">
+        <h3 className="playlist-Name">{props.playistName}</h3>
       </a>
+      <p className="playlist-track">{props.trackNumber} Tracks</p>
     </div>
   )
 }

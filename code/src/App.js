@@ -10,8 +10,10 @@ import Footer from './components/Footer'
 import Playlist from './components/Playlist'
 import MainHeader from './components/MainHeader'
 import SidebarHeader from './components/SidebarHeader'
+
 console.log(data)
 console.log(playlistData)
+
 //Variables
 
 const Albums = data.albums.items
@@ -22,15 +24,24 @@ const playListArray = playlistData.playlists.items
 export const App = () => {
   return (
     <div className="project-music-container">
-      <h1>
-        Hej hej Jenny! :)
-        <MainHeader />
-      </h1>
-      <section className="sidebar">
-        <h1>Hej hej</h1>
+      <MainHeader />
+      <div className="sideBar">
+        <SidebarHeader />
+        <div className="play-list-container">
+          {playListArray.map((playlist) => {
+            return (
+              <Playlist
+                key={playlist.id}
+                cover={playlist.images[0].url}
+                playlistName={playlist.name}
+                playlistUrl={playlist.external_urls.spotify}
+                trackNumber={playlist.tracks.total}
+              />
+            )
+          })}
+        </div>
+      </div>
 
-        <p></p>
-      </section>
       <Footer />
     </div>
   )
