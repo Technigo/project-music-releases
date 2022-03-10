@@ -22,8 +22,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  margin: 10px;
+  border-bottom: 3px solid rgb(65, 65, 65);
+}
+
 h1{
   color: #fff;
+ 
 }
 
 a{
@@ -38,7 +45,7 @@ a:hover{
 .album{
   display: flex;
   flex-direction: column; 
-  width: 328px;
+  flex: 1;
   padding: 10px;
 }
 
@@ -71,12 +78,13 @@ a:hover{
 
 .album-cover {
   position: relative;
-  width: 328px;
+  width: 100%;
   transition-duration: 1s;
 }
 
 .album-image {
   transition-duration: 0.5s;
+  width: 100%;
 }
 
 .album-cover:hover .album-image{
@@ -111,4 +119,49 @@ a:hover{
 
 .play:hover {
   width: 95px;
+}
+
+/* Mobile  */
+
+@media all and (max-width: 668px) {
+ 
+
+  .album {
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+    min-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Tablet */
+
+@media all and (min-width: 669px) and (max-width: 1023px) {
+ 
+  
+  .album {
+    min-width: 40%;
+  }
+}
+/* Desktop */
+
+@media all and (min-width: 1024px) and (max-width: 1500px) {
+  
+  .album {
+    min-width: 22%;
+  }
+}
+
+/* Desktop large */
+
+@media all and (min-width: 1501px) {
+
+  #root {
+    width: 1500px;
+    margin: auto;
+  }
+  .album {
+    min-width: 22%;
+  }
 }
