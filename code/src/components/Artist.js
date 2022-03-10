@@ -7,7 +7,7 @@ const Artist = (props) => {
 
       <div className="artist">
         <a className="linked-artist" href={props.artistLink}> 
-        <p>{props.artistName}</p>
+        <p>{props.artistName}{props.isLast ? "" : ","}</p>
         </a>
          </div>
 

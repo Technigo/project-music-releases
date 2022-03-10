@@ -19,6 +19,7 @@ const Album = (props) => {
         </a>
         </div>
         
+        <div className="text-container">
         <h2 className="album-name">{props.albumName}</h2>
 
          {<div className="artistContainer">
@@ -31,6 +32,7 @@ const Album = (props) => {
             )
          )}
             </div>}
+        </div>
     </article>
     )
 }
