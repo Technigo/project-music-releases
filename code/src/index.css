@@ -16,7 +16,6 @@ h1 {
   color: #FFFFFF;
   letter-spacing: 1.7px;
   font-size: 1.5rem;
-  margin: 1em 1.75em;
 }
 
 h2 {
@@ -27,15 +26,16 @@ h2 {
   margin: 0.35em 0em 0.5em;
 }
 
-h3 {
+a.artist {
   color: #a0a0a0;
   margin-top: 0em;
 }
 
 /***** Header *****/
-.header {
-  border-bottom: 2px solid #a0a0a0d7;
-  margin-bottom: 1em;
+header {
+  border-bottom: 2px solid #a0a0a070;
+  margin: 1em 0.5em;
+  padding-top: 0.5em;
 }
 
 /***** Links *****/
@@ -66,8 +66,21 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
   grid-gap: 1em;
+  grid-row-gap: 2em;
 }
 
+.artist-container {
+  display: flex;
+}
+
+.artist-container a:not(:first-of-type, :last-of-type):before {
+  content: ', ';
+} 
+
+.artist-container a:nth-last-of-type(2):after {
+  content: ' & ';
+  padding-right: 0.3em;
+}
 
 /***** Overlay *****/
 .album-group {
@@ -103,7 +116,8 @@ h3 {
   justify-content: center;
   align-items: center;
   left: 50%;
-  transform: translate(-50%);
+  bottom: 15%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -125,7 +139,7 @@ h3 {
     max-width: 350px;
   }
 
-  h3 {
+  a.artist {
     font-size: 20px;
   }
  

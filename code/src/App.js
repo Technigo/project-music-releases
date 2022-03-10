@@ -10,14 +10,14 @@ export const App = () => {
 
    return (
     <section>
-      <div className='header'>
+      <header>
         <Header />
-      </div>
+      </header>
       <div className='album-container'>
       {data.albums.items.map((albumData) => {
         return (
           <Album
-          key={albumData.id}
+            key={albumData.id}
             data={albumData}
             />
             )
