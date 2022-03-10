@@ -1,21 +1,22 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Simple react web application to display album and artist list from Spotify. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+- The main challenge was to structure the layout and divide element as reusable component. Defining props for each component was not easy to grasp. 
+- We used conditional rendering based in map index parameter to bind multiple artist names by comma. 
+
+## Design 🎨
+- We used  ES6 modules to import given icons by Technigo in .svg format as React Component, it was useful tip to know. 
+- With regards to styling, we achieved hover interaction by CSS absolute/relative position and darkening the background image by adjusting opacity attributes.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here's our pair-programming project in action: https://project-music-releases-by-jin-and-camilla.netlify.app/
+
+// Camilla & Jin
 
 
-TO DO:
 
-- When you click on the album, it should link to the album's external url in the data
-- When you click on an artist, it should link to the artist's external url in the data
-
-- Styling 
 
