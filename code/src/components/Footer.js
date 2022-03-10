@@ -11,16 +11,18 @@ const Footer = (props) => {
           href="https://github.com/JenFi72"
           target="_blank"
           rel="noopener noreferrer"
+          className="links"
         >
-          <span className="Jenny"> Jenny </span>
+          <span className="Names"> Jenny </span>
         </a>
         and
         <a
           href="https://github.com/Kyparn"
           target="_blank"
           rel="noopener noreferrer"
+          className="links"
         >
-          <span className="Simon"> Simon </span>
+          <span className="Names"> Simon </span>
         </a>
         Students @ spring 2022 Team Fox 🦊
       </h2>

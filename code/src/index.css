@@ -1,5 +1,4 @@
 /* Mobile version */
-
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +6,6 @@
 }
 
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,16 +18,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h2 {
+.mainHeading {
   color: white;
+}
+.play-list-container {
 }
 .project-music-container {
   display: grid;
   grid-template-columns: auto;
 }
-.sidebar {
-  background-color: pink;
-  border-radius: 1px solid black;
+.sideBar {
 }
 .horizontalLine {
   display: block;
@@ -37,7 +35,9 @@ h2 {
   border-style: inset;
   opacity: 0.2;
 }
-/* ------HEADER------*/
+
+/* ------MainHeader------*/
+
 .header {
   padding: 2em;
   display: flex;
@@ -45,19 +45,40 @@ h2 {
   justify-content: space-between;
   align-items: center;
 }
+.titleHeading {
+}
 .headerLogo {
   width: 100px;
 }
 
+/* ----- ICONS -----*/
+
+.icons {
+}
+
 /* ----- FOOTER -----*/
+
 .madeBy {
+  text-align: center;
+  color: white;
   padding: 1em;
 }
-.Jenny .Simon {
+.Names {
   color: white;
 }
+.links {
+  text-decoration: none;
+}
+
 /* ----- PlayList -----*/
-.play-list-container {
-  display: grid;
-  grid-template-columns: auto;
+
+.playListCards {
+}
+.playListIcon {
+  border-radius: 50%;
+  width: 100px;
+}
+.playlistName {
+}
+.playlistTrack {
 }
