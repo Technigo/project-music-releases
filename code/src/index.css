@@ -77,25 +77,39 @@ position: relative;
 .icons-container {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
+align-items: center;
+justify-items: center;
+/* align-self: center; */
 }
 
 .overlay-container {
+display: flex;  
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
 background: rgba(0,0,0,0.6);
+transition: opacity .3s; 
+opacity: 0;
+align-items: center;
 }
 
 .icon {
 filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(101%);
+width: 35%;
 }
 
 .image {
 display: block;
 width: 100%;  
 }
+
+.play {
+  transition: transform .3s;
+  width: 75%;
+}
+
 
 /* .overlay-parent {
   position: relative;
@@ -130,7 +144,13 @@ width: 100%;
     text-decoration: underline;
   }
 
-  
+  .overlay-container:hover {
+   opacity: 1; 
+  }
+
+  .play:hover {
+  transform: scale(1.5);
+  }
 
   .album {
     /* display: flex; */
