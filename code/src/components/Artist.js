@@ -22,4 +22,3 @@ export const Artist = (props) => {
 
     return returnLink
 }
-

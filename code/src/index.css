@@ -69,6 +69,34 @@ code {
     monospace;
 }
 
+.image-container {
+width: 70vw;
+position: relative;  
+}
+
+.icons-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.overlay-container {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+}
+
+.icon {
+filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(101%);
+}
+
+.image {
+display: block;
+width: 100%;  
+}
+
 /* .overlay-parent {
   position: relative;
   width: 300px;
@@ -91,6 +119,9 @@ code {
   .album {
     max-width: 40vw;
   }
+  .image-container {
+  width: 40vw;  
+  }
 }
 
 
@@ -107,5 +138,9 @@ code {
     max-width: 20vw;
     /* margin: 2rem; */
     /* padding: 1rem; */
+  }
+
+  .image-container {
+    width: 20vw;
   }
 }

@@ -4,6 +4,7 @@ import { Album } from 'components/Album'
 import { Header } from 'components/Header'
 import data from './data.json'
 
+
 console.log(data)
 const albums = data.albums.items
 console.log(albums)

@@ -1,12 +1,21 @@
 import React from 'react'
 import { Artist } from 'components/Artist'
+import { Icons } from 'components/Icons'
 
 export const Album = (props) => {
     const album = props.album
 
     return (
         <div key={album.id} className='album'> 
-            <img src={album.images[0].url} alt="album-img"/>
+            <div className='image-container'>
+                <img className='image' src={album.images[0].url} alt="album-img"/>
+                <div className='overlay-container'>
+                    <Icons
+
+                    />
+                </div>
+            
+            </div>
             
             <p className='album-name'><a href={album.external_urls.spotify}>{album.name}</a></p>
 
