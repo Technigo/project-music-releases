@@ -14,7 +14,7 @@ const Album = (props) => {
           <div className="overlay">
             <div className="icons">
               <img src={heart} width="30px" alt="heart"></img>
-              <a href={props.albumLink} target="_blank">
+              <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
                 <img className="play-icon" src={play} width="70px" alt="Play"></img>
               </a>
               <img src={dots} width="30px" alt="dots"></img>

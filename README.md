@@ -1,11 +1,11 @@
 # Music Releases
 Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A responsive site with Spotifys latest albums and singles. Built in React.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week was out first project with React, so the challenge was building a site in a diffrent way we are used to. But we managed to grasp it quickly and the site took up relatively quickly to build. 
 
 ## View it live
 
