@@ -21,7 +21,7 @@ code {
   font-weight: 500;
 }
 
-section {
+.album-container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
@@ -43,4 +43,24 @@ a {
 
 a:hover {
   text-decoration: underline;
+  font-weight: bold;
+}
+
+/* .all-albums {
+
+} */
+
+img {
+  width: auto;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  bottom: 80%;
+  /* background: rgb(0, 0, 0); */
+  /* background:rgba(26, 24, 24, 0.05); */
+  opacity: 40%;
+  width: 150px;
+  height: 150px;
 }
