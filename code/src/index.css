@@ -95,6 +95,7 @@ a:hover{
   display: none;
   position: absolute;
   justify-content: space-between;
+  align-items: center;
   top: 40%;
   left: 0;
   width: 100%;
@@ -130,7 +131,7 @@ a:hover{
     display: flex;
     flex-direction: column; 
     flex: 1;
-    min-width: 100%;
+    min-width: 95%;
     padding: 10px;
   }
 }
