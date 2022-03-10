@@ -3,7 +3,6 @@ import data from './data.json'
 
 import Header from './components/Header'
 import Album from './components/Album'
-// import { Artist } from './components/Artist' 
 
 export const App = () => {
 
@@ -13,6 +12,7 @@ export const App = () => {
       <header>
         <Header />
       </header>
+      
       <div className='album-container'>
       {data.albums.items.map((albumData) => {
         return (
