@@ -6,10 +6,9 @@ const AlbumCard = (props) => {
     // console.log('props', props)
     return (            
         <article className='album-container'>
-            <div>          
+            <div className='wrapper-for-children'>          
                 <div className='overlay-relative'>
-                    <a href={props.newReleases.external_urls.spotify}><img className='album-cover' src={props.newReleases.images[1].url} alt="Album Cover" />
-                    </a>
+                    <img className='album-cover' src={props.newReleases.images[1].url} alt="Album Cover" />
                     <div className='overlay'>
                         <h2><Icons /></h2>
                     </div>    

@@ -18,7 +18,7 @@ code {
 }
 
 header {
-  margin: 20px;
+  /* margin: 20px; */
   border-bottom: 1px solid #333;
 }
 
@@ -27,27 +27,62 @@ header {
   font-size: 20px;
   font-weight: bold;
   color: #FFF;
+  margin-left: 18vw;
 }
 
-/* Styling for App.js */
-
+/* STYLING APP.JS */
 .all-albums {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: row;
-
+  flex-direction: row; */
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
-/* Styling for AlbumCard*/
+/* STYLING ALBUMCARD.JS */
 
-.album-container{
-  width: 300px;
-  margin: 10px;
+.album-container {
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  /* margin: 20px; */
 }
 
-/* Album and artist name */
+.wrapper-for-children {
+  width: 100%;
+  padding: 20px;
+}
 
+/* STYLING ALBUM COVER */
+.album-cover {
+  width: 100%;
+}
+
+.overlay {
+  border: 1px solid yellow;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+.overlay:hover {
+  opacity: 100;
+  background: rgba(44, 44, 44, 0.7);
+}
+
+.overlay-relative {
+  position: relative;
+}
+
+/* STYLING ALBUM NAME AND ARTIST */
 .album-name {
   font-family: 'Helvetica', sans-serif;
   font-size: 14px;
@@ -73,6 +108,7 @@ header {
   border-bottom: 1px solid #FFF;
 }
 
+/* STYLING ICONS */
 .icons-container {
   display: flex;
   justify-content: center;
@@ -91,7 +127,7 @@ header {
 .play-icon:hover {
   filter: invert(1);
   transform: scale(1.2);
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .heart-icon:hover, .dots-icon:hover {
@@ -99,21 +135,25 @@ header {
   transition: 0.2s ease-in-out;
 }
 
-
-/* ALBUM COVER  */
-.overlay{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  /* background: rgba(100, 100, 55, 0.7); */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s ease;
+/* TABLET MODE */
+@media (min-width: 667px) {
+  .all-albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
 }
 
-.overlay-relative {
-  position: relative;
+
+/* DESKTOP MODE */
+@media (min-width: 1024px) {
+  .all-albums {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
 }
+
+
