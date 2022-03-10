@@ -10,14 +10,14 @@ const Album = (props) => {
     <main className="main">
       <article className="song-card">
         <div className="img-container">
-          <img className="cover" src={props.cover} />
+          <img className="cover" src={props.cover} alt="Album cover"/>
           <div className="overlay">
             <div className="icons">
-              <img src={heart} width="30px"></img>
+              <img src={heart} width="30px" alt="heart"></img>
               <a href={props.albumLink} target="_blank">
-                <img className="play-icon" src={play} width="70px"></img>
+                <img className="play-icon" src={play} width="70px" alt="Play"></img>
               </a>
-              <img src={dots} width="30px"></img>
+              <img src={dots} width="30px" alt="dots"></img>
             </div>
           </div>
         </div>

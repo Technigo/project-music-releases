@@ -67,6 +67,10 @@ h1 {
   content: " & ";
 }
 
+.song-artist a {
+  text-decoration: none;
+}
+
 .img-container {
   position: relative;
 }
