@@ -3,7 +3,7 @@ import React from 'react'
 export const Header = () => {
     return (
         <header>
-            <h1>New albums &amp; singles</h1>
+            <h1>Enjoy the best music releases of 2019 🎶 🎹 🎷</h1>
         </header>
     )
 }

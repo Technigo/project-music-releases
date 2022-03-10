@@ -19,8 +19,10 @@ export const Playlists = (props) => {
           <img className="icon" src="/icons/dots.svg" alt="dots icon" />
         </div>
         {/* ===== PLAYLIST TITLE =====*/}
-      </div>
+      </div >
+      <div className="listname-container">
         <a href={props.articleDetails.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="title">{props.articleDetails.name}</a>
+        </div>
       </div>
       
     </article>
