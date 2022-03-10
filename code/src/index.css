@@ -23,6 +23,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1{
+  color: #fff;
+}
 
 .album{
   display: flex;
@@ -37,13 +40,26 @@ code {
   margin: 10px 0;
 }
 
+
 .artist{
   color: #A0A0A0;
   font-size: 14px;
   margin:0;
+  display: inline;
+
 }
 
+/* ===== MULTIPLE ARTISTS ===== */
 
+.artist-container p:not(:first-of-type, :last-of-type)::before {
+  color: #A0A0A0;
+  content: ", ";
+}
+
+.artist-container p:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #A0A0A0;
+}
 
 .album-cover {
   position: relative;

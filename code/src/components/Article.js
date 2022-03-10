@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Article = (props) => {
-  console.log(props)
+  console.log('props:', props)
     return (
     <article className="album">
 
@@ -14,8 +14,19 @@ export const Article = (props) => {
                       <img className="icon" src="/icons/dots.svg" alt="dots icon" />
                     </div>
       </div>
+      {/* ===== ALBUM TITLE ===== */}
       <p className="title">{props.articleDetails.name}</p>
-      <p className="artist">{props.articleDetails.artists[0].name}</p>
+
+      {/* ===== ARTIST ===== */}
+      <div className="artist-container">
+       {props.articleDetails.artists.map((eachartist) => {
+       return <p className="artist" key={eachartist.id} >{eachartist.name} </p>
+     })}</div>
     </article>
     )
 }
+      
+
+
+       
+   
