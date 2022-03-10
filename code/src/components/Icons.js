@@ -4,7 +4,7 @@ import Heart from './assets/heart.svg'
 import Dots from './assets/dots.svg'
 import Play from './assets/play.svg'
 
-export const Icons = (props) => {
+export const Icons = () => {
 
     return (
         <div className='icons-container'>
