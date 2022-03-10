@@ -1,12 +1,18 @@
-// import React from 'react'
+import React from 'react'
 
 
-//  // Creating a new component
-// const Artist = (props) => {
-//  return (
-     
-//     <a href={props.artist}>Hej hej</a>
-    
-//      )}
+ // Creating a new component
+const Artist = (props) => {
+   return (
 
-// export default Artist 
+      <div className="artist">
+        <a href={props.artistLink}> 
+        <p>{props.artistName}</p>
+        </a>
+         </div>
+
+   ) 
+   }
+
+
+export default Artist 

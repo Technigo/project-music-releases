@@ -21,11 +21,15 @@ export const App = () => {
             {data.albums.items.map((item) => (
             <Album
                 key={item.id}
-                img={item.images[1].url}
-                albumName={item.name}
-                albumLink={item.external_urls.spotify}
-                artistLink={item.artists[0].external_urls.spotify}
-                artistName={item.artists[0].name}
+                // img={item.images[1].url}
+                // albumName={item.name}
+                // albumLink={item.external_urls.spotify}
+                // artistLink={item.artists[0].external_urls.spotify}
+                // artistName={item.artists[0].name}
+              img={item.images[1].url}
+              albumName={item.name}
+              albumLink={item.external_urls.spotify}
+              artists={item.artists} 
               />
 
              ))}
