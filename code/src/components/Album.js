@@ -25,20 +25,21 @@ const Album = (props) => {
 
         <div className="artist-name-container">
         {props.artists.map((artist, index) => {
+
         let isLastItem = false;
         const artistName = artist.name;
         const artistUrl = artist.external_urls.spotify;
 
         if(index === props.artists.length -1 ){ isLastItem = true;
-        }
+            }
         return <Artists key={artistUrl} isLast={isLastItem} name={artistName} url={artistUrl} />
-        })}
+            })}
         </div>
+
         <AlbumTitle name={props.songtitle} url={props.albumUrl}/> 
-        </section>
+    </section>
         )
 }
-
 export default Album;
 
 
