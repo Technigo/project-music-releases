@@ -18,13 +18,20 @@ section {
   justify-content: space-evenly;
 }
 
-/*what this code means? aks townhall*/
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 h1{
   color: #fff;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 .album{
@@ -51,12 +58,12 @@ h1{
 
 /* ===== MULTIPLE ARTISTS ===== */
 
-.artist-container p:not(:first-of-type, :last-of-type)::before {
+.artist-container a:not(:first-of-type, :last-of-type)::before {
   color: #A0A0A0;
   content: ", ";
 }
 
-.artist-container p:nth-last-of-type(2)::after {
+.artist-container a:nth-last-of-type(2)::after {
   content: " & ";
   color: #A0A0A0;
 }
