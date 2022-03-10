@@ -15,3 +15,39 @@ code {
 .music {
   border: 2px solid black;
 }
+.album-card-container{display:grid; justify-items:center;}
+
+.album-card{ width: 40%; border: 2px solid red}
+
+img{width:100%}
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: black;
+  content: ", ";
+}
+.image-container{position:relative;}
+.image-container:hover{filter: brightness(50%)}
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: black;
+}
+
+.icon-container {
+  width:100%; display: flex; justify-content: space-evenly ; position: absolute; top: 40%; opacity: 0;
+}
+
+.image-container:hover .icon-container {
+  opacity: 1;
+}
+
+
+
+.icon {
+  width: 30px;
+  -webkit-filter: invert(100%);
+
+}
+
+.play-icon {
+  width: 60px;
+  -webkit-filter: invert(100%);
+}
