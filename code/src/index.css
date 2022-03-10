@@ -12,6 +12,10 @@ h1 {
   margin-bottom: 0;
 }
 
+h2 {
+  margin-top: 30px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -40,16 +44,16 @@ hr {
   display: none;
 }
 
-.album-content {
+.image-wrapper {
   width: 300px;
   max-width: 100%;
   object-fit: contain;
   max-height: 400px;
   transition: transform 450ms;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
 }
 
-.album-content:hover {
+.image-wrapper:hover {
   transform: scale(1.03);
 }
 
@@ -122,11 +126,4 @@ hr {
 
 .artist-link:nth-last-of-type(2)::after {
   content: " & ";
-}
-
-@media (min-width: 1024px) {
-  .album-wrapper {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  } 
 }
