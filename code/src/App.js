@@ -25,6 +25,7 @@ export const App = () => {
       {data.albums.items.map((singleAlbum) => {
         if (singleAlbum.album_type === "album")
         return <Albums key={singleAlbum.id} articleDetails={singleAlbum}/>
+        else return null
       })}
       </section>
 
@@ -34,6 +35,7 @@ export const App = () => {
       {data.albums.items.map((singleSingle) => {
         if (singleSingle.album_type === "single")
         return <Singles key={singleSingle.id} articleDetails={singleSingle}/>
+        else return null
       })}
      </section>
 
