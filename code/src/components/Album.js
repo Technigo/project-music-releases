@@ -7,7 +7,7 @@ const Album = (props) => {
   const artists = albums.artists.map((artist) => {
 
     return (
-      <a href={artist.external_urls.spotify} alt='artist' className='nav-link artist'>{artist.name}</a>
+      <a href={artist.external_urls.spotify} key={artist.id} alt='artist' className='nav-link artist'>{artist.name}</a>
       )
       })
 

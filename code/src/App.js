@@ -8,13 +8,14 @@ export const App = () => {
 
 
    return (
-    <section>
+    <section className='container'>
       <header>
         <Header />
       </header>
       
       <div className='album-container'>
       {data.albums.items.map((albumData) => {
+        console.log(albumData)
         return (
           <Album
             key={albumData.id}
