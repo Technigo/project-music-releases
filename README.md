@@ -7,4 +7,4 @@ We have a ready design to follow and it went quite good without problems. We had
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+See it on live: https://music-site-done-by-anki-and-lovisa.netlify.app/
