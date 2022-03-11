@@ -31,7 +31,7 @@ hr {
 }
 
 .main-wrapper {
-  padding: 10px;
+  padding: 15px 20px;
 }
 
 .album-wrapper {
@@ -83,6 +83,7 @@ hr {
 
 .album-title {
   font-size: 14px;
+  margin-bottom: 10px;
 } 
 
 .album-title:hover {
@@ -102,6 +103,7 @@ hr {
   transition: .2s ease-in-out;
   fill: white;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .play-icon:hover {

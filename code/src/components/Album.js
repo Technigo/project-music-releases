@@ -8,10 +8,19 @@ const Album = ({ albums }) => {
   return (
     <figure className="album-content">
       <div className="image-wrapper">
-        <img src={albums.images[1].url} className="image" alt={`${albums.name} cover`}></img>
+        <img
+          src={albums.images[1].url}
+          className="image"
+          alt={`${albums.name} cover`}
+        />
         <Overlay url={url} />
       </div>
-      <a href={albums.external_urls.spotify} target="_blank" rel="noopener noreferrer"><figcaption className="album-title">{albums.name}</figcaption></a>
+      <a
+        href={albums.external_urls.spotify}
+        target="_blank"
+        rel="noopener noreferrer">
+        <figcaption className="album-title">{albums.name}</figcaption>
+      </a>
       {albums.artists.map((artist =>
         <Artist key={artist.id} artists={artist} />
       ))}

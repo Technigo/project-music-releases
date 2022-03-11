@@ -2,7 +2,6 @@ import React from "react";
 
 import albumData from "./data.json";
 import playlistData from "./stretch-goal.json";
-
 import Header from "./components/Header";
 import Album from "./components/Album";
 import Playlist from "./components/Playlist";
