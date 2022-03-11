@@ -14,13 +14,13 @@ export const Album = (props) => {
                         url = {album.external_urls.spotify}
                     />
                 </div>
-            
             </div>
             
             <p className='album-name'><a target='_blank' rel="noopener noreferrer" href={album.external_urls.spotify}>{album.name}</a></p>
 
             <div className='artist-container'>
                 {album.artists.map((artist, index, array) => 
+                /*mapping every artist and sending index and array length to Artist component*/
                     <Artist
                         artist = {artist}
                         index = {index}
@@ -32,8 +32,3 @@ export const Album = (props) => {
     )
    
 }
-
-
-
-
-

@@ -12,9 +12,9 @@ const ColoredLine = ({ color }) => (
 
 export const Header = () => (
     <>
-    <h1>New albums &amp; singles</h1>
+        <h1>New albums &amp; singles</h1>
 
-    <ColoredLine 
-    color="#a0a0a0" />
+        <ColoredLine 
+        color="#a0a0a0" />
     </>
 )

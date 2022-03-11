@@ -5,6 +5,7 @@ import Dots from './assets/dots.svg'
 import Play from './assets/play.svg'
 
 export const Icons = (props) => {
+    /*link to album's Spotify url*/
     const url = props.url
     return (
         <div className='icons-container'>

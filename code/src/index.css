@@ -9,11 +9,7 @@
 }
 
 body {
-  /* margin: 0; */
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica; /*"Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;*/
-  /* -webkit-font-smoothing: antialiased; */
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica;
   -moz-osx-font-smoothing: grayscale;
   background-color: #181818;
   color: #fff;
@@ -21,15 +17,10 @@ body {
 
 .container {
   margin: 2rem;
-  /* padding: 2rem 0; */
 }
-
-/* - Album title - 14px Helvetica #ffffff
-- Artist name - 14px Helvetica #a0a0a0 */
 
 a {
   text-decoration: none;
-  /* color: #a0a0a0; */
   font-size: 14px;
   line-height: 14px;
 }
@@ -51,10 +42,8 @@ a {
 .album {
   display: flex;
   flex-direction: column;
-  
   max-width: 70vw;
-  /* margin: 0 2rem 2rem 2rem; */
-padding: 15px;
+  padding: 15px;
 }
 
 .flex-container {
@@ -74,45 +63,44 @@ code {
 }
 
 .image-container {
-width: 70vw;
-position: relative;  
+  width: 100%;
+  position: relative;  
 }
 
 .icons-container {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-align-items: center;
-justify-items: center;
-justify-content: center;
-width: 100%
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  width: 100%
 }
 
 .icons-container a {
-width: 75%;
-
+  width: 75%; 
 }
 
 .overlay-container {
-display: flex;  
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.6);
-transition: opacity .3s; 
-opacity: 0;
-align-items: center;
+  display: flex;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  transition: opacity .3s; 
+  opacity: 0;
+  align-items: center;
 }
 
 .icon {
-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(101%);
-width: 35%;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(101%);
+  width: 35%;
 }
 
 .image {
-display: block;
-width: 100%;  
+  display: block;
+  width: 100%;  
 }
 
 .play {
@@ -123,15 +111,8 @@ width: 100%;
 @media (min-width: 768px) {
   .album {
     max-width: 40vw;
-    /* max-width: 300px; */
-  }
-
-  .image-container {
-  width: 100%;  
-  
   }
 }
-
 
 @media (min-width: 1025px) {
   a:hover {
@@ -148,11 +129,5 @@ width: 100%;
 
   .album {
     max-width: 20vw;
-    /* max-width: 250px; */
-  }
-
-  .image-container {
-    width: 100%;
-    
   }
 }
