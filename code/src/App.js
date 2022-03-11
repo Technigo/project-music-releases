@@ -2,7 +2,6 @@ import React from "react";
 import data from "./data.json";
 
 import { Album } from "./components/Album";
-// import { Artist } from "./components/Artist";
 import { Header } from "./components/Header";
 
 console.log(data);
@@ -18,15 +17,13 @@ export const App = () => {
       <main className="albums-container">
         {albumsArray.map((album) => {
           return (
-            <>
-              <Album
-                key={album.name}
-                image={album.images[0].url}
-                title={album.name}
-                href={album.external_urls.spotify}
-                album={album.artists}
-              />
-            </>
+            <Album
+              key={album.id}
+              image={album.images[0].url}
+              title={album.name}
+              href={album.external_urls.spotify}
+              album={album.artists}
+            />
           );
         })}
       </main>

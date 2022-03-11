@@ -1,11 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we have practiced React and creating components by using data from Spotify and working in pairs.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First we agreed on what components we were gonna use, and made them one by one. We had some issues with placement of "keys" and the hover overlay. To solve the problems we faced we used google, Stackoverflow, our peers and code coaches.
+If we had more time we would have tried doing parts from the red and black level.
 
 ## View it live
 

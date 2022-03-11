@@ -1,13 +1,155 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  margin: 10px auto;
+}
+
+header {
+  margin: 30px 25px;
+  border-bottom: 2px solid gray;
+}
+
+p {
+  font-size: 14px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----- ALBUM AND ICONS ----- */
+
+.container {
+  position: relative;
+  padding: 10px 30px 10px 30px;
+  margin: 10px auto;
+}
+
+.albums-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album-img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.album-cover {
+  position: relative;
+}
+
+.album-img:hover {
+  opacity: 0.3;
+  transition: 0.4s;
+}
+.iconsContainer {
+  display: flex;
+  width: 80%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  align-items: center;
+}
+
+.album-cover:hover .album-img {
+  opacity: 0.3;
+}
+
+.album-cover:hover .iconsContainer {
+  opacity: 1;
+}
+
+.hearticons,
+.dotsicons {
+  width: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.playicons {
+  width: 80px;
+  filter: brightness(0) invert(1);
+  transition: 0.2s;
+}
+
+.playicons:hover {
+  width: 100px;
+}
+
+.album-title {
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+/* ----- MULTIPLE ARTISTS ----- */
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: #ffffff;
+  content: ", ";
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #ffffff;
+}
+
+/* ----- TABLET ----- */
+
+@media (min-width: 669px) and (max-width: 1023px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2px;
+  }
+
+  .container {
+    width: auto;
+    height: 400px;
+    margin-bottom: 5px;
+  }
+
+  .album-img {
+    max-width: 360px;
+  }
+}
+
+/* ----- DESKTOP ----- */
+
+@media (min-width: 1024px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .container {
+    width: auto;
+  }
 }
