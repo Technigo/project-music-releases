@@ -31,15 +31,18 @@ header{
 }
 
 .album-card{
-  padding: 30px 60px;
+  display: grid;
+  justify-content: center;
 }
 
 .image-container{
   position: relative;
+  width: fit-content;
 }
 
 .text-wrapper{
   margin:20px 0px;
+  width: fit-content;
 
 }
 
@@ -67,6 +70,16 @@ a {
 
 
 .icon-wrapper{
+  /* position: absolute;
+  margin-top: 120px;
+  margin-left: 80px;
+  display: flex;
+  fill: white; 
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); */
+  display: none;
+}
+
+.image-container:hover .icon-wrapper {
   position: absolute;
   margin-top: 120px;
   margin-left: 80px;
@@ -82,8 +95,8 @@ a {
 }
 
 .icon-play {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   padding: 0px 10px;
 }
 
@@ -93,10 +106,19 @@ a {
   padding: 6px 10px;
 }
 
+/* --------------Tablet----------------- */
+@media screen and (min-width: 768px) {
 
+  .album-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    /* grid-template-rows: 1fr 1fr; */
+    column-gap: 10px;
+  }
+}
 
 /* --------------Desktop----------------- */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 
   .album-wrapper {
     display: grid;

@@ -4,8 +4,8 @@ const Artist = (props) => {
     return (
         <div>
         <h3 className="artist-name">        
-          {props.artistArray.map((artist) =>
-          <a 
+          {props.artistArray.map((artist, key) =>
+          <a key={artist.id}
           href={artist.external_urls.spotify}
           target="_blank"
           rel="noopener noreferrer"

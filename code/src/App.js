@@ -16,7 +16,7 @@ export const App = () => {
 		<section className="album-wrapper"> 
 			{data.albums.items.map((item) => (
 				<Album 
-				key={item.id} item={item}
+				key={item.id} item={item} artist={item.artists.id}
 				/> 
 			))}
 		</section>
