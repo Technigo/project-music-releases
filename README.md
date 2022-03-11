@@ -1,6 +1,6 @@
 # Music Releases
 
-In this project we created a website using external data from Spotify which we rendered on the browser using React components.
+In this project we (Josefin, Lisen and Stephannie) created a website using external data from Spotify which we rendered on the browser using React components.
 
 ## The problem
 
@@ -9,3 +9,6 @@ We had difficulties mapping through arrays in a component file but we solved thi
 ## View it live
 
 https://flamboyant-fermat-1d0663.netlify.app/
+
+
+
