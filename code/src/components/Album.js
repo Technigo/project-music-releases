@@ -26,7 +26,7 @@ const Album = (props) => {
             {props.artists.map((artist, index) => {
 
     return (
-        <div className="artist">
+        <span className="artist">
     <Artist 
         key={artist.name}
         artistName={artist.name}
@@ -36,7 +36,7 @@ const Album = (props) => {
         { 
             index !== props.artists.length - 1 ? ", " : ""
         }
-        </div>
+        </span>
     )
      })}
         </div>
