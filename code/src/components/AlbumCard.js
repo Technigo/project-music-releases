@@ -13,7 +13,8 @@ const AlbumCard = (props) => {
                     </div>    
                 </div>
 
-                <h2><a className='album-name' href={props.newReleases.external_urls.spotify}>{props.newReleases.name}</a></h2>
+                <h2><a className='album-name' target="_blank" rel="noopener noreferrer" 
+                        href={props.newReleases.external_urls.spotify}>{props.newReleases.name}</a></h2>
                 <h2>{props.newReleases.artists.map((artist) => {
                     return (
                         <ArtistName key={artist.id} artist={artist} />
@@ -26,4 +27,3 @@ const AlbumCard = (props) => {
 }
 
 export default AlbumCard; 
-
