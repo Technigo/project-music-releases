@@ -165,9 +165,14 @@ header {
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1024px) {
   .album-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  img {
+    width: 250px;
   }
 
   .icon {
@@ -181,7 +186,7 @@ header {
 
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
   .album-container {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 2em;
@@ -209,4 +214,4 @@ header {
   img {
     width: 400px;
   }
-}
+} */
