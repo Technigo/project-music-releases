@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import Playlist from './components/Playlist'
 import MainHeader from './components/MainHeader'
 import SidebarHeader from './components/SidebarHeader'
+import Album from './components/Album'
+import Artists from './components/Artists'
 
 console.log(data)
 console.log(playlistData)
@@ -43,6 +45,18 @@ export const App = () => {
       <main className="main-container">
         <MainHeader />
         <hr className="horizontalLine" />
+
+        <div className="album-image-container">
+          {data.albums.items.map((album) => (
+            <Album
+              img={album.images[1].url}
+              title={album.name}
+              albumLink={album.external_urls.spotify}
+              artists={album.artists}
+              key={album.name}
+            />
+          ))}
+        </div>
         <Footer />
       </main>
     </div>
