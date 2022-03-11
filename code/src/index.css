@@ -157,7 +157,7 @@ header {
   }
 }
 
-@media (min-width: 1700px) {
+/* @media (min-width: 1700px) {
   .album-container,
   .single-container {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -176,7 +176,7 @@ header {
     width: 100px;
   }
 
-}
+} */
 
 /* @media (min-width: 1500px) {
   .album-container {
