@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 figure {
   margin: 0;
   font-weight: 700;
@@ -86,20 +90,12 @@ hr {
   margin-bottom: 10px;
 } 
 
-.album-title:hover {
-  text-decoration: underline;
-}
-
-.artist-name {
+.artist-name,
+.artist-link {
   color: #a0a0a0;
 }
 
-.artist-name:hover {
-  text-decoration: underline;
-}
-
 .play-icon {
-  /* max-width: 20%; */
   transition: .2s ease-in-out;
   fill: white;
   opacity: 0.5;
@@ -113,13 +109,8 @@ hr {
 
 .heart-icon,
 .dots-icon {
-  /* max-width: 10%; */
   transition: .2s ease-in-out;
   fill: white;
-}
-
-.artist-link {
-  color: #a0a0a0;
 }
 
 .artist-link:not(:last-child):after {
