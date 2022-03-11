@@ -72,7 +72,7 @@ header {
 .album-container,
 .single-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   grid-gap: 1em;
   grid-row-gap: 2em;
@@ -155,17 +155,17 @@ header {
   a.artist {
     font-size: 1.1rem;
   }
-
-  .icon {
-    width: 40px;
-  }
-  
-  .icon.play {
-    width: 80px;
-  }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1700px) {
+  .album-container,
+  .single-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  img {
+    width: 400px
+  }
 
   .icon {
     width: 50px;
