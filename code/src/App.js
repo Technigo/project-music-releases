@@ -7,22 +7,16 @@ export const App = () => {
   return ( 
    <>
     <h1 className='header'>New albums & singles</h1>
-
     <section className='album-container'>
       {data.albums.items.map(item => (
-        <Album key={item.id} item={item} />
+      <Album key={item.id} item={item} />
       ))}
+      
     </section>
     </>
   );
 }
 
 
-// v2 default export
-// import  Article  from 'components/Article'
 
-//  export const App = () => {
-//    return <section>
-//      <Article />
-//    </section>
-// }
+
