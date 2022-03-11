@@ -195,19 +195,3 @@ header {
     width: 400px;
   }
 }
-
-/*
-@media (min-width: 1800px) {
-  .album-container {
-    grid-template-columns: repeat(4, 1fr);
-    padding-left: 4em;
-  }
-  
-  h3 {
-    min-width: 400px;
-  }
-  
-  img {
-    width: 400px;
-  }
-} */
