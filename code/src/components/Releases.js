@@ -2,9 +2,9 @@ import React from 'react'
 import Icons from './Icons'
 
 
-const Album = (props) => {
+const Releases = (props) => {
   const albums = props.data
-  const artists = albums.artists.map((artist) => {
+  const Artists = albums.artists.map((artist) => {
      
     return (
       <a href={artist.external_urls.spotify} key={artist.id} alt='artist' className='nav-link artist'>{artist.name}</a>
@@ -25,7 +25,7 @@ const Album = (props) => {
         <h3 className='nav-link'>{albums.name}</h3>
         </a>
         <div className='artist-container'>
-        {artists}
+        {Artists}
         </div>
         
       </article>
@@ -34,7 +34,7 @@ const Album = (props) => {
        )
       }
       
-export default Album;      
+export default Releases;      
 
       
       
