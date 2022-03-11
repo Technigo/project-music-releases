@@ -22,51 +22,37 @@ export const App = () => {
     {album.map((props) => {
       return(
 
-      <div className='album'>
-        <AlbumPhoto
-        album = {props}
-        key = {props.id}/>
-     
+      <div key = {props.id} className='album'>
+        <AlbumPhoto album = {props}/>     
     
-        <AlbumName 
-        name = {props}
-        key = {props.id}/>
+        <AlbumName name = {props}/>
 
-
-        <Artists 
-        name= {props.artists}
-        key = {props.id}/>
+        <Artists name= {props.artists}/>
       </div> 
       )
     })
     }
   </div>
 </section>
-{/* 
-<section>
+{
 
+<section>
   <h2>New Singles</h2>
   <div className='displayAlbum'>
     {single.map((props) => {
       return(
-      <div className='album'>
-        <AlbumPhoto
-        album = {props}
-        key = {props.id}/>
+      <div key = {props.id} className='album'>
+        <AlbumPhoto album = {props}/>
 
-        <AlbumName 
-        name = {props}
-        key = {props.id}/>
+        <AlbumName name = {props}/>
 
-        <Artists 
-        name= {props.artists}
-        key = {props.id}/>
+        <Artists name= {props.artists}/>
       </div>
       )
     })
     }
   </div>
-  </section> */}
+  </section> }
 </div>
   )
 }
