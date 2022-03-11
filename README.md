@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this project we created a website using external data from Spotify which we rendered on the browser using React components.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We had difficulties mapping through arrays in a component file but we solved this by following an instruction video. We started to implement the data and structure the components to a given design. With more time we could have added a bit of accessibility design to the website. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://flamboyant-fermat-1d0663.netlify.app/
