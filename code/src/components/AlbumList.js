@@ -9,4 +9,5 @@ export const AlbumList = (props) => {
             return <Album key={album.id} albumDetails={album} />;
             })}
         </section>
-)}
+    )
+}

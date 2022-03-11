@@ -13,71 +13,137 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
 .title {
   font-size: 20px;
   font-family: Helvetica Neue;
   color: white;
   font-size: 25px;
   font-weight: 500;
+  text-align: center;
 }
 
-.album-container {
+.all-albums {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  justify-content: center;
+  align-items: center;
 }
 
 .album-name {
   color: #ffffff;
   font-size: 14px;
+  max-width: 300px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.album-name:hover {
+  text-decoration: underline;
 }
 
 .artist-name {
   color: #a0a0a0;
   font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.artist-name:hover {
   font-weight: bold;
+  text-decoration: underline;
 }
 
-/* .all-albums {
-
+/* .artist-name:not(:first-of-type)::before {
+  content: ” , “;
+  color: #A0A0A0;
 } */
 
-img {
-  width: auto;
-  height: auto;
-}
+/* .artist-link:not(:last-child)::after {
+  content: ", ";
+} */
 
-.img-overlay {
-  position: absolute;
-  bottom: 80%;
-  /* background: rgb(0, 0, 0); */
-  /* background:rgba(26, 24, 24, 0.05); */
-  opacity: 40%;
-  width: 150px;
-  height: 150px;
-}
+/* .artist-link:nth-last-of-type(2)::after {
+  content: " & ";
+}  */
 
 .icons {
+  margin: 30px;
+}
+
+.icons:hover {
+  cursor: pointer;
+}
+
+.icon-heart {
+  width: 30px;
+}
+
+.icon-ellipsis {
+  width: 20px;
+}
+
+.icon-play {
   width: 50px;
+  opacity: 60%;
 }
 
-.Icon-Container {
+.icon-play:hover {
+  width: 60px;
+  margin: 25px;
+  transition: .4s ease;
+  opacity: 100%;
+}
+
+.album-cover {
+  position: relative;
+  max-width: 300px;
+}
+
+.overlay {
   position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  width: 80%;
+  top: 0;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3,1fr);
+  opacity: 0%;
+  transition: .4s ease;
+  background-color: rgba(0,0,0,0.5);
+} 
 
+.overlay:hover {
+  opacity: 100%;
 }
 
-.IconPlay:hover {
-width: 100%;
+/* TABLET SIZE  */
+
+@media screen and (min-width: 667px) {
+
+  .album-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .title { 
+    text-align: left;
+    margin-left: 80px;
+  }
+}
+
+/* DESKTOP SIZE */
+
+@media (min-width: 1024px) {
+
+  .album-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  .title {
+    margin: 20px;
+  }
 }
