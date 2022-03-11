@@ -3,13 +3,17 @@ import React from 'react'
 import { Artist } from './Artist'
 import { Icons } from './Icons'
 
+import './Album.css'
+
 export const Album = (props) => {
 
     return (
         <article className="album-container">
-            <img className="album-cover" src={props.item.images[0].url}></img>
+         <div className='album-wrap'>
+            <img className="album-cover" src={props.item.images[0].url} alt='album-cover'></img>
             < Icons />
-            <h1>{props.item.name}</h1>
+        </div>
+            <a className='album-title' href={props.item.external_urls.spotify} target='_blank' alt='album title' rel="noopener noreferrer">{props.item.name}</a>
               <div className="artist-info">
                 {props.item.artists.map(item => {
                     return (

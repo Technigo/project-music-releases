@@ -9,11 +9,11 @@ console.log(data)
 
 export const App = () => {
   return (
-  <article>
+  <article className='app-body'>
     <div>
       < Header />
     </div>
-    <div>
+    <div className='app-wrap'>
       {data.albums.items.map(item => {
         return (
           <Album key={item.id} item={item} />

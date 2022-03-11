@@ -1,11 +1,9 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We use React for the firts time and created new a page which shows new album and single releases from 2019 by used a data fetch.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We have a ready design to follow and it went quite good without problems. We had a problem to import the icons into the right component.
 
 ## View it live
 
