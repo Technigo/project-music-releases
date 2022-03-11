@@ -41,6 +41,6 @@ The project should fulfill the **🔵  Blue Level** and all of the **General Req
 - Sort the albums from the singles and create two different sections on your site
 - Incorporate more information from the API response to make your site richer
 
-## View it live
+## View on live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://gracious-hodgkin-9dd75b.netlify.app/
