@@ -5,7 +5,7 @@ import AlbumCard from 'components/AlbumCard';
 import Header from 'components/Header';
 
 
-console.log('data', data)
+// console.log('data', data)
 
 export const App = () => {
   return (
@@ -16,14 +16,7 @@ export const App = () => {
           return <AlbumCard key={singleAlbum.name} newReleases={singleAlbum} />
         })}
       </div>
-
     </section>
   )
 }
-
-
-
-
-
-
 

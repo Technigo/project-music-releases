@@ -18,7 +18,6 @@ code {
 }
 
 header {
-  /* margin: 20px; */
   border-bottom: 1px solid #333;
 }
 
@@ -27,15 +26,13 @@ header {
   font-size: 20px;
   font-weight: bold;
   color: #FFF;
-  margin-left: 18vw;
+  margin-left: 19vw;
+  margin-bottom: 0.5vw;
+  margin-top: 0.5vw;
 }
 
 /* STYLING APP.JS */
 .all-albums {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row; */
   margin-left: 15vw;
   margin-right: 15vw;
 }
@@ -44,9 +41,6 @@ header {
 
 .album-container {
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
-  /* margin: 20px; */
 }
 
 .wrapper-for-children {
@@ -60,7 +54,6 @@ header {
 }
 
 .overlay {
-  border: 1px solid yellow;
   position: absolute;
   top: 0;
   right: 0;
@@ -103,11 +96,20 @@ header {
   text-decoration: none;
 }
 
+.artist-name:not(:last-child)::after {
+  content: ", ";
+  color: #a0a0a0;
+}
+
+.artist-name:nth-last-child(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
 .artist-name:hover {
   color: #FFF;
   border-bottom: 1px solid #FFF;
 }
-
 /* STYLING ICONS */
 .icons-container {
   display: flex;
@@ -143,8 +145,12 @@ header {
     margin-left: 5vw;
     margin-right: 5vw;
   }
-}
 
+  .header-title {
+    margin-left: 8vw;
+    font-size: 23px;
+  }
+}
 
 /* DESKTOP MODE */
 @media (min-width: 1024px) {
@@ -153,6 +159,11 @@ header {
     grid-template-columns: repeat(4, 1fr);
     margin-left: 3vw;
     margin-right: 3vw;
+  }
+
+  .header-title {
+    margin-left: 4.5vw;
+    font-size: 25px;
   }
 }
 
