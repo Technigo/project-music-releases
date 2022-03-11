@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -14,23 +15,42 @@ code {
     monospace;
 }
 
+header {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  position: relative;
+  margin: 0 25px;
+  border-bottom: 1px solid #333;
+}
+
+.wrapper {
+margin: 0 auto;
+}
+
+.iconsWrapper {
+display: none;
+}
+
+.iconsWrapper .icons {
+display: inline;
+}
+
 .albums-wrapper {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .artistCard {
-  position: relative;
+  width: min-content;
   display: flex;
   flex-direction: column;
   margin: 2% 1%;
 }
 
 .album-text {
-  position: absolute;
-  top: 100%;
   font-size: 14px;
   font-family: 'Helvetica';
 }
@@ -41,34 +61,12 @@ code {
   font-weight: bold;
   margin-top: 5px;
 }
-
 .artist-name a {
   font-weight: normal;
   text-decoration: none;
   color: #a0a0a0;
   text-decoration: none;
   margin-top: 5px;
-}
-
-header {
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  display: flex;
-  position: relative;
-  margin: 0 10px;
-}
-
-.wrapper {
-  margin: 0 auto;
-}
-
-.iconsWrapper {
-  display: none;
-}
-
-.iconsWrapper .icons {
-  display: inline;
 }
 
 a:hover {
@@ -123,5 +121,3 @@ a:hover {
     opacity: 0.1;
     transition: all 0.2s ease-in-out;
 }
-
-
