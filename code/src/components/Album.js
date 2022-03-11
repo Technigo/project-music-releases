@@ -9,13 +9,14 @@ const Album = (props) => {
     return (
     <article className="card">
        
-
         <div className="linked-album">
+
         <a href={props.albumLink}>
+            
             <img className="hover-album" src={props.img} alt={props.albumName} />
-            <div className="icons-container">
-        <Icons />
-        </div>
+                <div className="icons-container">
+                    <Icons />
+                </div>
         </a>
         </div>
         

@@ -30,14 +30,13 @@ code {
 .page {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 /* Designing the thin grey line top of page */
 .title-container {
   border-bottom: 1px solid #252525;
   color: white;
-  margin: 0 16px;
+  margin-bottom: 20px;
   padding: 20px 10px;
   font-weight: bold;
   font-size: 18px;
@@ -104,6 +103,14 @@ code {
   transform: translate(-50%, -50%);
 }
 
+.icons:hover {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .icon {
   width: 40px;
   padding: 0 12px;
@@ -112,6 +119,7 @@ code {
 
 .icons-container:hover .icons {
   display: flex;
+  z-index: 1;
 }
 
 /*---------- MEDIA QUERY – TABLET ---------------*/
@@ -126,7 +134,7 @@ code {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
