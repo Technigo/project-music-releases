@@ -20,6 +20,16 @@ h1 {
 
 h2 {
   color: #FFFFFF;
+  text-transform: uppercase;
+  padding: .5em 0;
+  margin-top: 0.5em;
+  border-bottom: 1px solid #a0a0a070;
+  border-top: 3px solid #a0a0a070;
+  text-align: center;
+}
+
+h3 {
+  color: #FFFFFF;
   font-size: 1.125rem;
   letter-spacing: 1.6px;
   max-width: 300px;
@@ -28,13 +38,12 @@ h2 {
 
 a.artist {
   color: #a0a0a0;
-  margin-top: 0em;
+  margin: 0em 0em 1.5em;
 }
 
 /***** Header *****/
 header {
-  border-bottom: 3px solid #a0a0a070;
-  margin: 1em 1em;
+  margin: 1em 0.5em;
 }
 
 /***** Links *****/
@@ -60,7 +69,8 @@ header {
 }
 
 /***** Layout *****/
-.album-container {
+.album-container,
+.single-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
@@ -135,7 +145,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    margin: 2em 2em 1em;
+    margin: 2em 1em 1em;
   }
   
   h1 {
@@ -177,7 +187,7 @@ header {
     grid-gap: 2em;
   }
   
-  h2 {
+  h3 {
     max-width: 350px;
   }
   
@@ -192,7 +202,7 @@ header {
     padding-left: 4em;
   }
   
-  h2 {
+  h3 {
     min-width: 400px;
   }
   

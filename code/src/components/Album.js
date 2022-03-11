@@ -5,7 +5,7 @@ import Icons from './Icons'
 const Album = (props) => {
   const albums = props.data
   const artists = albums.artists.map((artist) => {
-
+     
     return (
       <a href={artist.external_urls.spotify} key={artist.id} alt='artist' className='nav-link artist'>{artist.name}</a>
       )
@@ -22,7 +22,7 @@ const Album = (props) => {
 
         </div>
         <a className='nav-link' href={albums.external_urls.spotify}>
-        <h2 className='nav-link'>{albums.name}</h2>
+        <h3 className='nav-link'>{albums.name}</h3>
         </a>
         <div className='artist-container'>
         {artists}
