@@ -99,7 +99,7 @@ hr {
 }
 
 .play-icon {
-  max-width: 20%;
+  /* max-width: 20%; */
   transition: .2s ease-in-out;
   fill: white;
   opacity: 0.5;
@@ -108,12 +108,12 @@ hr {
 
 .play-icon:hover {
   opacity: 1;
-  max-width: 25%;
+  width: 25%;
 }
 
 .heart-icon,
 .dots-icon {
-  max-width: 10%;
+  /* max-width: 10%; */
   transition: .2s ease-in-out;
   fill: white;
 }
