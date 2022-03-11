@@ -1,12 +1,19 @@
 # Music Releases
-Replace this readme with your own information about your project.
+In this project we started to use React to create a Spotify-esque page with the 50 top artists of 2019.
+We were given a strict design to follow, and be responsive showing 4 albums per row on desktop, 2 on tablet and 1 on mobile.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We got the Spotify data from a .json file which we mapped through and used components to display the differet sections. 
+Each album has a album cover image, album name and the name of each artist (with a comma or ampersand between depending on number of artists).
+When you click on the album title or the play-icon, it links to the album's external url in the data and when you click on an artist it links to the artist's external url.
 
+On hover the albums have a darker overlay and three icons, and the play button scales to 1,5 its original size.
+
+We used https://validator.w3.org/ to validate our project and https://wave.webaim.org/ to test for accessability, and no adjustements neede to be done.  
+   
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If we hade more time we would try to solve the Flexbox issue for the album container where it displays the last two albums on desktop mode centered, and find a way to adjust them to the left. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-releases-project.netlify.app/
