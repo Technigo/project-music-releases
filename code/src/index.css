@@ -1,6 +1,10 @@
+/*GENERAL STYLING*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -15,6 +19,11 @@ code {
     monospace;
 }
 
+.wrapper {
+margin: 0 auto;
+}
+
+/*HEADER STYLING*/
 header {
   color: white;
   font-size: 13px;
@@ -25,18 +34,7 @@ header {
   border-bottom: 1px solid #333;
 }
 
-.wrapper {
-margin: 0 auto;
-}
-
-.iconsWrapper {
-display: none;
-}
-
-.iconsWrapper .icons {
-display: inline;
-}
-
+/*ALBUM STYLING*/
 .albums-wrapper {
   position: absolute;
   display: flex;
@@ -55,24 +53,46 @@ display: inline;
   font-family: 'Helvetica';
 }
 
+.artist-name, .album-name {
+  margin-top: 3%;
+}
+
 .album-name a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  margin-top: 5px;
 }
+
 .artist-name a {
   font-weight: normal;
   text-decoration: none;
   color: #a0a0a0;
   text-decoration: none;
-  margin-top: 5px;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+.image-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.image-wrapper:hover .album-image {
+  opacity: 0.1;
+  transition: all 0.2s ease-in-out;
+}
+
+/*ICON STYLING*/
+.iconsWrapper {
+  display: none;
+}
+  
+.iconsWrapper .icons {
+  display: inline;
+}
+  
 .iconsWrapper {
   position: absolute;
   display: flex;
@@ -110,14 +130,4 @@ a:hover {
 .play-icon:hover {
   width: 90px;
   transition: all 0.7s ease-in-out;
-}
-
-.image-wrapper {
-    position: relative;
-    display: flex;
-  }
-
-.image-wrapper:hover .album-image {
-    opacity: 0.1;
-    transition: all 0.2s ease-in-out;
 }
