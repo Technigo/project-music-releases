@@ -5,11 +5,11 @@ import React from 'react'
 const Artist = (props) => {
    return (
 
-      <div className="artist">
+      // <div className="artist">
         <a className="linked-artist" href={props.artistLink}> 
         {props.artistName}
         </a>
-         </div>
+         // </div>
 
    ) 
    }

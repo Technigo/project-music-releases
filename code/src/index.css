@@ -104,14 +104,8 @@ code {
 }
 
 /*---------- HOVER ALBUM ------------*/
-.hover-album {
-  opacity: 1;
+.linked-album:hover {
   z-index: 0;
-}
-
-.hover-album:hover {
-  opacity: 0.5;
-  z-index: 3;
 }
 
 .icons:hover {
@@ -127,12 +121,12 @@ code {
 .play:hover {
   transition: 0.35s ease-in-out;
   transform: scale(1.9);
-  z-index: 2;
 }
 
 .icons-container:hover {
-  display: flex;
-  opacity: 1;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  z-index: 1;
 }
 
 .footer {
@@ -172,6 +166,6 @@ code {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-aro;
+    justify-content: space-around;
   }
 }
