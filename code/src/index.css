@@ -35,7 +35,7 @@ code {
 
 /* Designing the thin grey line top of page */
 .title-container {
-  border-bottom: 1px solid #252525;
+  border-bottom: 1px solid #a0a0a0;
   color: white;
   margin-bottom: 20px;
   padding: 20px 10px;
