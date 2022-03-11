@@ -25,7 +25,6 @@ h2 {
   margin-top: 0.5em;
   border-bottom: 1px solid #a0a0a070;
   border-top: 3px solid #a0a0a070;
-  text-align: center;
 }
 
 h3 {
@@ -69,6 +68,10 @@ header {
 }
 
 /***** Layout *****/
+.container {
+  padding: 1em 2em;
+}
+
 .album-container,
 .single-container {
   display: grid;
