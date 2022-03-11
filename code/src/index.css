@@ -46,6 +46,7 @@ code {
 /* Designing each card */
 .card {
   width: 300px;
+  height: 400px;
 }
 
 .linked-album {
@@ -62,11 +63,6 @@ code {
   font-size: 14px;
   font-weight: 500;
   padding-top: 7px;
-}
-
-.text-container {
-  padding: 10px;
-  height: 60px;
 }
 
 /*---------- HOVER EFFECTS AND ICONS ------------*/

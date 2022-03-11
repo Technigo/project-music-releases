@@ -18,20 +18,27 @@ const Album = (props) => {
         </div>
         </a>
         </div>
-        
-        <div className="text-container">
+
+
         <h2 className="album-name">{props.albumName}</h2>
 
-         {<div className="artistContainer">
-            {props.artists.map((artist) => (
-     
-           <Artist 
-                artistName={artist.name}
-                artistLink={artist.external_urls.spotify}  
-            />
-            )
-         )}
-            </div>}
+         <div className="artistContainer">
+            {props.artists.map((artist, index) => {
+
+    return (
+        <div className="artist">
+    <Artist 
+        key={artist.name}
+        artistName={artist.name}
+        artistLink={artist.external_urls.spotify}
+           />
+
+        { 
+            index !== props.artists.length - 1 ? ", " : ""
+        }
+        </div>
+    )
+     })}
         </div>
     </article>
     )
