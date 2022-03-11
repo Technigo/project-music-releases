@@ -4,11 +4,15 @@ const Artist = (props) => {
 
   return (
     <>
+        <div className='artist-container'>
         {props.item.artists.map((artist,key) =>
         <div className='artist-name' key={artist.id}>
-           <p> {artist.name}</p>
+           <a className="artist-link" href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+          {artist.name}
+        </a>
         </div>
         )}
+        </div>
     </>
   )
 }
