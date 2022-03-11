@@ -21,7 +21,7 @@ h1 {
 h2 {
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: .5em 0;
+  padding: 0.5em 0.75em;
   margin-top: 0.5em;
   border-bottom: 1px solid #a0a0a070;
   border-top: 3px solid #a0a0a070;
@@ -73,7 +73,8 @@ header {
 }
 
 .album-container,
-.single-container {
+.single-container,
+.playlist-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
@@ -116,10 +117,12 @@ header {
 
 .album-group:hover .icon-container {
   opacity: 1;
+  cursor: pointer;
 }
 
 .album-group:hover .album{
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .icon-container {
@@ -141,6 +144,7 @@ header {
 
 .play:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 

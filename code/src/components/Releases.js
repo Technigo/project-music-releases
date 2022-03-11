@@ -3,8 +3,8 @@ import Icons from './Icons'
 
 
 const Releases = (props) => {
-  const albums = props.data
-  const Artists = albums.artists.map((artist) => {
+  const releases = props.data
+  const Artists = releases.artists.map((artist) => {
      
     return (
       <a href={artist.external_urls.spotify} key={artist.id} alt='artist' className='nav-link artist'>{artist.name}</a>
@@ -16,13 +16,14 @@ const Releases = (props) => {
     <div className='album-container'>
       <article>
         <div className='album-group'>
-          <img className='album' src={albums.images[1].url} alt='album cover'/>
-
+        <a className='nav-link' href={releases.external_urls.spotify}>
+          <img className='album' src={releases.images[1].url} alt='album cover'/>
+        </a>
         <Icons />
 
         </div>
-        <a className='nav-link' href={albums.external_urls.spotify}>
-        <h3 className='nav-link'>{albums.name}</h3>
+        <a className='nav-link' href={releases.external_urls.spotify}>
+        <h3 className='nav-link'>{releases.name}</h3>
         </a>
         <div className='artist-container'>
         {Artists}

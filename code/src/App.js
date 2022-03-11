@@ -7,13 +7,11 @@ import Releases from './components/Releases'
 import Playlists from './components/Playlists'
 
 
-
 export const App = () => {
 
 const albums = data.albums.items.filter(type => type.album_type === 'album')
 const singles = data.albums.items.filter(type => type.album_type === 'single')
 const playLists = playListData.playlists.items
-
 
   return (
     <section className='container'>
@@ -21,6 +19,7 @@ const playLists = playListData.playlists.items
         <Header />
       </header>
       
+      {/*---- Albums ----*/}
       <article className='container'>
         <h2>Albums</h2>
         <div className='album-container'>
@@ -36,6 +35,7 @@ const playLists = playListData.playlists.items
         </div>
       </article>
 
+      {/*---- Singles ----*/}
       <article className='container'>
       <h2>Singles</h2>
       <div className='single-container'>
@@ -51,7 +51,7 @@ const playLists = playListData.playlists.items
       </div>
       </article>
 
-      
+      {/*---- Playlists ----*/}
       <article className='container'>
         <h2>Playlists</h2>
         <div className='album-container'>
@@ -66,7 +66,6 @@ const playLists = playListData.playlists.items
           }
         </div>
       </article>
-
 
     </section>
     )
