@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Albums } from './Albums'
 
 /* Creating the main album wrapper and mapping through it, to be accessed in Albums.js */

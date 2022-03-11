@@ -1,6 +1,7 @@
 import React from 'react'
-import MusicInfo from 'components/MusicInfo'
 import data from 'data.json'
+
+import MusicInfo from 'components/MusicInfo'
 import Header from 'components/Header'
 
 /* Rendering the main structure of website */

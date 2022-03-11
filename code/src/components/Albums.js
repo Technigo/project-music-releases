@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Hover from 'components/Hover'
 
 /* Rendering the content for album wrapper, importing hover effect and adding URLs */
@@ -16,9 +17,15 @@ export const Albums = (props) => {
       </div>
       <div className='album-text'>
         <div className='album-name'>
-          <a href={props.albumURL} target="_blank" rel="noopener noreferrer">{props.albumTitle}</a>
+          <a href={props.albumURL} 
+          target="_blank" 
+          rel="noopener noreferrer">
+          {props.albumTitle}</a>
           <div className='artist-name'>
-           <a href={props.artistURL} target="_blank" rel="noopener noreferrer">{props.artists}</a>
+           <a href={props.artistURL} 
+           target="_blank" 
+           rel="noopener noreferrer">
+            {props.artists}</a>
          </div>
         </div >
       </div >
