@@ -7,17 +7,15 @@ HTML {
 body {
   margin: 20px;
   background-color: #000;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: default;
-  
+  font-family: "Helvetica", Sans-Serif;
 
 }
-
-
 
 section {
   display: flex;
@@ -26,6 +24,7 @@ section {
   justify-content: flex-start;
 }
 
+/* =======scroll-bar styles===== */
 ::-webkit-scrollbar {
   margin-top: 2rem;
   border-radius: 100vw;
@@ -40,7 +39,6 @@ section {
 ::-webkit-scrollbar-thumb:hover {
   cursor: pointer;
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -102,16 +100,11 @@ a:hover{
 
 }
 
-/* ===== MULTIPLE ARTISTS ===== */
-
-
-
-
-
 .listname-container{
   margin-bottom: 20px;
 }
 
+/* ===== MULTIPLE ARTISTS STYLING===== */
 .artist-container a:not(:first-of-type, :last-of-type)::before {
   color: #A0A0A0;
   content: ", ";
@@ -134,7 +127,6 @@ a:hover{
 .album-image {
   transition-duration: 0.5s;
   width: 100%;
-
 }
 
 .album-cover:hover .album-image{
@@ -151,19 +143,16 @@ a:hover{
   justify-content: space-between;
   align-items: center;
   filter: invert(100%); 
-  
 }
 
 .album-cover:hover .icons {
   display:flex;
-
 }
 
 .icon {
  width: 10%;
  flex-shrink: 0;
  padding: 10%;
- 
   left: 0;
 }
 
@@ -175,7 +164,6 @@ a:hover{
 .play {
   width: 70%;
   align-self: center;
-
   transition-duration: 0.3s;
 }
 
@@ -198,9 +186,6 @@ footer{
  
 
   .album {
-    /* display: flex;
-    flex-direction: column; 
-    flex: 1; */
     min-width: 70%;
   }
 }
