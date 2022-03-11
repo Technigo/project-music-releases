@@ -18,11 +18,18 @@ code {
     monospace;
 }
 
+.body{
+  position: relative;
+  padding: 10px 30px 10px 30px;
+  margin: 10px auto;
+}
+
 header{
   color: white;
-  font-size: 20px;
-  padding: 10px;
-  margin: 50px 0px 10px 30px;
+  font-size: 15px;
+  padding: 10px 0px;
+  margin: 50px 0px 10px 45px;
+  border-bottom: solid white 1px;
 }
 
 .album-wrapper{
@@ -35,15 +42,9 @@ header{
   justify-content: center;
 }
 
-.image-container{
-  position: relative;
-  width: fit-content;
-}
-
 .text-wrapper{
   margin:20px 0px;
-  width: fit-content;
-
+  width: 300px;
 }
 
 .artist-name{
@@ -69,41 +70,104 @@ a {
 }
 
 
-.icon-wrapper{
-  /* position: absolute;
-  margin-top: 120px;
-  margin-left: 80px;
-  display: flex;
-  fill: white; 
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); */
-  display: none;
+
+/* HOVER EFFECTS */
+a:hover {
+  text-decoration: underline;
+  transition: 0.5s ease;
+  color: #fff;
 }
 
-.image-container:hover .icon-wrapper {
+/* .image-container:hover .icon-wrapper {
   position: absolute;
   margin-top: 120px;
   margin-left: 80px;
   display: flex;
+  flex-direction: row;
   fill: white; 
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
-.icon-heart {
-  width: 25px;
-  height: 25px;
-  padding: 6px 10px;
+.image-container:hover .album-image {
+  opacity: 0.3;
+}
+
+.icon-play:hover {
+  transition: 0.35s ease-in-out;
+  transform: scale(1.9);
+} */
+
+.album-image{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.image-container{
+  position: relative;
+}
+
+.album-image:hover{
+opacity: 0.3;
+transition: 0.4s;
+}
+
+.icon-wrapper{
+  display: flex;
+  width: 80%;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  align-items: center;
+}
+
+.image-container:hover .album-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .icon-wrapper{
+  opacity: 1;
+}
+
+/* ICONS */
+/* .icon-wrapper{
+  display: none;
+} */
+
+.icon-heart,
+.icon-dots{
+  width: 30px;
+  filter: brightness(0) invert(1);
 }
 
 .icon-play {
-  height: 50px;
-  width: 50px;
-  padding: 0px 10px;
+  width: 60px;
+  filter: brightness(0) invert(1);
+  transition: 0.2s;
 }
 
-.icon-dots {
-  width: 25px;
-  height: 25px;
-  padding: 6px 10px;
+.icon-play:hover {
+transition: 0.35s ease-in-out;
+transform: scale(1.3);
+}
+
+
+/* Add a comma after each artist */
+.artist-name a::after{
+  content: " & ";
+}
+
+/* Remove the comma after the last artist */
+.artist-name a:last-child::after {
+  content: "";
 }
 
 /* --------------Tablet----------------- */

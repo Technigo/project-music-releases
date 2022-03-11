@@ -8,12 +8,12 @@ const Album = (props) => {
         <article className="album-card">
             <a className="linked-album" href={props.item.external_urls.spotify} alt="link to album">      
                 <div className="image-container">
-                    <Icon />
                     <img src={props.item.images[1].url} className="album-image" alt="album cover"/>
+                    <Icon />
                 </div>
             </a>
             <div className="text-wrapper">
-                <h3 className="album-title">{props.item.name}</h3>
+                <a href={props.item.external_urls.spotify}><h3 className="album-title">{props.item.name}</h3></a>
                 <h4 className="artist-name"> <Artist artistArray={props.item.artists} /></h4>
                 <a className="linked-artist" href={props.artistLink} alt="link to artist"> </a>
             </div>
