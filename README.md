@@ -11,4 +11,4 @@ We decided to add an album, artist, and playlist component which rendered each i
 
 ## View it live
 
-https://music-releases-rs.netlify.app/
+https://brave-euler-832e7d.netlify.app/
