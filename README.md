@@ -32,8 +32,9 @@
 
 ## The problem
 
-We structured the pag in App.js then created AlbumPhoto.js and the AlbumName.js
+We structured the page in App.js then created AlbumPhoto.js and the AlbumName.js.
+We had a bit of trouble with the separate files (props and keys) but mostly we had fun!
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Site built by Suki Phan and Marianne Ardin.
