@@ -157,14 +157,14 @@ header {
   }
 }
 
-/* @media (min-width: 1700px) {
+@media (min-width: 1500px) {
   .album-container,
   .single-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
   img {
-    width: 400px
+    width: 350px
   }
 
   .icon {
@@ -175,8 +175,7 @@ header {
   .icon.play {
     width: 100px;
   }
-
-} */
+} 
 
 /* @media (min-width: 1500px) {
   .album-container {
