@@ -3,6 +3,7 @@ import React from 'react'
 import { Icons } from './Icons'
 
 import Artist from './Artist'
+import propTypes from 'eslint-plugin-react/lib/rules/prop-types'
 
 // Named export
 const Album = (props) => {
@@ -11,7 +12,7 @@ const Album = (props) => {
        
         <div className="linked-album">
 
-        <a href={props.albumLink}>
+        <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
             
             <img className="hover-album" src={props.img} alt={props.albumName} />
                 <div className="icons-container">
@@ -34,9 +35,16 @@ const Album = (props) => {
         artistLink={artist.external_urls.spotify}
            />
 
+        <span className="symbol-color">
         { 
-            index !== props.artists.length - 1 ? ", " : ""
+          props.artists.length > 2 && index >= 0 && index < props.artists.length -2
+          ? ', '
+          : index === props.artists.length -2
+          ? ' & '
+          : ''
         }
+        </span>
+
         </span>
     )
      })}
