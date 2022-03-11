@@ -30,6 +30,7 @@ code {
 .page {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* Designing the thin grey line top of page */
@@ -45,6 +46,7 @@ code {
 /* Designing each card */
 .card {
   width: 300px;
+  height: 400px;
 }
 
 .linked-album {
@@ -52,40 +54,16 @@ code {
 }
 
 .album-name {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
 }
 
 .linked-artist {
   text-decoration: none;
   color: #b2b2b2;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   padding-top: 7px;
-}
-
-/*---------- HOVER EFFECTS AND ICONS ------------*/
-.linked-artist:hover {
-  transition: 0.5s ease;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.album-name:hover {
-  transition: 0.5s ease;
-  color: #fff;
-  text-decoration: underline;
-}
-
-.play:hover {
-  transition: 0.22s ease-in-out;
-  transform: scale(1.3);
-  z-index: 2;
-}
-
-.linked-album:hover {
-  opacity: 0.5;
-  z-index: 0;
 }
 
 .icons-container {
@@ -105,6 +83,37 @@ code {
   transform: translate(-50%, -50%);
 }
 
+.icon {
+  width: 40px;
+  padding: 0 20px;
+  filter: brightness(0) invert(1);
+  z-index: 1;
+}
+
+/*---------- HOVER TEXT ------------*/
+.linked-artist:hover {
+  transition: 0.5s ease;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.album-name:hover {
+  transition: 0.5s ease;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/*---------- HOVER ALBUM ------------*/
+.hover-album {
+  opacity: 1;
+  z-index: 0;
+}
+
+.hover-album:hover {
+  opacity: 0.5;
+  z-index: 3;
+}
+
 .icons:hover {
   display: flex;
   position: absolute;
@@ -112,16 +121,27 @@ code {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+  z-index: 2;
 }
 
-.icon {
-  width: 40px;
-  padding: 0 12px;
-  filter: brightness(0) invert(1);
+.play:hover {
+  transition: 0.35s ease-in-out;
+  transform: scale(1.9);
+  z-index: 2;
 }
 
-.icons-container:hover .icons {
+.icons-container:hover {
   display: flex;
+  opacity: 1;
+}
+
+.footer {
+  padding: 15px;
+  font-size: 14px;
+  color: #5c5c5c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*---------- MEDIA QUERY – TABLET ---------------*/
@@ -152,6 +172,6 @@ code {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-aro;
   }
 }

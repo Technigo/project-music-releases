@@ -1,6 +1,7 @@
 import React from 'react'
 import data from './data.json'
 import Album from './components/Album'
+import Footer from './components/Footer'
 
 
 export const App = () => {
@@ -31,6 +32,7 @@ export const App = () => {
 
     </section>
     </div>
+     <Footer /> 
     </main>
   
   )
