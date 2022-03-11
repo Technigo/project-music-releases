@@ -35,6 +35,7 @@ const Album = (props) => {
         artistLink={artist.external_urls.spotify}
            />
 
+        <span className="symbol-color">
         { 
           props.artists.length > 2 && index >= 0 && index < props.artists.length -2
           ? ', '
@@ -42,6 +43,8 @@ const Album = (props) => {
           ? ' & '
           : ''
         }
+        </span>
+
         </span>
     )
      })}
