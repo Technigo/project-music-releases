@@ -1,5 +1,5 @@
 # Music Releases
-Our assignment was to create components using data in React to build a website that displays the latest music releases. We were to follow a given design and make the site responsive accordingly.
+Our assignment was to create components using data in React to build a website that displays the latest music releases from Spotify. We were to follow a given design and make the site responsive accordingly.
 
 
 ## The problem
