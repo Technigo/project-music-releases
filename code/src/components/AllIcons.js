@@ -1,8 +1,8 @@
 import React from "react";
 
-import HeartIcon from './Icons/heart.png'
-import PlayIcon from './Icons/play.png'
-import EllipsisIcon from './Icons/ellipsis.png'
+import HeartIcon from '../Icons/heart.png'
+import PlayIcon from '../Icons/play.png'
+import EllipsisIcon from '../Icons/ellipsis.png'
 
 
 export const AllIcons = () => {
@@ -14,4 +14,3 @@ export const AllIcons = () => {
         </div>
     );
 };
-
