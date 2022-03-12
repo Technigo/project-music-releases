@@ -44,30 +44,64 @@ a {
   text-decoration: underline;
 }
 
-.artist-name {
+.artist {
   color: #a0a0a0;
   font-size: 14px;
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-.artist-name:hover {
+.artist:hover {
   font-weight: bold;
   text-decoration: underline;
 }
 
-/* .artist-name:not(:first-of-type)::before {
+/* .artist:not(:first-of-type, :last-of-type)::before {
+  content: ", ";
+}
+
+.artist:nth-last-of-type(2)::after {
+  content: " & ";
+} */
+
+.artist-name:not(:last-child)::after {
+  content: ", ";
+  color: #a0a0a0;
+}
+
+.artist-name:nth-last-child(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+/* .artist:not(:first-of-type)::before {
   content: ” , “;
   color: #A0A0A0;
 } */
 
-/* .artist-link:not(:last-child)::after {
+/* .artist:last-child:before {
+  content: ", ";
+} */
+
+/* .artist:not (:first-of-type)::before {
   content: ", ";
 } */
 
 /* .artist-link:nth-last-of-type(2)::after {
   content: " & ";
 }  */
+
+/* .artist:not(:last-child):after {
+  content: "\002C\2002";
+  text-decoration: none;
+  display: inline-block;
+}
+
+.artist-link:nth-last-child(2):after {
+  content: "\2002\0026\2002";
+  text-decoration: none;
+  display: inline-block;
+} */
 
 .icons {
   margin: 30px;

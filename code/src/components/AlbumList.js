@@ -2,6 +2,7 @@ import React from 'react'
 import { Album } from "components/Album";
 
 
+
 export const AlbumList = (props) => {
     return (
         <section className='album-container'>

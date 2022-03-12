@@ -1,11 +1,15 @@
 # Music Releases
-Our assignment was to create components using data in React to build a website that displays latest music releases. We were to follow a given design.
+Our assignment was to create components using data in React to build a website that displays the latest music releases. We were to follow a given design and make the site responsive accordingly.
 
 
 ## The problem
+We had a API-fetch to start with, and we began with displaying the image, artist name and album name using the API. We also made the artist name and the album name into external links to their spotify-pages. The album and artist information were put into a separat component. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We made a Header which we also put in a component. Lastly we put the album-key in a third component. In our App.js we imported all components to make the website complete.
+
+For styling we used grid to make the website responsive. We followed the given design using CSS. 
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
