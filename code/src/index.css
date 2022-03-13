@@ -28,16 +28,6 @@ code {
     monospace;
 }
 
-.mainHeading {
-  color: white;
-  padding: 1em 0 1em;
-}
-
-.project-music-container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
 .horizontalLine {
   display: block;
   color: #e9f4fe;
@@ -49,6 +39,11 @@ code {
 }
 
 /* ------MainHeader------*/
+.mainHeading {
+  font-size: 25px;
+  color: white;
+  padding: 1em 0 1em;
+}
 
 .header {
   display: flex;
@@ -102,10 +97,10 @@ code {
   margin: 1em;
 }
 .music-container {
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  padding: 1em;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .album-image-container {
@@ -198,5 +193,25 @@ code {
   margin: auto;
   filter: invert();
 }
-
-/* ----- Media queries -----*/
+@media (min-width: 767px) {
+  .mainHeading {
+    font-size: 35px;
+  }
+  .music-container {
+    padding: 1em;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1023px) {
+  .mainHeading {
+    font-size: 40px;
+  }
+  .music-container {
+    padding: 1em;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

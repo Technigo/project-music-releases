@@ -11,23 +11,21 @@ import Album from './components/Album'
 
 export const App = () => {
   return (
-    <div className="project-music-container">
-      <main className="main-container">
-        <MainHeader />
-        <hr className="horizontalLine" />
-        <div className="music-container">
-          {data.albums.items.map((album) => (
-            <Album
-              img={album.images[1].url}
-              title={album.name}
-              albumLink={album.external_urls.spotify}
-              artists={album.artists}
-              key={album.name}
-            />
-          ))}
-        </div>
-        <Footer />
-      </main>
-    </div>
+    <main className="main-container">
+      <MainHeader />
+      <hr className="horizontalLine" />
+      <div className="music-container">
+        {data.albums.items.map((album) => (
+          <Album
+            img={album.images[1].url}
+            title={album.name}
+            albumLink={album.external_urls.spotify}
+            artists={album.artists}
+            key={album.name}
+          />
+        ))}
+      </div>
+      <Footer />
+    </main>
   )
 }
