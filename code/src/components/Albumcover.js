@@ -2,10 +2,10 @@ import React from 'react'
 
 import Icons from './Icons.js'
 
-const Albumcover = (props) => {
+const Albumcover = ({src}) => {
     return (
       <div className="album-img">      
-        <img className="" src={props.src} alt="bild" />
+        <img className="" src={src} alt="bild" />
         <Icons />
       </div>
     )
