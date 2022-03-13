@@ -3,11 +3,11 @@ Our assignment was to create components using data in React to build a website t
 
 
 ## The problem
-We had a API-fetch to start with, and we began with displaying the image, artist name and album name using the API. We also made the artist name and the album name into external links to their spotify-pages. The album and artist information were put into a separat component. 
+We had an API-fetch from Spotify to start with, and we began with displaying the image, artist name and album name using that API. We also made the artist name and the album name lead to an external links to their spotify-pages. 
 
-We made a Header which we also put in a component. Lastly we put the album-key in a third component. In our App.js we imported all components to make the website complete.
+The album and artist information were put into a separat component. We also had the header in a separat component. In our App.js we imported all components to make the website complete.
 
-For styling we used grid to make the website responsive. We followed the given design using CSS. 
+For styling we used grid to make the website responsive. We followed the given design using CSS and added hover-effects and adding "," and "&" between the artists names. We had issues with the overlay showing when the site was deployed. A classmate gave us the tip to change from opacity to transform:scale() to hide/show the overlay, which worked perfectly.
 
 
 ## View it live
