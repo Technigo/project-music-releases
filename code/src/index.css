@@ -90,6 +90,7 @@ a {
 .icon-play {
   width: 50px;
   opacity: 60%;
+  transform: scale(0);
 }
 
 .icon-play:hover {
@@ -116,7 +117,7 @@ a {
   background-color: rgba(0,0,0,0.5);
 } 
 
-.album-cover:hover .overlay {
+.album-cover:hover .overlay, .icon-play {
   transform: scale(1);
 }
 
