@@ -8,12 +8,14 @@ const Album = (props) => {
       <article className="album-container">
       <section className="album-card">
 <div className="album-image-container">
+  <div className="overlay">
 <Icons albumLink={props.albumLink} />
 <img
 src={props.img}
 className="album-cover"
 alt={props.albumTitle}
 />
+</div>
 </div>
 <a
         href={props.albumLink}
@@ -22,9 +24,16 @@ alt={props.albumTitle}
         className="album-title-link"
       >
 <h2 className="album-title">{props.title}</h2>
-  
       </a>
-      <Artists artists={props.artists} />
+      <div className="singer">
+            {props.artists.map((artists) => (
+              <Artists
+                key={artists.name}
+                artistName={artists.name}
+                artistUrl={artists.external_urls.spotify}
+              />
+            ))}
+          </div>
     </section>
   </article>
 );
