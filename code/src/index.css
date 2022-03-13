@@ -90,7 +90,7 @@ a {
 .icon-play {
   width: 50px;
   opacity: 60%;
-  transform: scale(0);
+  display: none;
 }
 
 .icon-play:hover {
@@ -113,12 +113,12 @@ a {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
-  transform: scale(0);
+  display: none;
   background-color: rgba(0,0,0,0.5);
 } 
 
 .album-cover:hover .overlay, .icon-play {
-  transform: scale(1);
+  display: grid;
 }
 
 
