@@ -89,8 +89,13 @@ a {
 
 .icon-play {
   width: 50px;
-  opacity: 60%;
-  display: none;
+  transform: scale(0);
+}
+
+.icon-play:hover {
+  width: 60px;
+  margin: 25px;
+  transition: .4s ease;
 }
 
 .album-cover {
@@ -103,23 +108,17 @@ a {
   top: 0;
   height: 300px;
   width: 300px;
-  display: none;
+  display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
-  display: none;
+  transform: scale(0);
   background-color: rgba(0,0,0,0.5);
 } 
 
 .album-cover:hover .overlay, .icon-play {
-  display: grid;
+  transform: scale(1);
 }
 
-.icon-play:hover {
-  width: 60px;
-  margin: 25px;
-  transition: .4s ease;
-  opacity: 100%;
-}
 
 /* TABLET SIZE  */
 
