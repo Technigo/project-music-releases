@@ -93,12 +93,6 @@ a {
   display: none;
 }
 
-.icon-play:hover {
-  width: 60px;
-  margin: 25px;
-  transition: .4s ease;
-  opacity: 100%;
-}
 
 .album-cover {
   position: relative;
@@ -121,6 +115,12 @@ a {
   display: grid;
 }
 
+.icon-play:hover {
+  width: 60px;
+  margin: 25px;
+  transition: .4s ease;
+  opacity: 100%;
+}
 
 /* TABLET SIZE  */
 
