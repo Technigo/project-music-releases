@@ -1,12 +1,9 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The goal of this project was to showcase Spotify Data with JSX and React. 
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This was the first time we used React and JSX so we had to start with reading up on components, props and the slightly new aspects to JSX. We also needed to start with understanding how to structure our project in components and what data to store where. In the end we really enjoyed this new structure and also how helpful React is to your work method. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sofia-jacob-project-music-releases.netlify.app/
