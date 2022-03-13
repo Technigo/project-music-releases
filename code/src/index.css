@@ -93,7 +93,6 @@ a {
   display: none;
 }
 
-
 .album-cover {
   position: relative;
   max-width: 300px;
@@ -104,7 +103,7 @@ a {
   top: 0;
   height: 300px;
   width: 300px;
-  display: grid;
+  display: none;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
   display: none;
