@@ -12,4 +12,4 @@ For styling we used grid to make the website responsive. We followed the given d
 
 ## View it live
 
-https://gallant-newton-0377aa.netlify.app/
+https://modest-torvalds-b6767e.netlify.app/
