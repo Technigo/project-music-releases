@@ -43,6 +43,18 @@ header {
   text-decoration: underline;
 }
 
+
+
+.flex-row-artistinfo {
+  display: inline;
+}
+
+.flex-row-artistinfo p {
+  display: inline;
+}
+
+
+
 .artist-name a {
   text-decoration: none;
   color: #a0a0a0;
