@@ -112,13 +112,12 @@ a {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3,1fr);
-  opacity: 0%;
-  transition: .4s ease;
+  transform: scale(0);
   background-color: rgba(0,0,0,0.5);
 } 
 
-.overlay:hover {
-  opacity: 100%;
+.album-cover:hover .overlay {
+  transform: scale(1);
 }
 
 
