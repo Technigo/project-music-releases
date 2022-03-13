@@ -4,8 +4,9 @@ This week we are going to build a Spotify site, me and Jenny are doing it toghet
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started of easy and workt on difrent parts and submit it all on friday, but we had some problems with the icons but Jenny fixed it!
+The problem with working in pair when we are both working difrent time, but we keept contact and said if what was done and askt if the other one needed help.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is our site -----------> https://musing-joliot-d59b54.netlify.app/
