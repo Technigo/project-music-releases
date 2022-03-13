@@ -1,4 +1,5 @@
 import React from 'react'
+// This where we are bulding the mainheader.
 
 const MainHeader = (props) => {
   return (

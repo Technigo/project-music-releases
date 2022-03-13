@@ -1,5 +1,5 @@
 import React from 'react'
-
+// here we have the icons that are ontop of the artist card with hover effect
 const Icons = (props) => {
   return (
     <div className="icons">

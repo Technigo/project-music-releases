@@ -1,13 +1,12 @@
-// Imopterat data från react och json.
 import React from 'react'
 import data from './data.json'
 
-// components lägger vi in här.
+// components Are here
 import Footer from './components/Footer'
 import MainHeader from './components/MainHeader'
 import Album from './components/Album'
 
-// Här bygger vi våran hemsida, kom ihåg att skriva in className="" ist för class="" för css styleing!!  :)
+// Here we are bulding the website but we need to classname for the css and not just class as u do in regaular html
 
 export const App = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 
-// Här är våran footer del.
+// This is the footer part with links to our githubs acconts
 
 const Footer = (props) => {
   return (
