@@ -69,6 +69,7 @@ code {
 /* ----- FOOTER -----*/
 
 .madeBy {
+  font-size: 15px;
   text-align: center;
   color: white;
   padding: 1em;
@@ -213,5 +214,8 @@ code {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .madeBy {
+    font-size: 30px;
   }
 }
