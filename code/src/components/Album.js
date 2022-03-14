@@ -3,7 +3,7 @@ import React from 'react'
 import { Icons } from './Icons'
 
 import Artist from './Artist'
-import propTypes from 'eslint-plugin-react/lib/rules/prop-types'
+
 
 // Named export
 const Album = (props) => {
