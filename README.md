@@ -1,12 +1,11 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Music Releases 🎶
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week's project was all about getting started with React and build a "New Releases" music site. We created components by using data from Spotify and created a page which shows new album and single releases.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The problems that we experienced this week had to do with npm install, node-modules and to deploy to Netlify. We got really stuck but eventuelly we found what the problem was.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-releases-ida-emma.netlify.app/
