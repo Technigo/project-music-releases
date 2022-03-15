@@ -4,9 +4,6 @@ import AlbumPhoto from './components/AlbumPhoto'
 import AlbumName from './components/AlbumName'
 import Artists from './components/Artists'
 
-console.log(data)
-
-
 export const App = () => {
 
   const album = data.albums.items.filter(item => item.album_type === "album")

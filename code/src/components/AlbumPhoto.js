@@ -11,9 +11,9 @@ const AlbumPhoto=(props) => {
             <button>
                 <img className='icon' src={Heart} alt='Heart icon'/>
             </button>
-            <a className='play-button' href= {props.album.external_urls.spotify} target="_blank" rel="noopener noreferrer"> 
+                <a className='play-button' href= {props.album.external_urls.spotify} target="_blank" rel="noopener noreferrer"> 
                 <img className='icon' src={Play} alt='Play icon'/>
-            </a>
+                </a>
             <button>
                 <img className='icon' src={Dots} alt='Dots icon'/>
             </button>

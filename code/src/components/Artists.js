@@ -3,7 +3,7 @@ import React from 'react'
 const Artists=(props) => {
     console.log(props);
 const artistsName = props.name.map(item=>item.name);
-const artistsLink = props.name.map(item=>item.external_urls);
+const artistsLink = props.name.map(item=>item.external_urls.spotify);
 
 const nameStyling = () => {
     if (artistsName.length === 2) {
@@ -18,7 +18,6 @@ const nameStyling = () => {
 } 
 
 return (<a className='artist-name'href={artistsLink}>{nameStyling()}</a>)
-
 }
 
 export default Artists;
