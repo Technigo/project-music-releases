@@ -1,8 +1,6 @@
-Link to my deployed project:
+Music Releases
 
+First we identified which components we needed. We decided to start with the App, Album and Artist components and then we created the Header and Icon part. After we got the data we needed from the API we styled the page so it followed the desired design.
+View it live
 
-My reflections on how this week's project turned out:
-
-
-Things I'd like to have clarified or explained in more detail:
-
+https://musiic-releases.netlify.app/
