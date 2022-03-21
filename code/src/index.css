@@ -116,7 +116,7 @@ a {
     filter: invert(1);
   }
 
-  image-container:hover .iconsContainer {
+  .iconsContainer:hover {
     opacity: 1;
   }
 
