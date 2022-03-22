@@ -41,8 +41,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .artistCard {
-  width: min-content;
   display: flex;
   flex-direction: column;
   margin: 2% 1%;
@@ -77,6 +77,10 @@ a:hover {
 .image-wrapper {
   position: relative;
   display: flex;
+}
+
+.album-image {
+  width: 100%;
 }
 
 .image-wrapper:hover .album-image {
@@ -130,4 +134,18 @@ a:hover {
 .play-icon:hover {
   width: 90px;
   transition: all 0.7s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 667px) {
+  .artistCard {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .artistCard {
+    width: 20vw;
+  }
 }
