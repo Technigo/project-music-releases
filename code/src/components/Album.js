@@ -21,11 +21,15 @@ const Album = (props) => {
       </div>
 
       <div className="text-wrapper">
-
+         <a
+            href={props.item.external_urls.spotify}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
         <h2 className="song-title">
           {props.item.name}
         </h2>
-
+        </a>
         <h3 className="song-artists">
           <Artists artistArray={props.item.artists} />
         </h3>
