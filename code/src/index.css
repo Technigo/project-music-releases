@@ -25,16 +25,23 @@ code {
 }
 
 header{
+  width: 300px;
+  margin: auto;
   color: white;
   font-size: 15px;
+  padding: 20px 0px;
+}
+
+h1{
+  border-bottom: solid rgb(130, 130, 130) 1px;
   padding: 10px 0px;
-  margin: 50px 0px 10px 45px;
-  border-bottom: solid white 1px;
 }
 
 .album-wrapper{
   display: grid;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-items:center;
+  row-gap: 35px;
 }
 
 .album-card{
@@ -48,9 +55,8 @@ header{
 }
 
 .artist-name{
-margin: 15px 0px;
+  margin: 15px 0px;
 }
-
 
 .album-title{
   font-size: 14px;
@@ -77,25 +83,6 @@ a:hover {
   transition: 0.5s ease;
   color: #fff;
 }
-
-/* .image-container:hover .icon-wrapper {
-  position: absolute;
-  margin-top: 120px;
-  margin-left: 80px;
-  display: flex;
-  flex-direction: row;
-  fill: white; 
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
-
-.image-container:hover .album-image {
-  opacity: 0.3;
-}
-
-.icon-play:hover {
-  transition: 0.35s ease-in-out;
-  transform: scale(1.9);
-} */
 
 .album-image{
   opacity: 1;
@@ -174,24 +161,34 @@ transform: scale(1.3);
 @media screen and (min-width: 768px) {
 
   .album-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    /* grid-template-rows: 1fr 1fr; */
-    column-gap: 10px;
+    display:grid; 
+    justify-items:center;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 35px;
   }
+  
+  header{
+    width:87%;
+    margin: auto;
+    grid-template-columns: repeat(2,1fr);
+  }
+
 }
 
 /* --------------Desktop----------------- */
 @media screen and (min-width: 1024px) {
 
   .album-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
-    /* grid-template-rows: 1fr 1fr; */
-    column-gap: 10px;
-}
+    display:grid; 
+    justify-items:center;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 35px;
+  }
   
-
+  header{
+    width: 95%;
+    margin: auto;
+  }
   
   
 
