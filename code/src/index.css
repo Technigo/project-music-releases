@@ -76,9 +76,13 @@ a {
 
 @media screen and (min-width: 1025px) {
   .albums-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
+  .album-container {
+    place-self: initial;
+    width: 90%;
+  }
   .image-container {
     position: relative;
   }
@@ -91,6 +95,8 @@ a {
   .album-cover {
     opacity: 1;
     display: block;
+    width: 100%;
+    height: auto;
     transition: 0.5s ease;
     -webkit-filter: brightness(100%);
   }
