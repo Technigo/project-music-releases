@@ -92,6 +92,10 @@ a {
     -webkit-filter: brightness(70%);
   }
 
+  .image-container:hover .iconsContainer {
+    opacity: 1;
+  }
+
   .album-cover {
     opacity: 1;
     display: block;
@@ -128,8 +132,10 @@ a {
 
   .play-icon {
     width: 70px;
+    opacity: 0.5;
   }
   .play-icon:hover {
     width: 90px;
+    opacity: 1;
   }
 }
