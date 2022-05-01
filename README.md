@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
+Link to deployed project:
+https://quirky-mestorf-683c01.netlify.app/
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+My reflections on how this week's project turned out:
+It took us some time to get a structure of the components, it helped a lot working
+in a team where we could discuss our challenges regarding this.
+This project taught us a lot about the basics in React and also how to style the components.
 
-## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This project was done by:
+Therese Nyman, Katarina Elgerus and Hanna Wallberg
 
-## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
