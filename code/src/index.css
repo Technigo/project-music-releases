@@ -28,10 +28,12 @@ header {
 .grid-container-div {
   width: 300px;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .album-name {
   font-weight: 700;
+  margin-bottom:5px;
 }
 
 .album-name a {
@@ -58,6 +60,7 @@ header {
 .artist-name a {
   text-decoration: none;
   color: #a0a0a0;
+ 
 }
 
 .artist-name:hover {
