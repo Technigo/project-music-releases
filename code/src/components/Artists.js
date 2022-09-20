@@ -1,8 +1,8 @@
 //daniels kod
 import React from "react";
 
-const Subheader = (props) => {
-  return <h3>Number of tracks is {props.totalTracks}</h3>;
+const Artists = (props) => {
+  return <h3>{props.artistsName}</h3>;
 };
 
-export default Subheader;
+export default Artists;

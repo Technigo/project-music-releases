@@ -11,7 +11,7 @@
 //från daniel:
 import React from "react";
 import data from "./data.json";
-import Header from "./components/Albums";
+import Albums from "./components/Albums";
 
 console.log(data);
 // named export
@@ -20,7 +20,7 @@ export const App = () => {
     <>
       {/* <Header text = "testing the props"/> */}
       {data.albums.items.map((item) => {
-        return <Header key={item.id} data={item} text="testing the props" />;
+        return <Albums key={item.id} data={item} text="testing the props" />;
       })}
     </>
   );
