@@ -5,11 +5,85 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-container {
+  width: 100%;
+}
+
+/*ALBUM CONTAINER*/
+
+.album {
+  width: 100%;
+  display: flex;
+ }
+ 
+ .album-card {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   align-items: center;
+   font-size: 14px;
+   padding: 10px;
+   margin: 10px;
+ }
+ 
+ .url-link {
+   display: inline-flex;
+ }
+ 
+ a:link, a:visited {
+   text-decoration: none; 
+   color: #a0a0a0;
+ }
+ 
+ .album-image {
+   width: 100%;
+   object-fit: contain;
+   
+ }
+
+/*IMAGE CONTAINER */
+
+.image-container {
+  width: 100%;
+  position: relative;
+}
+
+.image-overlay {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .image-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.5s ease;
+}
+
+.icons-container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  
+}
+
+.image-container:hover .icons-container {
+  display: flex;
+    
 }
 
 /*ICONS*/
@@ -23,4 +97,23 @@ code {
 .play-icon:hover {
   transform: scale(1.5);
   transition: 0.3s ease;
+}
+
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+
+  .album {
+    width: 22%;
+  }
+
+  .buttons-container {
+    top: 45%;
+  }
+
+  .buttons-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
 }

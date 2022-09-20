@@ -12,12 +12,12 @@ console.log(data);
 export const App = () => {
   return (
     <>
-    <Header/>
-       <main className='album-container'>
-         <Album albumsArray = {albumsArray}/>
-         <Icons />
-       </main>
-
-     </>
+      <main className="main-container">
+          <Header/>
+          <section className='album-container'>
+            <Album albumsArray = {albumsArray}/>
+          </section>
+      </main>
+    </>
    )
  }
