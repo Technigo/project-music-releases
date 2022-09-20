@@ -1,16 +1,17 @@
-import React from "react";
-import data from "./data.json";
+//koden vi fick från början:
+//import React from "react";
+//import data from "./data.json";
 
-console.log(data);
+//console.log(data);
 
-export const App = () => {
-  return <div>Find me in src/app.js!</div>;
-};
+//export const App = () => {
+//return <div>Find me in src/app.js!</div>;
+//};
 
 //från daniel:
 import React from "react";
 import data from "./data.json";
-import Header from "./components/Header";
+import Header from "./components/Albums";
 
 console.log(data);
 // named export

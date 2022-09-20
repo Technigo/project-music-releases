@@ -1,5 +1,4 @@
 //daniels kod
-
 import React from "react";
 
 const Subheader = (props) => {

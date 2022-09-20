@@ -1,11 +1,12 @@
-import { createRoot } from "react-dom";
-import "./index.css";
-import App from "./App";
+//koden vi fick från början:
+//import { createRoot } from "react-dom";
+//import "./index.css";
+//import App from "./App";
 
-const container = document.getElementById("root");
-const root = createRoot(container);
+//const container = document.getElementById("root");
+//const root = createRoot(container);
 
-root.render(<App />);
+//root.render(<App />);
 
 //från daniel:
 import React from "react";

@@ -1,7 +1,6 @@
 //daniels kod
-
 import React from "react";
-import Subheader from "./Subheader";
+import Subheader from "./Artists";
 
 const Header = (props) => {
   console.log(props.data);
