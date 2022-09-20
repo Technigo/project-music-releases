@@ -1,6 +1,8 @@
 {
   "parser": "@babel/eslint-parser",
-  "extends": ["airbnb"],
+  "extends": [
+    "airbnb"
+  ],
   "globals": {
     "document": true,
     "window": true,
@@ -19,14 +21,17 @@
       "experimentalObjectRestSpread": true,
       "modules": true
     },
-
     "babelOptions": {
-      "presets": ["@babel/preset-react"]
+      "presets": [
+        "@babel/preset-react"
+      ]
     }
   },
-  "plugins": ["react-hooks"],
+  "plugins": [
+    "react-hooks"
+  ],
   "rules": {
-    "arrow-body-style": "off",
+    "arrow-body-style": 1,
     "class-methods-use-this": "off",
     "brace-style": [
       "error",
@@ -35,7 +40,10 @@
         "allowSingleLine": true
       }
     ],
-    "comma-dangle": ["error", "never"],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
     "consistent-return": "off",
     "curly": "error",
     "eol-last": "off",
@@ -105,6 +113,16 @@
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-direct-mutation-state": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": [
+          "function-declaration",
+          "arrow-function"
+        ],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/no-multi-comp": [
       "error",
       {
