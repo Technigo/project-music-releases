@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*ICONS*/
+
+.icons-container img {
+  width: 70px;
+  margin: 0 15px;
+    
+}
+
+.play-icon:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+}
