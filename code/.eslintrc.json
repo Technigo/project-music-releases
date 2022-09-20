@@ -106,6 +106,16 @@
     "react/no-did-mount-set-state": "error",
     "react/no-did-update-set-state": "error",
     "react/no-direct-mutation-state": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": [
+          "function-declaration",
+          "arrow-function"
+        ],
+        "unnamedComponents": "arrow-function"
+      }
+    ],
     "react/no-multi-comp": [
       "error",
       {

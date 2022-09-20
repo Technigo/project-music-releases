@@ -1,12 +1,18 @@
 import React from 'react';
 import data from './data.json';
+import Image from './components/Image';
 
 console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <>
+      <div>
+        <ImageCard />
+      </div>
+      <div>
+        <Hello />
+      </div>
+    </>
   );
 }
