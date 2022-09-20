@@ -7,12 +7,10 @@ console.log(data);
 export const App = () => {
   return (
     <>
-      <div>
-        <ImageCard />
-      </div>
-      <div>
-        <Hello />
-      </div>
+      {data.albums.items.map((item) => {
+        return <Image key={item.id} data={img src={item}/>
+              /* <img src={album.image} alt={album.title} /> */
+      })}
     </>
   );
 }
