@@ -13,6 +13,7 @@
     "browser": true
   },
   "parserOptions": {
+    "requireConfigFile": false,
     "sourceType": "module",
     "ecmaVersion": 2017,
     "babelOptions": {
@@ -34,7 +35,7 @@
         "namedComponents": ["function-declaration", "arrow-function"],
         "unnamedComponents": "arrow-function"
       }
-    ]
+    ],
     "arrow-body-style": "off",
     "class-methods-use-this": "off",
     "brace-style": [
