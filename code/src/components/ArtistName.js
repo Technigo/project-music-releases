@@ -2,7 +2,9 @@ import React from 'react'
 
 const ArtistName = (props) => {
   return (
-    { props }
+    <div>
+        Hi! {props.name}
+    </div>
   )
 }
 

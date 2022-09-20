@@ -6,9 +6,9 @@ const AlbumCard = (props) => {
   return (
     <section>
       <img
-        src={props.album.images[1].url}
+        src={props.data.images[1].url}
         className="cover-img"
-        alt={props.album.name} />
+        alt={props.data.name} />
       <AlbumName />
       <ArtistName />
     </section>
