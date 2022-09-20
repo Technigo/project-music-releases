@@ -1,17 +1,23 @@
 import React from 'react';
 import data from './data.json';
-import Musiccard from './components/Musiccard'
+
+import MusicCard from './components/MusicCard'
+
 
 console.log(data);
 
 //named export
 
 export const App = () => {
-  return (    
+  return (
     <>
-      {data.albums.items.map(item => {
-        return <Musiccard key={item.id} data= {item} />
-      })}        
+    <section className="outer-wrapper">
+      <div className="inner-wrapper">
+        {data.albums.items.map(item => {
+          return <MusicCard key={item.id} data= {item} />
+        })}     
+      </div>
+    </section>   
     </>
   );
 }

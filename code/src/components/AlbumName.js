@@ -1,18 +1,17 @@
 import React from 'react';
 
 
-
 const AlbumName = (props) => {
-  console.log(props.data);   
+   
   return (
     <>
-    
-    <h2>
-     {props.albumName}
-    </h2>
-    
-    
+    {/* <div className='album-title'> */}
+      <h2 className='album-title'>
+      {props.albumName}
+      </h2>
+    {/* </div> */}
     </>
+  
   );
 }
  

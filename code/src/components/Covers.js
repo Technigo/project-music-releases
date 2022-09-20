@@ -1,10 +1,14 @@
 import React from 'react';
-
+import Icons from './Icons';
 
 const Covers = (props) => {
-  console.log(props)  
+   
   return (
-    <img src={props.artistImage} />
+    <>
+    {/* <Icons artistLink = {props.data.external_urls.spotify} /> */}
+      
+    <img className="image-container" src={props.artistImage} /> 
+   </>
   );
 }
  
