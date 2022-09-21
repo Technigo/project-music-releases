@@ -6,8 +6,10 @@ console.log(data);
 export const AlbumCover = (props) => {
   return (
   <div className="AlbumCover">
-    <img src={album.images[0].url} />
+    <img src={props.albums.images[1].url} />
       
     </div>
   );
 };
+
+console.log(AlbumCover)
