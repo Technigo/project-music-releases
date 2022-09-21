@@ -58,7 +58,7 @@ code {
 
  .album-name{
   font-weight: 800;
-  font-size: 18px;
+  font-size: 14px;
   color: #ffff;
   text-decoration: none;
   padding-top: 10px;
@@ -70,7 +70,7 @@ code {
  
  .artists > a:link {
    display: inline-flex;
-   font-size: 18px;
+   font-size: 14px;
    color:  #a0a0a0;
    text-decoration: none;
    padding-top: 5px;
@@ -109,7 +109,7 @@ code {
 
 .image-container:hover .image-overlay {
   background: rgba(0, 0, 0, 0.6);
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .icons-container {
@@ -129,12 +129,16 @@ code {
 .icons-container img {
   width: 70px;
   margin: 0 15px;
+  opacity: 50%;
 }
 
 .play-icon:hover {
   transform: scale(1.5);
   transition: 0.3s ease;
+  opacity: 100%;
 }
+
+
 
 /*TABLET*/
 @media (min-width: 768px) {
