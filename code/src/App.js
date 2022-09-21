@@ -1,15 +1,18 @@
 import React from "react";
 import data from "./data.json";
-import Header from "./components/Header";
+
+import Album from "./components/Album";
 
 console.log(data);
 
-export const App = () => {
+const App = () => {
   return (
     <>
-      {data.albums.items.map((item) => {
-        return <Header key={data.id} data={item} />;
+      {data.albums.items.map((props) => {
+        return <Album key={data.id} data={props} />;
       })}
     </>
   );
 };
+
+export default App;
