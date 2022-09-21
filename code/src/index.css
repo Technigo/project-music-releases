@@ -192,6 +192,10 @@ code {
     flex-wrap: wrap;
   }
 
+  .header-container {
+    width: 100%;
+  }
+
   .header-title {
     width: 85%;
   }
