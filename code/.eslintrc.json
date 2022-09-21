@@ -31,7 +31,7 @@
     "react-hooks"
   ],
   "rules": {
-    "arrow-body-style": 1,
+    "arrow-body-style": 0,
     "class-methods-use-this": "off",
     "brace-style": [
       "error",
