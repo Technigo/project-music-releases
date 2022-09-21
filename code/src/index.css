@@ -131,6 +131,12 @@ code {
   transition: 0.3s ease;
 }
 
+.image-overlay .play-icon{
+ transform: scale(1.8);
+ transition: 0.3s ease;
+}
+
+
 .icons-container {
   position: absolute;
   width: 100%;
@@ -146,13 +152,19 @@ code {
 
 /*ICONS*/
 .icons-container img {
-  width: 70px;
+  height: 30px;
   margin: 0 15px;
   opacity: 50%;
 }
 
+.heart-icon:hover, .dots-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+
 .play-icon:hover {
-  transform: scale(1.6);
+  transform: scale(1.8);
   transition: 0.3s ease;
   opacity: 100%;
 }
@@ -162,8 +174,8 @@ code {
 @media (max-width: 768px) {
   .header-container {
     width: auto;
-
   }
+
   .album-name, .artists > a:link{
     font-size: 18px;
   }
