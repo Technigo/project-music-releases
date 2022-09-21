@@ -1,15 +1,17 @@
 import React from 'react';
 
-
-const ArtistName = (props) => {
-   
+const ArtistName = (props) => {   
   return (
     <>
-    <div className='artist-name'>
-      <h3>
-        {props.artistName}
-      </h3>
-    </div>
+      <a 
+      className='grey-underline' 
+      href={props.artistLink}>
+        <div>
+          <h3 className='artist-name'>
+          {props.artistName}
+          </h3>
+        </div>
+      </a>
     </>
   );
 }

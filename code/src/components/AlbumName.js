@@ -1,17 +1,12 @@
 import React from 'react';
 
-
-const AlbumName = (props) => {
-   
-  return (
+const AlbumName = (props) => {   
+  return ( 
     <>
-    {/* <div className='album-title'> */}
-      <h2 className='album-title'>
-      {props.albumName}
-      </h2>
-    {/* </div> */}
-    </>
-  
+      <a  href={props.albumLink}>
+      <h2 className='album-title'>{props.albumName}</h2> 
+      </a> 
+    </>    
   );
 }
  

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Icons = (props) => {
    
   return (
@@ -18,4 +17,3 @@ const Icons = (props) => {
  
 export default Icons
 
-/* <img src='project-music-releases/code/public/icons/heart.svg'/> */
