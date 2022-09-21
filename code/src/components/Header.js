@@ -1,11 +1,13 @@
 import React from 'react';
 
-
  const Header = () => {
   return (
-    <h2>
-      HEADER TEST
-    </h2>
+    <>
+      <div className="header-container">
+          <h1 className="header-title">New albums & singles</h1>
+          <div className="header-line"></div>
+      </div>
+    </>
   );
 }
 export default Header;

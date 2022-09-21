@@ -17,24 +17,46 @@ code {
   width: 100%;
 }
 
-/*ALBUM CONTAINER*/
+/*HEADER*/
+.header-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 20px 0 20px;
+}
 
-.album {
+.header-title {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+.header-line { 
+  width: 100%;
+  border-top: 2px solid #3f3f3f;  
+}
+
+/*ALBUM CONTAINER*/
+.album-container {
   width: 100%;
   display: flex;
- }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
  
  .album-card {
-   display: flex;
-   flex-direction: column;
-   width: 100%;
-   align-items: center;
-   font-size: 14px;
-   padding: 10px;
-   margin: 10px;
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
  }
  
- .url-link {
+ .artists {
    display: inline-flex;
  }
  
@@ -46,11 +68,9 @@ code {
  .album-image {
    width: 100%;
    object-fit: contain;
-   
  }
 
 /*IMAGE CONTAINER */
-
 .image-container {
   width: 100%;
   position: relative;
@@ -78,20 +98,16 @@ code {
   justify-content: center;
   align-items: center;
   top: 50%;
-  
 }
 
 .image-container:hover .icons-container {
   display: flex;
-    
 }
 
 /*ICONS*/
-
 .icons-container img {
   width: 70px;
   margin: 0 15px;
-    
 }
 
 .play-icon:hover {
@@ -99,21 +115,52 @@ code {
   transition: 0.3s ease;
 }
 
+/*TABLET*/
+@media (min-width: 768px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header-title {
+    width: 85%;
+  }
+
+  .header-line {
+    width: 86%;
+    margin: 0;
+  }
+
+  .album-card {
+    width: 43.5%;
+  }
+
+  .icons-container {
+    top: 45%;
+  }
+
+  .icons-container img {
+    width: 50px;
+    margin: 0 10px;
+  }
+}
 
 /*DESKTOP*/
 @media (min-width: 992px) {
 
-  .album {
-    width: 22%;
+  .album-card {
+    width: 19.5%;
   }
 
-  .buttons-container {
+  .icons-container {
     top: 45%;
   }
 
-  .buttons-container img {
+  .icons-container img {
     width: 40px;
     margin: 0 10px;
   }
-
 }
