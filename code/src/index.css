@@ -158,6 +158,16 @@ code {
 }
 
 
+/* MOBILE, larger font for increased readability*/
+@media (max-width: 768px) {
+  .header-container {
+    width: auto;
+
+  }
+  .album-name, .artists > a:link{
+    font-size: 18px;
+  }
+}
 
 /*TABLET*/
 @media (min-width: 768px) {
