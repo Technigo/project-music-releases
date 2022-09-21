@@ -14,7 +14,12 @@ const Album = (props) => {
             </div>
             <a href={item.external_urls.spotify} className='album-name'>{item.name}</a>
             <div className="artists">{item.artists.map((artist) => (
-              <a className='artist-name' href={artist.external_urls.spotify} key={artist.id}>{artist.name}</a>
+              <a 
+              className='artist-name' 
+              href={artist.external_urls.spotify} 
+              key={artist.id}>
+              <span>{artist.name}</span>
+              </a>
             ))}
             </div>
           </div>
