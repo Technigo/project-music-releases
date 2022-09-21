@@ -1,17 +1,20 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable no-undef */
 import React from 'react'
 import ArtistName from './ArtistName'
 import AlbumName from './AlbumName'
 
-const AlbumCard = (props) => {
+const AlbumCard = ({ album }) => {
+  console.log('album:')
+  console.log(album)
   return (
     <section>
       <img
-        src={props.album.images[1].url}
+        src={album.images[1].url}
         className="cover-img"
-        alt={props.album.name} />
-      <AlbumName />
-      <ArtistName artists={props.album.artists} />
+        alt={album.name} />
+      <AlbumName title={album.name} />
+      <ArtistName artists={album.artists} />
     </section>
   )
 }
