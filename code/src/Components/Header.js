@@ -2,9 +2,12 @@ import React from 'react';
 
 const Header = () => {
   return (
+    <>
     <h2>
-      Test Header here we come
+      New albums and singles
     </h2>
+    <Artist/>
+    </>
   );
 }
 
