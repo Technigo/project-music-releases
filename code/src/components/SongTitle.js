@@ -5,7 +5,7 @@ export const SongTitle = (props) => {       //ARTIST NAME , NAMES ARE OTHER WAY 
 
     return (
         <>
-        <h3>{props.Artist}</h3>          
+        <h3>ARTIST : {props.Artist}</h3>          
         </>
        
     )
