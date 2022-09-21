@@ -1,18 +1,20 @@
 import React from "react";
 import data from "./data.json";
-
 import Album from "./components/Album";
+import Header from "./components/Header";
 
 console.log(data);
 
-const App = () => {
+export const App = () => {
   return (
     <>
-      {data.albums.items.map((props) => {
-        return <Album key={data.id} data={props} />;
-      })}
+      <div className="outer-wrapper">
+        <div className="inner-wrapper">
+          {data.albums.items.map((item) => {
+            return <Album key={item.id} data={item} />;
+          })}
+        </div>
+      </div>
     </>
   );
 };
-
-export default App;
