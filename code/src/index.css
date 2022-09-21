@@ -19,11 +19,11 @@ code {
 
 /*HEADER*/
 .header-container {
-  width: 90%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   margin: 20px 20px 0 20px;
+  flex-wrap: wrap;
 }
 
 .header-title {
@@ -156,7 +156,7 @@ code {
   }
 
   .album-card {
-    width: 43.5%;
+    width: 40%;
   }
 
   .icons-container {
