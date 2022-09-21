@@ -1,13 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-const ArtistName = (props) => {
-        console.log(props.data);
-  return (
-    <>
-        <h2>
-          {props.data.artists.name}
-        </h2>
-   </>  
-  )
+const ArtistName = ({ hrefArtist, artist }) => {
+
+    return (
+        <a href={hrefArtist} target="_blank" rel="noopener noreferrer">
+            <h3 className="artist-name">{artist}</h3>
+        </a>
+    )
 }
+
 export default ArtistName;

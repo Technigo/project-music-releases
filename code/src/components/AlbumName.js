@@ -1,13 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-const AlbumName = (props) => {
-        console.log(props.data);
-  return (
-    <>
-        <h2>
-          {props.data.name}
-        </h2>
-   </>  
-  )
+const AlbumName = ({ hrefAlbum, title }) => {
+    return (
+        <a href={hrefAlbum} target="_blank" rel="noopener noreferrer">
+            <h2 className="album-name">{title}</h2>
+        </a>
+    )
 }
-export default AlbumName;
+
+export default AlbumName
