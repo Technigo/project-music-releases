@@ -61,21 +61,30 @@ code {
   font-size: 18px;
   color: #ffff;
   text-decoration: none;
+  padding-top: 10px;
  }
 
+ .album-name:hover{
+  text-decoration: underline 1.5px;
+ }
  
  .artists > a:link {
    display: inline-flex;
    font-size: 18px;
    color:  #a0a0a0;
    text-decoration: none;
+   padding-top: 5px;
  }
  
-/*
- a:link, a:visited {
-   text-decoration: none; 
-   color: #a0a0a0;
- } */
+ .artists a:visited {
+  color:  #a0a0a0;
+  text-decoration: none;
+} 
+
+.artists > a:hover {
+  color: #ffff;
+  border-bottom:1px solid rgb(255, 255, 255);
+}
  
  .album-image {
    width: 100%;
