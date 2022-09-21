@@ -11,7 +11,7 @@ export const App = () => {
       <Header />
       <section className="album-card">
         {data.albums.items.map((item) => {
-          return <AlbumCard key={item.id} data={item} />
+          return <AlbumCard key={item.id} album={item} />
         })}
       </section>
     </>
