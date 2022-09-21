@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.main-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+
+
+/* svg {
+  height: 10%;
+  width: 10%;
+} */
+
+.hover-icons{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart, .play, .dots{
+  width:40px;
+  height:40px;
+  line-height: 12px;
+ /*  fill:#ffffff; */
+}
+
+.AlbumName{
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  color:#ffffff;
+}
