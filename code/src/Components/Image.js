@@ -1,10 +1,12 @@
 import React from 'react';
+import Icons from './Icons';
 
-const Image = () => {
+const Image = (props) => {
   return (
-    <h2>
-      Image
-    </h2>
+    <div className="image-container">            
+    <img className="album-image" src={props.imgsrc}></img>          
+  <Icons />
+</div> 
   );
 }
 

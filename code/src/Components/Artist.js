@@ -1,11 +1,18 @@
 import React from 'react';
 
-const Artist = (props) => {
+const Artist  = (props) => {
   return (
-    <h2>
-      test
-    </h2>
+  <>
+     <div className="artistName">
+        {props.album.map(artist => {
+          return (
+            <h2 className="artistLink">{artist.name}</h2>
+          )
+        })}
+      </div>
+    
+    </>
   );
-}
+};
 
 export default Artist;
