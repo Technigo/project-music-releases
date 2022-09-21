@@ -4,10 +4,10 @@ import Header from './components/Header'
 
 console.log(data);
 // named export
-
 export const App = () => (
   <>
-    {data.albums.item.map((item) => <Header key="{data.id}" data={item} text="testing the props" />)}
+    {/* <Header text = "testing the props"/> */}
+    {data.albums.items.map((item) => <Header key={item.id} data={item} text="testing the props" />)}
   </>
 )
 

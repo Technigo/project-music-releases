@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Subheader = (props) => {
-  console.log(props);
   return (
-    <h2>
-      Test
-    </h2>
+    <h3>
+         Number of tracks is {props.totalTracks}
+    </h3>
   );
 }
 
