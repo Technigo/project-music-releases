@@ -7,9 +7,8 @@ export const App = () => {
 
 const albumArray = data.albums.items
     return (
-      <div className="album-wrapper">
-
-        {albumArray.map((album) => {
+      <>
+      {albumArray.map((album) => {
           return (
               <Album 
               image={album.images[0].url}
@@ -21,6 +20,6 @@ const albumArray = data.albums.items
              )
           })
         }
-      </div>
+      </>
   )
 }
