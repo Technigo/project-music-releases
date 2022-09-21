@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export const SongTitle = (props) => {
-    console.log(props)
+export const SongTitle = (props) => {       //ARTIST NAME , NAMES ARE OTHER WAY AROUND
+    console.log(props.data)                 //checking the extraction in the console
+
     return (
-        <div>{props.Artist}</div> // Displaying the artist below
+        <>
+        <h3>{props.Artist}</h3>          
+        </>
+       
     )
 }
