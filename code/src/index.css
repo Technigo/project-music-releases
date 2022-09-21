@@ -152,7 +152,7 @@ code {
 
 /*ICONS*/
 .icons-container img {
-  height: 30px;
+  height: 35px;
   margin: 0 15px;
   opacity: 50%;
 }
@@ -160,6 +160,7 @@ code {
 .heart-icon:hover, .dots-icon:hover {
   transform: scale(1.2);
   transition: 0.3s ease;
+  opacity: 100%;
 }
 
 
