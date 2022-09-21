@@ -9,9 +9,11 @@ export const App = () => {
   return (
     <>
       <Header />
-      {data.albums.items.map(item => {
-        return <Album key={data.id} data = {item}/>
-      })}
+      <div className='album-parent'>
+        {data.albums.items.map(item => {
+          return <Album key={item.id} name={item.name} image={item.images[0].url} link={item.external_urls.spotify} artists={item.artists}/>
+        })}
+      </div>
     </>
   );
 }

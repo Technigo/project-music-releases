@@ -1,3 +1,9 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +11,82 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: pink;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  text-decoration:none;
+}
+
+/* Mobile first  */
+.album-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 5%;
+  justify-content: space-between;
+}
+
+.album-child {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.album-child img{
+  width: 100%;
+}
+
+h1 {
+  color: whitesmoke;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+h2 {
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+h3 {
+  color: rgb(200, 199, 199);
+  font-size: 14px;
+}
+
+.artist-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.artist-container {
+  justify-content: flex-start;
+}
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+/* Tablet  */
+@media screen and (min-width: 668px) {
+  .album-child {
+    width: 45%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .album-child {
+    width: 23%;
+  }
 }
