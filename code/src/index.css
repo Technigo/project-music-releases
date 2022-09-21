@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  color: #fff;
+  padding: 10px;
+  border: solid yellow;
+}
+
+main{
+  width: 80%;
+  margin: 0 auto;
+  border: solid 2px blue;
+}
+
+.albumsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: solid 3px red;
+}
+
+.albumWrapper {
+  border: solid 3px green; 
+}
+  
+.albumName {
+  color: black;
+}
+
+.imageWrapper {
+  width: 100%;
+  border: solid 3px pink;
+}
+
+.albumImage {
+  width: 100%;
+}

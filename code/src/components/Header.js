@@ -1,13 +1,12 @@
 import React from 'react';
 const Header= () => {
-console.log();
   
   return (
-      <>
-        <h2>
-        "New albums and singles"
-    </h2>
-</>
+
+    <h1>
+        New albums & singles
+    </h1>
+
 );
 }
 export default Header;
