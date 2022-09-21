@@ -9,10 +9,20 @@ const MusicCard = (props) => {
   return (
     <section className="album-outer-wrapper">
       <div className="album-container">
-        <img className="album-image" src={props.recordData.images[1].url} />
+        <div className="image-wrapper">
+          <div className="overlay"></div>
+          <div className="icon-wrapper">
+            <img className="play" src=".../public/icons/play.svg" />
+            <img className="heart" src=".../public/icons/heart.svg" />
+            <img className="dots" src=".../public/icons/dots.svg" />
+          </div>
+          <img className="album-image" src={props.recordData.images[1].url} />
+        </div>
         <p className="album-title">{props.recordData.name}</p>
         <h3 className="artist-name">
-          <ArtistName artists={props.recordData.artists} />
+          <a href={props.recordData.artists[0].external_urls.spotify}>
+            <ArtistName artists={props.recordData.artists} />{" "}
+          </a>
         </h3>
       </div>
     </section>

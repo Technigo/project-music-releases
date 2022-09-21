@@ -6,7 +6,7 @@ const ArtistName = (props) => {
   // return <p> {props.artists[0].name}</p>;
   if (props.artists.length > 1) {
     props.artists.map((artist) => {
-      console.log(`artistnamn:${artist.name}`);
+      console.log(`artistname:${artist.name}`);
       return artist.name;
     });
   } else {
