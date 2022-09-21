@@ -28,10 +28,14 @@ const Card = (props) => {
         </div>
 <Image AlbumImage = {props.data.images[1].url}/>
 </div>
-<h2>
-    {props.data.name}
-</h2>
+
+
+<AlbumName AlbumName = {props.data.name}/>
+<AlbumName AlbumLink = {props.data.external_urls.spotify}/>
+
+
 <Artist ArtistName = {props.data.artists[0].name}/>
+<Artist ArtistLink = {props.data.artists[0].external_urls.spotify}/>
 
 </div>
 </>

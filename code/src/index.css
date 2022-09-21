@@ -45,7 +45,7 @@ code {
 .albumWrapper {
   width: 300px;
   height: 400px; 
-  padding: 20px; 
+  padding: 10px; 
   border: solid red 2px; 
   align-items: center; 
 }
@@ -58,20 +58,20 @@ code {
   bottom: 0;
   left: 0;
   right: 0; */
-  transition: 0.5s ease;
+  /* transition: 5s ease; */
   display: none;
-  justify-content: space-evenly;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
+  /* justify-content: space-evenly; */
+  background: rgba(0, 0, 0, 0.6);
+  /* opacity: 0; */
 }
 
 
 .albumImage {
-  align-items: center; 
-  justify-content: center;
+  /* align-items: center;  */
+  /* justify-content: center; */
   position: relative;
-  background-size: cover;
-  background-position: center center;
+  /* background-size: cover;
+  background-position: center center; */
   width: 300px;
   border: solid green 2px;
 
@@ -81,14 +81,14 @@ code {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: absolute;
-  color: #fff;
+  /* position: absolute; */
+  /* color: #fff; */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 20px;
-  opacity: 1;
+  /* padding: 20px; */
+  /* opacity: 1; */
 }
 
 
@@ -103,17 +103,15 @@ code {
 }
 
 
-
 .icon-heart, .icon-play, .icon-dots {
   width: 3.5em;
   height: 3.5em;
   filter: invert();
 }
+
 .icon-play:hover {
   transform: scale(1.3);
   transition: transform 0.5s;
-
-
 }
 
 @media (min-width: 668px) and (max-width: 1024px) {

@@ -7,6 +7,7 @@ return (
 
         <h3>
             {props.ArtistName}
+            {props.ArtistLink}
         </h3> 
 
     /* return (
