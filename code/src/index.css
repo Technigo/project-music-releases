@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+
 }
 
 code {
@@ -12,32 +14,61 @@ code {
     monospace;
 }
 
-
-.main-container{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background-color: black;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 
+.header {
+  color:#ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Helvetica Neue";
+  border-bottom:1px #a0a0a0 solid;
+  padding-left: 30px;
+  width:1300px;
+  margin: auto;
+}
 
-/* svg {
-  height: 10%;
-  width: 10%;
-} */
+.album-container{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top:30px;
+  padding-left:30px; 
+  margin:auto;
+  width:1300px;
+  position: relative;
+ 
+}
 
 .hover-icons{
+  display: none;
+  position:absolute;
+}
+
+
+/* .Album:hover {
+  z-index: 0; 
+} */
+.Album :hover .hover-icons {
   display:flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.6);
+  /* height:100%;
+  width: 100%; */
 }
 
-.heart, .play, .dots{
+.Album :hover .heart,.play, .dots {
   width:40px;
   height:40px;
   line-height: 12px;
- /*  fill:#ffffff; */
+  
 }
 
 .AlbumName{
@@ -45,3 +76,33 @@ code {
   font-size: 14px;
   color:#ffffff;
 }
+
+.Album-wrapper {
+  width:300px; 
+  padding:10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.artist {
+  font-size: 14px ;
+  font-family:"Helvetica Neue"; 
+  color: #a0a0a0;
+}
+
+/* .nameArtist:only-child::before {
+  content: " ";
+} 
+
+.nameArtist:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: " , ";
+}
+
+.nameArtist:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+  */

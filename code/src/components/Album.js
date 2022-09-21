@@ -15,7 +15,6 @@ export const Album = (props) => {
                     target="_blank"
                     className="no-underline"
                     alt="link to spotify"
-                    
                     >
         {/* Return the album cover*/ }
                     <img src ={props.album.images[1].url}
@@ -33,13 +32,14 @@ export const Album = (props) => {
                 </div>
          {/* Return artist name*/ }
                 <div className="artistName">
-                    {props.album.artists.map(artist=> {
+                    {props.album.artists.map((artist, index) => {
                         return (
                         <a href={artist.external_urls.spotify}
                         target="_blank"
-                        /* key={artists.id} */
-                        className="no-underline" alt="link to spotify">
-                        <p className="artist"> {artist.name}</p> 
+                        key={artist.id}
+                        className="nameArtist" alt="link to spotify">
+                        <p className="artist"> {artist.name}
+                        {generateDelimiter(index, props.album.artists.length)}</p> 
                         </a>
                         )
                     })}
@@ -48,3 +48,12 @@ export const Album = (props) => {
         </>
     )
 } 
+
+    const generateDelimiter = (index, length) => {
+        if (index === length - 2) {
+        return " & ";
+        } else if (index < length - 2) {
+        return ", ";
+        }
+        return;
+    }; 
