@@ -7,14 +7,15 @@ const MusicCard = (props) => {
   //console.log(`bildadress ${props.data.images[1].url}`);
 
   return (
-    <div>
-      <img src={props.recordData.images[2].url} />
-      <p>Titel:{props.recordData.name}</p>
-      <h3>
-        Artist:
-        <ArtistName artists={props.recordData.artists} />
-      </h3>
-    </div>
+    <section className="album-outer-wrapper">
+      <div className="album-container">
+        <img className="album-image" src={props.recordData.images[1].url} />
+        <p className="album-title">{props.recordData.name}</p>
+        <h3 className="artist-name">
+          <ArtistName artists={props.recordData.artists} />
+        </h3>
+      </div>
+    </section>
   );
   /*   <div>
       <img src={props.data.images[2].url} />

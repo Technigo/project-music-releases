@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(27, 27, 27);
 }
 
 code {
@@ -12,13 +13,56 @@ code {
     monospace;
 }
 
-section {
-  background-color: aqua;
+h2 {
+  color: white;
 }
 
-.albumContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(12, 400px);
+.artist-name {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
+}
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+.album-title {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #ffffff;
+}
+
+.album-title:hover {
+  text-decoration: underline;
+}
+
+.album-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.album-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+/* tablet */
+@media (min-width: 668px) and (max-width: 1023px) {
+  .album-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+/*desktop*/
+@media (min-width: 1024px) {
+  .album-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }

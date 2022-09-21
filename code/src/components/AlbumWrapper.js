@@ -7,9 +7,9 @@ const AlbumWrapper = () => {
     return <MusicCard key={record.id} recordData={record} />;
   });
   return (
-    <section>
+    <section className="header">
       <h2>New albums and singles</h2>
-      <div className="albumContainer">{allAlbums}</div>
+      <div className="album-wrapper">{allAlbums}</div>
     </section>
   );
 };
