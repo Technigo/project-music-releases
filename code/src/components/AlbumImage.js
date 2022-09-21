@@ -1,9 +1,8 @@
 import React from 'react'
 
 const AlbumImage = ({ image }) => {
-
     return (
-    <img href={image} />
+        <img class="album-image" src={image} alt='Album Cover Image' />
     )
 }
 

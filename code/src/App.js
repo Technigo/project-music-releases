@@ -5,19 +5,14 @@ import Album from './components/Album'
 
 export const App = () => {
 
-
 const albumArray = data.albums.items
-
-
-  return (
-    <div className="main">
-      <div className="header">
-      </div>
+    return (
       <div className="album-wrapper">
 
         {albumArray.map((album) => {
-              return (
+          return (
               <Album 
+              image={album.images[0].url}
               title={album.name} 
               hrefAlbum={album.external_urls.spotify} 
               artist={album.artists.map((item) => <a>{item.name}</a>)}
@@ -27,6 +22,5 @@ const albumArray = data.albums.items
           })
         }
       </div>
-    </div>
   )
 }
