@@ -55,15 +55,27 @@ code {
     align-items: flex-start;
     font-size: 14px;
  }
+
+ .album-name{
+  font-weight: 800;
+  font-size: 18px;
+  color: #ffff;
+  text-decoration: none;
+ }
+
  
- .artists {
+ .artists > a:link {
    display: inline-flex;
+   font-size: 18px;
+   color:  #a0a0a0;
+   text-decoration: none;
  }
  
+/*
  a:link, a:visited {
    text-decoration: none; 
    color: #a0a0a0;
- }
+ } */
  
  .album-image {
    width: 100%;
