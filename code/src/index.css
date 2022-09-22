@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,16 +13,57 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.Outline{
+  background-color: rgb(189, 189, 40);
+}
+
+.Album-Wrapper{
+  background-color: grey;
+  padding-top: 40px;
+  margin-right: 40px;
+  border: solid 30px;
+}
+
+.Box{
+  display: flex;
+  flex-direction: column;
+  border: solid;
+}
+
+.The-Album{
+  display: grid;
+  grid-template-areas: 
+  "item item item item"
+  "item item item item"
+  "item item item item";
+}
+
+h2{
+  grid-area: item;
+}
+h3{
+  grid-area: item;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-/*const AlbumCover {
-    
-        width: 800;
-        height: 600;
-    },
+
+.Song{
+  display: flex;
+  width: 800;
+  height: 600;
+  color: pink;
+  padding-top: solid;
+  
+}
+
+.Artist{
+  font-weight: 800;
+}
+/*
 
     {
         src: "/images/image2.jpg",
