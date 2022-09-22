@@ -37,6 +37,7 @@ h3{
 }
 
 .albums-container {
+  display: grid;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -129,3 +130,26 @@ filter: invert(62%) sepia(24%) saturate(1340%) hue-rotate(88deg) brightness(87%)
   filter: invert(62%) sepia(24%) saturate(1340%) hue-rotate(88deg) brightness(87%) contrast(96%);
 }
 
+@media screen (max-width: 667px) {
+.albums-container{
+  display: grid;
+    grid-template-columns: 2fr;
+    margin: 20px auto;
+}
+}
+
+@media screen (min-width: 668px) and (max-width: 1024px) {
+  .albums-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 2px;
+  }
+}
+
+@media screen (min-width: 1025px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  
+}
+}
