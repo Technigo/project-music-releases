@@ -3,12 +3,19 @@ import React from 'react';
 
 const AlbumName = (props) => {
  
-return (
+
+
+return (   
+    <a
+        className="albumUrl"
+        href={props.AlbumLink}
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        {' '}
+        <h2>{props.AlbumName}</h2>
+    </a>
     
-<h2>
-    {props.AlbumName}
-    {props.AlbumLink}
-</h2>
     /* return (
         {props.data.artists.map((artist, i) => {
             let divider = " ";

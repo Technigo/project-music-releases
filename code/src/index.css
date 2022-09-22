@@ -1,8 +1,7 @@
 body {
   margin: 0;
-    align-items: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,19 +15,46 @@ padding: 0px 0px 10px 20px;
 }
 
 h2 {
-
   font-size: 14px;  
   font-family: Helvetica;
   color: #ffffff;
-  margin: 10px 0 5px 0; 
+  margin: 10px 0 5px 0;
 }
 
 h3 {
-
   font-size: 14px;  
   font-family: Helvetica;
   margin: 0px;
   color: #a0a0a0;
+}
+
+span {
+  font-size: 14px;  
+  font-family: Helvetica;
+  margin: 0px;
+  color: #a0a0a0;
+  border: solid green 2px;
+}
+
+/* 
+.artist > :not(:last-child):not(:first-child):before {
+  content: ", ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+.artist > :last-child:before {
+  content: " & ";
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+.artist > :only-child:before {
+  content: "";
+} */
+
+a {
+  text-decoration: none;
 }
 
 code {
@@ -36,63 +62,41 @@ code {
     monospace;
 }
 
-
 .albumContainer {
-  /* border: solid yellow 2px; */
   align-items: center;
   justify-content: center;
   display: inline-grid;
   width: 100vw;
   gap: 10px;
+  border: solid red 2px;
   }
-  
 
 .albumWrapper {
   width: 300px;
   height: 400px; 
-  /* border: solid red 2px;  */
   align-items: center; 
+  border: solid rgb(10, 155, 24) 2px;
 }
-
 
 .albumIcons {
-  /* border: solid orange 2px; */
   position: absolute;
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
-  /* transition: 5s ease; */
   display: none;
-  /* justify-content: space-evenly; */
   background: rgba(0, 0, 0, 0.6);
-  /* opacity: 0; */
 }
 
-
 .albumImage {
-  /* align-items: center;  */
-  /* justify-content: center; */
   position: relative;
-  /* background-size: cover;
-  background-position: center center; */
   width: 300px;
-  /* border: solid green 2px; */
-
 }
 
 .albumImage:hover .albumIcons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* position: absolute; */
-  /* color: #fff; */
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  /* padding: 20px; */
-  /* opacity: 1; */
 }
 
 
@@ -114,20 +118,19 @@ code {
 
 @media (min-width: 668px) and (max-width: 990px) {
 
-  .albumContainer{
+.albumContainer{
   grid-template-columns: repeat(2, 1fr);
-  }
+}
 
 .albumWrapper{
   margin-left: 10%;
 }
-
-  }
+}
 
   @media (min-width: 990px) and (max-width: 1024px) {
   
-    .albumContainer{
-  grid-template-columns: repeat(3, 1fr);
+  .albumContainer{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .albumWrapper{
@@ -138,13 +141,12 @@ code {
 
 @media (min-width: 1024px) {
 
-
   h1 {
     font-size: 28px;
   }
 
 .albumContainer{
-grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 }
 

@@ -3,43 +3,40 @@ import React from 'react';
 
 const Artist = (props) => {
  
-return (
-    
-/* <h3 className="artist-name">
-{' '}
-<a href ={props.ArtistLink} target="_blank">
-{' '}
-{props.ArtistName}
-</a>
- </h3>  */
-
+return (   
+<div className="artist">
 <a
     className="artistUrl"
     href={props.ArtistLink}
     target="_blank"
     rel="noopener noreferrer"
 >
-    {' '}
-    <h3>{props.ArtistName}</h3>
+    <span>{props.ArtistName}</span>
 </a>
+</div>
 
-
-
-
-
-
-    // /* return (
-    //   
-    //     {props.data.artists.map((artist, i) => {
-    //         let divider = " ";
-    //         if (i < props.data.artists.length - 2) {
-    //         divider = ", ";
-    //         } else if (i === props.data.artists.length - 2) {
-    //         divider = " & ";
-    //         }})
-    //         }) */
-          
 )}
+
+
+/**/
+
+
+// const generateDelimiter = (index, length) => {
+//     if (index === length - 2) {
+//       return " & ";
+//     } else if (index < length - 2) {
+//       return ", ";
+//     }
+//     return;
+//   };
+
+//   return (
+//     <span>
+//  {props.ArtistName}
+//       {generateDelimiter(index, props.item.artists.length)}
+//     </span>
+//   )
+// }
 
 
 export default Artist;

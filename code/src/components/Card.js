@@ -26,18 +26,18 @@ const Card = (props) => {
               alt="more-icon"
             />
         </div>
-<Image AlbumImage = {props.data.images[1].url}/>
+<Image AlbumImage = {props.data.images[1].url} AlbumLink = {props.data.external_urls.spotify}/>
 </div>
 
 
-
 <AlbumName AlbumLink = {props.data.external_urls.spotify} AlbumName = {props.data.name}/>
-{
-  props.data.artists.map(artist => {
-    return(<Artist ArtistLink = {artist.external_urls.spotify} ArtistName = {artist.name} key = {artist.id}/>)
+
+{props.data.artists.map((artist) => {
+    return(<Artist ArtistLink = {artist.external_urls.spotify} ArtistName = {artist.name} key = {artist.id}
+    />)
+    // <span>{props.item.artists.length-1>index?', ': ''}</span> 
   })
 }
-
 
 </div>
 </>
