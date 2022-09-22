@@ -21,15 +21,19 @@ export const Album = (props) => {
                     /* key={images.external_urls} */
                     target="_blank"
                     alt="picture of album cover"/>
+
                     <div className="hover-icons">
                         <img src ="./icons/heart.svg" className="heart" alt="heart icon"></img>
                         <img src ="./icons/play.svg" className="play" alt="play icon"></img>
                         <img src ="./icons/dots.svg" className="dots" alt="three dots icon"></img>
                     </div>
-
-                        <h1 className="AlbumName">{props.album.name} </h1>
                     </a> 
                 </div>
+                    
+
+                <h1 className="AlbumName">{props.album.name} </h1>
+                    
+                
          {/* Return artist name*/ }
                 <div className="artistName">
                     {props.album.artists.map((artist, index) => {
@@ -48,7 +52,7 @@ export const Album = (props) => {
         </>
     )
 } 
-
+/* To add "," and "&" in the artist name */
     const generateDelimiter = (index, length) => {
         if (index === length - 2) {
         return " & ";
