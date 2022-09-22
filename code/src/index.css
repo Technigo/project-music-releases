@@ -9,6 +9,13 @@ body {
   color: white;
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* STYLING TEXT */
+
 h1 {
 font-size: 22px;
 padding: 0px 0px 10px 20px;
@@ -21,11 +28,8 @@ h2 {
   margin: 10px 0 5px 0;
 }
 
-h3 {
-  font-size: 14px;  
-  font-family: Helvetica;
-  margin: 0px;
-  color: #a0a0a0;
+a {
+  text-decoration: none;
 }
 
 span {
@@ -33,9 +37,9 @@ span {
   font-family: Helvetica;
   margin: 0px;
   color: #a0a0a0;
-  border: solid green 2px;
 }
 
+/* TO INSERT "," OR "&" BETWEEN THE ARTISTS */
 
 .artist > :not(:last-child):not(:first-child):before {
   content: ", ";
@@ -53,29 +57,22 @@ span {
   content: "";
 }
 
-a {
-  text-decoration: none;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+/* STYLING ALBUM-CARDS */
 
 .albumContainer {
-  align-items: center;
-  justify-content: center;
   display: inline-grid;
   width: 100vw;
-  gap: 10px;
-  border: solid red 2px;
+  gap: 5px;
+  margin: 0px;
   }
 
 .albumWrapper {
   width: 300px;
   height: 400px; 
   align-items: center; 
-  border: solid rgb(10, 155, 24) 2px;
+  align-self: center;
+  justify-self: center;
 }
 
 .albumIcons {
@@ -99,11 +96,9 @@ code {
   left: 0;
 }
 
-
 .albumImage:hover {
   background-color: black;
 }
-
 
 .icon-heart, .icon-play, .icon-dots {
   width: 3.5em;
@@ -116,28 +111,23 @@ code {
   transition: transform 0.5s;
 }
 
+
+/* TABLET */
 @media (min-width: 668px) and (max-width: 990px) {
 
-.albumContainer{
-  grid-template-columns: repeat(2, 1fr);
+  .albumContainer{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.albumWrapper{
-  margin-left: 10%;
-}
-}
-
-  @media (min-width: 990px) and (max-width: 1024px) {
+@media (min-width: 990px) and (max-width: 1024px) {
   
   .albumContainer{
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .albumWrapper{
-    margin-left: 5%;
-  }
-  }
-
+/* DESKTOP */
 
 @media (min-width: 1024px) {
 
@@ -145,9 +135,9 @@ code {
     font-size: 28px;
   }
 
-.albumContainer{
-  grid-template-columns: repeat(4, 1fr);
-}
+  .albumContainer{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
   

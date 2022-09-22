@@ -1,16 +1,14 @@
 import React from 'react';
 import data from './data.json';
 import Card from './components/Card'
-import Header from './components/Header'
-// import Artist from './components/Artist'
 
-console.log(data);
 // named export
 export const App = () => {
   return (
   <> 
-   <Header />
-    <section class="albumContainer">
+<section class="container">
+  <h1>New albums and singles</h1>
+    <div class="albumContainer">
       {data.albums.items.map ((item) => {
         return (
           <div class="albumWrapper">
@@ -20,8 +18,9 @@ export const App = () => {
             />
           </div>
         )
-  })}
-  </section> 
+    })}
+  </div>
+</section> 
   </>
   
   );
