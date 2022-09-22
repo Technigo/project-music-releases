@@ -1,15 +1,31 @@
 import React from 'react';
 import data from './data.json';
-import Header from './components/Header'
+import Album from './components/Album';
+import Artist from './components/Artist';
 
 console.log(data);
-// named export
-export const App = () => (
-  <>
-    {/* <Header text = "testing the props"/> */}
-    {data.albums.items.map((item) => <Header key={item.id} data={item} text="testing the props" />)}
-  </>
-)
 
-// default export
-// export default App
+export const App = () => {
+  return (
+    <>
+      {data.albums.items.map((album) => (
+        <div>
+
+          <Album
+            key={album.id}
+            name={album.name}
+            img={album.images[1].url} />
+
+          {album.artists.map((artist) => (
+            <Artist
+              key={artist.id}
+              name={artist.name} />
+          ))}
+
+        </div>
+
+      ))};
+    </>
+
+  );
+};
