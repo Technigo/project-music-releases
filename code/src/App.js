@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-import { ArtistName } from './components/Artistname'
+import { ArtistName } from './components/ArtistName'
 import { SongTitle } from './components/SongTitle'  //showing in html
 
 console.log(data);
