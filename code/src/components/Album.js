@@ -4,7 +4,12 @@ import Artist from './Artist'
 const Album = (props) => {
   return (
     <div className="Album">
-      <div className="Cover"><img src={props.img} alt="Album cover" /></div>
+      <div
+        className="Cover"
+        style={{
+          backgroundImage: `url("${props.img}")`
+        }}
+        alt="Album cover" />
       <p className="AlbumName">{props.name}</p>
 
       {props.artists.map((artist) => (

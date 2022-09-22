@@ -15,19 +15,18 @@ code {
 
 .App {
   border: 2px solid red;
-  padding: 10px;
   display: grid;
   grid-template-columns: 1fr;
 }
 
 .Album {
   border: 2px solid green;
-  padding: 10px;
+  width: 280px;
+  justify-self: center;
 }
 
 .ArtistName {
   border: 2px solid rgb(47, 100, 222);
-  padding: 10px;
   font-size: 14px;
   font-family: Helvetica;
   color: #a0a0a0;
@@ -35,7 +34,6 @@ code {
 
 .AlbumName {
   border: 2px solid rgb(137, 71, 184);
-  padding: 10px;
   font-size: 14px;
   font-family: Helvetica;
   color: #ffffff;
@@ -43,7 +41,8 @@ code {
 
 .Cover {
   border: 2px solid hotpink;
-  padding: 10px;
+  width: 280px;
+  height: 280px;
 }
 
 /*
