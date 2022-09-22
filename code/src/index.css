@@ -41,7 +41,15 @@ header {
   border: 2px solid rgb(47, 100, 222);
   font-size: 14px;
   font-family: Helvetica;
+}
+
+.ArtistName a {
+  text-decoration: none;
   color: #a0a0a0;
+}
+
+.ArtistName a:hover {
+  text-decoration: underline;
 }
 
 .AlbumName {
@@ -49,7 +57,13 @@ header {
   font-size: 14px;
   font-family: Helvetica;
   color: #ffffff;
+  font-weight: bold;
 }
+
+.AlbumName a:hover {
+  text-decoration: underline;
+}
+
 
 
 
