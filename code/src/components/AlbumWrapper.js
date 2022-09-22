@@ -1,6 +1,6 @@
-import React from "react";
-import MusicCard from "./MusicCard";
-import data from "../data.json";
+import React from 'react';
+import MusicCard from './MusicCard';
+import data from '../data.json';
 
 const AlbumWrapper = () => {
   console.log(data.albums.items);
@@ -8,8 +8,8 @@ const AlbumWrapper = () => {
     return <MusicCard key={record.id} recordData={record} />;
   });
   return (
-    <section className="header">
-      <h2>New albums and singles</h2>
+    <section className="outer-wrapper">
+      <h1>New albums & singles</h1>
       <div className="album-wrapper">{allAlbums}</div>
     </section>
   );

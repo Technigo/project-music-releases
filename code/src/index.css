@@ -6,18 +6,32 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-h2 {
-  color: white;
+
+
+.outer-wrapper {
+  width: 100vw;
+
 }
+h1 {
+  color: white;
+  justify-self: left;
+}
+/*.album-image {
+width: 18rem;
+height: 18rem;
+}*/
 .artist-name {
   font-size: 14px;
   font-family: Helvetica;
   color: #a0a0a0;
+  margin: 0;
 }
 .artist-name:hover {
   text-decoration: underline;
@@ -34,18 +48,19 @@ h2 {
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 .album-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
+  width: 19rem;
+  margin: 0 1rem;
 }
-a {
+.spotify-link {
   text-decoration: none;
-  color: #a0a0a0;
+  color: inherit;
   cursor: pointer;
 }
 .image-wrapper {
@@ -59,59 +74,54 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 .overlay:hover {
-  background: rgb(44, 54, 56, 0.6);
+  display: flex;
+  background: rgba(67, 80, 83, 0.6);
 }
 
 /* When .overlay is hovered, hange display for .icon-wrapper */
-.overlay:hover ~ .icon-wrapper {
-  display: flex;
-}
-
-.icon-wrapper:hover ~ .overlay {
-  background: rgb(44, 54, 56, 0.6);
-}
-
-/*DET HÄT FUNKAR INTE. OVERLAY LIGGER INTE KVAR NÄR MAN KOMMER IN PÅ ICONWRAPPER*/
-
-.icon-wrapper:hover {
+ .overlay:hover > .icon {
   visibility: visible;
-  background: rgb(44, 54, 56, 0.6);
 }
-.icon-wrapper {
-  width: 100%;
-  position: absolute;
-  justify-content: space-around;
-  display: none;
-  /* visibility: hidden;
-  top: 0;
-  height: 100%;
-  background: transparent; */
+.overlay:hover .play {
+  visibility: visible;
 }
 .icon {
   width: 40px;
   filter: invert(1);
-  opacity: 0.5;
+  visibility: hidden;
+  opacity: 0.6;
 }
 .play {
-  width: 70px;
+  width: 80px;
+}
+.play:hover {
+  width: 90px;
+  opacity: 1;
 }
 
-/* tablet */
+/* tablet*/
 @media (min-width: 668px) and (max-width: 1023px) {
   .album-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(2, 23%);
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
   }
+  /*måste fixa hur de ligger i tablet*/
 }
 
 /*desktop*/
 @media (min-width: 1024px) {
   .album-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
