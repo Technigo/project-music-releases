@@ -1,13 +1,13 @@
-import React from "react";
+/* import React from "react";
 
-/* export const Artist = (props) => {
-    {props.artists.name.map(artists => {
+export const Artist = ({artistName}) => {
+    {artistsName.map(artists => {
         return (
             <>
-             {artists.name}
+             {artists.}
             </>
         )
     })}
 
 }
- */
+  */

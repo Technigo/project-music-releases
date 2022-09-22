@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Practicing ReactJS Component, Props and mapping
 
 ## The problem
+Problem with mapping different Components inside App.js so we decided to use only one Component and map the Artists there, which worked in the end. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Had problem with the album hover which the icon div doesn't cover the size of the album. We in the end gave the album div a width and height, and allow the icon div to cover 100% when album is hovered. 
+
+Had problem with getting the "," and "&" to show up at the right place, in the end StackOver Flow had the solution for us (https://stackoverflow.com/c/technigo/questions/2239). 
 
 ## View it live
+https://week5-music-release.netlify.app/
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
