@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -12,4 +14,14 @@ code {
     monospace;
 }
 
+.header-title {
+  color:white;
+}
 
+.outer-wrapper {
+  display:grid
+}
+
+.inner-wrapper {
+  align-self:center;
+}
