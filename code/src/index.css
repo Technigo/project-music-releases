@@ -21,9 +21,9 @@ header {
 .App {
   border: 2px solid red;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 20px;
   justify-items: center;
+  grid-template-columns: 1fr;
 }
 
 .AlbumCard {
@@ -77,5 +77,9 @@ header {
 @media (min-width: 1025px) {
   .App {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .AlbumCard {
+    grid-column: span ;
   }
 }
