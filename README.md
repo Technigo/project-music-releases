@@ -8,7 +8,7 @@ Approached the problem by planning how to build the components in an organized m
 
 We worked in branches and pushed through the terminal.
 
-Projct constributors: Maria So and Kaja Wilbik
+Project constributors: Maria So and Kaja Wilbik
 
 ## View it live
 
