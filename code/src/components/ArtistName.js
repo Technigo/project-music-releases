@@ -1,25 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const ArtistName = (props) => {
-  console.log(props.artists)
+  console.log(props.artists);
   return (
-    <div>
+    <section className="artist-container">
       {props.artists.map((artist) => {
         return (
           <a
             target="_blank"
             rel="noopener noreferrer"
             href={artist.external_urls.spotify}
+            className="artist-link"
             key={artist.id}
-            className="artist-container">
-            <h3 className="artist-name">
-              {artist.name}
-            </h3>
+          >
+            <div className="artist-name">
+              <h3 key={artist.id}>{artist.name}</h3>
+            </div>
           </a>
         );
       })}
-    </div>
+    </section>
   );
-}
+};
 
-export default ArtistName
+export default ArtistName;

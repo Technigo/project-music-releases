@@ -1,10 +1,11 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -13,21 +14,32 @@ code {
 }
 
 /* Styling Header.js */
-
+.header-title {
+  color: white;
+  font-size: 20px;
+}
 /* Styling AlbumCard.js */
+.album-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.album-card {
+}
+
 .album-container {
   position: relative;
 }
 
 .cover-img {
   width: 100%;
-  opacity: 0.2;
 }
 
 .cover-img:hover {
   opacity: 1;
 }
-/*
+
 .hidden-icons {
   position: absolute;
   top: 0;
@@ -39,14 +51,42 @@ code {
   justify-content: center;
   align-items: center;
   transition: 0.4s ease;
-}*/
+}
 .hidden-icons:hover {
   opacity: 1;
   background: rgba(44, 44, 44, 0.7);
 }
 
 /* Styling AlbumName.js */
+.song-title {
+  color: white;
+}
 /* Styling ArtistName.js */
+.artist-name {
+  color: white;
+  text-decoration: none;
+}
+.artist-container {
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+/* put , between the artists if there are more than two artists  */
+.artist-link:not(:first-child, :last-child)::before {
+  color: white;
+  content: ", ";
+}
+/* put & between the two last artists or if there are two artists  */
+.artist-link:last-child::before {
+  content: " & ";
+  color: white;
+}
+/* when it's just one artist don't display anything before the artist name */
+.artist-link:only-child::before {
+  content: "";
+}
 
 /* Styling Icons.js */
 .icons-container {
@@ -56,25 +96,42 @@ code {
 }
 
 .icon {
-  width: 30px;
+  width: 50px;
 }
 
-.heart-icon {
-}
 .heart-icon:hover {
-  width: 100px;
-  height: 100px;
+  width: 40px;
 }
 
-.play-icon {
-}
 .play-icon:hover {
-  width: 100px;
-  height: 100px;
+  width: 50px;
 }
 .dots-icon {
+  width: 40px;
+  filter: brightness(0) invert(1);
 }
 .dots-icon:hover {
   width: 100px;
   height: 100px;
+}
+
+/* TABLET */
+@media (min-width: 667px) {
+  /* Styling AlbumCard.js */
+  .album-section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  /* Styling AlbumCard.js */
+  .album-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .header-title {
+    font-size: 23px;
+  }
 }
