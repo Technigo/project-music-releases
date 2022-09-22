@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-export const AlbumCover = () => {
+const AlbumCover = ({}) => {
   return (
     <div className="cover-icon-container">
       <div className="cover-container">
-        <img src={} alt="Album Cover"></img>
+        <img src={url} alt="Album Cover"></img>
       </div>
       <div className="icon-container">
         <img
@@ -26,3 +26,5 @@ export const AlbumCover = () => {
     </div>
   );
 };
+
+export default AlbumCover;
