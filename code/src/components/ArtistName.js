@@ -1,7 +1,7 @@
-import React from "react";
-
+// import React from "react";
+ 
 const ArtistName = (props) => {
-  //const artistArray = props; //.data.artists;
+  // const artistArray = props; //.data.artists;
   console.log(props);
   // return <p> {props.artists[0].name}</p>;
   if (props.artists.length > 1) {
@@ -13,6 +13,6 @@ const ArtistName = (props) => {
   } else {
     return props.artists[0].name;
   }
-};
-
-export default ArtistName;
+ };
+  
+ export default ArtistName;

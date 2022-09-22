@@ -1,5 +1,10 @@
-body {
+* {
   margin: 0;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -13,112 +18,138 @@ code {
     monospace;
 }
 
-h2 {
+.outer-wrapper {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 2px solid #a0a0a0;
+  margin-bottom: 1rem;
+}
+
+h1 {
   color: white;
-}
-
-.artist-name {
-  font-size: 14px;
-  font-family: Helvetica;
-  color: #a0a0a0;
-}
-.artist-name:hover {
-  text-decoration: underline;
-}
-
-.album-title {
-  font-size: 14px;
-  font-family: Helvetica;
-  color: #ffffff;
-}
-
-.album-title:hover {
-  text-decoration: underline;
-}
-
+  justify-self: left;
+ }
+ 
 .album-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
 }
+
 .album-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  width: 100%;
 }
-a {
-  text-decoration: none;
-  color: #a0a0a0;
-  cursor: pointer;
-}
+
 .image-wrapper {
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-/* .overlay {
+
+.album-image {
+  width: 100%;
+}
+.overlay {
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
-.overlay:hover {
-  background: rgb(44, 54, 56, 0.6);
-}
- */
-/* When .overlay is hovered, hange display for .icon-wrapper */
-/* .overlay:hover ~ .icon-wrapper {
-  display: flex;
-}
-
-.icon-wrapper:hover ~ .overlay {
-  background: rgb(44, 54, 56, 0.6);
-} 
-
-DET HÄT FUNKAR INTE. OVERLAY LIGGER INTE KVAR NÄR MAN KOMMER IN PÅ ICONWRAPPER*/
-
-.icon-wrapper:hover {
-  visibility: visible;
-  background: rgb(44, 54, 56, 0.6);
-}
-
-.icon-wrapper {
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: space-between;
-  background: transparent;
-}
-
 
 .icon {
   width: 40px;
   filter: invert(1);
-  opacity: 0.5;
+  visibility: hidden;
+  opacity: 0.8;
 }
+
 .play {
-  width: 70px;
+  width: 80px;
+}
+
+.play:hover {
+  width: 90px;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.overlay:hover {
+  display: flex;
+  background: rgba(67, 80, 83, 0.6);
+  transition: 0.3s;
+}
+
+/* When .overlay is hovered, change display for .icon */
+.overlay:hover > .icon {
+  visibility: visible;
+}
+
+.overlay:hover .play {
+  visibility: visible;
+  
+}
+
+.album-title {
+ font-size: 16px;
+ margin-top: 1rem;
+}
+
+.album-title:hover {
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+.artist-name {
+font-size: 16px;
+margin-top: 0.3rem;
+}
+
+.artist-name:hover {
+text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.album-link {
+  color:#ffffff
 }
 
 /* tablet */
-@media (min-width: 668px) and (max-width: 1023px) {
+@media (min-width: 668px)  {
   .album-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-self: center;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 /*desktop*/
 @media (min-width: 1024px) {
   .album-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);
   }
+  .album-container {
+    padding: 10px 0;
+  }
+
+
+
+
 }
