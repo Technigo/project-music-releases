@@ -3,7 +3,9 @@ import React from 'react';
 const Album  = (props) => {
   return (
   <>
-    <h1 className="albumTitle">{props.title}</h1>
+  <a href={props.href} target="_blank">
+    <h2 className="albumTitle">{props.title}</h2>
+    </a>
     </>
   );
 };

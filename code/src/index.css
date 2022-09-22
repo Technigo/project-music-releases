@@ -1,13 +1,131 @@
+*{
+  width: 400px;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #191414;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h1 {
+  color: white;
+  font-size: 20px;
+  padding-left: 10%;
+}
+
+h2 {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+
+h3{
+  color: darkgray;
+  font-size: 14px;
+  display: inline;
+}
+
+.albums-container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+}
+
+.image-container:hover .album-image {
+ opacity: 0.3;
+}
+
+.image-container:hover .icons-container {
+  opacity: 1;
+ }
+
+.album-image {
+  opacity:1;
+  display: block;
+  margin-top: 30px;
+}
+
+.album{
+  display: flex;
+}
+
+.album-title{
+ display: inline-flex;
+ margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  text-decoration: underline white;
+  color: white;
+}
+
+.artist{
+  color: darkgray;
+}
+
+.artist:hover {
+  color: white;
+}
+
+.icons-container{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  opacity:0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons {
+  width: 8%;
+  filter: invert(1);
+}
+
+.play-icon {
+  width: 12%;
+  transition: transform 0.6s;
+}
+
+.play-icon:hover {
+transform: scale(1.2);
+filter: invert(62%) sepia(24%) saturate(1340%) hue-rotate(88deg) brightness(87%) contrast(96%);
+}
+
+.heart-icon {
+  transition: transform 0.6s;
+}
+
+.heart-icon:hover {
+  transform: scale(1.1);
+  filter: invert(62%) sepia(24%) saturate(1340%) hue-rotate(88deg) brightness(87%) contrast(96%);
+}
+
+.dots-icon {
+  transition: transform 0.6s;
+}
+
+.dots-icon:hover {
+  transform: scale(1.1);
+  filter: invert(62%) sepia(24%) saturate(1340%) hue-rotate(88deg) brightness(87%) contrast(96%);
+}
+
