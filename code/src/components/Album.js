@@ -5,7 +5,6 @@ const Album = ({coverImage, albumUrl, albumName, /*artists*/}) => { //needs to b
 // console.log('artistsUrl', artistsUrl);
 // console.log('artists', artists);
 
-
 return (
 
   <div className="albumWrapper">

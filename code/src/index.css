@@ -13,16 +13,16 @@ code {
     monospace;
 }
 
-h1 {
-  color: #fff;
-  padding: 10px;
-  border: solid yellow;
-}
-
 main{
   width: 80%;
   margin: 0 auto;
   border: solid 2px blue;
+}
+
+h1 {
+  color: #fff;
+  padding: 18px;
+  border: solid green;
 }
 
 .albumsWrapper {

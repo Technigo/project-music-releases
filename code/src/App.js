@@ -37,7 +37,12 @@ return (
        return (
             <Artists
                 key={artist.id}
-                artists={artist.artists.map(Artistinfo)}
+                artistName={artist.artists.(Artistinfo.artistName)
+                artistUrl={artist.artists.(Artistinfo.artistUrl)
+                   
+                }
+                
+                }
                 />
               )
       })
