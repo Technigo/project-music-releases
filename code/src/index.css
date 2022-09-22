@@ -54,22 +54,28 @@ code {
   color: rgb(168, 166, 166);
 }
 
+.Artist a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.Artist a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
+
 .Artist:hover{
   text-decoration: underline;
 }
 
-.TitleBar {
-  text-align: left;
-}
-
-/* for mobile /
+/*  for mobile  */
 @media (max-width: 667px) {
   .Wrapper {
     grid-template-columns: 99vw;
   }
 }
 
-/ for desktop */
+/* for desktop */
 @media (min-width: 668px) and (max-width: 1024px) {
   .Wrapper {
     grid-template-columns: repeat(2, 49vw);
