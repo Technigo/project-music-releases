@@ -1,7 +1,6 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Music Release
 
-Created a music release platform in React. 
+Created a music release platform in React. Pair project.
 
 ## The problem
 
