@@ -8,13 +8,13 @@ export const Albums = props => {
         <>
             {props.data.map(album => {
                 const albumCover = album.images.find(image => image.height===300)
-                const artist = album.artists[0]
+                const artists = album.artists
                 const albumUrl = album.external_urls
                     return (
                         <div className="album-container" key={album.id}>
                             <AlbumCover image={albumCover}/>
                             <AlbumName url={albumUrl} name={album.name}/>
-                            <ArtistName artist={artist} />
+                            <ArtistName artists={artists} />
                         </div>
                     )
             })}
