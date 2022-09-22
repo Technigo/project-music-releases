@@ -13,7 +13,7 @@ export const Album = (props) => {
                     urlAlbumTitle={props.data.external_urls.spotify}/>
                     <AlbumArtist 
                     artistName={props.data.artists.map((item, index) => <a>{item.name}</a>)}
-                    urlArtistName={props.data.artists.map((item) => item.external_urls.spotify)}
+                    urlArtistName={props.data.artists.map((item, index) => item.external_urls.spotify)}
                      />
                     
             </div>

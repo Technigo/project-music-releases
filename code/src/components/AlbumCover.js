@@ -1,17 +1,17 @@
 import React from 'react';
-/* import { ReactComponent as DotsIcon } from './code/public/icons/dots.svg'
-import { ReactComponent as HeartIcon } from './public/icons/heart.svg'
-import { ReactComponent as PlayIcon } from './public/icons/play.svg' */
+import dotsIcon from './icons/dots.svg'
+import heartIcon from './icons/heart.svg'
+import playIcon from './icons/play.svg'
 
 export const AlbumCover = (props) => {
     return (
-        <div>
+        <div className='AlbumCoverContainer'>
           <img src={props.cover} className='AlbumCover' alt="album-cover" />
-          {/* <div className='IconContainer'> 
-          { <HeartIcon className="heartIcon" />
-          <PlayIcon className="playIcon" />
-          <DotsIcon className="dotsIcon" />
-          </div> } */}
+          <div className='IconContainer'> 
+          <img src={heartIcon} className='Icons' />
+          <img src={playIcon} className='Icons' />
+          <img src={dotsIcon} className='Icons' />
+          </div>
         </div >
       );
 }

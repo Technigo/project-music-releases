@@ -29,19 +29,61 @@ code {
 
 }
 
+.Headline {
+  color: whitesmoke;
+  border-bottom: 1px solid grey;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .Album {
   color: whitesmoke;
 }
 
+.AlbumCoverContainer{
+  position: relative;
+  display: flex;
+}
+
 .AlbumCover {
   width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+/*Makes the hover images white*/
+.Icons {
+  filter: invert(1);
+  height: 55px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.IconContainer {
+  position: absolute;
+  top: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 250px;
+}
+
+.AlbumCoverContainer:hover {
+  opacity: 0.5;
+}
+
+
+
 
 .AlbumTitle {
   font-size: 90%;
   max-width: 90%;
   max-height: 5%;
   overflow: hidden;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .AlbumTitle:hover {
@@ -52,6 +94,8 @@ code {
   font-size: 80%;
   font-weight: 600;
   color: rgb(168, 166, 166);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .Artist a:not(:first-of-type, :last-of-type)::before {
@@ -67,6 +111,8 @@ code {
 .Artist:hover{
   text-decoration: underline;
 }
+
+.link
 
 /*  for mobile  */
 @media (max-width: 667px) {
