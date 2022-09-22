@@ -8,6 +8,11 @@ export const App = () => {
 const albumArray = data.albums.items
     return (
       <>
+      <header>
+        <h1>New albums & singles</h1>
+      </header>
+      <section className="album-container">
+      
       {albumArray.map((album) => {
           return (
               <Album 
@@ -20,6 +25,7 @@ const albumArray = data.albums.items
              )
           })
         }
+      </section>
       </>
   )
 }

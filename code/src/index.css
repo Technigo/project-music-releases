@@ -1,13 +1,128 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(8, 8, 8, 0.877)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+/**code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "helvetica",
     monospace;
+}**/
+
+header {
+  margin: 10% 10% 0 10%;
+  border-bottom: 0.3px solid rgba(255, 255, 255, 0.247);
 }
+
+h1 {
+  font-size: 18px;
+  color: #ffff;
+}
+
+h2 {
+  font-size: 14px;
+  color: #ffff;
+  font-weight: bold;
+  line-height: 0;
+}
+
+h3 {
+  font-size: 14px;
+  color: #a0a0a0;
+  line-height: 0;
+}
+
+h2:hover, h3:hover {
+  text-decoration: underline;
+}
+
+.album-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 1%;
+  padding: 5% 10% 10% 10%;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: relative;
+}
+
+.icons {
+  filter: invert(1);
+}
+
+#heart, #dots{
+  width: 15%;
+}
+
+#play {
+  width: 35%;
+}
+
+#play:hover  {
+  width: 40%;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  gap: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  opacity: 0
+}
+
+.icons-container:hover {
+  opacity: 1
+}
+
+.album-image {
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+
+  header {
+    margin: 5% 10% 0 10%;
+  }
+
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 0.5%;
+    grid-column-gap: 3%;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  header {
+    margin: 5% 5% 0 5%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+  .album-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0.5%;
+    grid-column-gap: 3%;
+    padding: 2% 10% 10% 10%;
+  }
+
+}
+

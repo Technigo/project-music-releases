@@ -6,15 +6,23 @@ import AlbumImage from './AlbumImage'
 
 const Album = ({ title, hrefAlbum, artist, hrefArtist, image }) => {
    
+
     return (
-      <div className="album-info">
-        <div className="album-image">
-            <AlbumImage image={image}/>
-        </div>
+        <article className="album-card">
+            <div className="overlay">
+                <div className="icons-container">
+                    <img className="icons" id="heart" src="./icons/heart.svg" alt="heart"/>
+                    <img className="icons" id="play" src="./icons/play.svg" alt="play"/>
+                    <img className="icons" id="dots" src="./icons/dots.svg" alt="dots"/>
+                </div> 
+                <AlbumImage image={image}/>
+            </div>
+            
             <AlbumName title={title} hrefAlbum={hrefAlbum}/>
             <ArtistName artist={artist} hrefArtist={hrefArtist}/>  
-        </div>
+        </article>
     )
+    
 }
 
 export default Album
