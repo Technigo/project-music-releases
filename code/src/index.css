@@ -5,9 +5,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #222326;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.main-container {
+  background-color: #222326;
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+}
+
+.Wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 24vw);
+  width: 100vw;
+  margin: 2%;
+  align-self: center;
+
+}
+
+.Album {
+  color: whitesmoke;
+}
+
+.AlbumCover {
+  width: 90%;
+}
+
+.AlbumTitle {
+  font-size: 90%;
+  max-width: 90%;
+  max-height: 5%;
+  overflow: hidden;
+}
+
+.AlbumTitle:hover {
+  text-decoration: underline;
+}
+
+.Artist {
+  font-size: 80%;
+  font-weight: 600;
+  color: rgb(168, 166, 166);
+}
+
+.Artist:hover{
+  text-decoration: underline;
+}
+
+.TitleBar {
+  text-align: left;
+}
+
+/* for mobile /
+@media (max-width: 667px) {
+  .Wrapper {
+    grid-template-columns: 99vw;
+  }
+}
+
+/ for desktop */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .Wrapper {
+    grid-template-columns: repeat(2, 49vw);
+  }
 }
