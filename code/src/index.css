@@ -27,20 +27,15 @@ code {
   padding-bottom: 30px;
   font-family: "Helvetica Neue";
   border-bottom:1px #a0a0a0 solid;
-  padding-left: 30px;
-  width:1300px;
-  margin: auto;
 }
 
 .album-container{
   display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  justify-content:space-around;
   flex-wrap: wrap;
   padding-top:30px;
-  padding-left:30px; 
   margin:auto;
-  width:1300px;
+  padding-right: 1em;
 }
 
 .Album{
@@ -110,9 +105,43 @@ a {
 
 .artistName:hover {
   border-bottom: 1px solid #a0a0a0;
-  display: inline-block; 
+  display: inline-block;  
+  /* text-decoration: underline;
+  text-decoration-color: #a0a0a0; */
 }
 
 .AlbumName:hover {
    text-decoration: underline;
 }
+
+
+@media (max-width: 641px)  {
+   .main-container{
+    width: 100%px;
+   }
+
+    .album-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+    .header{
+      display: flex;
+      justify-content: center;
+    }
+  } 
+
+  @media (min-width:641px) and (max-width:1024px)  {
+    .main-container{
+      width: 100%;
+    }
+
+    .header{
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+

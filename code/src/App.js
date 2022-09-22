@@ -13,7 +13,7 @@ export const App = () => {
       
        {/* map out data.json so we can use "album" in Album.js*/ }
       <section className="main-container">
-      <div className='header'> <h1> TEST HEADER </h1> </div> 
+      <div className='header'> <h1> New Release </h1> </div> 
       
       <div className='album-container'>
         {data.albums.items.map((album) => {
