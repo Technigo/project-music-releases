@@ -11,3 +11,70 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* Styling Header.js */
+
+/* Styling AlbumCard.js */
+.album-container {
+  position: relative;
+}
+
+.cover-img {
+  width: 100%;
+  opacity: 0.2;
+}
+
+.cover-img:hover {
+  opacity: 1;
+}
+/*
+.hidden-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}*/
+.hidden-icons:hover {
+  opacity: 1;
+  background: rgba(44, 44, 44, 0.7);
+}
+
+/* Styling AlbumName.js */
+/* Styling ArtistName.js */
+
+/* Styling Icons.js */
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.heart-icon {
+}
+.heart-icon:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.play-icon {
+}
+.play-icon:hover {
+  width: 100px;
+  height: 100px;
+}
+.dots-icon {
+}
+.dots-icon:hover {
+  width: 100px;
+  height: 100px;
+}
