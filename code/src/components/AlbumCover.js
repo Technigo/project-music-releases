@@ -12,7 +12,7 @@ export const AlbumCover = (props) => {
               rel="noopener noreferrer"
             >
               <img 
-                className="cover" 
+                className="AlbumCover" 
                 src={props.image} 
                 alt={props.name}
               />
@@ -20,10 +20,3 @@ export const AlbumCover = (props) => {
     )
 }
 
-
-/* <a href={props.url} target="_blank" rel="noreferrer noopener"> </a>testiiiiiiii
-href={props.urlAlbum} 
-target= "_blank" 
-rel="noopener noreferrer
-
-</a>*/
