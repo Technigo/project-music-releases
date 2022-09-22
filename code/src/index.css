@@ -36,7 +36,7 @@ span {
   border: solid green 2px;
 }
 
-/* 
+
 .artist > :not(:last-child):not(:first-child):before {
   content: ", ";
   white-space: pre;
@@ -51,7 +51,7 @@ span {
 
 .artist > :only-child:before {
   content: "";
-} */
+}
 
 a {
   text-decoration: none;

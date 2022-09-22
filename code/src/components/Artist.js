@@ -1,42 +1,42 @@
-import React from 'react';
+// import React from 'react';
 
 
-const Artist = (props) => {
+// // const Artist = (props) => {
  
-return (   
-<div className="artist">
-<a
-    className="artistUrl"
-    href={props.ArtistLink}
-    target="_blank"
-    rel="noopener noreferrer"
->
-    <span>{props.ArtistName}</span>
-</a>
-</div>
+// // return (   
+// // {/* <div className="artist">
+// // <a
+// //     className="artistUrl"
+// //     href={props.ArtistLink}
+// //     target="_blank"
+// //     rel="noopener noreferrer"
+// // >
+// //     <p>{props.ArtistName}</p>
+// // </a>
+// // </div> */}
 
-)}
-
-
-/**/
+// // )}
 
 
-// const generateDelimiter = (index, length) => {
-//     if (index === length - 2) {
-//       return " & ";
-//     } else if (index < length - 2) {
-//       return ", ";
-//     }
-//     return;
-//   };
-
-//   return (
-//     <span>
-//  {props.ArtistName}
-//       {generateDelimiter(index, props.item.artists.length)}
-//     </span>
-//   )
-// }
+// /**/
 
 
-export default Artist;
+// // const generateDelimiter = (index, length) => {
+// //     if (index === length - 2) {
+// //       return " & ";
+// //     } else if (index < length - 2) {
+// //       return ", ";
+// //     }
+// //     return;
+// //   };
+
+// //   return (
+// //     <span>
+// //  {props.ArtistName}
+// //       {generateDelimiter(index, props.item.artists.length)}
+// //     </span>
+// //   )
+// // }
+
+
+// export default Artist;
