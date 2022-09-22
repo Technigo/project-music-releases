@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+header {
+  border: 2px solid yellow;
+  color: #ffffff;
+}
+
 .App {
   border: 2px solid red;
   display: grid;
