@@ -1,7 +1,6 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A pair project (by Joel Öhman & Maria Wellander) with the aim to create an responsive page with React components by rendering data from the Spotify API.
 
 ## The problem
 
