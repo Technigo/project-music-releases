@@ -14,20 +14,30 @@ body {
 }
 
 .Outline{
-  background-color: rgb(189, 189, 40);
+  background-color: rgb(24, 24, 22);
 }
 
 .Album-Wrapper{
-  background-color: grey;
+  background-color: #181818;
+  width: 100vw;
   padding-top: 40px;
   margin-right: 40px;
   border: solid 30px;
+
 }
 
+h1 {
+  color: white;
+}
 .Box{
-  display: flex;
+  display: inline-flex;
+  border: solid yellow;
+  color:  white;
+  margin: 25px;
+  padding: 15px;
+  width: 300px;
+  height: 300px;
   flex-direction: column;
-  border: solid;
 }
 
 .The-Album{
