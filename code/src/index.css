@@ -17,12 +17,19 @@ code {
   border: 2px solid red;
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
 }
 
 .Album {
   border: 2px solid green;
   width: 280px;
-  justify-self: center;
+}
+
+.Cover {
+  border: 2px solid hotpink;
+  width: 280px;
+  height: 280px;
 }
 
 .ArtistName {
@@ -39,11 +46,7 @@ code {
   color: #ffffff;
 }
 
-.Cover {
-  border: 2px solid hotpink;
-  width: 280px;
-  height: 280px;
-}
+
 
 /*
 

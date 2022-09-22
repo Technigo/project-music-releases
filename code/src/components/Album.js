@@ -1,5 +1,5 @@
 import React from 'react';
-import Artist from './Artist'
+import ArtistName from './ArtistName'
 
 const Album = (props) => {
   return (
@@ -13,7 +13,7 @@ const Album = (props) => {
       <p className="AlbumName">{props.name}</p>
 
       {props.artists.map((artist) => (
-        <Artist
+        <ArtistName
           key={artist.id}
           name={artist.name} />
       ))}

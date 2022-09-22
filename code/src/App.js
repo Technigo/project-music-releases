@@ -19,3 +19,5 @@ export const App = () => {
     </div>
   );
 };
+
+// @TODO add Header? "New albums & singles"
