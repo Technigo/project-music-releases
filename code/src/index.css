@@ -6,10 +6,10 @@ body {
   background-color: rgba(8, 8, 8, 0.877)
 }
 
-/**code {
+code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "helvetica",
     monospace;
-}**/
+}
 
 header {
   margin: 10% 10% 0 10%;
@@ -55,6 +55,18 @@ h2:hover, h3:hover {
   position: relative;
 }
 
+.overlay:hover .album-image {
+  opacity: 0.2
+}
+
+.overlay:hover .icons-container {
+  opacity: 1
+}
+
+.overlay:hover .icons-container #play:hover  {
+  width: 40%;
+}
+
 .icons {
   filter: invert(1);
 }
@@ -67,9 +79,7 @@ h2:hover, h3:hover {
   width: 35%;
 }
 
-#play:hover  {
-  width: 40%;
-}
+
 
 .icons-container {
   display: flex;
@@ -81,10 +91,6 @@ h2:hover, h3:hover {
   transform: translate(-50%, -50%);
   justify-content: center;
   opacity: 0
-}
-
-.icons-container:hover {
-  opacity: 1
 }
 
 .album-image {

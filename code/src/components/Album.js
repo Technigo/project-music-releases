@@ -5,8 +5,7 @@ import AlbumName from './AlbumName'
 import AlbumImage from './AlbumImage'
 
 const Album = ({ title, hrefAlbum, artist, hrefArtist, image }) => {
-   
-
+    
     return (
         <article className="album-card">
             <div className="overlay">
