@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const AlbumName = ({ title }) => {
+const AlbumName = ({ title, link }) => {
   // eslint-disable-next-line jsx-quotes
-  return <p className='song-title'>{title}</p>;
+  return (
+    <a target="_blank" rel="noopener noreferrer" href={link}>
+      <p className="song-title">{title}</p>
+    </a>
+  );
 };
 
-export default AlbumName
+export default AlbumName;

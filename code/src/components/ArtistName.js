@@ -1,20 +1,27 @@
-import React from "react";
+import React from 'react';
 
-const ArtistName = (props) => {
-  console.log(props.artists);
+const ArtistName = ({ artists }) => {
+  console.log(artists);
   return (
     <section className="artist-container">
-      {props.artists.map((artist) => {
+      {artists.map((artist, index) => {
         return (
           <a
             target="_blank"
             rel="noopener noreferrer"
             href={artist.external_urls.spotify}
             className="artist-link"
-            key={artist.id}
-          >
+            key={artist.id}>
             <div className="artist-name">
-              <h3 key={artist.id}>{artist.name}</h3>
+              <h3 key={artist.id}>
+                {artist.name}
+                {/* prettier-ignore */}
+                {artists.length - 2 === index
+                  ? ' & .'
+                  : index < artists.length - 2
+                  ? ', .'
+                  : ' '}
+              </h3>
             </div>
           </a>
         );

@@ -1,31 +1,33 @@
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-undef */
-import React from "react";
-import ArtistName from "./ArtistName";
-import AlbumName from "./AlbumName";
-import Icons from "./Icons";
+import React from 'react';
+import ArtistName from './ArtistName';
+import AlbumName from './AlbumName';
+import Icons from './Icons';
 
-const AlbumCard = ({ album }) => {
-  console.log('album:')
-  console.log(album)
+const AlbumCard = ({ albumInformation }) => {
+  // eslint-disable-next-line jsx-quotes
+  // 'jsx-closing-bracket-location': [1, 'after-props']
+
   return (
-
     <section className="album-card">
       <div className="album-container">
+        {/* prettier-ignore */}
         <img
-          src={album.images[1].url}
+          src={albumInformation.images[1].url}
           className="cover-img"
-          alt={album.name}
-        />
+          alt={albumInformation.name} />
         <div className="hidden-icons">
           <h2>
-            <Icons />
+            <Icons link={albumInformation.external_urls.spotify} />
           </h2>
         </div>
       </div>
-      
-      <AlbumName title={album.name} />
-      <ArtistName artists={album.artists} />
+      {/* prettier-ignore */}
+      <AlbumName
+        title={albumInformation.name}
+        link={albumInformation.external_urls.spotify} />
+      <ArtistName artists={albumInformation.artists} />
     </section>
   );
 };

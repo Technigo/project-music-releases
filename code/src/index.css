@@ -1,6 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,7 +9,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -69,24 +69,26 @@ code {
 .artist-container {
   letter-spacing: 0.04em;
   text-decoration: none;
+  display: flex;
 }
 a {
   text-decoration: none;
 }
-/* put , between the artists if there are more than two artists  */
+
+/* put , between the artists if there are more than two artists 
 .artist-link:not(:first-child, :last-child)::before {
   color: white;
   content: ", ";
 }
 /* put & between the two last artists or if there are two artists  */
-.artist-link:last-child::before {
+/* .artist-link:last-child::before {
   content: " & ";
   color: white;
-}
+} */
 /* when it's just one artist don't display anything before the artist name */
-.artist-link:only-child::before {
+/* .artist-link:only-child::before {
   content: "";
-}
+}  */
 
 /* Styling Icons.js */
 .icons-container {
