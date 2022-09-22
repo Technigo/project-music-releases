@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Artist = (props) => {
+const Artist = ({ name }) => {
   return (
-    <div className="Artist">Artist name: {props.name}</div>
+    <p className="Artist">
+      {name}
+    </p>
+
   );
 };
 
