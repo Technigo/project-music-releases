@@ -77,9 +77,24 @@ body {
   color: #a0a0a0;
   font-family: 'Helvetica';
   margin: 0;
-  padding: 0.5vh 0 1vh;
-  
+  padding: 0.5vh 0 1vh;  
 }
+
+.artist-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.artist-container:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+.artist-container:only-child::before {content: "";}
 
 /* LINK STYLING */
 
