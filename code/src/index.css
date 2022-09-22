@@ -34,6 +34,7 @@ h2 {
 
 .album-title:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .album-wrapper {
@@ -94,7 +95,6 @@ DET HÄT FUNKAR INTE. OVERLAY LIGGER INTE KVAR NÄR MAN KOMMER IN PÅ ICONWRAPPE
   justify-content: space-between;
   background: transparent;
 }
-
 
 .icon {
   width: 40px;
