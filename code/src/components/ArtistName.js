@@ -1,7 +1,7 @@
 import React from "react";
 
 const ArtistName = (props) => {
-  //const artistArray = props; //.data.artists;
+  // const artistArray = props; //.data.artists;
   console.log(props);
   // return <p> {props.artists[0].name}</p>;
   if (props.artists.length > 1) {

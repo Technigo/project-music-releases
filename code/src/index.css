@@ -7,16 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(27, 27, 27);
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 h2 {
   color: white;
 }
-
 .artist-name {
   font-size: 14px;
   font-family: Helvetica;
@@ -25,18 +22,15 @@ h2 {
 .artist-name:hover {
   text-decoration: underline;
 }
-
 .album-title {
   font-size: 14px;
   font-family: Helvetica;
   color: #ffffff;
 }
-
 .album-title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
 .album-wrapper {
   display: flex;
   flex-direction: column;
@@ -60,7 +54,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-/* .overlay {
+.overlay {
   position: absolute;
   top: 0;
   width: 100%;
@@ -69,33 +63,32 @@ a {
 .overlay:hover {
   background: rgb(44, 54, 56, 0.6);
 }
- */
+
 /* When .overlay is hovered, hange display for .icon-wrapper */
-/* .overlay:hover ~ .icon-wrapper {
+.overlay:hover ~ .icon-wrapper {
   display: flex;
 }
 
 .icon-wrapper:hover ~ .overlay {
   background: rgb(44, 54, 56, 0.6);
-} 
+}
 
-DET HÄT FUNKAR INTE. OVERLAY LIGGER INTE KVAR NÄR MAN KOMMER IN PÅ ICONWRAPPER*/
+/*DET HÄT FUNKAR INTE. OVERLAY LIGGER INTE KVAR NÄR MAN KOMMER IN PÅ ICONWRAPPER*/
 
 .icon-wrapper:hover {
   visibility: visible;
   background: rgb(44, 54, 56, 0.6);
 }
-
 .icon-wrapper {
-  position: absolute;
-  visibility: hidden;
-  top: 0;
   width: 100%;
+  position: absolute;
+  justify-content: space-around;
+  display: none;
+  /* visibility: hidden;
+  top: 0;
   height: 100%;
-  justify-content: space-between;
-  background: transparent;
+  background: transparent; */
 }
-
 .icon {
   width: 40px;
   filter: invert(1);
