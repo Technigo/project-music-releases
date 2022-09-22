@@ -12,9 +12,9 @@ const MusicCard = (props) => {
         <div className="image-wrapper">
           <div className="overlay"></div>
           <div className="icon-wrapper">
-            <img className="play" src=".../public/icons/play.svg" />
-            <img className="heart" src=".../public/icons/heart.svg" />
-            <img className="dots" src=".../public/icons/dots.svg" />
+            <img className="icon heart" src="../../icons/heart.svg" />
+            <img className="icon play" src="../../icons/play.svg" />
+            <img className="icon dots" src="../../icons/dots.svg" />
           </div>
           <img className="album-image" src={props.recordData.images[1].url} />
         </div>
