@@ -26,15 +26,6 @@ rel="noopener noreferrer"
 
 
 
-// span className
-// <a href={props.ArtistLink} >
-// {props.ArtistName}
-// </a>
-
-
-/* <span className="artistNameLink" key={item.id}>
-<a href={props.ArtistLink}>{props.ArtistName}</a>
-</span> */
 
 
     // /* return (
