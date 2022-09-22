@@ -1,32 +1,35 @@
 import React from "react";
 // import Album Cover
-import {AlbumCover} from "./AlbumCover";
-// import Album Tite
+import { AlbumCover } from "./AlbumCover";
+import { AlbumArtist } from "./AlbumArtist";
+
 // import Album Artist
- 
 
-//const AlbumCard = (props)
+//export const AlbumCard = (props)
 
-export const AlbumCard = () => {
+export const AlbumCard = (props) => {
   return (
     <section className="card-container">
-        <AlbumCover/>
+      {props.coverImg.map((CoverImg) => (
+        <AlbumCover
+          //  Key ?
+          url={CoverImg[1].url}
+        />
+      ))}
 
-        <div className="album-artist-container">
-            {/* {people.map((person/array) => {
-                return <Person
-                key={person.name}
-                title={peson.title}/>)
-            })} */}
-        </div>
+      <a className="album-title" href={props.albumUrl} target="_blank" rel="#">
+        {props.title}
+      </a>
 
-{/* /* components
-                AlbumCover
-                    AlbumCard hover
-                AlbumTitle
-                    AlbumTitle Hover
-                ArtistName (separated with ,)
-                    AlbumName Hover */ */}
+      <div className="album-artist-container">
+        {props.artist.map((artist) => (
+          <AlbumArtist
+            key={artist.id}
+            artistName={artist.name}
+            artistUrl={artist.external_urls.spotify}
+          />
+        ))}
+      </div>
     </section>
   );
 };

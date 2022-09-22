@@ -4,7 +4,7 @@ export const AlbumCover = () => {
   return (
     <div className="cover-icon-container">
       <div className="cover-container">
-        <img src="#" alt="Album Cover"></img>
+        <img src={} alt="Album Cover"></img>
       </div>
       <div className="icon-container">
         <img

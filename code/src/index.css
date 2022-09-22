@@ -7,7 +7,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+h1 {
+  font-family: Helvetica;
+  color: #fff;
+  font-size: 20px;
+}
+
+a {
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.album-title {
+  color: #fff;
 }
