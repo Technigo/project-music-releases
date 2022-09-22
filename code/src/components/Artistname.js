@@ -3,11 +3,6 @@ import React from 'react';
 
 const Artistname = (props) => {
      /* console.log(props.name) */ 
-    /* return (
-        <div>
-        <p>{props.artists[0].name}</p>
-        <p>{props.artists.href}</p>
-        </div> */
         if (props.artists.length === 1) {
             return (
               <a

@@ -4,6 +4,8 @@ import Header from './components/Header'
 import Cover from './components/Cover'
 import Albumname from './components/Albumname';
 import Artistname from './components/Artistname';
+import "./index.css";
+
 console.log(data);
 
 export const App = () => {
@@ -12,11 +14,14 @@ export const App = () => {
       <div class="Header">
        <Header /> 
       </div>
+      <div className='music-container'>
       {data.albums.items.map (item => {
-       return <><Cover key={item.id} data={item} img={item.images} /> 
-                <Albumname album={item.name} />
-                <Artistname artists={item.artists} artistUrl={item.artists}/></>
+       return <>
+        <div className='eachCover'><Cover key={item.id} data={item} img={item.images} /> </div>
+        <div><Albumname album={item.name} /></div>
+        <div><Artistname artists={item.artists} artistUrl={item.artists}/></div></>
       })}
+      </div>
      Hello Tika and Viktor
     </div>
   );

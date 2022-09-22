@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* .albumIcons {
+  display: none;
+}
+
+.albumIcons:hover {
+  display: 
+}
+
+ */
+
+
+.eachCover{
+  border: 2px solid turquoise;
+}
+
+/* .albumIcons{
+  position: absolute;
+  opacity: 0.5;
+}
+
+.cover-image{
+  position: absolute;
+} */
