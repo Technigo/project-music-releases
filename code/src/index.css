@@ -12,12 +12,28 @@ code {
     monospace;
 }
 
+.App {
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.Album {
+  border: 2px solid green;
+  padding: 10px;
+}
+
+.Artist {
+  border: 2px solid blue;
+  padding: 10px;
+}
+
 
 /*
 
+@TODO add this styling: 
 - Album title - 14px Helvetica #ffffff
 - Artist name - 14px Helvetica #a0a0a0
-
-also see hover effect in design file
+- also see hover effect in design file
+- media queries?
 
 */

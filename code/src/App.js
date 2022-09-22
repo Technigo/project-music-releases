@@ -7,10 +7,9 @@ console.log(data);
 
 export const App = () => {
   return (
-    <>
+    <div className="App">
       {data.albums.items.map((album) => (
-        <div>
-
+        <>
           <Album
             key={album.id}
             name={album.name}
@@ -22,10 +21,8 @@ export const App = () => {
               name={artist.name} />
           ))}
 
-        </div>
-
+        </>
       ))};
-    </>
-
+    </div>
   );
 };
