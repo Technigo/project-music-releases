@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -28,6 +29,7 @@ main{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: solid 3px red;
+
 }
 
 .albumWrapper {
@@ -35,7 +37,13 @@ main{
 }
   
 .albumName {
-  color: black;
+  color: white;
+  font-size: 14px;
+}
+
+.albumName a {
+  text-decoration: none;
+  color: white;
 }
 
 .imageWrapper {
@@ -45,4 +53,44 @@ main{
 
 .albumImage {
   width: 100%;
+}
+
+.artistWrapper{
+  width: 100%;
+  color: white;
+}
+
+
+.icon-image-wrapper {
+  width: 100%;
+  position: absolute;
+
+}
+
+.icon {
+  width: 30px;
+}
+
+.playIcon {
+  width: 70px;
+  opacity: 0.6;
+}
+
+.play-icon:hover {
+  opacity: 1;
+  width: 75px;
+  transition: ease-in-out 0.2s;
+}
+
+
+@media screen and (min-width: 768px) {
+  .albumsWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .albumsWrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
