@@ -11,15 +11,12 @@ const AlbumCard = (props) => {
         }}
         alt="Album cover" />
       <p className="AlbumName">{props.name}</p>
-
       {props.artists.map((artist) => (
         <ArtistName
           key={artist.id}
           name={artist.name} />
       ))}
-
     </div>
-
   );
 };
 

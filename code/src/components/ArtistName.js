@@ -5,7 +5,6 @@ const ArtistName = ({ name }) => {
     <p className="ArtistName">
       {name}
     </p>
-
   );
 };
 
