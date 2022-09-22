@@ -1,9 +1,9 @@
 import React from 'react';
 import ArtistName from './ArtistName'
 
-const Album = (props) => {
+const AlbumCard = (props) => {
   return (
-    <div className="Album">
+    <div className="AlbumCard">
       <div
         className="Cover"
         style={{
@@ -23,4 +23,6 @@ const Album = (props) => {
   );
 };
 
-export default (Album);
+export default (AlbumCard);
+
+// @ Add Album and Artist links

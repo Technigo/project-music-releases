@@ -1,6 +1,6 @@
 import React from 'react';
 import data from './data.json';
-import Album from './components/Album';
+import AlbumCard from './components/AlbumCard';
 
 console.log(data);
 
@@ -9,7 +9,7 @@ export const App = () => {
     <div className="App">
       {data.albums.items.map((album) => (
 
-        <Album
+        <AlbumCard
           key={album.id}
           name={album.name}
           img={album.images[1].url}

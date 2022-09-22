@@ -21,7 +21,7 @@ code {
   justify-items: center;
 }
 
-.Album {
+.AlbumCard {
   border: 2px solid green;
   width: 280px;
 }
@@ -51,7 +51,7 @@ code {
 /*
 
 @TODO add this styling:
-- also see hover effect in design file
+- hover effects to AlbumCover, see design file
 
 */
 

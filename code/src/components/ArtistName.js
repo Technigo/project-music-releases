@@ -10,3 +10,5 @@ const ArtistName = ({ name }) => {
 };
 
 export default (ArtistName);
+
+// @ TODO add “&” if two artist names, and “,” if more than two
