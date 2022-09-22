@@ -12,23 +12,23 @@ export const App = () => {
   return (
     <>
       <header><Header /></header>
-      {data.albums.items.map((album) => (
-        <div className="AlbumCard">
-
-          <AlbumCard
-            key={album.id}
-            name={album.name}
-            img={album.images[1].url}
-            url={album.external_urls.spotify} />
-          {album.artists.map((artist) => (
-            <ArtistName
-              key={artist.id}
-              name={artist.name}
-              url={artist.external_urls.spotify} />
-          ))}
-        </div>
-
-      ))};
+      <div className="App">
+        {data.albums.items.map((album) => (
+          <div className="AlbumCard">
+            <AlbumCard
+              key={album.id}
+              name={album.name}
+              img={album.images[1].url}
+              url={album.external_urls.spotify} />
+            {album.artists.map((artist) => (
+              <ArtistName
+                key={artist.id}
+                name={artist.name}
+                url={artist.external_urls.spotify} />
+            ))}
+          </div>
+        ))};
+      </div>
     </>
 
   );
