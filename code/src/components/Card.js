@@ -30,12 +30,14 @@ const Card = (props) => {
 </div>
 
 
-<AlbumName AlbumName = {props.data.name}/>
-<AlbumName AlbumLink = {props.data.external_urls.spotify}/>
 
+<AlbumName AlbumLink = {props.data.external_urls.spotify} AlbumName = {props.data.name}/>
+{
+  props.data.artists.map(artist => {
+    return(<Artist ArtistLink = {artist.external_urls.spotify} ArtistName = {artist.name} key = {artist.id}/>)
+  })
+}
 
-<Artist ArtistName = {props.data.artists[0].name}/>
-<Artist ArtistLink = {props.data.artists[0].external_urls.spotify}/>
 
 </div>
 </>

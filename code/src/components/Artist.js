@@ -14,13 +14,13 @@ return (
  </h3>  */
 
 <a
-className="artistUrl"
-href={props.ArtistLink}
-target="_blank"
-rel="noopener noreferrer"
+    className="artistUrl"
+    href={props.ArtistLink}
+    target="_blank"
+    rel="noopener noreferrer"
 >
-{' '}
-<h3>{props.ArtistName}</h3>
+    {' '}
+    <h3>{props.ArtistName}</h3>
 </a>
 
 
