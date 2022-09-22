@@ -26,23 +26,7 @@ return (
                 coverImage={album.images[0].url}
                 albumName={album.name}
                 albumUrl={album.external_urls.spotify}
-                />
-              )
-      })
-    }
-  </div>
-   
-   <div className="artistWrapper">
-    {rData.albums.items.map((artist) => {
-       return (
-            <Artists
-                key={artist.id}
-                artistName={artist.artists.(Artistinfo.artistName)
-                artistUrl={artist.artists.(Artistinfo.artistUrl)
-                   
-                }
-                
-                }
+                albumArtists={album.artists}
                 />
               )
       })
@@ -51,11 +35,5 @@ return (
   </main>
   </>
 )}
-
-
-
-
-
-
 
 

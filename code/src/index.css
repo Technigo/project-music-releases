@@ -22,18 +22,20 @@ main{
 h1 {
   color: #fff;
   padding: 18px;
-  border: solid green;
+  font-size: 24px;
 }
 
 .albumsWrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
+  grid-gap: 1.5rem;
   border: solid 3px red;
 
 }
 
 .albumWrapper {
-  border: solid 3px green; 
+  border: solid 3px purple;
+  padding: 0.8rem;
 }
   
 .albumName {
@@ -45,6 +47,17 @@ h1 {
   text-decoration: none;
   color: white;
 }
+
+.artistName {
+  color: white;
+  font-size: 14px;
+}
+
+.artistName a {
+  text-decoration: none;
+  color: white;
+}
+
 
 .imageWrapper {
   width: 100%;
@@ -58,13 +71,12 @@ h1 {
 .artistWrapper{
   width: 100%;
   color: white;
-}
+} 
 
 
 .icon-image-wrapper {
+  display: flex;
   width: 100%;
-  position: absolute;
-
 }
 
 .icon {
