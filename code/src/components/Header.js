@@ -1,16 +1,12 @@
 import React from 'react';
-import Subheader from './Subheader';
 
-const Header = (props) => {
+
+export const Header = (props) => {
   console.log(props.data);
   return (
-    <>
-      <h2>
-        {props.data.name}
-      </h2>
-      <Subheader totalTracks={props.data.total_tracks} />
-    </>
+   
+      <h2>New albums & singles</h2>
   );
 }
 
-export default Header;
+
