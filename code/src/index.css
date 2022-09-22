@@ -23,10 +23,19 @@ code {
 }
 
 .Artist {
-  border: 2px solid blue;
+  border: 2px solid rgb(47, 100, 222);
   padding: 10px;
 }
 
+.AlbumName {
+  border: 2px solid rgb(137, 71, 184);
+  padding: 10px;
+}
+
+.Cover {
+  border: 2px solid hotpink;
+  padding: 10px;
+}
 
 /*
 
