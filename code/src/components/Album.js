@@ -29,8 +29,7 @@ const Album = ({ coverImage, albumUrl, albumName, albumArtists }) => {
       </div>
 
       <div class="artistWrapper">
-        <Artists 
-        artist = {albumArtists}/>
+        <Artists artist={albumArtists}/>
       </div>
     </div>
   );

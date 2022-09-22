@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-const Artists= ({artist}) => {
+const Artists = ({artist}) => {
  return ( //return och div längst ut
   <div>
     {artist.map((artist) => {

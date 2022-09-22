@@ -2,7 +2,6 @@ import React from "react";
 import rData from "data.json"; 
 import Header from "components/Header.js";
 import Album from "components/Album.js";
-import Artists from "components/Artists.js";
 
 console.log('Appdata', rData.albums.items);
 
