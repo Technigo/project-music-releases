@@ -1,12 +1,30 @@
 # Music Releases
 Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Build a page that shows new album and artist releases using React! components and props.
 
 ## The problem
+Plan:
+1. Sketch out the overall page (parents and children)
+2. Decide on what components we want to use
+3. Start building the basic infrastructure and reviewing json
+4. Add elements such as links, commas etc
+6. Remove components not used
+5. Review and clean up code
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If we had more time our code would be more consistent in structure (what goes where), improvements for next time!
+
+Final project:
+✓ Our app have components
+✓ We're displaying dfollowing for each album:
+- album cover image
+- album name
+- the name of each artist involved with a comma between
+
+✓ We played around with hover effects
+✓ When you click on the album, it's linked to the album's external url in the data
+✓ When you click on an artist, it's linked to the artist's external url in the data
+✓ Our page is responsive
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://celadon-brioche-831b80.netlify.app/
