@@ -10,8 +10,14 @@ const Album = (props) => {
     <>
       <div className="album-card">
         <Images albumImage={props.data.images[1].url} />
-        <AlbumTitle albumTitle={props.data.name} />
-        <Artist artistName={props.data.artists[0].name} />
+        <AlbumTitle
+          albumTitle={props.data.name}
+          albumLink={props.data.external_urls.spotify}
+        />
+        <Artist
+          artistName={props.data.artists[0].name}
+          artistLink={props.data.artists[0].external_urls.spotify}
+        />
       </div>
     </>
   );

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Header = () => {
-  return <h1 className="header">New albums and singles</h1>;
+  return (
+    <header>
+      <h1 className="header-title">New albums & singles</h1>
+    </header>
+  );
 };
 
 export default Header;
