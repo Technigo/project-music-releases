@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const Artistname = (props) => {
      /* console.log(props.name) */ 
         if (props.artists.length === 1) {
