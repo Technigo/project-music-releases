@@ -101,25 +101,22 @@ a {
   width: 40px;
   opacity: 0.4;
 }
-.heart-icon:hover {
-  width: 50px;
-  opacity: 1;
-}
+
 .play-icon {
   width: 60px;
   opacity: 0.4;
 }
-.play-icon:hover {
-  width: 70px;
-  opacity: 1;
-}
+
 .dots-icon {
   width: 30px;
   opacity: 0.4;
   filter: brightness(0) invert(1); /* To invert the color of the black dots in the svg image */
 }
+
+.heart-icon:hover,
+.play-icon:hover,
 .dots-icon:hover {
-  width: 40px;
+  transform: scale(1.2);
   opacity: 1;
 }
 /* Styling footer */
