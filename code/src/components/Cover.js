@@ -9,26 +9,26 @@ const Cover = (props) => {
     console.log(props.img)
     return (
        <>
+      <div className='cover-card'>
         <div className="albumIcons">
             <img
             src="../icons/heart.svg"
-            className="icon heart"
+            className="heart"
             alt="heart icon"
             />
-            <img
+            <a href='https://open.spotify.com/search' target='_blank'><img
             src="../icons/play.svg"
-            className="icon play"
+            className="play"
             alt="play icon"
-            />
+            /></a>
             <img
             src="../icons/dots.svg"
-            className="icon dots"
+            className="dots"
             alt="more icon"
             />
         </div>
-            <div className='cover-image'>
-                <img src={props.img[1].url} className="cardImg" />
-            </div>  
+            <img src={props.img[1].url} /> 
+      </div>
          </>    
 )}
 

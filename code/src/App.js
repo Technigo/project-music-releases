@@ -10,19 +10,24 @@ console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      <div class="Header">
+    <div className='all-container'>
+      <div className="Header">
        <Header /> 
       </div>
       <div className='music-container'>
       {data.albums.items.map (item => {
        return <>
-        <div className='eachCover'><Cover key={item.id} data={item} img={item.images} /> </div>
-        <div><Albumname album={item.name} /></div>
-        <div><Artistname artists={item.artists} artistUrl={item.artists}/></div></>
+        <div className='theAlbums'>
+          <Cover key={item.id} data={item} img={item.images}/> 
+          <Albumname Albumname={item.name} urlAlbumname={item.name}/>
+          <Artistname artists={item.artists} artistUrl={item.artists}/>
+        </div>
+        </>
       })}
       </div>
-     Hello Tika and Viktor
+      <div className='Footer'>
+     <h3>Project Music Release for Technigo by Viktor & Kartika</h3>
+     </div>
     </div>
   );
 }

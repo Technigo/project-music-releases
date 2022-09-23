@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: #ffffff;
 }
 
 code {
@@ -12,26 +14,145 @@ code {
     monospace;
 }
 
-/* .albumIcons {
+/* For the whole music albums */
+.music-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: auto 0;
+  padding: 2%;
+}
+
+.theAlbums {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.Header h1{
+  color: #fff;
+  padding-left: 4%;
+}
+
+
+/* For Artist names */
+.artists {
+  font-size: 14px;
+  color:  #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.artists:hover {
+  color: #cdcbcb;
+  text-decoration: underline;
+}
+
+/* For Albums */
+.linkAlbumname{
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.linkAlbumname:hover{
+  color: #cdcbcb;
+  text-decoration: underline;
+}
+
+/* For Icons, overlay, and hover effects */
+.albumIcons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.5s ease;
   display: none;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
 }
 
-.albumIcons:hover {
-  display: 
+.heart {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
 }
 
- */
-
-
-.eachCover{
-  border: 2px solid turquoise;
+.heart:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
 }
 
-/* .albumIcons{
-  position: absolute;
-  opacity: 0.5;
+.play {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
 }
 
-.cover-image{
-  position: absolute;
-} */
+.play:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.dots {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
+}
+
+.dots:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.cover-card {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+}
+
+.cover-card:hover .albumIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  opacity: 1;
+  border: 3px solid #a0a0a0;
+}
+
+.Footer h3{
+  font-size: 14px;
+  background-color: #cdcbcb4b;
+  padding: 2%;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/* Media Queries */
+/* For Tablet*/
+@media (min-width: 668px){
+  .header{
+    font-size: 30px;
+  }
+
+  .music-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+/* For Desktop*/
+@media (min-width: 1024px){
+  .music-container {
+    grid-template-columns: repeat(4, 1fr); 
+  }
+}
