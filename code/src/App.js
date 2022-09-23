@@ -3,7 +3,7 @@ import rData from "data.json";
 import Header from "components/Header.js";
 import Album from "components/Album.js";
 
-console.log('Appdata', rData.albums.items);
+// console.log('Appdata', rData.albums.items);
 
 const Artistinfo = (artistInfo) => ({
   artistName: artistInfo.name,
@@ -26,11 +26,13 @@ return (
                 albumName={album.name}
                 albumUrl={album.external_urls.spotify}
                 albumArtists={album.artists}
+
                 />
               )
       })
     }
   </div>
+  
   </main>
   </>
 )}
