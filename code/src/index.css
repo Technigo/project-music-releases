@@ -5,7 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  width: auto;
+background-color: black;
 }
 
 code {
@@ -14,7 +15,6 @@ code {
 }
 
 main{
-  width: 80%;
   margin: 0 auto;
   border: solid 2px blue;
 }
@@ -28,39 +28,14 @@ h1 {
 .albumsWrapper {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1.5rem;
-  border: solid 3px red;
-
+  padding: 10px;
 }
 
-.albumWrapper {
-  border: solid 3px purple;
-  padding: 0.8rem;
-}
-  
-.albumName {
-  color: white;
-  font-size: 14px;
-}
-
-.albumName a {
-  text-decoration: none;
-  color: white;
-}
-
-.artistName {
-  color: white;
-  font-size: 14px;
-}
-
-.artistName a {
-  text-decoration: none;
-  color: white;
-}
 
 
 .imageWrapper {
-  width: 100%;
+  position: relative;
+  width: 300px;
   border: solid 3px pink;
 }
 
@@ -68,32 +43,53 @@ h1 {
   width: 100%;
 }
 
-.artistWrapper{
-  width: 100%;
+/* TEXT Name & Artist */
+.albumName {
+  font-size: 18px;
   color: white;
-} 
+}
 
+.artistName {
+  font-size: 18px;
+  color: white;
+}
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.albumName:hover {
+  text-decoration: underline;
+}
+
+/* Icons */
 .icon-image-wrapper {
-  display: flex;
   width: 100%;
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.644);
 }
 
 .icon {
   width: 30px;
+  filter: invert(100%);
 }
 
 .playIcon {
   width: 70px;
-  opacity: 0.6;
+  filter: invert(100%);
 }
-
-.play-icon:hover {
-  opacity: 1;
-  width: 75px;
-  transition: ease-in-out 0.2s;
-}
-
 
 @media screen and (min-width: 768px) {
   .albumsWrapper {

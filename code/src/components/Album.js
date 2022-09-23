@@ -7,31 +7,32 @@ const Album = ({ coverImage, albumUrl, albumName, albumArtists }) => {
   console.log("albumArtists", albumArtists);
 
   return (
-    <div className="albumWrapper">
+    <div className="albumsWrapper">
+      {/* albumwrapper from APP.JS */}
       <div className="imageWrapper">
-        <img className="albumImage" src={coverImage} alt="album cover" />
-
         <div className="icon-image-wrapper">
+        <img className="albumImage" src={coverImage} alt="album cover" />
           <div className="icon-wrapper">
-            <img className="heartIcon icon" src="./icons/heart.svg" />
-            <div className="playWrapper">
-              <a href={albumUrl}>
-                <img className="playIcon icon" src="./icons/play.svg" />
-              </a>
-            </div>
-
-            <img className="dotsIcon icon" src="./icons/dots.svg" />
+            <img className="icon" src="./icons/heart.svg" />
+              <div className="playWrapper">
+                <a href={albumUrl}>
+                <img className="playIcon" src="./icons/play.svg" />
+                </a>
+              </div>
+            <img className="icon" src="./icons/dots.svg" />
           </div>
-        </div>
+          </div>
+          
         <h2 className="albumName">
           <a href={albumUrl}>{albumName}</a>
         </h2>
-      </div>
 
       <div class="artistWrapper">
         <Artists artist={albumArtists}/>
       </div>
     </div>
+    </div>
+      
   );
 };
 
