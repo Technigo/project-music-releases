@@ -46,8 +46,6 @@ h1 {
 .album-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 

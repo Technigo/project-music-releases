@@ -3,7 +3,6 @@ import ArtistName from './ArtistName';
 
 const MusicCard = (props) => {
   console.log(props.recordData.artists);
-  // console.log(`bildadress ${props.data.images[1].url}`);
 
   return (
     <section className="album-container">
@@ -29,6 +28,7 @@ const MusicCard = (props) => {
           src={props.recordData.images[0].url}
           alt="album-cover" />
       </div>
+
       <h2 className="album-title">
         <a className="spotify-link album-link" href={props.recordData.external_urls.spotify}>
           {props.recordData.name}
