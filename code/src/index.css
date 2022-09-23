@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: pink;
+  background-color: black;
 }
 
 code {
@@ -33,12 +33,56 @@ a {
 }
 
 .album-child {
+  position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
 
 .album-child img{
   width: 100%;
+}
+
+.album-child img:hover{
+  opacity:50%;
+}
+
+.artist-name {
+  display: block;
+}
+
+.icon-play {
+  height: 60px;
+  width: 60px;
+}
+
+.icon-dots, .icon-heart {
+  height: 30px;
+  width: 30px;
+  /* display: none; */
+} 
+
+.icon-play:hover {
+  height: 80px;
+  width: 80px;
+  transition: .3s ease;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  /* transition: .3s ease; */
+  background-color: transparent;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.overlay:hover {
+  opacity: 1;
 }
 
 h1 {
@@ -57,24 +101,26 @@ h3 {
   font-size: 14px;
 }
 
+/* Not working properly*/ 
 .artist-name {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
 
+/* Not working properly*/ 
 .artist-container {
   justify-content: flex-start;
 }
 
 .artist-name a:not(:first-of-type, :last-of-type)::before {
-  color: #a0a0a0;
+  color: red;
   content: ", ";
 }
 
 .artist-name a:nth-last-of-type(2)::after {
   content: " & ";
-  color: #a0a0a0;
+  color: red;
 }
 
 /* Tablet  */
