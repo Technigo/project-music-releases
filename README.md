@@ -1,7 +1,6 @@
-# Music Releases
-Replace this readme with your own information about your project.
+# Music Release
 
-Created a music release platform in React. 
+Created a music release platform in React. Pair project.
 
 ## The problem
 
@@ -9,7 +8,7 @@ Approached the problem by planning how to build the components in an organized m
 
 We worked in branches and pushed through the terminal.
 
-Projct constributors: Maria So and Kaja Wilbik
+Project constributors: Maria So and Kaja Wilbik
 
 ## View it live
 

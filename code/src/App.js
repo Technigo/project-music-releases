@@ -1,8 +1,9 @@
 import React from 'react';
-import data from './data.json';
-import { ArtistName } from './components/Artistname'
-import { SongTitle } from './components/SongTitle'  //showing in html
-import { AlbumCover }  from './components/AlbumCover'
+import data from './data.json'
+import { ArtistName } from './components/ArtistName';
+import { SongTitle } from './components/SongTitle';  //showing in html
+import { AlbumCover } from './components/AlbumCover';
+//import { TheAlbum } from './components/TheAlbum'
 
 console.log(data);
 
@@ -15,7 +16,7 @@ console.log(data);
                     </div>*/ 
 export const App = () => {
   return(
-    <div className='Outline'>     
+    <div className='Outline'> 
         <div className='Album-Wrapper'>
             <section className="The-Album">         
                 <div className='Album-Picture'>

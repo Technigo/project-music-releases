@@ -13,6 +13,13 @@ export const ArtistName = (props) => {      // this is the song name
         <AlbumCover coverpic = {props.coverpic}/>
         <SongTitle Artist = {props.data.artists[0].name}/> 
         
+        
+        <div className="icon-container"> 
+            <a><img className="Heart-Icon" src="/icons/heart.svg" alt="Heart-Icon"/></a>
+            <img className="Play-Icon" src="/icons/play.svg" alt="Play-Icon" /> 
+            <img className="Dot-Icon" src="/icons/dots.svg" alt="Dot-Icon" /> 
+        </div> 
+        
     </div>
         </>   
     )
