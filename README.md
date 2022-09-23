@@ -33,8 +33,8 @@ Requirements
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We have worked in pairs with live share & branches. We started by planning & making a drawing in Figjam. We did part of the codes together & part of it separate. We used google, Stackoverflow & asked our team for help when we got stuck. If we had more time we would have worked with accessibility.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+
