@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+First project using JSX and react with JSON api. Project was to fetch data and show cover albums with links using map. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Eslintrc.json file gave us a lot of issues after deleting it and adding it again, in the wrong place, which made deploying impossible. But after relocating the file inde code folder and fixed build command in files it finally worked. 
+
+Next would be to fix the space after "," and "&" that are placed between artists instead of solving it with " .". 
 
 ## View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-releases-saralie-antonella.netlify.app/
