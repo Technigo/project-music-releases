@@ -2,13 +2,15 @@ import React from 'react';
 
 const AlbumCard = (props) => {
   return (
-    <div className="Cover">
-      <a href={props.url}>
-        <img src={props.img} alt="Album cover" />
-      </a>
-      <a href={props.url}>
-        <p className="AlbumName">{props.name}</p>
-      </a>
+    <div>
+      <div className="Cover">
+        <a href={props.url}>
+          <img src={props.img} alt="Album cover" className="album-cover" />
+        </a>
+      </div>
+      <p className="AlbumName">
+        <a href={props.url}>{props.name}</a>
+      </p>
     </div>
   );
 };
