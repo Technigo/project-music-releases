@@ -1,5 +1,3 @@
-// import React from "react";
-
 const ArtistName = (props) => {
   // const artistArray = props; //.data.artists;
   console.log(props);
@@ -13,6 +11,6 @@ const ArtistName = (props) => {
   } else {
     return props.artists[0].name;
   }
-};
-
-export default ArtistName;
+ };
+  
+ export default ArtistName;
