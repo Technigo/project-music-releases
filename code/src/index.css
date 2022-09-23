@@ -71,6 +71,7 @@ code {
 
 .ArtistName {
   border: 2px solid rgb(47, 100, 222);
+  display: inline-block;
 }
 
 .ArtistName a {
