@@ -1,7 +1,9 @@
 /* - - - - - - GENERAL - - - - - - - - - - - */
 
+
+
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
+  max-width: 95%;
 }
 
 code {
@@ -17,11 +20,11 @@ code {
     monospace;
 }
 
-header {
+.header {
   border: 2px solid yellow;
   color: #ffffff;
-  font-size: 8px;
-  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 /* - - - - - - - - APP - - - - - - - - - - - - */
@@ -29,24 +32,23 @@ header {
 .App {
   border: 2px solid red;
   display: grid;
-  gap: 20px;
   justify-items: center;
   grid-template-columns: 1fr;
+  column-gap: 20px;
+
 }
 
 /* - - - - - - ALBUM CARD - - - - - - - - - - */
 
 .AlbumCard {
   border: 2px solid green;
-  width: 280px;
+  max-width: 250px;
 }
 
 /* - - ALBUM COVER - - */
 
 .cover {
   border: 2px solid hotpink;
-  width: 280px;
-  height: 280px;
   position: relative;
 }
 
@@ -87,7 +89,6 @@ header {
   border: 2px solid rgb(137, 71, 184);
   color: #ffffff;
   font-weight: bold;
-  width: 100%;
 }
 
 .album-name a {
@@ -102,7 +103,7 @@ header {
 
 /* - - ICONS - - */
 
-.iconsContainer {
+.icons-container {
   position: absolute;
   display: flex;
   transform: translate(-50%, -50%);
@@ -121,9 +122,10 @@ header {
   width: 30px;
   padding-inline: 10px;
   filter: invert(1);
+  
 }
 
-.iconsContainer:hover {
+.icons-container:hover {
   opacity: 1;
 }
 
@@ -144,6 +146,10 @@ header {
 
   .App {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .AlbumCard {
+    max-width: 300px;
   }
 
 }
