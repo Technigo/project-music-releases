@@ -1,11 +1,14 @@
 # Music Releases
 
-A pair project (by Joel Öhman & Maria Wellander) with the aim to create an responsive page with React components by rendering data from the Spotify API.
+A pair programming project (by Joel Öhman & Maria Wellander) with the aim to create an responsive page with React components by rendering data from the Spotify API.
 
-## The problem
+## The brief
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+In this project we are building a page which shows new album and single releases, using data from Spotify. The main focus was to learn how to use React components.
+By reading through the project brief we decided on what problems to tackle first, which components to add and in which order, an adequate time structure and a constructive mindset.
+During this project we used React, JSX, HTML, CSS & Git.
+If we had more time, we would have wanted to add a full opacity effect on the play button.
+
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
