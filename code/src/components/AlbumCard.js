@@ -5,9 +5,9 @@ import { AlbumArtist } from './AlbumArtist';
 export const AlbumCard = (props) => {
   return (
     <>
-      <section className="album">
-        <div className="image-icons-container">
-          <div className="image-container">
+      <section className="album-card">
+        <div className="cover-icons-container">
+          <div className="cover-container">
             <img src={props.img} alt="Album cover" />
           </div>
           <div className="icons-container">
