@@ -29,9 +29,20 @@ code {
 
 .Header h1{
   color: #fff;
-  padding-left: 4%;
+  margin: auto 0;
+  padding: 2%;
+  font-size: 14px;
+  border-bottom: 1px solid #727272;
 }
 
+.Header a{
+  text-decoration: none;
+}
+
+.Header a:hover{
+  opacity: 0.7;
+  color: #ffffff;
+}
 
 /* For Artist names */
 .artists {
@@ -140,13 +151,12 @@ code {
 /* Media Queries */
 /* For Tablet*/
 @media (min-width: 668px){
-  .header{
-    font-size: 30px;
+  .music-container{
+    grid-template-columns: repeat(2, 1fr); 
   }
 
-  .music-container{
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+  .Header h1{
+    font-size: 30px;
   }
 }
 
@@ -154,5 +164,9 @@ code {
 @media (min-width: 1024px){
   .music-container {
     grid-template-columns: repeat(4, 1fr); 
+  }
+
+  .Header h1{
+    font-size: 40px;
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <h1>New Music Releases</h1>
+        <a href='https://open.spotify.com/genre/new-releases-page'><h1>New Music Releases</h1></a>
 )}
 
 export default Header;
