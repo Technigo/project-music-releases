@@ -16,6 +16,7 @@ export const App = () => {
           return <AlbumCard key={item.id} albumInformation={item} />;
         })}
       </section>
+      <hr />
       <footer>
         <p>&#169;2022 by Saralie and Antonella</p>
         <p>
