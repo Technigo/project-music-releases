@@ -12,7 +12,7 @@ const Cover = (props) => {
             className="heart"
             alt="heart icon"
             />
-            <a href='https://open.spotify.com/search' target='_blank'><img
+            <a href='https://open.spotify.com/search' target='_blank' rel="noopener noreferrer"><img
             src="../icons/play.svg"
             className="play"
             alt="play icon"

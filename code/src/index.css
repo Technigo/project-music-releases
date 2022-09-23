@@ -70,6 +70,14 @@ code {
 }
 
 /* For Icons, overlay, and hover effects */
+.cover-card {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  width: 300px;
+  height: 300px;
+}
+
 .albumIcons {
   position: absolute;
   top: 0;
@@ -118,14 +126,7 @@ code {
   opacity: 1;
 }
 
-.cover-card {
-  position: relative;
-  background-size: cover;
-  background-position: center center;
-  width: 300px;
-  height: 300px;
-}
-
+/* This is done this way so that the icons can spread the way we want it to be in a flex container */
 .cover-card:hover .albumIcons {
   display: flex;
   justify-content: space-evenly;
@@ -139,6 +140,7 @@ code {
   opacity: 1;
 }
 
+/* For footer */
 .Footer h3{
   font-size: 14px;
   background-color: #cdcbcb4b;
@@ -147,11 +149,11 @@ code {
   text-align: center;
 }
 
-/* Media Queries */
+/* --------------------Media Queries-------------------- */
 /* For Tablet*/
 @media (min-width: 668px){
   .music-container{
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* 2 rows for tablet */
   }
 
   .Header h1{
@@ -162,7 +164,7 @@ code {
 /* For Desktop*/
 @media (min-width: 1024px){
   .music-container {
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr); /* 4 rows for tablet */
   }
 
   .Header h1{

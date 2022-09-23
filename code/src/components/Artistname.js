@@ -7,6 +7,7 @@ const Artistname = (props) => {
             return (
               <a
                 href={props.artists[0].external_urls.spotify}
+                rel="noopener noreferrer"
                 key={props.artists[0].id}
                 className="artists"
               >
@@ -21,6 +22,7 @@ const Artistname = (props) => {
                   .map((artist) => (
                     <a
                       href={artist.external_urls.spotify}
+                      rel="noopener noreferrer"
                       className="artists"
                       key={artist.id}
                     >
@@ -29,6 +31,7 @@ const Artistname = (props) => {
                   ))}
                 <a
                   href={props.artists[0].external_urls.spotify}
+                  rel="noopener noreferrer"
                   className="artists"
                 >
                   {props.artists[0].name}
@@ -36,6 +39,7 @@ const Artistname = (props) => {
                 <span className="artist-and"> & </span>
                 <a
                   href={props.artists[1].external_urls.spotify}
+                  rel="noopener noreferrer"
                   className="artists"
                 >
                   {props.artists[1].name}
