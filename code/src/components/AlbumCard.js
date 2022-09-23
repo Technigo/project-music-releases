@@ -3,7 +3,7 @@ import { Icons } from './Icons';
 
 const AlbumCard = (props) => {
   return (
-    <div>
+    <div className="coverAlbumText">
       <div className="cover">
         <Icons />
         <a href={props.url}>

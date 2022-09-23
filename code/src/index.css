@@ -21,16 +21,14 @@ code {
 }
 
 .header {
-  border: 2px solid yellow;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 24px;
   letter-spacing: 0.02em;
 }
 
 /* - - - - - - - - APP - - - - - - - - - - - - */
 
 .App {
-  border: 2px solid red;
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
@@ -40,14 +38,16 @@ code {
 /* - - - - - - ALBUM CARD - - - - - - - - - - */
 
 .AlbumCard {
-  border: 2px solid green;
   max-width: 250px;
 }
 
 /* - - ALBUM COVER - - */
 
+.coverAlbumText {
+  margin-bottom: -7%;
+}
+
 .cover {
-  border: 2px solid hotpink;
   position: relative;
 }
 
@@ -70,8 +70,12 @@ code {
 /* - - ARTIST NAME - - */
 
 .ArtistName {
-  border: 2px solid rgb(47, 100, 222);
   display: inline-block;
+}
+
+.ArtistName:not(:first-of-type)::before {
+  content: " , ";
+  color: #a0a0a0;
 }
 
 .ArtistName a {
@@ -86,7 +90,6 @@ code {
 }
 
 .album-name {
-  border: 2px solid rgb(137, 71, 184);
   color: #ffffff;
   font-weight: bold;
 }
