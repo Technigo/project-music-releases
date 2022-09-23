@@ -13,15 +13,15 @@ const ArtistName = ({ artists }) => {
             className="artist-link"
             key={artist.id}>
             <div className="artist-name">
-              <h3 key={artist.id}>
+              <p key={artist.id}>
                 {artist.name}
                 {/* prettier-ignore */}
-                {artists.length - 2 === index
+                {index === artists.length - 2
                   ? ' & .'
                   : index < artists.length - 2
                   ? ', .'
                   : ' '}
-              </h3>
+              </p>
             </div>
           </a>
         );

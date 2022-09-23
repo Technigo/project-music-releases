@@ -25,18 +25,17 @@ code {
   gap: 10px;
 }
 
-.album-card {
-}
-
 .album-container {
   position: relative;
+  opacity: 0.5;
+  background: rgba(44, 44, 44, 0.7);
 }
 
 .cover-img {
   width: 100%;
 }
 
-.cover-img:hover {
+.album-container:hover {
   opacity: 1;
 }
 
@@ -53,8 +52,11 @@ code {
   transition: 0.4s ease;
 }
 .hidden-icons:hover {
-  opacity: 1;
-  background: rgba(44, 44, 44, 0.7);
+  opacity: 0.5;
+}
+
+.hidden-icons .icon:hover {
+  fill: white;
 }
 
 /* Styling AlbumName.js */
@@ -67,8 +69,6 @@ code {
   text-decoration: none;
 }
 .artist-container {
-  letter-spacing: 0.04em;
-  text-decoration: none;
   display: flex;
 }
 a {
@@ -93,28 +93,47 @@ a {
 /* Styling Icons.js */
 .icons-container {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.icon {
-  width: 50px;
-}
-
-.heart-icon:hover {
+.heart-icon {
   width: 40px;
 }
-
-.play-icon:hover {
+.heart-icon:hover {
   width: 50px;
+}
+.play-icon {
+  width: 60px;
+}
+.play-icon:hover {
+  width: 70px;
 }
 .dots-icon {
-  width: 40px;
+  width: 30px;
   filter: brightness(0) invert(1);
 }
 .dots-icon:hover {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+}
+
+/* ALBUM & ARTIST NAMES */
+.song-title {
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+.song-title:hover {
+  text-decoration: underline;
+}
+
+.artist-name {
+  color: rgba(150, 141, 141, 0.9);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
 }
 
 /* TABLET */

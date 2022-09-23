@@ -18,16 +18,16 @@ const AlbumCard = ({ albumInformation }) => {
           className="cover-img"
           alt={albumInformation.name} />
         <div className="hidden-icons">
-          <h2>
-            <Icons link={albumInformation.external_urls.spotify} />
-          </h2>
+          <Icons link={albumInformation.external_urls.spotify} />
         </div>
       </div>
       {/* prettier-ignore */}
+      <div className='name-container'>
       <AlbumName
         title={albumInformation.name}
         link={albumInformation.external_urls.spotify} />
       <ArtistName artists={albumInformation.artists} />
+      </div>
     </section>
   );
 };
