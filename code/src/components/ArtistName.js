@@ -1,16 +1,17 @@
+import React from 'react';
+
 const ArtistName = (props) => {
-  // const artistArray = props; //.data.artists;
-  console.log(props);
-  // return <p> {props.artists[0].name}</p>;
-  if (props.artists.length > 1) {
-    const allArtists = props.artists.map((artist) => {
-      console.log(`artistname:${artist.name}`);
-      return `${artist.name} `;
-    });
-    return allArtists;
-  } else {
-    return props.artists[0].name;
-  }
+  const artistArray = props.artists;
+  const allArtists = artistArray.map((artist, index) => {
+    if (index === artistArray.length - 1 && artistArray.length !== 1) {
+      return [' & ', <a className="spotify-link" href={artist.external_urls.spotify}>{artist.name}</a>];
+    } else if (index === 0) {
+      return <a className="spotify-link" href={artist.external_urls.spotify}>{artist.name}</a>;
+    } else {
+      return [', ', <a className="spotify-link" href={artist.external_urls.spotify}>{artist.name}</a>];
+    }
+  });
+  return allArtists;
 };
 
 export default ArtistName;

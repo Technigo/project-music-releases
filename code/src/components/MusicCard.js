@@ -35,9 +35,7 @@ const MusicCard = (props) => {
         </a>
       </h2>
       <h3 className="artist-name">
-        <a className="spotify-link artist-link" href={props.recordData.artists[0].external_urls.spotify}>
-          <ArtistName artists={props.recordData.artists} />
-        </a>
+        <ArtistName artists={props.recordData.artists} />
       </h3>
     </section>
   );
