@@ -12,13 +12,11 @@ export const AlbumCover = (props) => {
               rel="noopener noreferrer"
             >
               <img 
-                className="cover" 
+                className="AlbumCover" 
                 src={props.image} 
                 alt={props.name}
               />
             </a>
     )
 }
-
-
 
