@@ -75,8 +75,8 @@ a:hover {
   filter: brightness(0.50);
 }
 
-.album-cover-img:hover .icons {
-  display:block;
+.icons img:hover {
+  opacity:1;
 }
 
 /*Media Queries*/
