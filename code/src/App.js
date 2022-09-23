@@ -1,9 +1,11 @@
 import React from 'react'
 import data from 'data'
+
 import Header from './Components/Header'
 import Album from './Components/Album'
 import Artist from './Components/Artist'
 import Image from './Components/Image'
+
 
 console.log(data);
 
@@ -15,10 +17,11 @@ export const App = () => {
       <header>
         <Header/>
       </header>
-      <main className="albums-container">
+       
         {albumsArray.map((album) => {
           return (
             <>
+            <div className="albums-container">
               <Image
               imgsrc={album.images[1].url}
               href={album.external_urls.spotify}
@@ -32,10 +35,12 @@ export const App = () => {
               album= {album.artists}
               href={album.external_urls.spotify}
               />
+            
+            </div>
             </>
           ) 
         })}
-      </main>
+      
     </>
   )
 }
