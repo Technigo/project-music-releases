@@ -6,6 +6,7 @@ const Artists = ({artist}) => {
   return (  
 <div>
  {artist.name}
+ {artist.href}
   </div>
   )
   })}
@@ -15,7 +16,12 @@ const Artists = ({artist}) => {
 
 export default Artists;
 
-
+/*
+ <img className="albumImage" src={coverImage} alt="album cover" />
+<a href={albumUrl}>
+<img className="playIcon icon" src="./icons/play.svg" />
+</a>
+*/
 
 /*
 console.log('artistT ', artist)
