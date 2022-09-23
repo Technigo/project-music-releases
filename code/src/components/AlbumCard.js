@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-indent-props */
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable jsx-quotes */
 /* eslint-disable import/no-named-as-default */
 /* eslint-disable no-undef */
 import React from 'react';
@@ -21,12 +24,15 @@ const AlbumCard = ({ albumInformation }) => {
           <Icons link={albumInformation.external_urls.spotify} />
         </div>
       </div>
-      {/* prettier-ignore */}
-      <div className='name-container'>
-      <AlbumName
-        title={albumInformation.name}
-        link={albumInformation.external_urls.spotify} />
-      <ArtistName artists={albumInformation.artists} />
+      // eslint-disable-next-line no-trailing-spaces // eslint-disable-next-line
+      jsx-quotes
+      <div className="name-container">
+        // eslint-disable-next-line indent,
+        <AlbumName
+          // eslint-disable-next-line indent
+          title={albumInformation.name}
+          link={albumInformation.external_urls.spotify} />
+        <ArtistName artists={albumInformation.artists} />
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 
 const ArtistName = ({ artists }) => {
