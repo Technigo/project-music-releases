@@ -6,17 +6,10 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 a {
@@ -33,7 +26,6 @@ a {
 }
 
 .album-child {
-  position: relative;
   width: 100%;
   margin-bottom: 30px;
 }
@@ -42,8 +34,8 @@ a {
   width: 100%;
 }
 
-.album-child img:hover{
-  opacity:50%;
+.cover-container {
+  position: relative;
 }
 
 .artist-name {
@@ -65,13 +57,12 @@ a {
   height: 80px;
   width: 80px;
   transition: .3s ease;
+  fill: white;
 }
 
 .overlay {
   position: absolute;
   opacity: 0;
-  /* transition: .3s ease; */
-  background-color: transparent;
   top: 0;
   bottom:0;
   left: 0;
@@ -79,25 +70,30 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .overlay:hover {
   opacity: 1;
 }
 
+a {
+  color: white;
+}
+
 h1 {
-  color: whitesmoke;
+  color: #ffffff;
   padding-left: 5%;
   padding-top: 3%;
 }
 
 h2 {
-  color: whitesmoke;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 14px;
 }
 
 h3 {
-  color: rgb(200, 199, 199);
+  color: #a0a0a0;
   font-size: 14px;
 }
 
@@ -106,21 +102,45 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  color: #a0a0a0;
 }
 
-/* Not working properly*/ 
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
 .artist-container {
-  justify-content: flex-start;
+  display:flex;
+  line-height: 16px;
 }
 
-.artist-name a:not(:first-of-type, :last-of-type)::before {
-  color: red;
+/*Add a comma after each artist
+.artist-name ::after {
   content: ", ";
 }
 
+/* Remove the comma after the last artist
+.artist-name :last-child::after {
+  content: "";
+}
+*/
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ', ';
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .artist-name a:nth-last-of-type(2)::after {
-  content: " & ";
-  color: red;
+  content: ' & ';
+  color: #a0a0a0;
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Tablet  */
