@@ -91,6 +91,7 @@ h2:hover, h3:hover {
 
 .icons {
   filter: invert();
+  opacity: 0.2
 }
 
 #heart, #dots{
@@ -101,9 +102,16 @@ h2:hover, h3:hover {
   width: 18%;
 }
 
+#heart:hover, #dots:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  opacity: 1;
+}
+
 #play:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
   transition: transform 0.4s;
+  opacity: 1
 }
 
 
