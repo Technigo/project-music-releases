@@ -8,6 +8,8 @@ body {
   background: #000000;
 }
 
+/* - - - - - - GENERAL - - - - - - - - - - - */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -20,6 +22,8 @@ header {
   font-weight: bold;
 }
 
+/* - - - - - - - - APP - - - - - - - - - - - - */
+
 .App {
   border: 2px solid red;
   display: grid;
@@ -28,16 +32,39 @@ header {
   grid-template-columns: 1fr;
 }
 
+/* - - - - - - ALBUM CARD - - - - - - - - - - */
+
 .AlbumCard {
   border: 2px solid green;
   width: 280px;
 }
 
+/* - - ALBUM COVER - - */
+
 .Cover {
   border: 2px solid hotpink;
   width: 280px;
   height: 280px;
+  position: relative;
 }
+
+.Cover:hover .album-cover {
+  opacity: 0.3;
+}
+
+.Cover:hover {
+  opacity: 1;
+}
+
+.album-cover {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+}
+
+/* - - ARTIST NAME - - */
 
 .ArtistName {
   border: 2px solid rgb(47, 100, 222);
@@ -50,17 +77,59 @@ header {
   color: #a0a0a0;
 }
 
+.ArtistName a:hover {
+  text-decoration: underline;
+}
+
 .AlbumName {
   border: 2px solid rgb(137, 71, 184);
   font-size: 14px;
   font-family: Helvetica;
   color: #ffffff;
   font-weight: bold;
+  width: 100%;
 }
 
 .AlbumName a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.AlbumName a:hover {
+  text-decoration: underline;
+}
+
+/* - - ICONS - - */
+
+.iconsContainer {
+  position: absolute;
+  display: flex;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  justify-content: space-between;
+  opacity: 0;
+  width: 80%;
+  z-index: 2;
+}
+
+.icons {
+  width: 50px;
+  filter: invert(1);
+}
+
+.iconsContainer:hover {
+  opacity: 1;
+}
+
+.play-icon {
+  width: 70px;
+  opacity: 0.5;
+}
+.play-icon:hover {
+  width: 90px;
+  opacity: 1;
 }
 
 /*
@@ -89,67 +158,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .AlbumCard {
-    place-self: initial;
-    width: 90%;
-  }
 
-  .Cover {
-    position: relative;
-  }
-
-  .Cover:hover .album-cover {
-    opacity: 0.3;
-  }
-
-  .Cover:hover {
-    opacity: 1;
-  }
-
-  .album-cover {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
-  }
-
-  .ArtistName a:hover {
-    text-decoration: underline;
-  }
-  
-  .AlbumName a:hover {
-    text-decoration: underline;
-  }
-  
-  .iconsContainer {
-    position: absolute;
-    display: flex;
-    transform: translate(-50%, -50%);
-    align-items: center;
-    left: 50%;
-    top: 50%;
-    justify-content: space-between;
-    opacity: 0;
-    width: 80%;
-    z-index: 2;
-  }
-  .icons {
-    width: 50px;
-    filter: invert(1);
-  }
-
-  .iconsContainer:hover {
-    opacity: 1;
-  }
-
-  .play-icon {
-    width: 70px;
-    opacity: 0.5;
-  }
-  .play-icon:hover {
-    width: 90px;
-    opacity: 1;
-  }
 
 }
