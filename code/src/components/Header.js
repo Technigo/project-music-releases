@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <h1 className="header">
-        New Album &amp; Singles
+        New albums &amp; singles
     </h1>
   );
 }

@@ -16,6 +16,8 @@ code {
 header {
   border: 2px solid yellow;
   color: #ffffff;
+  font-size: 8px;
+  font-weight: bold;
 }
 
 .App {
@@ -58,7 +60,7 @@ header {
 
 .AlbumName a {
   text-decoration: none;
-  color: #a0a0a0;
+  color: #ffffff;
 }
 
 /*
@@ -88,13 +90,10 @@ header {
   }
 
   .AlbumCard {
-    grid-column: span ;
-  }
-
-  .AlbumCard {
     place-self: initial;
     width: 90%;
   }
+
   .Cover {
     position: relative;
   }
