@@ -24,7 +24,6 @@ const AlbumCard = ({ albumInformation }) => {
           <Icons link={albumInformation.external_urls.spotify} />
         </div>
       </div>
-      jsx-quotes
       <div className="name-container">
         <AlbumName
           // eslint-disable-next-line indent
