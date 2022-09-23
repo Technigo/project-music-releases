@@ -2,7 +2,7 @@ import React from 'react';
 
 import Covers from './Covers';
 import AlbumName from './AlbumName';
-import ArtistName from './ArtistName';
+import ArtistInfo from './ArtistInfo'
 
 const Musiccard = (props) => {
   console.log(props.data)
@@ -18,32 +18,11 @@ const Musiccard = (props) => {
         albumName = {props.data.name}
         albumLink = {props.data.external_urls.spotify}        
         />    
-        {props.data.artists.map(artist => {
-        return (
-          <ArtistName 
-          artistLink = {artist.external_urls.spotify} 
-          artistName = {artist.name}         
-          key={artist.id}/>
-          )
-        
-        })}
+        <ArtistInfo
+        data = {props.data} /> 
       </div>  
     </>
   );
 };
 
 export default Musiccard
-
-
-// props.data.artists.map(artist => {
-//   return (<ArtistName artistLink = {artist.external_urls.spotify} ArtistName = {artist.name} key={artist.id}/>)
-// })
-
-
-
-{/* <ArtistName 
-        artistName = {props.data.artists[0].name} 
-        artistLink = {props.data.artists[0].external_urls.spotify}
-        />           
-
- */}

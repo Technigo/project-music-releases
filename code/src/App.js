@@ -8,11 +8,14 @@ export const App = () => {
   return (
     <>
       <section className="outer-wrapper">
-        <div className="inner-wrapper">
+        <section className="inner-wrapper">
+          <div className='heading'>
+            <h1> New Albums & singles </h1>
+          </div>
           {data.albums.items.map(item => {
             return <MusicCard key={item.id} data={item} />
-          })};     
-        </div>
+          })};
+        </section>
       </section>
     </>
   );
