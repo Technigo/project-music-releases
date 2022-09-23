@@ -4,6 +4,7 @@ const albumsArray = data.albums.items
 
 import  Album   from './components/Album';
 import  Header  from './components/Header';
+import  Footer  from './components/Footer';
 
 import './index.css';
 console.log(data);
@@ -16,6 +17,7 @@ export const App = () => {
           <section className='album-container'>
             <Album albumsArray = {albumsArray}/>
           </section>
+          <Footer/>
       </main>
     </>
    )
