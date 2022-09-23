@@ -1,7 +1,7 @@
 import React from 'react';
 
+//if else statment that returns either one artist, or two-three artists and prints a "," and "&" depending on how many artists thats in the array.
 const Artistname = (props) => {
-     /* console.log(props.name) */ 
         if (props.artists.length === 1) {
             return (
               <a
