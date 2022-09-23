@@ -123,5 +123,34 @@ header {
     text-decoration: underline;
   }
   
+  .iconsContainer {
+    position: absolute;
+    display: flex;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    justify-content: space-between;
+    opacity: 0;
+    width: 80%;
+    z-index: 2;
+  }
+  .icons {
+    width: 50px;
+    filter: invert(1);
+  }
+
+  .iconsContainer:hover {
+    opacity: 1;
+  }
+
+  .play-icon {
+    width: 70px;
+    opacity: 0.5;
+  }
+  .play-icon:hover {
+    width: 90px;
+    opacity: 1;
+  }
 
 }
