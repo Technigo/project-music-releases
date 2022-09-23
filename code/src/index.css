@@ -25,13 +25,13 @@ h2 {
   font-size: 14px;
   color: #ffff;
   font-weight: bold;
-  line-height: 0;
+  line-height: 1;
 }
 
 h3 {
   font-size: 14px;
   color: #a0a0a0;
-  line-height: 0;
+  line-height: 1;
 }
 
 h2:hover, h3:hover {
