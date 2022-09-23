@@ -41,12 +41,7 @@ const MusicCard = (props) => {
      </h3>
    </section>
  );
- /*   <div>
-     <img src={props.data.images[2].url} />
-     <p>{props.data.name}</p>
-     <h3>{props.data.artists[0].name}</h3>
-   </div>
- ) */
+
 };
  
 export default MusicCard;

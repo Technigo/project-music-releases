@@ -1,5 +1,3 @@
-// import React from "react";
- 
 const ArtistName = (props) => {
   // const artistArray = props; //.data.artists;
   console.log(props);

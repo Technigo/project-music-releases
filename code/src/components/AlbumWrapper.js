@@ -1,6 +1,7 @@
 import React from 'react';
 import MusicCard from './MusicCard';
 import data from '../data.json';
+
  
 const AlbumWrapper = () => {
  console.log(data.albums.items);
