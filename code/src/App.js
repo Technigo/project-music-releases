@@ -1,10 +1,8 @@
 import React from 'react';
 import data from './data.json';
-import AlbumCard from './components/AlbumCard';
 import Header from './components/Header';
+import AlbumCard from './components/AlbumCard';
 import ArtistName from './components/ArtistName';
-
-console.log(data);
 
 console.log(data);
 
@@ -30,7 +28,6 @@ export const App = () => {
         ))};
       </div>
     </>
-
   );
 };
 
