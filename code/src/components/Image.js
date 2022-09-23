@@ -7,9 +7,8 @@ export const Image = (props) => {
     return (
       <>
         <div className="project-image">
-          <div className="project-image-overlay"></div>
+          <div className="project-image-overlay"><Buttons /></div>
           <img className='picture' src={props.data.images[1].url} alt={props.data.name}/>
-          <Buttons /> 
         </div>
       </>
   );

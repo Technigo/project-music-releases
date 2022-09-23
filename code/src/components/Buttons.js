@@ -7,13 +7,13 @@ import moreBtn from 'icons/dots.svg';
 export const Buttons = () => {
     return (
         <div className='buttons'>
-            <button className='icon'>
+            <button className='icon like'>
               <img src={likeBtn} alt='Like Button'/>
             </button>
-            <button className='icon'>
+            <button className='icon play'>
              <img src={playBtn} alt=' Play Button'/>
             </button>
-            <button className='icon'>
+            <button className='icon more'>
               <img src={moreBtn} alt='More Button'/>
             </button>
         </div>
