@@ -4,19 +4,17 @@ import { AlbumCover } from './AlbumCover.js';
 import { AlbumTitle } from './AlbumTitle.js';
 
 export const Album = (props) => {
+    console.log(props)
     return (
         <>
             <div className='Album'>
                     <AlbumCover cover={props.data.images[1].url} />
                     <AlbumTitle 
-                    AlbumTitle={props.data.name}
-                    urlAlbumTitle={props.data.external_urls.spotify}/>
+                       AlbumTitle={props.data.name}
+                       urlAlbumTitle={props.data.external_urls.spotify}/>
                     <AlbumArtist 
-                    artistName={props.data.artists.map((item, index) => <a>{item.name}</a>)}
-                    urlArtistName={props.data.artists.map((item, index) => item.external_urls.spotify)}
-                     />
-                    
+                       artistArray={props.data.artists}
+                     />    
             </div>
         </>
-    )
-}
+    )}

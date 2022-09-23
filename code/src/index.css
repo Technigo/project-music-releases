@@ -13,13 +13,13 @@ code {
     monospace;
 }
 
-.main-container {
+/* .main-container {
   background-color: #222326;
   display: flex;
   flex-direction: row;
   max-width: 100vw;
 }
-
+ */
 .Wrapper {
   display: grid;
   grid-template-columns: repeat(4, 24vw);
@@ -36,9 +36,6 @@ code {
   margin-right: 40px;
 }
 
-.Album {
-  color: whitesmoke;
-}
 
 .AlbumCoverContainer{
   position: relative;
@@ -51,15 +48,22 @@ code {
   padding-right: 5%;
 }
 
+.AlbumInfo {
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
 /*Makes the hover images white*/
 .Icons {
   filter: invert(1);
   height: 55px;
   margin-left: 5px;
   margin-right: 5px;
+  opacity: 0.5;
 }
 
 .IconContainer {
+  display: none;
   position: absolute;
   top: 40%;
   margin-left: auto;
@@ -67,52 +71,76 @@ code {
   left: 0;
   right: 0;
   text-align: center;
-  width: 250px;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.AlbumCoverContainer:hover {
-  opacity: 0.5;
+.AlbumCoverContainer:hover .IconContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-
-
+.Icons:hover {
+  transform: scale(1.3);
+  transition: transform 0.5s;
+  filter: invert(1);
+  opacity: 1;
+}
 
 .AlbumTitle {
-  font-size: 90%;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #ffffff;
   max-width: 90%;
-  max-height: 5%;
+  max-height: 16px;
+  margin: 5% 0% 2% 5%;
   overflow: hidden;
-  padding-left: 5%;
-  padding-right: 5%;
+}
+
+.linkAlbumTitle {
+  text-decoration: none;
+}
+
+.linkArtistName {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica;
+  /* display: block; */
 }
 
 .AlbumTitle:hover {
   text-decoration: underline;
 }
 
+
+
 .Artist {
-  font-size: 80%;
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #a0a0a0;
   font-weight: 600;
   color: rgb(168, 166, 166);
-  padding-left: 5%;
-  padding-right: 5%;
+  display: inline;
 }
 
-.Artist a:not(:first-of-type, :last-of-type)::before {
-  color: #a0a0a0;
+.linkArtistName:not(:first-of-type, :last-of-type)::before {
   content: ", ";
-}
+} 
 
-.Artist a:nth-last-of-type(2)::after {
+ .linkArtistName:nth-last-of-type(2)::after {
   content: " & ";
-  color: #a0a0a0;
-}
+} 
 
 .Artist:hover{
   text-decoration: underline;
 }
 
-.link
 
 /*  for mobile  */
 @media (max-width: 667px) {
@@ -126,4 +154,5 @@ code {
   .Wrapper {
     grid-template-columns: repeat(2, 49vw);
   }
+
 }
