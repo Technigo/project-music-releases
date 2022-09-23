@@ -9,4 +9,3 @@ const ArtistName = (props) => {
 };
 
 export default (ArtistName);
-// @ TODO add “&” if two artist names, and “,” if more than two

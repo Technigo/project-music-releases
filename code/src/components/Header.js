@@ -2,9 +2,12 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <h1 className="header">
+    <header>
+      <h1 className="header">
+
         New albums &amp; singles
-    </h1>
+      </h1>
+    </header>
   );
 }
 export default (Header);
