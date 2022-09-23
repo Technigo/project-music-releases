@@ -1,5 +1,6 @@
 import React from 'react';
 
+<<<<<<< HEAD
 export const AlbumCover = (props) => {
   return (
     
@@ -22,3 +23,33 @@ export const AlbumCover = (props) => {
     // </section>
   );
 };
+=======
+const AlbumCover = ({}) => {
+  return (
+    <div className="cover-icon-container">
+      <div className="cover-container">
+        <img src={url} alt="Album Cover"></img>
+      </div>
+      <div className="icon-container">
+        <img
+          className="heart"
+          src="./public/icons/heart.svg"
+          alt="Heart Icon"
+        ></img>
+        <img
+          className="play"
+          src="./public/icons/play.svg"
+          alt="Play Icon"
+        ></img>
+        <img
+          className="dots"
+          src="./public/icons/dots.svg"
+          alt="Dots Icon"
+        ></img>
+      </div>
+    </div>
+  );
+};
+
+export default AlbumCover;
+>>>>>>> ab59a9f86653c79c4af1d0520c2eaad3f8edd83e
