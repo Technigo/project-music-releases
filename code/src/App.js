@@ -2,7 +2,8 @@ import React from 'react';
 import data from './data.json';
 import { ArtistName } from './components/Artistname'
 import { SongTitle } from './components/SongTitle'  //showing in html
-import { AlbumCover } from './components/AlbumCover'
+import { AlbumCover }  from './components/AlbumCover'
+
 console.log(data);
 
 /*<AlbumCover AlbumCover= {album.images[0].url}/>*/
@@ -19,10 +20,9 @@ export const App = () => {
             <section className="The-Album">         
                 <div className='Album-Picture'>
                   {data.albums.items.map(item => {
-                    return <ArtistName key = {data.id} data = {item} text = "Test"/> //declaring a property called data ,item is the value
+                    return <ArtistName key = {data.id} data = {item} coverpic = {data.albums.items[0].url}/> //declaring a property called data ,item is the value
                     })}
-                    <AlbumCover key = {data.id} AlbumCover = {data.AlbumCover}/> 
-
+                   
                 </div>
             </section>
         </div>
