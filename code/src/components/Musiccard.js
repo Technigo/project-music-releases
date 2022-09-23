@@ -4,7 +4,7 @@ import Covers from './Covers';
 import AlbumName from './AlbumName';
 import ArtistInfo from './ArtistInfo'
 
-const Musiccard = (props) => {
+const MusicCard = (props) => {
   console.log(props.data)
   return (
     <>
@@ -25,4 +25,4 @@ const Musiccard = (props) => {
   );
 };
 
-export default Musiccard
+export default MusicCard
