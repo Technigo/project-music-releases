@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Cover = (props) => {
-   /*  console.log(props.img) */
    //albumIcons is where we put all the icons & will be styled with flex
     return (
        <>

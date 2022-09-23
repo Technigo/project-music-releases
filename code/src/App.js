@@ -6,7 +6,6 @@ import Albumname from './components/Albumname';
 import Artistname from './components/Artistname';
 import "./index.css";
 
-console.log(data);
 
 export const App = () => {
   return (
