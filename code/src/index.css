@@ -9,7 +9,7 @@ body {
 .heading {
   width: 100%;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .outer-wrapper {
@@ -120,12 +120,12 @@ a:active {
 @media (min-width: 1024px) {
 
   .music-card {
-    width: 23%;
+    width: 23%;   
   }
-
-  .inner-wrapper {
-    justify-content: flex-start;
-    column-gap: 20px;
+  
+  .inner-wrapper {    
+    column-gap: 21px;   
+    justify-content: flex-start; 
   }
 
   /* HOVER ON MUSIC CARDS */
@@ -185,7 +185,4 @@ a:active {
   a:active {
     text-decoration: none;
   }
-
-
-
 }

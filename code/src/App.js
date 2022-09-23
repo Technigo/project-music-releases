@@ -14,7 +14,7 @@ export const App = () => {
           </div>
           {data.albums.items.map(item => {
             return <MusicCard key={item.id} data={item} />
-          })};
+          })}
         </section>
       </section>
     </>

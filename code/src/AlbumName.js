@@ -8,6 +8,6 @@ const AlbumName = (props) => {
       </a>
     </>
   );
-}
+};
 
 export default AlbumName
