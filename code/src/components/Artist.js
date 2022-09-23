@@ -8,4 +8,22 @@ const Artist = (props) => {
   );
 };
 
+{
+  /* <div className="artist">
+  {props.articleDetails.artists.map((eachartist) => {
+    return (
+      <a
+        href={eachartist.external_urls.spotify}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="artist"
+        key={eachartist.id}
+      >
+        {eachartist.name}{" "}
+      </a>
+    );
+  })}
+</div>; */
+}
+
 export default Artist;
