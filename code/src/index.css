@@ -1,14 +1,16 @@
+/* - - - - - - GENERAL - - - - - - - - - - - */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.05em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000000;
+  background-color: #000000;
 }
-
-/* - - - - - - GENERAL - - - - - - - - - - - */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -19,7 +21,7 @@ header {
   border: 2px solid yellow;
   color: #ffffff;
   font-size: 8px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* - - - - - - - - APP - - - - - - - - - - - - */
@@ -41,18 +43,18 @@ header {
 
 /* - - ALBUM COVER - - */
 
-.Cover {
+.cover {
   border: 2px solid hotpink;
   width: 280px;
   height: 280px;
   position: relative;
 }
 
-.Cover:hover .album-cover {
+.cover:hover .album-cover {
   opacity: 0.3;
 }
 
-.Cover:hover {
+.cover:hover {
   opacity: 1;
 }
 
@@ -68,8 +70,6 @@ header {
 
 .ArtistName {
   border: 2px solid rgb(47, 100, 222);
-  font-size: 14px;
-  font-family: Helvetica;
 }
 
 .ArtistName a {
@@ -79,24 +79,25 @@ header {
 
 .ArtistName a:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #ffffff;
 }
 
-.AlbumName {
+.album-name {
   border: 2px solid rgb(137, 71, 184);
-  font-size: 14px;
-  font-family: Helvetica;
   color: #ffffff;
   font-weight: bold;
   width: 100%;
 }
 
-.AlbumName a {
+.album-name a {
   text-decoration: none;
   color: #ffffff;
 }
 
-.AlbumName a:hover {
+.album-name a:hover {
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* - - ICONS - - */
@@ -105,17 +106,20 @@ header {
   position: absolute;
   display: flex;
   transform: translate(-50%, -50%);
-  align-items: center;
+  align-content: center;
   left: 50%;
   top: 50%;
-  justify-content: space-between;
   opacity: 0;
-  width: 80%;
+  width: 100%;
+  height: 100%;
   z-index: 2;
+  align-items: center;
+  justify-content: center;
 }
 
 .icons {
-  width: 50px;
+  width: 30px;
+  padding-inline: 10px;
   filter: invert(1);
 }
 
@@ -128,18 +132,11 @@ header {
   opacity: 0.5;
 }
 .play-icon:hover {
-  width: 90px;
+  width: 85px;
   opacity: 1;
 }
 
-/*
-
-@TODO add this styling:
-- hover effects to AlbumCover, see design file
-
-*/
-
-/* - - - Media queries - - - - - - - - */
+/* - - - Media queries - - - - - - - - - - - */
 
 /* - - - Tablet - - - - - - - - */
 
