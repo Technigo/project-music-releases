@@ -3,28 +3,7 @@ import data from './data.json';
 import { Header } from "components/Header";
 import { Album } from "components/Album";
 import './index.css'
-
-/* FRÅN STACK OVERFLOW
-export const App = () => {
-  return (
-    <>
-      <Header />
-      <div className="albums-container">
-        {data.albums.items.map((item) => (
-            <div key={item.id}>
-              <Album cover={item.X} />
-              <Artists artists={item.X} />
-            </div>
-          ))}
-      </div>
-    </>
-  )
-}
-export default App
-
-*/
-
-
+//import { Buttons } from "components/Buttons"; 
 // Extracts array with 50 album objects from main data object
 const albumsArray = data.albums.items;
 
@@ -48,7 +27,6 @@ export const App = () => {
     </>
   );
 };
-
 
 console.log(data)
 

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -14,14 +14,100 @@ code {
     monospace;
 }
 
-.header-title {
+h1 {
   color:white;
+  margin-left: 20px;
 }
 
-.outer-wrapper {
-  display:grid
+h3 {
+  font-size: 14px;
+  color: #ffffff;
 }
 
-.inner-wrapper {
-  align-self:center;
+a {
+  color: white;
+  text-decoration: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+.albums-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-card {
+  margin: 10px;
+}
+
+.album-artists {
+  color: white;
+}
+
+.album-cover {
+  width: 50%;
+}
+
+.album-artists a:last-child span {
+  display: none
+}
+
+.icons {
+  position: absolute;
+  
+}
+
+.icons img {
+  width: 15%;
+  opacity: 0;
+}
+
+.btn-play, .btn-heart {
+  filter: invert(99%) sepia(42%) saturate(0%) hue-rotate(228deg) brightness(116%) contrast(100%);
+}
+
+.album-cover-img:hover {
+  filter: brightness(0.50);
+}
+
+.album-cover-img:hover .icons {
+  display:block;
+}
+
+/*Media Queries*/
+/*Tablet*/
+@media (min-width: 667px) and (max-width: 1024px) {
+  .albums-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+
+  .albums-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+  }
+
+  h3 {
+    font-size: 17px;
+    color: #ffffff;
+  }
+  
+
+ }
