@@ -48,10 +48,6 @@ header {
   color: #a0a0a0;
 }
 
-.ArtistName a:hover {
-  text-decoration: underline;
-}
-
 .AlbumName {
   border: 2px solid rgb(137, 71, 184);
   font-size: 14px;
@@ -60,12 +56,10 @@ header {
   font-weight: bold;
 }
 
-.AlbumName a:hover {
-  text-decoration: underline;
+.AlbumName a {
+  text-decoration: none;
+  color: #a0a0a0;
 }
-
-
-
 
 /*
 
@@ -96,4 +90,38 @@ header {
   .AlbumCard {
     grid-column: span ;
   }
+
+  .AlbumCard {
+    place-self: initial;
+    width: 90%;
+  }
+  .Cover {
+    position: relative;
+  }
+
+  .Cover:hover .album-cover {
+    opacity: 0.3;
+  }
+
+  .Cover:hover {
+    opacity: 1;
+  }
+
+  .album-cover {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+  }
+
+  .ArtistName a:hover {
+    text-decoration: underline;
+  }
+  
+  .AlbumName a:hover {
+    text-decoration: underline;
+  }
+  
+
 }
