@@ -1,7 +1,7 @@
 import React from 'react';
 import data from './data.json';
 
-import MusicCard from 'components/MusicCard'
+import MusicCard from 'project-music-releases/code/src/components/MusicCard.js'
 
 console.log(data);
 export const App = () => {
