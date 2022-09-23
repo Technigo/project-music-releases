@@ -1,7 +1,7 @@
 import React from 'react';
 import data from './data.json';
 
-import MusicCard from './MusicCard'
+import { MusicCard } from './components/MusicCard'
 
 console.log(data);
 export const App = () => {
