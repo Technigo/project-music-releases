@@ -12,9 +12,50 @@ code {
     monospace;
 }
 
+.grey {
+  color:#a0a0a0;
+}
+
+.white {
+  color: #ffffff;
+}
+.bold {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
 .outer-wrapper {
   background-color: black;
+  
 }
+.buttons{
+  filter: invert(100%); 
+  width: 10%;
+  
+}
+
+.project-image {
+  position: relative;
+  width: 100%;
+}
+.project-image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  transition: 0.5s ease;
+}
+.project-image:hover {
+  color: transparent;
+}
+.project-image-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 .inner-wrapper {
  

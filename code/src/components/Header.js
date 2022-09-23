@@ -5,7 +5,7 @@ export const Header = (props) => {
   console.log(props.data);
   return (
    
-      <h2>New albums & singles</h2>
+      <h2 className='white'>New albums & singles</h2>
   );
 }
 
