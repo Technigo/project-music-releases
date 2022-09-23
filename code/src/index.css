@@ -1,7 +1,5 @@
 /* - - - - - - GENERAL - - - - - - - - - - - */
 
-
-
 body {
   margin: 0 auto;
   font-family: Helvetica, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -22,7 +20,7 @@ code {
 
 .header {
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   letter-spacing: 0.02em;
 }
 
@@ -38,14 +36,10 @@ code {
 /* - - - - - - ALBUM CARD - - - - - - - - - - */
 
 .AlbumCard {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 /* - - ALBUM COVER - - */
-
-.coverAlbumText {
-  margin-bottom: -7%;
-}
 
 .cover {
   position: relative;
@@ -69,29 +63,11 @@ code {
 
 /* - - ARTIST NAME - - */
 
-.ArtistName {
-  display: inline-block;
-}
-
-.ArtistName:not(:first-of-type)::before {
-  content: " , ";
-  color: #a0a0a0;
-}
-
-.ArtistName a {
-  text-decoration: none;
-  color: #a0a0a0;
-}
-
-.ArtistName a:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  color: #ffffff;
-}
-
 .album-name {
   color: #ffffff;
   font-weight: bold;
+  margin: 0;
+  padding-top: 9px;
 }
 
 .album-name a {
@@ -103,6 +79,25 @@ code {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+.artist-name {
+  display: inline-block;
+  color: #a0a0a0;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+
+.artist-name a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #ffffff;
+}
+
 
 /* - - ICONS - - */
 
@@ -151,10 +146,6 @@ code {
     grid-template-columns: 1fr 1fr;
   }
 
-  .AlbumCard {
-    max-width: 300px;
-  }
-
 }
 
 /* - - - Dekstop - - - - - - - - */
@@ -164,6 +155,25 @@ code {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-
-
 }
+
+/* - - - - - - - - TESTING - - - - - - - - - - - - */
+
+/* .header {
+  border: 1px solid yellow;
+}
+.App {
+  border: 1px solid red;
+}
+.AlbumCard {
+  border: 1px solid green;
+}
+.album-cover {
+  border: 1px solid hotpink;
+}
+.artist-name {
+  border: 1px solid rgb(54, 54, 255);
+}
+.album-name {
+  border: 1px solid rgb(95, 0, 184);
+} */

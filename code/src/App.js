@@ -22,5 +22,3 @@ export const App = () => {
     </>
   );
 };
-
-// @TODO add Header? "New albums & singles"

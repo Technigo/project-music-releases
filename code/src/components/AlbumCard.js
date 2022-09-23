@@ -5,24 +5,24 @@ import ArtistName from './ArtistName';
 const AlbumCard = (props) => {
   return (
     <div className="AlbumCard">
-      <div className="coverAlbumText">
-        <div className="cover">
-          <Icons />
-          <a href={props.url}>
-            <img src={props.img} alt="Album cover" className="album-cover" />
-          </a>
-        </div>
-        <p className="album-name">
-          <a href={props.url}>{props.name}</a>
-        </p>
+      <div className="cover">
+        <Icons />
+        <a href={props.url}>
+          <img src={props.img} alt="Album cover" className="album-cover" />
+        </a>
       </div>
-      {props.artists.map((artist) => (
-        <ArtistName
-          key={artist.id}
-          name={artist.name}
-          url={artist.external_urls.spotify} />
+      <p className="album-name">
+        <a href={props.url}>{props.name}</a>
+      </p>
+      {props.artists.map((artist, i) => (
+        <>
+          <ArtistName
+            key={artist.id}
+            name={artist.name}
+            url={artist.external_urls.spotify} />
+          {i + 1 < props.artists.length && <span className="artist-name"> , </span>}
+        </>
       ))}
-
     </div>
   );
 };
