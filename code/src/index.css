@@ -1,21 +1,9 @@
 body {
   padding: 20px;
-<<<<<<< HEAD
   background-color: black;
-  display: flex;
-  margin: 0;
-=======
-<<<<<<< HEAD
-  /* background-color: black;
-  color: white; */
   display: flex;
   justify-content: center;
-=======
-  background-color: black;
-  display: flex;
   margin: 0;
->>>>>>> ab59a9f86653c79c4af1d0520c2eaad3f8edd83e
->>>>>>> 3377d73c88154029d81399ec41ea746d0b3729ab
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -30,44 +18,17 @@ code {
 
 h1 {
   font-family: Helvetica;
-<<<<<<< HEAD
-
-  /* color: #fff; */
-=======
   color: #fff;
->>>>>>> ab59a9f86653c79c4af1d0520c2eaad3f8edd83e
   font-size: 20px;
 }
 
 a {
   font-family: Helvetica;
-<<<<<<< HEAD
-=======
-  font-size: 14px;
-<<<<<<< HEAD
-  /* color: #a0a0a0; */
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.container {
-  display: block;
-  width: 600px;
-  height: 400px;
-  background-color: red;
-=======
->>>>>>> 3377d73c88154029d81399ec41ea746d0b3729ab
   color: #a0a0a0;
   font-size: 14px;
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .icon {
   background-color: aqua;
-=======
-.album-title {
-  color: #fff;
->>>>>>> ab59a9f86653c79c4af1d0520c2eaad3f8edd83e
->>>>>>> 3377d73c88154029d81399ec41ea746d0b3729ab
 }
