@@ -34,8 +34,7 @@ code {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
-  column-gap: 20px;
-
+  gap: 20px;
 }
 
 /* - - - - - - ALBUM CARD - - - - - - - - - - */
