@@ -19,15 +19,8 @@ const Album = (props) => {
           />
         </div>
         <div>
-          <Artist
-            artistName={props.data.artists[0].name}
-            artistLink={props.data.artists[0].external_urls.spotify}
-          />
+          <Artist artistArray={props.data.artists} />
         </div>
-        {/* <div className="artist-container">
-       {props.articleDetails.artists.map((eachartist) => {
-       return <a href={eachartist.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="artist" key={eachartist.id} >{eachartist.name} </a>
-     })}</div> */}
       </article>
     </>
   );

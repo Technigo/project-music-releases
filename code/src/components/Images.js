@@ -24,4 +24,3 @@ const Images = (props) => {
 };
 
 export default Images;
-/*{props.albumLink}*/
