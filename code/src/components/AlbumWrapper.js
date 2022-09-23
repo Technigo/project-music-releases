@@ -9,7 +9,9 @@ const AlbumWrapper = () => {
   });
   return (
     <section className="outer-wrapper">
-      <h1>New albums & singles</h1>
+      <div className="header">
+        <h1>New albums & singles</h1>
+      </div>
       <div className="album-wrapper">{allAlbums}</div>
     </section>
   );
