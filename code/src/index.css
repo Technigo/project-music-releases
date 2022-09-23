@@ -12,6 +12,29 @@ code {
     monospace;
 }
 
+.outer-wrapper {
+  background-color: black;
+}
+
+.inner-wrapper {
+  width: 90vw;
+  margin: 0 auto;
+  border: red 2px solid;
+  /*display: flex;
+  flex-direction: column;*/
+  /*align-items: center;*/
+
+}
+.cover {
+  display: flex;
+  flex-direction: column;
+ 
+}
+.picture {
+  border: magenta 2px solid;
+  /*justify-content: space-evenly;*/
+}
+
 .grey {
   color:#a0a0a0;
 }
@@ -28,35 +51,93 @@ a {
   font-size: 14px;
 }
 
-.outer-wrapper {
-  background-color: black;
+/*h1 {
+text-align: left;
+}*/
   
-}
-.buttons{
-  filter: invert(100%); 
-  width: 10%;
-  
-}
+
+  /* z-index: 1;
+ */
 
 .project-image {
+  border: yellow 2px solid;
   position: relative;
-  width: 100%;
-}
-.project-image-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  transition: 0.5s ease;
-}
-.project-image:hover {
-  color: transparent;
-}
-.project-image-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  /*width: 100%;*/
 }
 
 
-.inner-wrapper {
- 
+/* DESKTOP */
+@media (min-width: 1025px) {
+
+  .inner-wrapper {
+    border: red 2px solid;
+     /*width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   align-items: center;
+    margin: 0 auto;*/
+  }
+  .cover {
+    border: yellow 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-image {
+    position: relative;
+    /*width: 25%;*/
+  }
+  .card {
+    border: green 2px solid;
+    margin: 5px auto;
+    padding: 3px;
+    width: 20%;
+  }
+
+  .picture {
+    border: magenta 2px solid;
+
+} 
+  .project-image-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: 0.5s ease;
+  }
+  .project-image:hover {
+    color: transparent;
+  }
+  .project-image-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+   
+  } 
+  .buttons {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 16% 
+  }
+  
+  .buttons:hover > .icon {
+    opacity: 1;        
+  }
+  .icon {
+    width: 50px;
+    mix-blend-mode: lighten;
+    filter: invert(100%);
+    border: none !important;
+    opacity: 0;
+  }
+  .icon:hover {
+    opacity:1;
+  }
+
 }
+/*.cover-and-btns:hover > .btn-container {
+  opacity: 1;        
+}*/
