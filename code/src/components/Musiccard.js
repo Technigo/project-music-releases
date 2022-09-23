@@ -2,7 +2,7 @@ import React from 'react';
 
 import Covers from './Covers';
 import AlbumName from './AlbumName';
-import ArtistInfo from './ArtistInfo'
+import ArtistInfo from './ArtistInfo';
 
 const MusicCard = (props) => {
   console.log(props.data)

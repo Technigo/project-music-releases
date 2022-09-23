@@ -14,15 +14,15 @@ const Covers = (props) => {
           />
         </a>
         <div className='icons'>
-          <img src='icons/heart.svg'/>
+          <img src='icons/heart.svg' />
           <a
             href={props.playLink}
             target="_blank">
             <img
               className='play-btn grow'
-              src='icons/play.svg'/>
+              src='icons/play.svg' />
           </a>
-          <img src='icons/dots.svg'/>
+          <img src='icons/dots.svg' />
         </div>
       </div>
     </>
