@@ -52,6 +52,15 @@ h1 {
   height: 45px;
 }
 
+.Box:hover {
+  background-color: grey;
+  visibility:visible;
+}
+
+.Heart-Icon:hover, .Play-Icon:hover, .Dot-Icon:hover {
+transform: scale(1.3);
+transition: transform 0.5s; }*/
+
 
 .The-Album{
   display: grid;
