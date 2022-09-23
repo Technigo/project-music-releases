@@ -28,7 +28,6 @@ const MusicCard = (props) => {
           src={props.recordData.images[0].url}
           alt="album-cover" />
       </div>
-
       <h2 className="album-title">
         <a className="spotify-link album-link" href={props.recordData.external_urls.spotify}>
           {props.recordData.name}
