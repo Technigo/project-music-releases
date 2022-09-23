@@ -11,6 +11,6 @@ const ArtistName = (props) => {
   } else {
     return props.artists[0].name;
   }
- };
-  
- export default ArtistName;
+};
+
+export default ArtistName;
