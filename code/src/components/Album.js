@@ -1,10 +1,9 @@
 import React from "react";
 import Artists from 'components/Artists';
 
-const Album = ({ coverImage, albumUrl, albumName, albumArtists }) => {
-  //needs to be the same as in app file
-  // console.log('artistsUrl', artistsUrl);
-  console.log("albumArtists", albumArtists);
+const Album = ({ coverImage, albumUrl, albumName, albumArtists}) => {
+
+  // console.log("albumArtists", albumArtists);
 
   return (
     <div className="albumWrapper">
@@ -28,8 +27,10 @@ const Album = ({ coverImage, albumUrl, albumName, albumArtists }) => {
         </h2>
       </div>
 
-      <div class="artistWrapper">
-        <Artists artist={albumArtists}/>
+      <div className="artistWrapper">
+        <Artists 
+        artistList={albumArtists}
+        />
       </div>
     </div>
   );
