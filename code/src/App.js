@@ -9,6 +9,7 @@ export const App = () => {
       <div className="inner-wrapper">
         <h1 className="title">New albums & singles</h1>
       <div className="albums-wrapper">
+        {/*Here we're passing albums array into the Albums component.*/}
         <Albums data={data.albums.items}/>
       </div>
       </div>
