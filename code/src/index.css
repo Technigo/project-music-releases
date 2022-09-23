@@ -13,112 +13,22 @@ code {
     monospace;
 }
 
+p {
+  margin: auto;
+}
+
 /* Styling Header.js */
 .header-title {
   color: white;
   font-size: 20px;
 }
-/* Styling AlbumCard.js */
-.album-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
 
-.album-container {
-  position: relative;
-  opacity: 0.5;
-  background: rgba(44, 44, 44, 0.7);
-}
-
-.cover-img {
-  width: 100%;
-}
-
-.album-container:hover {
-  opacity: 1;
-}
-
-.hidden-icons {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.4s ease;
-}
-.hidden-icons:hover {
-  opacity: 0.5;
-}
-
-.hidden-icons .icon:hover {
-  fill: white;
-}
-
-/* Styling AlbumName.js */
-.song-title {
-  color: white;
-}
-/* Styling ArtistName.js */
-.artist-name {
-  color: white;
-  text-decoration: none;
-}
-.artist-container {
-  display: flex;
-}
+/* Album and artist text styling */
 a {
   text-decoration: none;
 }
-
-/* put , between the artists if there are more than two artists 
-.artist-link:not(:first-child, :last-child)::before {
-  color: white;
-  content: ", ";
-}
-/* put & between the two last artists or if there are two artists  */
-/* .artist-link:last-child::before {
-  content: " & ";
-  color: white;
-} */
-/* when it's just one artist don't display anything before the artist name */
-/* .artist-link:only-child::before {
-  content: "";
-}  */
-
-/* Styling Icons.js */
-.icons-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.heart-icon {
-  width: 40px;
-}
-.heart-icon:hover {
-  width: 50px;
-}
-.play-icon {
-  width: 60px;
-}
-.play-icon:hover {
-  width: 70px;
-}
-.dots-icon {
-  width: 30px;
-  filter: brightness(0) invert(1);
-}
-.dots-icon:hover {
-  width: 40px;
-}
-
-/* ALBUM & ARTIST NAMES */
 .song-title {
+  color: white;
   letter-spacing: 0.04em;
   text-decoration: none;
 }
@@ -134,6 +44,82 @@ a {
 
 .artist-name:hover {
   text-decoration: underline;
+}
+
+/* Styling AlbumCard.js */
+.album-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.album-card {
+  margin: 15px;
+}
+
+.cover-img {
+  width: 100%;
+}
+
+.album-container {
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.album-container:hover .cover-img {
+  opacity: 0.4;
+  transition: 0.4s ease;
+}
+
+.album-container:hover .hidden-icons {
+  opacity: 1;
+}
+
+.hidden-icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s ease;
+}
+
+/* Styling Icons.js */
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.heart-icon {
+  width: 40px;
+  opacity: 0.4;
+}
+.heart-icon:hover {
+  width: 50px;
+  opacity: 1;
+}
+.play-icon {
+  width: 60px;
+  opacity: 0.4;
+}
+.play-icon:hover {
+  width: 70px;
+  opacity: 1;
+}
+.dots-icon {
+  width: 30px;
+  opacity: 0.4;
+  filter: brightness(0) invert(1); /* To invert the color of the black dots in the svg image */
+}
+.dots-icon:hover {
+  width: 40px;
+  opacity: 1;
 }
 
 /* TABLET */
@@ -154,5 +140,6 @@ a {
 
   .header-title {
     font-size: 23px;
+    margin: 5px 15px;
   }
 }
