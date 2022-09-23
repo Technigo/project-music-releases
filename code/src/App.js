@@ -11,7 +11,7 @@ console.log(data);
 export const App = () => {
   return (
     <div className='all-container'>
-      <div className="Header">
+      <div className="Header"> 
        <Header /> 
       </div>
       <div className='music-container'>

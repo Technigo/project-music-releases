@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Cover = (props) => {
-    console.log("Hello")
-    console.log(props.img)
+   /*  console.log(props.img) */
+   //albumIcons is where we put all the icons & will be styled with flex
     return (
        <>
       <div className='cover-card'>
@@ -29,3 +29,5 @@ const Cover = (props) => {
 )}
 
 export default Cover;
+
+//line 27: we target picture, it's the 2nd array of the object (img will be connected to a name in app.js)
