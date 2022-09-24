@@ -1,14 +1,16 @@
-import { Albumlist } from './components/Albumlist';
-import { Header } from './components/Header';
+
 import React from 'react';
+import { Header } from './components/Header';
+import { AlbumList } from './components/AlbumList';
+
 
 
 export const App = () => {
   return (
-    
-    <div>
-      <Header/>
-      <Albumlist/>
-    </div>
-)};
 
+    <div>
+      <Header />
+      <AlbumList />
+    </div>
+    )
+};

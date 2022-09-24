@@ -1,23 +1,21 @@
 import React from 'react';
 
-
 export const ArtistName = (props) =>{
-  
-  return(
-    <div className='artist-name'>
-     {
-      props.item.artists.map((artist, index) => {
-        return <a
+  const content = props.item.artists;
+  return (
+    <>
+     {content.map((artist, index) => {
+        return (
+        <a className='artist-name underline'
         key={artist.id}
         href={artist.external_urls.spotify}>
+          <span>{content.length > 1 && index === content.length -1?' & ' : ''}</span>
           {artist.name}
-          <span>{props.item.artists.length-1>index?', ': ''}</span>  
+          <span>{content.length -2 > index? ', ' : ''}</span>
           </a>
+        )
       })
      }
-    
-    </div>
+     </>
   )
-}
-
-// &nbsp; = nonbreakingspace
+};
