@@ -10,16 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Helvetica", sans-serif;
 }
 
 /*HEADER*/
 .header-title {
-  font-family: "Helvetica", sans-serif;
   font-size: 1.5rem;
   color: white;
   padding: 3vw 0vw;
@@ -46,6 +41,8 @@ header {
   opacity: 0.3;
   transition: 0.4s;
 }
+
+/* ICONS */
 .icon-wrapper {
   display: flex;
   width: 70%;
@@ -92,13 +89,18 @@ header {
   margin-top: 2vw;
   margin-bottom: 0.5vw;
 }
+/* LINK STYLING */
+
 .title-links {
   color: white;
   text-decoration: none;
 }
 .title-links:hover {
   text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
+
 /* Tablet version */
 @media (min-width: 667px) and (max-width: 1024px) {
   .container {
