@@ -6,20 +6,25 @@ body {
   background-color: rgba(8, 8, 8, 0.877)
 }
 
-code {
+/*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "helvetica",
     monospace;
-}
+}*/
 
 header {
   margin: 10% 10% 0 10%;
   border-bottom: 0.3px solid #a0a0a0;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-size: 18px;
   color: #ffff;
 }
+
 
 h2 {
   font-size: 14px;
@@ -31,7 +36,7 @@ h2 {
 h3 {
   font-size: 14px;
   color: #a0a0a0;
-  line-height: 1;
+  line-height: 1
 }
 
 h2:hover, h3:hover {
@@ -113,6 +118,51 @@ h2:hover, h3:hover {
   transition: transform 0.4s;
   opacity: 1
 }
+
+
+/* SIDEBAR PLAYLIST */
+
+.sidePlaylist {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidePlaylist a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+}
+
+.sidePlaylist a:hover {
+  color: #f1f1f1;
+}
+
+.navheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5%
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffff;
+}
+
 
 
 @media (min-width: 768px) {
