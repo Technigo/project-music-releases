@@ -20,7 +20,7 @@ const AlbumCard = (props) => {
             key={artist.id}
             name={artist.name}
             url={artist.external_urls.spotify} />
-          {i + 1 < props.artists.length && <span className="artist-name"> , </span>}
+          {i + 1 < props.artists.length && <span className="artist-name" style={{ paddingLeft: 3, paddingRight: 3 }}> , </span>}
         </>
       ))}
     </div>
