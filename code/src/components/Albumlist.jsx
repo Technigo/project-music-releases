@@ -11,17 +11,13 @@ export const AlbumList = () => {
     <section className='app-body'>
         {data.albums.items.map((item) => (
          <article className='album-card' key={item.id}>
-            <CoverImg
-               item={item}
-             />
+            <CoverImg item={item} />
+
              <div className='album-artist-container'>
-            <AlbumName
-               item={item}
-            />
-            <ArtistName
-               item={item}
-            />
+            <AlbumName item={item} />
+            <ArtistName item={item}  />
             </div>
+            
          </article>
         ))}
     </section>
