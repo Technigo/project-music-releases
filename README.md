@@ -4,4 +4,4 @@ The assignment this week was to build a responsive page which shows new album oc
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://spotify-top50.netlify.app/
