@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project was to practice React and creating components by using data from Spotify. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+With pairprogramming, StackOverflow and team mates we solved this weeks task. We used React, CSS and a lot of trial and error. We practised the hover effect alot. 
+
+If we had more time we would fix the last row, so it is focused on the left. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sofia-linda-project-music-release.netlify.app/
