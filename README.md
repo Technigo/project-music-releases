@@ -4,4 +4,4 @@ The assignment this week was to build a responsive page which shows new album oc
 
 ## View it live
 
-https://spotify-top50.netlify.app/
+https://top50music.netlify.app/
