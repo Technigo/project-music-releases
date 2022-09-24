@@ -1,5 +1,7 @@
 body {
-  margin: 0;
+  background-color: #181818;
+  color: white;
+  margin: 2%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -10,4 +12,142 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: large;
+}
+
+hr {
+  border-color: #2b2a2a;
+}
+
+h2 {
+  width: 300px;
+  font-size: 14px;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+h2:hover {
+  text-decoration: underline;
+  color: white;
+  text-shadow: 0 0 6px white;
+}
+
+h3 {
+  width: 300px auto;
+  font-size: 14px;
+  color: #a0a0a0;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+h3:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  text-shadow: 0 0 6px #ffffff;
+}
+
+img {
+  border-radius: 10%;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  row-gap: 50px;
+}
+
+.img-container {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 300px;
+    height: 300px;
+}
+
+.single-album {
+display: inline;
+}
+
+
+.heart {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
+}
+
+.heart:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.play {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
+}
+
+.play:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.dots {
+  width: 50px;
+  filter: invert();
+  opacity: 0.7;
+}
+
+.dots:hover {
+  transition: 0.25s ease-in-out;
+  transform: scale(1.3);
+  opacity: 1;
+}
+
+.album-icons {
+  position: absolute;
+  align-items: center;
+  top: -8%;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  left: -9%;
+  opacity: 0;
+  padding: 20px;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #181818b8;
+}
+
+.album-icons:hover {
+  opacity: 1;
+}
+
+
+/* MEDIA QUERIES FOR TABLETS */
+@media (min-width: 768px) and (max-width: 1024px){
+  .albums {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+}
+}
+
+/* MEDIA QUERIES FOR MOBILES */
+@media (max-width: 767.98px){
+  .albums {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+}
 }
