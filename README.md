@@ -9,3 +9,4 @@ We learned a lot about React and the logic behind. If we had more time we would 
 
 ## View it live
 
+https://projectmusicreleases.netlify.app/
