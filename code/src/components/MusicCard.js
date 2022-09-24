@@ -2,8 +2,6 @@ import React from 'react';
 import ArtistName from './ArtistName';
 
 const MusicCard = (props) => {
-  console.log(props.recordData.artists);
-
   return (
     <section className="album-container">
       <div className="image-wrapper">

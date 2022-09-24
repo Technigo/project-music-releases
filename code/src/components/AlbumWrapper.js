@@ -3,7 +3,6 @@ import MusicCard from './MusicCard';
 import data from '../data.json';
 
 const AlbumWrapper = () => {
-  console.log(data.albums.items);
   const allAlbums = data.albums.items.map((record) => {
     return <MusicCard key={record.id} recordData={record} />;
   });
