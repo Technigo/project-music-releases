@@ -23,9 +23,9 @@ export const Album = (props) => {
     <div className="album-card">
       <div className="album-cover">
          <div className="icons">
-          <img className="btn-heart" src="icons/heart.png" alt="" />
-          <img className="btn-play" src="icons/play.png" alt="" />
-          <img className="btn-dots" src="icons/dots.png" alt="" /> 
+          <img className="btn-heart icon" src="icons/heart.png" alt="" />
+          <img className="btn-play icon" src="icons/play.png" alt="" />
+          <img className="btn-dots icon" src="icons/dots.png" alt="" /> 
         </div> 
 
         <a href={props.albumurl} className="album-img-hover" target="_blank" rel="noopener noreferrer">

@@ -16,22 +16,33 @@ code {
 
 h1 {
   color:white;
-  margin-left: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-bottom: 1px solid #65686e;
 }
 
 h3 {
-  font-size: 14px;
+  font-size: 15px;
   color: #ffffff;
+  margin-bottom: 5px;
+}
+
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a {
-  color: white;
+  color: rgb(168, 168, 168);
   text-decoration: none;
+  font-size: 15px;
 }
 
 a:hover {
   text-decoration: underline;
 }
+
+/* Album */
 
 .albums-container {
   width: 90%;
@@ -42,7 +53,7 @@ a:hover {
 }
 
 .album-card {
-  margin: 10px;
+  margin: 20px;
 }
 
 .album-artists {
@@ -54,41 +65,84 @@ a:hover {
 }
 
 .album-artists a:last-child span {
-  display: none
+  display: none;
 }
+
+.album-cover {
+  position: relative;
+  justify-content: space-around;
+}
+
+/* Icons */
 
 .icons {
   position: absolute;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 85%;
+  display: none;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+  width: 90%;
 }
 
-.icons img {
-  width: 15%;
-  opacity: 0;
+.btn-play {
+  width: 40px;
+}
+
+.btn-heart, .btn-dots {
+  width: 30px;
 }
 
 .btn-play, .btn-heart {
   filter: invert(99%) sepia(42%) saturate(0%) hue-rotate(228deg) brightness(116%) contrast(100%);
 }
 
+/* Hover effects*/
+
 .album-cover-img:hover {
   filter: brightness(0.50);
+  transition: 0.5s ease;
 }
 
-.icons img:hover {
-  opacity:1;
+.icons:hover ~ .album-img-hover { 
+  filter: brightness(0.50); 
+}
+
+.btn-play:hover {
+ width: 70px;
+ cursor: pointer;
+}
+
+.btn-dots:hover, .btn-heart:hover {
+  width: 40px;
+  cursor: pointer;
+}
+
+.icon {
+  margin:10px;
+}
+
+.album-cover:hover .icons  {
+ display: flex;
 }
 
 /*Media Queries*/
 /*Tablet*/
 @media (min-width: 667px) and (max-width: 1024px) {
   .albums-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
     width: 90%;
-    margin: auto;
+  }
+  h1 {
+    margin-left: 5%;
+  }
+
+  h3 {
+    font-size: 17px;
   }
 }
 
@@ -96,12 +150,13 @@ a:hover {
 @media (min-width: 1025px) {
 
   .albums-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    width: 90%; 
+  }
+
+  h1 {
+    margin-left: 5%;
   }
 
   h3 {
@@ -109,5 +164,32 @@ a:hover {
     color: #ffffff;
   }
   
+  .btn-dots, .btn-heart {
+    width: 50px;
+  }
 
- }
+  .btn-heart:hover {
+    width: 90px;
+  }
+
+  .btn-dots:hover {
+    width: 60px;
+  }
+
+  .btn-play:hover {
+    width: 90px;
+  }
+
+  .btn-play {
+    width: 80px;
+  }
+
+  .icons {
+    left: 65%;
+  }
+
+  .icon {
+    margin: 10px;
+  }
+
+}
