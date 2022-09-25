@@ -2,15 +2,13 @@
 
 Nina Berggren & Lisa Johansson DreamTeam
 
-Test!
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project we practiced React and created components by using data from Spotify. We build a page which shows new album and single releases 2019.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week we struggled with lack of instructions for how to start the project and the interferance of the eslint-file. In planing stage we tried to have album cover as a component but we couldn't get it to work, don't know why, we worked around the issue.
+
+If we hade more time, we would try to get the album cover component to work.
 
 ## View it live
 

@@ -12,13 +12,13 @@ export const AlbumCard = (props) => {
           </div>
           <div className="icons-container">
             <img
-              className="heart-icon"
+              className="heart icon"
               src="./icons/heart.svg"
               alt="heart-icon"
             />
-            <img className="play-icon" src="./icons/play.svg" alt="play-icon" />
+            <img className="play icon" src="./icons/play.svg" alt="play-icon" />
             <img
-              className="dots-icon"
+              className="dots icon"
               src="./icons/dots.svg"
               alt="three dots-icon"
             />

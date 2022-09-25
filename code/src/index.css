@@ -9,7 +9,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
@@ -17,77 +16,60 @@ code {
     monospace;
 }
 
-.header{
- 
-}
-
 h1 {
   font-family: Helvetica, sans-serif;
-  color: rgb(255, 255, 255);
+  color: #fff;
   font-size: 25px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
 }
 
 a {
+  display: block;
   font-family: Helvetica, sans-serif;
   color: #a0a0a0;
   font-size: 14px;
+  margin-bottom: 5px;
   text-decoration: none;
+  /* border: 1px solid red; */
 }
 
-a:hover{
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.album-title {
-  color: #ffffff;
-  font-weight: 700;
-}
-
-.album-title:hover{
-  text-decoration: underline;
-}
-
-.App{
+.App {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   justify-content: center;
-  grid-column-gap: 2em;
-  grid-row-gap: 2em;
+  gap: 2em;
   justify-items: center;
-  width: 100%;
+  /* width: 100%; */
 }
 
-.album-card{
+.album-card {
   width: 100%;
 }
-
 
 .img {
   width: 100%;
 }
 
-
-.cover-container{
+.cover-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  margin-bottom: 1em;
+  /* width: 100%; */
 }
 
-.icons-container:hover .cover-container{
-  opacity: .4;
+.cover-icons-container:hover .icons-container {
+  opacity: 1;
   transition: 0.5s ease;
 }
 
-.cover-icons-container{
-  position: relative;
+.cover-icons-container:hover .cover-container {
+  opacity: 0.4;
+  transition: 0.5s ease;
 }
 
-.icons svg path {
-  fill: white
+.cover-icons-container {
+  position: relative;
 }
 
 .icons-container {
@@ -97,41 +79,40 @@ a:hover{
   left: 0;
   right: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
   opacity: 0;
 }
 
-.icons-container:hover{
-  opacity: 1;
-  transition: 0.5s ease;
+/* invert coler svg icon */
+.icon {
+  filter: brightness(0) invert(1);
 }
 
-
-.heart-icon{
-  width: 40%
-  
+.heart,
+.dots {
+  width: 40%;
 }
 
-.play-icon{
-  width: 70%
+.play {
+  width: 70%;
 }
 
-.play-icon:hover{
+.play:hover {
   width: 100%;
   transition: 0.5s ease;
 }
 
-.dots-icon{
-  width: 40%
+.album-title {
+  color: #fff;
+  font-weight: 700;
 }
 
-.icons-play:hover {
-  width: 35%;
-  transition: all 0.5s ease-in-out;
+a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
-
 
 .artist-name-container > :not(:last-child):not(:first-child):before {
   content: ', ';
@@ -146,17 +127,15 @@ a:hover{
 }
 
 /* FOR TABLET */
-@media (min-width: 667px)and (max-width: 980px) {
- .App{
-  grid-template-columns: repeat(2, 1fr);
- }
-
+@media (min-width: 667px) {
+  .App {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  /* FOR DESKTOP */
-  @media (min-width: 980px){
-    .App{
-      grid-template-columns: repeat(4, 1fr);
-     }
-    
+/* FOR DESKTOP */
+@media (min-width: 980px) {
+  .App {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
