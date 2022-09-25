@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We made a web to show some albums and info about it, and a link with the play button to the album songs.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+That was difficult to start understanding react, but one time you get how it works is more easy, and the style was a bit confiusing.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://week5musicweb.netlify.app/
