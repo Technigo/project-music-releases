@@ -36,6 +36,7 @@ a {
   color: rgb(168, 168, 168);
   text-decoration: none;
   font-size: 15px;
+  
 }
 
 a:hover {
@@ -45,11 +46,11 @@ a:hover {
 /* Album */
 
 .albums-container {
-  width: 90%;
+  width: 87%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: auto;
 }
 
 .album-card {
@@ -60,17 +61,14 @@ a:hover {
   color: white;
 }
 
-.album-cover {
-  width: 50%;
-}
-
+/*To hide the last comma after the artist name*/
 .album-artists a:last-child span {
   display: none;
 }
 
 .album-cover {
   position: relative;
-  justify-content: space-around;
+  width: 50%;
 }
 
 /* Icons */
@@ -78,10 +76,10 @@ a:hover {
 .icons {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   top: 50%;
-  left: 85%;
+  left: 82%;
   display: none;
   transform: translate(-50%,-50%);
   z-index: 5;
@@ -89,15 +87,11 @@ a:hover {
 }
 
 .btn-play {
-  width: 40px;
+  width: 60px;
 }
 
 .btn-heart, .btn-dots {
   width: 30px;
-}
-
-.btn-play, .btn-heart {
-  filter: invert(99%) sepia(42%) saturate(0%) hue-rotate(228deg) brightness(116%) contrast(100%);
 }
 
 /* Hover effects*/
@@ -107,6 +101,7 @@ a:hover {
   transition: 0.5s ease;
 }
 
+/*Keeps the filter effect when hovering on the icons*/
 .icons:hover ~ .album-img-hover { 
   filter: brightness(0.50); 
 }
@@ -152,7 +147,7 @@ a:hover {
   .albums-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
-    width: 90%; 
+    width: 87%; 
   }
 
   h1 {
@@ -168,11 +163,11 @@ a:hover {
     width: 50px;
   }
 
-  .btn-heart:hover {
-    width: 90px;
+  .btn-play {
+    width: 80px;
   }
 
-  .btn-dots:hover {
+  .btn-heart:hover, .btn-dots:hover {
     width: 60px;
   }
 
@@ -180,16 +175,9 @@ a:hover {
     width: 90px;
   }
 
-  .btn-play {
-    width: 80px;
-  }
-
-  .icons {
-    left: 65%;
-  }
-
   .icon {
     margin: 10px;
+    left: 70%;
   }
 
 }
