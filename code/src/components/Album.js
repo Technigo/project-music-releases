@@ -9,21 +9,15 @@ const Album = (props) => {
   return (
     <>
       <article className="album-card">
-        <div>
-          <Images
-            albumImage={props.data.images[1].url}
-            albumLink={props.data.external_urls.spotify}
-          />
-        </div>
-        <div>
-          <AlbumTitle
-            albumTitle={props.data.name}
-            albumLink={props.data.external_urls.spotify}
-          />
-        </div>
-        <div>
-          <Artist artistArray={props.data.artists} />
-        </div>
+        <Images
+          albumImage={props.data.images[1].url}
+          albumLink={props.data.external_urls.spotify}
+        />
+        <AlbumTitle
+          albumTitle={props.data.name}
+          albumLink={props.data.external_urls.spotify}
+        />
+        <Artist artistArray={props.data.artists} />
       </article>
     </>
   );

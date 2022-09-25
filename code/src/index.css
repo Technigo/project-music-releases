@@ -1,42 +1,52 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #111;
-  font-family: "Helvetica", sans-serif;
+  margin: 0;
+}
+
+.outer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.inner-wrapper {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 /*HEADER*/
-.header-title {
+header {
+  width: 100%;
   font-size: 1.5rem;
   color: white;
-  padding: 3vw 0vw;
-  margin-top: 3vw;
-  margin-left: 3vw;
+  border-bottom: 1px solid #333;
+  margin: 3vw;
 }
 
-header {
-  border-bottom: 1px solid #333;
-  margin-bottom: 5vw;
-}
 /*MUSIC SECTION*/
 .album-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   margin-bottom: 5vw;
 }
+
 .album-image {
-  transition: 0.5s ease;
+  width: 100%;
+  object-fit: cover;
 }
+
 .image-container {
   object-fit: cover;
   position: relative;
 }
+
 .album-image:hover {
   opacity: 0.3;
   transition: 0.4s;
@@ -54,47 +64,58 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .image-container:hover .album-image {
   opacity: 0.3;
+  /*Keeps overlay on picture while hovering*/
 }
+
 .image-container:hover .icon-wrapper {
   opacity: 1;
+  /*Shows icons only when hovering*/
 }
+
 .icon-heart,
 .icon-dots {
   width: 30px;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
 }
 
 .icon-play {
-  width: 60px;
-  filter: brightness(0) invert(1);
+  width: 50px;
+  filter: invert(1);
   transition: 0.2s;
 }
+
 .icon-play:hover {
   transition: 0.35s ease-in-out;
   transform: scale(1.3);
 }
 
 /*ARTIST NAME + ALBUM NAME*/
+.artist-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .artist-name {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #a0a0a0;
 }
+
 .album-title {
-  font-family: Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
-  margin-top: 2vw;
-  margin-bottom: 0.5vw;
+  margin-bottom: 0;
 }
+
 /* LINK STYLING */
 
 .title-links {
   color: white;
   text-decoration: none;
 }
+
 .title-links:hover {
   text-decoration: underline;
   text-decoration-thickness: 2px;
@@ -103,30 +124,33 @@ header {
 
 /* Tablet version */
 @media (min-width: 667px) and (max-width: 1024px) {
-  .container {
-    width: 768px;
-    margin: auto;
+  .inner-wrapper {
+    justify-content: space-evenly;
+    column-gap: 10px;
+    width: 100%;
   }
 
-  .test {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  .album-card {
+    width: 40%;
   }
+
+
 }
 
 /* Deskop version */
 @media (min-width: 1024px) {
-  .container {
-    width: 1300px;
-    margin: auto;
+  .inner-wrapper {
+    column-gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
   }
 
-  .test {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  .album-card {
+    width: 24%;
+  }
+
+  header {
+    margin: 1vw;
   }
 }
