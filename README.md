@@ -1,12 +1,16 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The project were about to create a webbsite with music releases - albums and singles, using json data and React. 
 
 ## The problem
+This was our first project using react. In the beginning it was a bit complicated to understand how to work with react and connect components to later display in browser.
+We created different components and exported into "final" component - App.js. We used map to return the name of artists & album, and cover image for single/album. 
+The result shows a webbsite with artists, albums and singles, also with a sidebar showing popular playlists.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started working in the master and then split up into branches to later merged to master again. 
+If more time we might would like to read more to get an even deeper knowledge about React. Also we would have liked to divide albums and singles in different sections instead of have it all mixed as it is now. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+link to webbsite: https://papaya-fox-74e30c.netlify.app/
+
+// Johanna Rosenholm, Sofie Rydmark & Carina Moreno
