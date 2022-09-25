@@ -11,21 +11,18 @@ body {
     monospace;
 }*/
 
-main {
-  margin-left: 6%;
-}
-
 a {
   text-decoration: none;
   
 }
+
 header {
   margin: 10% 10% 0 10%;
   border-bottom: 0.3px solid #a0a0a0;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   color: #ffff;
 }
 
@@ -45,6 +42,20 @@ h3 {
 h2:hover, h3:hover {
   text-decoration: underline;
   cursor: pointer
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffff;
+  border-bottom: 0.3px solid #a0a0a0;
+  padding-bottom: 2%;
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: bold;
+  color:#ffff;
 }
 
 .artist-name a:not(:first-of-type, :last-of-type)::before {
@@ -102,6 +113,12 @@ h2:hover, h3:hover {
   opacity: 0.2
 }
 
+.playlistIcon {
+  filter: invert();
+  width: 20px;
+  padding-left: 2%
+}
+
 #heart, #dots{
   width: 10%;
 }
@@ -126,49 +143,47 @@ h2:hover, h3:hover {
 /* SIDEBAR PLAYLIST */
 
 .sidePlaylist {
-  height: 100%;
-  width: 250px;
+  height: 9%;
+  left: 2%;
+  right: 2%;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  bottom: 0;
   background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
+  padding: 1% 5%;
+  border-radius: 20px;
+  margin: 1%;
+  overflow: hidden;
 }
 
 .sidePlaylist a {
-  padding: 6px 6px 6px 32px;
   text-decoration: none;
-  font-size: 20px;
   color: #818181;
 }
 
-.sidePlaylist a:hover {
+a:hover {
   color: #f1f1f1;
+  text-decoration: underline;
 }
 
-.navheader {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 5%
-}
-
-.navlinks {
+.navlinkWrapper {
   display: flex;
   flex-direction: column;
 }
 
-h4 {
-  font-size: 20px;
+.navlinks {
+  font-size: 17px;
   font-weight: bold;
-  color: #ffff;
+  color: #a0a0a0;
+  list-style: none;
+  line-height: 2
 }
 
 
-
 @media (min-width: 768px) {
+
+  .sidePlaylist {
+    height: 8%;
+  }
 
   header {
     margin: 5% 10% 0 10%;
@@ -184,6 +199,25 @@ h4 {
 }
 
 @media (min-width: 992px) {
+
+  .sidePlaylist {
+    height: 100%;
+    width: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding: 1%;
+    border-radius: 20px;
+    margin: 1%
+  }
+  
+
+  main {
+    margin-left: 10%;
+  }
 
   header {
     margin: 5% 5% 0 5%;
