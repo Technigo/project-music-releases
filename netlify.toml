@@ -3,5 +3,5 @@
 [build]
   base = "code/"
   publish = "build/"
-  CI = "npm run build"
+  command = "npm run build"
   
