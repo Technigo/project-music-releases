@@ -10,7 +10,7 @@ const Album = (props) => {
         <img className="album-cover" src={images[1].url} alt="Album cover" />  
           <div className="album-icons">
             <img src="../icons/heart.svg" className="heart" alt="heart icon" />
-            <a href={props.playLink} target='_blank' ><img src="../icons/play.svg" className="play" alt="play icon"/></a>
+            <a rel="noopener noreferrer" href={props.playLink} target='_blank' ><img src="../icons/play.svg" className="play" alt="play icon"/></a>
             <img src="../icons/dots.svg" className="dots" alt="more icon"/>
           </div>
       </div> 
