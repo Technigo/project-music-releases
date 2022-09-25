@@ -12,4 +12,4 @@ If we hade more time, we would try to get the album cover component to work.
 
 ## View it live
 
-Netlify link:
+Netlify link: https://project-music-release-nina-lisa.netlify.app/
