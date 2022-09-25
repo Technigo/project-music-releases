@@ -1,6 +1,6 @@
 body {
   padding: 20px;
-  background-color: black;
+  background-color: #242626;
   display: flex;
   justify-content: center;
   margin: 0;
@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -16,19 +17,146 @@ code {
     monospace;
 }
 
+.header{
+ 
+}
+
 h1 {
-  font-family: Helvetica;
-  color: #fff;
-  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
 }
 
 a {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   color: #a0a0a0;
   font-size: 14px;
   text-decoration: none;
 }
 
-.icon {
-  background-color: aqua;
+a:hover{
+  color: #ffffff;
+  text-decoration: underline;
 }
+
+.album-title {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.album-title:hover{
+  text-decoration: underline;
+}
+
+.App{
+  display: grid;
+  grid-template-columns: 1fr; 
+  justify-content: center;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  justify-items: center;
+  width: 100%;
+}
+
+.album-card{
+  width: 100%;
+}
+
+
+.img {
+  width: 100%;
+}
+
+
+.cover-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.icons-container:hover .cover-container{
+  opacity: .4;
+  transition: 0.5s ease;
+}
+
+.cover-icons-container{
+  position: relative;
+}
+
+.icons svg path {
+  fill: white
+}
+
+.icons-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.icons-container:hover{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+
+.heart-icon{
+  width: 40%
+  
+}
+
+.play-icon{
+  width: 70%
+}
+
+.play-icon:hover{
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.dots-icon{
+  width: 40%
+}
+
+.icons-play:hover {
+  width: 35%;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.artist-name-container > :not(:last-child):not(:first-child):before {
+  content: ', ';
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+.artist-name-container > :not(:first-child):last-child:before {
+  content: ' & ';
+  white-space: pre;
+  color: #a0a0a0;
+}
+
+/* FOR TABLET */
+@media (min-width: 667px)and (max-width: 980px) {
+ .App{
+  grid-template-columns: repeat(2, 1fr);
+ }
+
+  }
+
+  /* FOR DESKTOP */
+  @media (min-width: 980px){
+    .App{
+      grid-template-columns: repeat(4, 1fr);
+     }
+    
+  }
