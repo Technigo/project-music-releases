@@ -53,9 +53,10 @@ h4 {
   font-size: 20px;
   font-weight: bold;
   color: #ffff;
-  border-bottom: 0.3px solid #a0a0a0;
-  padding-bottom: 2%;
+  margin-top: 6%;
+  text-align: center;
 }
+
 
 h5 {
   font-size: 15px;
@@ -183,8 +184,16 @@ a:hover {
   line-height: 2
 }
 
+/** MEDIA QUERIES **/
+
 
 @media (min-width: 768px) {
+
+  h4 {
+    margin-top: 4%;
+    text-align: center;
+  }
+  
 
   .sidePlaylist {
     height: 8%;
@@ -204,6 +213,13 @@ a:hover {
 }
 
 @media (min-width: 992px) {
+
+  
+  h4 {
+    border-bottom: 0.3px solid #a0a0a0;
+    padding-bottom: 2%;
+    text-align:start
+  }
 
   .sidePlaylist {
     height: 100%;
