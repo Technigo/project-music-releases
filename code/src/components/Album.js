@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ArtistName from './ArtistName'
 import AlbumName from './AlbumName'
 import AlbumImage from './AlbumImage'
