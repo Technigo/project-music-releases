@@ -4,7 +4,7 @@ export const Album = (props) => {
   return (
     <div className="album-card">
       <div className="album-cover">
-         <div className="icons">
+        <div className="icons">
           <img className="btn-heart icon" src="icons/heart.png" alt="" />
           <img className="btn-play icon" src="icons/play.png" alt="" />
           <img className="btn-dots icon" src="icons/dots.png" alt="" /> 
@@ -39,10 +39,5 @@ export const Album = (props) => {
 
 /* We do a .map on artists to be able to get all the artists names who
 are involved, since the names are inside an array of objects */
-
-/* rel="noopener noreferrer" is added to the a linking elements, got
-a warning that not adding this rel would be a security risk */
-
-
 
 export default Album
