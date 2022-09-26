@@ -3,7 +3,7 @@ import data from './data.json';
 import { Header } from "components/Header";
 import { Album } from "components/Album";
 import './index.css'
-//import { Buttons } from "components/Buttons"; 
+
 // Extracts array with 50 album objects from main data object
 const albumsArray = data.albums.items;
 
