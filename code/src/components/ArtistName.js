@@ -16,13 +16,8 @@ const ArtistName = ({ artists }) => {
             key={artist.id}>
             <div className="artist-name">
               <p key={artist.id}>
-                {artist.name}
                 {/* prettier-ignore */}
-                {index === artists.length - 2
-                  ? ' & .'
-                  : index < artists.length - 2
-                  ? ', .'
-                  : ' '}
+                {artist.name}{index === artists.length - 2 ? ' & ' : index < artists.length - 2 ? ', ' : ' '}
               </p>
             </div>
           </a>
