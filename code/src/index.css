@@ -1,5 +1,7 @@
 *{
-width: 400px;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,8 +21,10 @@ code {
 
 h1 {
   color: white;
-  font-size: 20px;
-  padding-left: 10%;
+  font-size: 28px;
+  padding-left: 4%;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 h2 {
@@ -28,6 +32,7 @@ h2 {
   font-size: 14px;
   font-weight: bold;
   margin: 5px 0px;
+  max-width: 300px;
 }
 
 h3{
@@ -40,6 +45,8 @@ h3{
   display: grid;
   align-items: end;
   height: max-content;
+  justify-items: center;
+  align-items: stretch;
 
 }
 
@@ -48,6 +55,7 @@ h3{
   position: relative;
   height: max-content;
   width: 100%;
+  justify-content: center;
 }
 
 .image-container:hover .album-image {
@@ -61,7 +69,12 @@ h3{
 .album-image {
   opacity:1;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.album-card {
+display: grid;
+gap: 10px;
 }
 
 .album{
@@ -69,22 +82,19 @@ h3{
 }
 
 .album-title{
- display: block;
- margin-bottom: 0;
- position: absolute;
-
+ margin: 0px;
 }
 
 a {
   text-decoration: none;
   color: white;
-  position: absolute;
+  
 }
 
 .artistName {
-  position: absolute;
-  margin-bottom: 20px;
-  display: block
+  padding-bottom: 20px;
+  display: flex;
+  max-width: 300px;
 }
 
 a:hover{
@@ -102,7 +112,7 @@ a:hover{
 
 .icons-container{
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0%;
   opacity:0;
   display: flex;

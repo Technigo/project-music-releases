@@ -17,30 +17,30 @@ export const App = () => {
       <header>
         <Header/>
       </header>
-       
+      <div className="albums-container">
         {albumsArray.map((album) => {
           return (
             <>
-            <div className="albums-container">
+
+            <div className="album-card">
               <Image
               imgsrc={album.images[1].url}
               href={album.external_urls.spotify}
               />
               <Album 
-                key={album.id}
-                title={album.name}
-                href={album.external_urls.spotify}
+              key={album.id}
+              title={album.name}
+              href={album.external_urls.spotify}
               />
               <Artist
               album= {album.artists}
               href={album.external_urls.spotify}
               />
-            
-            </div>
+              </div>
             </>
           ) 
         })}
-      
+      </div>
     </>
   )
 }
