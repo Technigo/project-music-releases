@@ -37,11 +37,13 @@ code {
 }
 
 .albums-wrapper {
+  margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .album-container {
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Makes it so the link is not the full width */
@@ -99,7 +101,7 @@ code {
 .album-cover-container {
   position: relative;
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 
 .icons-container {
@@ -113,29 +115,29 @@ code {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  transition: opacity .3s;
+  transition: opacity 0.3s;
 }
 
 .album-cover {
   opacity: 1;
-  transition: .3s;
-  width: 250px; 
+  transition: 0.3s;
+  width: 250px;
 }
 
 .album-cover-container:hover .album-cover {
   opacity: 0.3;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .album-cover-container:hover .icons-container {
   opacity: 1;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .icon {
   width: 30px;
   filter: invert(0.8);
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .play-icon {
@@ -148,42 +150,43 @@ code {
   transition: 0.3s;
 }
 
-.heart-icon:hover, .dots-icon:hover {
+.heart-icon:hover,
+.dots-icon:hover {
   filter: invert(1);
   transition: 0.2s ease-in-out;
-} 
+}
 
 /* Media queries */
 
-  /* DESKTOP */
-  @media (max-width: 1400px) {
-    .album-cover {
-      width: 200px;
-    }
+/* DESKTOP */
+@media (max-width: 1400px) {
+  .album-cover {
+    width: 200px;
   }
+}
 
-  /* TABLET */
-  @media (max-width: 1100px) {
-    .albums-wrapper {
-      grid-template-columns: 1fr 1fr;
-    }
-    .album-cover {
-      width: 300px;
-    }
-  } 
-
-  @media (max-width: 830px) {
-    .album-cover {
-      width: 250px;
-    }
-  } 
-
-  /* MOBILE */
-  @media (max-width: 700px) {
-    .albums-wrapper {
-      grid-template-columns: 1fr;
-    }
-    .album-cover {
-      width: 300px;
-    }
+/* TABLET */
+@media (max-width: 1100px) {
+  .albums-wrapper {
+    grid-template-columns: 1fr 1fr;
   }
+  .album-cover {
+    width: 300px;
+  }
+}
+
+@media (max-width: 830px) {
+  .album-cover {
+    width: 250px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .albums-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .album-cover {
+    width: 300px;
+  }
+}
