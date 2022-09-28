@@ -28,3 +28,5 @@ const AlbumCard = ({ url, img, name, artists }) => {
 };
 
 export default AlbumCard;
+
+// @TODO add & - see https://stackoverflow.com/c/technigo/questions/2239
