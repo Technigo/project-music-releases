@@ -8,4 +8,4 @@ const ArtistName = (props) => {
   );
 };
 
-export default (ArtistName);
+export default ArtistName;
