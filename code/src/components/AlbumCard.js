@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icons } from './Icons';
+import Icons from './Icons';
 import ArtistName from './ArtistName';
 
 const AlbumCard = ({ url, img, name, artists }) => {
@@ -27,4 +27,4 @@ const AlbumCard = ({ url, img, name, artists }) => {
   );
 };
 
-export default (AlbumCard);
+export default AlbumCard;

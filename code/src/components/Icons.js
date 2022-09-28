@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Icons = () => {
+const Icons = () => {
   return (
     <div className="icons-container">
       <img className="heart-icon icons" src="../icons/heart.svg" alt="heart-icon" />
@@ -9,3 +9,5 @@ export const Icons = () => {
     </div>
   );
 };
+
+export default Icons;
