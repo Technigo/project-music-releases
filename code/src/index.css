@@ -9,7 +9,7 @@ body {
     letter-spacing: 0.05em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000000;
+  background-color: #151515;
   max-width: 95%;
 }
 
@@ -22,6 +22,11 @@ code {
   color: #ffffff;
   font-size: 20px;
 }
+
+/*
+@TODO add ease to hover effects
+@TODO fix grid
+*/
 
 /* - - - - - - - - APP - - - - - - - - - - - - */
 
