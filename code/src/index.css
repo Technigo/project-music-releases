@@ -21,14 +21,13 @@ code {
 
 main{
   margin: 0 auto;
-  /* border: solid 2px blue; */
 }
 
 h1 {
   color: #fff;
   padding: 10px;
   font-size: 24px;
-  margin: 0 12px;
+  margin: 15px 12px 0 12px;
 }
 
 a:link, a:visited {
@@ -50,12 +49,13 @@ a:link, a:visited {
   margin:10px;
   padding: 0px;
   width: 80%;
+  align-items: center; 
+  justify-self: center;
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  /* border: solid 5px rgb(255, 192, 213); */
 }
 
 .imageWrapper:hover .icon-wrapper {
@@ -64,23 +64,20 @@ a:link, a:visited {
 
 .albumImage {
   width: 100%;
-  /* border: solid 5px lightblue; */
 }
 
 /* TEXT Name & Artist */
 .albumName {
   width: 80%;
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   margin-bottom: -15px;
-  /* border: solid 5px blue;  */
 }
 
 .artistName {
-  font-size: 18px;
+  font-size: 13px;
   color: white;
   margin: 0px;
-  /* border: solid 5px pink;  */
 }
 
 a {
@@ -95,13 +92,11 @@ a {
 
 /* Icons */
 .icon-image-wrapper {
-  /* border: 3px solid rgb(94, 19, 10); */
   width: 100%;
 }
 
 
 .icon-wrapper {
-  /* border: 3px solid blue; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
