@@ -6,7 +6,7 @@ import data from 'data.json';
 
 console.log(data);
 
-export const AlbumList = () => {
+ const AlbumList = () => {
   return (
     <section className='app-body'>
         {data.albums.items.map((item) => (
@@ -23,3 +23,4 @@ export const AlbumList = () => {
     </section>
   )
 };
+export default AlbumList
