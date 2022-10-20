@@ -8,4 +8,4 @@ We used google and Stack Overflow to find answers to our questions. We also used
 
 ## View it live
 
-https://cheerful-lebkuchen-cf6e70.netlify.app/
+https://musicreleases-linneaajger.netlify.app
