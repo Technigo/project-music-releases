@@ -67,7 +67,7 @@ body {
 .iconsContainer img{
   width: 30px; 
    visibility: hidden;
-   padding: 8px;
+   margin: 8px;
    filter: brightness(0) invert(1);
 
 }
@@ -129,6 +129,8 @@ a:hover {
 
   .iconsContainer img {
     width: 30px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
   }
 
   .coverImage:hover > img,
@@ -142,11 +144,16 @@ a:hover {
 
   .iconsContainer img:hover {
     opacity: 1;
+    transition: 0.5s ease-in-out;
   }
 
-  .iconsContainer img:hover {
-    width:40px;
+  .playIcon:hover {
+    transform: scale(1.6);
   }
+  .heartIcon:hover, .dotsIcon:hover {
+    transform: scale(1.2);
+  }
+ 
 
   .list-of-playlists {
     display: flex;
@@ -166,6 +173,9 @@ a:hover {
 
   .playlist {
     padding: 5px 0px;
+  }
+  .playlist a {
+    transition: 0.1s ease-in-out;
   }
   .playlist a:hover{
     color:white;
