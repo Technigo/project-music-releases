@@ -8,5 +8,5 @@ With more time we would have tried to do more than one of the stretch goals, e.g
 
 ## View it live
 
-https://soft-palmier-811892.netlify.app/
+https://music.brucette.com/
 
