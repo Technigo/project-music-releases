@@ -6,8 +6,6 @@ import { Album } from './components/Album';
 import { Artist } from './components/Artist';
 
 
-console.log(data);
-
 export const App = () => {
   return (
     <section className='outer-wrapper'>

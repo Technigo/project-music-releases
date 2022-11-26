@@ -6,7 +6,7 @@ export const Album = (props) => {
 return (
     <>
     <div>
-      <a className='white bold'href= {props.data.external_urls.spotify}>
+      <a className='white bold'href= {props.data.external_urls.spotify} target="_blank">
         {props.data.name}
       </a>
     </div>

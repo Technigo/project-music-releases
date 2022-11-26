@@ -2,7 +2,6 @@ import React from 'react';
 
 
 export const Artist = (props) => {
-    console.log(props.data);
   return (
       <>
         <div>

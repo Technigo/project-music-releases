@@ -11,7 +11,7 @@ export const Buttons = () => {
               <img src={likeBtn} alt='Like Button'/>
             </button>
             <button className='icon play'>
-             <img src={playBtn} alt=' Play Button'/>
+             <img src={playBtn} alt='Play Button'/>
             </button>
             <button className='icon more'>
               <img src={moreBtn} alt='More Button'/>

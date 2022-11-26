@@ -121,8 +121,9 @@ a {
     transition: 0.5s ease;
   }
   
-  .project-image:hover {
+  .project-image-overlay:hover > .buttons > .icon {
     color: transparent;
+    opacity: 1;  
   }
 
   .project-image-overlay:hover {
@@ -135,11 +136,7 @@ a {
     justify-content: space-evenly;
     position: absolute;
     top: 45%;
-    left: 16% 
-  }
-  
-  .buttons:hover > .icon {
-    opacity: 1;        
+    left: 10% 
   }
 
   .icon {
@@ -149,16 +146,18 @@ a {
     border: none !important;
     opacity: 0;
   }
-  
+
   .icon:hover {
-    opacity:1;
+    cursor: pointer
   }
 
   .play {
     transform: scale(1.5);
+    transition: 0.5s ease-in-out;
   }
 
   .play:hover {
     transform: scale(2.0);
+    transition: 0.5s ease-in-out;
  }
 }
