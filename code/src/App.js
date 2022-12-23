@@ -88,6 +88,7 @@ console.log(item.album_type)
       </section>
       </section>
         <div className="list-of-playlists">
+          <div className='inner-wrapper'>
           <h2>Popular playlists</h2>
           {stretchGoal.playlists.items.map((item)=> {
             return (
@@ -100,6 +101,7 @@ console.log(item.album_type)
                 </div>
               </>
             )})}
+            </div>
         </div>
              
         </section>
