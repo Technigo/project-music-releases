@@ -9,10 +9,14 @@ console.log(data);
 
 export const App = () => {
   return (
-    <div className="App">
+    <main className="wrapper">
       <Header />
-      <AlbumCard />
-    </div>
+      <div className="App">
+        {data.albums.items.map((singleAlbum) => (
+          <AlbumCard key={singleAlbum.id} album={singleAlbum} />
+        ))};
+      </div>
+    </main>
   );
 }
 
