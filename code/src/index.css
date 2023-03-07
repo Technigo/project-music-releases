@@ -16,3 +16,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+
+
+/* MEDIA QUERIES FOR TABLETS */
+@media (min-width: 768px) and (max-width: 1024px){
+  .albums {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+}
+}
+
+/* MEDIA QUERIES FOR MOBILES */
+@media (max-width: 767.98px){
+  .albums {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+}
+}
