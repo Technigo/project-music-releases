@@ -3,15 +3,17 @@ import Artist from './Artist';
 
 const Album = (props) => {
   return (
-    <section>
+    <section className="albums">
       {props.data.albums.items.map((singleItem) => {
         return (
-          <div key={singleItem.id}>
-            <div>
-              <p className="hide">PLay button</p>
+          <div className="album-info" key={singleItem.id}>
+            <div className="active">
+              <button type="button">Heart icon</button>
+              <button type="button">Play icon</button>
+              <button type="button">... icon</button>
             </div>
-            <img src={singleItem.images[2].url} alt={singleItem.name} />
-            <a target="_blank" href={singleItem.external_urls.spotify} alt={singleItem.name} rel="noreferrer">{singleItem.name}</a>
+            <img className="album-img" src={singleItem.images[0].url} alt={singleItem.name} />
+            <a className="album-name" target="_blank" href={singleItem.external_urls.spotify} alt={singleItem.name} rel="noreferrer">{singleItem.name}</a>
             <Artist artistName={singleItem.artists} />
           </div>
         )
