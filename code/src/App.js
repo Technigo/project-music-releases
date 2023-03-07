@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <div>
       Find me in src/app.js!
+      Sammy Test
     </div>
   );
 }
