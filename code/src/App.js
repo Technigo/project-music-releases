@@ -1,12 +1,16 @@
 import React from 'react';
+import Header from 'components/Header';
+import NewsList from 'components/NewsList';
 import data from './data.json';
+
 
 console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <section>
+      <Header title="Hej hej på dej" />
+      <NewsList articlesList={data} />
+    </section>
   );
 }
