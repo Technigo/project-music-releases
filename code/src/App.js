@@ -1,12 +1,15 @@
 import React from 'react';
+import Album from 'components/album';
 import data from './data.json';
-
-console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="App">
+      <h>Artist List</h>
+      {data.albums.items.map((albums) => (
+        <Album
+          title={albums.href} />
+      ))}
     </div>
   );
 }
