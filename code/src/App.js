@@ -1,4 +1,4 @@
-/* import AlbumName from 'components/AlbumName'; */
+import Header from 'components/Header';
 import React from 'react';
 import data from './data.json';
 // import { AlbumName } from './components/AlbumName'
