@@ -1,13 +1,160 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+a {
+  text-decoration:none;
+}
+
+/* Mobile first  */
+.album-parent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 5%;
+  justify-content: space-between;
+}
+
+.album-child {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.album-child img{
+  width: 100%;
+}
+
+.cover-container {
+  position: relative;
+}
+
+.artist-name {
+  display: block;
+}
+
+.icon-play {
+  height: 60px;
+  width: 60px;
+}
+
+.icon-dots, .icon-heart {
+  height: 30px;
+  width: 30px;
+  /* display: none; */
+} 
+
+.icon-play:hover {
+  height: 80px;
+  width: 80px;
+  transition: .3s ease;
+  fill: white;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+a {
+  color: white;
+}
+
+h1 {
+  color: #ffffff;
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+h3 {
+  color: #a0a0a0;
+  font-size: 14px;
+}
+
+/* Not working properly*/ 
+.artist-name {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #a0a0a0;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.artist-container {
+  display:flex;
+  line-height: 16px;
+}
+
+/*Add a comma after each artist
+.artist-name ::after {
+  content: ", ";
+}
+
+/* Remove the comma after the last artist
+.artist-name :last-child::after {
+  content: "";
+}
+*/
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ',';
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 3px 0 0;
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: '&';
+  color: #a0a0a0;
+  font-size:14px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0 3px;
+}
+
+/* Tablet  */
+@media screen and (min-width: 668px) {
+  .album-child {
+    width: 45%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1025px) {
+  .album-child {
+    width: 23%;
+  }
 }
