@@ -63,6 +63,13 @@ hr {
   color: #a0a0a0;
 }
 
+.btn {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
 .img-btn-cover {
   position: relative;
 }
@@ -118,6 +125,8 @@ hr {
   background-color: rgba(0, 0, 0, 0.6);
   transition: 0.5s ease;
 }
+
+
 
 /* TABLET */
 @media (min-width: 600px) {
