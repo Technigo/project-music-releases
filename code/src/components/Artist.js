@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Artist = (artists) => {
+const Artist = (props) => {
   return (
-    artists.items.artists.map(() => {
-      return <p>{artists.name}</p>
+    props.artists.map((artist) => {
+      return (
+        <h2 className="artistName">{artist.name}</h2>
+      )
     })
-
   )
 }
 
