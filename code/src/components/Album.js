@@ -14,3 +14,4 @@ export const Album = ({ image, albumname, artistname }) => {
 // Link to album (external_urls - spotify)
 // Link to artist (artists - 0 - external_urls)
 // The name of each artist involved with a comma between
+// Include icons here?
