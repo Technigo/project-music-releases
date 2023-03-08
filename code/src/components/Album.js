@@ -6,10 +6,12 @@ import { AlbumName } from './AlbumName';
 export const Album = (props) => {
   console.log(props);
   return (
-    <div>
-      <AlbumImages imagesInput={props.albumInput.images} />
-      <AlbumName albumNamesInput={props.albumInput.name} />
-      <AlbumArtists artistsInput={props.albumInput.artists} />
-    </div>
+    <a href={props.albumInput.href}>
+      <div>
+        <AlbumImages imagesInput={props.albumInput.images} />
+        <AlbumName albumNamesInput={props.albumInput.name} />
+        <AlbumArtists artistsInput={props.albumInput.artists} />
+      </div>
+    </a>
   );
 };
