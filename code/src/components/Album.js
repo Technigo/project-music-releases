@@ -1,5 +1,6 @@
 import Artists from 'components/Artists';
-import './style.css'
+import 'style/styling.css'
+import 'index.css'
 import React from 'react';
 
 // props = { album }

@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css'
+import 'style/styling.css'
+import 'index.css'
 // article
 // namn på artisterna
 // used using the ternary operator to conditionally add a

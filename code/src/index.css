@@ -7,13 +7,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 background-color: black;
 color: pink;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+justify-content: center;
+}
+.header h1{
+  text-align: center;
+  color: blue;
+}
+.albumName{
+  color: aqua;
 }
 
 
