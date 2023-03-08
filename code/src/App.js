@@ -1,20 +1,20 @@
 import React from 'react';
+import data from './data.json';
 
-import { Albumcovers } from 'components/Albumcovers';
+import { Albumcovers } from './components/Albumcovers';
 import { Artists } from './components/Artists';
 import { Albums } from './components/Albums';
 
 export const App = () => {
   return (
-    <main>
-      <header>
-        <h1>New albums & singles</h1>
-      </header>
-    <section className="albumcontainer">
-      <Albumcovers />
-      <Artists />
-      <Albums />
-    </section>
-    </main>
+    <div className="Albumcontainer">
+      {data.albums.items.map((singleAlbumItem) => (
+        <div key={singleAlbumItem.id}>
+          <Albumcovers cover={singleAlbumItem.images[0].url} />
+          <Albums album={singleAlbumItem.name} />
+          <Artists album={singleAlbumItem} />
+        </div>
+      ))}
+    </div>
   );
 }
