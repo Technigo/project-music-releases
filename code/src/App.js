@@ -7,14 +7,19 @@ import { Albums } from './components/Albums';
 
 export const App = () => {
   return (
-    <div className="Albumcontainer">
+    <section className="albumcontainer-parent">
+      <header>
+      <h2 className="header-title">New albums & singels</h2>
+      </header>
+    <div className="albumcontainer">
       {data.albums.items.map((singleAlbumItem) => (
         <div key={singleAlbumItem.id}>
-          <Albumcovers cover={singleAlbumItem.images[0].url} />
+          <Albumcovers cover={singleAlbumItem.images[1].url} />
           <Albums album={singleAlbumItem.name} />
           <Artists album={singleAlbumItem} />
         </div>
       ))}
     </div>
+    </section>
   );
 }
