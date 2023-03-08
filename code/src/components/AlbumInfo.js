@@ -1,15 +1,22 @@
 import React from 'react'
+import '../index.css';
 import { ArtistName } from './ArtistName';
 
 export const AlbumInfo = (props) => {
   console.log('album', props)
   return (
 
-    <div>
+    <div className="cover-wrapper">
 
       <a href={props.link} target="_blank" rel="noreferrer">
-        <img src={props.image} alt="cover" className="cover-image" />
+        <img src={props.image} alt="cover" className="album-cover" />
       </a>
+
+      <div className="icons">
+        <img className="icons img" src="./icons/heart.svg" alt="" />
+        <img className="icons img" src="./icons/play.svg" alt="" />
+        <img className="icons img" src="./icons/dots.svg" alt="" />
+      </div>
 
       <div>
         <a href={props.link} target="_blank" rel="noreferrer">
