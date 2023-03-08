@@ -2,6 +2,8 @@ import React from 'react';
 import data from './data.json';
 import Artwork from './components/Artwork'
 import AlbumName from './components/AlbumName'
+import AlbumArtist from 'components/AlbumArtist';
+
 import "./index.css";
 
 
@@ -13,8 +15,9 @@ export const App = () => {
       {data.albums.items.map (item => {
         return <>
         <div className = 'Albums'>
-          <Artwork key={item.id} data={item} img={item.images}/>
-          <AlbumName AlbumName={item.name}/>
+          <Artwork key={item.id} item={item} img={item.images}/>
+          <AlbumName key={item.name} AlbumName={item.name} AlbumUrl={item.external_urls.spotify}/>
+          <AlbumArtist key={item.artists.name} AlbumArtist={item}/>
         </div>
         </>
       })}    

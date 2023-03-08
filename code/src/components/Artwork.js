@@ -10,7 +10,7 @@ const Artwork = (props) => {
             className="heart"
             alt="like icon"
             />
-            <a href='https://open.spotify.com/search' target='_blank' rel="noopener noreferrer"><img
+            <a href={props.item.external_urls.spotify} target="_blank" rel="noopener noreferrer"><img
             src="../icons/play.svg"
             className="play"
             alt="play icon"
