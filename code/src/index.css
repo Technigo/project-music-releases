@@ -23,6 +23,11 @@ code {
   position: relative;
 }
 
+.cover-wrapper a {
+  color: white;
+  text-decoration: none;
+}
+
 .albums {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
