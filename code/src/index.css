@@ -5,9 +5,49 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(24, 23, 23);
+  /* overflow-x:hidden; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.albums-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 50px;
+  margin: 30px;
+  /* border: solid green;  */
+}
+
+.album-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  max-width:max-content;
+  /* border: solid red;  */
+ 
+}
+
+.album-cover-image{
+  max-width: 100%;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .albums-grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    
+  }
+}
+
+@media (min-width:992px) {
+  .albums-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+  }
 }

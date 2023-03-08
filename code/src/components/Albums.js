@@ -5,7 +5,7 @@ import data from '../data.json';
 export const Albums = () => {
   console.log(data.albums)
   return (
-    <div>
+    <div className="albums-grid">
       {
         data.albums.items.map((albumData) => {
           return <Album albumInput={albumData} key={albumData.id} />
