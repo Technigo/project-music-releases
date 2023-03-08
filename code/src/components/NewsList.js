@@ -1,5 +1,5 @@
 import React from 'react';
-import { Album } from './Album';
+import Album from './Album';
 
 export const NewsList = (props) => {
   return (
