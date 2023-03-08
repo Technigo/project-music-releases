@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from 'components/Header';
+import { Album } from 'components/Album';
 import data from './data.json';
 
 console.log(data);
@@ -6,7 +8,10 @@ console.log(data);
 export const App = () => {
   return (
     <div>
-      Find me in src/app.js!
+     <Header greeting="Hey there" />
+    {data.albums.items.map((singleAlbumItem) => {
+      return (<p>{singleAlbumItem.name}</p>)
+    })}    
     </div>
   );
 }
