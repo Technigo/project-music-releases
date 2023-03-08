@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.album-card {
+  border: solid black 2px;
+  margin: 5px;
+}
+
+/* https://stackoverflowteams.com/c/technigo/questions/2239 */
+.artist-container:last-child::before {
+  content: " & ";
+}
+
+.artist-container:first-child::before {
+  content: "";
+}
