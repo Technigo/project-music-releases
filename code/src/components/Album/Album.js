@@ -1,11 +1,11 @@
 import React from 'react';
-// import data from '../../data.json';
+import styles from './Album.component.css';
 
 export const Album = ({ album }) => {
   console.log(album);
   return (
     <div>
-      <h3>{album}</h3>
+      <h3 className={styles.albumTitle}>{album}</h3>
     </div>
   )
 }

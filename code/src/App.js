@@ -1,10 +1,9 @@
 import React from 'react';
 import data from './data.json';
+
 import { Album } from './components/Album/Album.js';
 import { Artist } from './components/Artist/Artist';
 import { Covers } from './components/Covers/Covers';
-
-console.log(data);
 
 export const App = () => {
   return (
@@ -13,7 +12,7 @@ export const App = () => {
         <div key={singleAlbumItem.id}>
           <Album album={singleAlbumItem.name} />
           <Artist album={singleAlbumItem} />
-          <Covers album={singleAlbumItem} />
+          <Covers cover={singleAlbumItem.images[0].url} />
         </div>
       ))}
 

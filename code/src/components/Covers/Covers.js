@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const Covers = ({ album }) => {
-  console.log(album)
+export const Covers = ({ cover }) => {
+  console.log(cover)
   return (
     <div>
-      <img src={album.images[0].url} alt="album cover" />
+      <img src={cover} alt="album cover" />
     </div>)
 }
 
