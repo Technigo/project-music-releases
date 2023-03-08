@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* This will apply to the entier album grid  */
+.music-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: auto 0;
+  padding: 1%;
+}
+
+.Albums {
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.heart {
+  width: 50px;
+}
+
+.play {
+  width: 50px;
+}
+
+.dots {
+  width: 50px;
+}
