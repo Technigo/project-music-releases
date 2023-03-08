@@ -1,6 +1,6 @@
 import React from 'react';
 import { Albumimg } from 'components/Albumimg';
-import { Artistname } from 'components/Artistname';
+import { Artistname } from 'components/Artist';
 import { Header } from 'components/Header';
 import data from './data.json';
 
