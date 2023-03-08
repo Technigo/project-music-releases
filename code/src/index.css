@@ -12,9 +12,54 @@ code {
     monospace;
 }
 
-/* Album title - 14px Helvetica #ffffff
-  Artist name - 14px Helvetica #a0a0a0 */
+.albumname {
+  font-family: Helvetica;
+  font-size: 14px;
+}
+
+
+/* 
+Background color - #000000
+
+Album title - 14px Helvetica #ffffff
+Artist name - 14px Helvetica #a0a0a0 */
 
 
 /* Hoover effects
-- Normal state: no hoover effects  
+- Normal state: no hoover effects
+  
+- Hover over album cover
+  - Darker image
+  - heart.svg
+  - play.svg
+  - dots.svg
+
+- Hover over play icon
+  - Faded image
+  - Growing heart.svg image
+  - play.svg
+  - dots.svg
+
+- Hover over album name
+  - Album name underlined
+  
+- Hover over artist name
+  - Artist name underlined
+  */
+
+
+/* Media queries
+
+@media (min-width: 667px) and (max-width: 1024px)  
+  - Showing 2 albums per row
+  - img size
+
+
+@media (min-width: 1025px)
+  - Showing 4 albums per row
+  - img size
+
+Mobile < 667px
+  - Showing 1 album per row
+
+*/

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from 'components/Header';
 import { Album } from 'components/Album';
 import data from './data.json';
 
@@ -8,10 +7,15 @@ console.log(data);
 export const App = () => {
   return (
     <div>
-     <Header greeting="Hey there" />
-    {data.albums.items.map((singleAlbumItem) => {
-      return (<p>{singleAlbumItem.name}</p>)
-    })}    
+      <h1>New albums & singles</h1>
+      {data.albums.items.map((album) => {
+        return (
+          <Album
+            image={album.images[1].url}
+            albumname={album.name}
+            artistname={album.artists[0].name} />
+        )
+      })}    
     </div>
   );
 }
