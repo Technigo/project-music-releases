@@ -26,6 +26,7 @@
     "react-hooks"
   ],
   "rules": {
+    "linebreak-style": 0, // added this to deal with the linebreak-problem.
     "react/function-component-definition": [
       2,
       {
