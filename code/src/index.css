@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
@@ -20,6 +21,7 @@ code {
   padding: 1%;
 }
 
+
 .Albums {
   max-width: 300px;
   margin: 20px auto;
@@ -27,12 +29,31 @@ code {
 
 .heart {
   width: 50px;
+  filter: invert();
+}
+
+.heart:hover{
+
 }
 
 .play {
   width: 50px;
+  filter: invert();
 }
 
 .dots {
   width: 50px;
+  filter: invert();
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .music-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px){
+  .music-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
