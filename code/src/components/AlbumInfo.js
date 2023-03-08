@@ -12,10 +12,15 @@ export const AlbumInfo = (props) => {
         <img src={props.image} alt="cover" className="album-cover" />
       </a>
 
-      <div className="icons">
-        <img className="icons img" src="./icons/heart.svg" alt="" />
-        <img className="icons img" src="./icons/play.svg" alt="" />
-        <img className="icons img" src="./icons/dots.svg" alt="" />
+      <div className="image-overlay">
+        <div className="icons-container">
+          <img className="heart-icon icons" src="./icons/heart.svg" alt="heart button" />
+          {/* INCLUDED HREF TO PLAY-ICON  */}
+          <a target="_blank" rel="noopener noreferrer" href={props.link}>
+            <img className="icon play-icon" src="../icons/play.svg" alt="play icon" />
+          </a>
+          <img className="dots-icon icons" src="./icons/dots.svg" alt="dots button" />
+        </div>
       </div>
 
       <div>
