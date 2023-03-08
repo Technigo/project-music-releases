@@ -1,8 +1,12 @@
 import React from 'react';
-import data from '../data.json';
 
-export const Artist = () => {
-  return data.albums.items.artist.map((artistItem) => {
-    return (<p>{artistItem.name}</p>)
-  })
-};
+const Artist = (artists) => {
+  return (
+    artists.items.artists.map(() => {
+      return <p>{artists.name}</p>
+    })
+
+  )
+}
+
+export default Artist;

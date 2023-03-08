@@ -1,7 +1,10 @@
 import React from 'react';
 
-const Header = ({ greeting, blablabla }) => {
-  return (<h2>{blablabla} {greeting}</h2>)
+export const Header = () => {
+  return (
+    <div className="title-container">
+      <h2>New albums & singles</h2>
+    </div>
+  )
 }
 
-export default Header;
