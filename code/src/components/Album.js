@@ -6,8 +6,8 @@ export const Album = (props) => {
   console.log(props);
   return (
     <div>
-      <AlbumArtists artistsInput={props.albumInput.artists} />
       <AlbumImages imagesInput={props.albumInput.images} />
+      <AlbumArtists artistsInput={props.albumInput.artists} />
     </div>
   );
 };
