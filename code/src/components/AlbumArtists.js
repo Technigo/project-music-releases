@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Artistname = (props) => {
+export const AlbumArtists = (props) => {
   return (
     <div>
-      {props.artist.map((artist) => {
+      {props.artistsInput.map((artist) => {
         return <div>{artist.name}</div>;
       })}
     </div>

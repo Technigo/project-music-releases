@@ -1,10 +1,13 @@
 import React from 'react';
+import { AlbumArtists } from './AlbumArtists';
+import { AlbumImages } from './AlbumImages';
 
-export const Albumname = ({ title }) => {
-  console.log(title)
+export const Album = (props) => {
+  console.log(props);
   return (
     <div>
-      <h3> {title} </h3>
+      <AlbumArtists artistsInput={props.albumInput.artists} />
+      <AlbumImages imagesInput={props.albumInput.images} />
     </div>
   );
 };
