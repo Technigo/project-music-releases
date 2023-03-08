@@ -4,7 +4,14 @@ export const AlbumArtists = (props) => {
   return (
     <div>
       {props.artistsInput.map((artist) => {
-        return <div>{artist.name}</div>;
+        return (
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={artist.external_urls.spotify}>
+            {artist.name}
+          </a>
+        );
       })}
     </div>
   );
