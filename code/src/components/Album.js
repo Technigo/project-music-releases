@@ -11,8 +11,8 @@ const Album = (props) => {
       </div>
       {props.artists.map((artist) => {
         return (
-          <a href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">           
-            <h2 className="artistName">{artist.name}</h2>
+          <a href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
+            <h3 className="artistName">{artist.name}</h3>
           </a>
         )
       })}

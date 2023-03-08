@@ -7,7 +7,7 @@ console.log(data);
 
 export const App = () => {
   return (
-    <div>
+    <div className="main-container">
       <Header title="New albums and singles" />
       <div className="album-container">
         {data.albums.items.map((item) => {
