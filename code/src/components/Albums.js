@@ -13,7 +13,9 @@ const Albums = (props) => {
           src={props.data.images[1].url}
           className="albumCover"
           alt={props.data.name} />
-        <Buttons />
+        <div className="icons">
+          <Buttons />
+        </div>
       </div>
       <a
         target="_blank"
