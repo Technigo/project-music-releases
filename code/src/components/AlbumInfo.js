@@ -6,26 +6,30 @@ export const AlbumInfo = (props) => {
   console.log('album', props)
   return (
 
-    <div className="cover-wrapper">
+    <div>
 
-      <a href={props.link} target="_blank" rel="noreferrer">
-        <img src={props.image} alt="cover" className="album-cover" />
-      </a>
+      <div className="cover-wrapper">
 
-      <div className="image-overlay">
-        <div className="icons-container">
-          <img className="heart-icon icons" src="./icons/heart.svg" alt="heart button" />
-          {/* INCLUDED HREF TO PLAY-ICON  */}
-          <a target="_blank" rel="noopener noreferrer" href={props.link}>
-            <img className="icon play-icon" src="../icons/play.svg" alt="play icon" />
-          </a>
-          <img className="dots-icon icons" src="./icons/dots.svg" alt="dots button" />
+        <a href={props.link} target="_blank" rel="noreferrer" className="image">
+          <img src={props.image} alt="cover" className="album-cover" />
+        </a>
+
+        <div className="image-overlay">
+          <div className="icons-container">
+            <img className="heart-icon icons" src="./icons/heart.svg" alt="heart button" />
+            {/* INCLUDED HREF TO PLAY-ICON  */}
+            <a target="_blank" rel="noopener noreferrer" href={props.link}>
+              <img className="icon play-icon" src="../icons/play.svg" alt="play icon" />
+            </a>
+            <img className="dots-icon icons" src="./icons/dots.svg" alt="dots button" />
+          </div>
         </div>
+
       </div>
 
       <div>
         <a href={props.link} target="_blank" rel="noreferrer">
-          {props.name}
+          <h2 className="album-name">{props.name}</h2>
         </a>
       </div>
 

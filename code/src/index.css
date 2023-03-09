@@ -1,7 +1,4 @@
-/* Use the following for fonts:
-
-- Album title - 14px Helvetica #ffffff
-- Artist name - 14px Helvetica #a0a0a0 */
+/* Use the following for fonts: */
 
 body {
   margin: 0;
@@ -11,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: tomato;
+  background-color: rgb(24 24 24);
 }
 
 code {
@@ -21,18 +18,21 @@ code {
 
 .cover-wrapper {
   position: relative;
+  display:inline-block;
+  padding: 0px;
 }
 
-.cover-wrapper a {
+/* a {
   color: white;
   text-decoration: none;
-}
+} */
 
 .albums {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: 50px repeat(4, minmax(50px, 1fr));
   gap: 20px;
-  padding: 50px 50px;
+  padding: 20px;
 }
 
 .album-cover {
@@ -41,10 +41,10 @@ code {
 }
 
  .icons-container {
-    width: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    gap: 100%;
+    /* gap: 100%; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,11 +52,49 @@ code {
 }
 
 .icons-container img {
-    filter: invert();
-    height: 50px;
-    margin: 0 15px;
-    opacity: 70%;
-}   
+  filter: invert();
+  height: 50px;
+  margin: 0 15px;
+  opacity: 70%;
+}
+
+.image-overlay {
+  display: none;
+  box-sizing: border-box;
+}
+
+.image:hover + .image-overlay {
+  display: block;
+}
+
+.image-overlay:hover {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.artist-name, .album-name {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+.artist-name {
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.album-name {
+  color: #ffffff;
+  margin: 12px 0 8px 0;
+}
+
+/* HOVER EFFECTS ON ARTIST NAME AND ALBUM NAME */
+.artist-name:hover, .album-name:hover {
+  text-decoration: underline;
+}
 
 /* HOVER EFFECTS ON HEART AND DOTS-ICONS */
 .heart-icon:hover, .dots-icon:hover {
@@ -74,22 +112,15 @@ code {
   cursor: pointer;
 }
 
-.artist-name {
-  color: rgba(255, 255, 255, 0.9);
-  letter-spacing: 0.04em;
-  text-decoration: none;
-}
-
-.artist-name:hover {
-  text-decoration: underline;
-}
-
 /* HEADER CLASS */
 .header-title {
   color: white;
   font-size: 20px;
-  margin: 20px 15px 5px 15px;
+  margin: 20px 0 5px 0;
+  grid-column: span 4;
 }
+
+
 
 /* MEDIA QUERIES FOR TABLETS */
 @media (min-width: 768px) and (max-width: 1024px){

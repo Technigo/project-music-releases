@@ -5,7 +5,7 @@ export const ArtistName = (props) => {
   return (
     <div className="artist-name">
       <a href={props.link} target="_blank" key={props.id} rel="noreferrer">
-        <h3>{props.name}</h3>
+        <h3 className="artist-name">{props.name}</h3>
       </a>
     </div>
   )

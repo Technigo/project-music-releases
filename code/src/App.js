@@ -8,19 +8,18 @@ console.log(data);
 
 export const App = () => {
   return (
-    <>
+    <main className="albums">
       <Header />
-      <main className="albums">
-        {data.albums.items.map((item) => {
-          return <AlbumInfo
-            key={item.id}
-            name={item.name}
-            image={item.images[0].url}
-            link={item.external_urls.spotify}
-            artists={item.artists} />
-        })}
-      </main>
-    </>
+      {data.albums.items.map((item) => {
+        return <AlbumInfo
+          key={item.id}
+          name={item.name}
+          image={item.images[0].url}
+          link={item.external_urls.spotify}
+          artists={item.artists} />
+      })}
+    </main>
+
   );
 }
 
