@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This React-based app displays new album and single releases, featuring album cover images and artist names. It has hover effects, link to external URLs, and is responsive.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The approach to the problem involved reviewing previous students' code, utilizing the Visual Studio Code extension ESLint, and pair-programming the React parts of the project while dividing the styling into separate branches. The plan involved dividing responsibilities and collaborating to complete the project efficiently. The technologies used were React and ESLint, as well as version control with Git branches. There was a a response from the Spotify API provided to us in the forked repository.  
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://music-releases-michelle-sandra.netlify.app/
