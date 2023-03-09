@@ -14,3 +14,13 @@ code {
     monospace;
 }
 
+.header {
+  margin: 40px;
+}
+
+.albums {
+  display: flex;
+  flex-direction: flex;
+  flex-wrap: wrap;
+  margin: 40px;
+}
