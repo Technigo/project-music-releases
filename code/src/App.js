@@ -10,7 +10,7 @@ export const App = () => {
           return <Album
             key={item.id}
             name={item.name}
-            artist={item.artists[0].name} />
+            artists={item.artists} />
         })}
       </main>
     </div>

@@ -1,13 +1,17 @@
 import React from 'react';
 import '../index.css';
-import { ArtistName } from './ArtistName';
+import { ArtistsName } from './ArtistsName';
 
-const Album = ({ name, artists }) => {
-  console.log('album', name, artists);
+const Album = (props) => {
+  console.log('album', props);
   return (
     <div>
-      <p>{name}</p>
-      <ArtistName artists={artists} />
+      {props.artists.map((artist) => {
+        return <ArtistsName
+          key={artist.id}
+          name={artist.name}
+          link={artist.external_urls.spotify} />
+      })}
     </div>
   );
 };
