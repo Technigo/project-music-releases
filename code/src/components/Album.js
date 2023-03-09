@@ -5,7 +5,7 @@ import { ArtistName } from './ArtistName';
 export const Album = ({ album }) => {
   return (
     <div className="album-container" key={album.id}>
-      <img src={album.images[1].url} alt={`${album.name} album cover`} />
+      <img className="album-cover" src={album.images[1].url} alt={`${album.name} album cover`} />
       <a href={album.external_urls.spotify} className="song-title">
         {album.name}
       </a>
