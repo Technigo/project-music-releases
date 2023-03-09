@@ -1,5 +1,41 @@
 /* Add css for album */
 
-img {
+:root {
+ --primary-headings-font-family: "Helvetica", sans serif;   
+ --secondary-headings-font-family: "Helvetica", sans serif;
+ --paragraph-font-family: "Helvetica", sans serif;
+}
+
+.albumName {
+font-family: var(--secondary-headings-font-family);
+font-size: 14px;
+color: #fff;
+text-decoration: none;
+}
+
+
+/* img {
     border: inset red;
+} */
+
+
+/* 4 albums per row on desktop
+2 albums per row on tablet
+1 albums per row on mobile */
+
+/*tablet*/
+@media ((min-width: 668px) and (max-width: 1023px)) {
+.albumContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+.albumContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
 }
