@@ -2,11 +2,12 @@ import React from 'react';
 import '../index.css';
 import { ArtistsName } from './ArtistsName';
 
-const Album = (props) => {
-  console.log('album', props);
+const Album = ({ name, artists }) => {
+  console.log('album', name, artists);
   return (
     <div>
-      {props.artists.map((artist) => {
+      <p>{name}</p>
+      {artists.map((artist) => {
         return <ArtistsName
           key={artist.id}
           name={artist.name}
