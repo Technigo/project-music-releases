@@ -1,5 +1,6 @@
 import React from 'react';
 import data from '../stretch-goal.json'
+// import playlistIcon from './icons/playlist.png';
 
 export const Playlists = () => {
   console.log(data)
