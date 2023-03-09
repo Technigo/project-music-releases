@@ -16,47 +16,50 @@ code {
     monospace;
 }
 
+/*---------------- SITE TOP --------------------*/
 
-.header-title { /* New albums & Singles */
+.header-title { /* Header title - New albums & Singles */
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-.header {
+.header { /* The line under the title */
   color: white;
   border-bottom: 1px solid #333;
-
+  margin: 0;
 }
 
-
-.albumcontainer {
-  display: grid;
-  justify-content: space-evenly;
-  row-gap: 50px;
-}
-
-.albumcontainer-parent {
+.albumcontainer-parent { /* The container that contains the albumcovers etc */
   display: grid;
   grid-template-columns: repeat(1, minmax(50px, 1fr));
   justify-content: center;
   align-content: center;
   gap: 20px;
-  margin-top: 10px;
   row-gap: 50px;
 }
+
+.albumcontainer { /* The albumcovers etc*/
+  display: grid;
+  justify-content: space-evenly;
+  row-gap: 50px;
+
+}
+
+/*---------------- MEDIA QUARRIES START --------------------*/
 
 @media (min-width: 668px) {
   
   .albumcontainer {
     display: grid;
-  grid-template-columns: repeat(2, minmax(50px, 1fr));
-  justify-content: space-evenly;
-  gap: 20px;
-  margin-top: 10px;
-  row-gap: 50px;
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 10px;
+    row-gap: 50px;
   }
 
-  .header-title { /* New albums & Singles */
+  .header-title { /* Moves the header title to the left on tablet and desktop */
     text-align: left;
   }
   }

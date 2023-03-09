@@ -8,9 +8,9 @@ import { Albums } from './components/Albums/Albums';
 export const App = () => {
   return (
     <section className="albumcontainer-parent">
-      <header>
+      <p className="header">
         <h2 className="header-title">New albums & singles</h2>
-      </header>
+      </p>
       <div className="albumcontainer">
         {data.albums.items.map((singleAlbumItem) => (
           <div key={singleAlbumItem.id}>

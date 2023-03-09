@@ -1,6 +1,6 @@
 
 .artist-name {
-    font-size: 14px;
+    font-size: 4px;
     font-family: Helvetica;
     color:  #a0a0a0;
     line-height: 1;
@@ -18,3 +18,10 @@ a {
     font-size: 14px;
 }
 
+.artistlink {
+    color: red;
+}
+
+.artistlink:hover .artist-name {
+    text-decoration: underline;
+}

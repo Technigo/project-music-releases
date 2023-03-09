@@ -6,3 +6,7 @@
     margin-bottom: 5px;
     position: absolute;
   }
+  
+  .artistlink:hover .artist-name {
+    text-decoration: underline;
+}
