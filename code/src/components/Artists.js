@@ -11,14 +11,15 @@ const Artists = (props) => {
   return (
 
     <div className="artistas">
-      <a href="props.artists.external_urls.spotify" target="_blank" rel="noreferrer noopener">
-        {props.artists.map((artist) => (
-          <span className="artistName">
-            {artist.name}
-          </span>
 
-        ))}
-      </a>
+      {props.artists.map((artist, index) => (
+        <span className="artistName">
+          {artist.name}
+          {props.artists.length - 1 > index ? ', ' : ''}
+        </span>
+
+      ))}
+
     </div>
   );
 };

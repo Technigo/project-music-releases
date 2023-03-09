@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: blue;
+  background-color: black;
     overflow-x: hidden;
 margin: 0;
 display: grid;
@@ -22,7 +22,6 @@ a{
   text-decoration: none;
 
 }
-/*Hela alltet*/
 .main-container{
   display: grid;
   grid-template-columns: 1fr;
@@ -36,32 +35,29 @@ margin: 20px;
   color: #ffff;
 }
 
-
 .album-container{ 
 position: relative;
   height: auto;
   width: 100%;
+padding-bottom: 10px;
 }
 
 .albumcover{
   position: relative;
 }
 
-
 .icons-container{
   display: flex;
   justify-content: space-between;
   left: 50%;
-  opacity: 0;
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   transition: .5s ease;
   width: 70%;
   column-gap: 5px;
+  opacity: 0;
 }
-
 
 .heart,
 .play,
@@ -69,21 +65,53 @@ position: relative;
   display: block;
   margin: 0 10px;
   filter: invert(1);
+  width: 50px;
 }
 .play{
-  transition: .2s ease-in-out;
-  width: 50px;
+transition: .2s ease-in-out;
+
+}
+
+.albumName{
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 14px;
+  color: #ffff;
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+  
+}
+
+.album-img img{
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+
+}
+.artistName{
+  font-family: Arial, "Helvetica", sans-serif;
+  font-size: 14px;
+  color:#a0a0a0;
+  font-weight: bold;
+}
+
+.artistName :hover{
+  color: red;
 }
 
 /*hover effects*/
-.icons-container:hover{
-  opacity: 1;
+
+.album-img:hover .album-cover {
+  opacity: 0.3;
+  /*Keeps overlay on picture while hovering*/
 }
 
-.album-img:hover{
-  opacity: 0.5 ;
-  transition: .2s ease-in-out;
+.album-img:hover .icons-container {
+  opacity: 1;
+  /*Shows icons only when hovering*/
 }
+.album-cover:hover {
+  opacity: 0.3;
+  transition: 0.4s;}
 
 a:hover .albumName {
   font-weight: bold;
@@ -98,41 +126,12 @@ color: azure;
 }
 
 .play:hover {
+
   transition: 0.35s ease-in-out;
   transform: scale(1.3);
 
 }
-
 /* end hovering*/
-
-.albumName{
-  font-family: Arial, "Helvetica", sans-serif;
-  font-size: 14px;
-  color: #ffff;
-  margin: 10px 0 5px 0;
-  font-weight: bold;
-}
-
-.album-img img{
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-
-}
-
-
-
-
-.artistName{
-  font-family: Arial, "Helvetica", sans-serif;
-  font-size: 14px;
-  color:#a0a0a0;
-}
-
-
-.artistName :hover{
-  color: red;
-}
 
 @media( min-width:667px ){
   .main-container{
