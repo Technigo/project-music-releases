@@ -2,11 +2,16 @@
 import React from 'react';
 
 
-const Album = (gurka) => {
+const Album = (singleAlbum) => {
     return (
-        <div>
-        <h1>{gurka.albumTitle}</h1>
-        </div>
+      <div className="album">
+              {data.albums.items.map((album)=> { 
+        return (
+          <h1>{albumTitle.name}</h1>
+        )
+              })}
+    </div>
+
     );
 };
 

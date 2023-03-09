@@ -1,12 +1,16 @@
 import React from 'react';
 
-const Artist = (props) => {
+const Artist = (artist) => {
   return (
     <div className="artist">
-      <h2>{props.name}</h2>
+      {artist.artistName.artists.map((singleArtist) => {
+        return (
+          <span>{singleArtist.name}</span>
+        )}
+          )}
     </div>
-  );
-};
+  )};
+
 
 export default Artist;
 
