@@ -42,7 +42,7 @@
         "allowSingleLine": true
       }
     ],
-    "line-break-style": [
+    "linebreak-style": [
       "error",
       "windows"
     ],
