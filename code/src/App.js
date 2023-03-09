@@ -1,5 +1,8 @@
 import React from 'react';
+import { Header } from 'components/Header'; 
 import { Album } from 'components/Album';
+import { Artist } from 'components/Artist'; 
+import { Imagelist } from 'components/Imagelist';
 import data from './data.json';
 
 console.log(data);
