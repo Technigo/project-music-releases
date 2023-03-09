@@ -104,12 +104,11 @@ a{
 }
 
 button{
-  background-color: white;
+  background-color: transparent;
   
 }
 
 button img{
-  color:red;
   width: 100%;
 }
 

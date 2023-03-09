@@ -1,7 +1,7 @@
 import React from 'react';
-import likeBtn from 'icons/heart.svg';
-import playBtn from 'icons/play.svg';
-import moreBtn from 'icons/dots.svg';
+import likeBtn from './icons/heart.svg';
+import playBtn from './icons/play.svg';
+import moreBtn from './icons/dots.svg';
 
 export const AlbumButtons = () => {
   console.log('btns');
