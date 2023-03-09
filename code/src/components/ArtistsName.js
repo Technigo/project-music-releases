@@ -4,7 +4,7 @@ export const ArtistsName = (props) => {
   console.log('artist', props);
   return (
     <div className="artist">
-      <p>{props.name}</p>
+      <a href={props.link}>{props.name}</a>
     </div>
   );
 };
