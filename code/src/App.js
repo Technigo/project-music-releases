@@ -1,14 +1,14 @@
 import React from 'react';
 import data from './data.json';
-import Header from "./components/Header";
-import Album from "./components/Album";
+import Header from './components/Header';
+import Album from './components/Album';
 
 console.log(data);
 
 const App = () => {
   return (
     <div>
-      <Header title="Spotify stuff"/>
+      <Header title="Spotify stuff" />
       <Album mapdata={data} />
     </div>
   );

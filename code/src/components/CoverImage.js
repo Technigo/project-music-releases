@@ -1,14 +1,13 @@
-import Buttons from "./components/Buttons";
-
+import React from 'react';
+import Buttons from './Buttons';
 
 const CoverImage = (props) => {
-    console.log(`logging props:`, props);
-    return (
-      <section>
-        <Buttons />
-      </section>
-    );
-  };
+  console.log(props)
+  return (
+    <div>
+      <Buttons title="Spotify stuff" />
+    </div>
+  );
+}
 
-  export default CoverImage;
-
+export default CoverImage;
