@@ -9,14 +9,11 @@ console.log(data);
 
 export const App = () => {
   return (
-    <section className="app"><Header />
-      <main className="wrapper">
-        <div className="album-list-wrapper">
-          <AlbumList data={data} />
-        </div>
+    <section className="app">
+      <Header />
+      <main className="main-wrapper">
+        <AlbumList data={data} />
       </main>
     </section>
   );
 }
-
-// data.map((album) => (<div><AlbumCard name={album.albums.items.name} /></div>))}

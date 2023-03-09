@@ -1,0 +1,15 @@
+h1 {
+    background-color: black;
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    border-bottom: 0.3px solid #A0A0A0;
+ }

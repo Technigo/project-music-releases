@@ -1,0 +1,21 @@
+.album-card-wrapper {
+    border: 2px purple dotted;
+    width: 200px;
+}
+
+.album-cover {
+    width: 100%;
+    height: 200px;
+}
+
+.album-name {
+  font-family: Helvetica, sans-serif ;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.artist-name {
+ font-family: Helvetica, sans-serif;
+ font-size: 14px;
+ color: #a0a0a0;
+}

@@ -5,11 +5,11 @@ import { AlbumCard } from './AlbumCard';
 export const AlbumList = (props) => {
   console.log('the data is passed')
   return (
-    <section className="album-list-wrapper">
+    <div className="album-list-wrapper">
       {props.data.albums.items.map((singleAlbum) => {
         return (
           <AlbumCard key={singleAlbum.id} albumDetails={singleAlbum} />
         )
       })}
-    </section>)
+    </div>)
 }
