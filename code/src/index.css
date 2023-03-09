@@ -6,7 +6,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(24, 23, 23);
-  /* overflow-x:hidden; */
 }
 
 code {
@@ -16,6 +15,7 @@ code {
 
 header{
   color: white;
+  margin-left:20px;
 }
 
 a{
@@ -26,10 +26,8 @@ a{
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
-  
   align-items: center;
   justify-content: center;
-  /* border: solid green;  */
 }
 
 .album-container{
@@ -39,62 +37,28 @@ a{
   align-self: center;
   justify-self: center;
   margin: 0 20px;
-  
-
-  /* border: solid red;  */
- 
 }
 
 .album-cover-image{
   max-width: 100%;
 }
 
-
-
-/* Playlist */
-.playlists-container{
-  background-color: rgb(41, 41, 41);
-  display: flex;
-  flex-direction: column;
-  margin-right:0;
-  width: 15%;
-  height:100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  overflow-x: hidden;
-  padding: 20px;
-  border-radius: 20px;
-  margin: 1%
-}
-.playlists-title{
-  font-size: 22px;
-  color:white;
-  
-}
-
-.playlists-container p{
-  opacity:0.6;
-}
-
-.playlists-container p:hover{
-  opacity:1;
-}
-
 .album-cover-picture{
   display: flex;
-  background-color: #000000a1;
+  
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   position: relative;
 }
-.album-cover-picture:hover .overplay{
+.album-cover-picture:hover .overlay{
   opacity: 1;
+  background-color: #000000a1;
 }
-.overplay{
+
+/* Overlay of buttons */
+.overlay{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,20 +94,61 @@ a{
   filter: invert(10);
 } 
 
+.playlists-container{
+  display:none;
+}
 
 /* Media Queries */
 @media (min-width: 600px) {
   .albums-grid{
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    
+    width: 80%;
   }
+
+  /* Playlist */
+.playlists-container{
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom:0;
+  overflow-x: hidden;
+  padding: 20px;
+  border-radius: 18px;
+  margin: 1%;
+}
+
+.playlists-title{
+  font-size: 22px;
+  color:white;
+  align-self: center;
+}
+
+.playlists-container p{
+  opacity:0.6;
+  font-size: 20px;
+}
+
+.playlists-container p:hover{
+  opacity:1;
+}
+
+.playlist-icon{
+  width:60px;
+  filter:invert(1);
+  align-self: center;
+}
 }
 
 @media (min-width:992px) {
   .albums-grid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 75%;
+    
     
   }
 }
