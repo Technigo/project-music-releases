@@ -13,6 +13,10 @@ color: #fff;
 text-decoration: none;
 }
 
+.albumContainer {
+     display: grid;
+    text-align: center;
+}
 
 /* img {
     border: inset red;
