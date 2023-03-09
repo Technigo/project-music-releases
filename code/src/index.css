@@ -49,13 +49,13 @@ position: relative;
 
 .icons{
 position: absolute;
-/*display: flex;*/
-  /*justify-content: center;
-  align-items: center;*/
-  /*height: 70%;*/
-  background-color: aqua;
- 
-  transform: translate(-50%, -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: aqua;
+top:calc(50% - 25px);
+left: calc(50% - 25px);
+
   z-index: 1;
 }
 
