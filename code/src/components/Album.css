@@ -3,13 +3,14 @@
 .albumcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 20px;
+    row-gap: 30px;
     /*justify-content:*/
 }
 
 .albumname {
 font-family: Helvetica;
 font-size: 14px;
+font-weight: 600;
 color: #ffffff;
 }
 
@@ -42,7 +43,7 @@ a:active {
 .albumcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 10px;
+  gap: 30px 10px;
 }
 }
 
@@ -51,6 +52,6 @@ a:active {
 .albumcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
+  gap: 30px 10px;
 }
 }

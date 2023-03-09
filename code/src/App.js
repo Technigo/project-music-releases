@@ -10,7 +10,7 @@ console.log(data);
 export const App = () => {
   return (
     <div>
-      <h1>New albums & singles</h1>
+      <Header message="New albums & singles" />
       <section className="albumcontainer">
         {data.albums.items.map((album) => {
           return (
