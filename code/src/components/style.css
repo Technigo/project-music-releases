@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(0, 0, 0, 0.382);
+}
+
 h1 {
     color: greenyellow;
     font-size: 44px;

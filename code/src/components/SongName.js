@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 
 export const SongName = (props) => {
   return (
@@ -17,3 +17,4 @@ export const SongName = (props) => {
     </section>
   );
 };
+*/
