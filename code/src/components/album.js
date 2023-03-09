@@ -1,14 +1,12 @@
 import React from 'react';
 import '../index.css';
-import { Header } from './Header';
 import { ArtistsName } from './ArtistsName';
 import { AlbumImage } from './AlbumImage';
 
 const Album = ({ name, artists, image }) => {
   console.log('album', name, artists);
   return (
-    <div className="album">
-      <Header />
+    <section className="album">
       <AlbumImage image={image} name={name} />
       <div className="album-details">
         <p>{name}</p>
@@ -17,7 +15,7 @@ const Album = ({ name, artists, image }) => {
           return <ArtistsName key={artist.id} name={artist.name} isLast={isLast} />;
         })}
       </div>
-    </div>
+    </section>
   );
 };
 
