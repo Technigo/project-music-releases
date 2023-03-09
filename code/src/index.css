@@ -2,8 +2,8 @@ body {
   margin: 0;
   background-color: black;
   padding: 20px;
-  color: white;
   font-family: Helvetica;
+  color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -18,18 +18,26 @@ code {
 
 .artist-name {
   font-size: 14px;
-  font-family: Helvetica;
+  font-family: Helvetica #a0a0a0;
+  line-height: 1;
+  margin-top: 0;
+  max-width: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .album-name {
   font-size: 14px;
-  font-family: Helvetica;
-  display: inline-block;
+  line-height: 1;
+  font-family: Helvetica #ffffff;
+  max-width: 300px;
+  margin-bottom: 5px;
 }
 
-.album-cover {
 
-}
 
 .header-title { /* New albums & Singles */
    
@@ -47,16 +55,26 @@ code {
 .albumcontainer {
   display: flex;
   background-color: black;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
+  
 }
 
 .albumcontainer-parent {
   display: flex;
   flex-wrap: wrap;
-  width: 1024px;
   align-items: flex-start;
-  max-width: 1024px;
 }
 
+
+
+@media (min-width: 1024px) {
+  
+.albumcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+}

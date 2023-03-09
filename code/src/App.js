@@ -9,14 +9,14 @@ export const App = () => {
   return (
     <section className="albumcontainer-parent">
       <header>
-      <h2 className="header-title">New albums & singels</h2>
+      <h2 className="header-title">New albums & singles</h2>
       </header>
     <div className="albumcontainer">
       {data.albums.items.map((singleAlbumItem) => (
         <div key={singleAlbumItem.id}>
           <Albumcovers cover={singleAlbumItem.images[1].url} />
-          <Albums album={singleAlbumItem.name} />
-          <Artists album={singleAlbumItem} />
+          <Albums album={singleAlbumItem.name}/>
+          <Artists album={singleAlbumItem}/>
         </div>
       ))}
     </div>
