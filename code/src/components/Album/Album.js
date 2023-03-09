@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './album.css';
+import './album.css';
 
 export const Album = ({ album }) => {
   console.log(album);
   return (
     <div>
-      <h3 className={styles.albumTitle}>{album}</h3>
+      <h3 className="album-title">{album}</h3>
     </div>
   )
 }

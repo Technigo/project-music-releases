@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/*.social-container svg:hover {
+    transform: scale(1.2);
+    /* background-color: red; */
+    /* stroke: #EB5577;} */
