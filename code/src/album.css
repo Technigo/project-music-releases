@@ -1,0 +1,12 @@
+.albumContainer {
+   background-color: aqua;
+}
+
+/*.album {
+    background-color: pink;
+} är samma som ovan albumContainer */
+
+.albumName {
+    background-color: blanchedalmond;
+}
+

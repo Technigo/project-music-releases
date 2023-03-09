@@ -1,6 +1,8 @@
 import React from 'react';
 import Artist from './Artist'
 import Buttons from './Buttons'
+import '../button.css'
+import '../album.css'
 
 const Albums = (props) => {
   return (
