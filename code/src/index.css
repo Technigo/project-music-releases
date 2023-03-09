@@ -48,6 +48,10 @@ code {
 
 /* Album Content */
 
+.albumArt:hover {
+  filter: brightness(100%); 
+}
+
 .albumName {
   color: #ffffff; 
   font-weight: 600;
@@ -69,3 +73,12 @@ a {
   
 }
 
+.artist-link:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-link:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
