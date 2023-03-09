@@ -1,43 +1,53 @@
 /* Add css for album */
 
 :root {
- --primary-headings-font-family: "Helvetica", sans serif;   
- --secondary-headings-font-family: "Helvetica", sans serif;
- --paragraph-font-family: "Helvetica", sans serif;
+  --primary-headings-font-family: "Helvetica", sans serif;
+  --secondary-headings-font-family: "Helvetica", sans serif;
+  --paragraph-font-family: "Helvetica", sans serif;
 }
 
 .albumName {
-font-family: var(--secondary-headings-font-family);
-font-size: 14px;
-color: #fff;
-text-decoration: none;
+  font-family: var(--secondary-headings-font-family);
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.album {
+  margin-bottom: 1.5rem;
 }
 
 .albumName:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.albumCover {
+  width: 100%;
+  height: 100%;
+}
+
+.albumCover:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .albumContainer {
-    text-align: center;
+  place-items: center;
 }
-
-/* img {
-    border: inset red;
-} */
 
 /*tablet*/
 @media ((min-width: 668px) and (max-width: 1023px)) {
-.albumContainer {
+  .albumContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
+  }
 }
 
 /* desktop */
 @media (min-width: 1024px) {
-.albumContainer {
+  .albumContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1px;
-}
+    gap: 15px;
+  }
 }
