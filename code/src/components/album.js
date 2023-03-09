@@ -1,12 +1,15 @@
 import React from 'react';
 import '../index.css';
+import { ArtistName } from './ArtistName';
 
-const Album = (props) => {
-  console.log('album', props)
+const Album = ({ name, artists }) => {
+  console.log('album', name, artists);
   return (
     <div>
-      {props.name}
+      <p>{name}</p>
+      <ArtistName artists={artists} />
     </div>
   );
 };
+
 export default Album;

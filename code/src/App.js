@@ -1,9 +1,6 @@
 import React from 'react';
-
 import data from './data.json';
 import Album from './components/album';
-
-console.log(data);
 
 export const App = () => {
   return (
@@ -12,9 +9,10 @@ export const App = () => {
         {data.albums.items.map((item) => {
           return <Album
             key={item.id}
-            name={item.name} />
+            name={item.name}
+            artist={item.artists[0].name} />
         })}
       </main>
     </div>
   );
-}
+};
