@@ -5,11 +5,11 @@ export const Playlists = () => {
   console.log(data)
   return (
     <div className="playlists-container">
-      <h1>Feautred Playlists</h1>
+      <h1 className="playlists-title">Featured Playlists</h1>
       {
         data.playlists.items.map((playlistsData) => {
           return (
-            <a href={playlistsData.external_urls.spotify}>
+            <a href={playlistsData.external_urls.spotify} target="_blank" rel="noreferrer">
               <p>{playlistsData.name}</p>
             </a>
           )

@@ -17,6 +17,11 @@ code {
 header{
   color: white;
 }
+
+a{
+  text-decoration: none;
+  color:white;
+}
 .albums-grid{
   display: grid;
   grid-template-columns: 1fr;
@@ -44,23 +49,33 @@ header{
   max-width: 100%;
 }
 .playlists-container{
-  background-color: aliceblue;
+  background-color: rgb(41, 41, 41);
   display: flex;
   flex-direction: column;
   margin-right:0;
-  width: 20%;
+  width: 15%;
   height:100%;
   position: fixed;
   z-index: 1;
   top: 0;
   right: 0;
   overflow-x: hidden;
-  padding: 1%;
+  padding: 20px;
   border-radius: 20px;
   margin: 1%
 }
-p{
-  /* color: aqua; */
+.playlists-title{
+  font-size: 22px;
+  color:white;
+  
+}
+
+.playlists-container p{
+  opacity:0.6;
+}
+
+.playlists-container p:hover{
+  opacity:1;
 }
 
 .album-cover-picture{
@@ -88,6 +103,16 @@ p{
   width: 90%;
 }
 
+button{
+  background-color: white;
+  
+}
+
+button img{
+  color:red;
+  width: 100%;
+}
+
 /* Media Queries */
 @media (min-width: 600px) {
   .albums-grid{
@@ -100,7 +125,7 @@ p{
 @media (min-width:992px) {
   .albums-grid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 70%;
+    width: 75%;
     
   }
 }

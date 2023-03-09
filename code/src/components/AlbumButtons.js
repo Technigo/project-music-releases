@@ -8,7 +8,7 @@ export const AlbumButtons = () => {
   return (
 
     <div className="btn-box">
-      <button id="like-btn" className="like-btn" type="submit">
+      <button id="like-btn" className="like-btn" type="button">
         <img src={likeBtn} alt="like button" />
       </button>
 
