@@ -3,14 +3,17 @@ import data from './data.json';
 import Artwork from './components/Artwork'
 import AlbumName from './components/AlbumName'
 import AlbumArtist from 'components/AlbumArtist';
+import Header from 'components/Header'
 
-import "./index.css";
+import './index.css';
 
 
 console.log(data);
 
 export const App = () => {
   return (
+    <div className='body-container'>
+    <Header/>
     <div className = 'music-container'>
       {data.albums.items.map (item => {
         return <>
@@ -21,6 +24,7 @@ export const App = () => {
         </div>
         </>
       })}    
+    </div>
     </div>
   );
 }

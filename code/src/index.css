@@ -13,6 +13,13 @@ code {
     monospace;
 }
 
+
+.HeaderText {
+  text-decoration: none;
+  color: white;
+  padding: 1%;
+}
+
 /* This will apply to the entier album grid  */
 .music-container {
   display: grid;
