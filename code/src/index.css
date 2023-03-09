@@ -54,7 +54,7 @@ justify-content: center;
 align-items: center;
 background-color: aqua;
 top:calc(50% - 25px);
-left: calc(50% - 25px);
+left: calc(36% - 25px);
 
   z-index: 1;
 }
