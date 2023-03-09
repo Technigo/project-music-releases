@@ -1,13 +1,15 @@
 import React from 'react';
+import { ArtistName } from './ArtistName';
 
-// import { ArtistName } from './components/ArtistName';
-
-export const Album = ({ songName, albumKey, imageUrl, songUrl }) => {
+// bytt ut songName, albumKey osv till album som attribute(props) alltså album är vår props ist
+export const Album = ({ album }) => {
   return (
-    <div key={albumKey}>
-      <img src={imageUrl} alt={`${songName} album cover`} />
-      <a href={songUrl} className="song-title">
-        {songName}
+    <div className="album-container" key={album.id}>
+      <img src={album.images[1].url} alt={`${album.name} album cover`} />
+      <a href={album.external_urls.spotify} className="song-title">
+        {album.name}
       </a>
+      {/* samma princis som i app.js och album */}
+      <ArtistName artists={album.artists} />
     </div>);
 };

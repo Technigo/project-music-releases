@@ -9,17 +9,15 @@ h1 {
 
 .main-container {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    background-color: rgb(176, 161, 161);
-    gap: 20px;
-    
-
+    grid-template-rows:1fr 1fr;
+    gap: 10px;
 }
+
 .album-container {
-   display:flex;
+   display: flex;
    flex-direction: column;
    justify-content: left;
-   gap: 30px;
+   max-width: 280px;
 }
 
 .album-cover {

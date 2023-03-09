@@ -1,22 +1,17 @@
 import React from 'react';
 
-export const ArtistName = (props) => {
+// här får vi in artists och gör en array av artister. {} gör att vi destructar
+// och plockar en prop dvs artists
+export const ArtistName = (({ artists }) => {
   return (
-    <section>
-      {props.artistList.albums.items.map((item) => {
-        const artistNames = item.artists.map((artist) => artist.name);
-        const artistUrl = item.artists.map((artist) => artist.external_urls.spotify);
-        const artistId = item.artists.map((artist) => artist.id);
-        return (
-          <div key={artistId}> {/* Check if id is the right one */}
-            <a
-              href={artistUrl}
-              className="artist-list">
-              {artistNames}
-            </a>
-          </div>
-        );
-      })}
-    </section>
-  )
-}
+    <>
+      {/* artists.map så hämtar vi direkt från artist i data json i länk och artist.namn */}
+      {artists.map((artist) => (
+        <div>
+          <a href={artist.external_urls.spotify}>
+            {artist.name}
+          </a>
+        </div>))}
+    </>
+  );
+});
