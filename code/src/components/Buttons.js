@@ -8,13 +8,13 @@ const Buttons = () => {
   return (
     <div className="btnContainer">
       <button type="button" id="heartBtn" className="heartBtn">
-        <img src="../icons.heart.svg" alt="Heart button" />
+        <img src="public/icons/heart.svg" alt="Heart button" />
       </button>
       <button type="button" id="playBtn" className="playBtn">
-        <img src="../icons.play.svg" alt="Play button" />
+        <img src=".public/icons/play.svg" alt="Play button" />
       </button>
       <button type="button" id="infoBtn" className="infoBtn">
-        <img src="../icons.dots.svg" alt="Information button" />
+        <img src="./public/icons/dots.svg" alt="Information button" />
       </button>
 
     </div>
