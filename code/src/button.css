@@ -1,0 +1,58 @@
+.coverAndButtons {
+    position: relative;
+}
+
+/*.imgOverlay {
+    /*display: none; }*/
+
+
+.iconsContainer {
+    background-color: brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /*display: none;*/
+}
+
+.coverAndButtons:hover {
+    background-color: yellow;
+}
+
+.heartBtn {
+    margin-right: 13px;
+}
+
+.heartBtn:hover {
+    color: pink;
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    filter: invert(1);
+    opacity: 1;
+    cursor: pointer
+}
+
+.playBtn {
+    margin-right: 13px;
+}
+
+.playBtn:hover {
+    color: orangered;
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    filter: invert(1);
+    opacity: 1;
+}
+
+.infoBtn {
+    margin-right: 13px;
+}
+
+.infoBtn:hover {
+    color: lightgreen;
+    transform: scale(1.5);
+    transition: transform 0.5s;
+    filter: invert(1);
+    opacity: 1;
+}

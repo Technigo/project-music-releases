@@ -2,6 +2,10 @@ import React from 'react';
 import Artist from './Artist';
 import Buttons from './Buttons';
 import '../album.css';
+<<<<<<< HEAD
+=======
+import '../button.css';
+>>>>>>> secondstyling
 
 const Albums = (props) => {
   return (
