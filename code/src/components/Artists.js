@@ -11,11 +11,11 @@ const Artists = (props) => {
   return (
 
     <div className="artistas">
-      <a href={props.artists.url} target="_blank" rel="noreferrer noopener">
+      <a href="props.artists.external_urls.spotify" target="_blank" rel="noreferrer noopener">
         {props.artists.map((artist) => (
-          <p className="artistName">
+          <span className="artistName">
             {artist.name}
-          </p>
+          </span>
 
         ))}
       </a>
