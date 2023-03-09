@@ -1,7 +1,5 @@
 .artist-container {
     display: flex;
-    gap: 5px;
-    border-radius: 20px;
     justify-content: center;
 }
 
@@ -15,4 +13,5 @@
     color: #a0a0a0;
     font-size: 14px;
     transition: .2s ease;
+    text-decoration: none;
 }

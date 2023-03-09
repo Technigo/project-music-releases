@@ -46,3 +46,29 @@
     filter: blur(5px) brightness(0.4);
 }
 
+.icn-play, .icn-heart, .icn-dots {
+    color:#a0a0a0;
+}
+
+.icn-play:hover {
+    color: #ffffff;
+    /*tried to apply scale(1.2); as well but nothing happened*/
+}
+
+.icn-heart:hover {
+    transform: scale(1.2);
+    color: darkred;
+}
+
+.icn-dots:hover{
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+
+
+
+/*.social-container svg:hover {
+    transform: scale(1.2);
+    /* background-color: red; */
+    /* stroke: #EB5577;} */

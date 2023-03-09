@@ -3,6 +3,7 @@
     color: #ffffff;
     font-size: 14px;
     transition: .2s ease;
+    text-decoration: none;
 }
 
 .album-title:hover {
@@ -12,5 +13,6 @@
 .album-title-container {
     display: flex;
     justify-content: center;
-    padding: 0px 5px;
+    padding: 0px 10px;
+    
 }
