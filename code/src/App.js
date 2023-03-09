@@ -7,7 +7,13 @@ export const App = () => {
     <div>
       <main className="albums">
         {data.albums.items.map((item) => {
-          return <Album key={item.id} name={item.name} artists={item.artists} />;
+          return (
+            <Album
+              key={item.id}
+              name={item.name}
+              artists={item.artists}
+              image={item.images[0]} />
+          );
         })}
       </main>
     </div>

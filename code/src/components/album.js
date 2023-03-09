@@ -1,20 +1,17 @@
 import React from 'react';
 import '../index.css';
 import { ArtistsName } from './ArtistsName';
+import { AlbumImage } from './AlbumImage';
 
-const Album = (props) => {
-  console.log('album', props);
+const Album = ({ name, artists, image }) => {
+  console.log('album', name, artists);
   return (
-    <div>
-      <p>{props.name}</p>
-      <div>
-        {props.artists.map((artist) => {
-          return (
-            <ArtistsName
-              key={artist.id}
-              name={artist.name}
-              link={artist.external_urls.spotify} />
-          );
+    <div className="album">
+      <AlbumImage image={image} name={name} />
+      <div className="album-details">
+        <p>{name}</p>
+        {artists.map((artist) => {
+          return <ArtistsName key={artist.id} name={artist.name} />;
         })}
       </div>
     </div>
