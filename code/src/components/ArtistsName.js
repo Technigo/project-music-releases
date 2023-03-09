@@ -12,5 +12,5 @@ export const ArtistsName = (props) => {
 
 // eslint-disable-next-line max-len
 // {props.link} Lyfte ut denna så länge från href, tror det ska vara något annat där men osäker på vad.
-
-// Vi behöver även fixa så att det blir en rad när det är flera artistnamn. <span></span>?
+// eslint-disable-next-line max-len
+// Vi behöver även fixa så att det blir en rad när det är flera artistnamn och att det är samma färg på kommatecknet och texten <span></span>?
