@@ -1,7 +1,7 @@
 :root {
- --primary-headings-font-family: "Helvetica", sans serif;   
- --secondary-headings-font-family: "Helvetica", sans serif;
- --paragraph-font-family: "Helvetica", sans serif;
+  --primary-headings-font-family: "Helvetica", sans serif;
+  --secondary-headings-font-family: "Helvetica", sans serif;
+  --paragraph-font-family: "Helvetica", sans serif;
 }
 
 body {
@@ -20,7 +20,7 @@ code {
 }
 
 .header h1 {
-font-family: var(--primary-headings-font-family);
-color: #fff;
-text-align: center;
+  font-family: var(--primary-headings-font-family);
+  color: #fff;
+  text-align: center;
 }
