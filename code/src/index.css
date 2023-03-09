@@ -14,7 +14,7 @@ code {
 }
 
 h1 {
-  margin: 20px 40px 10px 40px;
+  margin: 30px 40px 20px 40px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -28,21 +28,71 @@ h1 {
   flex-basis: 100%;
 }
 
-img {
-  width: 100%;
+.albumImage {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.album-details {
+.albumCover {
+  max-width: 100%;
+}
+
+.albumImage:hover > .albumIcons {
+  max-width: 100%;
+  visibility: visible;
+}
+
+.albumImage:hover > .albumCover {
+  max-width: 100%;
+  filter: brightness(0.50);
+}
+
+.albumDetails {
   font-size: 14px;
   margin: -10px 0 0 0;
   font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
 }
-.artist {
+
+.artistName {
   font-size: 14px;
-  font-weight: normal;
-  margin-top: -10px;
+  font-weight: 700;
+  margin-top: -20px;
   margin-bottom: 30px;
   color: #a0a0a0;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.albumIcons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  top: calc(45%);
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.heartIcon {
+  width: 8%;
+}
+
+.playIcon {
+  width: 20%;
+  transition: 0.5s;
+}
+
+.playIcon:hover {
+  scale: 1.2;
+}
+
+.dotsIcon {
+  width: 8%;
 }
 
 @media only screen and (min-width: 668px) and (max-width: 1023px){

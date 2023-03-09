@@ -8,13 +8,13 @@ const Album = ({ name, artists, image }) => {
   return (
     <section className="album">
       <AlbumImage image={image} name={name} />
-      <div className="album-details">
+      <a className="albumDetails" href="" target="_blank">
         <p>{name}</p>
         {artists.map((artist) => {
           const isLast = artist === artists[artists.length - 1];
           return <ArtistsName key={artist.id} name={artist.name} isLast={isLast} />;
         })}
-      </div>
+      </a>
     </section>
   );
 };
