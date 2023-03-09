@@ -3,7 +3,7 @@ import React from 'react';
 const Artwork = (props) => {
     return (
        <>
-      <div className='cover-card'>
+      <div className='album-overlay'>
         <div className="albumIcons">
             <img
             src="../icons/heart.svg"
