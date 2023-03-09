@@ -2,7 +2,6 @@ import React from 'react';
 import { Header } from 'components/Header'; 
 import { Album } from 'components/Album';
 import { Artist } from 'components/Artist'; 
-import { Icon } from 'components/Icons'; 
 import { Footer } from 'components/Footer';
 import data from './data.json';
 
@@ -11,7 +10,9 @@ console.log(data);
 export const App = () => {
   return (
     <div>
-      <Header message="New albums & singles" />
+      <header>
+        <Header />
+      </header> 
       <section className="albumcontainer">
         {data.albums.items.map((album) => {
           return (
