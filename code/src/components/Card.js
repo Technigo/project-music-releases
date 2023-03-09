@@ -6,20 +6,20 @@ export const Card = ({ props }) => {
     <div className="album-card">
       <img
         // key={props.image.id}
-        src={props.images[1].url}
+        src={props.images[0].url}
         alt={props.name}
         className="album-img" />
-      <h1>
+      <h2>
         <a
           // key={props.external_urls.spotify.id}
           href={props.external_urls.spotify}
           target="_blank"
           rel="noopener noreferrer"
           className="album-name">
-          {props.name}
+          <p className="break-word">{props.name}</p>
         </a>
-      </h1>
-      <h2>
+      </h2>
+      <h3>
         {props.artists.map((artist) => (
           <a
             key={artist.id}
@@ -27,10 +27,10 @@ export const Card = ({ props }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="artist-container">
-            <span>{artist.name}</span>
+            <span className="artist-name">{artist.name}</span>
           </a>
         ))}
-      </h2>
+      </h3>
     </div>
   )
 }

@@ -2,6 +2,9 @@ import React from 'react'
 
 export const Header = () => {
   return (
-    <h1 className="header">New albums & singles</h1>
+    <section className="header">
+      <h1 className="header-text">New albums & singles</h1>
+      <div className="header-line" />
+    </section>
   )
 }
