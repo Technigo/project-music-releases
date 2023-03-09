@@ -2,18 +2,29 @@
 import React from 'react';
 
 
-const Album = (singleAlbum) => {
-    return (
-      <div className="album">
-              {data.albums.items.map((album)=> { 
-        return (
-          <h1>{albumTitle.name}</h1>
-        )
-              })}
-    </div>
+// const Album = (albumTitle, albumCover) => {
+//     return (
+//       <div>
+//           <h1>{albumTitle}</h1>
+//           <img src={albumCover}/>
+//          </div> 
+//     )
+// }
 
-    );
-};
+const Album = (albumTitle) => {
+return (
+<div className="album">
+<Images
+albumCover={albumTitle.data.images[1].url}
+album={albumTitle.data.external_urls.spotify}
+/>
+<Album
+albumTitle={albumTitle.data.name}
+album={albumTitle.data.external_urls.spotify}
+/>
+<Artist artist={albumTitle.data.artists} />
+</div>
+)}
 
 console.log()
 
