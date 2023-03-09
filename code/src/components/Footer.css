@@ -1,0 +1,6 @@
+footer {
+    display: grid;
+    justify-content: center;
+    color: aqua;
+    font-family: Helvetica;
+}

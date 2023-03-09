@@ -17,5 +17,3 @@ export const Album = ({ image, albumname, artistname, albumurl, artisturl }) => 
     )
 }
 
-// The name of each artist involved with a comma between
-// Create an Artist component?
