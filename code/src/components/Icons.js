@@ -1,17 +1,24 @@
-import React from 'react';
-import './ImageList.css';
+/*import React from 'react';
+import 'index.css';
 
-const Icons = ({ imageArray }) => {
+const Icons = () => {
   return (
-    <div> {imageArray.map((potato) => {
-      return (
-        <div className="image-container">
-          <span className="icon" />
-          <img className="image" alt="single album" src={potato.url} />
-        </div>
-      )
-    })}
-    </div>)
+    <div className="icon-container">
+      <img
+        className="icon"
+        src="./icons/heart.svg"
+        alt="heart button" />
+      <img
+        className="icon"
+        src="./icons/play.svg"
+        alt="play button" />
+      <img
+        className="icon"
+        src="./icons/dots.svg"
+        alt="more button" />
+    </div>
+  )
 }
-export default Icons;
 
+export default Icons;
+*/

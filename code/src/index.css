@@ -49,7 +49,7 @@ h1 {
   max-width: 300px; 
 }
 
-.albumArt {
+.album-art {
   width: 100%; 
   object-fit: contain;
 }
@@ -89,22 +89,31 @@ h1 {
     height: 100%;
 */
 
+/* Hidden icon container */
+
 .icon-container {
+  position: absolute;
   display: none;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .icon {
     width: 50px; 
     height: 50px; 
-    border-radius: 50%; 
+    border-radius: 50%;
+    filter: invert(100%);
   }
 
-.albumArt:hover .icon-container {
+.album-art img:hover {
   filter:opacity(50%);
-  display: block;
   }
+
+.album-art:hover .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .albumName {
   color: #ffffff; 
