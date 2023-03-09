@@ -8,7 +8,11 @@ export const ArtistName = (({ artists }) => {
       {/* artists.map så hämtar vi direkt från artist i data json i länk och artist.namn */}
       {artists.map((artist) => (
         <div>
-          <a href={artist.external_urls.spotify} className="artist-title">
+          <a
+            href={artist.external_urls.spotify}
+            className="artist-title"
+            target="_blank"
+            rel="noopener noreferrer">
             {artist.name}
           </a>
         </div>))}

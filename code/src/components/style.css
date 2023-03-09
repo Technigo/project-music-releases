@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: #000000eb;
 }
 header {
     height: 50px;
@@ -7,8 +7,11 @@ header {
 
 h3 {
     color: #ffffff;
-    font-size: 22px;
-    margin-left: 24px;
+    font-size: 18px;
+    margin: 24px;
+    line-height: 38px;
+    border-bottom: 0.1px solid #7b78787e;
+    width: auto;
 }
 
 .main-container {
@@ -23,7 +26,6 @@ h3 {
    display: flex;
    flex-direction: column;
    justify-content: left;
-   max-width: 280px;
    margin: 0;
 }
 
@@ -32,9 +34,9 @@ h3 {
     color: #ffffff;
     font-size: 14px;
     font-family: 'Helvetica', 'sans-serif';
-    max-width: 200px;
     font-weight: 600;
-    padding: 8px 0 0;
+    line-height: 20px;
+    padding: 8px 0 2px;
 }
 
 .artist-title {
@@ -42,17 +44,22 @@ h3 {
     color: #A0A0A0;
     font-size: 14px;
     font-family: 'Helvetica', 'sans-serif';
-    font-weight: 300;
 }
 
+.song-title:hover,
+.artist-title:hover {
+    text-decoration: underline 1.5px;
+    text-underline-offset: 3px;
+}
 
-
+/* responsive for tablet */
 @media (min-width: 668px) {
     .main-container {
         display: grid;
         grid-template-columns: repeat(2, minmax(50px, 1fr));
         grid-template-rows: repeat(2, minmax(50px, 1fr));
-        gap: 15px;
+        width: fit-content;
+        gap: 18px;
         margin: 0 18px;
     }
 
@@ -63,7 +70,6 @@ h3 {
      .album-cover {
         width: 100%;
         gap: 24px;
-        object-fit: cover;
     }
 }
 
@@ -73,7 +79,5 @@ h3 {
         display: grid;
         grid-template-columns: repeat(4, minmax(50px, 1fr));
         grid-template-rows: repeat(4, minmax(50px, 1fr));
-        gap: 18px;
-        margin: 0 18px;
     }
 }

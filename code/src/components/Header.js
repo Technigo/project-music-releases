@@ -3,7 +3,7 @@ import React from 'react';
 export const Header = () => {
   return (
     <header>
-      <h3>New albums & singles from before</h3>
+      <h3>New albums & singles</h3>
     </header>
   )
 }
