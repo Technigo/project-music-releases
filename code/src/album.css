@@ -13,19 +13,17 @@ color: #fff;
 text-decoration: none;
 }
 
+.albumName:hover {
+    text-decoration: underline;
+}
+
 .albumContainer {
-     display: grid;
     text-align: center;
 }
 
 /* img {
     border: inset red;
 } */
-
-
-/* 4 albums per row on desktop
-2 albums per row on tablet
-1 albums per row on mobile */
 
 /*tablet*/
 @media ((min-width: 668px) and (max-width: 1023px)) {

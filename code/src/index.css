@@ -21,4 +21,6 @@ code {
 
 .header h1 {
 font-family: var(--primary-headings-font-family);
+color: #fff;
+text-align: center;
 }
