@@ -133,9 +133,11 @@ a {
   font-family:'Helvetica', sans-serif ;
   font-size: 14px; 
   margin: 0; 
-  
 }
 
+.artistName span {
+  color:#a0a0a0;
+}
 
 .artist-link:not(:first-of-type, :last-of-type)::before {
   color: #a0a0a0;

@@ -23,6 +23,7 @@ const Album = (props) => {
           <h2 className="albumName">{props.albumName}</h2>
         </a>
       </div>
+      <h3 className="artistName">
       {props.artists.map((artist) => {
         return (
           <a className="artist-link" href={artist.external_urls.spotify} target="_blank" rel="noopener noreferrer">
@@ -30,6 +31,7 @@ const Album = (props) => {
           </a>
         )
       })}
+      </h3>
     </article>
 
   )
