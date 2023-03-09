@@ -5,6 +5,7 @@ export const ArtistsName = (props) => {
   return (
     <div className="artist">
       <a href={props.link}>{props.name}</a>
+      {props.isLast ? '' : ','}
     </div>
   );
 };

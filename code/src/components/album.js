@@ -11,7 +11,8 @@ const Album = ({ name, artists, image }) => {
       <div className="album-details">
         <p>{name}</p>
         {artists.map((artist) => {
-          return <ArtistsName key={artist.id} name={artist.name} />;
+          const isLast = artist === artists[artists.length - 1];
+          return <ArtistsName key={artist.id} name={artist.name} isLast={isLast} />;
         })}
       </div>
     </div>
