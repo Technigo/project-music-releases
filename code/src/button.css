@@ -1,18 +1,19 @@
-/*.btnContainer {
-    display: none;
-}*/
-
 .coverAndButtons {
     position: relative;
 }
 
-.btnContainer {
+/*.imgOverlay {
+    /*display: none; }*/
+
+
+.iconsContainer {
     background-color: brown;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    /*display: none;*/
 }
 
 .coverAndButtons:hover {
@@ -27,8 +28,9 @@
     color: pink;
     transform: scale(1.5);
     transition: transform 0.5s;
-    /*filter: invert(1);*/
+    filter: invert(1);
     opacity: 1;
+    cursor: pointer
 }
 
 .playBtn {
@@ -39,7 +41,7 @@
     color: orangered;
     transform: scale(1.5);
     transition: transform 0.5s;
-    /*filter: invert(1);*/
+    filter: invert(1);
     opacity: 1;
 }
 
@@ -51,6 +53,6 @@
     color: lightgreen;
     transform: scale(1.5);
     transition: transform 0.5s;
-    /*filter: invert(1);*/
+    filter: invert(1);
     opacity: 1;
 }

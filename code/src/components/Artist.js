@@ -1,5 +1,5 @@
 import React from 'react';
-import '../artist.css';
+import '../artist.css'
 
 const Artist = (props) => {
   return (

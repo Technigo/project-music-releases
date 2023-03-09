@@ -1,8 +1,8 @@
 import React from 'react';
-import Artist from './Artist'
-import Buttons from './Buttons'
-import '../button.css'
-import '../album.css'
+import Artist from './Artist';
+import Buttons from './Buttons';
+import '../album.css';
+import '../button.css';
 
 const Albums = (props) => {
   return (
@@ -25,7 +25,7 @@ const Albums = (props) => {
       </a>
       <Artist artists={props.data.artists} />
     </div>
-  )
-}
+  );
+};
 
 export default Albums;
