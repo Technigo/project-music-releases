@@ -95,16 +95,16 @@ h1 {
   left: 0;
 }
 
-.album-controls {
+.album-buttons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 
-.album-controls .icon-heart,
-.album-controls .icon-dots,
-.album-controls .icon-play {
+.album-buttons .icon-heart,
+.album-buttons .icon-dots,
+.album-buttons .icon-play {
   width: 32px;
   height: 32px;
   filter: invert();
