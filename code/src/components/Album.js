@@ -8,7 +8,6 @@ export const Album = ({ image, albumname, artistname }) => {
             <div className='artistname'>{artistname}</div>
         </article>
     )
-
 }
 
 // Link to album (external_urls - spotify)

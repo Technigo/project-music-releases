@@ -11,7 +11,7 @@ export const App = () => {
       {data.albums.items.map((album) => {
         return (
           <Album
-            image={album.images[1].url}
+            image={album.images[0].url}
             albumname={album.name}
             artistname={album.artists[0].name} />
         )
