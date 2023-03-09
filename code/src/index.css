@@ -23,4 +23,22 @@ code {
   flex-direction: flex;
   flex-wrap: wrap;
   margin: 40px;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+  @media only screen and (min-width: 1200px) {
+
 }
