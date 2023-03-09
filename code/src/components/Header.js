@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Header = () => {
   return (
-    <div>
+    <header>
       <h1>New releases</h1>
-    </div>
+    </header>
   )
 }

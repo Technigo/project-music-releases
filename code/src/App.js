@@ -1,9 +1,11 @@
 import React from 'react';
-import { AlbumCover } from 'components/AlbumCover';
-import { ArtistName } from 'components/ArtistName';
-import { SongName } from 'components/SongName';
-import { Header } from 'components/Header';
-// import data from './data.json';
+import data from './data.json';
+import { AlbumCover } from './components/AlbumCover';
+import { SongName } from './components/SongName';
+import { Header } from './components/Header';
+/* ;
+import { ArtistName } from './components/ArtistName';
+ */
 
 /* console.log(data); */
 
@@ -12,9 +14,10 @@ export const App = () => {
     <section className="main-container">
       <div className="album-container">
         <Header />
-        <SongName />
-        <AlbumCover />
-        <ArtistName />
+        <AlbumCover imageList={data} />
+        <SongName songTitle={data} />
+        {/*
+  <ArtistName /> */}
       </div>
     </section>
   );
