@@ -1,7 +1,7 @@
 import React from 'react';
 import CoverImage from "./components/CoverImage";
-import ArtistName from "./components/ArtistName";
-import AlbumName from "./components/AlbumName";
+import ArtistName from "./ArtistName/ArtistName";
+import AlbumName from "./AlbumName/AlbumName";
 
 
 
