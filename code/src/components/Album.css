@@ -1,0 +1,23 @@
+
+
+h2, h3 {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+h3 {
+ color: #a0a0a0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.album-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
+}
