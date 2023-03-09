@@ -22,3 +22,11 @@ h1 {
     width: 200px;
     gap: 24px;
 }
+
+.song-title {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: 600;
+}

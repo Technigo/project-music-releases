@@ -3,9 +3,7 @@ import data from './data.json';
 import { AlbumCover } from './components/AlbumCover';
 import { SongName } from './components/SongName';
 import { Header } from './components/Header';
-/* ;
-import { ArtistName } from './components/ArtistName';
- */
+/* import { ArtistName } from './components/ArtistName'; */
 
 /* console.log(data); */
 
@@ -16,8 +14,7 @@ export const App = () => {
         <Header />
         <AlbumCover imageList={data} />
         <SongName songTitle={data} />
-        {/*
-  <ArtistName /> */}
+        {/* <ArtistName artistList={data} /> */}
       </div>
     </section>
   );
