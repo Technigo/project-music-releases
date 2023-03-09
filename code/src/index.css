@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   background-color: black;
   margin: 0;
@@ -6,7 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
 
 code {
@@ -18,53 +22,29 @@ h1 {
   color: #ffffff;
 }
 
-.albumname {
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #ffffff;
+.albumcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: end;
+   
 }
 
-.artistname {
-  font-family: Helvetica;
-  font-size: 14px;
-  color: #a0a0a0;
+/* Media queries */
+
+/*@media (min-width: 667px) and (max-width: 1024px)  
+
+.albumcontainer {
+  display: grid;
+  grid-template-columns: 2fr;
 }
-
-/* Hoover effects
-- Normal state: no hoover effects
-  
-- Hover over album cover
-  - Darker image
-  - heart.svg
-  - play.svg
-  - dots.svg
-
-- Hover over play icon
-  - Faded image
-  - Growing heart.svg image
-  - play.svg
-  - dots.svg
-
-- Hover over album name
-  - Album name underlined
-  
-- Hover over artist name
-  - Artist name underlined
-  */
-
-
-/* Media queries
-
-@media (min-width: 667px) and (max-width: 1024px)  
-  - Showing 2 albums per row
-  - img size
 
 
 @media (min-width: 1025px)
-  - Showing 4 albums per row
-  - img size
-
-Mobile < 667px
-  - Showing 1 album per row
-
+  
+.albumcontainer {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 */
+
+  

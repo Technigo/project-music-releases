@@ -1,16 +1,21 @@
-import React from 'react';
+import React from "react";
 
-export const Album = ({ image, albumname, artistname }) => {
+export const Album = ({ image, albumname, artistname, albumurl, artisturl }) => {
     return (
-        <article className='album-card'>
-            <img className='album-img' src={image} alt= "Album Cover" />
-            <div className='albumname'>{albumname}</div>
-            <div className='artistname'>{artistname}</div>
+        <article className="album-box">
+            <a href={albumurl}>
+                <img className="album-img" src={image} alt="Album Cover" />    
+            </a>
+            <a href={albumurl}>
+                <div className="albumname">{albumname}</div>
+            </a>
+            <a href={artisturl}>
+                <div className="artistname">{artistname}</div>
+            </a>
         </article>
     )
 }
 
-// Link to album (external_urls - spotify)
-// Link to artist (artists - 0 - external_urls)
+// New window opens for when link is clicked
 // The name of each artist involved with a comma between
 // Include icons here?
