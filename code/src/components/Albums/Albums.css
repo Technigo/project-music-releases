@@ -7,6 +7,6 @@
     position: absolute;
   }
   
-  .artistlink:hover .artist-name {
+  .albumlink:hover .album-name {
     text-decoration: underline;
 }
