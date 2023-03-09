@@ -1,5 +1,4 @@
 import React from 'react';
-import 'style/styling.css'
 import 'index.css'
 // article
 // namn på artisterna
@@ -10,13 +9,16 @@ import 'index.css'
 const Artists = (props) => {
   console.log(props.artists);
   return (
-    <div className="artistas">
-      {props.artists.map((artist) => (
-        <p className="styles.artistName">
-          {artist.name}
-        </p>
 
-      ))}
+    <div className="artistas">
+      <a href={props.artists.url} target="_blank" rel="noreferrer noopener">
+        {props.artists.map((artist) => (
+          <p className="artistName">
+            {artist.name}
+          </p>
+
+        ))}
+      </a>
     </div>
   );
 };
