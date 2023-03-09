@@ -41,14 +41,14 @@ code {
 }
 
  .icons-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    /* gap: 100%; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* gap: 100%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icons-container img {
@@ -119,8 +119,6 @@ a {
   margin: 20px 0 5px 0;
   grid-column: span 4;
 }
-
-
 
 /* MEDIA QUERIES FOR TABLETS */
 @media (min-width: 768px) and (max-width: 1024px){
