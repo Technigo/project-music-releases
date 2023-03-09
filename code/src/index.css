@@ -7,12 +7,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 .header {
   display: flex;
@@ -23,9 +24,8 @@ code {
 }
 
 .header-text {
-  color: white;
+  /* color: white; */
   align-self: flex-start;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
 
@@ -38,15 +38,17 @@ code {
 h2,
 h3 {
   font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: unset;
-  margin: 8px 0px 10px 10px;
+  margin: 8px 0px 5px 10px;
 }
 
 h2:hover,
 .artist-name:hover {
   text-decoration: underline;
   color: white;
+}
+
+.break-word {
+  margin: unset;
 }
 
 .main-view {

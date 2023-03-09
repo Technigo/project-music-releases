@@ -3,7 +3,7 @@ import React from 'react'
 
 export const Card = ({ props }) => {
   return (
-    <div className="album-card">
+    <container className="album-card">
       <img
         // key={props.image.id}
         src={props.images[0].url}
@@ -31,7 +31,7 @@ export const Card = ({ props }) => {
           </a>
         ))}
       </h3>
-    </div>
+    </container>
   )
 }
 
