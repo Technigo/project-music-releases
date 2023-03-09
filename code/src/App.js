@@ -1,14 +1,15 @@
 import React from 'react'
 import data from './data.json'
-import { Albums } from './components/Albums'
+import { Map } from './components/Map'
+import { Header } from './components/Header'
 
 console.log(data);
 
 export const App = () => {
   return (
-    <div>
-      Hello!
-      <Albums />
-    </div>
+    <section className="main-view">
+      <Header />
+      <Map />
+    </section>
   )
 }

@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 
 code {
@@ -12,10 +14,58 @@ code {
     monospace;
 }
 
-.album-card {
-  border: solid black 2px;
-  margin: 5px;
+.header {
+  display: flex;
+  font-size: 20px;
+  align-self: flex-start;
+  padding-left: 20px;
 }
+
+h1,
+h2 {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-view {
+  margin: 10px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid 1px blue; */
+}
+
+.album-section {
+  /* border: red solid 2px; */
+  max-width: 1645px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.album-card {
+  /* border: solid yellow 2px; */
+  margin: 10px 10px 20px 10px;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  max-width: 300px;
+}
+
+.album-name {
+  text-decoration: none;
+  color: white;
+}
+
+.artist-container {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
 
 /* https://stackoverflowteams.com/c/technigo/questions/2239 */
 .artist-container:last-child::before {
@@ -24,4 +74,10 @@ code {
 
 .artist-container:first-child::before {
   content: "";
+}
+
+@media (max-width: 1024px) {
+  .album-section {
+    justify-content: space-evenly;
+  }
 }
