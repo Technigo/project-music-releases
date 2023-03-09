@@ -20,7 +20,9 @@ const Album = (props) => {
                 src="./icons/dots.svg"
                 alt="more button" />
             </div>
-            <img className="albumArt" src={props.img} alt={props.albumName} />
+            <div className="image-container">
+              <img className="albumArt" src={props.img} alt={props.albumName} />
+            </div>
           </div>
           <h2 className="albumName">{props.albumName}</h2>
         </a>
