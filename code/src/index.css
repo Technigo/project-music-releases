@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(36, 35, 35);
 }
 
 code {
@@ -16,3 +17,20 @@ code {
     transform: scale(1.2);
     /* background-color: red; */
     /* stroke: #EB5577;} */
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  padding: 10px;
+  justify-items: center;
+  }
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.album-container{
+  max-width: 250px;
+  padding: 10px;
+}
