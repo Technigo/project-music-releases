@@ -14,15 +14,7 @@ import React from 'react';
 const Album = (albumTitle) => {
 return (
 <div className="album">
-<Images
-albumCover={albumTitle.data.images[1].url}
-album={albumTitle.data.external_urls.spotify}
-/>
-<Album
-albumTitle={albumTitle.data.name}
-album={albumTitle.data.external_urls.spotify}
-/>
-<Artist artist={albumTitle.data.artists} />
+<h1>{albumTitle.albumName.name}</h1>
 </div>
 )}
 
