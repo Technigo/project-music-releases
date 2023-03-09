@@ -1,9 +1,9 @@
 import React from 'react';
 import data from './data.json';
 
-import { Albumcovers } from './components/Albumcovers';
-import { Artists } from './components/Artists';
-import { Albums } from './components/Albums';
+import { Albumcovers } from './components/Albumcovers/Albumcovers';
+import { Artists } from './components/Artists/Artists';
+import { Albums } from './components/Albums/Albums';
 
 export const App = () => {
   return (
