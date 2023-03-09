@@ -9,7 +9,7 @@ export const SongName = (props) => {
             <a
               href={song.external_urls.spotify}
               className="song-title">
-              ${song.name}
+              {song.name}
             </a>
           </div>
         );

@@ -30,3 +30,12 @@ h1 {
     font-family: 'Helvetica', 'sans-serif';
     font-weight: 600;
 }
+
+.artist-list {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Helvetica', 'sans-serif';
+    font-weight: 300;
+}
+
