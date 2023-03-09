@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */
-
 
 body {
   margin: 0;
@@ -67,7 +53,7 @@ h1 {
   align-items: stretch;
 }
 
-.album-card {
+.album-box {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -124,7 +110,7 @@ h1 {
   filter: invert();
 }
 
-.album-controls .icon-play {
+.album-buttons .icon-play {
   width: 72px;
   height: 72px;
 }
@@ -139,6 +125,16 @@ h1 {
 }
 
 .album-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.artist-link {
+font-weight: lighter;
+color: white;
+}
+
+.artist-link:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
