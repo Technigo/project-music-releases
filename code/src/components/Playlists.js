@@ -12,7 +12,7 @@ export const Playlists = () => {
       {
         data.playlists.items.map((playlistsData) => {
           return (
-            <a href={playlistsData.external_urls.spotify} target="_blank" rel="noreferrer">
+            <a key={playlistsData.id} href={playlistsData.external_urls.spotify} target="_blank" rel="noreferrer">
               <p>{playlistsData.name}</p>
             </a>
           )

@@ -6,6 +6,7 @@ export const AlbumArtists = (props) => {
       {props.artistsInput.map((artist) => {
         return (
           <a
+            key={artist.id}
             className="artistName"
             target="_blank"
             rel="noreferrer"

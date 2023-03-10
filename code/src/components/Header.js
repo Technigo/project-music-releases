@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <header>
-      <h1>New albums & singles</h1>
+      <h1>{props.headerNameInput}</h1>
       <hr />
     </header>
   );

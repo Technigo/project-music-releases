@@ -7,9 +7,11 @@ import Dropup from 'components/Dropup';
 export const App = () => {
   return (
     <div>
-      <Header />
+      <Header headerNameInput="New Albums" />
+      <Albums albumTypeInput="album" />
+      <Header headerNameInput="Singles" />
+      <Albums albumTypeInput="single" />
       <Dropup />
-      <Albums />
       <Playlists />
     </div>
   );
