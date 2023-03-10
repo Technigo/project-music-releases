@@ -25,7 +25,7 @@ a {
 }
 
 p {
-  color: #a0a0a0;
+  color: #FFF;
 }
 
 .albums {
@@ -64,22 +64,21 @@ p {
   color: #a0a0a0;
 }
 
+.albumLink {
+  text-decoration: none;
+  color: #FFF;
+}
+/* How do I get this effect to kick in only when hover over text, instead of entire picture? */
+.albumLink:hover {
+  text-decoration: underline;
+}
+
 .artistName {
   font-size: 14px;
   font-weight: 700;
   margin-top: -20px;
   margin-bottom: 30px;
   color: #a0a0a0;
-}
-
-.albumLink {
-  text-decoration: none;
-  color: #FFF;
-  pointer-events: calc()
-}
-
-.albumLink:hover {
-  text-decoration: underline;
 }
 
 .artistLink {
