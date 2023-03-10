@@ -1,0 +1,17 @@
+.artist-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 14px;
+    font: Helvetica;
+    color: #a0a0a0;
+   }
+
+a:hover {
+    text-decoration: underline;
+}

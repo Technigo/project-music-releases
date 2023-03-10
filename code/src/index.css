@@ -1,13 +1,64 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.bigTitle {
+font-family: Helvetica;
+color: white;
+margin-left: 1%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  font-family: Helvetica;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* MOBILE */
+
+.AlbumList {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.album {
+  max-width: 90%;
+  place-self: center;
+}
+
+/* TABLET (min-width: 667px) and (max-width: 1024px) */
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+.AlbumList {
+  gap: 0% 1%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+}
+/* DESKTOP (min-width: 1025px) */
+
+@media (min-width: 1024px)
+{
+.AlbumList {
+  gap: 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
 }
