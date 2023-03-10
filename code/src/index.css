@@ -41,6 +41,17 @@ a{
 .artistName:hover{
   text-decoration: underline;
 }
+
+.albumTracks{
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 5px 0px 0px 0px;
+}
+.albumTracks:hover{
+  text-decoration: underline;
+}
+
 .albums-grid{
   display: grid;
   grid-template-columns: 1fr;
@@ -119,12 +130,111 @@ a{
   display:none;
 }
 
-/* Media Queries */
+/* Playlist dropup for mobile view */
+.dropup {
+  position:fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  margin-top: 10em;
+  padding: 0.2em;
+  cursor: pointer;
+  z-index:99;
+  left: 2%;
+  right: 2%;
+  bottom: 0;
+  
+  
+}
+.open {
+  font-size: 2em; 
+  padding: 0.2em;
+  transition: 240ms ease;
+  width: 80%;
+}
+.open:hover {
+  transform: scale(1.2);
+} 
+  
+.close {
+  font-size: 2em; 
+  padding: 0.2em;
+  transition: 240ms ease;
+  width: 80%;
+}
+
+.dropup-content {
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3em;
+  animation-name: foldUp;
+  animation-duration: 240ms;
+  background-color:rgb(41, 41, 41);
+  width:70%;
+  border-radius: 20px;
+  opacity:0.95;
+}
+
+.dropup .playlists-header-container{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  background-color:rgb(41, 41, 41);
+  height: 50px;
+  padding: 1% 5%;
+  border-radius: 20px;
+  margin: 1%;
+  opacity:0.95;
+ 
+} 
+
+.playlists-title{
+  font-size: 16px;
+  color:white;
+  align-self: center;
+}
+
+.dropup p{
+  opacity:0.6;
+  font-size: 20px;
+} 
+
+.dropup p:hover{
+  opacity:1;
+} 
+
+.playlist-icon{
+  width:30px;
+  filter:invert(1);
+  align-self: center;
+} 
+
+@keyframes foldUp {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 100%;
+  }
+}
+
+/* Tablet */
 @media (min-width: 600px) {
   .albums-grid{
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     width: 80%;
+  }
+
+  .dropup{
+    display:none;
   }
 
   /* Playlist */
@@ -142,6 +252,13 @@ a{
   padding: 20px;
   border-radius: 18px;
   margin: 1%;
+}
+
+.playlists-header-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 .playlists-title{

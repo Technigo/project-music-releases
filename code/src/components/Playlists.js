@@ -5,8 +5,10 @@ export const Playlists = () => {
   console.log(data)
   return (
     <div className="playlists-container">
-      <img className="playlist-icon" src="icons/playlist.png" alt="playlist icon consisting of 3 lines and a play button" />
-      <h1 className="playlists-title">Featured Playlists</h1>
+      <div className="playlists-header-container">
+        <img className="playlist-icon" src="icons/playlist.png" alt="playlist icon consisting of 3 lines and a play button" />
+        <h1 className="playlists-title">Featured Playlists</h1>
+      </div>
       {
         data.playlists.items.map((playlistsData) => {
           return (
