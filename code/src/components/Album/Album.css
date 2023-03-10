@@ -17,11 +17,19 @@ p {
     color: #ffffff; 
 }
 
+p:hover {
+    text-decoration: underline;
+}
+
 .dots-img {
     width: 15%;
 }
 
 .play-img {
+    width: 15%;
+}
+
+.play-img:hover {
     width: 40%;
 }
 
@@ -44,6 +52,6 @@ p {
 .imgAndIcons:hover .icon-img{
     opacity: 1;
 }
-.AlbumImg:hover {
+.imgAndIcons:hover .AlbumImg{
     filter: blur(5px);
 }
