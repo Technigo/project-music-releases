@@ -2,6 +2,7 @@
 import React from 'react';
 import Artist from 'components/Artist';
 import Album from 'components/Album';
+import 'index.css';
 import AlbumCover from 'components/AlbumCover';
 
 import data from './data.json';
@@ -12,9 +13,11 @@ export const App = () => {
        {data.albums.items.map((album)=> { 
     return (
       <>
-      <Artist artistName={album}/>
-      <AlbumCover cover={album}/>
-      <Album albumName={album}/>
+      <div className="container">
+      <Artist key={album.id} className="artist" artistName={album}/>
+      <AlbumCover className="albumCover" cover={album}/>
+      <Album className="album" albumName={album}/>
+      </div>
       </>
     )}
    )}

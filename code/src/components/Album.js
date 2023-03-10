@@ -2,19 +2,11 @@
 import React from 'react';
 
 
-// const Album = (albumTitle, albumCover) => {
-//     return (
-//       <div>
-//           <h1>{albumTitle}</h1>
-//           <img src={albumCover}/>
-//          </div> 
-//     )
-// }
 
 const Album = (albumTitle) => {
 return (
 <div className="album">
-<h1>{albumTitle.albumName.name}</h1>
+<span>{albumTitle.albumName.name}</span>
 </div>
 )}
 
