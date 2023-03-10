@@ -24,6 +24,11 @@ code {
   padding: 1%;
 }
 
+.HeaderText:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* This will apply to the entier album grid  */
 .music-container {
   display: grid;

@@ -5,7 +5,7 @@ const AlbumArtist = (props) => {
   console.log(props.AlbumArtist.artists);
 
   // let print = props.AlbumArtist.artists.map((singer) => {return (<h3>{singer.name}</h3>)})
-  let print = props.AlbumArtist.artists.map((singer, index) => {return (<a className="AlbumArtistLink" href={singer.external_urls.spotify} target="_blank" rel="noopener noreferrer"><h3 className="AlbumArtist"> {singer.name} {index < props.AlbumArtist.artists.length - 1 ? " &  " : ""}</h3></a>)})
+  print = props.AlbumArtist.artists.map((singer, index) => {return (<a className="AlbumArtistLink" href={singer.external_urls.spotify} target="_blank" rel="noopener noreferrer"><h3 className="AlbumArtist"> {singer.name} {index < props.AlbumArtist.artists.length - 1 ? "& " : ""}</h3></a>)})
 
   
 // // console.log(props.AlbumArtist.artists)
