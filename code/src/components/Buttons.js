@@ -2,7 +2,6 @@ import React from 'react';
 import heartBtn from 'icons/heart.svg';
 import playBtn from 'icons/play.svg';
 import infoBtn from 'icons/dots.svg';
-import '../button.css';
 
 const Buttons = () => {
   return (
