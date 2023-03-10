@@ -147,6 +147,11 @@ a {
   cursor: pointer;
 }
 
+/* HOVER EFFECTS image */
+.album-cover-overlay:hover .album-cover{
+  opacity: 0.5;
+}
+
 
 /* MEDIA QUERIES FOR TABLETS */
 @media (min-width: 768px) and (max-width: 1024px){
