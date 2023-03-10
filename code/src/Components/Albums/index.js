@@ -1,5 +1,5 @@
 import React from 'react';
-import Artists from 'components/Artists';
+import Artists from 'Components/Artists';
 import styles from './AlbumStyling.module.css';
 
 const AlbumComponent = (props) => {
