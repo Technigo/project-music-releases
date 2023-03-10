@@ -1,12 +1,14 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this assignment we were supposed to build a music release app in React
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This was a pair-programming assignment so we started off coding together in the master branch. And because we are based in different parts of the world we kept working on our own in the master branch when the companion was sleeping.
+
+We started working with the app.js and then added components until we had all the data we needed to start styling.
+
+We started to style the index.css but soon realized that we should style the different components in their folder.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sprightly-jelly-2e601a.netlify.app/
