@@ -101,6 +101,10 @@ hr {
   opacity: 0.7;
 }
 
+.ellipsis {
+  filter: invert(100%);
+}
+
 .img-btn-cover:hover>.btn-container {
   opacity: 1;
 }
