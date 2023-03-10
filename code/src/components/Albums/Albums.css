@@ -1,0 +1,19 @@
+.album-name {
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #ffffff;
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.album-area a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.albumlink:hover h3.album-name {
+  text-decoration: underline;
+}
+
