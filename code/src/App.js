@@ -14,9 +14,9 @@ export const App = () => {
     return (
       <>
       <div className="container">
-      <Artist key={album.id} className="artist" artistName={album}/>
       <AlbumCover className="albumCover" cover={album}/>
       <Album className="album" albumName={album}/>
+      <Artist key={album.id} className="artist" artistName={album}/>
       </div>
       </>
     )}

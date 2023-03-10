@@ -3,8 +3,8 @@ import Icons from './Icons';
 
 const AlbumCover = (albumCover) => {
   return (
-    <div className="albumCover">
-          <img src={albumCover.cover.images[1].url} />
+    <div className="image-container">
+          <img src={albumCover.cover.images[1].url} className="album-image"/>
           <Icons />
     </div>
   )};
