@@ -15,8 +15,9 @@ export const App = () => {
         {data.albums.items.map((singleAlbumItem) => (
           <div key={singleAlbumItem.id}>
             <Albumcovers cover={singleAlbumItem.images[1].url} />
-            <Albums hrefAlbum={singleAlbumItem.external_urls.spotify}
-            album={singleAlbumItem.name} />
+            <Albums
+              hrefAlbum={singleAlbumItem.external_urls.spotify}
+              album={singleAlbumItem.name} />
             <Artists album={singleAlbumItem} />
           </div>
         ))}
