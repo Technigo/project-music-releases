@@ -76,8 +76,8 @@ code {
   grid-column: span 4;
   align-self: end;
   margin: 0;
-  border-bottom: 2px rgb(55, 55, 55) solid;
-  }
+  border-bottom: 1px rgb(55, 55, 55) solid;
+}
 
 /* SMALL HEADERS*/
 .title-wrapper {
