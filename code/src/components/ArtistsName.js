@@ -4,7 +4,9 @@ export const ArtistsName = (props) => {
   console.log('artist', props);
   return (
     <div>
-      <a className="artistName" href="">{props.name}</a>
+      <a href={props.artistUrl} target="_blank" rel="noreferrer" className="link-artists">
+        <span className="artistName">{props.name}</span>
+      </a>
       {props.isLast ? '' : ','}
     </div>
   );
