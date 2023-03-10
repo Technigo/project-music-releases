@@ -1,4 +1,35 @@
 
 .icon-wrapper {
     border: solid red 2px;
+    display: none;
+    width: 70%;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+}
+
+.icon-wrapper img {
+    filter: invert(100%);
+}
+
+.heart-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.dots-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.play-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.play-icon:hover {
+ width: 50px;
+ height: 50px;
+ transition: 0.3s;
 }

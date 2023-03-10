@@ -10,7 +10,9 @@ export const AlbumCard = (props) => {
         <img className="album-cover" src={props.albumDetails.images[1].url} alt="album cover" />
         <Icons />
       </div>
-      <h2 className="album-name">{props.albumDetails.name}</h2>
+      <h2 className="album-name">
+        <a href={props.albumDetails.external_urls.spotify} target="_blank" rel="noreferrer">{props.albumDetails.name}</a>
+      </h2>
       <h3 className="artist-name">{props.albumDetails.artists.map((artist) => {
         return (
           <AlbumArtist key={artist.id} artistDetails={artist} />

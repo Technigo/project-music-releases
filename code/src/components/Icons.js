@@ -7,9 +7,9 @@ import playIcon from '../icons/play.svg';
 export const Icons = () => {
   return (
     <div className="icon-wrapper">
-      <img src={heartIcon} alt="heart icon over album" width="30px" height="30px" />
-      <img src={playIcon} alt="play icon over album" width="30px" height="30px" />
-      <img src={dotsIcon} alt="dot icon over album" width="30px" height="30px" />
+      <img className="heart-icon" src={heartIcon} alt="heart icon over album" />
+      <img className="play-icon" src={playIcon} alt="play icon over album" />
+      <img className="dots-icon" src={dotsIcon} alt="dot icon over album" />
     </div>
   )
 }

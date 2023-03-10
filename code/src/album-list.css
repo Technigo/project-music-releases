@@ -1,0 +1,28 @@
+.album-list-wrapper {
+    border: greenyellow solid 2px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 350px;
+    margin: 20px auto 20px auto;
+    column-gap: 30px;
+    row-gap: 40px;
+    justify-items: center;
+}
+
+/*Media queries for small screens*/
+@media (min-width: 668px) {
+.album-list-wrapper {
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    column-gap: 10px;
+  }
+}
+
+
+  /* On screens that are 1024px and more */
+  @media (min-width: 1024px) {
+.album-list-wrapper  {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 950px;
+    }
+}
