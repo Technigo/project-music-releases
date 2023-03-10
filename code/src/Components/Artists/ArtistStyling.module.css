@@ -1,0 +1,16 @@
+.artistName {
+    font-family: Helvetica;
+    color: #a0a0a0;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.artistName:hover {
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.artistContainer {
+    display: flex;
+    gap: 5px;
+}
