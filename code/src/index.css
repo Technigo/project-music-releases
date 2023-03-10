@@ -13,7 +13,7 @@ code {
     monospace;
 }
 
-/*MOBILE FIRST*/
+/*Basic design made with the principle "mobile first"*/
 .music-grid{
 display: grid;
 justify-items: center;
@@ -41,7 +41,7 @@ grid-row-gap: 15px;
   border: none;
 }
 
-/*For tablet*/
+/* MEDIA QUERY FOR TABLET*/
 @media (min-width: 668px){
   .music-grid {
     display: grid;
@@ -53,7 +53,7 @@ grid-row-gap: 15px;
     }
 }
 
-/*For desktop*/
+/*MEDIA QUERY FOR DESKTOP*/
 @media (min-width: 1024px){
 .music-grid {
   display: grid;

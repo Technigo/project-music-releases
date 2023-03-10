@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
 import React from 'react';
-import data from './data.json';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import data from './data.json'; // The Spotify-data
+import 'bootstrap-icons/font/bootstrap-icons.css'; // This imports the icons from the react bootstrap
 
+// importing the different components
 import { Album } from './components/Album/Album.js';
 import { Artist } from './components/Artist/Artist';
 import { Covers } from './components/Covers/Covers';
@@ -26,3 +28,5 @@ export const App = () => {
     </div>
   );
 };
+
+// The App function maps over the data.json-file and collects the albums, which is called items in the data. In the map function it creates a div for every item (renamed to SingleAlbumItem) as it maps over and in that div the some props are sent (renamed again to album) to the Covers, Artist and Album components. The div album-container make up the items in the grid called music-grid.
