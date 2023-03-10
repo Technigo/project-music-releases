@@ -2,14 +2,16 @@
 
 
 .iconsContainer {
-  display: flex;
+  display: block;
   width: 80%;
   /*opacity: 0;*/
   position: absolute;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  gap:25px
 }
 
 
@@ -25,9 +27,11 @@
   width: 100px;
 }
 
-.hearticon {
+.hearticon
+.playicon
+.dotsicon {
   width: 50px;
-  background-color: aqua;
+  height: 50px;
 }
 
 .dotsicon {
