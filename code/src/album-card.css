@@ -4,7 +4,6 @@ a {
 }
 
 .album-card-wrapper {
-    border: 2px purple dotted;
     width: 350px;
 }
 
@@ -15,12 +14,6 @@ a {
 .image-wrapper:hover .album-cover {
   filter: opacity(30%);
   transition: 0.3s;
-}
-
-.image-wrapper:hover .icon-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .album-cover {
@@ -54,13 +47,13 @@ a {
 
 
 @media (min-width: 668px) {
-.album-card-wrapper {
-  width: 280px;
-}
+  .album-card-wrapper {
+width: 280px;
+  } 
 }
 
 @media (min-width: 1024px) {
   .album-card-wrapper {
     width: 200px;
-  }
+      } 
 }

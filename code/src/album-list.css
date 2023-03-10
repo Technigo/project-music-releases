@@ -1,5 +1,4 @@
 .album-list-wrapper {
-    border: greenyellow solid 2px;
     display: grid;
     grid-template-columns: 1fr;
     width: 350px;

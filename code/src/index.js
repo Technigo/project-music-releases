@@ -5,8 +5,6 @@ import './icons.css';
 import './header.css';
 import './album-list.css';
 import './album-card.css';
-import './album-artist.css';
-import './app.css';
 import React from 'react';
 import { App } from './App';
 
