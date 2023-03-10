@@ -1,0 +1,17 @@
+.headerContainer {
+   margin-top: 20px;
+ }
+ 
+ .headerTitle {
+   font-size: 30px;
+   color: white;
+   padding-left: 20px;
+ }
+ 
+ hr {
+   margin-left: 20px;
+   margin-right: 20px;
+   border: none;
+   height: 1px;
+   background-color: #5e5e5e;
+ }

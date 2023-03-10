@@ -1,9 +1,9 @@
 import React from 'react';
-import AlbumComponents from 'Components/Albums';
-import Header from 'Components/Header';
+import AlbumComponent from 'components/Albums';
+import Header from 'components/Header';
+import './index.css';
 
 import data from './data.json';
-
 
 console.log(data);
 
@@ -13,11 +13,10 @@ export const App = () => {
       <Header />
       <div className="grid-parent">
         {data.albums.items.map((singleAlbum) => (
-          <AlbumComponents key={singleAlbum.id} album={singleAlbum} />
+          <AlbumComponent key={singleAlbum.id} album={singleAlbum} />
         ))}
       </div>
     </main>
   );
 }
-
 export default App;

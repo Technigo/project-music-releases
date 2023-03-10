@@ -1,0 +1,29 @@
+.album-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .imgContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .coverImg {
+    max-width: 100%;
+  }
+  
+  .albumName {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 14px;
+  }
+  
+  .albumName:hover {
+    text-decoration: underline;
+    width: fit-content;
+  }
+  

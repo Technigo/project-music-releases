@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './HeaderStyling.css';
+import styles from './HeaderStyling.module.css';
 
 const Header = () => {
   return (
     <div className={styles.headerContainer}>
-      <h1 className={styles.headerTitle}> New albums and singles bla</h1>
+      <h1 className={styles.headerTitle}>New Albums and Singles</h1>
       <hr />
     </div>
   );
