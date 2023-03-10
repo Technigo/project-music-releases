@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.bigTitle {
+font-family: Helvetica;
+}
+
+
+
+/* MOBILE */
+
+
+.AlbumList {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.album {
+  max-width: 90%;
+}
+
+/* TABLET (min-width: 667px) and (max-width: 1024px) */
+
+@media (min-width: 600px) and (max-width: 1024px)
+{
+.AlbumList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1%;
+}
+}
+/* DESKTOP (min-width: 1025px) */
+
+@media (min-width: 1024px)
+{
+.AlbumList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+}
+
+
+/*
+.AlbumBox {
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.AlbumList {
+  display: flex;
+  flex-wrap: wrap;
+}
+*/

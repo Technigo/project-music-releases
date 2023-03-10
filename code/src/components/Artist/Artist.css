@@ -1,0 +1,6 @@
+.artist-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1%;
+}
