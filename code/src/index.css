@@ -53,9 +53,19 @@ code {
   .albumcontainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-    justify-content: space-evenly;
+     justify-content: center;
+    align-content: center;
     gap: 20px;
     margin-top: 10px;
+    row-gap: 50px;
+    justify-items: center;
+  }
+
+  .albumcontainer-parent { /* The container that contains the albumcovers etc */
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
     row-gap: 50px;
   }
 

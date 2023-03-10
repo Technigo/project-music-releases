@@ -5,15 +5,29 @@
     font-family: Helvetica;
     font-size: 14px;
     text-decoration: none;
-    position: absolute;
+    display: inline-block;
+    margin: 0;
+    white-space: nowrap;
+
+}
+
+.artist-name h3 {
+    display: inline-block;
 }
 
 .artist-name a {
     text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
 }
-
-
 
 .artistlink:hover .artist-name {
     text-decoration: underline;
+}
+
+.artists-line .artistlink{
+white-space: nowrap;
+color:#a0a0a0;
+text-decoration: none;
+display: inline-block;
 }

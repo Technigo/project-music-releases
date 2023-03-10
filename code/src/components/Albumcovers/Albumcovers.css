@@ -30,10 +30,6 @@
     align-items: center;
   }
 
-
-
-
-
 .play:hover, .heart:hover, .dots:hover {
     transform: scale(1.3);
     transition: transform 0.5s;
@@ -45,7 +41,6 @@
 .icons-container {
     display: none;
     position: absolute;
-    top: 40%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -53,6 +48,7 @@
     text-align: center;
     object-fit: cover;
     width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.6);
 }
 .image-container:hover .icons-container {
