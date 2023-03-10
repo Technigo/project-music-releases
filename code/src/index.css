@@ -17,6 +17,17 @@ header{
   color: white;
   margin-left:20px;
 }
+header h1{
+  margin-bottom: 20px;
+  
+}
+hr {
+  width: 79%;
+  margin: 0px 0px 20px 0px;
+  border: none;
+  height: 1px;
+  background-color: rgb(86, 85, 85);
+}
 
 a{
   text-decoration: none;

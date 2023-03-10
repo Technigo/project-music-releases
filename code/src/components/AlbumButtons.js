@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const AlbumButtons = () => {
-  console.log('btns');
   return (
 
     <div className="btn-box">
