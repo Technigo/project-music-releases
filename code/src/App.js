@@ -9,7 +9,7 @@ export const App = () => {
     <div>
       <Header headerNameInput="New Albums" />
       <Albums albumTypeInput="album" />
-      <Header headerNameInput="Singles" />
+      <Header headerNameInput="New Singles" />
       <Albums albumTypeInput="single" />
       <Dropup />
       <Playlists />

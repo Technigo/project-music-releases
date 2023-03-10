@@ -10,7 +10,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(24, 23, 23);
-  /* font-family: 'Noto Sans', sans-serif; */
 }
 
 code {
@@ -84,6 +83,7 @@ a{
   align-self: center;
   justify-self: center;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .album-cover-image{

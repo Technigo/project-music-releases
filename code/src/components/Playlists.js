@@ -2,7 +2,6 @@ import React from 'react';
 import data from '../stretch-goal.json'
 
 export const Playlists = () => {
-  console.log(data)
   return (
     <div className="playlists-container">
       <div className="playlists-header-container">

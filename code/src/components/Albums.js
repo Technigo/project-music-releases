@@ -3,7 +3,6 @@ import { Album } from './Album';
 import data from '../data.json';
 
 export const Albums = (props) => {
-  console.log(data.albums)
   return (
     <div className="albums-grid">
       {
