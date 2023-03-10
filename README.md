@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Project done by both Jennifer Feenstra-Arengård and Eva Sjöholm
+ 
+We used React and data from Spotify to create a page with new albums and single releases. 
 
 ## The problem
+Using pair programming we first attempted to use react components to display album images and artists names which can be clicked to bring the user into respective spotify page. In addition we used css to style the page and make it responsive. 
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+ If we had more time we could make the icons responsive/clickable.
 
 ## View it live
+https://eva-and-jennifers-music-site.netlify.app/
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.

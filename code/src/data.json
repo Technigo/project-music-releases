@@ -208,14 +208,14 @@
         "id": "2Gm8FjIJ4XAY9Pq9SdhJBU",
         "images": [
           {
-            "height": 640,
-            "url": "https://i.scdn.co/image/ab67616d0000b273ec65553ce98439bcf0595e60",
-            "width": 640
-          },
-          {
             "height": 300,
             "url": "https://i.scdn.co/image/ab67616d00001e02ec65553ce98439bcf0595e60",
             "width": 300
+          },
+          {
+            "height": 640,
+            "url": "https://i.scdn.co/image/ab67616d0000b273ec65553ce98439bcf0595e60",
+            "width": 640
           },
           {
             "height": 64,

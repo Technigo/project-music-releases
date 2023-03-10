@@ -1,13 +1,177 @@
+:root {
+  --main-color-:#ffff;
+  --secondary-color: #a0a0a0;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+hr {
+  border: 1px solid #212121;
+}
+
+h2 {
+  margin: 0px;
+ 
+}
+
+h1{
+  margin: 0px;
+}
+
+.main-container {
+  padding: 10px;
+  font-family: Helvetica;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-weight: bold;
+  color:#ffff;
+  margin: 20px 20px 20px 20px;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+
+.album-image {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: filter 0.3s ease-in-out;
+}
+.album-image:hover {
+  filter: brightness(30%);
+  
+}
+
+.albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  height: max-content;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.album-name {
+  text-decoration: none;
+  font-family: Helvetica;
+  color:#ffff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.album-name:hover{
+  text-decoration: underline;
+}
+
+a:-webkit-any-link { 
+  /*styling for artist name*/
+  text-decoration: none;
+  text-underline-offset: 3px;
+  font-family:Helvetica;
+  font-size: 14px;
+  color:var(--secondary-color);
+} 
+
+a:-webkit-any-link:hover{
+  text-decoration: underline;
+}
+
+/*Ikon and button*/
+.btn-image-container {
+  position: relative;
+}
+
+
+.btn-image-container:hover,
+.btn-image-container .image-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-image-container:hover .icons-container {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+.icons-container {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.heart-icon, .play-icon, .dots-icon {
+  width: 32px;
+  height: 32px;
+  filter: invert();
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.play-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(50% - 10px);
+ 
+}
+
+.heart-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(30% - 10px);
+}
+
+.dots-icon{
+  position:absolute;
+  margin:auto;
+  top: calc(50% - 10px); 
+  left: calc(70% - 10px);
+}
+
+.play-icon:hover{
+  transform: scale(1.8);
+  opacity: 1;
+}
+
+.heart-icon:hover{
+  transform: scale(1.2);
+  opacity: 1; 
+}
+
+.dots-icon:hover{
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 600px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
