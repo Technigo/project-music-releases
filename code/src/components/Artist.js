@@ -1,10 +1,26 @@
 import React from 'react';
 
+const generateDelimiter = (index, length) => {
+  if (index === length - 2) {
+    return ' & ';
+  } else if (index < length - 2) {
+    return ', ';
+  }
+};
+
 export const Artist = (props) => {
   console.log(props)
+  const { artist } = props;
   return (
-    <div>
-      <a className="artist-link" href={props.artist[0].external_urls.spotify} target="_blank" rel="noopener noreferrer">{props.artist[0].name}</a>
-    </div>
+    <span>
+      {artist.map((items, index) => {
+        return (
+          <>
+            <a className="artist-link" href={items.external_urls.spotify} target="_blank" rel="noopener noreferrer">{items.name}</a>
+            {generateDelimiter(index, artist.length)}
+          </>
+        )
+      })}
+    </span>
   )
 }
