@@ -7,9 +7,9 @@ export const Artist = ({ album }) => {
     <div className="artist-container">
       {album.artists.map((artist, index) => (
         <div key={artist.id}>
-          <a href={album.artists[0].external_urls.spotify} target="_blank" rel="noreferrer" className="artist-name">
+          <a href={artist.external_urls.spotify} target="_blank" rel="noreferrer" className="artist-name">
             {artist.name}
-            {album.artists.length - 1 > index ? ', ' : ''}
+            {album.artists.length - 1 > index ? ' ,' : ''}
           </a>
         </div>
       ))}
