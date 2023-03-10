@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
+Music release page by Vio Szabo and Frida Munther Gustavson. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The week's project consisted in building a music release page using React. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The assignment was to use components and pass props. The site should show album image covers, the album names and the artist names separated with a comma. On hover, icons should show and the play button should grow.
+We used a combination of React and CSS to solve this problem. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+

@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #222; 
+  background-color: #222;
   box-sizing: border-box;
 }
 
@@ -17,81 +17,56 @@ code {
 /* Header */
 
 .main-container {
-  display: flex; 
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  margin: 2em;
+}
+
+.header-container {
+  grid-row-start: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-line {
+  border-bottom: 1.5px solid #a0a0a0;
   margin: auto;
+  width: 100%;
+  filter: opacity(15%);
 }
 
-.title-container {
-  color: #fff;
-  display: f
-}
-
-h1 {
-  font-size: 24px; 
+.header-title {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 /* Album Cards */
 
 .album-container {
-  display: flex; 
+  grid-row-start: 2;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .card {
-  display: flex; 
-  flex-direction: column; 
-  padding: 10px; 
-  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
 }
 
 .album-art {
-  width: 100%; 
-  object-fit: contain;
+  width: 100%;
 }
 
 .image-container {
-  display:flex; 
-  flex-direction: column; 
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
 }
-
-
-/* Album Content */
-
-/*from Daniel's live session
-.image-container {
-  position: relative; 
-  height: 500px; 
-  width: 500px; 
-}
-
-.image {
-  width: 100%; 
-  height: 100%; 
-}
-
-.icon {
-  display: block; 
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  position: absolute; 
-  top: calc(50% - 25px);
-  left: calc(50% - 25px);
-}
-.icon-container {
-    display: none;
-}
-.image-container:hover .icon-container {
-    display: block;
-}
-.image {
-    width: 100%;
-    height: 100%;
-*/
 
 /* Hidden icon container */
 
@@ -100,56 +75,68 @@ h1 {
   display: none;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  gap: 30px;
 }
 
-.icon {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%;
-    filter: invert(100%);
-  }
+.heart-button,
+.play-button,
+.more-button {
+  width: 50px;
+  height: 50px;
+}
 
-.album-art img:hover {
-  filter:opacity(50%);
-  }
+.play-button {
+  transition: all .2s ease-in-out;
+}
+
+.play-button:hover {
+  transform: scale(1.5);
+}
 
 .album-art:hover .icon-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
 }
 
+/* Album Content */
+
 .albumName {
-  color: #ffffff; 
+  color: #ffffff;
   font-weight: 600;
-  font-family:'Helvetica', sans-serif; 
-  font-size: 14px; 
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
   margin-top: 5px;
-  max-width: fit-content; 
+  max-width: fit-content;
+}
 
-  }
+.albumName:hover {
+  text-decoration: underline;
+}
 
-  .albumName:hover {
-    text-decoration:underline ;
-  }
+.artistName:hover {
+  text-decoration: underline;
+}
 
-  .artistName:hover {
-    text-decoration: underline; 
-  }
+.albumArt {
+  display: flex;
+}
 
 a {
   text-decoration: none;
 }
 
 .artistName {
-  color:#a0a0a0; 
-  font-family:'Helvetica', sans-serif ;
-  font-size: 14px; 
-  margin: 0; 
+  color: #a0a0a0;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin: 0;
 }
 
 .artistName span {
-  color:#a0a0a0;
+  color: #a0a0a0;
 }
 
 .artist-link:not(:first-of-type, :last-of-type)::before {
@@ -162,37 +149,29 @@ a {
   color: #a0a0a0;
 }
 
+/* Media queries */
 
 @media (min-width:667px) and (max-width: 1024px) {
   .card {
-    display: flex; 
-    width: 45%; 
+    display: flex;
+    width: 45%;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1892px) {
- .card {
- width: 20%; 
+  .card {
+    width: 20%;
   }
 }
 
 @media (min-width:1892px) {
   .card {
-width: 20%;   }
-}
-  /*
-  .main-container {
-    max-width: 1600px; 
+    width: 20%;
   }
-
-
-
-
+}
 
 @media (min-width: 667px) and (max-width: 1024px) {
   .card {
-    width: 45%; 
+    width: 45%;
   }
 }
-
-*/

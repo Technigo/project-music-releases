@@ -6,21 +6,21 @@ const Album = (props) => {
       <div className="linked-album">
         <a href={props.albumLink} target="_blank" rel="noopener noreferrer">
           <div className="album-art">
-            <div className="icon-container">
-              <img
-                className="icon"
-                src="./icons/heart.svg"
-                alt="heart button" />
-              <img
-                className="icon"
-                src="./icons/play.svg"
-                alt="play button" />
-              <img
-                className="icon"
-                src="./icons/dots.svg"
-                alt="more button" />
-            </div>
             <div className="image-container">
+              <div className="icon-container">
+                <img
+                  className="heart-button"
+                  src="./icons/heart.svg"
+                  alt="heart button" />
+                <img
+                  className="play-button"
+                  src="./icons/play.svg"
+                  alt="play button" />
+                <img
+                  className="more-button"
+                  src="./icons/dots.svg"
+                  alt="more button" />
+              </div>
               <img className="albumArt" src={props.img} alt={props.albumName} />
             </div>
           </div>
