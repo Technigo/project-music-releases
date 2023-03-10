@@ -1,10 +1,19 @@
-/*Styling for album component*/
-
 .albumcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 30px;
+    row-gap: 10px;
     /*justify-content:*/
+}
+
+.imgcontainer{
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.album-img{
+    max-width: 100%;   
 }
 
 .albumname {
@@ -14,11 +23,13 @@ font-weight: 600;
 color: #ffffff;
 }
 
-.artistname {
-font-family: Helvetica;
-font-size: 14px;
-color: #a0a0a0;
+.albumname:hover {
+text-decoration: underline;
+width: fit-content;
+cursor: pointer;
 }
+
+
 
 a:link {
     text-decoration: none;

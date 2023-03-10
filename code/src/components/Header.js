@@ -2,5 +2,10 @@ import React from "react";
 import './Header.css';
 
 export const Header = () => {
-    return <h1>New albums &amp; singles</h1>; 
-}
+    return (
+      <div className="headerContainer">
+        <h1 className="Title">New Albums &amp; Singles</h1>
+        <hr />
+      </div>
+    );
+  }
