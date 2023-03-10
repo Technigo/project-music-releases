@@ -17,7 +17,7 @@ const Artist = (props) => {
       {props.artists.map((artist, index) => (
         <a
           key={artist.id}
-          className="artistContainer"
+          className="artist-container"
           href={artist.external_urls.spotify}
           rel="noopener noreferrer"
           target="_blank">

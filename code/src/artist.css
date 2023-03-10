@@ -1,11 +1,11 @@
-.artistContainer {
+.artist-container {
     font-family: var(--secondary-headings-font-family);
     font-size: 14px;
     color: #a0a0a0;
     text-decoration: none;
 }
 
-.artistContainer:hover {
+.artist-container:hover {
     text-decoration: underline;
     color: white;
 }

@@ -7,7 +7,7 @@
 
 /*ALBUM*/
 
-.albumName {
+.album-name {
   font-family: var(--secondary-headings-font-family);
   font-size: 14px;
   color: #fff;
@@ -18,45 +18,45 @@
   margin-bottom: 1.5rem;
 }
 
-.albumName:hover {
+.album-name:hover {
   text-decoration: underline;
 }
 
-.albumCover {
+.album-cover {
   width: 100%;
   height: 100%;
 }
 
-/*albumCover gets opacity at hover on its parent element coverAndButtons*/
+/*album-cover gets opacity at hover on its parent element cover-and-icons*/
 
-.coverAndButtons:hover .albumCover {
+.cover-and-icons:hover .album-cover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.albumContainer {
+.album-container {
   place-items: center;
 }
 
 /*BUTTONS*/ 
 
-.coverAndButtons  {
+.cover-and-icons  {
     position: relative;
 }
 
-/*imgOverlay is displayed in block at hover on its parent element coverAndButtons. This makes the icons visible at hover on the album*/
+/*img-overlay is displayed in block at hover on its parent element cover-and-icons. This makes the icons visible at hover on the album*/
 
-.coverAndButtons:hover .imgOverlay {
+.cover-and-icons:hover .img-overlay {
     display: block;
 }
 
-.imgOverlay {
+.img-overlay {
     justify-content: center;
     align-items: center;
     display: none;
 }
 
-.iconsContainer {
+.icons-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,37 +67,37 @@
     z-index: 1;
 }
 
-.heartBtn {
+.heart-icon {
     margin-right: 30px;
     filter: invert(0.8); /*this changes the color from black to white on the icons, 1 means that the icon will be fully white and a lower value is more opaque*/
     width: 1.5rem;
 }
 
-.heartBtn:hover {
+.heart-icon:hover {
     transition: 0.5s ease;
     cursor: pointer;
 }
 
-.playBtn {
+.play-icon {
     margin-right: 30px;
     filter: invert(0.8); 
     width: 3.5rem;
 }
 
-.playBtn:hover {
+.play-icon:hover {
     transform: scale(1.3);
     transition: 0.5s ease;
     cursor: pointer;
     filter: invert(1); 
 }
 
-.infoBtn {
+.info-icon {
     margin-right: 20px;
     filter: invert(0.8);
     width: 1.5rem;
 }
 
-.infoBtn:hover {
+.info-icon:hover {
     transition: 0.5s ease;
     cursor: pointer;
 } 
@@ -106,7 +106,7 @@
 
 /*tablet*/
 @media ((min-width: 668px) and (max-width: 1023px)) {
-  .albumContainer {
+  .album-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -114,7 +114,7 @@
 
 /*desktop*/
 @media (min-width: 1024px) {
-  .albumContainer {
+  .album-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;

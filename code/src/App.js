@@ -9,7 +9,7 @@ export const App = () => {
     <section className="outer-wrapper">
       <div className="inner-wrapper">
         <Header />
-        <section className="albumContainer">
+        <section className="album-container">
           {data.albums.items.map((item) => {
             return <Albums key={item.id} data={item} />
           })}
