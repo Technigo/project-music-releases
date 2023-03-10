@@ -18,8 +18,7 @@ export const App = () => {
                 name={item.name}
                 artists={item.artists}
                 image={item.images[0]}
-                link={item.external_urls.spotify}
-                artistUrl={item.artist[0].external_urls.spotify} />
+                link={item.external_urls.spotify} />
             );
           })}
         </main>
