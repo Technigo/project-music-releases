@@ -1,10 +1,12 @@
 # Music Releases
-This week we will practice React and creating components by using data from Spotify. 
-We builded a page which shows new album and single releases. This was a team task so I worked with Ajmal. We worked as a team from monday to thursday, but decided on friday's standup that we will both finnish the project individually to get more practice working with css. The project was nice and everything went super smoothly with Ajmal.
+This week we will practice React and creating components using data from Spotify. 
+We built a page that shows new albums and single releases. This was a team task, so I worked with Ajmal. We worked as a team from Monday to Thursday but decided on Friday's standup that we would finish the project individually to get more practice working with CSS. The project was excellent, and everything went super smoothly with Ajmal.
 
 ## The problem
 
-First it was super hard to understand how React works but after seeing some code from previous student we startted to understand more and more. We tried tto work as much as possible simultaniusly with the same file, so we ecould share the knowledge while working. On friady I spent some time to look how Spotify API works if I want to update this project later to constantly updating version with my own playlists.
+At first, it was super hard to understand how React works, but after seeing some code from the previous student, I started to understand it more and more. We worked as much as possible simultaneously with the same file to share knowledge while working. 
+
+On Friday, I looked at how Spotify API works if I want to update this project later to update the version with my playlists constantly. Still, some research is left to do there.
 
 ## View it live
 
