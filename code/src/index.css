@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -16,23 +17,25 @@ code {
     monospace;
 }
 
-.cover-wrapper {
-  position: relative;
-  display:inline-block;
-  padding: 0px;
-}
-
-/* a {
-  color: white;
-  text-decoration: none;
-} */
-
 .albums {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   grid-template-rows: 50px repeat(4, minmax(50px, 1fr));
-  gap: 20px;
   padding: 20px;
+  row-gap:40px;
+  column-gap: 20px;
+}
+
+.master-wrapper {
+  display:inline-block;
+  padding: 0px;
+}
+
+/* ALBUM COVER IMAGE*/
+.album-cover-overlay {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .album-cover {
@@ -40,60 +43,92 @@ code {
   object-fit: cover;
 }
 
+.album-name-link {
+  display: inline-block;
+}
+
+/* ICONS*/
  .icons-container {
+  display: none;
   width: 100%;
-  display: flex;
   justify-content: space-evenly;
-  /* gap: 100%; */
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
 }
 
 .icons-container img {
   filter: invert();
-  height: 50px;
-  margin: 0 15px;
+  height: 60px;
+/*   margin: 0 15px; */
   opacity: 70%;
 }
 
-.image-overlay {
-  display: none;
-  box-sizing: border-box;
+/* BIG HEADER */
+.header-title {
+  color: white;
+  font-size: 20px;
+  /* margin: 20px 0 5px 0; */
+  grid-column: span 4;
+  align-self: end;
+  margin: 0;
 }
 
-.image:hover + .image-overlay {
-  display: block;
-}
-
-.image-overlay:hover {
-  display: block;
+/* SMALL HEADERS*/
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 9px;
 }
 
 a {
   text-decoration: none;
+  color: #a0a0a0;
+  font-weight: 700;
 }
 
-.artist-name, .album-name {
+.album-name-h2, .artist-name-h3 {
   font-size: 14px;
   font-family: Helvetica, Arial, sans-serif;
   letter-spacing: 0.04em;
-}
-
-.artist-name {
-  color: #a0a0a0;
   margin: 0;
 }
 
-.album-name {
+.album-name-h2 {
   color: #ffffff;
-  margin: 12px 0 8px 0;
+  display: block;
+}
+
+.artist-name-h3 {
+  color: #a0a0a0;
+  display: inline-block;
+}
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  content: ", ";
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
 }
 
 /* HOVER EFFECTS ON ARTIST NAME AND ALBUM NAME */
-.artist-name:hover, .album-name:hover {
+.album-name-h2:hover, .artist-name-h3:hover {
   text-decoration: underline;
+}
+
+/* HOVER EFFECT ON ICON SECTION */
+.album-cover-link:hover + .icons-container {
+  display: flex;
+}
+
+.icons-container:hover {
+  display: flex;
 }
 
 /* HOVER EFFECTS ON HEART AND DOTS-ICONS */
@@ -112,24 +147,27 @@ a {
   cursor: pointer;
 }
 
-/* HEADER CLASS */
-.header-title {
-  color: white;
-  font-size: 20px;
-  margin: 20px 0 5px 0;
-  grid-column: span 4;
-}
 
 /* MEDIA QUERIES FOR TABLETS */
 @media (min-width: 768px) and (max-width: 1024px){
   .albums {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-}
+  }
+
+  .header-title {
+    grid-column: span 2;
+  }
+
 }
 
 /* MEDIA QUERIES FOR MOBILES */
 @media (max-width: 767.98px){
   .albums {
     grid-template-columns: repeat(1, minmax(50px, 1fr));
-}
+  }
+
+  .header-title {
+    grid-column: span 1;
+  }
+
 }
