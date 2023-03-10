@@ -209,6 +209,8 @@ hr {
     font-size: 22px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
   }
 
   .playlist {
@@ -224,17 +226,20 @@ hr {
     grid-area: Sidebar;
     display: flex;
     flex-direction: column;
+    align-content: center;
     border-radius: 20px;
     background-color: #252323;
     margin: 30px;
-    max-height: 100vh;
+    max-height: 95vh;
     top: 0;
+    min-width: 180px;
   }
 
   .playlist-items {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
   }
 
   .header {
