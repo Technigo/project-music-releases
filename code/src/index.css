@@ -22,6 +22,25 @@ a{
   text-decoration: none;
   color:white;
 }
+.albumName{
+  color:  #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin:8px 0px 0px 0px;
+}
+
+.albumName:hover{
+  text-decoration: underline;
+}
+
+.artistName{
+  color: #a0a0a0;
+  font-size: 14px;
+  font-family: Helvetica;
+}
+.artistName:hover{
+  text-decoration: underline;
+}
 .albums-grid{
   display: grid;
   grid-template-columns: 1fr;
@@ -84,9 +103,11 @@ a{
 .play-btn{
   width: 6rem;
   transition: all 0.1s ease-in-out; 
+  opacity: 0.6;
 }
 .play-btn:hover{
   transform: scale(1.1);
+  opacity: 1;
 }
 .like-btn,
 .play-btn,

@@ -6,6 +6,7 @@ export const AlbumArtists = (props) => {
       {props.artistsInput.map((artist) => {
         return (
           <a
+            className="artistName"
             target="_blank"
             rel="noreferrer"
             href={artist.external_urls.spotify}>

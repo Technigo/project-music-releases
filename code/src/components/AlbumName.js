@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const AlbumName = (props) => {
-  return <div>{props.albumNamesInput}</div>;
+  return <p className="albumName">{props.albumNamesInput}</p>;
 };
