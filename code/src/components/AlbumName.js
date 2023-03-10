@@ -4,26 +4,9 @@ import React from 'react';
 // I fixed it by changing the name from "HeaderStyling.css" to "HeaderStyling.module.css everywhere
 
 export const AlbumName = (props) => {
-    return (
-      <div>
-        <h1 className={album-name}></h1>
-      </div>
-    )
-  };
-
-// {props.artistDetails.albums.items.name}
-
-  
-  import React from 'react'
-
-export const AlbumName = (props) => {
-
   return (
-      <h2 className='album-name'>
-        <span className='underline'>
-        {props.item.name} 
-        </span>
-      </h2>
- )
-
-}
+    <a className="link-album-name" href={props.urlAlbumName}>
+      <h1 className="album-title">{props.albumName}</h1>
+    </a>
+  )
+};

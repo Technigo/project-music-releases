@@ -1,7 +1,9 @@
 import React from 'react';
-import { AlbumImage } from './components/AlbumImage';
-import { AlbumName } from './components/AlbumName';
-import { ArtistName } from './components/ArtistName';
+// import { AlbumImage } from './components/AlbumImage';
+// import { AlbumName } from './components/AlbumName';
+import { AlbumArtist } from './AlbumArtist';
+import { AlbumCover } from './AlbumCover';
+import { AlbumName } from './AlbumName';
 
 // Album component which is rendered using .map()
 // and which you pass the album data into using props.
@@ -11,27 +13,22 @@ import { ArtistName } from './components/ArtistName';
 // Name of each artist involved with a comma in between
 
 export const Album = (props) => {
+  console.log("It's here", props.spotifyList)
   return (
-    <div className={Album}>
-      {props.artistList.albums.map((singleAlbum) => {
+    <div className="Album">
+      {props.spotifyList.albums.items.map((singleAlbum) => {
         return (
-          <AlbumImage key={} />
-          <AlbumName key={} />
-          <ArtistName key={singleAlbum.items.artists[0].id} artistDetails={singleAlbum} />
+          <div key={singleAlbum.id}>
+            <AlbumCover cover={singleAlbum.images[1].url} />
+            <AlbumName
+              urlAlbumName={singleAlbum.external_urls.spotify}
+              albumName={singleAlbum.name} />
+            <AlbumArtist key={singleAlbum.id} artistsArray={singleAlbum.artists} />
+          </div>
         )
       })}
     </div>
   );
 }
 
-/*const NewsList = (props) => {
-  return (
-    <section>
-      {props.articlesList.articles.map((singleArticle) => {
-        return (
-          <Article key={singleArticle.id} articleDetails={singleArticle} />
-        )
-      })}
-    </section>
-  );
-};*/
+// <AlbumCover cover={singleAlbum.images[1].url} />
