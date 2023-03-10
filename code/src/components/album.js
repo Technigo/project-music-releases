@@ -7,7 +7,7 @@ const Album = ({ name, artists, image, link }) => {
   console.log('album', name, artists);
   return (
     <section className="album">
-      <a href={link} target="_blank" rel="noreferrer" className="link-album">
+      <a href={link} target="_blank" rel="noreferrer" className="albumLink">
         <AlbumImage image={image} name={name} />
         <div className="albumDetails">
           <p>{name}</p>
