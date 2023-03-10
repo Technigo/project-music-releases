@@ -12,7 +12,25 @@
 
 .album-title-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0px 10px;
-    
+    margin: 0px;
 }
+
+.release-date {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+h3 {
+    padding: 4px;
+    margin: 0;
+}
+
+p {
+    padding: 4px;
+    margin: 0;
+}
+

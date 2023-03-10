@@ -8,6 +8,9 @@ export const Album = ({ album }) => {
       <a href={album.external_urls.spotify} target="_blank" rel="noreferrer" className="album-title">
         <h3>{album.name}</h3>
       </a>
+      <div>
+        <p className="release-date">Release date: {album.release_date}</p>
+      </div>
     </div>
   )
 }

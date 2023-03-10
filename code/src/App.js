@@ -1,6 +1,5 @@
 import React from 'react';
 import data from './data.json';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import { Album } from './components/Album/Album.js';

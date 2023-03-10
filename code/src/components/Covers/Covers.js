@@ -15,5 +15,3 @@ export const Covers = ({ cover, album }) => {
       </div>
     </div>)
 }
-
-//
