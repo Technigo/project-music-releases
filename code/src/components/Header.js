@@ -9,6 +9,3 @@ export const Header = () => {
 }
 
 export default Header;
-
-// Shows on top of the page, like in the Design
-// <hr /> = shows as a horizontal rule/line to separate content

@@ -28,6 +28,3 @@ export const AlbumMaster = (props) => {
 };
 
 export default AlbumMaster;
-
-// target="_blank" == open in new tab.
-// rel="noopener noreferrer" == target resource won’t know where the visitor came from
