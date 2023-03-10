@@ -18,20 +18,21 @@ p {
 }
 
 .dots-img {
-    width: 33%;
-}
-
-.heart-img {
-    width: 33%;
+    width: 15%;
 }
 
 .play-img {
-    width: 33%;
+    width: 40%;
+}
+
+.heart-img {
+    width: 15%;
 }
 
 .icon-img {
     position: absolute;
     display: flex;
+    justify-content: space-evenly;
     align-self: center;
     flex-direction: row;
     text-align: center;
