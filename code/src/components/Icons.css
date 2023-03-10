@@ -27,11 +27,13 @@
   width: 100px;
 }
 
-.hearticon
-.playicon
-.dotsicon {
+.hearticon, .playicon, .dotsicon {
   width: 50px;
   height: 50px;
+}
+
+.hearticon:hover {
+  opacity: 1;
 }
 
 .dotsicon {

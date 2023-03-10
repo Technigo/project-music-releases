@@ -3,6 +3,7 @@ import { Header } from 'components/Header';
 import { Album } from 'components/Album';
 
 import data from './data.json';
+import { Footer } from 'components/Footer';
 
 export const App = () => {
   return (
@@ -21,6 +22,7 @@ export const App = () => {
           )
         })}
       </section>
+      <Footer />  
     </main>
   );
 }
