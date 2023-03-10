@@ -18,8 +18,7 @@ code {
   display: none;
 }
 
-.title,
-.playlist-title {
+.title {
   color: #ffffff;
   margin: 20px 20px 30px 20px;
   font-size: 20px;
@@ -151,7 +150,7 @@ hr {
   }
 
   .playlist-items {
-    width: 100vw;
+    max-width: 100%;
     display: flex;
     contain: content;
     flex-direction: row;
@@ -222,7 +221,6 @@ hr {
   }
 
   .sidebar {
-    width: 10vw;
     grid-area: Sidebar;
     display: flex;
     flex-direction: column;
@@ -254,7 +252,7 @@ hr {
     grid-template-columns: 1fr 1fr;
   }
 
-  a:hover {
+  .playlist:hover {
     text-decoration: underline;
     font-weight: bold;
     color: white;
