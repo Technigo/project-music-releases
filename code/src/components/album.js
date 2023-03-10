@@ -7,10 +7,14 @@ const Album = ({ name, artists, image, link }) => {
   console.log('album', name, artists);
   return (
     <section className="album">
-      <a href={link} target="_blank" rel="noreferrer" className="albumLink">
-        <AlbumImage image={image} name={name} />
+      <div><AlbumImage image={image} name={name} /></div>
+      <div className="textContainer">
         <div className="albumDetails">
-          <p>{name}</p>
+          <a href={link} target="_blank" rel="noreferrer" className="albumLink">
+            <span>{name}</span>
+          </a>
+        </div>
+        <div className="artistDetails">
           {artists.map((artist, index) => {
             const isLast = index === artists.length - 1;
             return (
@@ -22,7 +26,7 @@ const Album = ({ name, artists, image, link }) => {
             );
           })}
         </div>
-      </a>
+      </div>
     </section>
   );
 };

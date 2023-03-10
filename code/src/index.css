@@ -6,6 +6,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: #a0a0a0;
+  font-size: 14px;
 }
 
 code {
@@ -17,15 +18,12 @@ h1 {
   margin: 30px 40px 20px 40px;
   font-size: 18px;
   font-weight: bold;
+  color: #FFF;
 }
 
 a {
-  text-decoration: none;
-  color: #FFF;
-}
-
-p {
-  color: #FFF;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
 }
 
 .albums {
@@ -57,39 +55,29 @@ p {
   filter: brightness(0.50);
 }
 
-.albumDetails {
-  font-size: 14px;
-  margin: -10px 0 0 0;
-  font-weight: bold;
-  color: #a0a0a0;
+.textContainer {
+  margin-top: 10px;
+  line-height: 25px;
 }
 
 .albumLink {
   text-decoration: none;
   color: #FFF;
+  font-weight: bold;
 }
-/* How do I get this effect to kick in only when hover over text, instead of entire picture? */
+
 .albumLink:hover {
   text-decoration: underline;
 }
 
-.artistName {
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: -20px;
-  margin-bottom: 30px;
-  color: #a0a0a0;
-}
-
 .artistLink {
   text-decoration: none;
-  display: inline-block;
   color: #a0a0a0;
+  font-weight: 500;
 }
 
 .artistLink:hover {
   text-decoration: underline;
-  color: #a0a0a0;
 }
 
 .albumIcons {
