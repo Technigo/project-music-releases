@@ -6,13 +6,11 @@ console.log(data);
 
 export const App = () => {
   return (
-    <section>
+    <section className="app">
       <header>
         <h1 className="bigTitle"> New albums and singles </h1>
       </header>
-      <div className="AlbumBox">
-        <AlbumList data={data} />
-      </div>
+      <AlbumList data={data} />
     </section>
   );
 }

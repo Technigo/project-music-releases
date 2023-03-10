@@ -19,10 +19,8 @@ export const Artist = (props) => {
           href={artist.external_urls.spotify}
           key={artist.id}
           className="artist-container">
-          <h3 className="artist-name">
-            {artist.name}
-            {generateDelimiter(index, props.artists.length)}
-          </h3>
+          {artist.name}
+          {generateDelimiter(index, props.artists.length)}
         </a>
       ))}
     </div>

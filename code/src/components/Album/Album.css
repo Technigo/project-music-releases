@@ -1,67 +1,48 @@
-/* image-container */
-
 .imgAndIcons {
-    display: none;
-    position: relative;
-
+    display: flex;
+    position:relative;
 }
-
-.imgAndIcons {
-display: flex;
-position: relative;
-}
-
-/* albumCovers */
 
 .AlbumImg {
     display: flex;
-    position: relative;
+    align-self: center;
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    padding-top: 4%;
+    font-size: 14px;
+    font: Helvetica;
+    color: #ffffff; 
 }
 
 .dots-img {
-    left: 0;
-    width: 45px;
-    height: 45px;
-    
+    width: 33%;
 }
 
 .heart-img {
-  right: 0;
-  width: 45px;
-  height: 45px;
- 
+    width: 33%;
 }
 
 .play-img {
-right: 0;
-width: 45px;
-height: 45px;
-}
-
-/* icons-container */
-
-.imgAndIcons:hover  .icon-img {
-
-    display: flex;
-    align-items: center;
-}
-
-.dots-img:hover, .heart-img:hover, .play-img:hover {
-
-    transform: scale(1.3);
-    opacity: 0.8;
-    display: block;
+    width: 33%;
 }
 
 .icon-img {
-
-    display: none;
     position: absolute;
-    text-align: center;
-}
-
-.icon-img :hover {
-
     display: flex;
+    align-self: center;
+    flex-direction: row;
+    text-align: center;
+    margin: 10%;
+    opacity: 0;
+    transition: .2s ease;
 }
 
+.imgAndIcons:hover .icon-img{
+    opacity: 1;
+}
+.AlbumImg:hover {
+    filter: blur(5px);
+}
