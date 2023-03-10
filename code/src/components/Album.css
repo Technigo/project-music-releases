@@ -5,15 +5,20 @@
     /*justify-content:*/
 }
 
-.imgcontainer{
+.imgcontainer {
     align-items: center;
-  display: flex;
-  justify-content: center;
-  position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
-.album-img{
+.album-img {
     max-width: 100%;   
+}
+
+.album-img:hover {
+opacity: 0.5;
+transition: 0.4s;
 }
 
 .albumname {
@@ -29,8 +34,6 @@ width: fit-content;
 cursor: pointer;
 }
 
-
-
 a:link {
     text-decoration: none;
 }
@@ -40,12 +43,13 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 a:active {
     text-decoration: none;
-}
+}       
 
 /* Media queries */
 
