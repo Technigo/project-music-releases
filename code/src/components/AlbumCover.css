@@ -15,6 +15,14 @@
     transition: 0.3s;
 }
 
+
+
+/* .cover-image-container:hover .icon-container {
+    visibility: visible;
+    opacity: 0.9;
+    transition: 0.3s;
+} */
+
 /* .cover-image-container:hover .album-cover-image {
     pointer-events: none;
 } */
