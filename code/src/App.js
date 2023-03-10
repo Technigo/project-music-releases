@@ -8,7 +8,7 @@ import Header from 'components/Header'
 import './index.css';
 
 
-console.log(data);
+// console.log(data);
 
 export const App = () => {
   return (
