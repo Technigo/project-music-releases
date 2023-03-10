@@ -1,11 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we will practice React and creating components by using data from Spotify. 
+We builded a page which shows new album and single releases. This was a team task so I worked with Ajmal. We worked as a team from monday to thursday, but decided on friday's standup that we will both finnish the project individually to get more practice working with css. The project was nice and everything went super smoothly with Ajmal.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+First it was super hard to understand how React works but after seeing some code from previous student we startted to understand more and more. We tried tto work as much as possible simultaniusly with the same file, so we ecould share the knowledge while working. On friady I spent some time to look how Spotify API works if I want to update this project later to constantly updating version with my own playlists.
 
 ## View it live
 
