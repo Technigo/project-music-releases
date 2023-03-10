@@ -10,4 +10,4 @@ On Friday, I looked at how Spotify API works if I want to update this project la
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://courageous-beijinho-3ae2b4.netlify.app/
