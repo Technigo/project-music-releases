@@ -3,12 +3,27 @@ import React from 'react'
 
 export const Card = ({ props }) => {
   return (
-    <container className="album-card">
-      <img
-        // key={props.image.id}
-        src={props.images[0].url}
-        alt={props.name}
-        className="album-img" />
+    <section className="album-card">
+      <container className="images-container">
+        <div className="icons">
+          <img
+            className="heart-icon"
+            src="./icons/heart.svg"
+            alt="like button" />
+          <img
+            className="play-icon"
+            src="./icons/play.svg"
+            alt="play button" />
+          <img
+            className="dots-icon"
+            src="./icons/dots.svg"
+            alt="more button" />
+        </div>
+        <img
+          src={props.images[0].url}
+          alt={props.name}
+          className="album-img" />
+      </container>
       <h2>
         <a
           // key={props.external_urls.spotify.id}
@@ -31,7 +46,7 @@ export const Card = ({ props }) => {
           </a>
         ))}
       </h3>
-    </container>
+    </section>
   )
 }
 
