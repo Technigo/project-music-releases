@@ -10,5 +10,5 @@ const CoverImage = (props) => {
     );
   };
 
-  export default CoverImage;
+export default CoverImage;
 
