@@ -1,9 +1,10 @@
 import React from 'react'
+import AlbumArtist from 'components/AlbumArtist'
+import Header from 'components/Header'
 import data from './data.json';
 import Artwork from './components/Artwork'
 import AlbumName from './components/AlbumName'
-import AlbumArtist from 'components/AlbumArtist';
-import Header from 'components/Header'
+
 
 import './index.css';
 
