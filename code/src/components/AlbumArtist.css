@@ -1,5 +1,26 @@
 .artist-name {
     font-family: Helvetica;
     font-size: 14px;
+    font-weight: 700;
     color: #a0a0a0;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.artist-name-link:link {
+    text-decoration: none;
+}
+
+.artist-name-link {
+    text-decoration: none;
+}
+
+.artist-name-link:hover {
+    text-decoration: #ffffff underline;
+    opacity: 0.7;
+}
+
+.artist-name-link:active {
+    text-decoration: none;
+    opacity: 0.7;
 }

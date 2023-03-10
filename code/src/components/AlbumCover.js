@@ -9,7 +9,7 @@ export const AlbumCover = (props) => {
         <img src="./icons/play.svg" className="play-icon" alt="play icon" />
         <img src="./icons/dots.svg" className="dots-icon" alt="dots icon" />
       </span>
-      <img src={props.cover} alt="album art" />
+      <img className="album-cover-image" src={props.cover} alt="album art" />
     </div>
   )
 };

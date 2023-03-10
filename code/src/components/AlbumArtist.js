@@ -8,16 +8,22 @@ import './AlbumArtist.css';
 // `artists` array, inside the `Album` component to show the artist name and a link.
 
 export const AlbumArtist = (props) => {
-  console.log(props)
+  // console.log(props)
+  // const content = props.item.artists;
   return (
     <div className="album-artist-container">
-      {props.artistsArray.map((artist) => {
+      {props.artistsArray.map((artist, index) => {
         return (
           <a
             className="artist-name-link"
             key={artist.id}
-            href={artist.external_urls.spotify}>
-            <h2 className="artist-name">{artist.name}</h2>
+            href={artist.external_urls.spotify}
+            target="_blank"
+            rel="noreferrer">
+            <span className="artist-name">
+              {artist.name}
+              {props.artistsArray.length - 1 > index ? ', ' : ''}
+            </span>
           </a>
         );
       })}

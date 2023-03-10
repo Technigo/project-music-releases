@@ -4,6 +4,7 @@ import React from 'react';
 import { AlbumArtist } from './AlbumArtist';
 import { AlbumCover } from './AlbumCover';
 import { AlbumName } from './AlbumName';
+import './Album.css';
 
 // Album component which is rendered using .map()
 // and which you pass the album data into using props.
@@ -15,10 +16,10 @@ import { AlbumName } from './AlbumName';
 export const Album = (props) => {
   console.log("It's here", props.spotifyList)
   return (
-    <div className="Album">
+    <div className="albums-container">
       {props.spotifyList.albums.items.map((singleAlbum) => {
         return (
-          <div key={singleAlbum.id}>
+          <div className="single-album" key={singleAlbum.id}>
             <AlbumCover cover={singleAlbum.images[1].url} />
             <AlbumName
               urlAlbumName={singleAlbum.external_urls.spotify}
