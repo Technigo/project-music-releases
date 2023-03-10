@@ -1,11 +1,14 @@
 .album-name {
-    font-size: 14px;
-    line-height: 1;
-    font-family: Helvetica #ffffff;
-    max-width: 300px;
-    margin-bottom: 5px;
-    position: absolute;
-  }
+  font-size: 14px;
+  font-family: Helvetica;
+  color: #ffffff;
+  width: 300px;
+  position: absolute;
+  margin-top: 0;
+}
+
+
+
   
   .albumlink:hover .album-name {
     text-decoration: underline;
