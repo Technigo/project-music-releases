@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArtistName } from './ArtistName';
 
-// bytt ut songName, albumKey osv till album som attribute(props) alltså album är vår props ist
+//  making album our (props) and destructing it in the {} to acess the rest of the api info
 export const Album = ({ album }) => {
   return (
     <div className="album-container" key={album.id}>
@@ -21,7 +21,7 @@ export const Album = ({ album }) => {
         rel="noopener noreferrer">
         {album.name}
       </a>
-      {/* samma princis som i app.js och album */}
+      {/* same principle as we've done in app.js with our album component */}
       <ArtistName artists={album.artists} />
     </div>);
 };

@@ -1,6 +1,8 @@
 body {
     background-color: #000000eb;
+    margin-bottom: 50px;
 }
+
 header {
     height: 50px;
 }
@@ -53,6 +55,7 @@ h3 {
 .img-icons img {
     height: 50px;
     filter: invert();
+    opacity: 70%;
 } 
 
 .heart-icon,
@@ -63,17 +66,23 @@ h3 {
 .play-icon:hover {
     transform: scale(1.5);
     transition: 0.3s ease;
+    opacity: 100%;
 }
 
 .heart-icon:hover,
 .dots-icon:hover {
     transform: scale(1.2);
     transition: 0.3s ease;
+    opacity: 100%;
+}
+
+.heart-icon:hover {
+    filter: invert(17%) sepia(73%) saturate(5949%) hue-rotate(328deg) brightness(83%) contrast(104%);
 }
 
 .img-overlay:hover .img-icons{
     display: flex;
-    background-color: rgba(0, 0, 0, 0.491);
+    background-color: rgba(0, 0, 0, 0.594);
 }
 
 
@@ -94,27 +103,28 @@ h3 {
     font-family: 'Helvetica', 'sans-serif';
 }
 
-.mango{
+.artist-container{
     display: flex;
     flex-direction: row;
 }
 
-.artist-hej {
+.artist-span {
     display: inline-block;
 }
 
-.artist-hej:last-child::before {
+.artist-span:last-child::before {
     content: ", "; 
     color: #a0a0a0;
 }
+
 /* Not working as we want it, leave it here to fix later
-.artist-hej:first-child::after {
+.artist-span:first-child::after {
     content: " & "; 
     color: #a0a0a0;
 }
 */
 
-.artist-hej:only-child::before {
+.artist-span:only-child::before {
     content: "";
 }
 

@@ -3,7 +3,7 @@ import data from './data.json';
 import { Album } from './components/Album';
 import { Header } from './components/Header';
 
-// albumdata blir en array av alla albumobjekt istället för att skriva ut allt i items
+// albumdata becomms an array of all our albumobject
 const albumData = data.albums.items;
 
 export const App = () => {
@@ -12,10 +12,9 @@ export const App = () => {
       <Header />
       <section className="main-container">
         {albumData.map((album) => (
-          // skickar bara in album i <Album /> istället för att skriva ut all data som tidigare
-          // Första hänvisar till Album.js
-          // nästa album är attribute dvs en prop
-          // tredje album är objekt från data.json(ett js object)
+          // First is connected to Album.js
+          // Second album is an (in html attribute) and here we call it a props
+          // Third album is our object from data.json(an js object)
           <Album album={album} />
         ))}
       </section>
