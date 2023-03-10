@@ -2,11 +2,11 @@ import React from 'react';
 import Buttons from './Buttons';
 import Artist from './Artist';
 
-const Album = (props) => {
+const SingleAlbum = (props) => {
   return (
-    <section className="albums albums-type-albums">
+    <section className="albums albums-type-singles">
       {props.data.albums.items.map((singleItem) => {
-        if (singleItem.album_type === 'album') {
+        if (singleItem.album_type === 'single') {
           return (
             <div className="album-info" key={singleItem.id}>
               <div className="img-btn-cover">
@@ -21,7 +21,7 @@ const Album = (props) => {
           )
         } else {
           return (
-            console.log("It's a single")
+            console.log('Not a single')
           )
         }
       })}
@@ -29,4 +29,4 @@ const Album = (props) => {
   );
 };
 
-export default Album;
+export default SingleAlbum;

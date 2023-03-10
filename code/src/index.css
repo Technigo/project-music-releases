@@ -201,7 +201,7 @@ hr {
     gap: 0px 0px;
     grid-template-areas:
       "Sidebar Header"
-      "Sidebar Album";
+      "Sidebar AlbumContainer"
   }
 
   .playlist-title {
@@ -243,9 +243,15 @@ hr {
     grid-area: Header;
   }
 
+  .album-container {
+    grid-area: AlbumContainer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
   .albums {
-    grid-area: Album;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   a:hover {
@@ -260,6 +266,8 @@ hr {
     transition: 0.8s ease;
     object-fit: contain;
   }
+
+
 }
 
 @media (min-width: 1750px) {
