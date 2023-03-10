@@ -94,14 +94,31 @@ h3 {
     font-family: 'Helvetica', 'sans-serif';
 }
 
-.artist-title a:not(:first-of-type, :last-of-type)::before {
-    content: ", ";
-  } 
-  
-  .artist-title a:nth-last-of-type(2)::after {
-    content: " & ";
-  }
+.mango{
+    display: flex;
+    flex-direction: row;
+}
 
+.artist-hej {
+    display: inline-block;
+}
+
+.artist-hej:last-child::before {
+    content: ", "; 
+    color: #a0a0a0;
+}
+/* Not working as we want it, leave it here to fix later
+.artist-hej:first-child::after {
+    content: " & "; 
+    color: #a0a0a0;
+}
+*/
+
+.artist-hej:only-child::before {
+    content: "";
+}
+
+/* Hover effects on song & artist title */
 .song-title:hover,
 .artist-title:hover {
     text-decoration: underline 1.5px;
