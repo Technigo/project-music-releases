@@ -1,5 +1,5 @@
-import React from "react";
-import "./AlbumName.css";
+import React from 'react';
+import './AlbumName.css';
 
 export const AlbumName = (props) => {
   return (
