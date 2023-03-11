@@ -1,12 +1,14 @@
 # Music Releases
-Replace this readme with your own information about your project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is a music app consisting of newly released albums and singles, built using React. It was done in pairs (in collaboration with Yu Miao) using Spotify data.
+We followed a specific design given to  us and reached our goals.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started off by thinking about the layout of the album and sketching the components that we would be using. Then we created components to make full use of what React has to offer, and thus making our components reusable. The app is responsive so we started with the "mobile first" approach.
+We added features such as a collection of popular playlists, the play button shows and grows when the user hovers over it. The site is also divided into new albums and singles. And we dabbled in a bit of useState in React to toggle the appearance of the playlists in mobile view. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+View the deployed site:
+https://music-releases-yu-joanna.netlify.app/
