@@ -1,5 +1,6 @@
 import { createRoot } from 'react-dom';
 import './index.css';
+import './hover.css';
 import React from 'react';
 import { App } from './App';
 

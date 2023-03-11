@@ -1,12 +1,15 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Using React: Create components by using data from Spotify, build a page which shows new album and single releases.
 
 ## The problem
+It's been a wild ride this week getting introduced to React and figuring out how to structure/create components.
+Mostly learned through iteration - tried the example, tried the sandbox, then replicated the learnings into the project; lots of referring back to the materials; integrating learnings from past projects especially with how to treat API data.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We spent mon-tues going through materials and then started with the project.
+Did a lot of pair programming through Slack and Live Share and then some individual branches as well.
+
+If we had more time we would add a footer with our contact info, we tried but couldn't get it into the right placement.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the deployed link: https://extraordinary-macaron-fce4c5.netlify.app/

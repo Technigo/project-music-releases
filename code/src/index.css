@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,9 +9,228 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: auto;
+  background-color: rgb(22, 22, 22);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* THIS TAKES CARE OF SEPARATION BETWEEN ARTISTS */
+.artist-name:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-name:only-child::before {content: "";}
+
+/* HEADER COMPONENTS */
+.main-title {
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  margin: 45px 12px 0 12px;
+  text-align: center;
+}
+
+header {
+  grid-column: 2 / span 2;
+}
+
+/* CONTACT BUTTONS */
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 5px 12px 0 5px;
+}
+
+button {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid white;
+  max-width: fit-content;
+  background: transparent;
+  color: white;
+  font-weight: 600;
+  opacity: .75;
+  z-index: 99; 
+}
+
+button:hover {
+  color:rgb(22, 22, 22);
+  opacity: 1;
+  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+
+.contact-B {
+  position: fixed; /* Fixed/sticky position */
+  right: 30px; 
+  bottom: 20px; 
+}
+
+.contact-F {
+  position: fixed; /* Fixed/sticky position */
+  right: 160px; 
+  bottom: 20px; 
+}
+
+/* ALBUM COMPONENT */
+.AlbumsAndSingles-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* ALBUMDETAILS COMPONENT */
+.each-album {
+  margin: 10px;
+  align-items: center; 
+}
+
+.album-cover {
+  width: 100%;
+}
+
+.album-name {
+  width: 80%;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.artist-name {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* SINGLES & SECTIONHEADER COMPONENT */
+.SinglesAndAlbums {
+  color: #fff;
+  padding: 14px;
+  font-size: 20px;
+}
+
+
+/* PLAYLIST COMPONENT */
+.playlist-header {
+  grid-column: 1 / span 1;
+  color: #fff;
+  padding: 10px;
+  margin: 45px 12px 0 12px;
+  text-align: center;
+}
+
+.playlist-section {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 6s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.each-playlist {
+  margin: 10px;
+  align-items: center; 
+}
+
+.playlist-cover {
+  width: 100%;
+  height: auto;
+}
+
+.playlist-name {
+  font-size: 14px;
+  color: white;
+}
+
+.about-playlist {
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* RESPONSIVE DESIGN FOR TABLET */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .AlbumsAndSingles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .singles-container, .albums-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .playlist-section {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 6;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 15px 0 0;
+  }
+  
+}
+
+/* RESPONSIVE DESIGN FOR DESKTOP */
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .AlbumsAndSingles-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .singles-container, .albums-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .playlist-section {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 6;
+    min-height: 100vh;
+    display: flex;
+  }
 }
