@@ -58,6 +58,15 @@ a{
   text-decoration: underline;
 }
 
+/* Comma or & separator rules for artists name*/
+.artistName :not(:first-of-type, :last-of-type):before {
+  content: ", ";
+}
+
+.artistName :nth-last-of-type(2):after {
+  content: " & ";
+}
+
 .albumTracks{
   color: #a0a0a0;
   font-size: 14px;
