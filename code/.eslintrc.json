@@ -43,8 +43,8 @@
       }
     ],
     "linebreak-style": [
-      "error",
-      "windows"
+      "off",
+      "unix"
     ],
     "comma-dangle": [
       "error",
