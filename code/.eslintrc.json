@@ -43,7 +43,7 @@
       }
     ],
     "linebreak-style":[
-      "error",
+      "off",
       "windows"
     ],
     "comma-dangle": [
