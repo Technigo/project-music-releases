@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In this project we have created a music release site with React. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Focusing on a basic understanding of object destructuring we managed little by little to build functions with jsx inside components. EsLint was a bit of hassle to manage but made the code neat and tidy. All the styling was made with css.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://shiny-crostata-34b8a6.netlify.app/

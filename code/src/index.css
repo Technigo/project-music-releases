@@ -5,9 +5,241 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+hr {
+  border: 1px solid #212121;
+}
+
+h1 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.releases-container {
+  padding: 20px;
+}
+
+.albums-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+  height: max-content;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.album-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 40px;
+}
+
+.album-cover {
+  filter: brightness(100%);
+  opacity: 1;
+  height: max-content;
+}
+
+.album-cover-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.album-cover:hover .album-cover-image {
+  filter: brightness(30%);
+}
+
+.album-cover:hover .album-controls-icons {
+  filter: brightness(100%);
+}
+
+.album-overlay {
+  display: none;
+}
+
+.album-cover:hover .album-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.album-controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.album-controls .icon-heart,
+.album-controls .icon-dots,
+.album-controls .icon-play {
+  width: 32px;
+  height: 32px;
+  filter: invert();
+}
+
+.album-controls .icon-play {
+  width: 72px;
+  height: 72px;
+  opacity: 0.6;
+  transition: all 0.1s ease-in-out;
+}
+
+.icon-play:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.album-name,
+.playlist-name {
+  font-weight: bold;
+  color: white;
+}
+
+.album-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.artist-name {
+  color: #a0a0a0;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.playlists-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.playlists {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.playlist-card {
+  display: flex;
+  padding: 10px;
+  background-color: #212121;
+  margin-top: 20px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+}
+
+.playlist-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playlist-image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.playlist-text {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.playlist-card:hover {
+  background-color: #414141;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 744px) {
+  .albums-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .playlist-image {
+    display: flex;
+    object-fit: cover;
+    padding-bottom: 10px;
+  }
+
+  .playlists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .app-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .albums-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .playlists-container {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    background-color: #181818;
+    overflow-x: hidden;
+    padding: 20px;
+  }
+
+  .playlists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+  }
 }
