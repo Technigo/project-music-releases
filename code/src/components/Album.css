@@ -1,0 +1,49 @@
+.albums-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.single-album {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 0px 10px 30px 10px;
+}
+
+
+@media (min-width: 668px) and (max-width: 1024px) {
+
+    .albums-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .single-album {
+        width: 49%;
+        height: auto;
+        padding: 0px 15px 30px 15px;
+    }
+
+}
+    
+
+@media (min-width: 1025px) {
+
+    .albums-container {
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    .single-album {
+        width: 24%;
+        height: auto;
+        padding: 0px 15px 30px 15px;
+    }
+
+}  
