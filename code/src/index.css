@@ -92,6 +92,13 @@ a {
   visibility: hidden;
 }
 
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .heartIcon {
   width: 8%;
 }
