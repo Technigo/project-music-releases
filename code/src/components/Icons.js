@@ -1,12 +1,13 @@
 import React from 'react';
-import './Icons.css';
 
 export const Icons = () => {
     return (
-        <div className="iconsContainer">
-            <img className="hearticon" src="./icons/heart.svg" alt="heart icon" />
-            <img className="playicon" src="./icons/play.svg" alt="play icon" />
-            <img className="dotsicon" src="./icons/dots.svg" alt="dots icon" />
+     <div className="img-overlay">
+        <div className="icons-container">
+            <img className="heart-icon" src="./icons/heart.svg" alt="Heart icon" />
+            <img className="play-icon" src="./icons/play.svg" alt="Play icon" />
+            <img className="dots-icon" src="./icons/dots.svg" alt="Dots icon" />
         </div>
-    )
+     </div>
+    );
 }

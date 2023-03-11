@@ -7,7 +7,7 @@ export const Album = (props) => {
   console.log(props.artists)
   return (
     <article className="albumcontainer">
-      <div className="imgcontainer">
+      <div className="cover-and-icons">
         <a href={props.albumurl}>
           <img className="album-img" src={props.image} alt="Album Cover" />
           <div className="icons">
@@ -26,5 +26,5 @@ export const Album = (props) => {
         })}
       </div>
     </article>
-  )
-}
+  );
+}; 

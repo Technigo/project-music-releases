@@ -1,3 +1,5 @@
+/* Styling for album component*/
+
 .albumcontainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -6,39 +8,96 @@
     /*justify-content:*/
 }
 
-.imgcontainer {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
+.album {
+    margin-bottom: 1.5rem;
 }
 
+/*Album image*/
 .album-img {
-    max-width: 100%;   
+    max-width: 100%;
+    max-height: 100%;   
 }
 
-/*.album-img:hover {
-opacity: 0.5;
-transition: 0.4s;
-}*/
-
-.albumname {
-font-family: Helvetica;
-font-size: 14px;
-font-weight: 600;
-color: #ffffff;
-}
-
-.albumname:hover {
-text-decoration: underline;
-width: fit-content;
-cursor: pointer;
-}
-
-.imgcontainer:hover .album-img {
+.album-img:hover {
     opacity: 0.5;
     cursor: pointer;
 }
+
+/*Album name*/
+.albumname {
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.albumname:hover {
+    text-decoration: underline;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/*Cover and icons*/
+.cover-and-icons {
+    position: relative;
+}
+
+.cover-and-icons:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/*Overlay*/
+
+.img-overlay {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling icons*/
+
+.icons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.heart-icon {
+    margin-right: 30px;
+    filter: invert(0.8);
+    width: 1.5 rem;
+}
+
+.heart-icon:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.play-icon:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.dots-icon {
+    margin-left: 30px;
+    filter:invert(0.8);
+    width: 1.5rem;
+}
+
+.dots-icon:hover {
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/*Styling for links*/
 
 a:link {
     text-decoration: none;
@@ -57,15 +116,8 @@ a:active {
     text-decoration: none;
 }       
 
-.imgcontainer {
-    position: relative;
-}
 
-.imgcontainer:hover .img-overlay {
-    display: block;
-}
-
-/* Media queries */
+/* Media queries 
 
 @media (min-width: 667px) and (max-width: 1024px) { 
 
@@ -83,4 +135,4 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px 10px;
 }
-}
+}*/
