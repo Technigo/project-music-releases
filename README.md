@@ -1,12 +1,10 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This project is a pairproject buy Leo Thunell and Nora Terbocs using react, javascript and css. 
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
+Based on the project brief and the design images we started to plan what components we should create in order to copy the given style. 
+We have iterated through the given API response with the map method and with grid and flexbox we positioned the components and elements.
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The project is deployed here: https://music-albums-project.netlify.app/
