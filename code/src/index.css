@@ -39,6 +39,7 @@ a {
   max-width: 100%;
   position: relative;
   z-index: 1;
+  margin-top: 10px;
 }
 
 .albumCover {
@@ -89,6 +90,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 2;
+  visibility: hidden;
 }
 
 .heartIcon {
