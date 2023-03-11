@@ -1,13 +1,13 @@
 // Add external Spotify URL:s on artist & album
-import React from "react";
-import "./AlbumName.css";
+import React from 'react';
+import './AlbumName.css';
 
-const AlbumName = (props) => {
-    return (
-        <div>
-            <h2 className="AlbumName"></h2>
-        </div>
-    );
+const AlbumName = () => {
+  return (
+    <div>
+      <h2 className="AlbumName">Test</h2>
+    </div>
+  );
 };
 
 export default AlbumName;
