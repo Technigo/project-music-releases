@@ -1,17 +1,15 @@
 import React from 'react';
 import data from './data.json';
-import { Header } from "./components/Header/Header";
-import Album from "./components/Album";
+import { Header } from './components/Header/Header';
+import { Album } from './components/Album';
 
 console.log(data);
 
-const App = () => {
+export const App = () => {
   return (
     <div>
-      <Header title="Spotify stuff"/>
+      <Header />
       <Album mapdata={data} />
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,27 @@
+.icon-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .icon {
+    width: 50px;
+    background: transparent;
+  }
+  
+  button {
+    border: none;
+  }
+  
+  svg {
+    fill: white;
+  }
+  
+  .icon:hover {
+    scale: 1.5;
+  }
+  

@@ -1,14 +1,17 @@
-import Buttons from "./components/Buttons";
+import React from 'react';
+import { Buttons } from './Buttons/Buttons.js';
 
+import './CoverImage.css';
 
-const CoverImage = (props) => {
-    console.log(`logging props:`, props);
-    return (
-      <section>
-        <Buttons />
-      </section>
-    );
-  };
+const imageIndex = 0;
 
-export default CoverImage;
-
+export const CoverImage = (props) => {
+  return (
+    <div className="cover-image-wrapper">
+      <img
+        src={props.singleCoverItem.images[imageIndex].url}
+        alt={props.singleCoverItem.name} />
+      <Buttons />
+    </div>
+  );
+};

@@ -3,21 +3,19 @@ import CoverImage from './components/CoverImage';
 import { ArtistName } from './ArtistName/ArtistName';
 import { AlbumName } from './AlbumName/AlbumName';
 
-const Album = (props) => {
+export const Album = (props) => {
   console.log('logging props:', props);
   return (
     <section>
-      {props.mapdata.albums.items.map((item) => {
+      {props.mapdata.albums.items.map((singleItem) => {
         return (
-          <div key={item.id}>
-            <CoverImage />
-            <ArtistName />
-            <AlbumName />
+          <div className="album-wrapper" key={singleItem.id}>
+            <CoverImage itemCoverImage={singleItem} />
+            <AlbumName singleAlbumItem={singleItem} />
+            <ArtistName singleArtistItem={singleItem} />
           </div>
         );
       })}
     </section>
   );
 };
-
-export default Album;
