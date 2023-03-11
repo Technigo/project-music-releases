@@ -1,12 +1,13 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Use react to show different data from an API, all new release with album cover, album title and artists invovled. Use components and mount in the App.
+Create it while pair programming.
 
 ## The problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We had a design to follow, with different hover effects to apply.
+We used components for Header and Album and mounted these in the App component.
+We used Stack Overflow, previous students project and our teammates to solve the problems we ran into.
+If we had more time we would have tried to add the sidebar with playlists.
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+(Music releases)[https://music-releases-josefin-malin.netlify.app]
