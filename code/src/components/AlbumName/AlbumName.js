@@ -1,13 +1,12 @@
-// Add external Spotify URL:s on artist & album
 import React from "react";
 import "./AlbumName.css";
 
-const AlbumName = (props) => {
-    return (
-        <div>
-            <h2 className="AlbumName"></h2>
-        </div>
-    );
-};
-
-export default AlbumName;
+export const AlbumName = (props) => {
+  return (
+    <div className="AlbumName">
+      <a href={props.singleAlbumItem.external_urls.spotify} target="_blank" rel="noreferrer noopener">
+        <h2>{props.singleAlbumItem.name}</h2>
+      </a>
+    </div>
+  );
+}
