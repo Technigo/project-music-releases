@@ -131,8 +131,9 @@ h3 {
 /* Hover effects on song & artist title */
 .song-title:hover,
 .artist-title:hover {
-    text-decoration: underline 1.5px;
+    text-decoration: underline;
     text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
 }
 
 /* responsive for tablet */
