@@ -13,24 +13,21 @@
     visibility: visible;
     opacity: 0.9;
     transition: 0.3s;
+    z-index: 2;
 }
 
-
-
-/* .cover-image-container:hover .icon-container {
-    visibility: visible;
-    opacity: 0.9;
+.cover-image-container:hover .album-cover-image {
+    opacity: 0.5;
     transition: 0.3s;
-} */
 
-/* .cover-image-container:hover .album-cover-image {
-    pointer-events: none;
-} */
-/* 
+}
+
+ 
 .album-cover-image:hover {
     opacity: 0.5;
     transition: 0.3s;
-}  */
+    z-index: 1;
+} 
 
 .album-cover-image {
     width: 100%;
