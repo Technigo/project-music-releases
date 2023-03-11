@@ -8,6 +8,7 @@
     "process": true
   },
   "env": {
+    "node": true,
     "browser": true
   },
   "parserOptions": {
@@ -40,10 +41,6 @@
       {
         "allowSingleLine": true
       }
-    ],
-    "linebreak-style": [
-        "off",
-        "windows"
     ],
     "comma-dangle": [
       "error",
@@ -132,4 +129,3 @@
     "semi": "off"
   }
 }
-
