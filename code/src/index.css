@@ -81,6 +81,10 @@ a {
   text-decoration: underline;
 }
 
+.albumImage:hover .icons {
+  visibility: visible;
+}
+
 .icons {
   position: absolute;
   display: flex;
