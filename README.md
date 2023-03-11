@@ -12,4 +12,4 @@ If we had more time we would add a footer with our contact info, we tried but co
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the deployed link: https://extraordinary-macaron-fce4c5.netlify.app/
