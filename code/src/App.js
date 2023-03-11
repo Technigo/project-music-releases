@@ -10,7 +10,6 @@ console.log(data);
 export const App = () => {
   return (
     <div>
-      <h1>Tjoho</h1>
       <Header />
       <Album mapdata={data} />
     </div>
