@@ -6,7 +6,13 @@ import React from 'react';
 const Album = (albumTitle) => {
 return (
 <div className="album">
-<span>{albumTitle.albumName.name}</span>
+          <a
+          key={albumTitle.id}
+          href={albumTitle.albumName.external_urls.spotify}
+          target="_blank"
+          rel="noopener noreferrer">
+          <span>{albumTitle.albumName.name}</span>
+          </a>
 </div>
 )}
 
