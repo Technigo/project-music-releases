@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable arrow-parens */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable max-len */
@@ -6,14 +7,18 @@
 import React from 'react'
 import AlbumArtist from 'components/AlbumArtist'
 import Header from 'components/Header'
+import Playlists from 'components/Playlists';
+import playlists from './stretch-goal.json';
 import data from './data.json';
 import Artwork from './components/Artwork'
 import AlbumName from './components/AlbumName'
+
 import './index.css';
 
 export const App = () => (
   <div className='body-container'>
     <Header />
+    <div className='music-section'>
     <div className='music-container'>
       {data.albums.items.map(item => {
         return <>
@@ -24,6 +29,10 @@ export const App = () => (
           </div>
         </>;
       })}
+    </div>
+    <div className='playlist-container'>
+      <Playlists data={playlists} />
+    </div>
     </div>
   </div>
 )
