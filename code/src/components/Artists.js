@@ -16,7 +16,7 @@ export const Artist = (props) => {
         return (
           <>
             <a className="artist-link" href={items.external_urls.spotify} target="_blank" rel="noopener noreferrer">{items.name}</a>
-            {generateDelimiter(index, artist.lenght)}
+            {generateDelimiter(index, artist.length)}
           </>
         )
       })}
