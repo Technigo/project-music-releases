@@ -1,5 +1,5 @@
 import React from 'react';
-
+// to make :& when there are two artists, and: , if there are more (but there isnt in this top50)
 const generateDelimiter = (index, length) => {
   if (index === length - 2) {
     return ' & ';
@@ -9,14 +9,13 @@ const generateDelimiter = (index, length) => {
 };
 
 export const Artist = (props) => {
-  const { artist } = props;
   return (
     <span>
-      {artist.map((items, index) => {
+      {props.artist.map((items, index) => {
         return (
           <>
-            <a className="artist-link" href={items.external_urls.spotify} target="_blank" rel="noopener noreferrer">{items.name}</a>
-            {generateDelimiter(index, artist.length)}
+            <a key={items.id} className="artist-link" href={items.external_urls.spotify} target="_blank" rel="noopener noreferrer">{items.name}</a>
+            {generateDelimiter(index, props.artist.length)}
           </>
         )
       })}

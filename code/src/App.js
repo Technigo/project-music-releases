@@ -7,7 +7,7 @@ console.log(data);
 export const App = () => {
   return (
     <div className="main-container">
-      <h1>New albums & singles</h1>
+      <h1>New albums</h1>
       <hr />
       <div className="albums-container">
         {data.albums.items.map((items) => {
