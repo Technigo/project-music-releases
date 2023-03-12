@@ -1,0 +1,37 @@
+
+/*------separation in artist-------*/
+.artistname:last-child::before {
+    content: " & ";
+    color: #a0a0a0;
+  }
+.artistname:not(:first-child, :last-child)::before {
+color: #a0a0a0;
+content: ", ";
+}
+
+.artistname:only-child::before {content:"";}
+
+/*----------------------------------*/
+.artistname {
+font-family: Helvetica;
+font-size: 14px;
+color: #a0a0a0;
+}
+  
+.artistcontainer {
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+a {
+  text-decoration: none;
+  font-family: Helvetica;
+  font: Helvetica;
+  color: #A0A0A0;
+ }
+a:hover {
+  text-decoration: underline;
+}
+
+
