@@ -14,6 +14,7 @@
     justify-content: space-between;
   }
 
+/* The filter: invert(100%); changes the Icon from black to white */  
 .icon-wrapper img {
     filter: invert(100%);
 }
@@ -33,6 +34,7 @@
     width: 45px;
 }
 
+/* The transition: 0.3s; below makes the icon grow bigger but smoother */
 .play-icon:hover {
     width: 60px;
     height: 60px;

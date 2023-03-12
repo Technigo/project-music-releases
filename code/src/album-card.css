@@ -11,6 +11,8 @@ a {
     position: relative;
 }
 
+/* The filter: opacity(30%); makes the album cover go darker on hover */
+/* The transition: 0.3s; makes it smoother */
 .image-wrapper:hover .album-cover {
   filter: opacity(30%);
   transition: 0.3s;
@@ -30,6 +32,7 @@ a {
   padding: 5px;
 }
 
+/* The text-decoration: underline; adds the line under on hover */
 .album-name:hover {
   text-decoration: underline;
 }
@@ -43,6 +46,22 @@ a {
 
 .artist-name:hover {
   text-decoration: underline;
+}
+
+/*These three classes fixes the "&" if there's more than one artist involved*/
+/*Link to StackOverflow: https://stackoverflowteams.com/c/technigo/questions/2239*/
+.artist-container:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-container:only-child::before {
+  content: "";
 }
 
 

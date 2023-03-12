@@ -2,6 +2,7 @@
 import React from 'react';
 import { AlbumCard } from './AlbumCard';
 
+/* A component that mounts all album cards */
 export const AlbumList = (props) => {
   console.log('the data is passed')
   return (

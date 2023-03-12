@@ -4,9 +4,7 @@ import { AlbumList } from 'components/AlbumList';
 import { Header } from './components/Header';
 
 import data from './data.json';
-
-console.log(data);
-
+/* In this App component we mount the AlbumList-component and pass the data.json as data */
 export const App = () => {
   return (
     <section className="app">

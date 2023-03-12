@@ -3,6 +3,8 @@ import React from 'react';
 import { AlbumArtist } from './AlbumArtist';
 import { Icons } from './Icons';
 
+/* A component for each album card. In this component, it mounts components for icons and artist */
+/* It also passes data for images, album-links and album name */
 export const AlbumCard = (props) => {
   return (
     <article className="album-card-wrapper">
