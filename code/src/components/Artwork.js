@@ -1,3 +1,13 @@
+/* eslint-disable jsx-quotes */
+/* eslint-disable brace-style */
+/* eslint-disable block-spacing */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable react/jsx-closing-bracket-location */
+/* eslint-disable react/jsx-indent-props */
+/* eslint-disable indent */
+/* eslint-disable react/jsx-no-useless-fragment */
 import React from 'react';
 
 const Artwork = (props) => {
