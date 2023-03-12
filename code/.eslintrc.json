@@ -120,6 +120,10 @@
         "ignoreStateless": true
       }
     ],
+    "linebreak-style":[
+      "off",
+      "unix"
+    ],
     "react/no-string-refs": "error",
     "react/prop-types": "off",
     "react/require-extension": "off",

@@ -1,31 +1,29 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable react/jsx-closing-tag-location */
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-no-useless-fragment */
+/* eslint-disable jsx-quotes */
 import React from 'react'
 import AlbumArtist from 'components/AlbumArtist'
 import Header from 'components/Header'
 import data from './data.json';
 import Artwork from './components/Artwork'
 import AlbumName from './components/AlbumName'
-
-
 import './index.css';
 
-
-console.log(data);
-
-export const App = () => {
-  return (
-    <div className='body-container'>
-    <Header/>
-    <div className = 'music-container'>
-      {data.albums.items.map (item => {
+export const App = () => (
+  <div className='body-container'>
+    <Header />
+    <div className='music-container'>
+      {data.albums.items.map(item => {
         return <>
-        <div className = 'Albums'>
-          <Artwork key={item.id} item={item} img={item.images}/>
-          <AlbumName key={item.name} AlbumName={item.name} AlbumUrl={item.external_urls.spotify}/>
-          <AlbumArtist key={item.artists.name} AlbumArtist={item}/>
-        </div>
-        </>
-      })}    
+          <div className='Albums'>
+            <Artwork key={item.id} item={item} img={item.images} />
+            <AlbumName key={item.name} AlbumName={item.name} AlbumUrl={item.external_urls.spotify} />
+            <AlbumArtist key={item.artists.name} AlbumArtist={item} />
+          </div>
+        </>;
+      })}
     </div>
-    </div>
-  );
-}
+  </div>
+)
