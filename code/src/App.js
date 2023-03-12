@@ -1,9 +1,8 @@
 import React from 'react';
 import { Header } from 'components/Header';
 import { Album } from 'components/Album';
-
-import data from './data.json';
 import { Footer } from 'components/Footer';
+import data from './data.json';
 
 export const App = () => {
   return (
@@ -11,7 +10,7 @@ export const App = () => {
       <header>
         <Header />
       </header>
-      <section className="albumcontainer">
+      <section className="main-container">
         {data.albums.items.map((album) => {
           return (
             <Album

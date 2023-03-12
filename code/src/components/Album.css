@@ -3,12 +3,10 @@
 .albumcontainer {
     display: grid;
     grid-template-columns: 1fr;
-    place-items: center;
     row-gap: 8px;
-}
-
-.album {
     margin-bottom: 1.5rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
 }
 
 /*Album image*/
@@ -42,7 +40,7 @@
 }
 
 .cover-and-icons:hover {
-    opacity: 0.5;
+    opacity: 100%;
     cursor: pointer;
 }
 
@@ -85,7 +83,7 @@
 .play-icon {
     margin-right: 30px;
     margin-left: 30px;
-    filter: invert(0.8);
+    filter: invert(1);
     width: 3.5rem;
 }
 
@@ -129,20 +127,24 @@ a:active {
 
 /* Media queries */
 
-@media (min-width: 667px) and (max-width: 1024px) { 
-
-.albumcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px 10px;
+/*tablet*/
+@media ((min-width: 667px) and (max-width: 1024px)) { 
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    width: fit-content;
+    margin: 15px 10px 0px 10px;
+  }
 }
-}
 
+/*desktop*/
 @media (min-width: 1025px) {
-  
-.albumcontainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px 10px;
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 15px 10px 0px 10px;
+  }
 }
-}
+
+

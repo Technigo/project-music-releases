@@ -1,6 +1,7 @@
 footer {
     display: grid;
     justify-content: center;
-    color: aqua;
+    color: whitesmoke;
     font-family: Helvetica;
+    font-style: italic;
 }
