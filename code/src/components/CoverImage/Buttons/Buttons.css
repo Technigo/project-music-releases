@@ -5,12 +5,17 @@
     left: 0;
     display: flex;
     justify-content: center;
-    gap: 6px;
+    gap: 10px;
+    opacity: 0;
   }
   
   .icon {
     width: 50px;
     background: transparent;
+  }
+
+  .play {
+    width: 70px;
   }
   
   button {
@@ -22,6 +27,6 @@
   }
   
   .icon:hover {
-    scale: 1.5;
+    scale: 1.3;
   }
   

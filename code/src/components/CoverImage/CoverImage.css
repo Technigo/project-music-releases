@@ -8,15 +8,20 @@
     max-width: 600px;
   }
   
-  img:hover {
-    opacity: 0.3;
-    transition: 0.5s;
-  }
+
   
-  /*
-  .cover-image-wrapper:hover {
-    opacity: 0.3;
-    transition: 0.3s;
+  /* Hovr effects: */
+
+  .cover-image-wrapper:hover > .icon-wrapper {
+    opacity: 1;
+    transition: 0.4s;
   }
-  */
+
+  .cover-image-wrapper:hover > img {
+    opacity: 0.4;
+    transition: 0.4s;
+  }
+
+  
+    
   
