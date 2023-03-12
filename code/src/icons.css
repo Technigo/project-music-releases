@@ -1,0 +1,62 @@
+
+.icon-wrapper {
+    display: none;
+    width: 70%;
+    height: 60px;
+    position: absolute;
+    top: 40%;
+    left: 13%;
+}
+
+.image-wrapper:hover .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+/* The filter: invert(100%); changes the Icon from black to white */  
+.icon-wrapper img {
+    filter: invert(100%);
+}
+
+.heart-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.dots-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.play-icon {
+    height: 45px;
+    width: 45px;
+}
+
+/* The transition: 0.3s; below makes the icon grow bigger but smoother */
+.play-icon:hover {
+    width: 60px;
+    height: 60px;
+    transition: 0.3s;
+   }
+
+
+  
+@media (min-width: 1024px) {
+    .heart-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .dots-icon {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .play-icon {
+        height: 35px;
+        width: 35px;
+    }
+    } 
+  

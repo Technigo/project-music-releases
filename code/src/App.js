@@ -1,12 +1,17 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
+import { AlbumList } from 'components/AlbumList';
+import { Header } from './components/Header';
+
 import data from './data.json';
-
-console.log(data);
-
+/* In this App component we mount the AlbumList-component and pass the data.json as data */
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <section className="app">
+      <Header />
+      <main className="main-wrapper">
+        <AlbumList data={data} />
+      </main>
+    </section>
   );
 }

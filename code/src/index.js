@@ -1,5 +1,10 @@
+/* eslint-disable linebreak-style */
 import { createRoot } from 'react-dom';
 import './index.css';
+import './icons.css';
+import './header.css';
+import './album-list.css';
+import './album-card.css';
 import React from 'react';
 import { App } from './App';
 

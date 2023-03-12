@@ -1,0 +1,78 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.album-card-wrapper {
+    width: 350px;
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+/* The filter: opacity(30%); makes the album cover go darker on hover */
+/* The transition: 0.3s; makes it smoother */
+.image-wrapper:hover .album-cover {
+  filter: opacity(30%);
+  transition: 0.3s;
+}
+
+.album-cover {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.album-name {
+  font-family: Helvetica, sans-serif ;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 5px;
+}
+
+/* The text-decoration: underline; adds the line under on hover */
+.album-name:hover {
+  text-decoration: underline;
+}
+
+.artist-name {
+ font-family: Helvetica, sans-serif;
+ font-size: 14px;
+ color: #a0a0a0;
+ padding: 5px;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+}
+
+/*These three classes fixes the "&" if there's more than one artist involved*/
+/*Link to StackOverflow: https://stackoverflowteams.com/c/technigo/questions/2239*/
+.artist-container:not(:first-child, :last-child)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-container:last-child::before {
+  content: " & ";
+  color: #a0a0a0;
+}
+
+.artist-container:only-child::before {
+  content: "";
+}
+
+
+@media (min-width: 668px) {
+  .album-card-wrapper {
+width: 280px;
+  } 
+}
+
+@media (min-width: 1024px) {
+  .album-card-wrapper {
+    width: 200px;
+      } 
+}
