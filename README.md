@@ -1,12 +1,13 @@
-# Music Releases
-Replace this readme with your own information about your project.
+The task given us was to create a site in React displaying music releases, using an API from Spotify. 
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+It was a co-operation between Hannah Ek & Sofia Gerdmar and was done with a pair programming aproach.
 
-## The problem
+We started by discussing the project and how we should build it, as well as starting dividing the different components between each other, as well as deiciding on the structure of the page.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We worked on practising the use of React and buildning a site containing props and components. 
 
-## View it live
+If we had more time, we would have added a playlist feature along with some more styling.
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+You are most welcome to view it live at:
+
+https://music-releases-hannah-sofia.netlify.app/

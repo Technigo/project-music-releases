@@ -1,13 +1,132 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: #a0a0a0;
+  font-size: 14px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  margin: 30px 40px 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+a {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.albums {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 40px 40px 40px;
+  justify-content: space-around;
+  flex-basis: 100%;
+}
+
+.albumImage {
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.albumCover {
+  max-width: 100%;
+}
+
+.albumImage:hover > .albumIcons {
+  max-width: 100%;
+  visibility: visible;
+}
+
+.albumImage:hover > .albumCover {
+  max-width: 100%;
+  filter: brightness(0.50);
+}
+
+.textContainer {
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.albumLink {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.albumLink:hover {
+  text-decoration: underline;
+}
+
+.artistLink {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-weight: 500;
+}
+
+.artistLink:hover {
+  text-decoration: underline;
+}
+
+.albumImage:hover .icons {
+  visibility: visible;
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  top: calc(45%);
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  visibility: hidden;
+}
+
+.heartIcon {
+  width: 8%;
+}
+
+.playIcon {
+  width: 20%;
+  transition: 0.5s;
+}
+
+.playIcon:hover {
+  scale: 1.2;
+}
+
+.dotsIcon {
+  width: 8%;
+}
+
+@media only screen and (min-width: 668px) and (max-width: 1023px){
+  .albums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+}
+
+  @media only screen and (min-width: 1024px) {
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
 }
