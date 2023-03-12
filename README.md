@@ -1,12 +1,11 @@
 # Music Releases
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+To build a music release site in React, using an API from from Spotify.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started off pair-programming, deciding what structure and what components we should. As we had quite different working hours, we divided the work between us, building components and styled different parts individually. 
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://sammy-vera-project-music-releases.netlify.app/
+

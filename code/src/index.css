@@ -17,12 +17,16 @@ code {
     monospace;
 }
 
+main {
+  padding-bottom: 70px;
+}
+
 .albums {
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
-  grid-template-rows: 55px repeat(4, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto, minmax(50px, 1fr));
   padding: 20px;
-  row-gap: 30px;
+  row-gap: 35px;
   column-gap: 20px;
 }
 
@@ -64,7 +68,6 @@ code {
 .icons-container img {
   filter: invert();
   height: 60px;
-/*   margin: 0 15px; */
   opacity: 70%;
 }
 
@@ -72,10 +75,8 @@ code {
 .header-title {
   color: white;
   font-size: 25px;
-  grid-column: span 4;
-  align-self: end;
-  padding-bottom: 5px;
-  margin: 0;
+  padding-bottom: 10px;
+  margin: 50px 20px 5px 20px;
   border-bottom: 1px rgb(55, 55, 55) solid;
 }
 
@@ -160,20 +161,12 @@ a {
     grid-template-columns: repeat(2, minmax(50px, 1fr));
   }
 
-  .header-title {
-    grid-column: span 2;
-  }
-
 }
 
 /* MEDIA QUERIES FOR MOBILES */
 @media (max-width: 767.98px){
   .albums {
     grid-template-columns: repeat(1, minmax(50px, 1fr));
-  }
-
-  .header-title {
-    grid-column: span 1;
   }
 
 }

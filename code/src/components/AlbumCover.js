@@ -20,6 +20,4 @@ export const AlbumCover = (props) => {
 
     </div>
   );
-}
-
-export default AlbumCover;
+};

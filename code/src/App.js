@@ -1,22 +1,18 @@
 import React from 'react';
-import data from './data.json';
 import './index.css';
 import { Header } from './components/Header';
-import { AlbumMaster } from './components/AlbumMaster';
-
-console.log(data);
+import { AlbumTypeMaster } from './components/AlbumTypeMaster';
 
 export const App = () => {
   return (
-    <main className="albums">
-      <Header />
-      {data.albums.items.map((item) => {
-        return <AlbumMaster
-          key={data.id}
-          data={item} />
-      })}
+    <main>
+      <Header headerName="New Albums" />
+      <AlbumTypeMaster albumTypeCategory="album" />
+      <Header headerName="New Singles" />
+      <AlbumTypeMaster albumTypeCategory="single" />
+      <Header headerName="New Compilations" />
+      <AlbumTypeMaster albumTypeCategory="compilation" />
     </main>
-
   );
-}
+};
 
