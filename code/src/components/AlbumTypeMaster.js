@@ -6,9 +6,9 @@ export const AlbumTypeMaster = (props) => {
   return (
     <div className="albums">
       {
-        data.albums.items.filter((typeData) => typeData.album_type === props.albumTypeCategory)
-          .map((typeData) => {
-            return <Album albumCategory={typeData} key={typeData.id} />
+        data.albums.items.filter((item) => item.album_type === props.albumTypeCategory)
+          .map((item) => {
+            return <Album albumCategory={item} key={item.id} />
           })
       }
     </div>
