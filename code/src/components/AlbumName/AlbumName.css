@@ -7,4 +7,10 @@
   .AlbumName a {
     text-decoration: none;
   }
+
+  .AlbumName a:hover {
+    color: #a0a0a0;
+    text-decoration: underline;
+  }
+  
   
