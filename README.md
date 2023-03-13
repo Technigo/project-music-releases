@@ -10,4 +10,4 @@ On Friday, I looked at how Spotify API works if I want to update this project la
 
 ## View it live
 
-https://courageous-beijinho-3ae2b4.netlify.app/
+https://courageous-beijinho-3ae2b4.netlify.app
