@@ -1,13 +1,170 @@
 body {
   margin: 0;
+  padding: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(24 24 24);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+main {
+  padding-bottom: 70px;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto, minmax(50px, 1fr));
+  padding: 20px;
+  row-gap: 35px;
+  column-gap: 20px;
+}
+
+.master-wrapper {
+  display:inline-block;
+  padding: 0px;
+}
+
+/* ALBUM COVER IMAGE*/
+.album-cover-overlay {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.album-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+.album-name-link {
+  display: inline-block;
+}
+
+/* ICONS*/
+ .icons-container {
+  display: none;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+.icons-container img {
+  filter: invert();
+  height: 60px;
+  opacity: 70%;
+}
+
+/* BIG HEADER */
+.header-title {
+  color: white;
+  font-size: 25px;
+  padding-bottom: 10px;
+  margin: 50px 20px 5px 20px;
+  border-bottom: 1px rgb(55, 55, 55) solid;
+}
+
+/* SMALL HEADERS*/
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 9px;
+}
+
+a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-weight: 700;
+}
+
+.album-name-h2, .artist-name-h3 {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.album-name-h2 {
+  color: #ffffff;
+  display: block;
+}
+
+.artist-name-h3 {
+  color: #a0a0a0;
+  display: inline-block;
+}
+
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  content: ", ";
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
+}
+
+/* HOVER EFFECTS ON ARTIST NAME AND ALBUM NAME */
+.album-name-h2:hover, .artist-name-h3:hover {
+  text-decoration: underline;
+}
+
+/* HOVER EFFECT ON ICON SECTION */
+.album-cover-link:hover + .icons-container {
+  display: flex;
+}
+
+.icons-container:hover {
+  display: flex;
+}
+
+/* HOVER EFFECTS ON HEART AND DOTS-ICONS */
+.heart-icon:hover, .dots-icon:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+  opacity: 100%;
+  cursor: pointer;
+}
+
+/* HOVER EFFECTS ON PLAY-ICON */
+.play-icon:hover {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+  opacity: 100%;
+  cursor: pointer;
+}
+
+/* HOVER EFFECTS image */
+.album-cover-overlay:hover .album-cover{
+  opacity: 0.5;
+}
+
+
+/* MEDIA QUERIES FOR TABLETS */
+@media (min-width: 768px) and (max-width: 1024px){
+  .albums {
+    grid-template-columns: repeat(2, minmax(50px, 1fr));
+  }
+
+}
+
+/* MEDIA QUERIES FOR MOBILES */
+@media (max-width: 767.98px){
+  .albums {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+
 }

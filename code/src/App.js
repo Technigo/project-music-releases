@@ -1,12 +1,20 @@
 import React from 'react';
-import data from './data.json';
 
-console.log(data);
+import { Header } from './components/Header';
+import { AlbumTypeMaster } from './components/AlbumTypeMaster';
+
+import './index.css';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
-    </div>
+    <main>
+      <Header headerName="New Albums" />
+      <AlbumTypeMaster albumTypeCategory="album" />
+      <Header headerName="New Singles" />
+      <AlbumTypeMaster albumTypeCategory="single" />
+      <Header headerName="New Compilations" />
+      <AlbumTypeMaster albumTypeCategory="compilation" />
+    </main>
   );
-}
+};
+
