@@ -11,10 +11,12 @@ const Album = (props) => {
             <img src={mappedOutItem.images[0].url} className="album-image" alt="Cover" />
             <Icons />
           </div>
-          <a href="{mappedOutItem.external_urls.spotify}" className="album-name" target="_blank">  {mappedOutItem.name} </a>
+          <div className="albums">
+            <a href={mappedOutItem.external_urls.spotify} target="_blank" className="album-name" rel="noreferrer"> {mappedOutItem.name}</a>
+          </div>
           <div className="artists"> {mappedOutItem.artists.map((mappedOutArtist) => (
-            <a href="{mappedOutArtist.external_urls.spotify}" className="artist-name" key={mappedOutArtist.id} target="_blank">
-              <div>{mappedOutArtist.name}</div>
+            <a href={mappedOutArtist.external_urls.spotify} target="_blank" className="artist-name" key={mappedOutArtist.id} rel="noreferrer">
+              <span>{mappedOutArtist.name}</span>
             </a>
           ))}
           </div>
