@@ -31,7 +31,7 @@ body {
   width: 100%;
   background: linear-gradient(-45deg, #ff0000, #e73ca5, #01bbff, #23d5ab);
   background-size: 100% 100%;
-  animation: gradient 5s ease infinite;
+  animation: gradient 15s ease infinite;
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -240,7 +240,7 @@ body {
     width: 100%;
     background: linear-gradient(-45deg, #ff0000, #e73ca5, #01bbff, #23d5ab);
     background-size: 100% 100%;
-    animation: gradient 5s ease infinite;
+    animation: gradient 15s ease infinite;
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
