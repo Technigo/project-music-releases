@@ -11,7 +11,10 @@ export const ArtistName = (props) => {
             href={artist.external_urls.spotify}
             target="_blank"
             rel="noopener noreferrer">
-            <h3 className="artist-name-h3">{artist.name}</h3>
+            <h3
+              className="artist-name-h3">
+              {artist.name}
+            </h3>
           </a>
         );
       })}

@@ -1,7 +1,9 @@
 import React from 'react';
-import './index.css';
+
 import { Header } from './components/Header';
 import { AlbumTypeMaster } from './components/AlbumTypeMaster';
+
+import './index.css';
 
 export const App = () => {
   return (
