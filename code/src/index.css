@@ -254,13 +254,13 @@ body {
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    transform: translate(50px, 0)
   }
   50% {
-    background-position: 100% 50%;
+    transform: translate(50px, 0)
   }
   100% {
-    background-position: 0% 50%;
+    transform: translate(50px, 0)
   }
 }
 
@@ -298,13 +298,13 @@ body {
 
   @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+      transform: translate(50px, 0)
     }
     50% {
-      background-position: 100% 50%;
+      transform: translate(50px, 0)
     }
     100% {
-      background-position: 0% 50%;
+      transform: translate(50px, 0)
     }
   }
 
@@ -365,13 +365,13 @@ body {
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
+    transform: translate(50px, 0)
   }
   50% {
-    background-position: 100% 50%;
+    transform: translate(50px, 0)
   }
   100% {
-    background-position: 0% 50%;
+    transform: translate(50px, 0)
   }
 }
 
@@ -410,13 +410,13 @@ body {
 
   @keyframes gradient {
     0% {
-      background-position: 0% 50%;
+      transform: translate(50px, 0)
     }
     50% {
-      background-position: 100% 50%;
+      transform: translate(50px, 0)
     }
     100% {
-      background-position: 0% 50%;
+      transform: translate(50px, 0)
     }
   }
 
