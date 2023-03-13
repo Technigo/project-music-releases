@@ -29,7 +29,7 @@ body {
 
 .header-title {
   width: 100%;
-  background: linear-gradient(-45deg, #e73ca5, #01bbff, #39f9fc, #23d5ab);
+  background: linear-gradient(-45deg, #e73ca5, #01bbff, #4351f4, #23d5ab);
   background-size:  400% 400%;
   animation: gradient 15s ease infinite;
   background-clip: text;
@@ -237,7 +237,7 @@ body {
 
   .header-title {
     width: 100%;
-    background: linear-gradient(-45deg, #e73ca5, #01bbff, #39f9fc, #23d5ab);
+    background: linear-gradient(-45deg, #e73ca5, #01bbff, #4351f4, #23d5ab);
     background-size:  400% 400%;
     animation: gradient 15s ease infinite;
     background-clip: text;
@@ -279,7 +279,7 @@ body {
 
   .header-title {
     width: 100%;
-    background: linear-gradient(-45deg, #e73ca5, #01bbff, #39f9fc, #23d5ab);
+    background: linear-gradient(-45deg, #e73ca5, #01bbff, #4351f4, #23d5ab);
     background-size:  400% 400%;
   animation: gradient 15s ease infinite;
   background-clip: text;
@@ -344,7 +344,7 @@ body {
 
   .header-title {
     width: 100%;
-    background: linear-gradient(-45deg, #e73ca5, #01bbff, #39f9fc, #23d5ab);
+    background: linear-gradient(-45deg, #e73ca5, #01bbff, #4351f4, #23d5ab);
     background-size:  400% 400%;
     animation: gradient 15s ease infinite;
     background-clip: text;
@@ -391,7 +391,7 @@ body {
 
   .header-title {
     width: 100%;
-    background: linear-gradient(-45deg, #e73ca5, #01bbff, #39f9fc, #23d5ab);
+    background: linear-gradient(-45deg, #e73ca5, #01bbff, #4351f4, #23d5ab);
     background-size:  400% 400%;
     animation: gradient 15s ease infinite;
     background-clip: text;
