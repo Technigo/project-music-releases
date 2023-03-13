@@ -252,15 +252,14 @@ body {
 
 @keyframes gradient {
   0% {
-    transform: translate(50px, 0)
+    background-position: 0% 50%;
   }
   50% {
-    transform: translate(50px, 0)
+    background-position: 100% 50%;
   }
   100% {
-    transform: translate(50px, 0)
+    background-position: 0% 50%;
   }
-}
 
 }
 
@@ -295,13 +294,13 @@ body {
 
   @keyframes gradient {
     0% {
-      transform: translate(50px, 0)
+      background-position: 0% 50%;
     }
     50% {
-      transform: translate(50px, 0)
+      background-position: 100% 50%;
     }
     100% {
-      transform: translate(50px, 0)
+      background-position: 0% 50%;
     }
   }
 
@@ -324,6 +323,7 @@ body {
     margin: 0 10px;
   }
 }
+
 
 
 /*DESKTOP*/
@@ -361,14 +361,15 @@ body {
 
 @keyframes gradient {
   0% {
-    transform: translate(50px, 0)
+    background-position: 0% 50%;
   }
   50% {
-    transform: translate(50px, 0)
+    background-position: 100% 50%;
   }
   100% {
-    transform: translate(50px, 0)
+    background-position: 0% 50%;
   }
+}
 }
 
 
@@ -405,14 +406,13 @@ body {
 
   @keyframes gradient {
     0% {
-      transform: translate(50px, 0)
+      background-position: 0% 50%;
     }
     50% {
-      transform: translate(50px, 0)
+      background-position: 100% 50%;
     }
     100% {
-      transform: translate(50px, 0)
+      background-position: 0% 50%;
     }
   }
-
 }
