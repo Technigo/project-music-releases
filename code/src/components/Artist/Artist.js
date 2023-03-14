@@ -9,7 +9,7 @@ export const Artist = ({ album }) => {
         <div key={artist.id}>
           <a href={artist.external_urls.spotify} target="_blank" rel="noreferrer" className="artist-name">
             {artist.name}
-            {album.artists.length - 1 > index ? ' ,' : ''}
+            {index !== album.artists.length - 1 ? ', ' : ''}
           </a>
         </div>
       ))}
