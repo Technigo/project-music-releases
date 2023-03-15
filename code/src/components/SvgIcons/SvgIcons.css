@@ -1,0 +1,32 @@
+.icons-container img {
+  height: 35px;
+  margin: 0 15px;
+  opacity: 50%;
+}
+
+.icons-container {
+  position: absolute;
+  /* visibility: visible; */
+  justify-content: center;
+  align-items: center;
+  top: 45%;
+  gap: 20px;
+  display: flex;
+}
+/* Absolute - the element is positioned absolutely to its first positioned parent. */
+
+.heart-icon:hover,
+.dots-icon:hover,
+.play-icon:hover {
+  transform: scale(1.7);
+  transition: 0.3s ease-in-out;
+  opacity: 100%;
+}
+
+.white {
+  filter: invert(100%);
+}
+
+.icons-container {
+  font-size: 2em;
+}
