@@ -1,13 +1,419 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: 'sora', 'work sans', 'Helvetica Neue', 'helvetica', arial,
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    --background: #FBF8F3;
+    --primary: #232323;
+    --secondary: #FF5733;
+    --third: #1DB954;
+   background: var(--background);
+   color: var(--color);
+   
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+.main-container {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+/*HEADER*/
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 40px 20px 0 20px;
+  flex-wrap: wrap;
+}
+
+
+.header-title {
+  width: 100%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size:  400% 400%;
+  animation: gradient 15s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  font-size: 40px;
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*ALBUM CONTAINER*/
+.album-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 20px;
+  
+}
+ 
+ .album-card {
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0px;
+    background: var(--background);
+ }
+
+ .album-name{
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--primary);
+  text-decoration: none;
+  padding-top: 30px;
+  text-transform: uppercase;
+ }
+
+ .album-name:hover{
+  color: var(--third);
+  text-transform: uppercase;
+ }
+ 
+ .artists > a:link {
+   display: inline-flex;
+   font-size: 16px;
+   font-weight: 500;
+   color:  var(--primary);
+   opacity: 0.72;
+   text-decoration: none;
+   padding-top: 10px;
+   text-transform: uppercase;
+   
+ }
+ 
+ .artists a:visited {
+  color:  var(--primary);
+  opacity: 0.6;
+  text-transform: uppercase;
+  text-decoration: none;
+} 
+
+.artists > a:hover {
+  color: var(--third);
+  opacity: 1;
+}
+
+
+
+.artists > :not(:last-child):not(:first-child):before {
+  content: ", ";
+  white-space: pre;
+  color: var(--primary);
+}
+
+.artists > :last-child:before {
+  content: " & ";
+  white-space: pre;
+  color: var(--primary);
+}
+
+.artists > :only-child:before {
+  content: "";
+}
+ .album-image {
+   width: 100%;
+   object-fit: contain;
+   border-radius: 10px;
+  
+ }
+
+/*IMAGE CONTAINER */
+.image-container {
+  width: 100%;
+  position: relative;
+  
+}
+
+.image-overlay {
+  top: 0;
+  left:0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.image-container:hover .image-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  transition: 0.6s ease;
+}
+
+.image-overlay .play-icon{
+ transition: 0.3s ease;
+}
+
+
+.icons-container {
+  position: absolute;
+  width: 100%;
+  transform: scale(1.2);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+
+.image-container:hover .icons-container {
+  display: flex;
+}
+
+/*ICONS*/
+.icons-container img {
+  height: 35px;
+  margin: 0 15px;
+  opacity: 0.7;
+ 
+}
+
+.heart-icon:hover, .dots-icon:hover {
+  transform: scale(1.4);
+  transition: 0.4s ease;
+  opacity: 1;
+ 
+}
+
+
+.play-icon:hover {
+  transform: scale(1.4);
+  transition: 0.4s ease;
+  opacity: 1;
+ 
+}
+
+/*--FOOTER--*/
+.footer-container{
+  display: block;
+  text-align: center; 
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 40px;
+  margin-top: 50px;
+  line-height: 10px;
+  border: none;
+}
+
+.footer-image {
+  height: 80px;
+ ;
+
+}
+
+/* MOBILE, larger font for increased readability*/
+@media (max-width: 768px) {
+  .header-container {
+    width: auto;
+  }
+
+  .album-name, .artists > a:link{
+    font-size: 18px;
+  }
+
+  .header-title {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:  400% 400%;
+    animation: gradient 15s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 60px;
+    font-family: 'Sora', sans-serif;
+  }
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+}
+
+/*TABLET*/
+@media (min-width: 650px) {
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .header-title {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:  400% 400%;
+  animation: gradient 15s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+    font-size: 70px;
+    font-family: 'Sora', sans-serif;
+  }
+
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .header-line {
+    width: 86%;
+    margin: 0;
+  }
+
+  .album-card {
+    width: 40%;
+  }
+
+  .icons-container {
+    top: 45%;
+  }
+
+  .icons-container img {
+    width: 50px;
+    margin: 0 10px;
+  }
+}
+
+
+
+/*DESKTOP*/
+@media (min-width: 992px) {
+
+  .album-card {
+    width: 26%;
+  }
+
+  .icons-container {
+    top: 45%;
+  }
+
+  .icons-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .header-title {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:  400% 400%;
+    animation: gradient 15s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 90px;
+    margin-top: 30px;
+    font-family: 'Sora', sans-serif;
+  }
+
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+}
+
+
+/*DESKTOP BIG SCREEN*/
+@media (min-width: 1400px) {
+
+  .album-card {
+    width: 20%;
+  }
+
+  .icons-container {
+    top: 45%;
+  }
+
+  .icons-container img {
+    width: 40px;
+    margin: 0 10px;
+  }
+
+  .header-title {
+    width: 100%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size:  400% 400%;
+    animation: gradient 15s ease infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 120px;
+    margin-top: 30px;
+    font-family: 'Sora', sans-serif;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
