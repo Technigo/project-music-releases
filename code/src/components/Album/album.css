@@ -1,0 +1,36 @@
+.album-title {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 14px;
+    transition: .2s ease;
+    text-decoration: none;
+}
+
+.album-title:hover {
+    text-decoration: underline;
+}
+
+.album-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.release-date {
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+h3 {
+    padding: 4px;
+    margin: 0;
+}
+
+p {
+    padding: 4px;
+    margin: 0;
+}
+

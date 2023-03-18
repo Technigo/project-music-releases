@@ -5,9 +5,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(17, 17, 17);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/*Basic design made with the principle "mobile first"*/
+.music-grid{
+display: grid;
+justify-items: center;
+grid-template-columns: 1fr;
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.album-container{
+  max-width: 300px;
+  padding: 10px 0px;
+}
+
+.header {
+  padding: 25px;
+}
+
+.header hr {
+  height: 1px;
+  background-color: #ccc;
+  border: none;
+}
+
+/* MEDIA QUERY FOR TABLET*/
+@media (min-width: 668px){
+  .music-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    padding: 25px 25px;
+    }
+}
+
+/*MEDIA QUERY FOR DESKTOP*/
+@media (min-width: 1024px){
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  padding: 25px 25px;
+  }
+
 }

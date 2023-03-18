@@ -1,0 +1,66 @@
+.covers-container {
+   width: 100%;
+   position: relative;
+}
+
+.img-cover {
+    width: inherit;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    opacity: 0; /*This makes the div hover-img not be displayed*/
+    pointer-events: none; /* so if you select you dont see the stuff placed inside */
+    transition: .2s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.covers-container:hover .hover-img {
+    opacity: 1; /*When we hover over it, it is displayed*/
+    pointer-events: all;
+}
+
+.hover-img .icn-play {
+    font-size: 60px;
+}
+
+.hover-img .icn-heart,
+.hover-img .icn-dots {
+    font-size: 35px;
+}
+
+.covers-container img {
+    transition: .3s ease;
+}
+
+.covers-container:hover img {
+    filter: blur(5px) brightness(0.4);
+}
+
+.icn-play, .icn-heart, .icn-dots {
+    color:#a0a0a0;
+}
+
+.icn-play:hover {
+    color: #ffffff;
+    /*tried to apply scale(1.2); as well but nothing happened*/
+}
+
+.icn-heart:hover {
+    transform: scale(1.2);
+    color: darkred;
+}
+
+.icn-dots:hover{
+    transform: scale(1.2);
+    color: #ffffff;
+}
