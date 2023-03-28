@@ -1,4 +1,5 @@
-# Music Releases
+# Music Releases 🎧
+
 Pair programming project to practise React and creating components by using data from Spotify. The task was to build a page which shows new album and single releases. 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
