@@ -8,13 +8,13 @@ Practice React and creating components by using data from Spotify. You will buil
 
 ## Project requirements 
 
-- [x] Your app should have components
-- [x] Your page should look as close as possible to the design provided.
+- [x] The app should have components
+- [x] The page should look as close as possible to the design provided.
 - [x] Extract information for each album from the API
 - [x] Style and create hover effects
 - [x] When you click on the album, it should link to the album's external URL in the data
 - [x] When you click on an artist, it should link to the artist's external URL in the data
-- [x] Your page should be responsive:
+- [x] The page should be responsive:
 
 ### Authors and acknowledgment  
 
