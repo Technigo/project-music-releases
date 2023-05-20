@@ -1,7 +1,7 @@
-import React from 'react';
-import Artist from './Artist';
-import Icons from './Icons';
-import '../album.css';
+import React from "react";
+import Artist from "./Artist";
+import Icons from "./Icons";
+import "../album.css";
 
 // const Albums function = Defining the functional component Albums that takes in a props object.
 // <img>-content= Creating an img element with the album cover image as the source,
@@ -18,7 +18,8 @@ const Albums = (props) => {
         <img
           src={props.data.images[1].url}
           className="album-cover"
-          alt={props.data.name} />
+          alt={props.data.name}
+        />
         <div className="icons">
           <Icons />
         </div>
@@ -28,7 +29,8 @@ const Albums = (props) => {
         rel="noopener noreferrer"
         href={props.data.external_urls.spotify}
         key={props.data.id}
-        className="album-name">
+        className="album-name"
+      >
         {props.data.name}
       </a>
       <Artist artists={props.data.artists} />

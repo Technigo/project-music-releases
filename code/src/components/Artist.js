@@ -1,5 +1,5 @@
-import React from 'react';
-import '../artist.css'
+import React from "react";
+import "../artist.css";
 
 // const Artist = Defines a functional component called "Artist" that takes in a "props"
 // object as a parameter.
@@ -20,13 +20,16 @@ const Artist = (props) => {
           className="artist-container"
           href={artist.external_urls.spotify}
           rel="noopener noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           {artist.name}
-          {index < props.artists.length - 1 && <span>{index === props.artists.length - 2 ? ' & ' : ', '}</span>}
+          {index < props.artists.length - 1 && (
+            <span>{index === props.artists.length - 2 ? " & " : ", "}</span>
+          )}
         </a>
       ))}
     </div>
   );
-}
+};
 
 export default Artist;

@@ -1,7 +1,7 @@
-import React from 'react';
-import heartIcon from 'icons/heart.svg';
-import playIcon from 'icons/play.svg';
-import infoIcon from 'icons/dots.svg';
+import React from "react";
+import heartIcon from "icons/heart.svg";
+import playIcon from "icons/play.svg";
+import infoIcon from "icons/dots.svg";
 
 const Buttons = () => {
   return (
@@ -13,6 +13,6 @@ const Buttons = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Buttons;
