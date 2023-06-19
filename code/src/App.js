@@ -6,22 +6,29 @@ import 'index.css';
 import AlbumCover from 'components/AlbumCover';
 
 import data from './data.json';
+import Header from 'components/Header';
 
 export const App = () => {
   return (
+    <>
+    <Header />
     <div>
-       {data.albums.items.map((album)=> { 
-    return (
-      <>
-      <div className="container">
-      <AlbumCover className="albumCover" cover={album}/>
-      <Album className="album" albumName={album}/>
-      <Artist key={album.id} className="artist" artistName={album}/>
-      </div>
-      </>
-    )}
-   )}
+      {data.albums.items.map((album) => {
+        return (
+          <>
+            <div className="container">
+              <div key={album.id} className="album-container">
+                <AlbumCover className="albumCover" cover={album} />
+                <Album className="album" albumName={album} />
+                <Artist className="artist" artistName={album} />
+              </div>
+            </div>
+          </>
+        );
+      }
+      )}
     </div>
+    </>
     )}
   
      //   {/* // Hämtar från Header, title lägger till props.title ////  to comment cmd/ctrl + k + c, to uncomment  cmd/ctrl + k + u */}

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Header = (props) => {
+const Header = () => {
   return (
-    <header>
-      <h1>{props.title}</h1>
-    </header>
+    <div>
+      <h1>New singles and releases</h1>
+    </div>
   )
 }
 
