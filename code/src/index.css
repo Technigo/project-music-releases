@@ -6,8 +6,232 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+/* The page´s mothership */
+div#root {
+  overflow-x: hidden;
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: rgb(30, 30, 30);
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  overflow-x: hidden;
+}
+.header-line {
+  border-bottom: 1.5px solid #d8d8d8;
+  -webkit-filter: opacity(12%);
+  filter: opacity(15%);
+  margin: auto;
+  width: 100%;
+}
+/* New albums & singels text */
+h1 {
+  color: #fbfbfb;
+  font-size: 24px;
+  padding: 10px;
+  margin: 15px 12px 0;
+  text-align: center;
+}
+/* Album title */
+h2 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 35px 0 5px;
+  font-weight: 650;
+}
+/* Artist name */
+h3 {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Helvetica;
+  margin: 7px 0 5px;
+  font-weight: 650;
+  
+}
+a {
+  text-decoration: none;
+  color: #a0a0a0;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: 650;
+ margin-bottom: 35px;
+  margin-top: -87px;
+}
+
+
+/* ALBUM  */
+/*The big container*/
+.parent-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 20px; 
+}
+/* Albums container wich contains all the div albums */
+.album-container {
+  grid-template-columns: 1fr; 
+  padding: 0 10px; 
+}
+/* Album images */
+.Images img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+/* HOVER EFFECTS */
+/* Hovers the album cover */
+.Images:hover {
+  opacity: 0.3;
+  transition: 0.3s;
+}
+div h3:hover {
+  text-decoration: underline;
+  color: white;
+}
+div h2:hover {
+  text-decoration: underline;
+  color:white;
+}
+/*Shows icons when mouse is on album cover- this does not work*/
+.icons-container:hover {
+  opacity: 1;
+/*     display: flex; */
+}
+.image-container:hover + .icons-container {
+  opacity: 1;
+/*   display: flex; */
+}
+
+
+
+/* ICONS */
+.heart,
+.play,
+.dots {
+  margin: 0 10px;
+  width: 40px;
+  filter: invert(1);
+}
+/* All the icons */
+.icons-container {
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+  opacity: 0;
+  left: 148px;
+  bottom: 190px;
+  position: relative;
+  width: 62%;
+}
+/* Play icon */
+.play{
+  transition: .2s ease-in-out;
+  }
+  .play:hover {
+    transition: 0.35s ease-in-out;
+    transform: scale(1.4);
+  }
+ 
+
+
+/* tablet */
+@media (min-width: 667px) and (max-width: 1024px){
+  body {
+    margin: 0;
+  }
+  .album-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-self: center;
+      padding: 0 10px;
+      gap: 20px;
+  }
+  .icons-container{
+    display: block;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    transition: .5s ease;
+    opacity: 0;
+    left: 180px;
+    bottom: 233px;
+    position: relative;
+    width: 50%;
+   }
+   
+   /* New albums & singels text */
+  h1 {
+  color: #fbfbfb;
+  font-size: 24px;
+  padding: 10px;
+  margin: 15px 12px 0;
+  text-align: center;
+  display: block;
+  }
+  h2 {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Helvetica;
+    margin-top: 20px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+h3 {
+  margin-top: -100px;
+  margin-bottom: 5px;
+  
+}
+img {
+  margin-bottom: 20px;
+}
+
+
+  }
+ /* desktop */ 
+ @media (min-width: 1025px) {
+   .album-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap: 25px;
+     justify-self: center;
+   } 
+ .icons-container{
+  display: block;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  transition: .5s ease;
+  opacity: 0;
+  left: 144px;
+  bottom: 186px;
+  position: relative;
+  width: 65%;
+   }
+      /* New albums & singels text */
+   h1 {
+   color: #fbfbfb;
+   font-size: 24px;
+   padding: 10px;
+   margin: 15px 12px 5px;
+   display: block;
+   text-align: start;
+   }
+   h2 {
+    margin-top: 0px;
+   }
+   h3 {
+    margin-bottom: 5px;
+   }
+  }
+ 
