@@ -1,12 +1,20 @@
 import React from 'react';
 import data from './data.json';
 
-console.log(data);
+import Album from './components/Album.js';
+import Header from './components/Header.js';
+import Footer from './components/Footer.js';
+
+import './index.css';
+
+const albumsArray = data.albums.items
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <div className="main-container">
+      <Header />
+      <Album albumsArray={albumsArray} />
+      <Footer />
     </div>
-  );
+  )
 }
