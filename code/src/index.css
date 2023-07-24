@@ -125,6 +125,16 @@ h1 {
 
 /*OBS @media funkar icke*/
 
+@media only screen and (min-width: 668px) {
+  
+  .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  }
+}
+
 @media only screen and (min-width: 992px)  {
 
   .container {

@@ -12,11 +12,11 @@ export const App = () => {
   return (
     <>
     <Header />
-    <div>
+    <div className="container">
       {data.albums.items.map((album) => {
         return (
           <>
-            <div className="container">
+            <div>
               <div key={album.id} className="album-container">
                 <AlbumCover className="albumCover" cover={album} />
                 <Album className="album" albumName={album} />
