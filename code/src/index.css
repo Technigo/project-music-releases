@@ -5,9 +5,148 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: r;
+
+} */
+
+/* .artist, .album, .albumCover {
+
+  justify-self: center;
+  margin: 0 auto;
+
+} */
+
+/* .album-container {
+  align-items: center;
+} */
+
+.artist span {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  text-decoration: none;
+  justify-self: start;
+}
+
+.artist a, .album a {
+  text-decoration: none;
+}
+
+.artist a:hover {
+  text-decoration: underline;
+  color: #a0a0a0;
+}
+
+.album span {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+}
+
+.album a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.image-container {
+  position: relative
+}
+
+.albumImage {
+  width: 100%;
+  object-fit: contain;
+  justify-self: center;
+}
+
+.image-overlay {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .image-overlay {
+  background: rgba(0,0,0,0.6);
+  transition: 0.3s ease;
+}
+
+.icon-container {
+  position: absolute;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+
+.image-container:hover .icon-container {
+  display: flex;
+}
+
+.icon-container img{
+  height: 35px;
+  opacity: 50%;
+  margin: 0 15px;
+}
+
+.icon-play:hover {
+  transform: scale(1.8);
+  transition: 0.3s ease;
+  opacity: 100%;
+}
+
+.icon-heart:hover, .icon-dots:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease;
+  opacity: 100%;
+}
+
+.icon-heart {
+  filter: invert(1);
+}
+
+/*OBS @media funkar icke*/
+
+@media only screen and (min-width: 668px) {
+  
+  .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  }
+}
+
+@media only screen and (min-width: 992px)  {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  .album-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
 }

@@ -1,12 +1,35 @@
+/* eslint-disable max-len */
 import React from 'react';
-import data from './data.json';
+import Artist from 'components/Artist';
+import Album from 'components/Album';
+import 'index.css';
+import AlbumCover from 'components/AlbumCover';
 
-console.log(data);
+import data from './data.json';
+import Header from 'components/Header';
 
 export const App = () => {
   return (
-    <div>
-      Find me in src/app.js!
+    <>
+    <Header />
+    <div className="container">
+      {data.albums.items.map((album) => {
+        return (
+          <>
+            <div>
+              <div key={album.id} className="album-container">
+                <AlbumCover className="albumCover" cover={album} />
+                <Album className="album" albumName={album} />
+                <Artist className="artist" artistName={album} />
+              </div>
+            </div>
+          </>
+        );
+      }
+      )}
     </div>
-  );
-}
+    </>
+    )}
+  
+     //   {/* // Hämtar från Header, title lägger till props.title ////  to comment cmd/ctrl + k + c, to uncomment  cmd/ctrl + k + u */}
+
